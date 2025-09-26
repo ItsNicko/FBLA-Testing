@@ -1,0 +1,1109 @@
+{
+  "tests": [
+    {
+      "testName": "Entrepreneurship Knowledge Assessment",
+      "questions": [
+        {
+          "question": "Which element of a business plan most directly communicates the company's long-term purpose and aspirations?",
+          "options": [
+            "Operational schedule",
+            "Vision statement",
+            "Market price list",
+            "Expense ledger"
+          ],
+          "correctAnswer": "Vision statement",
+          "explanation": "A vision statement articulates the company's long-term purpose and aspirations and is a core part of business planning in the study guide (vision, mission, goals). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "When selecting a business opportunity, which factor is MOST critical according to a feasibility study?",
+          "options": [
+            "Personal preference for color schemes",
+            "Industry trends and competition",
+            "Number of social media followers",
+            "Favorite suppliers' logos"
+          ],
+          "correctAnswer": "Industry trends and competition",
+          "explanation": "Feasibility studies focus on industry trends, competition, and market segment to determine viability, as described in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which business ownership form typically offers the simplest startup process but places full liability on the owner?",
+          "options": [
+            "Corporation",
+            "Sole proprietorship",
+            "Limited liability company (LLC)",
+            "Cooperative"
+          ],
+          "correctAnswer": "Sole proprietorship",
+          "explanation": "A sole proprietorship is easy to form but exposes the owner to full personal liability, which is a standard business-structure tradeoff in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What is the primary purpose of an organizational chart in a startup?",
+          "options": [
+            "To display product pricing",
+            "To outline hierarchy and job responsibilities",
+            "To calculate tax liability",
+            "To list suppliers' contact info"
+          ],
+          "correctAnswer": "To outline hierarchy and job responsibilities",
+          "explanation": "Organizational charts clarify reporting relationships, staffing plans, and job descriptions, aiding workflow and personnel management (Study Guide: Business Plan & Personnel Management). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which financial statement provides a snapshot of a company's assets, liabilities, and owner's equity at a specific point in time?",
+          "options": [
+            "Income statement",
+            "Balance sheet",
+            "Cash flow projection",
+            "Sales summary"
+          ],
+          "correctAnswer": "Balance sheet",
+          "explanation": "A balance sheet shows assets, liabilities, and equity at a specific date — this is fundamental to financial management and interpretation of financial data. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why are cash flow projections important for a startup?",
+          "options": [
+            "They guarantee sales targets",
+            "They help forecast the timing of cash inflows and outflows",
+            "They replace the need for a budget",
+            "They prevent all credit problems"
+          ],
+          "correctAnswer": "They help forecast the timing of cash inflows and outflows",
+          "explanation": "Cash flow projections identify when cash will be available or short, informing budgeting and planning—a key objective in financial management. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Selecting an accounting system primarily helps a business to:",
+          "options": [
+            "Decorate the office",
+            "Apply good accounting practices and record transactions",
+            "Hire new staff automatically",
+            "Increase product prices arbitrarily"
+          ],
+          "correctAnswer": "Apply good accounting practices and record transactions",
+          "explanation": "An accounting system ensures consistent recording of transactions and supports preparation of financial statements, as stated in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What does 'point of profitability' refer to when analyzing financial data?",
+          "options": [
+            "The day taxes are filed",
+            "When total revenue equals total expenses (break-even/profit point)",
+            "When the accounting software is updated",
+            "When a loan is approved"
+          ],
+          "correctAnswer": "When total revenue equals total expenses (break-even/profit point)",
+          "explanation": "Determining profitability or break-even helps assess viability and is part of interpreting financial data in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which source is commonly considered 'initial capital' for starting a small business?",
+          "options": [
+            "Monthly utility bills",
+            "Owner's personal savings",
+            "Daily sales receipts post-launch",
+            "Expired inventory"
+          ],
+          "correctAnswer": "Owner's personal savings",
+          "explanation": "Initial capital often includes the owner's savings or personal investment; identifying initial capital assets is an objective in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What factor best describes 'creditworthiness' for business credit decisions?",
+          "options": [
+            "Company logo design",
+            "Credit records, ratings, and payment history",
+            "Number of product SKUs",
+            "Number of employees"
+          ],
+          "correctAnswer": "Credit records, ratings, and payment history",
+          "explanation": "Creditworthiness depends on records, ratings, and reports, which lenders evaluate according to the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Comparing costs, qualifications, and procedures for various forms of credit helps a business to:",
+          "options": [
+            "Avoid hiring accountants",
+            "Choose the most suitable financing option",
+            "Ignore interest rates",
+            "Automate payroll"
+          ],
+          "correctAnswer": "Choose the most suitable financing option",
+          "explanation": "Comparing credit options clarifies costs and qualifications so businesses can select appropriate credit—an explicit objective in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which is a common method for solving business credit problems?",
+          "options": [
+            "Ignoring creditor notices",
+            "Negotiating payment plans or improving credit practices",
+            "Closing the business immediately",
+            "Posting on social media"
+          ],
+          "correctAnswer": "Negotiating payment plans or improving credit practices",
+          "explanation": "Problem-solving for credit includes negotiation and credit management strategies, as the guide outlines methods for addressing credit problems. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "The 'marketing mix' consists of which four elements commonly known as the 4 Ps?",
+          "options": [
+            "Product, Price, Place, Promotion",
+            "People, Process, Packaging, Profit",
+            "Plan, Produce, Publish, Pay",
+            "Place, Price, Performance, Promotion"
+          ],
+          "correctAnswer": "Product, Price, Place, Promotion",
+          "explanation": "Marketing mix focuses on product, price, place (distribution), and promotion, per the study guide's marketing objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why is gathering and synthesizing marketing information important?",
+          "options": [
+            "To decorate the storefront",
+            "To make informed business decisions based on market data",
+            "To increase product weight",
+            "To avoid legal compliance"
+          ],
+          "correctAnswer": "To make informed business decisions based on market data",
+          "explanation": "Collecting and evaluating marketing data supports decision-making and recognizing needed changes, a stated objective in the marketing section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "A company that uses pricing strategies to match customer perceptions of value is trying to:",
+          "options": [
+            "Maximize return while meeting perceived value",
+            "Guarantee product quality automatically",
+            "Avoid paying taxes",
+            "Increase employee satisfaction only"
+          ],
+          "correctAnswer": "Maximize return while meeting perceived value",
+          "explanation": "Pricing strategies balance return and customer value perception, explicitly noted in the marketing objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which practice best improves customer relations according to the guide?",
+          "options": [
+            "Ignoring complaints",
+            "Delivering consistent, effective customer service",
+            "Increasing prices daily",
+            "Reducing product features"
+          ],
+          "correctAnswer": "Delivering consistent, effective customer service",
+          "explanation": "Effective customer relation skills and customer service aim to improve loyalty and profitability, a marketing management objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "A well-written job description primarily helps to:",
+          "options": [
+            "Predict stock market movements",
+            "Clarify roles and expedite workflow",
+            "Calculate sales tax",
+            "Design a logo"
+          ],
+          "correctAnswer": "Clarify roles and expedite workflow",
+          "explanation": "Job descriptions and org charts clarify responsibilities and expedite workflow, as detailed in personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What is a key reason companies implement ongoing training programs?",
+          "options": [
+            "To increase payroll taxes",
+            "To improve employee skills and productivity",
+            "To slow hiring processes",
+            "To reduce product quality"
+          ],
+          "correctAnswer": "To improve employee skills and productivity",
+          "explanation": "Training programs increase staff competence and support business goals; the guide emphasizes orientation and ongoing training. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which procedure helps ensure consistent application of workplace rules and addresses grievances?",
+          "options": [
+            "Ad-hoc decision making",
+            "A written personnel policy and grievance system",
+            "Randomized scheduling",
+            "Eliminating performance reviews"
+          ],
+          "correctAnswer": "A written personnel policy and grievance system",
+          "explanation": "Written policies and a grievance system ensure consistent employee treatment and are explicitly recommended in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why should a business develop separation and termination procedures?",
+          "options": [
+            "To make paperwork optional",
+            "To ensure lawful, consistent processing of personnel actions",
+            "To avoid paying severance",
+            "To replace evaluations"
+          ],
+          "correctAnswer": "To ensure lawful, consistent processing of personnel actions",
+          "explanation": "Proper separation procedures protect both employee and employer and are listed among personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which activity is part of tax planning for a small business?",
+          "options": [
+            "Selecting a logo color",
+            "Analyzing tax structure consequences for business decisions",
+            "Choosing office furniture",
+            "Posting daily sales on social media"
+          ],
+          "correctAnswer": "Analyzing tax structure consequences for business decisions",
+          "explanation": "Tax planning involves analyzing tax consequences to inform business decisions, an objective in the Taxes section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Who is primarily responsible for applying regulations regarding employee/employer taxes?",
+          "options": [
+            "Customers",
+            "The business (employer)",
+            "Competitors",
+            "Suppliers"
+          ],
+          "correctAnswer": "The business (employer)",
+          "explanation": "Employers must comply with employee/employer tax regulations; the guide identifies applying such regulations as a tax objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Completing and implementing state sales tax requirements is important because:",
+          "options": [
+            "It improves marketing",
+            "It ensures legal compliance and proper tax collection",
+            "It increases inventory turnover",
+            "It reduces advertising costs"
+          ],
+          "correctAnswer": "It ensures legal compliance and proper tax collection",
+          "explanation": "State sales tax compliance is necessary to meet legal obligations and is explicitly included in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which phrase best captures why businesses use tax preparation procedures?",
+          "options": [
+            "To delay payments indefinitely",
+            "To determine tax liability accurately",
+            "To avoid keeping records",
+            "To reduce product quality"
+          ],
+          "correctAnswer": "To determine tax liability accurately",
+          "explanation": "Tax preparation procedures are used to calculate tax liabilities accurately, which helps with planning and compliance (Taxes section). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Applying ethical conduct in business relationships primarily helps a company to:",
+          "options": [
+            "Increase inventory shrinkage",
+            "Build trust and sustain community relations",
+            "Avoid hiring",
+            "Eliminate all competition"
+          ],
+          "correctAnswer": "Build trust and sustain community relations",
+          "explanation": "Ethical conduct fosters trust and positive community/business relations; the guide lists ethics as a key objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "A public relations program for a company should aim to:",
+          "options": [
+            "Conceal all business activities",
+            "Communicate business activities appropriately to the community and clients",
+            "Increase product defects",
+            "Replace marketing entirely"
+          ],
+          "correctAnswer": "Communicate business activities appropriately to the community and clients",
+          "explanation": "A PR program helps manage public perception and communicate the firm's activities—an objective under community/business relations. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Understanding federal, state, and local current events matters for businesses because:",
+          "options": [
+            "They determine the CEO's salary automatically",
+            "They can impact business operations and compliance",
+            "They increase store foot traffic automatically",
+            "They invalidate contracts"
+          ],
+          "correctAnswer": "They can impact business operations and compliance",
+          "explanation": "Local and broader current events can change regulations or market conditions and thus affect operations, per the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why should a business consider union-management relationships when planning for continuity?",
+          "options": [
+            "Unions always reduce profits",
+            "Union contracts can affect staffing, labor relations, and operations",
+            "Unions write marketing plans",
+            "Unions set product prices automatically"
+          ],
+          "correctAnswer": "Union contracts can affect staffing, labor relations, and operations",
+          "explanation": "Union-management relationships and contracts influence workforce stability and should be considered in business continuity planning (Community/Business Relations). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "A small business must keep current with laws and regulations because:",
+          "options": [
+            "Regulations never change",
+            "Compliance impacts business practices and avoids penalties",
+            "It helps avoid paying salaries",
+            "It ensures free advertising"
+          ],
+          "correctAnswer": "Compliance impacts business practices and avoids penalties",
+          "explanation": "Staying current with regulations prevents legal risks and ensures operations align with government requirements (Government Regulations section). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Exhibiting ethical conduct in business negotiations is included in the government regulations objectives because:",
+          "options": [
+            "Ethics replace legal requirements",
+            "Ethical behavior supports lawful and acceptable business practices",
+            "Ethics increase taxes",
+            "Ethics remove the need for advisors"
+          ],
+          "correctAnswer": "Ethical behavior supports lawful and acceptable business practices",
+          "explanation": "Ethical conduct complements legal compliance and is emphasized in the Government Regulations objectives as part of good business practice. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which action is least aligned with keeping current with laws that affect business practices?",
+          "options": [
+            "Regularly reviewing regulations",
+            "Ignoring regulatory updates",
+            "Consulting advisors",
+            "Documenting compliance procedures"
+          ],
+          "correctAnswer": "Ignoring regulatory updates",
+          "explanation": "Ignoring regulatory updates risks noncompliance, whereas the guide recommends identifying and keeping current with laws. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Understanding the role of government in business helps an entrepreneur to:",
+          "options": [
+            "Choose office furniture",
+            "Identify relevant regulations and support programs",
+            "Avoid paying rent",
+            "Hire celebrities"
+          ],
+          "correctAnswer": "Identify relevant regulations and support programs",
+          "explanation": "Knowing government roles helps identify regulations and available resources—consistent with the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why should a small business select professional advisors like attorneys and accountants?",
+          "options": [
+            "To delegate customer service",
+            "To ensure legal, financial, and insurance needs are professionally handled",
+            "To eliminate taxes",
+            "To replace marketing efforts"
+          ],
+          "correctAnswer": "To ensure legal, financial, and insurance needs are professionally handled",
+          "explanation": "Professional advisors provide expertise for legal, accounting, and insurance matters—an explicit objective in Legal Issues. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which practice helps protect a company from legal disputes over contracts?",
+          "options": [
+            "Not writing anything down",
+            "Legal review procedures for documents and contracts",
+            "Posting contract terms on social media",
+            "Relying only on verbal agreements"
+          ],
+          "correctAnswer": "Legal review procedures for documents and contracts",
+          "explanation": "Legal review reduces contract risk and is recommended in the Legal Issues objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Retaining accurate records is important because records:",
+          "options": [
+            "Increase inventory errors",
+            "Support legal, tax, and financial requirements",
+            "Prevent any legal issues automatically",
+            "Replace insurance"
+          ],
+          "correctAnswer": "Support legal, tax, and financial requirements",
+          "explanation": "Proper retention of records supports compliance and legal defense, as the guide advises. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which consumer protection concept should small businesses understand and apply?",
+          "options": [
+            "Expressed and implied warranties for sale of goods",
+            "Guaranteeing profits for all customers",
+            "Charging customers randomly",
+            "Avoiding product descriptions"
+          ],
+          "correctAnswer": "Expressed and implied warranties for sale of goods",
+          "explanation": "Understanding warranties and consumer protections is part of the Legal Issues knowledge area. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "During the Entrepreneurship event, what determines which teams advance to the role play round?",
+          "options": [
+            "Random draw",
+            "Team-averaged objective test score",
+            "Number of team members",
+            "Order of registration"
+          ],
+          "correctAnswer": "Team-averaged objective test score",
+          "explanation": "Advancement to role play is based on the team-averaged objective test score, per the Event Administration section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "How long is the objective test for the Entrepreneurship event?",
+          "options": [
+            "30 minutes",
+            "50 minutes",
+            "75 minutes",
+            "2 hours"
+          ],
+          "correctAnswer": "50 minutes",
+          "explanation": "The objective test duration is specified as 50 minutes in the Event Administration details. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "In the role play, how many notecards does each competitor receive for preparation and presentation?",
+          "options": [
+            "One notecard",
+            "Two notecards",
+            "Five notecards",
+            "No notecards allowed"
+          ],
+          "correctAnswer": "Two notecards",
+          "explanation": "Each competitor is provided two notecards for use during preparation and the presentation (Role Play materials). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which of the following is NOT allowed during the interactive role play preparation or presentation?",
+          "options": [
+            "Writing notes on provided notecards",
+            "Using conference-provided secret scenario",
+            "Bringing in visual props or technology",
+            "Sharing one copy of prompt among team members"
+          ],
+          "correctAnswer": "Bringing in visual props or technology",
+          "explanation": "The rules explicitly prohibit technology, reference materials, visuals, or props during role play preparation and presentation. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "If a competitor violates the Dress Code, what is the standard penalty indicated in the guidelines?",
+          "options": [
+            "Disqualification automatically",
+            "5-point deduction",
+            "No penalty",
+            "Removal from conference"
+          ],
+          "correctAnswer": "5-point deduction",
+          "explanation": "A 5-point penalty is assessed for Dress Code violations according to the Penalty Points section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which statement about the role play scoring is correct?",
+          "options": [
+            "Objective test scores determine the role play winners",
+            "Role play scores alone determine winners; objective test scores only break ties",
+            "Only objective test scores matter",
+            "Scores are not used to determine winners"
+          ],
+          "correctAnswer": "Role play scores alone determine winners; objective test scores only break ties",
+          "explanation": "The guidelines explain that role play round scores are used to determine winners and objective test scores break ties. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What happens to role play prompts after the event concludes?",
+          "options": [
+            "They are shared with all attendees immediately",
+            "Competitors must not discuss or share the prompts until the event concludes",
+            "They are posted online during the event",
+            "Teams keep their prompt copies"
+          ],
+          "correctAnswer": "Competitors must not discuss or share the prompts until the event concludes",
+          "explanation": "Confidentiality rules prohibit discussing or sharing role play prompts until the event ends to maintain fairness. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "If a team is late to their assigned presentation time, what is the indicated consequence?",
+          "options": [
+            "No consequence",
+            "5-point deduction if late for presentation",
+            "Automatic immediate disqualification always",
+            "Allowed to present without penalty"
+          ],
+          "correctAnswer": "5-point deduction if late for presentation",
+          "explanation": "Late arrival may lead to a 5-point penalty as specified in the Penalty Points and Event Administration sections. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: Which of the following guarantees a business will be profitable?",
+          "options": [
+            "A detailed business plan",
+            "A business plan plus market research and solid financials",
+            "Having a popular founder on social media",
+            "Filing articles of incorporation"
+          ],
+          "correctAnswer": "A business plan plus market research and solid financials",
+          "explanation": "A business plan alone does not guarantee profit; profitability requires sound market research and financial planning—this subtle distinction is emphasized in the feasibility and financial sections. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: Which reporting document shows profitability over a period of time rather than a single date?",
+          "options": [
+            "Balance sheet",
+            "Income statement",
+            "Inventory ledger",
+            "Articles of organization"
+          ],
+          "correctAnswer": "Income statement",
+          "explanation": "Income statements report revenues and expenses over a time period, while a balance sheet is a snapshot at a point in time—this distinction is a common misconception addressed by the financial objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: If a company has strong sales but negative cash flow, which is the best immediate concern?",
+          "options": [
+            "Marketing slogans",
+            "Timing of cash inflows/outflows",
+            "Changing the vision statement",
+            "Hiring more executives"
+          ],
+          "correctAnswer": "Timing of cash inflows/outflows",
+          "explanation": "Strong sales don't guarantee liquidity; cash flow timing determines whether the business can meet obligations—cash flow forecasting is highlighted in financial management. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: Which of these is the clearest sign that an entrepreneur should revisit their business model?",
+          "options": [
+            "Minor logo complaints",
+            "Repeated failure to reach break-even after planned timeframe",
+            "Having more competitors",
+            "Receiving praise on social media"
+          ],
+          "correctAnswer": "Repeated failure to reach break-even after planned timeframe",
+          "explanation": "Persistent failure to reach profitability suggests problems with the business model or assumptions; feasibility and financial analysis guide such decisions. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: Which of the following best describes a limitation of relying solely on owner’s personal savings for initial capital?",
+          "options": [
+            "It deletes legal obligations",
+            "It can limit growth potential and concentrate financial risk",
+            "It guarantees bank loans later",
+            "It removes the need for a business plan"
+          ],
+          "correctAnswer": "It can limit growth potential and concentrate financial risk",
+          "explanation": "Using only personal savings restricts available funds and increases personal risk, which is why comparing financing sources is recommended in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: A written personnel policy is intended to be flexible and never enforced strictly. True or false?",
+          "options": [
+            "True",
+            "False",
+            "Only for large companies",
+            "Only during economic downturns"
+          ],
+          "correctAnswer": "False",
+          "explanation": "Personnel policies provide consistency and should be enforced fairly; implying they are never enforced contradicts the guide's emphasis on consistency. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: Which of these is NOT a reason to consult an attorney when preparing business documents?",
+          "options": [
+            "To identify legal risks",
+            "To ensure enforceable contracts",
+            "To determine marketing slogans",
+            "To review compliance with laws"
+          ],
+          "correctAnswer": "To determine marketing slogans",
+          "explanation": "Attorneys assess legal risks and document enforceability; selecting marketing slogans is not a primary legal role (though IP counsel may advise). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: The role play presentation allows the use of personal laptops for slides if they aid the presentation. True or false?",
+          "options": [
+            "True",
+            "False",
+            "Only if judges approve",
+            "Only during Q&A"
+          ],
+          "correctAnswer": "False",
+          "explanation": "The guidelines prohibit technology, visuals, or props during role play, so laptops/slides are not allowed. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: An organization chart should always reflect the exact number of employees at all times. True or false?",
+          "options": [
+            "True",
+            "False",
+            "Only for public companies",
+            "Only at tax time"
+          ],
+          "correctAnswer": "False",
+          "explanation": "Organization charts represent structure and roles but need not be exact headcount trackers; they are planning tools per personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: Scoring for the Entrepreneurship event uses objective test scores to break ties in role play results. Does the objective test score also determine role play winners?",
+          "options": [
+            "Yes, objective test scores decide winners",
+            "No, role play scores determine winners and objective tests only break ties",
+            "Objective tests are ignored completely",
+            "Winners are chosen randomly"
+          ],
+          "correctAnswer": "No, role play scores determine winners and objective tests only break ties",
+          "explanation": "Role play scores decide winners; objective test scores are used only as tie-breakers, as specified in the scoring rules. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which element of a business plan most directly communicates the company's long-term purpose and aspirations? (Item 55)",
+          "options": [
+            "Operational schedule",
+            "Vision statement",
+            "Market price list",
+            "Expense ledger"
+          ],
+          "correctAnswer": "Vision statement",
+          "explanation": "A vision statement articulates the company's long-term purpose and aspirations and is a core part of business planning in the study guide (vision, mission, goals). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "When selecting a business opportunity, which factor is MOST critical according to a feasibility study? (Item 56)",
+          "options": [
+            "Personal preference for color schemes",
+            "Industry trends and competition",
+            "Number of social media followers",
+            "Favorite suppliers' logos"
+          ],
+          "correctAnswer": "Industry trends and competition",
+          "explanation": "Feasibility studies focus on industry trends, competition, and market segment to determine viability, as described in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which business ownership form typically offers the simplest startup process but places full liability on the owner? (Item 57)",
+          "options": [
+            "Corporation",
+            "Sole proprietorship",
+            "Limited liability company (LLC)",
+            "Cooperative"
+          ],
+          "correctAnswer": "Sole proprietorship",
+          "explanation": "A sole proprietorship is easy to form but exposes the owner to full personal liability, which is a standard business-structure tradeoff in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What is the primary purpose of an organizational chart in a startup? (Item 58)",
+          "options": [
+            "To display product pricing",
+            "To outline hierarchy and job responsibilities",
+            "To calculate tax liability",
+            "To list suppliers' contact info"
+          ],
+          "correctAnswer": "To outline hierarchy and job responsibilities",
+          "explanation": "Organizational charts clarify reporting relationships, staffing plans, and job descriptions, aiding workflow and personnel management (Study Guide: Business Plan & Personnel Management). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which financial statement provides a snapshot of a company's assets, liabilities, and owner's equity at a specific point in time? (Item 59)",
+          "options": [
+            "Income statement",
+            "Balance sheet",
+            "Cash flow projection",
+            "Sales summary"
+          ],
+          "correctAnswer": "Balance sheet",
+          "explanation": "A balance sheet shows assets, liabilities, and equity at a specific date — this is fundamental to financial management and interpretation of financial data. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why are cash flow projections important for a startup? (Item 60)",
+          "options": [
+            "They guarantee sales targets",
+            "They help forecast the timing of cash inflows and outflows",
+            "They replace the need for a budget",
+            "They prevent all credit problems"
+          ],
+          "correctAnswer": "They help forecast the timing of cash inflows and outflows",
+          "explanation": "Cash flow projections identify when cash will be available or short, informing budgeting and planning—a key objective in financial management. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Selecting an accounting system primarily helps a business to: (Item 61)",
+          "options": [
+            "Decorate the office",
+            "Apply good accounting practices and record transactions",
+            "Hire new staff automatically",
+            "Increase product prices arbitrarily"
+          ],
+          "correctAnswer": "Apply good accounting practices and record transactions",
+          "explanation": "An accounting system ensures consistent recording of transactions and supports preparation of financial statements, as stated in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What does 'point of profitability' refer to when analyzing financial data? (Item 62)",
+          "options": [
+            "The day taxes are filed",
+            "When total revenue equals total expenses (break-even/profit point)",
+            "When the accounting software is updated",
+            "When a loan is approved"
+          ],
+          "correctAnswer": "When total revenue equals total expenses (break-even/profit point)",
+          "explanation": "Determining profitability or break-even helps assess viability and is part of interpreting financial data in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which source is commonly considered 'initial capital' for starting a small business? (Item 63)",
+          "options": [
+            "Monthly utility bills",
+            "Owner's personal savings",
+            "Daily sales receipts post-launch",
+            "Expired inventory"
+          ],
+          "correctAnswer": "Owner's personal savings",
+          "explanation": "Initial capital often includes the owner's savings or personal investment; identifying initial capital assets is an objective in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What factor best describes 'creditworthiness' for business credit decisions? (Item 64)",
+          "options": [
+            "Company logo design",
+            "Credit records, ratings, and payment history",
+            "Number of product SKUs",
+            "Number of employees"
+          ],
+          "correctAnswer": "Credit records, ratings, and payment history",
+          "explanation": "Creditworthiness depends on records, ratings, and reports, which lenders evaluate according to the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Comparing costs, qualifications, and procedures for various forms of credit helps a business to: (Item 65)",
+          "options": [
+            "Avoid hiring accountants",
+            "Choose the most suitable financing option",
+            "Ignore interest rates",
+            "Automate payroll"
+          ],
+          "correctAnswer": "Choose the most suitable financing option",
+          "explanation": "Comparing credit options clarifies costs and qualifications so businesses can select appropriate credit—an explicit objective in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which is a common method for solving business credit problems? (Item 66)",
+          "options": [
+            "Ignoring creditor notices",
+            "Negotiating payment plans or improving credit practices",
+            "Closing the business immediately",
+            "Posting on social media"
+          ],
+          "correctAnswer": "Negotiating payment plans or improving credit practices",
+          "explanation": "Problem-solving for credit includes negotiation and credit management strategies, as the guide outlines methods for addressing credit problems. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "The 'marketing mix' consists of which four elements commonly known as the 4 Ps? (Item 67)",
+          "options": [
+            "Product, Price, Place, Promotion",
+            "People, Process, Packaging, Profit",
+            "Plan, Produce, Publish, Pay",
+            "Place, Price, Performance, Promotion"
+          ],
+          "correctAnswer": "Product, Price, Place, Promotion",
+          "explanation": "Marketing mix focuses on product, price, place (distribution), and promotion, per the study guide's marketing objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why is gathering and synthesizing marketing information important? (Item 68)",
+          "options": [
+            "To decorate the storefront",
+            "To make informed business decisions based on market data",
+            "To increase product weight",
+            "To avoid legal compliance"
+          ],
+          "correctAnswer": "To make informed business decisions based on market data",
+          "explanation": "Collecting and evaluating marketing data supports decision-making and recognizing needed changes, a stated objective in the marketing section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "A company that uses pricing strategies to match customer perceptions of value is trying to: (Item 69)",
+          "options": [
+            "Maximize return while meeting perceived value",
+            "Guarantee product quality automatically",
+            "Avoid paying taxes",
+            "Increase employee satisfaction only"
+          ],
+          "correctAnswer": "Maximize return while meeting perceived value",
+          "explanation": "Pricing strategies balance return and customer value perception, explicitly noted in the marketing objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which practice best improves customer relations according to the guide? (Item 70)",
+          "options": [
+            "Ignoring complaints",
+            "Delivering consistent, effective customer service",
+            "Increasing prices daily",
+            "Reducing product features"
+          ],
+          "correctAnswer": "Delivering consistent, effective customer service",
+          "explanation": "Effective customer relation skills and customer service aim to improve loyalty and profitability, a marketing management objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "A well-written job description primarily helps to: (Item 71)",
+          "options": [
+            "Predict stock market movements",
+            "Clarify roles and expedite workflow",
+            "Calculate sales tax",
+            "Design a logo"
+          ],
+          "correctAnswer": "Clarify roles and expedite workflow",
+          "explanation": "Job descriptions and org charts clarify responsibilities and expedite workflow, as detailed in personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What is a key reason companies implement ongoing training programs? (Item 72)",
+          "options": [
+            "To increase payroll taxes",
+            "To improve employee skills and productivity",
+            "To slow hiring processes",
+            "To reduce product quality"
+          ],
+          "correctAnswer": "To improve employee skills and productivity",
+          "explanation": "Training programs increase staff competence and support business goals; the guide emphasizes orientation and ongoing training. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which procedure helps ensure consistent application of workplace rules and addresses grievances? (Item 73)",
+          "options": [
+            "Ad-hoc decision making",
+            "A written personnel policy and grievance system",
+            "Randomized scheduling",
+            "Eliminating performance reviews"
+          ],
+          "correctAnswer": "A written personnel policy and grievance system",
+          "explanation": "Written policies and a grievance system ensure consistent employee treatment and are explicitly recommended in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why should a business develop separation and termination procedures? (Item 74)",
+          "options": [
+            "To make paperwork optional",
+            "To ensure lawful, consistent processing of personnel actions",
+            "To avoid paying severance",
+            "To replace evaluations"
+          ],
+          "correctAnswer": "To ensure lawful, consistent processing of personnel actions",
+          "explanation": "Proper separation procedures protect both employee and employer and are listed among personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which activity is part of tax planning for a small business? (Item 75)",
+          "options": [
+            "Selecting a logo color",
+            "Analyzing tax structure consequences for business decisions",
+            "Choosing office furniture",
+            "Posting daily sales on social media"
+          ],
+          "correctAnswer": "Analyzing tax structure consequences for business decisions",
+          "explanation": "Tax planning involves analyzing tax consequences to inform business decisions, an objective in the Taxes section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Who is primarily responsible for applying regulations regarding employee/employer taxes? (Item 76)",
+          "options": [
+            "Customers",
+            "The business (employer)",
+            "Competitors",
+            "Suppliers"
+          ],
+          "correctAnswer": "The business (employer)",
+          "explanation": "Employers must comply with employee/employer tax regulations; the guide identifies applying such regulations as a tax objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Completing and implementing state sales tax requirements is important because: (Item 77)",
+          "options": [
+            "It improves marketing",
+            "It ensures legal compliance and proper tax collection",
+            "It increases inventory turnover",
+            "It reduces advertising costs"
+          ],
+          "correctAnswer": "It ensures legal compliance and proper tax collection",
+          "explanation": "State sales tax compliance is necessary to meet legal obligations and is explicitly included in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which phrase best captures why businesses use tax preparation procedures? (Item 78)",
+          "options": [
+            "To delay payments indefinitely",
+            "To determine tax liability accurately",
+            "To avoid keeping records",
+            "To reduce product quality"
+          ],
+          "correctAnswer": "To determine tax liability accurately",
+          "explanation": "Tax preparation procedures are used to calculate tax liabilities accurately, which helps with planning and compliance (Taxes section). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Applying ethical conduct in business relationships primarily helps a company to: (Item 79)",
+          "options": [
+            "Increase inventory shrinkage",
+            "Build trust and sustain community relations",
+            "Avoid hiring",
+            "Eliminate all competition"
+          ],
+          "correctAnswer": "Build trust and sustain community relations",
+          "explanation": "Ethical conduct fosters trust and positive community/business relations; the guide lists ethics as a key objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "A public relations program for a company should aim to: (Item 80)",
+          "options": [
+            "Conceal all business activities",
+            "Communicate business activities appropriately to the community and clients",
+            "Increase product defects",
+            "Replace marketing entirely"
+          ],
+          "correctAnswer": "Communicate business activities appropriately to the community and clients",
+          "explanation": "A PR program helps manage public perception and communicate the firm's activities—an objective under community/business relations. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Understanding federal, state, and local current events matters for businesses because: (Item 81)",
+          "options": [
+            "They determine the CEO's salary automatically",
+            "They can impact business operations and compliance",
+            "They increase store foot traffic automatically",
+            "They invalidate contracts"
+          ],
+          "correctAnswer": "They can impact business operations and compliance",
+          "explanation": "Local and broader current events can change regulations or market conditions and thus affect operations, per the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why should a business consider union-management relationships when planning for continuity? (Item 82)",
+          "options": [
+            "Unions always reduce profits",
+            "Union contracts can affect staffing, labor relations, and operations",
+            "Unions write marketing plans",
+            "Unions set product prices automatically"
+          ],
+          "correctAnswer": "Union contracts can affect staffing, labor relations, and operations",
+          "explanation": "Union-management relationships and contracts influence workforce stability and should be considered in business continuity planning (Community/Business Relations). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "A small business must keep current with laws and regulations because: (Item 83)",
+          "options": [
+            "Regulations never change",
+            "Compliance impacts business practices and avoids penalties",
+            "It helps avoid paying salaries",
+            "It ensures free advertising"
+          ],
+          "correctAnswer": "Compliance impacts business practices and avoids penalties",
+          "explanation": "Staying current with regulations prevents legal risks and ensures operations align with government requirements (Government Regulations section). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Exhibiting ethical conduct in business negotiations is included in the government regulations objectives because: (Item 84)",
+          "options": [
+            "Ethics replace legal requirements",
+            "Ethical behavior supports lawful and acceptable business practices",
+            "Ethics increase taxes",
+            "Ethics remove the need for advisors"
+          ],
+          "correctAnswer": "Ethical behavior supports lawful and acceptable business practices",
+          "explanation": "Ethical conduct complements legal compliance and is emphasized in the Government Regulations objectives as part of good business practice. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which action is least aligned with keeping current with laws that affect business practices? (Item 85)",
+          "options": [
+            "Regularly reviewing regulations",
+            "Ignoring regulatory updates",
+            "Consulting advisors",
+            "Documenting compliance procedures"
+          ],
+          "correctAnswer": "Ignoring regulatory updates",
+          "explanation": "Ignoring regulatory updates risks noncompliance, whereas the guide recommends identifying and keeping current with laws. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Understanding the role of government in business helps an entrepreneur to: (Item 86)",
+          "options": [
+            "Choose office furniture",
+            "Identify relevant regulations and support programs",
+            "Avoid paying rent",
+            "Hire celebrities"
+          ],
+          "correctAnswer": "Identify relevant regulations and support programs",
+          "explanation": "Knowing government roles helps identify regulations and available resources—consistent with the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Why should a small business select professional advisors like attorneys and accountants? (Item 87)",
+          "options": [
+            "To delegate customer service",
+            "To ensure legal, financial, and insurance needs are professionally handled",
+            "To eliminate taxes",
+            "To replace marketing efforts"
+          ],
+          "correctAnswer": "To ensure legal, financial, and insurance needs are professionally handled",
+          "explanation": "Professional advisors provide expertise for legal, accounting, and insurance matters—an explicit objective in Legal Issues. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which practice helps protect a company from legal disputes over contracts? (Item 88)",
+          "options": [
+            "Not writing anything down",
+            "Legal review procedures for documents and contracts",
+            "Posting contract terms on social media",
+            "Relying only on verbal agreements"
+          ],
+          "correctAnswer": "Legal review procedures for documents and contracts",
+          "explanation": "Legal review reduces contract risk and is recommended in the Legal Issues objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Retaining accurate records is important because records: (Item 89)",
+          "options": [
+            "Increase inventory errors",
+            "Support legal, tax, and financial requirements",
+            "Prevent any legal issues automatically",
+            "Replace insurance"
+          ],
+          "correctAnswer": "Support legal, tax, and financial requirements",
+          "explanation": "Proper retention of records supports compliance and legal defense, as the guide advises. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which consumer protection concept should small businesses understand and apply? (Item 90)",
+          "options": [
+            "Expressed and implied warranties for sale of goods",
+            "Guaranteeing profits for all customers",
+            "Charging customers randomly",
+            "Avoiding product descriptions"
+          ],
+          "correctAnswer": "Expressed and implied warranties for sale of goods",
+          "explanation": "Understanding warranties and consumer protections is part of the Legal Issues knowledge area. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "During the Entrepreneurship event, what determines which teams advance to the role play round? (Item 91)",
+          "options": [
+            "Random draw",
+            "Team-averaged objective test score",
+            "Number of team members",
+            "Order of registration"
+          ],
+          "correctAnswer": "Team-averaged objective test score",
+          "explanation": "Advancement to role play is based on the team-averaged objective test score, per the Event Administration section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "How long is the objective test for the Entrepreneurship event? (Item 92)",
+          "options": [
+            "30 minutes",
+            "50 minutes",
+            "75 minutes",
+            "2 hours"
+          ],
+          "correctAnswer": "50 minutes",
+          "explanation": "The objective test duration is specified as 50 minutes in the Event Administration details. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "In the role play, how many notecards does each competitor receive for preparation and presentation? (Item 93)",
+          "options": [
+            "One notecard",
+            "Two notecards",
+            "Five notecards",
+            "No notecards allowed"
+          ],
+          "correctAnswer": "Two notecards",
+          "explanation": "Each competitor is provided two notecards for use during preparation and the presentation (Role Play materials). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which of the following is NOT allowed during the interactive role play preparation or presentation? (Item 94)",
+          "options": [
+            "Writing notes on provided notecards",
+            "Using conference-provided secret scenario",
+            "Bringing in visual props or technology",
+            "Sharing one copy of prompt among team members"
+          ],
+          "correctAnswer": "Bringing in visual props or technology",
+          "explanation": "The rules explicitly prohibit technology, reference materials, visuals, or props during role play preparation and presentation. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "If a competitor violates the Dress Code, what is the standard penalty indicated in the guidelines? (Item 95)",
+          "options": [
+            "Disqualification automatically",
+            "5-point deduction",
+            "No penalty",
+            "Removal from conference"
+          ],
+          "correctAnswer": "5-point deduction",
+          "explanation": "A 5-point penalty is assessed for Dress Code violations according to the Penalty Points section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Which statement about the role play scoring is correct? (Item 96)",
+          "options": [
+            "Objective test scores determine the role play winners",
+            "Role play scores alone determine winners; objective test scores only break ties",
+            "Only objective test scores matter",
+            "Scores are not used to determine winners"
+          ],
+          "correctAnswer": "Role play scores alone determine winners; objective test scores only break ties",
+          "explanation": "The guidelines explain that role play round scores are used to determine winners and objective test scores break ties. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "What happens to role play prompts after the event concludes? (Item 97)",
+          "options": [
+            "They are shared with all attendees immediately",
+            "Competitors must not discuss or share the prompts until the event concludes",
+            "They are posted online during the event",
+            "Teams keep their prompt copies"
+          ],
+          "correctAnswer": "Competitors must not discuss or share the prompts until the event concludes",
+          "explanation": "Confidentiality rules prohibit discussing or sharing role play prompts until the event ends to maintain fairness. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "If a team is late to their assigned presentation time, what is the indicated consequence? (Item 98)",
+          "options": [
+            "No consequence",
+            "5-point deduction if late for presentation",
+            "Automatic immediate disqualification always",
+            "Allowed to present without penalty"
+          ],
+          "correctAnswer": "5-point deduction if late for presentation",
+          "explanation": "Late arrival may lead to a 5-point penalty as specified in the Penalty Points and Event Administration sections. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: Which of the following guarantees a business will be profitable? (Item 99)",
+          "options": [
+            "A detailed business plan",
+            "A business plan plus market research and solid financials",
+            "Having a popular founder on social media",
+            "Filing articles of incorporation"
+          ],
+          "correctAnswer": "A business plan plus market research and solid financials",
+          "explanation": "A business plan alone does not guarantee profit; profitability requires sound market research and financial planning—this subtle distinction is emphasized in the feasibility and financial sections. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        },
+        {
+          "question": "Trick: Which reporting document shows profitability over a period of time rather than a single date? (Item 100)",
+          "options": [
+            "Balance sheet",
+            "Income statement",
+            "Inventory ledger",
+            "Articles of organization"
+          ],
+          "correctAnswer": "Income statement",
+          "explanation": "Income statements report revenues and expenses over a time period, while a balance sheet is a snapshot at a point in time—this distinction is a common misconception addressed by the financial objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+        }
+      ]
+    }
+  ]
+}
