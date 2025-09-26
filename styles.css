@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+.flashcard {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.options li {
+  background: #eee;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.options li.correct {
+  background: #c8e6c9;
+}
+.options li.incorrect {
+  background: #ffcdd2;
+}
+.explanation {
+  margin-top: 15px;
+  font-style: italic;
+}
+
