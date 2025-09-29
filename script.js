@@ -8,17 +8,19 @@ fetch('tests.json')
     questions = data.tests[0].topics.flatMap(topic =>
       topic.questions.map(q => ({ ...q, topic: topic.topic }))
     );
+
+    // Shuffle the questions array so the order is randomized
+    shuffleArray(questions);
+
     generateFlashcard();
   });
 
-function scrambleText(text) {
-  // Split text into words, shuffle, and join back
-  const words = text.split(' ');
-  for (let i = words.length - 1; i > 0; i--) {
+// Fisher-Yates shuffle
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [words[i], words[j]] = [words[j], words[i]];
+    [array[i], array[j]] = [array[j], array[i]];
   }
-  return words.join(' ');
 }
 
 function generateFlashcard() {
@@ -27,8 +29,8 @@ function generateFlashcard() {
 
   if (questions.length === 0) return;
 
-  // Pick a random question
-  const q = questions[Math.floor(Math.random() * questions.length)];
+  // Pick the first question in the shuffled array
+  const q = questions.shift(); // removes it from array so next flashcard is different
 
   // Create card container
   const card = document.createElement('div');
@@ -40,10 +42,10 @@ function generateFlashcard() {
   topicDiv.textContent = `Topic: ${q.topic}`;
   card.appendChild(topicDiv);
 
-  // Scrambled question text
+  // Question text (unaltered)
   const questionDiv = document.createElement('div');
   questionDiv.className = 'question';
-  questionDiv.textContent = scrambleText(q.question);
+  questionDiv.textContent = q.question;
   card.appendChild(questionDiv);
 
   // Options
