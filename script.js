@@ -151,21 +151,13 @@ function displayScore() {
   scoreDiv.innerHTML = html;
 }
 
-// Save scores in cookies (per test)
+// Save scores in localStorage (per test)
 function saveScore() {
-  const cookieName = `score_${encodeURIComponent(currentTest.testName)}`;
-  document.cookie = `${cookieName}=${JSON.stringify(scores)}; path=/; max-age=31536000`; // 1 year
+  localStorage.setItem(`score_${currentTest.testName}`, JSON.stringify(scores));
 }
 
-// Load scores from cookies
+// Load scores from localStorage
 function loadScore(testName) {
-  const cookieName = `score_${encodeURIComponent(testName)}=`;
-  const cookies = document.cookie.split(';');
-  for (let c of cookies) {
-    c = c.trim();
-    if (c.indexOf(cookieName) === 0) {
-      return JSON.parse(c.substring(cookieName.length));
-    }
-  }
-  return null;
+  const stored = localStorage.getItem(`score_${testName}`);
+  return stored ? JSON.parse(stored) : null;
 }
