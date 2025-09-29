@@ -9,13 +9,13 @@ fetch('tests.json')
       topic.questions.map(q => ({ ...q, topic: topic.topic }))
     );
 
-    // Shuffle the questions array so the order is randomized
+    // Shuffle the array so the question order is random
     shuffleArray(questions);
 
     generateFlashcard();
   });
 
-// Fisher-Yates shuffle
+// Fisher-Yates shuffle to randomize question order
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -30,7 +30,7 @@ function generateFlashcard() {
   if (questions.length === 0) return;
 
   // Pick the first question in the shuffled array
-  const q = questions.shift(); // removes it from array so next flashcard is different
+  const q = questions.shift(); // removes it so next flashcard is different
 
   // Create card container
   const card = document.createElement('div');
@@ -45,7 +45,7 @@ function generateFlashcard() {
   // Question text (unaltered)
   const questionDiv = document.createElement('div');
   questionDiv.className = 'question';
-  questionDiv.textContent = q.question;
+  questionDiv.textContent = q.question; // Display exactly as in JSON
   card.appendChild(questionDiv);
 
   // Options
@@ -67,8 +67,7 @@ function generateFlashcard() {
         li.classList.add('correct');
       } else {
         li.classList.add('incorrect');
-        // Show explanation only after wrong attempt
-        explanationDiv.style.display = 'block';
+        explanationDiv.style.display = 'block'; // show explanation only on wrong attempt
       }
     };
     optionsList.appendChild(li);
