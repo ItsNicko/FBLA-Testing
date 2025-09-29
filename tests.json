@@ -504,7 +504,7 @@
           ]
         },
         {
-          "testName": "Data Literacy and Foundations",
+          "topic": "Data Literacy and Foundations",
           "questions": [
             {
               "question": "Data science primarily focuses on:",
