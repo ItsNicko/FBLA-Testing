@@ -2,7 +2,7 @@ let allTests = [];
 let questions = [];
 let currentTest = null;
 let currentQuestionIndex = 0;
-let scores = { topic: {}, test: 0 };
+let scores = { test: 0 };
 
 // Fetch tests JSON
 fetch('tests.json')
@@ -25,14 +25,13 @@ function populateTestSelector() {
   });
 
   selector.onchange = () => startTest(selector.value);
-  // Auto-select first test
-  startTest(0);
+  startTest(0); // auto-select first test
 }
 
 function startTest(testIndex) {
   currentTest = allTests[testIndex];
 
-  // Flatten questions with topics
+  // Flatten questions
   questions = currentTest.topics.flatMap(topic =>
     topic.questions.map(q => ({ ...q, topic: topic.topic }))
   );
@@ -40,24 +39,16 @@ function startTest(testIndex) {
   // Shuffle questions
   shuffleArray(questions);
 
-  // Load previous scores if they exist
+  // Load previous score
   const loadedScores = loadScore(currentTest.testName);
-  if (loadedScores) {
-    scores = loadedScores;
-  } else {
-    // Initialize scores if no previous data
-    scores = { topic: {}, test: 0 };
-    questions.forEach(q => {
-      if (!scores.topic[q.topic]) scores.topic[q.topic] = { correct: 0, total: 0 };
-    });
-  }
+  scores = loadedScores ? loadedScores : { test: 0 };
 
   currentQuestionIndex = 0;
-  displayScore();
+  displayProgress();
   generateFlashcard();
 }
 
-// Shuffle array (Fisher-Yates)
+// Shuffle array
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -71,9 +62,8 @@ function generateFlashcard() {
   container.innerHTML = '';
 
   if (currentQuestionIndex >= questions.length) {
-    container.textContent = 'Test completed!';
+    container.textContent = `Test completed! You got ${scores.test} out of ${questions.length} correct.`;
     saveScore();
-    displayScore();
     return;
   }
 
@@ -81,12 +71,6 @@ function generateFlashcard() {
 
   const card = document.createElement('div');
   card.className = 'flashcard';
-
-  // Topic
-  const topicDiv = document.createElement('div');
-  topicDiv.className = 'topic';
-  topicDiv.textContent = `Topic: ${q.topic}`;
-  card.appendChild(topicDiv);
 
   // Question
   const questionDiv = document.createElement('div');
@@ -109,23 +93,18 @@ function generateFlashcard() {
     const li = document.createElement('li');
     li.textContent = option;
     li.onclick = () => {
-      // Count total for topic
-      scores.topic[q.topic].total++;
-
       if (option === q.correctAnswer) {
         li.classList.add('correct');
-        scores.topic[q.topic].correct++;
         scores.test++;
       } else {
         li.classList.add('incorrect');
-        explanationDiv.style.display = 'block'; // show explanation only on wrong attempt
+        explanationDiv.style.display = 'block'; // show explanation on wrong attempt
       }
 
-      // Move to next question after short delay
       setTimeout(() => {
         currentQuestionIndex++;
-        displayScore();
-        saveScore(); // save after each question
+        displayProgress();
+        saveScore();
         generateFlashcard();
       }, 800);
     };
@@ -136,22 +115,13 @@ function generateFlashcard() {
   container.appendChild(card);
 }
 
-// Display scores
-function displayScore() {
-  const scoreDiv = document.getElementById('score');
-  if (!scoreDiv) return;
-
-  let html = `<strong>Test Score:</strong> ${scores.test} / ${questions.length}<br>`;
-  html += `<strong>Topic Scores:</strong><br>`;
-  for (let topic in scores.topic) {
-    const t = scores.topic[topic];
-    html += `${topic}: ${t.correct} / ${t.total}<br>`;
-  }
-
-  scoreDiv.innerHTML = html;
+// Display progress
+function displayProgress() {
+  const progressDiv = document.getElementById('score'); // reuse score div
+  progressDiv.innerHTML = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
 }
 
-// Save scores in localStorage (per test)
+// Save scores in localStorage
 function saveScore() {
   localStorage.setItem(`score_${currentTest.testName}`, JSON.stringify(scores));
 }
@@ -161,3 +131,4 @@ function loadScore(testName) {
   const stored = localStorage.getItem(`score_${testName}`);
   return stored ? JSON.parse(stored) : null;
 }
+
