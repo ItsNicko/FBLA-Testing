@@ -500,7 +500,7 @@
               "options": ["Represents probabilistic dependencies between variables", "Only predicts categorical outcomes", "Uses linear regression", "Is always unsupervised"],
               "correctAnswer": "Represents probabilistic dependencies between variables",
               "explanation": "Bayesian networks model conditional probabilities, while decision trees partition data based on features."
- }
+            }
           ]
         },
         {
