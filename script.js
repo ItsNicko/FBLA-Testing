@@ -1,21 +1,57 @@
+let allTests = [];
 let questions = [];
+let currentTest = null;
+let currentQuestionIndex = 0;
+let scores = { topic: {}, test: 0 };
 
-// Fetch JSON and flatten all questions from all topics into a single array
+// Fetch tests JSON
 fetch('tests.json')
-  .then(response => response.json())
+  .then(res => res.json())
   .then(data => {
-    // Flatten questions and keep track of their topic
-    questions = data.tests[0].topics.flatMap(topic =>
-      topic.questions.map(q => ({ ...q, topic: topic.topic }))
-    );
-
-    // Shuffle the array so the question order is random
-    shuffleArray(questions);
-
-    generateFlashcard();
+    allTests = data.tests;
+    populateTestSelector();
   });
 
-// Fisher-Yates shuffle to randomize question order
+// Populate dropdown to select test
+function populateTestSelector() {
+  const selector = document.getElementById('test-selector');
+  selector.innerHTML = '';
+
+  allTests.forEach((t, index) => {
+    const option = document.createElement('option');
+    option.value = index;
+    option.textContent = t.testName;
+    selector.appendChild(option);
+  });
+
+  selector.onchange = () => startTest(selector.value);
+  // Auto-select first test
+  startTest(0);
+}
+
+function startTest(testIndex) {
+  currentTest = allTests[testIndex];
+
+  // Flatten questions with topics
+  questions = currentTest.topics.flatMap(topic =>
+    topic.questions.map(q => ({ ...q, topic: topic.topic }))
+  );
+
+  // Shuffle questions
+  shuffleArray(questions);
+
+  // Initialize scores
+  scores = { topic: {}, test: 0 };
+  questions.forEach(q => {
+    if (!scores.topic[q.topic]) scores.topic[q.topic] = { correct: 0, total: 0 };
+  });
+
+  currentQuestionIndex = 0;
+  displayScore();
+  generateFlashcard();
+}
+
+// Shuffle array (Fisher-Yates)
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -23,36 +59,39 @@ function shuffleArray(array) {
   }
 }
 
+// Generate flashcard
 function generateFlashcard() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = '';
 
-  if (questions.length === 0) return;
+  if (currentQuestionIndex >= questions.length) {
+    container.textContent = 'Test completed!';
+    saveScore();
+    displayScore();
+    return;
+  }
 
-  // Pick the first question in the shuffled array
-  const q = questions.shift(); // removes it so next flashcard is different
+  const q = questions[currentQuestionIndex];
 
-  // Create card container
   const card = document.createElement('div');
   card.className = 'flashcard';
 
-  // Topic name
+  // Topic
   const topicDiv = document.createElement('div');
   topicDiv.className = 'topic';
   topicDiv.textContent = `Topic: ${q.topic}`;
   card.appendChild(topicDiv);
 
-  // Question text (unaltered)
+  // Question
   const questionDiv = document.createElement('div');
   questionDiv.className = 'question';
-  questionDiv.textContent = q.question; // Display exactly as in JSON
+  questionDiv.textContent = q.question;
   card.appendChild(questionDiv);
 
   // Options
   const optionsList = document.createElement('ul');
   optionsList.className = 'options';
 
-  // Explanation (hidden initially)
   const explanationDiv = document.createElement('div');
   explanationDiv.className = 'explanation';
   explanationDiv.style.display = 'none';
@@ -63,16 +102,62 @@ function generateFlashcard() {
     const li = document.createElement('li');
     li.textContent = option;
     li.onclick = () => {
+      // Count total for topic
+      scores.topic[q.topic].total++;
+
       if (option === q.correctAnswer) {
         li.classList.add('correct');
+        scores.topic[q.topic].correct++;
+        scores.test++;
       } else {
         li.classList.add('incorrect');
-        explanationDiv.style.display = 'block'; // show explanation only on wrong attempt
+        explanationDiv.style.display = 'block';
       }
+
+      // Move to next question after a short delay
+      setTimeout(() => {
+        currentQuestionIndex++;
+        displayScore();
+        generateFlashcard();
+      }, 800);
     };
     optionsList.appendChild(li);
   });
 
   card.appendChild(optionsList);
   container.appendChild(card);
+}
+
+// Display scores
+function displayScore() {
+  const scoreDiv = document.getElementById('score');
+  if (!scoreDiv) return;
+
+  let html = `<strong>Test Score:</strong> ${scores.test} / ${questions.length}<br>`;
+  html += `<strong>Topic Scores:</strong><br>`;
+  for (let topic in scores.topic) {
+    const t = scores.topic[topic];
+    html += `${topic}: ${t.correct} / ${t.total}<br>`;
+  }
+
+  scoreDiv.innerHTML = html;
+}
+
+// Save scores in cookies (per test)
+function saveScore() {
+  const cookieName = `score_${encodeURIComponent(currentTest.testName)}`;
+  document.cookie = `${cookieName}=${JSON.stringify(scores)}; path=/; max-age=31536000`; // 1 year
+}
+
+// Optional: Load scores from cookies if needed
+function loadScore(testName) {
+  const cookieName = `score_${encodeURIComponent(testName)}=`;
+  const cookies = document.cookie.split(';');
+  for (let c of cookies) {
+    c = c.trim();
+    if (c.indexOf(cookieName) === 0) {
+      return JSON.parse(c.substring(cookieName.length));
+    }
+  }
+  return null;
 }
