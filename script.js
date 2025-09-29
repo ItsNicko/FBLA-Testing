@@ -40,11 +40,17 @@ function startTest(testIndex) {
   // Shuffle questions
   shuffleArray(questions);
 
-  // Initialize scores
-  scores = { topic: {}, test: 0 };
-  questions.forEach(q => {
-    if (!scores.topic[q.topic]) scores.topic[q.topic] = { correct: 0, total: 0 };
-  });
+  // Load previous scores if they exist
+  const loadedScores = loadScore(currentTest.testName);
+  if (loadedScores) {
+    scores = loadedScores;
+  } else {
+    // Initialize scores if no previous data
+    scores = { topic: {}, test: 0 };
+    questions.forEach(q => {
+      if (!scores.topic[q.topic]) scores.topic[q.topic] = { correct: 0, total: 0 };
+    });
+  }
 
   currentQuestionIndex = 0;
   displayScore();
@@ -92,6 +98,7 @@ function generateFlashcard() {
   const optionsList = document.createElement('ul');
   optionsList.className = 'options';
 
+  // Explanation (hidden initially)
   const explanationDiv = document.createElement('div');
   explanationDiv.className = 'explanation';
   explanationDiv.style.display = 'none';
@@ -111,13 +118,14 @@ function generateFlashcard() {
         scores.test++;
       } else {
         li.classList.add('incorrect');
-        explanationDiv.style.display = 'block';
+        explanationDiv.style.display = 'block'; // show explanation only on wrong attempt
       }
 
-      // Move to next question after a short delay
+      // Move to next question after short delay
       setTimeout(() => {
         currentQuestionIndex++;
         displayScore();
+        saveScore(); // save after each question
         generateFlashcard();
       }, 800);
     };
@@ -149,7 +157,7 @@ function saveScore() {
   document.cookie = `${cookieName}=${JSON.stringify(scores)}; path=/; max-age=31536000`; // 1 year
 }
 
-// Optional: Load scores from cookies if needed
+// Load scores from cookies
 function loadScore(testName) {
   const cookieName = `score_${encodeURIComponent(testName)}=`;
   const cookies = document.cookie.split(';');
