@@ -15,8 +15,9 @@ fetch('tests.json')
 // Populate dropdown to select test
 function populateTestSelector() {
   const selector = document.getElementById('test-selector');
-  selector.innerHTML = '';
+  const startBtn = document.getElementById('start-test-btn');
 
+  selector.innerHTML = '';
   allTests.forEach((t, index) => {
     const option = document.createElement('option');
     option.value = index;
@@ -24,12 +25,16 @@ function populateTestSelector() {
     selector.appendChild(option);
   });
 
-  selector.onchange = () => startTest(selector.value);
-  startTest(0); // auto-select first test
+  startBtn.onclick = () => startTest(selector.value);
 }
 
+// Start the selected test
 function startTest(testIndex) {
   currentTest = allTests[testIndex];
+
+  // Remove selector and button
+  document.getElementById('test-selector').style.display = 'none';
+  document.getElementById('start-test-btn').style.display = 'none';
 
   // Flatten questions
   questions = currentTest.topics.flatMap(topic =>
@@ -39,7 +44,7 @@ function startTest(testIndex) {
   // Shuffle questions
   shuffleArray(questions);
 
-  // Load previous score
+  // Load previous score if exists
   const loadedScores = loadScore(currentTest.testName);
   scores = loadedScores ? loadedScores : { test: 0 };
 
@@ -98,7 +103,7 @@ function generateFlashcard() {
         scores.test++;
       } else {
         li.classList.add('incorrect');
-        explanationDiv.style.display = 'block'; // show explanation on wrong attempt
+        explanationDiv.style.display = 'block';
       }
 
       setTimeout(() => {
@@ -117,7 +122,7 @@ function generateFlashcard() {
 
 // Display progress
 function displayProgress() {
-  const progressDiv = document.getElementById('score'); // reuse score div
+  const progressDiv = document.getElementById('score');
   progressDiv.innerHTML = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
 }
 
@@ -131,4 +136,3 @@ function loadScore(testName) {
   const stored = localStorage.getItem(`score_${testName}`);
   return stored ? JSON.parse(stored) : null;
 }
-
