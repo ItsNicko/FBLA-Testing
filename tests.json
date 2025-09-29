@@ -1,1107 +1,638 @@
 {
   "tests": [
     {
-      "testName": "Entrepreneurship Knowledge Assessment",
-      "questions": [
-        {
-          "question": "Which element of a business plan most directly communicates the company's long-term purpose and aspirations?",
-          "options": [
-            "Operational schedule",
-            "Vision statement",
-            "Market price list",
-            "Expense ledger"
-          ],
-          "correctAnswer": "Vision statement",
-          "explanation": "A vision statement articulates the company's long-term purpose and aspirations and is a core part of business planning in the study guide (vision, mission, goals). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "When selecting a business opportunity, which factor is MOST critical according to a feasibility study?",
-          "options": [
-            "Personal preference for color schemes",
-            "Industry trends and competition",
-            "Number of social media followers",
-            "Favorite suppliers' logos"
-          ],
-          "correctAnswer": "Industry trends and competition",
-          "explanation": "Feasibility studies focus on industry trends, competition, and market segment to determine viability, as described in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which business ownership form typically offers the simplest startup process but places full liability on the owner?",
-          "options": [
-            "Corporation",
-            "Sole proprietorship",
-            "Limited liability company (LLC)",
-            "Cooperative"
-          ],
-          "correctAnswer": "Sole proprietorship",
-          "explanation": "A sole proprietorship is easy to form but exposes the owner to full personal liability, which is a standard business-structure tradeoff in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What is the primary purpose of an organizational chart in a startup?",
-          "options": [
-            "To display product pricing",
-            "To outline hierarchy and job responsibilities",
-            "To calculate tax liability",
-            "To list suppliers' contact info"
-          ],
-          "correctAnswer": "To outline hierarchy and job responsibilities",
-          "explanation": "Organizational charts clarify reporting relationships, staffing plans, and job descriptions, aiding workflow and personnel management (Study Guide: Business Plan & Personnel Management). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which financial statement provides a snapshot of a company's assets, liabilities, and owner's equity at a specific point in time?",
-          "options": [
-            "Income statement",
-            "Balance sheet",
-            "Cash flow projection",
-            "Sales summary"
-          ],
-          "correctAnswer": "Balance sheet",
-          "explanation": "A balance sheet shows assets, liabilities, and equity at a specific date — this is fundamental to financial management and interpretation of financial data. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why are cash flow projections important for a startup?",
-          "options": [
-            "They guarantee sales targets",
-            "They help forecast the timing of cash inflows and outflows",
-            "They replace the need for a budget",
-            "They prevent all credit problems"
-          ],
-          "correctAnswer": "They help forecast the timing of cash inflows and outflows",
-          "explanation": "Cash flow projections identify when cash will be available or short, informing budgeting and planning—a key objective in financial management. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Selecting an accounting system primarily helps a business to:",
-          "options": [
-            "Decorate the office",
-            "Apply good accounting practices and record transactions",
-            "Hire new staff automatically",
-            "Increase product prices arbitrarily"
-          ],
-          "correctAnswer": "Apply good accounting practices and record transactions",
-          "explanation": "An accounting system ensures consistent recording of transactions and supports preparation of financial statements, as stated in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What does 'point of profitability' refer to when analyzing financial data?",
-          "options": [
-            "The day taxes are filed",
-            "When total revenue equals total expenses (break-even/profit point)",
-            "When the accounting software is updated",
-            "When a loan is approved"
-          ],
-          "correctAnswer": "When total revenue equals total expenses (break-even/profit point)",
-          "explanation": "Determining profitability or break-even helps assess viability and is part of interpreting financial data in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which source is commonly considered 'initial capital' for starting a small business?",
-          "options": [
-            "Monthly utility bills",
-            "Owner's personal savings",
-            "Daily sales receipts post-launch",
-            "Expired inventory"
-          ],
-          "correctAnswer": "Owner's personal savings",
-          "explanation": "Initial capital often includes the owner's savings or personal investment; identifying initial capital assets is an objective in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What factor best describes 'creditworthiness' for business credit decisions?",
-          "options": [
-            "Company logo design",
-            "Credit records, ratings, and payment history",
-            "Number of product SKUs",
-            "Number of employees"
-          ],
-          "correctAnswer": "Credit records, ratings, and payment history",
-          "explanation": "Creditworthiness depends on records, ratings, and reports, which lenders evaluate according to the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Comparing costs, qualifications, and procedures for various forms of credit helps a business to:",
-          "options": [
-            "Avoid hiring accountants",
-            "Choose the most suitable financing option",
-            "Ignore interest rates",
-            "Automate payroll"
-          ],
-          "correctAnswer": "Choose the most suitable financing option",
-          "explanation": "Comparing credit options clarifies costs and qualifications so businesses can select appropriate credit—an explicit objective in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which is a common method for solving business credit problems?",
-          "options": [
-            "Ignoring creditor notices",
-            "Negotiating payment plans or improving credit practices",
-            "Closing the business immediately",
-            "Posting on social media"
-          ],
-          "correctAnswer": "Negotiating payment plans or improving credit practices",
-          "explanation": "Problem-solving for credit includes negotiation and credit management strategies, as the guide outlines methods for addressing credit problems. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "The 'marketing mix' consists of which four elements commonly known as the 4 Ps?",
-          "options": [
-            "Product, Price, Place, Promotion",
-            "People, Process, Packaging, Profit",
-            "Plan, Produce, Publish, Pay",
-            "Place, Price, Performance, Promotion"
-          ],
-          "correctAnswer": "Product, Price, Place, Promotion",
-          "explanation": "Marketing mix focuses on product, price, place (distribution), and promotion, per the study guide's marketing objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why is gathering and synthesizing marketing information important?",
-          "options": [
-            "To decorate the storefront",
-            "To make informed business decisions based on market data",
-            "To increase product weight",
-            "To avoid legal compliance"
-          ],
-          "correctAnswer": "To make informed business decisions based on market data",
-          "explanation": "Collecting and evaluating marketing data supports decision-making and recognizing needed changes, a stated objective in the marketing section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "A company that uses pricing strategies to match customer perceptions of value is trying to:",
-          "options": [
-            "Maximize return while meeting perceived value",
-            "Guarantee product quality automatically",
-            "Avoid paying taxes",
-            "Increase employee satisfaction only"
-          ],
-          "correctAnswer": "Maximize return while meeting perceived value",
-          "explanation": "Pricing strategies balance return and customer value perception, explicitly noted in the marketing objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which practice best improves customer relations according to the guide?",
-          "options": [
-            "Ignoring complaints",
-            "Delivering consistent, effective customer service",
-            "Increasing prices daily",
-            "Reducing product features"
-          ],
-          "correctAnswer": "Delivering consistent, effective customer service",
-          "explanation": "Effective customer relation skills and customer service aim to improve loyalty and profitability, a marketing management objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "A well-written job description primarily helps to:",
-          "options": [
-            "Predict stock market movements",
-            "Clarify roles and expedite workflow",
-            "Calculate sales tax",
-            "Design a logo"
-          ],
-          "correctAnswer": "Clarify roles and expedite workflow",
-          "explanation": "Job descriptions and org charts clarify responsibilities and expedite workflow, as detailed in personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What is a key reason companies implement ongoing training programs?",
-          "options": [
-            "To increase payroll taxes",
-            "To improve employee skills and productivity",
-            "To slow hiring processes",
-            "To reduce product quality"
-          ],
-          "correctAnswer": "To improve employee skills and productivity",
-          "explanation": "Training programs increase staff competence and support business goals; the guide emphasizes orientation and ongoing training. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which procedure helps ensure consistent application of workplace rules and addresses grievances?",
-          "options": [
-            "Ad-hoc decision making",
-            "A written personnel policy and grievance system",
-            "Randomized scheduling",
-            "Eliminating performance reviews"
-          ],
-          "correctAnswer": "A written personnel policy and grievance system",
-          "explanation": "Written policies and a grievance system ensure consistent employee treatment and are explicitly recommended in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why should a business develop separation and termination procedures?",
-          "options": [
-            "To make paperwork optional",
-            "To ensure lawful, consistent processing of personnel actions",
-            "To avoid paying severance",
-            "To replace evaluations"
-          ],
-          "correctAnswer": "To ensure lawful, consistent processing of personnel actions",
-          "explanation": "Proper separation procedures protect both employee and employer and are listed among personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which activity is part of tax planning for a small business?",
-          "options": [
-            "Selecting a logo color",
-            "Analyzing tax structure consequences for business decisions",
-            "Choosing office furniture",
-            "Posting daily sales on social media"
-          ],
-          "correctAnswer": "Analyzing tax structure consequences for business decisions",
-          "explanation": "Tax planning involves analyzing tax consequences to inform business decisions, an objective in the Taxes section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Who is primarily responsible for applying regulations regarding employee/employer taxes?",
-          "options": [
-            "Customers",
-            "The business (employer)",
-            "Competitors",
-            "Suppliers"
-          ],
-          "correctAnswer": "The business (employer)",
-          "explanation": "Employers must comply with employee/employer tax regulations; the guide identifies applying such regulations as a tax objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Completing and implementing state sales tax requirements is important because:",
-          "options": [
-            "It improves marketing",
-            "It ensures legal compliance and proper tax collection",
-            "It increases inventory turnover",
-            "It reduces advertising costs"
-          ],
-          "correctAnswer": "It ensures legal compliance and proper tax collection",
-          "explanation": "State sales tax compliance is necessary to meet legal obligations and is explicitly included in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which phrase best captures why businesses use tax preparation procedures?",
-          "options": [
-            "To delay payments indefinitely",
-            "To determine tax liability accurately",
-            "To avoid keeping records",
-            "To reduce product quality"
-          ],
-          "correctAnswer": "To determine tax liability accurately",
-          "explanation": "Tax preparation procedures are used to calculate tax liabilities accurately, which helps with planning and compliance (Taxes section). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Applying ethical conduct in business relationships primarily helps a company to:",
-          "options": [
-            "Increase inventory shrinkage",
-            "Build trust and sustain community relations",
-            "Avoid hiring",
-            "Eliminate all competition"
-          ],
-          "correctAnswer": "Build trust and sustain community relations",
-          "explanation": "Ethical conduct fosters trust and positive community/business relations; the guide lists ethics as a key objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "A public relations program for a company should aim to:",
-          "options": [
-            "Conceal all business activities",
-            "Communicate business activities appropriately to the community and clients",
-            "Increase product defects",
-            "Replace marketing entirely"
-          ],
-          "correctAnswer": "Communicate business activities appropriately to the community and clients",
-          "explanation": "A PR program helps manage public perception and communicate the firm's activities—an objective under community/business relations. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Understanding federal, state, and local current events matters for businesses because:",
-          "options": [
-            "They determine the CEO's salary automatically",
-            "They can impact business operations and compliance",
-            "They increase store foot traffic automatically",
-            "They invalidate contracts"
-          ],
-          "correctAnswer": "They can impact business operations and compliance",
-          "explanation": "Local and broader current events can change regulations or market conditions and thus affect operations, per the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why should a business consider union-management relationships when planning for continuity?",
-          "options": [
-            "Unions always reduce profits",
-            "Union contracts can affect staffing, labor relations, and operations",
-            "Unions write marketing plans",
-            "Unions set product prices automatically"
-          ],
-          "correctAnswer": "Union contracts can affect staffing, labor relations, and operations",
-          "explanation": "Union-management relationships and contracts influence workforce stability and should be considered in business continuity planning (Community/Business Relations). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "A small business must keep current with laws and regulations because:",
-          "options": [
-            "Regulations never change",
-            "Compliance impacts business practices and avoids penalties",
-            "It helps avoid paying salaries",
-            "It ensures free advertising"
-          ],
-          "correctAnswer": "Compliance impacts business practices and avoids penalties",
-          "explanation": "Staying current with regulations prevents legal risks and ensures operations align with government requirements (Government Regulations section). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Exhibiting ethical conduct in business negotiations is included in the government regulations objectives because:",
-          "options": [
-            "Ethics replace legal requirements",
-            "Ethical behavior supports lawful and acceptable business practices",
-            "Ethics increase taxes",
-            "Ethics remove the need for advisors"
-          ],
-          "correctAnswer": "Ethical behavior supports lawful and acceptable business practices",
-          "explanation": "Ethical conduct complements legal compliance and is emphasized in the Government Regulations objectives as part of good business practice. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which action is least aligned with keeping current with laws that affect business practices?",
-          "options": [
-            "Regularly reviewing regulations",
-            "Ignoring regulatory updates",
-            "Consulting advisors",
-            "Documenting compliance procedures"
-          ],
-          "correctAnswer": "Ignoring regulatory updates",
-          "explanation": "Ignoring regulatory updates risks noncompliance, whereas the guide recommends identifying and keeping current with laws. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Understanding the role of government in business helps an entrepreneur to:",
-          "options": [
-            "Choose office furniture",
-            "Identify relevant regulations and support programs",
-            "Avoid paying rent",
-            "Hire celebrities"
-          ],
-          "correctAnswer": "Identify relevant regulations and support programs",
-          "explanation": "Knowing government roles helps identify regulations and available resources—consistent with the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why should a small business select professional advisors like attorneys and accountants?",
-          "options": [
-            "To delegate customer service",
-            "To ensure legal, financial, and insurance needs are professionally handled",
-            "To eliminate taxes",
-            "To replace marketing efforts"
-          ],
-          "correctAnswer": "To ensure legal, financial, and insurance needs are professionally handled",
-          "explanation": "Professional advisors provide expertise for legal, accounting, and insurance matters—an explicit objective in Legal Issues. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which practice helps protect a company from legal disputes over contracts?",
-          "options": [
-            "Not writing anything down",
-            "Legal review procedures for documents and contracts",
-            "Posting contract terms on social media",
-            "Relying only on verbal agreements"
-          ],
-          "correctAnswer": "Legal review procedures for documents and contracts",
-          "explanation": "Legal review reduces contract risk and is recommended in the Legal Issues objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Retaining accurate records is important because records:",
-          "options": [
-            "Increase inventory errors",
-            "Support legal, tax, and financial requirements",
-            "Prevent any legal issues automatically",
-            "Replace insurance"
-          ],
-          "correctAnswer": "Support legal, tax, and financial requirements",
-          "explanation": "Proper retention of records supports compliance and legal defense, as the guide advises. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which consumer protection concept should small businesses understand and apply?",
-          "options": [
-            "Expressed and implied warranties for sale of goods",
-            "Guaranteeing profits for all customers",
-            "Charging customers randomly",
-            "Avoiding product descriptions"
-          ],
-          "correctAnswer": "Expressed and implied warranties for sale of goods",
-          "explanation": "Understanding warranties and consumer protections is part of the Legal Issues knowledge area. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "During the Entrepreneurship event, what determines which teams advance to the role play round?",
-          "options": [
-            "Random draw",
-            "Team-averaged objective test score",
-            "Number of team members",
-            "Order of registration"
-          ],
-          "correctAnswer": "Team-averaged objective test score",
-          "explanation": "Advancement to role play is based on the team-averaged objective test score, per the Event Administration section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "How long is the objective test for the Entrepreneurship event?",
-          "options": [
-            "30 minutes",
-            "50 minutes",
-            "75 minutes",
-            "2 hours"
-          ],
-          "correctAnswer": "50 minutes",
-          "explanation": "The objective test duration is specified as 50 minutes in the Event Administration details. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "In the role play, how many notecards does each competitor receive for preparation and presentation?",
-          "options": [
-            "One notecard",
-            "Two notecards",
-            "Five notecards",
-            "No notecards allowed"
-          ],
-          "correctAnswer": "Two notecards",
-          "explanation": "Each competitor is provided two notecards for use during preparation and the presentation (Role Play materials). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which of the following is NOT allowed during the interactive role play preparation or presentation?",
-          "options": [
-            "Writing notes on provided notecards",
-            "Using conference-provided secret scenario",
-            "Bringing in visual props or technology",
-            "Sharing one copy of prompt among team members"
-          ],
-          "correctAnswer": "Bringing in visual props or technology",
-          "explanation": "The rules explicitly prohibit technology, reference materials, visuals, or props during role play preparation and presentation. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "If a competitor violates the Dress Code, what is the standard penalty indicated in the guidelines?",
-          "options": [
-            "Disqualification automatically",
-            "5-point deduction",
-            "No penalty",
-            "Removal from conference"
-          ],
-          "correctAnswer": "5-point deduction",
-          "explanation": "A 5-point penalty is assessed for Dress Code violations according to the Penalty Points section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which statement about the role play scoring is correct?",
-          "options": [
-            "Objective test scores determine the role play winners",
-            "Role play scores alone determine winners; objective test scores only break ties",
-            "Only objective test scores matter",
-            "Scores are not used to determine winners"
-          ],
-          "correctAnswer": "Role play scores alone determine winners; objective test scores only break ties",
-          "explanation": "The guidelines explain that role play round scores are used to determine winners and objective test scores break ties. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What happens to role play prompts after the event concludes?",
-          "options": [
-            "They are shared with all attendees immediately",
-            "Competitors must not discuss or share the prompts until the event concludes",
-            "They are posted online during the event",
-            "Teams keep their prompt copies"
-          ],
-          "correctAnswer": "Competitors must not discuss or share the prompts until the event concludes",
-          "explanation": "Confidentiality rules prohibit discussing or sharing role play prompts until the event ends to maintain fairness. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "If a team is late to their assigned presentation time, what is the indicated consequence?",
-          "options": [
-            "No consequence",
-            "5-point deduction if late for presentation",
-            "Automatic immediate disqualification always",
-            "Allowed to present without penalty"
-          ],
-          "correctAnswer": "5-point deduction if late for presentation",
-          "explanation": "Late arrival may lead to a 5-point penalty as specified in the Penalty Points and Event Administration sections. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: Which of the following guarantees a business will be profitable?",
-          "options": [
-            "A detailed business plan",
-            "A business plan plus market research and solid financials",
-            "Having a popular founder on social media",
-            "Filing articles of incorporation"
-          ],
-          "correctAnswer": "A business plan plus market research and solid financials",
-          "explanation": "A business plan alone does not guarantee profit; profitability requires sound market research and financial planning—this subtle distinction is emphasized in the feasibility and financial sections. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: Which reporting document shows profitability over a period of time rather than a single date?",
-          "options": [
-            "Balance sheet",
-            "Income statement",
-            "Inventory ledger",
-            "Articles of organization"
-          ],
-          "correctAnswer": "Income statement",
-          "explanation": "Income statements report revenues and expenses over a time period, while a balance sheet is a snapshot at a point in time—this distinction is a common misconception addressed by the financial objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: If a company has strong sales but negative cash flow, which is the best immediate concern?",
-          "options": [
-            "Marketing slogans",
-            "Timing of cash inflows/outflows",
-            "Changing the vision statement",
-            "Hiring more executives"
-          ],
-          "correctAnswer": "Timing of cash inflows/outflows",
-          "explanation": "Strong sales don't guarantee liquidity; cash flow timing determines whether the business can meet obligations—cash flow forecasting is highlighted in financial management. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: Which of these is the clearest sign that an entrepreneur should revisit their business model?",
-          "options": [
-            "Minor logo complaints",
-            "Repeated failure to reach break-even after planned timeframe",
-            "Having more competitors",
-            "Receiving praise on social media"
-          ],
-          "correctAnswer": "Repeated failure to reach break-even after planned timeframe",
-          "explanation": "Persistent failure to reach profitability suggests problems with the business model or assumptions; feasibility and financial analysis guide such decisions. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: Which of the following best describes a limitation of relying solely on owner’s personal savings for initial capital?",
-          "options": [
-            "It deletes legal obligations",
-            "It can limit growth potential and concentrate financial risk",
-            "It guarantees bank loans later",
-            "It removes the need for a business plan"
-          ],
-          "correctAnswer": "It can limit growth potential and concentrate financial risk",
-          "explanation": "Using only personal savings restricts available funds and increases personal risk, which is why comparing financing sources is recommended in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: A written personnel policy is intended to be flexible and never enforced strictly. True or false?",
-          "options": [
-            "True",
-            "False",
-            "Only for large companies",
-            "Only during economic downturns"
-          ],
-          "correctAnswer": "False",
-          "explanation": "Personnel policies provide consistency and should be enforced fairly; implying they are never enforced contradicts the guide's emphasis on consistency. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: Which of these is NOT a reason to consult an attorney when preparing business documents?",
-          "options": [
-            "To identify legal risks",
-            "To ensure enforceable contracts",
-            "To determine marketing slogans",
-            "To review compliance with laws"
-          ],
-          "correctAnswer": "To determine marketing slogans",
-          "explanation": "Attorneys assess legal risks and document enforceability; selecting marketing slogans is not a primary legal role (though IP counsel may advise). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: The role play presentation allows the use of personal laptops for slides if they aid the presentation. True or false?",
-          "options": [
-            "True",
-            "False",
-            "Only if judges approve",
-            "Only during Q&A"
-          ],
-          "correctAnswer": "False",
-          "explanation": "The guidelines prohibit technology, visuals, or props during role play, so laptops/slides are not allowed. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: An organization chart should always reflect the exact number of employees at all times. True or false?",
-          "options": [
-            "True",
-            "False",
-            "Only for public companies",
-            "Only at tax time"
-          ],
-          "correctAnswer": "False",
-          "explanation": "Organization charts represent structure and roles but need not be exact headcount trackers; they are planning tools per personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: Scoring for the Entrepreneurship event uses objective test scores to break ties in role play results. Does the objective test score also determine role play winners?",
-          "options": [
-            "Yes, objective test scores decide winners",
-            "No, role play scores determine winners and objective tests only break ties",
-            "Objective tests are ignored completely",
-            "Winners are chosen randomly"
-          ],
-          "correctAnswer": "No, role play scores determine winners and objective tests only break ties",
-          "explanation": "Role play scores decide winners; objective test scores are used only as tie-breakers, as specified in the scoring rules. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which element of a business plan most directly communicates the company's long-term purpose and aspirations? (Item 55)",
-          "options": [
-            "Operational schedule",
-            "Vision statement",
-            "Market price list",
-            "Expense ledger"
-          ],
-          "correctAnswer": "Vision statement",
-          "explanation": "A vision statement articulates the company's long-term purpose and aspirations and is a core part of business planning in the study guide (vision, mission, goals). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "When selecting a business opportunity, which factor is MOST critical according to a feasibility study? (Item 56)",
-          "options": [
-            "Personal preference for color schemes",
-            "Industry trends and competition",
-            "Number of social media followers",
-            "Favorite suppliers' logos"
-          ],
-          "correctAnswer": "Industry trends and competition",
-          "explanation": "Feasibility studies focus on industry trends, competition, and market segment to determine viability, as described in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which business ownership form typically offers the simplest startup process but places full liability on the owner? (Item 57)",
-          "options": [
-            "Corporation",
-            "Sole proprietorship",
-            "Limited liability company (LLC)",
-            "Cooperative"
-          ],
-          "correctAnswer": "Sole proprietorship",
-          "explanation": "A sole proprietorship is easy to form but exposes the owner to full personal liability, which is a standard business-structure tradeoff in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What is the primary purpose of an organizational chart in a startup? (Item 58)",
-          "options": [
-            "To display product pricing",
-            "To outline hierarchy and job responsibilities",
-            "To calculate tax liability",
-            "To list suppliers' contact info"
-          ],
-          "correctAnswer": "To outline hierarchy and job responsibilities",
-          "explanation": "Organizational charts clarify reporting relationships, staffing plans, and job descriptions, aiding workflow and personnel management (Study Guide: Business Plan & Personnel Management). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which financial statement provides a snapshot of a company's assets, liabilities, and owner's equity at a specific point in time? (Item 59)",
-          "options": [
-            "Income statement",
-            "Balance sheet",
-            "Cash flow projection",
-            "Sales summary"
-          ],
-          "correctAnswer": "Balance sheet",
-          "explanation": "A balance sheet shows assets, liabilities, and equity at a specific date — this is fundamental to financial management and interpretation of financial data. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why are cash flow projections important for a startup? (Item 60)",
-          "options": [
-            "They guarantee sales targets",
-            "They help forecast the timing of cash inflows and outflows",
-            "They replace the need for a budget",
-            "They prevent all credit problems"
-          ],
-          "correctAnswer": "They help forecast the timing of cash inflows and outflows",
-          "explanation": "Cash flow projections identify when cash will be available or short, informing budgeting and planning—a key objective in financial management. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Selecting an accounting system primarily helps a business to: (Item 61)",
-          "options": [
-            "Decorate the office",
-            "Apply good accounting practices and record transactions",
-            "Hire new staff automatically",
-            "Increase product prices arbitrarily"
-          ],
-          "correctAnswer": "Apply good accounting practices and record transactions",
-          "explanation": "An accounting system ensures consistent recording of transactions and supports preparation of financial statements, as stated in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What does 'point of profitability' refer to when analyzing financial data? (Item 62)",
-          "options": [
-            "The day taxes are filed",
-            "When total revenue equals total expenses (break-even/profit point)",
-            "When the accounting software is updated",
-            "When a loan is approved"
-          ],
-          "correctAnswer": "When total revenue equals total expenses (break-even/profit point)",
-          "explanation": "Determining profitability or break-even helps assess viability and is part of interpreting financial data in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which source is commonly considered 'initial capital' for starting a small business? (Item 63)",
-          "options": [
-            "Monthly utility bills",
-            "Owner's personal savings",
-            "Daily sales receipts post-launch",
-            "Expired inventory"
-          ],
-          "correctAnswer": "Owner's personal savings",
-          "explanation": "Initial capital often includes the owner's savings or personal investment; identifying initial capital assets is an objective in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What factor best describes 'creditworthiness' for business credit decisions? (Item 64)",
-          "options": [
-            "Company logo design",
-            "Credit records, ratings, and payment history",
-            "Number of product SKUs",
-            "Number of employees"
-          ],
-          "correctAnswer": "Credit records, ratings, and payment history",
-          "explanation": "Creditworthiness depends on records, ratings, and reports, which lenders evaluate according to the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Comparing costs, qualifications, and procedures for various forms of credit helps a business to: (Item 65)",
-          "options": [
-            "Avoid hiring accountants",
-            "Choose the most suitable financing option",
-            "Ignore interest rates",
-            "Automate payroll"
-          ],
-          "correctAnswer": "Choose the most suitable financing option",
-          "explanation": "Comparing credit options clarifies costs and qualifications so businesses can select appropriate credit—an explicit objective in the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which is a common method for solving business credit problems? (Item 66)",
-          "options": [
-            "Ignoring creditor notices",
-            "Negotiating payment plans or improving credit practices",
-            "Closing the business immediately",
-            "Posting on social media"
-          ],
-          "correctAnswer": "Negotiating payment plans or improving credit practices",
-          "explanation": "Problem-solving for credit includes negotiation and credit management strategies, as the guide outlines methods for addressing credit problems. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "The 'marketing mix' consists of which four elements commonly known as the 4 Ps? (Item 67)",
-          "options": [
-            "Product, Price, Place, Promotion",
-            "People, Process, Packaging, Profit",
-            "Plan, Produce, Publish, Pay",
-            "Place, Price, Performance, Promotion"
-          ],
-          "correctAnswer": "Product, Price, Place, Promotion",
-          "explanation": "Marketing mix focuses on product, price, place (distribution), and promotion, per the study guide's marketing objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why is gathering and synthesizing marketing information important? (Item 68)",
-          "options": [
-            "To decorate the storefront",
-            "To make informed business decisions based on market data",
-            "To increase product weight",
-            "To avoid legal compliance"
-          ],
-          "correctAnswer": "To make informed business decisions based on market data",
-          "explanation": "Collecting and evaluating marketing data supports decision-making and recognizing needed changes, a stated objective in the marketing section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "A company that uses pricing strategies to match customer perceptions of value is trying to: (Item 69)",
-          "options": [
-            "Maximize return while meeting perceived value",
-            "Guarantee product quality automatically",
-            "Avoid paying taxes",
-            "Increase employee satisfaction only"
-          ],
-          "correctAnswer": "Maximize return while meeting perceived value",
-          "explanation": "Pricing strategies balance return and customer value perception, explicitly noted in the marketing objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which practice best improves customer relations according to the guide? (Item 70)",
-          "options": [
-            "Ignoring complaints",
-            "Delivering consistent, effective customer service",
-            "Increasing prices daily",
-            "Reducing product features"
-          ],
-          "correctAnswer": "Delivering consistent, effective customer service",
-          "explanation": "Effective customer relation skills and customer service aim to improve loyalty and profitability, a marketing management objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "A well-written job description primarily helps to: (Item 71)",
-          "options": [
-            "Predict stock market movements",
-            "Clarify roles and expedite workflow",
-            "Calculate sales tax",
-            "Design a logo"
-          ],
-          "correctAnswer": "Clarify roles and expedite workflow",
-          "explanation": "Job descriptions and org charts clarify responsibilities and expedite workflow, as detailed in personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What is a key reason companies implement ongoing training programs? (Item 72)",
-          "options": [
-            "To increase payroll taxes",
-            "To improve employee skills and productivity",
-            "To slow hiring processes",
-            "To reduce product quality"
-          ],
-          "correctAnswer": "To improve employee skills and productivity",
-          "explanation": "Training programs increase staff competence and support business goals; the guide emphasizes orientation and ongoing training. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which procedure helps ensure consistent application of workplace rules and addresses grievances? (Item 73)",
-          "options": [
-            "Ad-hoc decision making",
-            "A written personnel policy and grievance system",
-            "Randomized scheduling",
-            "Eliminating performance reviews"
-          ],
-          "correctAnswer": "A written personnel policy and grievance system",
-          "explanation": "Written policies and a grievance system ensure consistent employee treatment and are explicitly recommended in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why should a business develop separation and termination procedures? (Item 74)",
-          "options": [
-            "To make paperwork optional",
-            "To ensure lawful, consistent processing of personnel actions",
-            "To avoid paying severance",
-            "To replace evaluations"
-          ],
-          "correctAnswer": "To ensure lawful, consistent processing of personnel actions",
-          "explanation": "Proper separation procedures protect both employee and employer and are listed among personnel management objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which activity is part of tax planning for a small business? (Item 75)",
-          "options": [
-            "Selecting a logo color",
-            "Analyzing tax structure consequences for business decisions",
-            "Choosing office furniture",
-            "Posting daily sales on social media"
-          ],
-          "correctAnswer": "Analyzing tax structure consequences for business decisions",
-          "explanation": "Tax planning involves analyzing tax consequences to inform business decisions, an objective in the Taxes section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Who is primarily responsible for applying regulations regarding employee/employer taxes? (Item 76)",
-          "options": [
-            "Customers",
-            "The business (employer)",
-            "Competitors",
-            "Suppliers"
-          ],
-          "correctAnswer": "The business (employer)",
-          "explanation": "Employers must comply with employee/employer tax regulations; the guide identifies applying such regulations as a tax objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Completing and implementing state sales tax requirements is important because: (Item 77)",
-          "options": [
-            "It improves marketing",
-            "It ensures legal compliance and proper tax collection",
-            "It increases inventory turnover",
-            "It reduces advertising costs"
-          ],
-          "correctAnswer": "It ensures legal compliance and proper tax collection",
-          "explanation": "State sales tax compliance is necessary to meet legal obligations and is explicitly included in the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which phrase best captures why businesses use tax preparation procedures? (Item 78)",
-          "options": [
-            "To delay payments indefinitely",
-            "To determine tax liability accurately",
-            "To avoid keeping records",
-            "To reduce product quality"
-          ],
-          "correctAnswer": "To determine tax liability accurately",
-          "explanation": "Tax preparation procedures are used to calculate tax liabilities accurately, which helps with planning and compliance (Taxes section). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Applying ethical conduct in business relationships primarily helps a company to: (Item 79)",
-          "options": [
-            "Increase inventory shrinkage",
-            "Build trust and sustain community relations",
-            "Avoid hiring",
-            "Eliminate all competition"
-          ],
-          "correctAnswer": "Build trust and sustain community relations",
-          "explanation": "Ethical conduct fosters trust and positive community/business relations; the guide lists ethics as a key objective. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "A public relations program for a company should aim to: (Item 80)",
-          "options": [
-            "Conceal all business activities",
-            "Communicate business activities appropriately to the community and clients",
-            "Increase product defects",
-            "Replace marketing entirely"
-          ],
-          "correctAnswer": "Communicate business activities appropriately to the community and clients",
-          "explanation": "A PR program helps manage public perception and communicate the firm's activities—an objective under community/business relations. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Understanding federal, state, and local current events matters for businesses because: (Item 81)",
-          "options": [
-            "They determine the CEO's salary automatically",
-            "They can impact business operations and compliance",
-            "They increase store foot traffic automatically",
-            "They invalidate contracts"
-          ],
-          "correctAnswer": "They can impact business operations and compliance",
-          "explanation": "Local and broader current events can change regulations or market conditions and thus affect operations, per the guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why should a business consider union-management relationships when planning for continuity? (Item 82)",
-          "options": [
-            "Unions always reduce profits",
-            "Union contracts can affect staffing, labor relations, and operations",
-            "Unions write marketing plans",
-            "Unions set product prices automatically"
-          ],
-          "correctAnswer": "Union contracts can affect staffing, labor relations, and operations",
-          "explanation": "Union-management relationships and contracts influence workforce stability and should be considered in business continuity planning (Community/Business Relations). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "A small business must keep current with laws and regulations because: (Item 83)",
-          "options": [
-            "Regulations never change",
-            "Compliance impacts business practices and avoids penalties",
-            "It helps avoid paying salaries",
-            "It ensures free advertising"
-          ],
-          "correctAnswer": "Compliance impacts business practices and avoids penalties",
-          "explanation": "Staying current with regulations prevents legal risks and ensures operations align with government requirements (Government Regulations section). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Exhibiting ethical conduct in business negotiations is included in the government regulations objectives because: (Item 84)",
-          "options": [
-            "Ethics replace legal requirements",
-            "Ethical behavior supports lawful and acceptable business practices",
-            "Ethics increase taxes",
-            "Ethics remove the need for advisors"
-          ],
-          "correctAnswer": "Ethical behavior supports lawful and acceptable business practices",
-          "explanation": "Ethical conduct complements legal compliance and is emphasized in the Government Regulations objectives as part of good business practice. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which action is least aligned with keeping current with laws that affect business practices? (Item 85)",
-          "options": [
-            "Regularly reviewing regulations",
-            "Ignoring regulatory updates",
-            "Consulting advisors",
-            "Documenting compliance procedures"
-          ],
-          "correctAnswer": "Ignoring regulatory updates",
-          "explanation": "Ignoring regulatory updates risks noncompliance, whereas the guide recommends identifying and keeping current with laws. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Understanding the role of government in business helps an entrepreneur to: (Item 86)",
-          "options": [
-            "Choose office furniture",
-            "Identify relevant regulations and support programs",
-            "Avoid paying rent",
-            "Hire celebrities"
-          ],
-          "correctAnswer": "Identify relevant regulations and support programs",
-          "explanation": "Knowing government roles helps identify regulations and available resources—consistent with the study guide. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Why should a small business select professional advisors like attorneys and accountants? (Item 87)",
-          "options": [
-            "To delegate customer service",
-            "To ensure legal, financial, and insurance needs are professionally handled",
-            "To eliminate taxes",
-            "To replace marketing efforts"
-          ],
-          "correctAnswer": "To ensure legal, financial, and insurance needs are professionally handled",
-          "explanation": "Professional advisors provide expertise for legal, accounting, and insurance matters—an explicit objective in Legal Issues. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which practice helps protect a company from legal disputes over contracts? (Item 88)",
-          "options": [
-            "Not writing anything down",
-            "Legal review procedures for documents and contracts",
-            "Posting contract terms on social media",
-            "Relying only on verbal agreements"
-          ],
-          "correctAnswer": "Legal review procedures for documents and contracts",
-          "explanation": "Legal review reduces contract risk and is recommended in the Legal Issues objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Retaining accurate records is important because records: (Item 89)",
-          "options": [
-            "Increase inventory errors",
-            "Support legal, tax, and financial requirements",
-            "Prevent any legal issues automatically",
-            "Replace insurance"
-          ],
-          "correctAnswer": "Support legal, tax, and financial requirements",
-          "explanation": "Proper retention of records supports compliance and legal defense, as the guide advises. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which consumer protection concept should small businesses understand and apply? (Item 90)",
-          "options": [
-            "Expressed and implied warranties for sale of goods",
-            "Guaranteeing profits for all customers",
-            "Charging customers randomly",
-            "Avoiding product descriptions"
-          ],
-          "correctAnswer": "Expressed and implied warranties for sale of goods",
-          "explanation": "Understanding warranties and consumer protections is part of the Legal Issues knowledge area. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "During the Entrepreneurship event, what determines which teams advance to the role play round? (Item 91)",
-          "options": [
-            "Random draw",
-            "Team-averaged objective test score",
-            "Number of team members",
-            "Order of registration"
-          ],
-          "correctAnswer": "Team-averaged objective test score",
-          "explanation": "Advancement to role play is based on the team-averaged objective test score, per the Event Administration section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "How long is the objective test for the Entrepreneurship event? (Item 92)",
-          "options": [
-            "30 minutes",
-            "50 minutes",
-            "75 minutes",
-            "2 hours"
-          ],
-          "correctAnswer": "50 minutes",
-          "explanation": "The objective test duration is specified as 50 minutes in the Event Administration details. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "In the role play, how many notecards does each competitor receive for preparation and presentation? (Item 93)",
-          "options": [
-            "One notecard",
-            "Two notecards",
-            "Five notecards",
-            "No notecards allowed"
-          ],
-          "correctAnswer": "Two notecards",
-          "explanation": "Each competitor is provided two notecards for use during preparation and the presentation (Role Play materials). (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which of the following is NOT allowed during the interactive role play preparation or presentation? (Item 94)",
-          "options": [
-            "Writing notes on provided notecards",
-            "Using conference-provided secret scenario",
-            "Bringing in visual props or technology",
-            "Sharing one copy of prompt among team members"
-          ],
-          "correctAnswer": "Bringing in visual props or technology",
-          "explanation": "The rules explicitly prohibit technology, reference materials, visuals, or props during role play preparation and presentation. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "If a competitor violates the Dress Code, what is the standard penalty indicated in the guidelines? (Item 95)",
-          "options": [
-            "Disqualification automatically",
-            "5-point deduction",
-            "No penalty",
-            "Removal from conference"
-          ],
-          "correctAnswer": "5-point deduction",
-          "explanation": "A 5-point penalty is assessed for Dress Code violations according to the Penalty Points section. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Which statement about the role play scoring is correct? (Item 96)",
-          "options": [
-            "Objective test scores determine the role play winners",
-            "Role play scores alone determine winners; objective test scores only break ties",
-            "Only objective test scores matter",
-            "Scores are not used to determine winners"
-          ],
-          "correctAnswer": "Role play scores alone determine winners; objective test scores only break ties",
-          "explanation": "The guidelines explain that role play round scores are used to determine winners and objective test scores break ties. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "What happens to role play prompts after the event concludes? (Item 97)",
-          "options": [
-            "They are shared with all attendees immediately",
-            "Competitors must not discuss or share the prompts until the event concludes",
-            "They are posted online during the event",
-            "Teams keep their prompt copies"
-          ],
-          "correctAnswer": "Competitors must not discuss or share the prompts until the event concludes",
-          "explanation": "Confidentiality rules prohibit discussing or sharing role play prompts until the event ends to maintain fairness. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "If a team is late to their assigned presentation time, what is the indicated consequence? (Item 98)",
-          "options": [
-            "No consequence",
-            "5-point deduction if late for presentation",
-            "Automatic immediate disqualification always",
-            "Allowed to present without penalty"
-          ],
-          "correctAnswer": "5-point deduction if late for presentation",
-          "explanation": "Late arrival may lead to a 5-point penalty as specified in the Penalty Points and Event Administration sections. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: Which of the following guarantees a business will be profitable? (Item 99)",
-          "options": [
-            "A detailed business plan",
-            "A business plan plus market research and solid financials",
-            "Having a popular founder on social media",
-            "Filing articles of incorporation"
-          ],
-          "correctAnswer": "A business plan plus market research and solid financials",
-          "explanation": "A business plan alone does not guarantee profit; profitability requires sound market research and financial planning—this subtle distinction is emphasized in the feasibility and financial sections. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
-        },
-        {
-          "question": "Trick: Which reporting document shows profitability over a period of time rather than a single date? (Item 100)",
-          "options": [
-            "Balance sheet",
-            "Income statement",
-            "Inventory ledger",
-            "Articles of organization"
-          ],
-          "correctAnswer": "Income statement",
-          "explanation": "Income statements report revenues and expenses over a time period, while a balance sheet is a snapshot at a point in time—this distinction is a common misconception addressed by the financial objectives. (Based on the Entrepreneurship Competitive Events Guidelines study guide.)"
+      "testName": "Comprehensive AI, Data Science, and Statistics Test",
+      "topics": [
+        {
+          "topic": "Probability and Statistics Foundations",
+          "questions": [
+            {
+              "question": "What is the mean of the dataset [2, 4, 6, 8, 10]?",
+              "options": ["5", "6", "7", "8"],
+              "correctAnswer": "6",
+              "explanation": "Mean is the sum of all values divided by the number of values: (2+4+6+8+10)/5 = 6."
+            },
+            {
+              "question": "Which measure of central tendency is least affected by outliers?",
+              "options": ["Mean", "Median", "Mode", "Range"],
+              "correctAnswer": "Median",
+              "explanation": "The median is the middle value and is robust against extreme values."
+            },
+            {
+              "question": "Which variable type is continuous?",
+              "options": ["Number of siblings", "Height", "Number of cars", "Count of pets"],
+              "correctAnswer": "Height",
+              "explanation": "Continuous variables can take any value within a range; height is not restricted to integer counts."
+            },
+            {
+              "question": "The variance of a dataset is 16. What is the standard deviation?",
+              "options": ["2", "4", "8", "16"],
+              "correctAnswer": "4",
+              "explanation": "Standard deviation is the square root of variance: sqrt(16) = 4."
+            },
+            {
+              "question": "Which scenario is best modeled using a Gaussian distribution?",
+              "options": ["Number of cars in a parking lot", "Heights of adult males", "Daily sales of a store", "Binary pass/fail results"],
+              "correctAnswer": "Heights of adult males",
+              "explanation": "Heights typically follow a normal (Gaussian) distribution around an average value."
+            },
+            {
+              "question": "Which of the following is an expected value of rolling a fair 4-sided die?",
+              "options": ["2.5", "2", "3", "3.5"],
+              "correctAnswer": "2.5",
+              "explanation": "Expected value = (1+2+3+4)/4 = 2.5."
+            },
+            {
+              "question": "If two variables increase together, their covariance is likely to be:",
+              "options": ["Positive", "Negative", "Zero", "Undefined"],
+              "correctAnswer": "Positive",
+              "explanation": "Positive covariance indicates that as one variable increases, the other tends to increase as well."
+            },
+            {
+              "question": "Range of the dataset [5, 10, 15, 20] is:",
+              "options": ["10", "15", "5", "20"],
+              "correctAnswer": "15",
+              "explanation": "Range = max - min = 20 - 5 = 15."
+            },
+            {
+              "question": "Which is an example of a discrete random variable?",
+              "options": ["Time to complete a task", "Number of emails received", "Temperature", "Height"],
+              "correctAnswer": "Number of emails received",
+              "explanation": "Discrete variables take countable integer values, such as counts of emails."
+            },
+            {
+              "question": "A dataset has values [1, 2, 3, 3, 3, 4, 5]. The mode is:",
+              "options": ["2", "3", "4", "5"],
+              "correctAnswer": "3",
+              "explanation": "Mode is the value that occurs most frequently, which is 3."
+            },
+            {
+              "question": "A continuous variable differs from a discrete variable because it:",
+              "options": ["Can only take integers", "Can take any value within a range", "Is categorical", "Cannot be measured"],
+              "correctAnswer": "Can take any value within a range",
+              "explanation": "Continuous variables can take infinitely many values within a range, unlike discrete variables."
+            },
+            {
+              "question": "Which measure represents the average deviation from the mean?",
+              "options": ["Variance", "Standard deviation", "Median", "Mode"],
+              "correctAnswer": "Standard deviation",
+              "explanation": "Standard deviation is the square root of the average squared deviation from the mean."
+            },
+            {
+              "question": "Expected value is best described as:",
+              "options": ["Most likely outcome", "Average outcome over many trials", "Maximum possible outcome", "Minimum possible outcome"],
+              "correctAnswer": "Average outcome over many trials",
+              "explanation": "Expected value is the long-term average if an experiment is repeated many times."
+            },
+            {
+              "question": "If a normal distribution is symmetrical, which is true?",
+              "options": ["Mean = Median = Mode", "Mean > Median > Mode", "Mode > Median > Mean", "Mean < Median < Mode"],
+              "correctAnswer": "Mean = Median = Mode",
+              "explanation": "A perfectly symmetric normal distribution has mean, median, and mode equal."
+            },
+            {
+              "question": "Which type of variable is binary?",
+              "options": ["Height", "Temperature", "Pass/Fail", "Number of pets"],
+              "correctAnswer": "Pass/Fail",
+              "explanation": "Binary variables have only two possible values."
+            },
+            {
+              "question": "A trick question: Which of the following is NOT a measure of dispersion?",
+              "options": ["Variance", "Standard deviation", "Mean", "Range"],
+              "correctAnswer": "Mean",
+              "explanation": "Mean is a measure of central tendency, not dispersion."
+            },
+            {
+              "question": "Which statistic would you use to understand variability in exam scores?",
+              "options": ["Variance", "Mean", "Mode", "Median"],
+              "correctAnswer": "Variance",
+              "explanation": "Variance measures how spread out the data points are from the mean."
+            },
+            {
+              "question": "Which is a subtle misconception about standard deviation?",
+              "options": ["It can be negative", "It is always positive", "It equals the mean", "It measures central tendency"],
+              "correctAnswer": "It is always positive",
+              "explanation": "Standard deviation cannot be negative; it measures spread, not central tendency."
+            },
+            {
+              "question": "If two variables have a covariance of zero, it means:",
+              "options": ["They are independent", "They have no linear relationship", "They are perfectly correlated", "They are identical"],
+              "correctAnswer": "They have no linear relationship",
+              "explanation": "Covariance of zero indicates no linear correlation; variables may still have a non-linear relationship."
+            },
+            {
+              "question": "Which is a trick scenario: Rolling a die twice, expected sum?",
+              "options": ["6", "7", "8", "9"],
+              "correctAnswer": "7",
+              "explanation": "Expected value of the sum = sum of expected values of each die: 3.5 + 3.5 = 7."
+            }
+          ]
+        },
+        {
+          "topic": "Data Analysis and Tools for AI",
+          "questions": [
+            {
+              "question": "Which visualization is best for showing the distribution of a single continuous variable?",
+              "options": ["Bar chart", "Histogram", "Scatterplot", "Line graph"],
+              "correctAnswer": "Histogram",
+              "explanation": "Histograms display the frequency distribution of a continuous variable, making them ideal for this purpose."
+            },
+            {
+              "question": "Which plot is ideal to visualize the relationship between two continuous variables?",
+              "options": ["Histogram", "Boxplot", "Scatterplot", "Bar chart"],
+              "correctAnswer": "Scatterplot",
+              "explanation": "Scatterplots show the relationship between two continuous variables and can reveal correlations or patterns."
+            },
+            {
+              "question": "What does a boxplot display?",
+              "options": ["Mean and variance", "Median and interquartile range", "Only the median", "Frequency distribution"],
+              "correctAnswer": "Median and interquartile range",
+              "explanation": "Boxplots visualize the data spread and identify outliers using median, quartiles, and extremes."
+            },
+            {
+              "question": "Why is data cleaning important before analysis?",
+              "options": ["To remove duplicates and correct errors", "To increase dataset size", "To improve plotting speed", "To standardize fonts"],
+              "correctAnswer": "To remove duplicates and correct errors",
+              "explanation": "Data cleaning ensures data accuracy and consistency, preventing misleading results."
+            },
+            {
+              "question": "Which factor indicates poor data quality?",
+              "options": ["High completeness", "Accurate labeling", "Duplicate records", "Consistent formatting"],
+              "correctAnswer": "Duplicate records",
+              "explanation": "Duplicates, missing data, and inconsistencies are indicators of poor data quality."
+            },
+            {
+              "question": "Linear regression is primarily used for:",
+              "options": ["Predicting a continuous outcome", "Classifying categories", "Clustering data", "Dimensionality reduction"],
+              "correctAnswer": "Predicting a continuous outcome",
+              "explanation": "Linear regression models the relationship between input variables and a continuous target variable."
+            },
+            {
+              "question": "Decision trees are suitable for:",
+              "options": ["Classification and regression", "Only regression", "Only clustering", "Dimensionality reduction"],
+              "correctAnswer": "Classification and regression",
+              "explanation": "Decision trees can handle both classification (categorical) and regression (continuous) tasks."
+            },
+            {
+              "question": "K-means clustering is an example of:",
+              "options": ["Supervised learning", "Unsupervised learning", "Reinforcement learning", "Deep learning"],
+              "correctAnswer": "Unsupervised learning",
+              "explanation": "K-means groups data without labeled outcomes, making it unsupervised learning."
+            },
+            {
+              "question": "Which visualization is best for comparing distributions across multiple groups?",
+              "options": ["Scatterplot", "Line graph", "Boxplot", "Histogram"],
+              "correctAnswer": "Boxplot",
+              "explanation": "Boxplots allow comparison of medians, ranges, and outliers across groups."
+            },
+            {
+              "question": "Which technique helps understand relationships in multivariate data?",
+              "options": ["Correlation analysis", "Histogram", "Single-variable mean", "Boxplot"],
+              "correctAnswer": "Correlation analysis",
+              "explanation": "Correlation measures linear relationships among multiple variables."
+            },
+            {
+              "question": "A trick question: When data has missing values, the best action is always to delete them. True or False?",
+              "options": ["True", "False", "Only if numeric", "Only if categorical"],
+              "correctAnswer": "False",
+              "explanation": "Deleting missing data may cause bias; sometimes imputation or other methods are better."
+            },
+            {
+              "question": "Which Python library is primarily used for numerical computations?",
+              "options": ["Pandas", "NumPy", "Matplotlib", "Scikit-learn"],
+              "correctAnswer": "NumPy",
+              "explanation": "NumPy provides efficient numerical arrays and operations for scientific computing."
+            },
+            {
+              "question": "Which library is commonly used for building deep learning models?",
+              "options": ["NumPy", "Pandas", "PyTorch", "Matplotlib"],
+              "correctAnswer": "PyTorch",
+              "explanation": "PyTorch is a popular library for building and training neural networks."
+            },
+            {
+              "question": "Which library allows data manipulation with DataFrames in Python?",
+              "options": ["Pandas", "PyTorch", "NumPy", "Seaborn"],
+              "correctAnswer": "Pandas",
+              "explanation": "Pandas provides DataFrame objects for structured data manipulation and analysis."
+            },
+            {
+              "question": "Which SQL statement retrieves data from a table?",
+              "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+              "correctAnswer": "SELECT",
+              "explanation": "SELECT queries are used to retrieve data from a database table."
+            },
+            {
+              "question": "Which of the following is NOT a step in data cleaning?",
+              "options": ["Removing duplicates", "Filling missing values", "Data analysis", "Standardizing formats"],
+              "correctAnswer": "Data analysis",
+              "explanation": "Data analysis is performed after cleaning; cleaning focuses on correcting and preparing data."
+            },
+            {
+              "question": "Scenario: You have a dataset with multiple numeric and categorical columns. You want to find patterns without labels. Which method should you choose?",
+              "options": ["Linear regression", "Decision tree", "K-means clustering", "Logistic regression"],
+              "correctAnswer": "K-means clustering",
+              "explanation": "K-means clustering identifies patterns in unlabeled data, making it suitable for exploratory analysis."
+            },
+            {
+              "question": "Which tool is useful for cleaning and wrangling messy datasets in Python?",
+              "options": ["PyTorch", "Pandas", "NumPy", "Matplotlib"],
+              "correctAnswer": "Pandas",
+              "explanation": "Pandas provides functions to clean, filter, and transform datasets efficiently."
+            },
+            {
+              "question": "Why is it important to choose the correct visualization for data?",
+              "options": ["To make graphs look pretty", "To accurately interpret patterns and relationships", "To store data faster", "To increase dataset size"],
+              "correctAnswer": "To accurately interpret patterns and relationships",
+              "explanation": "The right visualization helps uncover trends, distributions, and correlations correctly."
+            },
+            {
+              "question": "Trick question: A scatterplot is best for showing one variable's distribution. True or False?",
+              "options": ["True","False", "Only for categorical data", "Only for time series data"],
+              "correctAnswer": "False",
+              "explanation": "Scatterplots are for relationships between two variables, not for showing a single variable's distribution."
+            }
+          ]
+        },
+        {
+          "topic": "AI Basics and Machine Learning",
+          "questions": [
+            {
+              "question": "Generative AI is primarily designed to:",
+              "options": ["Analyze data", "Generate new content", "Sort data", "Visualize data"],
+              "correctAnswer": "Generate new content",
+              "explanation": "Generative AI models can create new content such as text, images, or music based on learned patterns."
+            },
+            {
+              "question": "Which of the following is a limitation of generative AI?",
+              "options": ["Cannot generate text", "May produce inaccurate or biased outputs", "Requires labeled datasets only", "Cannot use deep learning"],
+              "correctAnswer": "May produce inaccurate or biased outputs",
+              "explanation": "Generative AI can hallucinate or reflect biases in the training data, limiting reliability."
+            },
+            {
+              "question": "An example of generative AI application in healthcare is:",
+              "options": ["Predicting stock prices", "Generating synthetic medical images", "Sorting emails", "Monitoring traffic"],
+              "correctAnswer": "Generating synthetic medical images",
+              "explanation": "Generative AI can create realistic medical images for training or research purposes."
+            },
+            {
+              "question": "Which AI subfield focuses on understanding and generating human language?",
+              "options": ["Computer vision", "Natural language processing", "Robotics", "Human-computer interaction"],
+              "correctAnswer": "Natural language processing",
+              "explanation": "NLP deals with processing, understanding, and generating human language."
+            },
+            {
+              "question": "Large Language Models (LLMs) are capable of:",
+              "options": ["Storing structured data", "Generating human-like text", "Performing arithmetic only", "Reinforcing algorithms"],
+              "correctAnswer": "Generating human-like text",
+              "explanation": "LLMs are trained on large text corpora and can generate coherent, contextually relevant text."
+            },
+            {
+              "question": "Which AI subfield is primarily concerned with visual data?",
+              "options": ["Computer vision", "Natural language processing", "Reinforcement learning", "Expert systems"],
+              "correctAnswer": "Computer vision",
+              "explanation": "Computer vision focuses on enabling machines to interpret and analyze visual information."
+            },
+            {
+              "question": "A scenario-based question: You want an AI to learn from labeled images to recognize cats. Which approach should you use?",
+              "options": ["Supervised learning", "Unsupervised learning", "Reinforcement learning", "Evolutionary algorithms"],
+              "correctAnswer": "Supervised learning",
+              "explanation": "Supervised learning trains models on labeled data to predict or classify outcomes."
+            },
+            {
+              "question": "In machine learning, a validation dataset is used to:",
+              "options": ["Train the model", "Tune hyperparameters", "Test final performance", "Store raw data"],
+              "correctAnswer": "Tune hyperparameters",
+              "explanation": "Validation data helps optimize model parameters without contaminating the test evaluation."
+            },
+            {
+              "question": "Which machine learning algorithm can handle both classification and regression tasks?",
+              "options": ["Decision tree", "K-means clustering", "Principal Component Analysis", "Logistic regression"],
+              "correctAnswer": "Decision tree",
+              "explanation": "Decision trees can be used for both predicting continuous outputs and categorizing labels."
+            },
+            {
+              "question": "Which is an example of unsupervised learning?",
+              "options": ["Linear regression", "K-means clustering", "Logistic regression", "Support vector machines"],
+              "correctAnswer": "K-means clustering",
+              "explanation": "K-means finds patterns in unlabeled data without a target variable."
+            },
+            {
+              "question": "Reinforcement learning involves:",
+              "options": ["Learning from labeled data", "Learning by trial and error with rewards", "Clustering data points", "Reducing data dimensions"],
+              "correctAnswer": "Learning by trial and error with rewards",
+              "explanation": "Reinforcement learning trains agents to take actions in an environment to maximize cumulative rewards."
+            },
+            {
+              "question": "Deep learning is a type of machine learning that uses:",
+              "options": ["Decision trees", "Neural networks with multiple layers", "K-means clustering", "Linear regression only"],
+              "correctAnswer": "Neural networks with multiple layers",
+              "explanation": "Deep learning involves multi-layered neural networks to model complex patterns and representations."
+            },
+            {
+              "question": "A scenario: You want to select the right algorithm for predicting house prices. Which factor is least important?",
+              "options": ["Data type", "Target variable", "Computation resources", "Color of the dataset"],
+              "correctAnswer": "Color of the dataset",
+              "explanation": "Algorithm selection depends on data type, task, and resources, not aesthetic properties like color."
+            },
+            {
+              "question": "Which is true about training, test, and validation datasets?",
+              "options": ["Training data is for evaluation", "Validation data tunes hyperparameters", "Test data tunes the model", "All datasets are combined for training"],
+              "correctAnswer": "Validation data tunes hyperparameters",
+              "explanation": "Validation data helps choose optimal parameters without biasing the final test evaluation."
+            },
+            {
+              "question": "Trick question: K-means requires labeled data to function. True or False?",
+              "options": ["True", "False", "Only for numeric data", "Only for small datasets"],
+              "correctAnswer": "False",
+              "explanation": "K-means is unsupervised and does not require labeled data."
+            },
+            {
+              "question": "Which machine learning algorithm is best for time-series forecasting?",
+              "options": ["Linear regression", "Recurrent neural networks", "K-means clustering", "Decision tree"],
+              "correctAnswer": "Recurrent neural networks",
+              "explanation": "RNNs are designed to handle sequential data, making them suitable for time-series tasks."
+            },
+            {
+              "question": "A subtle distinction: Supervised learning always requires:",
+              "options": ["Labeled data", "Unlabeled data", "Reinforcement feedback", "No training data"],
+              "correctAnswer": "Labeled data",
+              "explanation": "Supervised learning requires known input-output pairs for training the model."
+            },
+            {
+              "question": "Which algorithm is most likely to overfit if the model is too complex?",
+              "options": ["Simple linear regression", "Deep neural networks", "K-means clustering", "Naive Bayes"],
+              "correctAnswer": "Deep neural networks",
+              "explanation": "Deep neural networks with many parameters can memorize training data, leading to overfitting."
+            },
+            {
+              "question": "Scenario-based: You want an AI to learn optimal moves in a game. Which learning type is appropriate?",
+              "options": ["Supervised", "Unsupervised", "Reinforcement", "Deep learning only"],
+              "correctAnswer": "Reinforcement",
+              "explanation": "Reinforcement learning trains an agent to take actions to maximize reward in an environment."
+            },
+            {
+              "question": "Trick question: Linear regression is suitable for categorical outputs. True or False?",
+              "options": ["True", "False", "Only if data is numeric", "Depends on sample size"],
+              "correctAnswer": "False",
+              "explanation": "Linear regression predicts continuous outputs; categorical outputs require classification algorithms."
+            }
+          ]
+        },
+        {
+          "topic": "Perception, Reasoning, and Ethics in AI",
+          "questions": [
+            {
+              "question": "Predicate logic in AI is used to:",
+              "options": ["Represent knowledge using statements and variables", "Process images", "Generate text", "Train neural networks"],
+              "correctAnswer": "Represent knowledge using statements and variables",
+              "explanation": "Predicate logic formalizes relationships and properties in statements for reasoning and knowledge representation."
+            },
+            {
+              "question": "Which of the following is an example of predicate logic?",
+              "options": ["If a person is a student, they attend classes", "A histogram of scores", "A scatterplot of height vs. weight", "A regression line"],
+              "correctAnswer": "If a person is a student, they attend classes",
+              "explanation": "Predicate logic uses conditional statements and relationships to represent knowledge."
+            },
+            {
+              "question": "Logic-based reasoning differs from probability-based reasoning because it:",
+              "options": ["Always handles uncertainty", "Uses strict true/false statements", "Requires neural networks", "Cannot be applied to AI"],
+              "correctAnswer": "Uses strict true/false statements",
+              "explanation": "Logic-based reasoning applies deterministic rules, while probability-based reasoning handles uncertainty."
+            },
+            {
+              "question": "Bayesian networks are characterized by:",
+              "options": ["Nodes, edges, and directed acyclic graphs", "Matrices and tensors", "Neural network layers", "Scatterplots"],
+              "correctAnswer": "Nodes, edges, and directed acyclic graphs",
+              "explanation": "Bayesian networks use DAGs to represent probabilistic relationships between variables."
+            },
+            {
+              "question": "Knowledge representation in AI is important because it:",
+              "options": ["Stores and structures information for reasoning", "Generates images", "Optimizes hardware", "Only works for supervised learning"],
+              "correctAnswer": "Stores and structures information for reasoning",
+              "explanation": "Effective knowledge representation allows AI systems to reason, infer, and make decisions."
+            },
+            {
+              "question": "Ethical dilemmas in AI, such as self-driving car decisions, involve:",
+              "options": ["Purely technical challenges", "Balancing moral, social, and safety considerations", "Data cleaning", "Algorithm optimization only"],
+              "correctAnswer": "Balancing moral, social, and safety considerations",
+              "explanation": "Ethical dilemmas require considering values and consequences beyond technical aspects."
+            },
+            {
+              "question": "Algorithmic bias occurs when:",
+              "options": ["The algorithm is too slow", "The training data reflects societal biases", "Neural networks overfit", "Data cleaning is skipped"],
+              "correctAnswer": "The training data reflects societal biases",
+              "explanation": "AI can inherit biases present in the training data, leading to unfair or discriminatory outcomes."
+            },
+            {
+              "question": "Which is a privacy risk associated with LLMs?",
+              "options": ["Generating accurate outputs", "Leaking sensitive data from training datasets", "Increasing model accuracy", "Visualizing data trends"],
+              "correctAnswer": "Leaking sensitive data from training datasets",
+              "explanation": "LLMs trained on sensitive information may inadvertently expose private data."
+            },
+            {
+              "question": "Credibility concerns with LLMs include:",
+              "options": ["Hallucinations and misinformation", "Faster computation", "High accuracy only", "Better visualizations"],
+              "correctAnswer": "Hallucinations and misinformation",
+              "explanation": "LLMs may generate plausible but incorrect or misleading content, posing credibility challenges."
+            },
+            {
+              "question": "Trick question: Ethical AI only concerns self-driving cars. True or False?",
+              "options": ["True", "False", "Only for healthcare AI", "Depends on model size"],
+              "correctAnswer": "False",
+              "explanation": "Ethical considerations apply across all AI applications, including generative AI, surveillance, and decision-making systems."
+            },
+            {
+              "question": "Scenario: You need to model uncertainty in medical diagnosis. Which approach is appropriate?",
+              "options": ["Predicate logic", "Bayesian networks", "Decision trees only", "Clustering"],
+              "correctAnswer": "Bayesian networks",
+              "explanation": "Bayesian networks represent probabilistic relationships and are suitable for reasoning under uncertainty."
+            },
+            {
+              "question": "Which of the following is an example of logic-based reasoning?",
+              "options": ["If all humans are mortal, Socrates is human, then Socrates is mortal", "Calculating mean height", "Plotting a histogram", "Training a neural network"],
+              "correctAnswer": "If all humans are mortal, Socrates is human, then Socrates is mortal",
+              "explanation": "This classic syllogism demonstrates deterministic logic-based inference."
+            },
+            {
+              "question": "A subtle distinction: Probability-based reasoning can handle:",
+              "options": ["Uncertainty and partial truth", "Only true/false rules", "Only supervised datasets", "Neural networks exclusively"],
+              "correctAnswer": "Uncertainty and partial truth",
+              "explanation": "Probability-based reasoning accounts for uncertainty, unlike strict logic rules."
+            },
+            {
+              "question": "Trick scenario: An AI perfectly following predicate logic can always handle ambiguous situations. True or False?",
+              "options": ["True", "False", "Only with neural networks", "Only with Bayesian updates"],
+              "correctAnswer": "False",
+              "explanation": "Predicate logic is deterministic and cannot inherently handle ambiguity or uncertainty."
+            },
+            {
+              "question": "Which privacy measure reduces the risk of sensitive data exposure in AI?",
+              "options": ["Differential privacy", "Increasing hidden layers", "Unsupervised learning", "Linear regression"],
+              "correctAnswer": "Differential privacy",
+              "explanation": "Differential privacy techniques protect individual data while allowing model training."
+            },
+            {
+              "question": "Scenario: A facial recognition system misidentifies people of certain ethnicities. This is an example of:",
+              "options": ["Algorithmic bias", "Overfitting", "Data cleaning", "Feature scaling error"],
+              "correctAnswer": "Algorithmic bias",
+              "explanation": "Bias in training data leads to unfair predictions for specific demographic groups."
+            },
+            {
+              "question": "Which ethical concern arises when LLMs generate deepfake content?",
+              "options": ["Data normalization", "Misinformation and deception", "Training speed", "Variance calculation"],
+              "correctAnswer": "Misinformation and deception",
+              "explanation": "Generative AI can create realistic but false content, raising ethical issues."
+            },
+            {
+              "question": "Trick question: Credibility concerns only affect AI outputs in text. True or False?",
+              "options": ["True", "False", "Only if the AI is generative", "Depends on dataset size"],
+              "correctAnswer": "False",
+              "explanation": "Credibility concerns apply to all AI outputs, including images, audio, and decisions."
+            },
+            {
+              "question": "Scenario-based: You need to encode domain knowledge for a medical expert system. Which method should you use?",
+              "options": ["Logic-based reasoning", "K-means clustering", "RNNs", "Linear regression"],
+              "correctAnswer": "Logic-based reasoning",
+              "explanation": "Expert systems often rely on rules and logic to model domain knowledge and make decisions."
+            },
+            {
+              "question": "Subtle distinction: A Bayesian network differs from a decision tree because it:",
+              "options": ["Represents probabilistic dependencies between variables", "Only predicts categorical outcomes", "Uses linear regression", "Is always unsupervised"],
+              "correctAnswer": "Represents probabilistic dependencies between variables",
+              "explanation": "Bayesian networks model conditional probabilities, while decision trees partition data based on features."
+            }
+          ]
+        },
+        {
+          "testName": "Data Literacy and Foundations",
+          "questions": [
+            {
+              "question": "Data science primarily focuses on:",
+              "options": ["Collecting any data", "Extracting insights and knowledge from data", "Creating visual art", "Programming websites"],
+              "correctAnswer": "Extracting insights and knowledge from data",
+              "explanation": "Data science involves analyzing and interpreting data to inform decisions or predictions."
+            },
+            {
+              "question": "Structured data differs from unstructured data because it:",
+              "options": ["Has no organization", "Fits into rows and columns", "Cannot be stored in databases", "Is always images or videos"],
+              "correctAnswer": "Fits into rows and columns",
+              "explanation": "Structured data is organized and easily stored in databases, unlike unstructured data."
+            },
+            {
+              "question": "Numeric data points are an example of:",
+              "options": ["Categorical data", "Quantitative data", "Qualitative data", "Binary data only"],
+              "correctAnswer": "Quantitative data",
+              "explanation": "Numeric data represents measurable quantities, making it quantitative."
+            },
+            {
+              "question": "Categorical data includes:",
+              "options": ["Temperature readings", "Color labels", "Height measurements", "Sales figures"],
+              "correctAnswer": "Color labels",
+              "explanation": "Categorical data represents discrete categories or labels rather than numbers."
+            },
+            {
+              "question": "Binary data can be represented using:",
+              "options": ["0s and 1s", "Text only", "Images only", "Continuous variables only"],
+              "correctAnswer": "0s and 1s",
+              "explanation": "Binary data consists of two states and is often encoded as 0 and 1."
+            },
+            {
+              "question": "Data can be converted between representations. Which is correct?",
+              "options": ["Decimal to binary", "Only text to numbers", "Binary cannot be converted", "Hexadecimal only for images"],
+              "correctAnswer": "Decimal to binary",
+              "explanation": "Numeric data can be converted between decimal, binary, and hexadecimal representations."
+            },
+            {
+              "question": "Which of the following is a common data source?",
+              "options": ["Sensor measurements", "Surveys", "Social media activity", "All of the above"],
+              "correctAnswer": "All of the above",
+              "explanation": "Data can originate from multiple sources, including sensors, surveys, and digital platforms."
+            },
+            {
+              "question": "Data wrangling refers to:",
+              "options": ["Analyzing data only", "Cleaning, transforming, and organizing data", "Visualizing only", "Storing data only"],
+              "correctAnswer": "Cleaning, transforming, and organizing data",
+              "explanation": "Data wrangling prepares raw data for analysis by addressing errors, formats, and inconsistencies."
+            },
+            {
+              "question": "Transforming data may include:",
+              "options": ["Normalizing values", "Encoding categories", "Removing duplicates", "All of the above"],
+              "correctAnswer": "All of the above",
+              "explanation": "Data transformation includes multiple steps to standardize and improve the dataset."
+            },
+            {
+              "question": "Which stage of the data science process involves identifying the problem and objectives?",
+              "options": ["Data collection", "Problem definition", "Data cleaning", "Model evaluation"],
+              "correctAnswer": "Problem definition",
+              "explanation": "Defining the problem is the first step to ensure the analysis aligns with goals."
+            },
+            {
+              "question": "In data science, exploration and visualization are part of:",
+              "options": ["Data acquisition", "Data analysis", "Model deployment", "Feature engineering"],
+              "correctAnswer": "Data analysis",
+              "explanation": "Exploratory data analysis helps understand patterns, distributions, and relationships in data."
+            },
+            {
+              "question": "Trick question: Only numeric data can be analyzed statistically. True or False?",
+              "options": ["True", "False", "Only if large dataset", "Depends on visualization"],
+              "correctAnswer": "False",
+              "explanation": "Categorical data can also be analyzed using counts, proportions, or specialized statistical tests."
+            },
+            {
+              "question": "Reference materials for data science learning include:",
+              "options": ["ACM competencies", "Harvard Data Science Principles", "IBM Data Science Certificate", "All of the above"],
+              "correctAnswer": "All of the above",
+              "explanation": "These sources provide foundational knowledge and guidelines for data science education."
+            },
+            {
+              "question": "Scenario: You receive a dataset with missing values. The first step is:",
+              "options": ["Data visualization", "Data cleaning", "Model training", "Data collection"],
+              "correctAnswer": "Data cleaning",
+              "explanation": "Cleaning addresses missing, inconsistent, or incorrect data before analysis."
+            },
+            {
+              "question": "Structured vs. unstructured: Which type includes free-text documents?",
+              "options": ["Structured", "Unstructured", "Both", "Neither"],
+              "correctAnswer": "Unstructured",
+              "explanation": "Text, images, and audio are unstructured because they lack fixed formats."
+            },
+            {
+              "question": "Numeric data can be continuous or discrete. Which is discrete?",
+              "options": ["Temperature", "Number of students", "Height", "Weight"],
+              "correctAnswer": "Number of students",
+              "explanation": "Discrete numeric data takes countable values; continuous data can take any value in a range."
+            },
+            {
+              "question": "Why is data wrangling important?",
+              "options": ["Improves accuracy of analysis", "Removes inconsistencies", "Prepares data for modeling", "All of the above"],
+              "correctAnswer": "All of the above",
+              "explanation": "Wrangling ensures the dataset is clean, consistent, and suitable for meaningful analysis."
+            },
+            {
+              "question": "Data science process stages include:",
+              "options": ["Problem definition, data collection, analysis, modeling, deployment", "Only analysis and modeling", "Only cleaning and visualization", "Data collection only"],
+              "correctAnswer": "Problem definition, data collection, analysis, modeling, deployment",
+              "explanation": "A typical data science workflow progresses through these stages for systematic problem solving."
+            },
+            {
+              "question": "Trick scenario: Unstructured data cannot be analyzed at all. True or False?",
+              "options": ["True", "False", "Only with Python", "Depends on dataset size"],
+              "correctAnswer": "False",
+              "explanation": "Unstructured data can be analyzed using text mining, NLP, and image/audio processing techniques."
+            },
+            {
+              "question": "A subtle distinction: Data literacy includes the ability to:",
+              "options": ["Understand data sources", "Analyze and interpret data", "Communicate findings effectively", "All of the above"],
+              "correctAnswer": "All of the above",
+              "explanation": "Data literacy encompasses comprehension, analysis, and communication skills related to data."
+            },
+            {
+              "question": "Scenario-based: You need to encode categorical colors into numbers for machine learning. This is:",
+              "options": ["Data cleaning", "Feature engineering", "Data wrangling", "Data visualization"],
+              "correctAnswer": "Feature engineering",
+              "explanation": "Encoding categorical variables into numeric form is a feature engineering step to prepare data for ML models."
+            }
+          ]
         }
       ]
     }
