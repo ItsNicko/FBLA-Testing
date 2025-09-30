@@ -8,17 +8,15 @@
 </head>
 <body>
   <h1>FBLACER</h1>
-  <select id="testSelect">
-    <option value="">-- Select a Test --</option>
-  </select>
-  <button id="startBtn" onclick="startTest()">Start Test</button>
-  
-  <div id="flashcard-container"></div>
-  
-  <div id="chart-container" >
-    <canvas id="topicChart"></canvas>
-  </div>
-<!-- Future Business Leaders Association Challenger Education Review -->
-  <script src="script.js"></script>
+<select id="testSelect"></select>
+<button id="startBtn" onclick="startTest()">Start Test</button>
+<button id="endBtn" onclick="endTest()" style="display:none;">End Test Now</button>
+
+<div id="flashcard-container"></div>
+<div id="chart-container" style="display:none; height:400px;">
+  <canvas id="topicChart"></canvas>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
