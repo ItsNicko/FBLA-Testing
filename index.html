@@ -8,15 +8,17 @@
 </head>
 <body>
   <h1>Flashcard Generator</h1>
-  <select id="test-selector"></select>
-  <button id="start-test-btn">Start Test</button>
-  <div id="score"></div>
+  <select id="testSelect">
+    <option value="">-- Select a Test --</option>
+  </select>
+  <button id="startBtn" onclick="startTest()">Start Test</button>
+  
   <div id="flashcard-container"></div>
-
+  
   <div id="chart-container" style="width: 250px; height: 250px; margin: auto; display: none;">
     <canvas id="topicChart"></canvas>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
