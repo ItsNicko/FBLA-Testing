@@ -12,6 +12,9 @@ let loseStreak = 0;
 // Track first attempt
 let firstAttempt = true;
 
+// Optional auto-click sequence: string of numbers corresponding to options (1-based)
+window.autoSequence = ''; // e.g., '1234'
+
 // Load JSON tests
 fetch('tests.json')
   .then(response => response.json())
@@ -64,17 +67,6 @@ function shuffleArray(array) {
   }
 }
 
-// Auto-click sequence functionality
-function autoClickSequence(sequence) {
-  const optionElements = document.querySelectorAll('.options li');
-  const clicks = sequence.split('').map(n => parseInt(n, 10) - 1);
-  clicks.forEach(index => {
-    if (optionElements[index]) {
-      optionElements[index].click();
-    }
-  });
-}
-
 function generateFlashcard() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = '';
@@ -93,14 +85,27 @@ function generateFlashcard() {
 
   // Stats row
   const statsRow = document.createElement('div');
+  statsRow.id = 'statsRow';
   statsRow.style.display = 'flex';
   statsRow.style.justifyContent = 'space-between';
   statsRow.style.marginBottom = '10px';
-  statsRow.innerHTML = `
-    <div id="livePoints">Points: ${totalPoints}</div>
-    <div id="liveStreak">Streak: ${streak}</div>
-    <div id="liveProgress">Q: ${progress.done}/${progress.total}</div>
-  `;
+
+  const pointsDiv = document.createElement('div');
+  pointsDiv.id = 'livePoints';
+  pointsDiv.textContent = `Points: ${totalPoints}`;
+
+  const streakDiv = document.createElement('div');
+  streakDiv.id = 'liveStreak';
+  streakDiv.textContent = `Streak: ${streak}`;
+
+  const progressDiv = document.createElement('div');
+  progressDiv.id = 'liveProgress';
+  progressDiv.textContent = `Q: ${progress.done}/${progress.total}`;
+
+  statsRow.appendChild(pointsDiv);
+  statsRow.appendChild(streakDiv);
+  statsRow.appendChild(progressDiv);
+
   card.appendChild(statsRow);
 
   // Question
@@ -109,46 +114,55 @@ function generateFlashcard() {
   questionDiv.textContent = q.question;
   card.appendChild(questionDiv);
 
-  // Options
-  const optionsList = document.createElement('ul');
-  optionsList.className = 'options';
-
+  // Shuffle options
   const shuffledOptions = [...q.options];
   shuffleArray(shuffledOptions);
 
+  const optionsList = document.createElement('ul');
+  optionsList.className = 'options';
+
+  // Explanation (hidden until wrong)
   const explanationDiv = document.createElement('div');
   explanationDiv.className = 'explanation';
   explanationDiv.style.display = 'none';
   explanationDiv.textContent = `Explanation: ${q.explanation}`;
   card.appendChild(explanationDiv);
 
-  shuffledOptions.forEach(option => {
+  shuffledOptions.forEach((option, idx) => {
     const li = document.createElement('li');
     li.textContent = option;
-    li.onclick = () => {
+
+    const clickHandler = () => {
       if (option === q.correctAnswer) {
         if (!li.classList.contains('answered')) {
           handleCorrect(q.topic);
           li.classList.add('correct', 'answered');
-          setTimeout(generateFlashcard, 800);
+          // Immediately go to next flashcard
+          generateFlashcard();
         }
       } else {
         li.classList.add('incorrect');
         explanationDiv.style.display = 'block';
         handleWrong();
+        firstAttempt = false;
       }
-      if (option !== q.correctAnswer) firstAttempt = false;
       updateStats();
     };
+
+    li.onclick = clickHandler;
     optionsList.appendChild(li);
   });
 
   card.appendChild(optionsList);
   container.appendChild(card);
 
-  // Auto-click if sequence is set
+  // Auto-click sequence
   if (window.autoSequence) {
-    autoClickSequence(window.autoSequence);
+    const clicks = window.autoSequence.split('').map(n => parseInt(n, 10) - 1);
+    const optionElements = optionsList.querySelectorAll('li');
+    clicks.forEach(idx => {
+      if (optionElements[idx]) optionElements[idx].click();
+    });
   }
 }
 
@@ -173,7 +187,9 @@ function handleWrong() {
 }
 
 function updateScores(topic, isCorrect) {
-  if (!scores.topics[topic]) scores.topics[topic] = { correct: 0, total: 0 };
+  if (!scores.topics[topic]) {
+    scores.topics[topic] = { correct: 0, total: 0 };
+  }
   scores.topics[topic].total++;
   if (isCorrect) scores.topics[topic].correct++;
 }
@@ -207,7 +223,10 @@ function endTest() {
       labels,
       datasets: [{
         data,
-        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0']
+        backgroundColor: [
+          '#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0',
+          '#00BCD4', '#FF5722', '#8BC34A', '#607D8B', '#FF9800'
+        ]
       }]
     },
     options: {
@@ -217,4 +236,3 @@ function endTest() {
     }
   });
 }
-
