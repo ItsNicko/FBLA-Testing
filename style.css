@@ -13,18 +13,18 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-  /* Chart container styling */
   #chart-container {
     width: 100%;
-    max-width: 600px; /* optional max width */
-    height: 400px;    /* fixed height */
+    max-width: 600px;  /* optional max width */
+    height: 400px;     /* fixed height to stop resize looping */
     margin: auto;
   }
 
-  /* Canvas fills container */
+  /* Canvas fills container without forcing height */
   #topicChart {
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;  /* let Chart.js handle height */
+    display: block;
   }
 
 .options li {
