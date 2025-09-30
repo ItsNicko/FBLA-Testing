@@ -13,12 +13,19 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-#topicChart {
-  max-width: 250px;
-  max-height: 250px;
-  margin: 20px auto;
-  display: block;
-}
+  /* Chart container styling */
+  #chart-container {
+    width: 100%;
+    max-width: 600px; /* optional max width */
+    height: 400px;    /* fixed height */
+    margin: auto;
+  }
+
+  /* Canvas fills container */
+  #topicChart {
+    width: 100% !important;
+    height: 100% !important;
+  }
 
 .options li {
   background: #eee;
