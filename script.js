@@ -12,9 +12,6 @@ let loseStreak = 0;
 // Track first attempt
 let firstAttempt = true;
 
-// Optional auto-click sequence: string of numbers corresponding to options (1-based)
-window.autoSequence = ''; // e.g., '1234'
-
 // Load JSON tests
 fetch('tests.json')
   .then(response => response.json())
@@ -37,15 +34,15 @@ function startTest() {
   const dropdown = document.getElementById('testSelect');
   const startBtn = document.getElementById('startBtn');
   const selectedIndex = dropdown.value;
-
   if (selectedIndex === '') return;
 
   currentTest = tests[selectedIndex];
+  // Flatten all questions from all topics
   questions = currentTest.topics.flatMap(topic =>
     topic.questions.map(q => ({ ...q, topic: topic.topic }))
   );
 
-  shuffleArray(questions);
+  shuffleArray(questions); // Shuffle only questions, not options
 
   progress = { done: 0, total: questions.length };
   scores = { topics: {} };
@@ -78,14 +75,13 @@ function generateFlashcard() {
 
   const q = questions.shift();
   progress.done++;
-  firstAttempt = true;
+  firstAttempt = true; // reset first attempt
 
   const card = document.createElement('div');
   card.className = 'flashcard';
 
-  // Stats row
+  // Stats
   const statsRow = document.createElement('div');
-  statsRow.id = 'statsRow';
   statsRow.style.display = 'flex';
   statsRow.style.justifyContent = 'space-between';
   statsRow.style.marginBottom = '10px';
@@ -105,7 +101,6 @@ function generateFlashcard() {
   statsRow.appendChild(pointsDiv);
   statsRow.appendChild(streakDiv);
   statsRow.appendChild(progressDiv);
-
   card.appendChild(statsRow);
 
   // Question
@@ -114,57 +109,54 @@ function generateFlashcard() {
   questionDiv.textContent = q.question;
   card.appendChild(questionDiv);
 
-  // Shuffle options
-  const shuffledOptions = [...q.options];
-  shuffleArray(shuffledOptions);
-
+  // Options
   const optionsList = document.createElement('ul');
   optionsList.className = 'options';
 
-  // Explanation (hidden until wrong)
+  // Explanation hidden until wrong
   const explanationDiv = document.createElement('div');
   explanationDiv.className = 'explanation';
   explanationDiv.style.display = 'none';
   explanationDiv.textContent = `Explanation: ${q.explanation}`;
   card.appendChild(explanationDiv);
 
-  shuffledOptions.forEach((option, idx) => {
+  q.options.forEach(option => {
     const li = document.createElement('li');
     li.textContent = option;
+    li.onclick = () => {
+      if (li.classList.contains('answered')) return;
 
-    const clickHandler = () => {
       if (option === q.correctAnswer) {
-        if (!li.classList.contains('answered')) {
-          handleCorrect(q.topic);
-          li.classList.add('correct', 'answered');
-          // Immediately go to next flashcard
-          generateFlashcard();
-        }
+        handleCorrect(q.topic);
+        li.classList.add('correct');
+        li.classList.add('answered');
+        setTimeout(generateFlashcard, 800);
       } else {
         li.classList.add('incorrect');
         explanationDiv.style.display = 'block';
         handleWrong();
-        firstAttempt = false;
       }
+      firstAttempt = firstAttempt && option !== q.correctAnswer ? false : firstAttempt;
       updateStats();
     };
-
-    li.onclick = clickHandler;
     optionsList.appendChild(li);
   });
 
   card.appendChild(optionsList);
   container.appendChild(card);
-
-  // Auto-click sequence
-  if (window.autoSequence) {
-    const clicks = window.autoSequence.split('').map(n => parseInt(n, 10) - 1);
-    const optionElements = optionsList.querySelectorAll('li');
-    clicks.forEach(idx => {
-      if (optionElements[idx]) optionElements[idx].click();
-    });
-  }
 }
+
+// Keyboard support: 1-4 clicks corresponding options
+document.addEventListener('keydown', (e) => {
+  if (!['1','2','3','4'].includes(e.key)) return;
+
+  const card = document.querySelector('.flashcard');
+  if (!card) return;
+
+  const optionElements = card.querySelectorAll('.options li');
+  const index = parseInt(e.key, 10) - 1; // 0-based index
+  if (optionElements[index]) optionElements[index].click();
+});
 
 function handleCorrect(topic) {
   if (firstAttempt) {
@@ -187,9 +179,7 @@ function handleWrong() {
 }
 
 function updateScores(topic, isCorrect) {
-  if (!scores.topics[topic]) {
-    scores.topics[topic] = { correct: 0, total: 0 };
-  }
+  if (!scores.topics[topic]) scores.topics[topic] = { correct: 0, total: 0 };
   scores.topics[topic].total++;
   if (isCorrect) scores.topics[topic].correct++;
 }
@@ -223,10 +213,7 @@ function endTest() {
       labels,
       datasets: [{
         data,
-        backgroundColor: [
-          '#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0',
-          '#00BCD4', '#FF5722', '#8BC34A', '#607D8B', '#FF9800'
-        ]
+        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0']
       }]
     },
     options: {
