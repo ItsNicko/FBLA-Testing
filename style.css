@@ -15,7 +15,7 @@ body {
 
   #chart-container {
     width: 50%;
-    max-width: auto;  /* optional max width */
+    max-width: 50%;  /* optional max width */
     height: auto;     /* fixed height to stop resize looping */
     margin: auto;
   }
@@ -23,7 +23,7 @@ body {
   /* Canvas fills container without forcing height */
   #topicChart {
     width: 50% !important;
-    height: auto !important;  /* let Chart.js handle height */
+    height: 50% !important;  /* let Chart.js handle height */
     display: block;
   }
 
