@@ -4,11 +4,10 @@ let questions = [];
 let progress = { done: 0, total: 0 };
 let scores = { topics: {} };
 
-// Scoring variables
+// Scoring
 let totalPoints = 0;
 let streak = 0;
-let wrongStreak = 0;
-let nextQuestionValue = 100; // base
+let loseStreak = 0;
 
 // Load JSON tests
 fetch('tests.json')
@@ -46,8 +45,7 @@ function startTest() {
   scores = { topics: {} };
   totalPoints = 0;
   streak = 0;
-  wrongStreak = 0;
-  nextQuestionValue = 100;
+  loseStreak = 0;
 
   dropdown.style.display = 'none';
   startBtn.style.display = 'none';
@@ -77,20 +75,30 @@ function generateFlashcard() {
   const card = document.createElement('div');
   card.className = 'flashcard';
 
-  // Progress counter
-  const progressDiv = document.createElement('div');
-  progressDiv.className = 'progress';
-  progressDiv.textContent = `Question ${progress.done} of ${progress.total}`;
-  card.appendChild(progressDiv);
+  // Stats row (horizontal alignment)
+  const statsRow = document.createElement('div');
+  statsRow.id = 'statsRow';
+  statsRow.style.display = 'flex';
+  statsRow.style.justifyContent = 'space-between';
+  statsRow.style.marginBottom = '10px';
 
-  // Live points + streak tracker
-  const statsDiv = document.createElement('div');
-  statsDiv.id = 'stats';
-  statsDiv.innerHTML = `
-    <p id="livePoints">Points: ${totalPoints}</p>
-    <p id="liveStreak">Streak: ${streak} | Next Question Value: ${nextQuestionValue} pts</p>
-  `;
-  card.appendChild(statsDiv);
+  const pointsDiv = document.createElement('div');
+  pointsDiv.id = 'livePoints';
+  pointsDiv.textContent = `Points: ${totalPoints}`;
+
+  const streakDiv = document.createElement('div');
+  streakDiv.id = 'liveStreak';
+  streakDiv.textContent = `Streak: ${streak}`;
+
+  const progressDiv = document.createElement('div');
+  progressDiv.id = 'liveProgress';
+  progressDiv.textContent = `Q: ${progress.done}/${progress.total}`;
+
+  statsRow.appendChild(pointsDiv);
+  statsRow.appendChild(streakDiv);
+  statsRow.appendChild(progressDiv);
+
+  card.appendChild(statsRow);
 
   // Question
   const questionDiv = document.createElement('div');
@@ -135,29 +143,23 @@ function generateFlashcard() {
 }
 
 function handleCorrect(topic) {
-  if (wrongStreak === 0) {
-    totalPoints += nextQuestionValue;
-    streak++;
-    wrongStreak = 0;
-    nextQuestionValue = Math.round(nextQuestionValue * 1.15);
-  } else {
-    streak = 0;
-    nextQuestionValue = 100;
-    wrongStreak = 0;
-  }
+  streak++;
+  loseStreak = 0;
+
+  // Formula: (100 * streak * 0.15) + 100
+  const gained = Math.round((100 * streak * 0.15) + 100);
+  totalPoints += gained;
 
   updateScores(topic, true);
 }
 
 function handleWrong() {
-  wrongStreak++;
   streak = 0;
-  nextQuestionValue = 100;
+  loseStreak++;
 
-  if (wrongStreak === 2) {
-    totalPoints = Math.max(0, totalPoints - 50);
-    wrongStreak = 0;
-  }
+  // Formula: 50 + (50 * loseStreak * 0.15)
+  const lost = Math.round(50 + (50 * loseStreak * 0.15));
+  totalPoints = Math.max(0, totalPoints - lost);
 }
 
 function updateScores(topic, isCorrect) {
@@ -169,12 +171,9 @@ function updateScores(topic, isCorrect) {
 }
 
 function updateStats() {
-  const pointsDiv = document.getElementById('livePoints');
-  const streakDiv = document.getElementById('liveStreak');
-  if (pointsDiv && streakDiv) {
-    pointsDiv.textContent = `Points: ${totalPoints}`;
-    streakDiv.textContent = `Streak: ${streak} | Next Question Value: ${nextQuestionValue} pts`;
-  }
+  document.getElementById('livePoints').textContent = `Points: ${totalPoints}`;
+  document.getElementById('liveStreak').textContent = `Streak: ${streak}`;
+  document.getElementById('liveProgress').textContent = `Q: ${progress.done}/${progress.total}`;
 }
 
 function endTest() {
