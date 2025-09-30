@@ -17,7 +17,7 @@ fetch('tests.json')
     populateTestDropdown();
   });
 
-// Populate dropdown with test names
+// Populate dropdown
 function populateTestDropdown() {
   const dropdown = document.getElementById('testSelect');
   tests.forEach((test, idx) => {
@@ -43,7 +43,7 @@ function startTest() {
   shuffleArray(questions);
 
   progress = { done: 0, total: questions.length };
-  scores = { topics: {} };
+  scores = {};
   totalPoints = 0;
   streak = 0;
   loseStreak = 0;
@@ -56,7 +56,7 @@ function startTest() {
   generateFlashcard();
 }
 
-// Shuffle function
+// Shuffle array
 function shuffleArray(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -123,14 +123,13 @@ function generateFlashcard() {
     li.textContent = option;
 
     li.onclick = () => {
-      if (answeredCorrectly) return; // Lock after correct
+      if (answeredCorrectly) return;
 
       if (option === q.correctAnswer) {
         handleCorrect(q.topic);
         li.classList.add('correct');
         answeredCorrectly = true;
 
-        // Lock all options visually
         Array.from(optionsList.children).forEach(opt => opt.classList.add('answered'));
         setTimeout(generateFlashcard, 800);
       } else {
@@ -162,11 +161,15 @@ document.addEventListener('keydown', e => {
 
 // Correct answer handling
 function handleCorrect(topic) {
-  if (!scores.topics[topic]) scores.topics[topic] = { correct:0, total:0 };
+  if (!scores.topics) scores.topics = {};
+  if (!scores.topics[topic]) 
+    scores.topics[topic] = { correct:0, total:0, firstAttemptCorrect:0 };
+
   scores.topics[topic].total++;
   scores.topics[topic].correct++;
 
   if (firstAttempt) {
+    scores.topics[topic].firstAttemptCorrect++;
     streak++;
     loseStreak = 0;
     totalPoints += Math.round(100 + 100 * streak * 0.15);
@@ -178,7 +181,9 @@ function handleCorrect(topic) {
 
 // Wrong answer handling
 function handleWrong(topic) {
-  if (!scores.topics[topic]) scores.topics[topic] = { correct:0, total:0 };
+  if (!scores.topics[topic]) 
+    scores.topics[topic] = { correct:0, total:0, firstAttemptCorrect:0 };
+
   scores.topics[topic].total++;
 
   streak = 0;
@@ -186,7 +191,7 @@ function handleWrong(topic) {
   totalPoints = Math.max(0, totalPoints - Math.round(50 + 50 * loseStreak * 0.15));
 }
 
-// Update stats
+// Update stats display
 function updateStats() {
   document.getElementById('livePoints').textContent = `Points: ${totalPoints}`;
   document.getElementById('liveStreak').textContent = `Streak: ${streak}`;
@@ -207,13 +212,13 @@ function endTest() {
 
   const labels = Object.keys(scores.topics);
 
-  // Percentage correct per topic
+  // Percentage correct per topic (first attempt only)
   const percentages = labels.map(topic => {
-    const { correct, total } = scores.topics[topic];
-    return total > 0 ? (correct / total) * 100 : 0;
+    const { firstAttemptCorrect, total } = scores.topics[topic];
+    return total > 0 ? (firstAttemptCorrect / total) * 100 : 0;
   });
 
-  // Weighted by attempted questions
+  // Weighted by number of questions attempted
   const weights = labels.map(topic => scores.topics[topic].total);
   const data = percentages.map((pct, idx) => pct * weights[idx]);
 
@@ -235,9 +240,9 @@ function endTest() {
           callbacks: {
             label: function(context) {
               const topic = context.label;
-              const { correct, total } = scores.topics[topic];
-              const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
-              return `${topic}: ${pct}% (${correct}/${total})`;
+              const { firstAttemptCorrect, total } = scores.topics[topic];
+              const pct = total > 0 ? Math.round((firstAttemptCorrect / total) * 100) : 0;
+              return `${topic}: ${pct}% (${firstAttemptCorrect}/${total})`;
             }
           }
         }
