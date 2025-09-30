@@ -635,6 +635,553 @@
           ]
         }
       ]
+    },
+    {
+  "tests": [
+    {
+      "testName": "Entrepreneurship Fundamentals",
+      "topics": [
+        {
+          "topic": "Business Plan",
+          "questions": [
+            {
+              "question": "Which of the following is a potential benefit of starting your own business?",
+              "options": [
+                "Ability to make independent decisions",
+                "Guaranteed success without effort",
+                "No financial risk",
+                "Free marketing campaigns"
+              ],
+              "correctAnswer": "Ability to make independent decisions",
+              "explanation": "Entrepreneurs gain control over business operations, strategy, and decision-making."
+            },
+            {
+              "question": "Which trait is commonly associated with successful entrepreneurs?",
+              "options": [
+                "Persistence and willingness to take calculated risks",
+                "Avoiding all risks",
+                "Dependence on others for all decisions",
+                "Refusal to learn new skills"
+              ],
+              "correctAnswer": "Persistence and willingness to take calculated risks",
+              "explanation": "Successful entrepreneurs demonstrate resilience and evaluate risks carefully before taking action."
+            },
+            {
+              "question": "What is a key advantage of a sole proprietorship?",
+              "options": [
+                "Full control and direct profits",
+                "Limited liability protection",
+                "Shared decision-making with partners",
+                "Complex taxation"
+              ],
+              "correctAnswer": "Full control and direct profits",
+              "explanation": "A sole proprietorship allows the owner complete control and keeps all profits."
+            },
+            {
+              "question": "Why conduct a feasibility study before starting a business?",
+              "options": [
+                "To evaluate industry trends, competition, and market segment",
+                "To immediately hire employees",
+                "To select office furniture",
+                "To reduce marketing costs"
+              ],
+              "correctAnswer": "To evaluate industry trends, competition, and market segment",
+              "explanation": "Feasibility studies assess viability and guide informed business decisions."
+            },
+            {
+              "question": "Creating a vision and mission statement helps a business:",
+              "options": [
+                "Define purpose, goals, and strategic direction",
+                "Avoid budgeting",
+                "Ignore employee recruitment",
+                "Reduce marketing effort"
+              ],
+              "correctAnswer": "Define purpose, goals, and strategic direction",
+              "explanation": "Vision and mission statements provide clarity and guide business planning and operations."
+            }
+          ]
+        },
+        {
+          "topic": "Financial Management",
+          "questions": [
+            {
+              "question": "Which accounting system practice ensures good financial management?",
+              "options": [
+                "Accurate recording of business transactions",
+                "Ignoring cash flow",
+                "Avoiding financial statements",
+                "Relying on estimates only"
+              ],
+              "correctAnswer": "Accurate recording of business transactions",
+              "explanation": "Proper recordkeeping allows tracking, reporting, and informed decision-making."
+            },
+            {
+              "question": "Why is maintaining a budget important?",
+              "options": [
+                "To manage expenses and plan for future financial needs",
+                "To avoid paying employees",
+                "To ignore taxes",
+                "To eliminate marketing activities"
+              ],
+              "correctAnswer": "To manage expenses and plan for future financial needs",
+              "explanation": "Budgets help allocate resources, control spending, and plan for growth."
+            },
+            {
+              "question": "Which statement reflects profitability analysis?",
+              "options": [
+                "Evaluating revenue versus expenses to determine sustainability",
+                "Ignoring financial statements",
+                "Hiring employees without planning",
+                "Selling products without tracking sales"
+              ],
+              "correctAnswer": "Evaluating revenue versus expenses to determine sustainability",
+              "explanation": "Profitability analysis identifies the break-even point and guides strategic financial decisions."
+            },
+            {
+              "question": "Cash flow forecasting is important because:",
+              "options": [
+                "It predicts liquidity needs and helps prevent shortfalls",
+                "It replaces marketing decisions",
+                "It eliminates the need for HR",
+                "It ensures immediate profit"
+              ],
+              "correctAnswer": "It predicts liquidity needs and helps prevent shortfalls",
+              "explanation": "Forecasting ensures the business can meet obligations and plan for investments."
+            },
+            {
+              "question": "Applying computational skills to financial documents helps:",
+              "options": [
+                "Improve accuracy and efficiency in reporting",
+                "Decorate the office",
+                "Hire more staff",
+                "Ignore customer service"
+              ],
+              "correctAnswer": "Improve accuracy and efficiency in reporting",
+              "explanation": "Using computational skills reduces errors and streamlines accounting processes."
+            }
+          ]
+        },
+        {
+          "topic": "Initial Capital and Credit",
+          "questions": [
+            {
+              "question": "Comparing different credit sources helps a business:",
+              "options": [
+                "Select the most appropriate funding option",
+                "Hire more employees",
+                "Ignore marketing",
+                "Reduce product quality"
+              ],
+              "correctAnswer": "Select the most appropriate funding option",
+              "explanation": "Evaluating options ensures the business chooses favorable terms and minimizes financial risk."
+            },
+            {
+              "question": "Understanding creditworthiness involves:",
+              "options": [
+                "Maintaining good records, ratings, and legal compliance",
+                "Relying solely on personal assets",
+                "Avoiding loan applications",
+                "Ignoring interest rates"
+              ],
+              "correctAnswer": "Maintaining good records, ratings, and legal compliance",
+              "explanation": "Creditworthiness reflects responsible financial management and reliability."
+            },
+            {
+              "question": "Risk management includes:",
+              "options": [
+                "Identifying risks and planning to reduce impact",
+                "Ignoring market trends",
+                "Avoiding employee training",
+                "Delaying accounting"
+              ],
+              "correctAnswer": "Identifying risks and planning to reduce impact",
+              "explanation": "Planning for risks protects assets and ensures business continuity."
+            },
+            {
+              "question": "Completing credit forms correctly helps:",
+              "options": [
+                "Ensure approval and proper documentation",
+                "Reduce employee productivity",
+                "Ignore legal compliance",
+                "Delay marketing campaigns"
+              ],
+              "correctAnswer": "Ensure approval and proper documentation",
+              "explanation": "Accurate applications improve chances of receiving funding and demonstrate reliability."
+            },
+            {
+              "question": "A subtle misconception about creditworthiness is:",
+              "options": [
+                "Personal wealth alone guarantees good business credit",
+                "Payment history affects credit ratings",
+                "Accurate documentation supports loans",
+                "Maintaining good financial practices is essential"
+              ],
+              "correctAnswer": "Personal wealth alone guarantees good business credit",
+              "explanation": "Creditworthiness depends on financial records and responsible practices, not just personal assets."
+            }
+          ]
+        },
+        {
+          "topic": "Marketing Management",
+          "questions": [
+            {
+              "question": "Market segmentation involves:",
+              "options": [
+                "Dividing customers into distinct groups",
+                "Advertising randomly",
+                "Ignoring demographics",
+                "Selling only to friends"
+              ],
+              "correctAnswer": "Dividing customers into distinct groups",
+              "explanation": "Segmentation helps target marketing effectively based on customer needs."
+            },
+            {
+              "question": "The marketing mix consists of:",
+              "options": [
+                "Product, Price, Place, Promotion",
+                "Budget, Accounting, Staffing, Training",
+                "Hiring, Scheduling, Payroll, Policies",
+                "Design, Location, Taxes, Ethics"
+              ],
+              "correctAnswer": "Product, Price, Place, Promotion",
+              "explanation": "These four elements guide marketing strategy to meet customer needs and business goals."
+            },
+            {
+              "question": "Value-based pricing focuses on:",
+              "options": [
+                "Customer perception of value",
+                "Cost of production only",
+                "Random pricing",
+                "Fixed pricing regardless of demand"
+              ],
+              "correctAnswer": "Customer perception of value",
+              "explanation": "Pricing should reflect what customers are willing to pay based on perceived benefits."
+            },
+            {
+              "question": "Good customer service leads to:",
+              "options": [
+                "Loyalty and repeat business",
+                "Ignoring complaints",
+                "Reducing product quality",
+                "Focusing only on internal operations"
+              ],
+              "correctAnswer": "Loyalty and repeat business",
+              "explanation": "Strong service builds trust and encourages ongoing customer engagement."
+            },
+            {
+              "question": "Analyzing marketing information helps businesses:",
+              "options": [
+                "Make informed decisions and adjust operations",
+                "Ignore trends",
+                "Reduce employee training",
+                "Avoid accounting procedures"
+              ],
+              "correctAnswer": "Make informed decisions and adjust operations",
+              "explanation": "Data analysis guides strategic marketing and operational changes."
+            }
+          ]
+        },
+        {
+          "topic": "Personnel Management",
+          "questions": [
+            {
+              "question": "Written personnel policies ensure:",
+              "options": [
+                "Consistency in employee management",
+                "Employees ignore rules",
+                "Managers have less responsibility",
+                "Office aesthetics improve"
+              ],
+              "correctAnswer": "Consistency in employee management",
+              "explanation": "Policies provide clear guidance for fair and consistent treatment."
+            },
+            {
+              "question": "Career development programs:",
+              "options": [
+                "Provide training and growth opportunities",
+                "Limit responsibilities",
+                "Ignore employee goals",
+                "Focus only on immediate tasks"
+              ],
+              "correctAnswer": "Provide training and growth opportunities",
+              "explanation": "Development programs enhance skills and long-term employee contributions."
+            },
+            {
+              "question": "Performance evaluation helps:",
+              "options": [
+                "Identify strengths and weaknesses",
+                "Eliminate taxes",
+                "Replace marketing strategies",
+                "Increase product prices arbitrarily"
+              ],
+              "correctAnswer": "Identify strengths and weaknesses",
+              "explanation": "Evaluations guide management decisions and productivity improvements."
+            },
+            {
+              "question": "Safe working conditions ensure:",
+              "options": [
+                "Employee health and legal compliance",
+                "Marketing improvement",
+                "Financial planning reduction",
+                "Decorative office benefits"
+              ],
+              "correctAnswer": "Employee health and legal compliance",
+              "explanation": "Safety protects employees and ensures adherence to regulations."
+            },
+            {
+              "question": "Proper staffing and scheduling:",
+              "options": [
+                "Maximizes operational efficiency",
+                "Reduces taxes",
+                "Simplifies marketing",
+                "Determines customer segments"
+              ],
+              "correctAnswer": "Maximizes operational efficiency",
+              "explanation": "Scheduling ensures resources are used effectively and workflow is smooth."
+            }
+          ]
+        },
+        {
+          "topic": "Taxes",
+          "questions": [
+            {
+              "question": "Accurate tax preparation ensures:",
+              "options": [
+                "Compliance and avoidance of penalties",
+                "Ignoring receipts",
+                "Delaying payments",
+                "Delegating to marketing staff"
+              ],
+              "correctAnswer": "Compliance and avoidance of penalties",
+              "explanation": "Proper tax procedures prevent fines and legal issues."
+            },
+            {
+              "question": "Analyzing tax structures helps businesses:",
+              "options": [
+                "Understand financial implications",
+                "Hire more employees",
+                "Ignore marketing",
+                "Reduce customer satisfaction"
+              ],
+              "correctAnswer": "Understand financial implications",
+              "explanation": "Knowledge of tax impact supports strategic decision-making."
+            },
+            {
+              "question": "Failing to apply employee/employer tax regulations can result in:",
+              "options": [
+                "Legal penalties and financial liability",
+                "Improved customer loyalty",
+                "Higher marketing efficiency",
+                "Faster product delivery"
+              ],
+              "correctAnswer": "Legal penalties and financial liability",
+              "explanation": "Non-compliance exposes the business to fines and audits."
+            },
+            {
+              "question": "A tax plan helps:",
+              "options": [
+                "Manage costs and inform business decisions",
+                "Eliminate employee training",
+                "Replace accounting procedures",
+                "Reduce marketing"
+              ],
+              "correctAnswer": "Manage costs and inform business decisions",
+              "explanation": "Planning reduces liabilities and improves financial decisions."
+            },
+            {
+              "question": "Misusing personal expenses as business deductions is:",
+              "options": [
+                "Illegal and leads to penalties",
+                "Good accounting practice",
+                "Encouraged by law",
+                "Recommended for startups"
+              ],
+              "correctAnswer": "Illegal and leads to penalties",
+              "explanation": "Mixing personal and business expenses can result in audits and fines."
+            }
+          ]
+        },
+        {
+          "topic": "Community/Business Relations",
+          "questions": [
+            {
+              "question": "Monitoring current events helps a business:",
+              "options": [
+                "Adapt operations and maintain relevance",
+                "Ignore customer feedback",
+                "Reduce employee training",
+                "Avoid taxes"
+              ],
+              "correctAnswer": "Adapt operations and maintain relevance",
+              "explanation": "Awareness allows proactive adjustments to strategy."
+            },
+            {
+              "question": "Public relations programs help:",
+              "options": [
+                "Build reputation and communicate with stakeholders",
+                "Increase defects",
+                "Reduce motivation",
+                "Avoid marketing entirely"
+              ],
+              "correctAnswer": "Build reputation and communicate with stakeholders",
+              "explanation": "PR strengthens image, customer trust, and community relations."
+            },
+            {
+              "question": "Ethical conduct in community engagement ensures:",
+              "options": [
+                "Trust, credibility, and long-term success",
+                "Reduced operational efficiency",
+                "Increased tax liability",
+                "Lower employee engagement"
+              ],
+              "correctAnswer": "Trust, credibility, and long-term success",
+              "explanation": "Ethical practices maintain positive relationships and reputation."
+            },
+            {
+              "question": "Communicating business activities clearly ensures:",
+              "options": [
+                "Transparency and better stakeholder engagement",
+                "Faster inventory processing",
+                "Less need for financial planning",
+                "Reduced employee training"
+              ],
+              "correctAnswer": "Transparency and better stakeholder engagement",
+              "explanation": "Clear communication strengthens trust and collaboration."
+            },
+            {
+              "question": "A misconception about business-community relations is:",
+              "options": [
+                "Occasional publicity replaces consistent ethical conduct",
+                "Regular engagement builds trust",
+                "Monitoring events supports decisions",
+                "PR programs enhance reputation"
+              ],
+              "correctAnswer": "Occasional publicity replaces consistent ethical conduct",
+              "explanation": "Sustainable trust requires ongoing ethical behavior, not just publicity."
+            }
+          ]
+        },
+        {
+          "topic": "Government Regulations",
+          "questions": [
+            {
+              "question": "Following government regulations ensures:",
+              "options": [
+                "Legal compliance and protection of stakeholders",
+                "Automatic personal wealth increase",
+                "Reduced product quality",
+                "Ignore HR policies"
+              ],
+              "correctAnswer": "Legal compliance and protection of stakeholders",
+              "explanation": "Regulations safeguard employees, customers, and business interests."
+            },
+            {
+              "question": "Failing to keep up with laws results in:",
+              "options": [
+                "Fines, penalties, and legal challenges",
+                "Better marketing campaigns",
+                "Higher employee satisfaction",
+                "Faster reporting"
+              ],
+              "correctAnswer": "Fines, penalties, and legal challenges",
+              "explanation": "Non-compliance exposes the business to legal and financial risks."
+            },
+            {
+              "question": "Ethical conduct in business decisions supports:",
+              "options": [
+                "Trust, credibility, and sustainability",
+                "Faster inventory turnover",
+                "Reduced training",
+                "Ignoring tax laws"
+              ],
+              "correctAnswer": "Trust, credibility, and sustainability",
+              "explanation": "Ethical choices reinforce reputation and stakeholder confidence."
+            },
+            {
+              "question": "Monitoring regulatory updates helps:",
+              "options": [
+                "Avoid legal issues and adapt policies proactively",
+                "Eliminate marketing needs",
+                "Reduce customer satisfaction",
+                "Ignore employee performance"
+              ],
+              "correctAnswer": "Avoid legal issues and adapt policies proactively",
+              "explanation": "Staying current prevents non-compliance and informs management decisions."
+            },
+            {
+              "question": "A misconception about regulations is:",
+              "options": [
+                "Following them once is enough for ongoing compliance",
+                "Continuous monitoring ensures compliance",
+                "Ethical conduct is mandatory",
+                "Non-compliance leads to penalties"
+              ],
+              "correctAnswer": "Following them once is enough for ongoing compliance",
+              "explanation": "Regulations evolve, so ongoing attention is necessary."
+            }
+          ]
+        },
+        {
+          "topic": "Legal Issues",
+          "questions": [
+            {
+              "question": "Understanding warranties protects:",
+              "options": [
+                "Consumers and business liability",
+                "Employee training",
+                "Marketing budget",
+                "Financial statements"
+              ],
+              "correctAnswer": "Consumers and business liability",
+              "explanation": "Warranties ensure products meet standards and prevent legal disputes."
+            },
+            {
+              "question": "Legal interpretations in employee matters ensure:",
+              "options": [
+                "Compliance and fair treatment",
+                "Reduce marketing effectiveness",
+                "Ignore finances",
+                "Avoid hiring"
+              ],
+              "correctAnswer": "Compliance and fair treatment",
+              "explanation": "Understanding laws prevents disputes and protects both employees and business."
+            },
+            {
+              "question": "A misconception about legal advisors is:",
+              "options": [
+                "Consulting only when problems arise is sufficient",
+                "Regular advice supports risk management",
+                "Guidance protects contracts",
+                "Professional advice reduces liability"
+              ],
+              "correctAnswer": "Consulting only when problems arise is sufficient",
+              "explanation": "Ongoing consultation prevents issues rather than reacting after problems occur."
+            },
+            {
+              "question": "Retaining records ensures:",
+              "options": [
+                "Support for audits, compliance, and decision-making",
+                "Ignore HR policies",
+                "Increase marketing spend",
+                "Reduce training"
+              ],
+              "correctAnswer": "Support for audits, compliance, and decision-making",
+              "explanation": "Proper recordkeeping ensures transparency and legal protection."
+            },
+            {
+              "question": "Knowledge of social, ethical, and legal issues ensures:",
+              "options": [
+                "Compliance, trust, and sustainable operations",
+                "Product defects",
+                "Reduced motivation",
+                "Lower customer engagement"
+              ],
+              "correctAnswer": "Compliance, trust, and sustainable operations",
+              "explanation": "Awareness strengthens reputation and reduces legal and ethical risks."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
