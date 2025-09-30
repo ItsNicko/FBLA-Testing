@@ -80,9 +80,8 @@ function generateFlashcard() {
   const card = document.createElement('div');
   card.className = 'flashcard';
 
-  // Stats row (horizontal alignment)
+  // Stats row
   const statsRow = document.createElement('div');
-  statsRow.id = 'statsRow';
   statsRow.style.display = 'flex';
   statsRow.style.justifyContent = 'space-between';
   statsRow.style.marginBottom = '10px';
@@ -126,21 +125,21 @@ function generateFlashcard() {
     const li = document.createElement('li');
     li.textContent = option;
     li.onclick = () => {
+      if (li.classList.contains('answered')) return;
+
       if (option === q.correctAnswer) {
-        if (!li.classList.contains('answered')) {
-          handleCorrect(q.topic);
-          li.classList.add('correct');
-          setTimeout(generateFlashcard, 800);
-        }
+        handleCorrect(q.topic);
+        li.classList.add('correct', 'answered');
+        setTimeout(generateFlashcard, 800);
       } else {
+        firstAttempt = false;
         li.classList.add('incorrect');
         explanationDiv.style.display = 'block';
         handleWrong();
       }
-      firstAttempt = firstAttempt && option !== q.correctAnswer ? false : firstAttempt;
       updateStats();
     };
-  optionsList.appendChild(li);
+    optionsList.appendChild(li);
   });
 
   card.appendChild(optionsList);
@@ -148,35 +147,28 @@ function generateFlashcard() {
 }
 
 function handleCorrect(topic) {
+  if (!scores.topics[topic]) {
+    scores.topics[topic] = { correct: 0, total: 0 };
+  }
+  scores.topics[topic].total++;
+
   if (firstAttempt) {
+    scores.topics[topic].correct++;
     streak++;
     loseStreak = 0;
-    // Points formula: (100 * streak * 0.15) + 100
     const gained = Math.round((100 * streak * 0.15) + 100);
     totalPoints += gained;
   } else {
-    // No points if wrong first
     streak = 0;
     loseStreak = 0;
   }
-
-  updateScores(topic, true);
 }
 
 function handleWrong() {
   streak = 0;
   loseStreak++;
-  // Points lost formula: 50 + (50 * loseStreak * 0.15)
   const lost = Math.round(50 + (50 * loseStreak * 0.15));
   totalPoints = Math.max(0, totalPoints - lost);
-}
-
-function updateScores(topic, isCorrect) {
-  if (!scores.topics[topic]) {
-    scores.topics[topic] = { correct: 0, total: 0 };
-  }
-  scores.topics[topic].total++;
-  if (isCorrect) scores.topics[topic].correct++;
 }
 
 function updateStats() {
@@ -197,10 +189,7 @@ function endTest() {
   chartContainer.style.display = 'block';
 
   const labels = Object.keys(scores.topics);
-  const data = labels.map(topic => {
-    const { correct, total } = scores.topics[topic];
-    return total > 0 ? Math.round((correct / total) * 100) : 0;
-  });
+  const data = labels.map(topic => scores.topics[topic].correct);
 
   new Chart(document.getElementById('topicChart'), {
     type: 'doughnut',
@@ -208,13 +197,22 @@ function endTest() {
       labels,
       datasets: [{
         data,
-        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0']
+        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0', '#00BCD4', '#FF5722', '#795548']
       }]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              const { correct, total } = scores.topics[context.label];
+              const pct = total > 0 ? ((correct / total) * 100).toFixed(1) : 0;
+              return `${context.label}: ${pct}% correct`;
+            }
+          }
+        },
         legend: { position: 'bottom' }
       }
     }
