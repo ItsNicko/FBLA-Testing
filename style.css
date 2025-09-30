@@ -15,18 +15,16 @@ body {
 
 #chart-container {
   width: 100%;        /* responsive width */
-  max-width: 600px;   /* optional */
-  height: 400px;      /* fixed height so no bouncing */
+  max-width: 600px;   /* optional limit */
+  height: 400px;      /* fixed stable height */
   margin: auto;
 }
 
 #topicChart {
-  display: block;     /* prevents inline-canvas quirks */
-  width: 100%;        /* let it fill width */
-  height: 100%;       /* match container height */
+  display: block;     /* remove inline spacing quirks */
+  width: 100% !important;  /* fill container width */
+  height: auto !important; /* let Chart.js handle height */
 }
-
-
 
 .options li {
   background: #eee;
