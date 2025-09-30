@@ -64,6 +64,17 @@ function shuffleArray(array) {
   }
 }
 
+// Auto-click sequence functionality
+function autoClickSequence(sequence) {
+  const optionElements = document.querySelectorAll('.options li');
+  const clicks = sequence.split('').map(n => parseInt(n, 10) - 1);
+  clicks.forEach(index => {
+    if (optionElements[index]) {
+      optionElements[index].click();
+    }
+  });
+}
+
 function generateFlashcard() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = '';
@@ -75,34 +86,21 @@ function generateFlashcard() {
 
   const q = questions.shift();
   progress.done++;
-  firstAttempt = true; // reset first attempt for this question
+  firstAttempt = true;
 
   const card = document.createElement('div');
   card.className = 'flashcard';
 
   // Stats row
   const statsRow = document.createElement('div');
-  statsRow.id = 'statsRow';
   statsRow.style.display = 'flex';
   statsRow.style.justifyContent = 'space-between';
   statsRow.style.marginBottom = '10px';
-
-  const pointsDiv = document.createElement('div');
-  pointsDiv.id = 'livePoints';
-  pointsDiv.textContent = `Points: ${totalPoints}`;
-
-  const streakDiv = document.createElement('div');
-  streakDiv.id = 'liveStreak';
-  streakDiv.textContent = `Streak: ${streak}`;
-
-  const progressDiv = document.createElement('div');
-  progressDiv.id = 'liveProgress';
-  progressDiv.textContent = `Q: ${progress.done}/${progress.total}`;
-
-  statsRow.appendChild(pointsDiv);
-  statsRow.appendChild(streakDiv);
-  statsRow.appendChild(progressDiv);
-
+  statsRow.innerHTML = `
+    <div id="livePoints">Points: ${totalPoints}</div>
+    <div id="liveStreak">Streak: ${streak}</div>
+    <div id="liveProgress">Q: ${progress.done}/${progress.total}</div>
+  `;
   card.appendChild(statsRow);
 
   // Question
@@ -115,11 +113,9 @@ function generateFlashcard() {
   const optionsList = document.createElement('ul');
   optionsList.className = 'options';
 
-  // Shuffle options
   const shuffledOptions = [...q.options];
   shuffleArray(shuffledOptions);
 
-  // Explanation (hidden until wrong)
   const explanationDiv = document.createElement('div');
   explanationDiv.className = 'explanation';
   explanationDiv.style.display = 'none';
@@ -133,8 +129,7 @@ function generateFlashcard() {
       if (option === q.correctAnswer) {
         if (!li.classList.contains('answered')) {
           handleCorrect(q.topic);
-          li.classList.add('correct');
-          li.classList.add('answered');
+          li.classList.add('correct', 'answered');
           setTimeout(generateFlashcard, 800);
         }
       } else {
@@ -150,6 +145,11 @@ function generateFlashcard() {
 
   card.appendChild(optionsList);
   container.appendChild(card);
+
+  // Auto-click if sequence is set
+  if (window.autoSequence) {
+    autoClickSequence(window.autoSequence);
+  }
 }
 
 function handleCorrect(topic) {
@@ -162,7 +162,6 @@ function handleCorrect(topic) {
     streak = 0;
     loseStreak = 0;
   }
-
   updateScores(topic, true);
 }
 
@@ -174,9 +173,7 @@ function handleWrong() {
 }
 
 function updateScores(topic, isCorrect) {
-  if (!scores.topics[topic]) {
-    scores.topics[topic] = { correct: 0, total: 0 };
-  }
+  if (!scores.topics[topic]) scores.topics[topic] = { correct: 0, total: 0 };
   scores.topics[topic].total++;
   if (isCorrect) scores.topics[topic].correct++;
 }
@@ -199,8 +196,7 @@ function endTest() {
   chartContainer.style.display = 'block';
 
   const labels = Object.keys(scores.topics);
-
-  const percentages = labels.map(topic => {
+  const data = labels.map(topic => {
     const { correct, total } = scores.topics[topic];
     return total > 0 ? Math.round((correct / total) * 100) : 0;
   });
@@ -210,26 +206,15 @@ function endTest() {
     data: {
       labels,
       datasets: [{
-        data: percentages,
-        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0', '#00BCD4', '#FF5722', '#795548']
+        data,
+        backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0']
       }]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      plugins: {
-        tooltip: {
-          callbacks: {
-            label: function(context) {
-              const topic = context.label;
-              const { correct, total } = scores.topics[topic];
-              const pct = total > 0 ? ((correct / total) * 100).toFixed(1) : 0;
-              return `${topic}: ${correct}/${total} correct (${pct}%)`;
-            }
-          }
-        },
-        legend: { position: 'bottom' }
-      }
+      plugins: { legend: { position: 'bottom' } }
     }
   });
 }
+
