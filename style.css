@@ -15,8 +15,8 @@ body {
 
   #chart-container {
     width: 100%;
-    max-width: 600px;  /* optional max width */
-    height: 400px;     /* fixed height to stop resize looping */
+    max-width: auto;  /* optional max width */
+    height: auto;     /* fixed height to stop resize looping */
     margin: auto;
   }
 
