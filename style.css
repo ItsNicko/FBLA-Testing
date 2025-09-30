@@ -13,19 +13,19 @@ body {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-  #chart-container {
-    width: 50%;
-    max-width: 50%;  /* optional max width */
-    height: auto;     /* fixed height to stop resize looping */
-    margin: auto;
-  }
+#chart-container {
+  width: 50%;          /* takes up half of parent width */
+  max-width: 600px;    /* optional cap */
+  height: 400px;       /* FIXED pixel height so Chart.js has a base */
+  margin: auto;        /* center horizontally */
+}
 
-  /* Canvas fills container without forcing height */
-  #topicChart {
-    width: 50% !important;
-    height: 50% !important;  /* let Chart.js handle height */
-    display: block;
-  }
+#topicChart {
+  width: 100% !important;  /* chart fills container width */
+  height: 100% !important; /* chart fills container height */
+  display: block;
+}
+
 
 .options li {
   background: #eee;
