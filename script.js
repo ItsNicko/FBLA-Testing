@@ -33,10 +33,12 @@ function populateTestDropdown() {
 function startTest() {
   const dropdown = document.getElementById('testSelect');
   const startBtn = document.getElementById('startBtn');
+  const endBtn = document.getElementById('endBtn');
   const selectedIndex = dropdown.value;
   if (selectedIndex === '') return;
 
   currentTest = tests[selectedIndex];
+
   questions = currentTest.topics.flatMap(topic =>
     topic.questions.map(q => ({ ...q, topic: topic.topic }))
   );
@@ -52,6 +54,7 @@ function startTest() {
 
   dropdown.style.display = 'none';
   startBtn.style.display = 'none';
+  endBtn.style.display = 'inline-block';
 
   generateFlashcard();
 }
@@ -79,7 +82,7 @@ function generateFlashcard() {
   const card = document.createElement('div');
   card.className = 'flashcard';
 
-  // Stats
+  // Stats row
   const statsRow = document.createElement('div');
   statsRow.style.display = 'flex';
   statsRow.style.justifyContent = 'space-between';
@@ -121,13 +124,15 @@ function generateFlashcard() {
   q.options.forEach(option => {
     const li = document.createElement('li');
     li.textContent = option;
+
     li.onclick = () => {
-      if (li.classList.contains('answered')) return;
+      if (li.classList.contains('answered')) return; // already correct
 
       if (option === q.correctAnswer) {
         handleCorrect(q.topic);
         li.classList.add('correct');
-        li.classList.add('answered');
+        // Lock all options immediately after correct
+        Array.from(optionsList.children).forEach(opt => opt.classList.add('answered'));
         setTimeout(generateFlashcard, 800);
       } else {
         li.classList.add('incorrect');
@@ -135,9 +140,12 @@ function generateFlashcard() {
         handleWrong(q.topic);
       }
 
-      firstAttempt = firstAttempt && option !== q.correctAnswer ? false : firstAttempt;
+      // Only mark first attempt for points/streak
+      if (firstAttempt && option !== q.correctAnswer) firstAttempt = false;
+
       updateStats();
     };
+
     optionsList.appendChild(li);
   });
 
@@ -187,6 +195,7 @@ function updateStats() {
   document.getElementById('liveProgress').textContent = `Q: ${progress.done}/${progress.total}`;
 }
 
+// End test immediately without counting unanswered as wrong
 function endTest() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = `
@@ -199,10 +208,7 @@ function endTest() {
   chartContainer.style.display = 'block';
 
   const labels = Object.keys(scores.topics);
-  const data = labels.map(topic => {
-    const { correct, total } = scores.topics[topic];
-    return total > 0 ? Math.round((correct / total) * 100) : 0;
-  });
+  const data = labels.map(topic => scores.topics[topic].correct);
 
   new Chart(document.getElementById('topicChart'), {
     type: 'doughnut',
