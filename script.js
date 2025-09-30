@@ -43,7 +43,7 @@ function startTest() {
   shuffleArray(questions);
 
   progress = { done: 0, total: questions.length };
-  scores = {};
+  scores = { topics: {} };
   totalPoints = 0;
   streak = 0;
   loseStreak = 0;
@@ -208,6 +208,10 @@ function endTest() {
     <p><strong>Total Points: ${totalPoints}</strong></p>
   `;
 
+  // Hide "End Test Now"
+  const endBtn = document.getElementById('endBtn');
+  if (endBtn) endBtn.style.display = 'none';
+
   const chartContainer = document.getElementById('chart-container');
   chartContainer.style.display = 'block';
 
@@ -249,21 +253,20 @@ function endTest() {
     }
   });
 
-  // Hide "End Test Now" button
-  const endBtn = document.getElementById('endBtn');
-  endBtn.style.display = 'none';
-
   // Show "Start New Test" button
-  const startBtn = document.createElement('button');
-  startBtn.id = 'newTestBtn';
-  startBtn.textContent = 'Start New Test';
-  startBtn.onclick = () => {
-    container.innerHTML = '';
-    chartContainer.style.display = 'none';
-    document.getElementById('testSelect').style.display = 'inline-block';
-    document.getElementById('startBtn').style.display = 'inline-block';
-    startBtn.remove();
-  };
-
-  container.appendChild(startBtn);
+  let newTestBtn = document.getElementById('newTestBtn');
+  if (!newTestBtn) {
+    newTestBtn = document.createElement('button');
+    newTestBtn.id = 'newTestBtn';
+    newTestBtn.textContent = 'Start New Test';
+    newTestBtn.style.marginTop = '20px';
+    newTestBtn.onclick = () => {
+      container.innerHTML = '';
+      chartContainer.style.display = 'none';
+      document.getElementById('testSelect').style.display = 'inline-block';
+      document.getElementById('startBtn').style.display = 'inline-block';
+      newTestBtn.remove();
+    };
+    container.appendChild(newTestBtn);
+  }
 }
