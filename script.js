@@ -82,6 +82,7 @@ function generateFlashcard() {
 
   // Stats row
   const statsRow = document.createElement('div');
+  statsRow.id = 'statsRow';
   statsRow.style.display = 'flex';
   statsRow.style.justifyContent = 'space-between';
   statsRow.style.marginBottom = '10px';
@@ -114,6 +115,10 @@ function generateFlashcard() {
   const optionsList = document.createElement('ul');
   optionsList.className = 'options';
 
+  // Shuffle options
+  const shuffledOptions = [...q.options];
+  shuffleArray(shuffledOptions);
+
   // Explanation (hidden until wrong)
   const explanationDiv = document.createElement('div');
   explanationDiv.className = 'explanation';
@@ -121,22 +126,23 @@ function generateFlashcard() {
   explanationDiv.textContent = `Explanation: ${q.explanation}`;
   card.appendChild(explanationDiv);
 
-  q.options.forEach(option => {
+  shuffledOptions.forEach(option => {
     const li = document.createElement('li');
     li.textContent = option;
     li.onclick = () => {
-      if (li.classList.contains('answered')) return;
-
       if (option === q.correctAnswer) {
-        handleCorrect(q.topic);
-        li.classList.add('correct', 'answered');
-        setTimeout(generateFlashcard, 800);
+        if (!li.classList.contains('answered')) {
+          handleCorrect(q.topic);
+          li.classList.add('correct');
+          li.classList.add('answered');
+          setTimeout(generateFlashcard, 800);
+        }
       } else {
-        firstAttempt = false;
         li.classList.add('incorrect');
         explanationDiv.style.display = 'block';
         handleWrong();
       }
+      if (option !== q.correctAnswer) firstAttempt = false;
       updateStats();
     };
     optionsList.appendChild(li);
@@ -147,13 +153,7 @@ function generateFlashcard() {
 }
 
 function handleCorrect(topic) {
-  if (!scores.topics[topic]) {
-    scores.topics[topic] = { correct: 0, total: 0 };
-  }
-  scores.topics[topic].total++;
-
   if (firstAttempt) {
-    scores.topics[topic].correct++;
     streak++;
     loseStreak = 0;
     const gained = Math.round((100 * streak * 0.15) + 100);
@@ -162,6 +162,8 @@ function handleCorrect(topic) {
     streak = 0;
     loseStreak = 0;
   }
+
+  updateScores(topic, true);
 }
 
 function handleWrong() {
@@ -169,6 +171,14 @@ function handleWrong() {
   loseStreak++;
   const lost = Math.round(50 + (50 * loseStreak * 0.15));
   totalPoints = Math.max(0, totalPoints - lost);
+}
+
+function updateScores(topic, isCorrect) {
+  if (!scores.topics[topic]) {
+    scores.topics[topic] = { correct: 0, total: 0 };
+  }
+  scores.topics[topic].total++;
+  if (isCorrect) scores.topics[topic].correct++;
 }
 
 function updateStats() {
@@ -189,14 +199,18 @@ function endTest() {
   chartContainer.style.display = 'block';
 
   const labels = Object.keys(scores.topics);
-  const data = labels.map(topic => scores.topics[topic].correct);
+
+  const percentages = labels.map(topic => {
+    const { correct, total } = scores.topics[topic];
+    return total > 0 ? Math.round((correct / total) * 100) : 0;
+  });
 
   new Chart(document.getElementById('topicChart'), {
     type: 'doughnut',
     data: {
       labels,
       datasets: [{
-        data,
+        data: percentages,
         backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#E91E63', '#9C27B0', '#00BCD4', '#FF5722', '#795548']
       }]
     },
@@ -207,9 +221,10 @@ function endTest() {
         tooltip: {
           callbacks: {
             label: function(context) {
-              const { correct, total } = scores.topics[context.label];
+              const topic = context.label;
+              const { correct, total } = scores.topics[topic];
               const pct = total > 0 ? ((correct / total) * 100).toFixed(1) : 0;
-              return `${context.label}: ${pct}% correct`;
+              return `${topic}: ${correct}/${total} correct (${pct}%)`;
             }
           }
         },
