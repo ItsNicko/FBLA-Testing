@@ -14,17 +14,18 @@ body {
 }
 
 #chart-container {
-  width: 50%;          /* takes up half of parent width */
-  max-width: 600px;    /* optional cap */
-  height: 400px;       /* FIXED pixel height so Chart.js has a base */
-  margin: auto;        /* center horizontally */
+  width: 100%;        /* responsive width */
+  max-width: 600px;   /* optional */
+  height: 400px;      /* fixed height so no bouncing */
+  margin: auto;
 }
 
 #topicChart {
-  width: 100% !important;  /* chart fills container width */
-  height: 100% !important; /* chart fills container height */
-  display: block;
+  display: block;     /* prevents inline-canvas quirks */
+  width: 100%;        /* let it fill width */
+  height: 100%;       /* match container height */
 }
+
 
 
 .options li {
