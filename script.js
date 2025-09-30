@@ -2,7 +2,7 @@ let allTests = [];
 let questions = [];
 let currentTest = null;
 let currentQuestionIndex = 0;
-let scores = { test: 0 };
+let scores = { test: 0, topics: {} };
 
 // Fetch tests JSON
 fetch('tests.json')
@@ -32,7 +32,7 @@ function populateTestSelector() {
 function startTest(testIndex) {
   currentTest = allTests[testIndex];
 
-  // Remove selector and button
+  // Hide selector and button
   document.getElementById('test-selector').style.display = 'none';
   document.getElementById('start-test-btn').style.display = 'none';
 
@@ -44,11 +44,10 @@ function startTest(testIndex) {
   // Shuffle questions
   shuffleArray(questions);
 
-  // Load previous score if exists
-  const loadedScores = loadScore(currentTest.testName);
-  scores = loadedScores ? loadedScores : { test: 0 };
-
+  // Reset score
+  scores = { test: 0, topics: {} };
   currentQuestionIndex = 0;
+
   displayProgress();
   generateFlashcard();
 }
@@ -66,9 +65,16 @@ function generateFlashcard() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = '';
 
+  // End of test
   if (currentQuestionIndex >= questions.length) {
-    container.textContent = `Test completed! You got ${scores.test} out of ${questions.length} correct.`;
-    saveScore();
+    container.innerHTML = `
+      <h3>Test completed!</h3>
+      <p>You got ${scores.test} out of ${questions.length} correct.</p>
+      <canvas id="topicChart" width="400" height="400"></canvas>
+      <button id="restart-btn">Restart Test</button>
+    `;
+    showTopicChart();
+    document.getElementById('restart-btn').onclick = () => restartTest();
     return;
   }
 
@@ -98,9 +104,16 @@ function generateFlashcard() {
     const li = document.createElement('li');
     li.textContent = option;
     li.onclick = () => {
+      // Track topic
+      if (!scores.topics[q.topic]) {
+        scores.topics[q.topic] = { correct: 0, total: 0 };
+      }
+      scores.topics[q.topic].total++;
+
       if (option === q.correctAnswer) {
         li.classList.add('correct');
         scores.test++;
+        scores.topics[q.topic].correct++;
       } else {
         li.classList.add('incorrect');
         explanationDiv.style.display = 'block';
@@ -109,7 +122,6 @@ function generateFlashcard() {
       setTimeout(() => {
         currentQuestionIndex++;
         displayProgress();
-        saveScore();
         generateFlashcard();
       }, 800);
     };
@@ -120,19 +132,57 @@ function generateFlashcard() {
   container.appendChild(card);
 }
 
-// Display progress
+// Display progress only (no score during test)
 function displayProgress() {
   const progressDiv = document.getElementById('score');
-  progressDiv.innerHTML = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+  progressDiv.innerHTML = `Questions completed: ${currentQuestionIndex} / ${questions.length}`;
 }
 
-// Save scores in localStorage
-function saveScore() {
-  localStorage.setItem(`score_${currentTest.testName}`, JSON.stringify(scores));
+// Show per-topic chart at the end
+function showTopicChart() {
+  const ctx = document.getElementById('topicChart').getContext('2d');
+
+  const labels = Object.keys(scores.topics);
+  const percentages = labels.map(topic => {
+    const { correct, total } = scores.topics[topic];
+    return total > 0 ? Math.round((correct / total) * 100) : 0;
+  });
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Score %',
+        data: percentages,
+        backgroundColor: [
+          '#4CAF50', '#2196F3', '#FFC107', '#FF5722',
+          '#9C27B0', '#00BCD4', '#795548', '#8BC34A'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              const topic = labels[context.dataIndex];
+              const { correct, total } = scores.topics[topic];
+              return `${topic}: ${correct}/${total} (${percentages[context.dataIndex]}%)`;
+            }
+          }
+        }
+      }
+    }
+  });
 }
 
-// Load scores from localStorage
-function loadScore(testName) {
-  const stored = localStorage.getItem(`score_${testName}`);
-  return stored ? JSON.parse(stored) : null;
+// Restart test
+function restartTest() {
+  scores = { test: 0, topics: {} };
+  currentQuestionIndex = 0;
+  shuffleArray(questions);
+  displayProgress();
+  generateFlashcard();
 }
