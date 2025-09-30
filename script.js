@@ -4,6 +4,12 @@ let questions = [];
 let progress = { done: 0, total: 0 };
 let scores = { topics: {} };
 
+// Scoring variables
+let totalPoints = 0;
+let streak = 0;
+let wrongStreak = 0;
+let nextQuestionValue = 100; // base
+
 // Load JSON tests
 fetch('tests.json')
   .then(response => response.json())
@@ -12,7 +18,6 @@ fetch('tests.json')
     populateTestDropdown();
   });
 
-// Populate dropdown for test selection
 function populateTestDropdown() {
   const dropdown = document.getElementById('testSelect');
   tests.forEach((test, index) => {
@@ -23,7 +28,6 @@ function populateTestDropdown() {
   });
 }
 
-// Start test
 function startTest() {
   const dropdown = document.getElementById('testSelect');
   const startBtn = document.getElementById('startBtn');
@@ -36,22 +40,21 @@ function startTest() {
     topic.questions.map(q => ({ ...q, topic: topic.topic }))
   );
 
-  // Shuffle questions
   shuffleArray(questions);
 
-  // Reset progress + scores
   progress = { done: 0, total: questions.length };
   scores = { topics: {} };
+  totalPoints = 0;
+  streak = 0;
+  wrongStreak = 0;
+  nextQuestionValue = 100;
 
-  // Hide selection UI
   dropdown.style.display = 'none';
   startBtn.style.display = 'none';
 
-  // Start first flashcard
   generateFlashcard();
 }
 
-// Fisher-Yates shuffle
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -59,7 +62,6 @@ function shuffleArray(array) {
   }
 }
 
-// Generate a flashcard
 function generateFlashcard() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = '';
@@ -69,7 +71,7 @@ function generateFlashcard() {
     return;
   }
 
-  const q = questions.shift(); // take next question
+  const q = questions.shift();
   progress.done++;
 
   const card = document.createElement('div');
@@ -80,6 +82,15 @@ function generateFlashcard() {
   progressDiv.className = 'progress';
   progressDiv.textContent = `Question ${progress.done} of ${progress.total}`;
   card.appendChild(progressDiv);
+
+  // Live points + streak tracker
+  const statsDiv = document.createElement('div');
+  statsDiv.id = 'stats';
+  statsDiv.innerHTML = `
+    <p id="livePoints">Points: ${totalPoints}</p>
+    <p id="liveStreak">Streak: ${streak} | Next Question Value: ${nextQuestionValue} pts</p>
+  `;
+  card.appendChild(statsDiv);
 
   // Question
   const questionDiv = document.createElement('div');
@@ -103,13 +114,17 @@ function generateFlashcard() {
     li.textContent = option;
     li.onclick = () => {
       if (option === q.correctAnswer) {
-        li.classList.add('correct');
-        updateScores(q.topic, true);
-        setTimeout(generateFlashcard, 800);
+        if (!li.classList.contains('answered')) {
+          handleCorrect(q.topic);
+          updateStats();
+          li.classList.add('correct');
+          setTimeout(generateFlashcard, 800);
+        }
       } else {
         li.classList.add('incorrect');
         explanationDiv.style.display = 'block';
-        updateScores(q.topic, false);
+        handleWrong();
+        updateStats();
       }
     };
     optionsList.appendChild(li);
@@ -119,7 +134,32 @@ function generateFlashcard() {
   container.appendChild(card);
 }
 
-// Update scores per topic
+function handleCorrect(topic) {
+  if (wrongStreak === 0) {
+    totalPoints += nextQuestionValue;
+    streak++;
+    wrongStreak = 0;
+    nextQuestionValue = Math.round(nextQuestionValue * 1.15);
+  } else {
+    streak = 0;
+    nextQuestionValue = 100;
+    wrongStreak = 0;
+  }
+
+  updateScores(topic, true);
+}
+
+function handleWrong() {
+  wrongStreak++;
+  streak = 0;
+  nextQuestionValue = 100;
+
+  if (wrongStreak === 2) {
+    totalPoints = Math.max(0, totalPoints - 50);
+    wrongStreak = 0;
+  }
+}
+
 function updateScores(topic, isCorrect) {
   if (!scores.topics[topic]) {
     scores.topics[topic] = { correct: 0, total: 0 };
@@ -128,19 +168,26 @@ function updateScores(topic, isCorrect) {
   if (isCorrect) scores.topics[topic].correct++;
 }
 
-// End of test
+function updateStats() {
+  const pointsDiv = document.getElementById('livePoints');
+  const streakDiv = document.getElementById('liveStreak');
+  if (pointsDiv && streakDiv) {
+    pointsDiv.textContent = `Points: ${totalPoints}`;
+    streakDiv.textContent = `Streak: ${streak} | Next Question Value: ${nextQuestionValue} pts`;
+  }
+}
+
 function endTest() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = `
     <h2>Test Complete!</h2>
-    <p>You answered ${progress.done} out of ${progress.total} questions.</p>
+    <p>You answered ${progress.done} of ${progress.total} questions.</p>
+    <p><strong>Total Points: ${totalPoints}</strong></p>
   `;
 
-  // Show chart
   const chartContainer = document.getElementById('chart-container');
   chartContainer.style.display = 'block';
 
-  // Chart data
   const labels = Object.keys(scores.topics);
   const data = labels.map(topic => {
     const { correct, total } = scores.topics[topic];
