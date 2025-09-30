@@ -130,6 +130,7 @@ function generateFlashcard() {
         li.classList.add('correct');
         answeredCorrectly = true;
 
+        // Lock all options visually
         Array.from(optionsList.children).forEach(opt => opt.classList.add('answered'));
         setTimeout(generateFlashcard, 800);
       } else {
@@ -212,13 +213,11 @@ function endTest() {
 
   const labels = Object.keys(scores.topics);
 
-  // Percentage correct per topic (first attempt only)
   const percentages = labels.map(topic => {
     const { firstAttemptCorrect, total } = scores.topics[topic];
     return total > 0 ? (firstAttemptCorrect / total) * 100 : 0;
   });
 
-  // Weighted by number of questions attempted
   const weights = labels.map(topic => scores.topics[topic].total);
   const data = percentages.map((pct, idx) => pct * weights[idx]);
 
@@ -249,4 +248,22 @@ function endTest() {
       }
     }
   });
+
+  // Hide "End Test Now" button
+  const endBtn = document.getElementById('endBtn');
+  endBtn.style.display = 'none';
+
+  // Show "Start New Test" button
+  const startBtn = document.createElement('button');
+  startBtn.id = 'newTestBtn';
+  startBtn.textContent = 'Start New Test';
+  startBtn.onclick = () => {
+    container.innerHTML = '';
+    chartContainer.style.display = 'none';
+    document.getElementById('testSelect').style.display = 'inline-block';
+    document.getElementById('startBtn').style.display = 'inline-block';
+    startBtn.remove();
+  };
+
+  container.appendChild(startBtn);
 }
