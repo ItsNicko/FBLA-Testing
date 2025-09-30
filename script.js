@@ -9,6 +9,7 @@ let streak = 0;
 let loseStreak = 0;
 let firstAttempt = true;
 
+// Load JSON tests
 fetch('tests.json')
   .then(res => res.json())
   .then(data => {
@@ -16,6 +17,7 @@ fetch('tests.json')
     populateTestDropdown();
   });
 
+// Populate dropdown with test names
 function populateTestDropdown() {
   const dropdown = document.getElementById('testSelect');
   tests.forEach((test, idx) => {
@@ -26,6 +28,7 @@ function populateTestDropdown() {
   });
 }
 
+// Start test
 function startTest() {
   const dropdown = document.getElementById('testSelect');
   const startBtn = document.getElementById('startBtn');
@@ -53,6 +56,7 @@ function startTest() {
   generateFlashcard();
 }
 
+// Shuffle function
 function shuffleArray(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -60,6 +64,7 @@ function shuffleArray(arr) {
   }
 }
 
+// Generate flashcard
 function generateFlashcard() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = '';
@@ -76,6 +81,7 @@ function generateFlashcard() {
   const card = document.createElement('div');
   card.className = 'flashcard';
 
+  // Stats
   const statsRow = document.createElement('div');
   statsRow.style.display = 'flex';
   statsRow.style.justifyContent = 'space-between';
@@ -94,11 +100,13 @@ function generateFlashcard() {
   statsRow.append(pointsDiv, streakDiv, progressDiv);
   card.appendChild(statsRow);
 
+  // Question
   const questionDiv = document.createElement('div');
   questionDiv.className = 'question';
   questionDiv.textContent = q.question;
   card.appendChild(questionDiv);
 
+  // Options
   const optionsList = document.createElement('ul');
   optionsList.className = 'options';
 
@@ -108,7 +116,7 @@ function generateFlashcard() {
   explanationDiv.textContent = `Explanation: ${q.explanation}`;
   card.appendChild(explanationDiv);
 
-  let answeredCorrectly = false; // Lock flag
+  let answeredCorrectly = false;
 
   q.options.forEach(option => {
     const li = document.createElement('li');
@@ -152,6 +160,7 @@ document.addEventListener('keydown', e => {
   if (options[idx]) options[idx].click();
 });
 
+// Correct answer handling
 function handleCorrect(topic) {
   if (!scores.topics[topic]) scores.topics[topic] = { correct:0, total:0 };
   scores.topics[topic].total++;
@@ -167,6 +176,7 @@ function handleCorrect(topic) {
   }
 }
 
+// Wrong answer handling
 function handleWrong(topic) {
   if (!scores.topics[topic]) scores.topics[topic] = { correct:0, total:0 };
   scores.topics[topic].total++;
@@ -176,12 +186,14 @@ function handleWrong(topic) {
   totalPoints = Math.max(0, totalPoints - Math.round(50 + 50 * loseStreak * 0.15));
 }
 
+// Update stats
 function updateStats() {
   document.getElementById('livePoints').textContent = `Points: ${totalPoints}`;
   document.getElementById('liveStreak').textContent = `Streak: ${streak}`;
   document.getElementById('liveProgress').textContent = `Q: ${progress.done}/${progress.total}`;
 }
 
+// End test now
 function endTest() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = `
@@ -194,11 +206,42 @@ function endTest() {
   chartContainer.style.display = 'block';
 
   const labels = Object.keys(scores.topics);
-  const data = labels.map(topic => scores.topics[topic].correct);
+
+  // Percentage correct per topic
+  const percentages = labels.map(topic => {
+    const { correct, total } = scores.topics[topic];
+    return total > 0 ? (correct / total) * 100 : 0;
+  });
+
+  // Weighted by attempted questions
+  const weights = labels.map(topic => scores.topics[topic].total);
+  const data = percentages.map((pct, idx) => pct * weights[idx]);
 
   new Chart(document.getElementById('topicChart'), {
     type: 'doughnut',
-    data: { labels, datasets:[{ data, backgroundColor:['#4CAF50','#2196F3','#FFC107','#E91E63','#9C27B0'] }] },
-    options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:'bottom' } } }
+    data: {
+      labels,
+      datasets: [{
+        data,
+        backgroundColor: ['#4CAF50','#2196F3','#FFC107','#E91E63','#9C27B0']
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'bottom' },
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              const topic = context.label;
+              const { correct, total } = scores.topics[topic];
+              const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+              return `${topic}: ${pct}% (${correct}/${total})`;
+            }
+          }
+        }
+      }
+    }
   });
 }
