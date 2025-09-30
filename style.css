@@ -12,6 +12,14 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+
+#topicChart {
+  max-width: 250px;
+  max-height: 250px;
+  margin: 20px auto;
+  display: block;
+}
+
 .options li {
   background: #eee;
   margin: 5px;
