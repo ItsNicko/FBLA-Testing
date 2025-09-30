@@ -37,12 +37,11 @@ function startTest() {
   if (selectedIndex === '') return;
 
   currentTest = tests[selectedIndex];
-  // Flatten all questions from all topics
   questions = currentTest.topics.flatMap(topic =>
     topic.questions.map(q => ({ ...q, topic: topic.topic }))
   );
 
-  shuffleArray(questions); // Shuffle only questions, not options
+  shuffleArray(questions);
 
   progress = { done: 0, total: questions.length };
   scores = { topics: {} };
@@ -75,7 +74,7 @@ function generateFlashcard() {
 
   const q = questions.shift();
   progress.done++;
-  firstAttempt = true; // reset first attempt
+  firstAttempt = true;
 
   const card = document.createElement('div');
   card.className = 'flashcard';
@@ -113,7 +112,6 @@ function generateFlashcard() {
   const optionsList = document.createElement('ul');
   optionsList.className = 'options';
 
-  // Explanation hidden until wrong
   const explanationDiv = document.createElement('div');
   explanationDiv.className = 'explanation';
   explanationDiv.style.display = 'none';
@@ -134,8 +132,9 @@ function generateFlashcard() {
       } else {
         li.classList.add('incorrect');
         explanationDiv.style.display = 'block';
-        handleWrong();
+        handleWrong(q.topic);
       }
+
       firstAttempt = firstAttempt && option !== q.correctAnswer ? false : firstAttempt;
       updateStats();
     };
@@ -146,19 +145,21 @@ function generateFlashcard() {
   container.appendChild(card);
 }
 
-// Keyboard support: 1-4 clicks corresponding options
+// Keyboard 1-4 support
 document.addEventListener('keydown', (e) => {
   if (!['1','2','3','4'].includes(e.key)) return;
-
   const card = document.querySelector('.flashcard');
   if (!card) return;
-
   const optionElements = card.querySelectorAll('.options li');
-  const index = parseInt(e.key, 10) - 1; // 0-based index
+  const index = parseInt(e.key, 10) - 1;
   if (optionElements[index]) optionElements[index].click();
 });
 
 function handleCorrect(topic) {
+  if (!scores.topics[topic]) scores.topics[topic] = { correct: 0, total: 0 };
+  scores.topics[topic].total++;
+  scores.topics[topic].correct++;
+
   if (firstAttempt) {
     streak++;
     loseStreak = 0;
@@ -168,20 +169,16 @@ function handleCorrect(topic) {
     streak = 0;
     loseStreak = 0;
   }
-  updateScores(topic, true);
 }
 
-function handleWrong() {
+function handleWrong(topic) {
+  if (!scores.topics[topic]) scores.topics[topic] = { correct: 0, total: 0 };
+  scores.topics[topic].total++;
+
   streak = 0;
   loseStreak++;
   const lost = Math.round(50 + (50 * loseStreak * 0.15));
   totalPoints = Math.max(0, totalPoints - lost);
-}
-
-function updateScores(topic, isCorrect) {
-  if (!scores.topics[topic]) scores.topics[topic] = { correct: 0, total: 0 };
-  scores.topics[topic].total++;
-  if (isCorrect) scores.topics[topic].correct++;
 }
 
 function updateStats() {
