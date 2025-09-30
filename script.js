@@ -9,6 +9,9 @@ let totalPoints = 0;
 let streak = 0;
 let loseStreak = 0;
 
+// Track first attempt
+let firstAttempt = true;
+
 // Load JSON tests
 fetch('tests.json')
   .then(response => response.json())
@@ -46,6 +49,7 @@ function startTest() {
   totalPoints = 0;
   streak = 0;
   loseStreak = 0;
+  firstAttempt = true;
 
   dropdown.style.display = 'none';
   startBtn.style.display = 'none';
@@ -71,6 +75,7 @@ function generateFlashcard() {
 
   const q = questions.shift();
   progress.done++;
+  firstAttempt = true; // reset first attempt for this question
 
   const card = document.createElement('div');
   card.className = 'flashcard';
@@ -124,7 +129,6 @@ function generateFlashcard() {
       if (option === q.correctAnswer) {
         if (!li.classList.contains('answered')) {
           handleCorrect(q.topic);
-          updateStats();
           li.classList.add('correct');
           setTimeout(generateFlashcard, 800);
         }
@@ -132,10 +136,11 @@ function generateFlashcard() {
         li.classList.add('incorrect');
         explanationDiv.style.display = 'block';
         handleWrong();
-        updateStats();
       }
+      firstAttempt = firstAttempt && option !== q.correctAnswer ? false : firstAttempt;
+      updateStats();
     };
-    optionsList.appendChild(li);
+  optionsList.appendChild(li);
   });
 
   card.appendChild(optionsList);
@@ -143,12 +148,17 @@ function generateFlashcard() {
 }
 
 function handleCorrect(topic) {
-  streak++;
-  loseStreak = 0;
-
-  // Formula: (100 * streak * 0.15) + 100
-  const gained = Math.round((100 * streak * 0.15) + 100);
-  totalPoints += gained;
+  if (firstAttempt) {
+    streak++;
+    loseStreak = 0;
+    // Points formula: (100 * streak * 0.15) + 100
+    const gained = Math.round((100 * streak * 0.15) + 100);
+    totalPoints += gained;
+  } else {
+    // No points if wrong first
+    streak = 0;
+    loseStreak = 0;
+  }
 
   updateScores(topic, true);
 }
@@ -156,8 +166,7 @@ function handleCorrect(topic) {
 function handleWrong() {
   streak = 0;
   loseStreak++;
-
-  // Formula: 50 + (50 * loseStreak * 0.15)
+  // Points lost formula: 50 + (50 * loseStreak * 0.15)
   const lost = Math.round(50 + (50 * loseStreak * 0.15));
   totalPoints = Math.max(0, totalPoints - lost);
 }
