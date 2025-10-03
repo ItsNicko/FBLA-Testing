@@ -1,22 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>FBLACER</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
-  <h1>FBLACER</h1>
-<select id="testSelect"></select>
-<button id="startBtn" onclick="startTest()">Start Test</button>
-<button id="endBtn" onclick="endTest()" style="display:none;">End Test Now</button>
+  <head>
+    <meta charset="UTF-8" />
+    <title>FBLACER</title>
+    <!-- Load a clean, versatile UI font (Inter) from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+      import {
+        getAuth,
+        signInAnonymously,
+        onAuthStateChanged,
+      } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-<div id="flashcard-container"></div>
-<div id="chart-container" style="display:none">
-  <canvas id="topicChart"></canvas>
-</div>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCG32qVhboeAYBGYcq9QniwBeiAVMHFvo4",
+        authDomain: "fblacer.firebaseapp.com",
+        projectId: "fblacer",
+        storageBucket: "fblacer.firebasestorage.app",
+        messagingSenderId: "410096026599",
+        appId: "1:410096026599:web:3d484f1d2d961180e7b342",
+        measurementId: "G-C79TMGDW0Q",
+      };
 
-<script src="script.js"></script>
-</body>
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      // Firestore imports and a tiny wrapper API for leaderboard operations
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+        query,
+        orderBy,
+        limit,
+        getDocs,
+        where,
+        serverTimestamp,
+        doc,
+        setDoc,
+      } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
+
+      const db = getFirestore(app);
+
+      // Initialize Auth and sign in anonymously so Firestore rules that require auth pass.
+      const auth = getAuth(app);
+      // Promise to indicate when auth is ready
+      let _authReadyResolve;
+      window.leaderboardAuthReady = new Promise((res) => {
+        _authReadyResolve = res;
+      });
+
+      signInAnonymously(auth)
+        .then(() => {
+          console.info("Requested anonymous sign-in");
+        })
+        .catch((err) => {
+          console.warn("Anonymous sign-in failed:", err);
+          // still resolve so UI doesn't hang; submissions may still fail depending on rules
+          if (_authReadyResolve) _authReadyResolve();
+        });
+
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          console.info("Signed in (anonymous) uid=", user.uid);
+        } else {
+          console.info("Not signed in");
+        }
+        if (_authReadyResolve) {
+          _authReadyResolve();
+          _authReadyResolve = null;
+        }
+      });
+
+      // leaderboardApi: submitScore(testId, name, points) -> Promise<docRef>
+      // fetchTopScores(testId, limitNum, offsetDoc?) -> Promise<array of scores>
+      window.leaderboardApi = {
+        async submitScore(testId, name, points) {
+          if (!testId) throw new Error("missing testId");
+          const col = collection(db, "leaderboards", testId, "scores");
+          const docRef = await addDoc(col, {
+            name: name || "Anonymous",
+            points: Number(points) || 0,
+            createdAt: serverTimestamp(),
+          });
+          return docRef;
+        },
+        async fetchTopScores(testId, limitNum = 15) {
+          if (!testId) throw new Error("missing testId");
+          const col = collection(db, "leaderboards", testId, "scores");
+          const q = query(col, orderBy("points", "desc"), limit(limitNum));
+          const snap = await getDocs(q);
+          const out = [];
+          snap.forEach((d) => out.push({ id: d.id, ...d.data() }));
+          return out;
+        },
+        // fetch all scores submitted by a given player name for a test
+        async fetchScoresByName(testId, name) {
+          if (!testId) throw new Error("missing testId");
+          if (!name) throw new Error("missing name");
+          const col = collection(db, "leaderboards", testId, "scores");
+          const q = query(col, where("name", "==", name));
+          const snap = await getDocs(q);
+          const out = [];
+          snap.forEach((d) => out.push({ id: d.id, ...d.data() }));
+          return out;
+        },
+        // set a document with a specific id: useful for the provided compatibility snippet
+        async setScoreDoc(testId, docId, data) {
+          if (!testId) throw new Error("missing testId");
+          if (!docId) throw new Error("missing docId");
+          const path = `leaderboards/${testId}/scores/${docId}`;
+          // create doc ref and set
+          const dref = doc(db, "leaderboards", testId, "scores", docId);
+          await setDoc(dref, data);
+          return true;
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1>FBLACER</h1>
+    <!-- Dark mode toggle (top-right) -->
+    <div id="themeToggle" aria-hidden="false">
+      <label class="theme-switch">
+        <input
+          type="checkbox"
+          id="darkModeToggle"
+          aria-label="Toggle dark mode"
+        />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <select id="testSelect"></select>
+    <button id="startBtn" onclick="startTest()">Start Test</button>
+    <button id="endBtn" onclick="endTest()" style="display: none">
+      End Test Now
+    </button>
+
+    <div id="flashcard-container"></div>
+    <div id="chart-container" style="display: none">
+      <canvas id="topicChart"></canvas>
+      <div id="topicLegend" class="chart-legend" aria-hidden="false"></div>
+    </div>
+
+    <!-- Floating indicators -->
+    <div id="floating-container" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,1141 @@
+{
+            "testName": "Data Science and AI",
+            "topics": [
+                {
+                    "topic": "Probability and Statistics Foundations",
+                    "questions": [
+                        {
+                            "question": "What is the mean of the dataset [2, 4, 6, 8, 10]?",
+                            "options": [
+                                "5",
+                                "6",
+                                "7",
+                                "8"
+                            ],
+                            "correctAnswer": "6",
+                            "explanation": "Mean is the sum of all values divided by the number of values: (2+4+6+8+10)/5 = 6."
+                        },
+                        {
+                            "question": "Which measure of central tendency is least affected by outliers?",
+                            "options": [
+                                "Mean",
+                                "Median",
+                                "Mode",
+                                "Range"
+                            ],
+                            "correctAnswer": "Median",
+                            "explanation": "The median is the middle value and is robust against extreme values."
+                        },
+                        {
+                            "question": "Which variable type is continuous?",
+                            "options": [
+                                "Number of siblings",
+                                "Height",
+                                "Number of cars",
+                                "Count of pets"
+                            ],
+                            "correctAnswer": "Height",
+                            "explanation": "Continuous variables can take any value within a range; height is not restricted to integer counts."
+                        },
+                        {
+                            "question": "The variance of a dataset is 16. What is the standard deviation?",
+                            "options": [
+                                "2",
+                                "4",
+                                "8",
+                                "16"
+                            ],
+                            "correctAnswer": "4",
+                            "explanation": "Standard deviation is the square root of variance: sqrt(16) = 4."
+                        },
+                        {
+                            "question": "Which scenario is best modeled using a Gaussian distribution?",
+                            "options": [
+                                "Number of cars in a parking lot",
+                                "Heights of adult males",
+                                "Daily sales of a store",
+                                "Binary pass/fail results"
+                            ],
+                            "correctAnswer": "Heights of adult males",
+                            "explanation": "Heights typically follow a normal (Gaussian) distribution around an average value."
+                        },
+                        {
+                            "question": "Which of the following is an expected value of rolling a fair 4-sided die?",
+                            "options": [
+                                "2.5",
+                                "2",
+                                "3",
+                                "3.5"
+                            ],
+                            "correctAnswer": "2.5",
+                            "explanation": "Expected value = (1+2+3+4)/4 = 2.5."
+                        },
+                        {
+                            "question": "If two variables increase together, their covariance is likely to be:",
+                            "options": [
+                                "Positive",
+                                "Negative",
+                                "Zero",
+                                "Undefined"
+                            ],
+                            "correctAnswer": "Positive",
+                            "explanation": "Positive covariance indicates that as one variable increases, the other tends to increase as well."
+                        },
+                        {
+                            "question": "Range of the dataset [5, 10, 15, 20] is:",
+                            "options": [
+                                "10",
+                                "15",
+                                "5",
+                                "20"
+                            ],
+                            "correctAnswer": "15",
+                            "explanation": "Range = max - min = 20 - 5 = 15."
+                        },
+                        {
+                            "question": "Which is an example of a discrete random variable?",
+                            "options": [
+                                "Time to complete a task",
+                                "Number of emails received",
+                                "Temperature",
+                                "Height"
+                            ],
+                            "correctAnswer": "Number of emails received",
+                            "explanation": "Discrete variables take countable integer values, such as counts of emails."
+                        },
+                        {
+                            "question": "A dataset has values [1, 2, 3, 3, 3, 4, 5]. The mode is:",
+                            "options": [
+                                "2",
+                                "3",
+                                "4",
+                                "5"
+                            ],
+                            "correctAnswer": "3",
+                            "explanation": "Mode is the value that occurs most frequently, which is 3."
+                        },
+                        {
+                            "question": "A continuous variable differs from a discrete variable because it:",
+                            "options": [
+                                "Can only take integers",
+                                "Can take any value within a range",
+                                "Is categorical",
+                                "Cannot be measured"
+                            ],
+                            "correctAnswer": "Can take any value within a range",
+                            "explanation": "Continuous variables can take infinitely many values within a range, unlike discrete variables."
+                        },
+                        {
+                            "question": "Which measure represents the average deviation from the mean?",
+                            "options": [
+                                "Variance",
+                                "Standard deviation",
+                                "Median",
+                                "Mode"
+                            ],
+                            "correctAnswer": "Standard deviation",
+                            "explanation": "Standard deviation is the square root of the average squared deviation from the mean."
+                        },
+                        {
+                            "question": "Expected value is best described as:",
+                            "options": [
+                                "Most likely outcome",
+                                "Average outcome over many trials",
+                                "Maximum possible outcome",
+                                "Minimum possible outcome"
+                            ],
+                            "correctAnswer": "Average outcome over many trials",
+                            "explanation": "Expected value is the long-term average if an experiment is repeated many times."
+                        },
+                        {
+                            "question": "If a normal distribution is symmetrical, which is true?",
+                            "options": [
+                                "Mean = Median = Mode",
+                                "Mean > Median > Mode",
+                                "Mode > Median > Mean",
+                                "Mean < Median < Mode"
+                            ],
+                            "correctAnswer": "Mean = Median = Mode",
+                            "explanation": "A perfectly symmetric normal distribution has mean, median, and mode equal."
+                        },
+                        {
+                            "question": "Which type of variable is binary?",
+                            "options": [
+                                "Height",
+                                "Temperature",
+                                "Pass/Fail",
+                                "Number of pets"
+                            ],
+                            "correctAnswer": "Pass/Fail",
+                            "explanation": "Binary variables have only two possible values."
+                        },
+                        {
+                            "question": "A trick question: Which of the following is NOT a measure of dispersion?",
+                            "options": [
+                                "Variance",
+                                "Standard deviation",
+                                "Mean",
+                                "Range"
+                            ],
+                            "correctAnswer": "Mean",
+                            "explanation": "Mean is a measure of central tendency, not dispersion."
+                        },
+                        {
+                            "question": "Which statistic would you use to understand variability in exam scores?",
+                            "options": [
+                                "Variance",
+                                "Mean",
+                                "Mode",
+                                "Median"
+                            ],
+                            "correctAnswer": "Variance",
+                            "explanation": "Variance measures how spread out the data points are from the mean."
+                        },
+                        {
+                            "question": "Which is a subtle misconception about standard deviation?",
+                            "options": [
+                                "It can be negative",
+                                "It is always positive",
+                                "It equals the mean",
+                                "It measures central tendency"
+                            ],
+                            "correctAnswer": "It is always positive",
+                            "explanation": "Standard deviation cannot be negative; it measures spread, not central tendency."
+                        },
+                        {
+                            "question": "If two variables have a covariance of zero, it means:",
+                            "options": [
+                                "They are independent",
+                                "They have no linear relationship",
+                                "They are perfectly correlated",
+                                "They are identical"
+                            ],
+                            "correctAnswer": "They have no linear relationship",
+                            "explanation": "Covariance of zero indicates no linear correlation; variables may still have a non-linear relationship."
+                        },
+                        {
+                            "question": "Which is a trick scenario: Rolling a die twice, expected sum?",
+                            "options": [
+                                "6",
+                                "7",
+                                "8",
+                                "9"
+                            ],
+                            "correctAnswer": "7",
+                            "explanation": "Expected value of the sum = sum of expected values of each die: 3.5 + 3.5 = 7."
+                        }
+                    ]
+                },
+                {
+                    "topic": "Data Analysis and Tools for AI",
+                    "questions": [
+                        {
+                            "question": "Which visualization is best for showing the distribution of a single continuous variable?",
+                            "options": [
+                                "Bar chart",
+                                "Histogram",
+                                "Scatterplot",
+                                "Line graph"
+                            ],
+                            "correctAnswer": "Histogram",
+                            "explanation": "Histograms display the frequency distribution of a continuous variable, making them ideal for this purpose."
+                        },
+                        {
+                            "question": "Which plot is ideal to visualize the relationship between two continuous variables?",
+                            "options": [
+                                "Histogram",
+                                "Boxplot",
+                                "Scatterplot",
+                                "Bar chart"
+                            ],
+                            "correctAnswer": "Scatterplot",
+                            "explanation": "Scatterplots show the relationship between two continuous variables and can reveal correlations or patterns."
+                        },
+                        {
+                            "question": "What does a boxplot display?",
+                            "options": [
+                                "Mean and variance",
+                                "Median and interquartile range",
+                                "Only the median",
+                                "Frequency distribution"
+                            ],
+                            "correctAnswer": "Median and interquartile range",
+                            "explanation": "Boxplots visualize the data spread and identify outliers using median, quartiles, and extremes."
+                        },
+                        {
+                            "question": "Why is data cleaning important before analysis?",
+                            "options": [
+                                "To remove duplicates and correct errors",
+                                "To increase dataset size",
+                                "To improve plotting speed",
+                                "To standardize fonts"
+                            ],
+                            "correctAnswer": "To remove duplicates and correct errors",
+                            "explanation": "Data cleaning ensures data accuracy and consistency, preventing misleading results."
+                        },
+                        {
+                            "question": "Which factor indicates poor data quality?",
+                            "options": [
+                                "High completeness",
+                                "Accurate labeling",
+                                "Duplicate records",
+                                "Consistent formatting"
+                            ],
+                            "correctAnswer": "Duplicate records",
+                            "explanation": "Duplicates, missing data, and inconsistencies are indicators of poor data quality."
+                        },
+                        {
+                            "question": "Linear regression is primarily used for:",
+                            "options": [
+                                "Predicting a continuous outcome",
+                                "Classifying categories",
+                                "Clustering data",
+                                "Dimensionality reduction"
+                            ],
+                            "correctAnswer": "Predicting a continuous outcome",
+                            "explanation": "Linear regression models the relationship between input variables and a continuous target variable."
+                        },
+                        {
+                            "question": "Decision trees are suitable for:",
+                            "options": [
+                                "Classification and regression",
+                                "Only regression",
+                                "Only clustering",
+                                "Dimensionality reduction"
+                            ],
+                            "correctAnswer": "Classification and regression",
+                            "explanation": "Decision trees can handle both classification (categorical) and regression (continuous) tasks."
+                        },
+                        {
+                            "question": "K-means clustering is an example of:",
+                            "options": [
+                                "Supervised learning",
+                                "Unsupervised learning",
+                                "Reinforcement learning",
+                                "Deep learning"
+                            ],
+                            "correctAnswer": "Unsupervised learning",
+                            "explanation": "K-means groups data without labeled outcomes, making it unsupervised learning."
+                        },
+                        {
+                            "question": "Which visualization is best for comparing distributions across multiple groups?",
+                            "options": [
+                                "Scatterplot",
+                                "Line graph",
+                                "Boxplot",
+                                "Histogram"
+                            ],
+                            "correctAnswer": "Boxplot",
+                            "explanation": "Boxplots allow comparison of medians, ranges, and outliers across groups."
+                        },
+                        {
+                            "question": "Which technique helps understand relationships in multivariate data?",
+                            "options": [
+                                "Correlation analysis",
+                                "Histogram",
+                                "Single-variable mean",
+                                "Boxplot"
+                            ],
+                            "correctAnswer": "Correlation analysis",
+                            "explanation": "Correlation measures linear relationships among multiple variables."
+                        },
+                        {
+                            "question": "A trick question: When data has missing values, the best action is always to delete them. True or False?",
+                            "options": [
+                                "True",
+                                "False",
+                                "Only if numeric",
+                                "Only if categorical"
+                            ],
+                            "correctAnswer": "False",
+                            "explanation": "Deleting missing data may cause bias; sometimes imputation or other methods are better."
+                        },
+                        {
+                            "question": "Which Python library is primarily used for numerical computations?",
+                            "options": [
+                                "Pandas",
+                                "NumPy",
+                                "Matplotlib",
+                                "Scikit-learn"
+                            ],
+                            "correctAnswer": "NumPy",
+                            "explanation": "NumPy provides efficient numerical arrays and operations for scientific computing."
+                        },
+                        {
+                            "question": "Which library is commonly used for building deep learning models?",
+                            "options": [
+                                "NumPy",
+                                "Pandas",
+                                "PyTorch",
+                                "Matplotlib"
+                            ],
+                            "correctAnswer": "PyTorch",
+                            "explanation": "PyTorch is a popular library for building and training neural networks."
+                        },
+                        {
+                            "question": "Which library allows data manipulation with DataFrames in Python?",
+                            "options": [
+                                "Pandas",
+                                "PyTorch",
+                                "NumPy",
+                                "Seaborn"
+                            ],
+                            "correctAnswer": "Pandas",
+                            "explanation": "Pandas provides DataFrame objects for structured data manipulation and analysis."
+                        },
+                        {
+                            "question": "Which SQL statement retrieves data from a table?",
+                            "options": [
+                                "INSERT",
+                                "UPDATE",
+                                "SELECT",
+                                "DELETE"
+                            ],
+                            "correctAnswer": "SELECT",
+                            "explanation": "SELECT queries are used to retrieve data from a database table."
+                        },
+                        {
+                            "question": "Which of the following is NOT a step in data cleaning?",
+                            "options": [
+                                "Removing duplicates",
+                                "Filling missing values",
+                                "Data analysis",
+                                "Standardizing formats"
+                            ],
+                            "correctAnswer": "Data analysis",
+                            "explanation": "Data analysis is performed after cleaning; cleaning focuses on correcting and preparing data."
+                        },
+                        {
+                            "question": "Scenario: You have a dataset with multiple numeric and categorical columns. You want to find patterns without labels. Which method should you choose?",
+                            "options": [
+                                "Linear regression",
+                                "Decision tree",
+                                "K-means clustering",
+                                "Logistic regression"
+                            ],
+                            "correctAnswer": "K-means clustering",
+                            "explanation": "K-means clustering identifies patterns in unlabeled data, making it suitable for exploratory analysis."
+                        },
+                        {
+                            "question": "Which tool is useful for cleaning and wrangling messy datasets in Python?",
+                            "options": [
+                                "PyTorch",
+                                "Pandas",
+                                "NumPy",
+                                "Matplotlib"
+                            ],
+                            "correctAnswer": "Pandas",
+                            "explanation": "Pandas provides functions to clean, filter, and transform datasets efficiently."
+                        },
+                        {
+                            "question": "Why is it important to choose the correct visualization for data?",
+                            "options": [
+                                "To make graphs look pretty",
+                                "To accurately interpret patterns and relationships",
+                                "To store data faster",
+                                "To increase dataset size"
+                            ],
+                            "correctAnswer": "To accurately interpret patterns and relationships",
+                            "explanation": "The right visualization helps uncover trends, distributions, and correlations correctly."
+                        },
+                        {
+                            "question": "Trick question: A scatterplot is best for showing one variable's distribution. True or False?",
+                            "options": [
+                                "True",
+                                "False",
+                                "Only for categorical data",
+                                "Only for time series data"
+                            ],
+                            "correctAnswer": "False",
+                            "explanation": "Scatterplots are for relationships between two variables, not for showing a single variable's distribution."
+                        }
+                    ]
+                },
+                {
+                    "topic": "AI Basics and Machine Learning",
+                    "questions": [
+                        {
+                            "question": "Generative AI is primarily designed to:",
+                            "options": [
+                                "Analyze data",
+                                "Generate new content",
+                                "Sort data",
+                                "Visualize data"
+                            ],
+                            "correctAnswer": "Generate new content",
+                            "explanation": "Generative AI models can create new content such as text, images, or music based on learned patterns."
+                        },
+                        {
+                            "question": "Which of the following is a limitation of generative AI?",
+                            "options": [
+                                "Cannot generate text",
+                                "May produce inaccurate or biased outputs",
+                                "Requires labeled datasets only",
+                                "Cannot use deep learning"
+                            ],
+                            "correctAnswer": "May produce inaccurate or biased outputs",
+                            "explanation": "Generative AI can hallucinate or reflect biases in the training data, limiting reliability."
+                        },
+                        {
+                            "question": "An example of generative AI application in healthcare is:",
+                            "options": [
+                                "Predicting stock prices",
+                                "Generating synthetic medical images",
+                                "Sorting emails",
+                                "Monitoring traffic"
+                            ],
+                            "correctAnswer": "Generating synthetic medical images",
+                            "explanation": "Generative AI can create realistic medical images for training or research purposes."
+                        },
+                        {
+                            "question": "Which AI subfield focuses on understanding and generating human language?",
+                            "options": [
+                                "Computer vision",
+                                "Natural language processing",
+                                "Robotics",
+                                "Human-computer interaction"
+                            ],
+                            "correctAnswer": "Natural language processing",
+                            "explanation": "NLP deals with processing, understanding, and generating human language."
+                        },
+                        {
+                            "question": "Large Language Models (LLMs) are capable of:",
+                            "options": [
+                                "Storing structured data",
+                                "Generating human-like text",
+                                "Performing arithmetic only",
+                                "Reinforcing algorithms"
+                            ],
+                            "correctAnswer": "Generating human-like text",
+                            "explanation": "LLMs are trained on large text corpora and can generate coherent, contextually relevant text."
+                        },
+                        {
+                            "question": "Which AI subfield is primarily concerned with visual data?",
+                            "options": [
+                                "Computer vision",
+                                "Natural language processing",
+                                "Reinforcement learning",
+                                "Expert systems"
+                            ],
+                            "correctAnswer": "Computer vision",
+                            "explanation": "Computer vision focuses on enabling machines to interpret and analyze visual information."
+                        },
+                        {
+                            "question": "A scenario-based question: You want an AI to learn from labeled images to recognize cats. Which approach should you use?",
+                            "options": [
+                                "Supervised learning",
+                                "Unsupervised learning",
+                                "Reinforcement learning",
+                                "Evolutionary algorithms"
+                            ],
+                            "correctAnswer": "Supervised learning",
+                            "explanation": "Supervised learning trains models on labeled data to predict or classify outcomes."
+                        },
+                        {
+                            "question": "In machine learning, a validation dataset is used to:",
+                            "options": [
+                                "Train the model",
+                                "Tune hyperparameters",
+                                "Test final performance",
+                                "Store raw data"
+                            ],
+                            "correctAnswer": "Tune hyperparameters",
+                            "explanation": "Validation data helps optimize model parameters without contaminating the test evaluation."
+                        },
+                        {
+                            "question": "Which machine learning algorithm can handle both classification and regression tasks?",
+                            "options": [
+                                "Decision tree",
+                                "K-means clustering",
+                                "Principal Component Analysis",
+                                "Logistic regression"
+                            ],
+                            "correctAnswer": "Decision tree",
+                            "explanation": "Decision trees can be used for both predicting continuous outputs and categorizing labels."
+                        },
+                        {
+                            "question": "Which is an example of unsupervised learning?",
+                            "options": [
+                                "Linear regression",
+                                "K-means clustering",
+                                "Logistic regression",
+                                "Support vector machines"
+                            ],
+                            "correctAnswer": "K-means clustering",
+                            "explanation": "K-means finds patterns in unlabeled data without a target variable."
+                        },
+                        {
+                            "question": "Reinforcement learning involves:",
+                            "options": [
+                                "Learning from labeled data",
+                                "Learning by trial and error with rewards",
+                                "Clustering data points",
+                                "Reducing data dimensions"
+                            ],
+                            "correctAnswer": "Learning by trial and error with rewards",
+                            "explanation": "Reinforcement learning trains agents to take actions in an environment to maximize cumulative rewards."
+                        },
+                        {
+                            "question": "Deep learning is a type of machine learning that uses:",
+                            "options": [
+                                "Decision trees",
+                                "Neural networks with multiple layers",
+                                "K-means clustering",
+                                "Linear regression only"
+                            ],
+                            "correctAnswer": "Neural networks with multiple layers",
+                            "explanation": "Deep learning involves multi-layered neural networks to model complex patterns and representations."
+                        },
+                        {
+                            "question": "A scenario: You want to select the right algorithm for predicting house prices. Which factor is least important?",
+                            "options": [
+                                "Data type",
+                                "Target variable",
+                                "Computation resources",
+                                "Color of the dataset"
+                            ],
+                            "correctAnswer": "Color of the dataset",
+                            "explanation": "Algorithm selection depends on data type, task, and resources, not aesthetic properties like color."
+                        },
+                        {
+                            "question": "Which is true about training, test, and validation datasets?",
+                            "options": [
+                                "Training data is for evaluation",
+                                "Validation data tunes hyperparameters",
+                                "Test data tunes the model",
+                                "All datasets are combined for training"
+                            ],
+                            "correctAnswer": "Validation data tunes hyperparameters",
+                            "explanation": "Validation data helps choose optimal parameters without biasing the final test evaluation."
+                        },
+                        {
+                            "question": "Trick question: K-means requires labeled data to function. True or False?",
+                            "options": [
+                                "True",
+                                "False",
+                                "Only for numeric data",
+                                "Only for small datasets"
+                            ],
+                            "correctAnswer": "False",
+                            "explanation": "K-means is unsupervised and does not require labeled data."
+                        },
+                        {
+                            "question": "Which machine learning algorithm is best for time-series forecasting?",
+                            "options": [
+                                "Linear regression",
+                                "Recurrent neural networks",
+                                "K-means clustering",
+                                "Decision tree"
+                            ],
+                            "correctAnswer": "Recurrent neural networks",
+                            "explanation": "RNNs are designed to handle sequential data, making them suitable for time-series tasks."
+                        },
+                        {
+                            "question": "A subtle distinction: Supervised learning always requires:",
+                            "options": [
+                                "Labeled data",
+                                "Unlabeled data",
+                                "Reinforcement feedback",
+                                "No training data"
+                            ],
+                            "correctAnswer": "Labeled data",
+                            "explanation": "Supervised learning requires known input-output pairs for training the model."
+                        },
+                        {
+                            "question": "Which algorithm is most likely to overfit if the model is too complex?",
+                            "options": [
+                                "Simple linear regression",
+                                "Deep neural networks",
+                                "K-means clustering",
+                                "Naive Bayes"
+                            ],
+                            "correctAnswer": "Deep neural networks",
+                            "explanation": "Deep neural networks with many parameters can memorize training data, leading to overfitting."
+                        },
+                        {
+                            "question": "Scenario-based: You want an AI to learn optimal moves in a game. Which learning type is appropriate?",
+                            "options": [
+                                "Supervised",
+                                "Unsupervised",
+                                "Reinforcement",
+                                "Deep learning only"
+                            ],
+                            "correctAnswer": "Reinforcement",
+                            "explanation": "Reinforcement learning trains an agent to take actions to maximize reward in an environment."
+                        },
+                        {
+                            "question": "Trick question: Linear regression is suitable for categorical outputs. True or False?",
+                            "options": [
+                                "True",
+                                "False",
+                                "Only if data is numeric",
+                                "Depends on sample size"
+                            ],
+                            "correctAnswer": "False",
+                            "explanation": "Linear regression predicts continuous outputs; categorical outputs require classification algorithms."
+                        }
+                    ]
+                },
+                {
+                    "topic": "Perception, Reasoning, and Ethics in AI",
+                    "questions": [
+                        {
+                            "question": "Predicate logic in AI is used to:",
+                            "options": [
+                                "Represent knowledge using statements and variables",
+                                "Process images",
+                                "Generate text",
+                                "Train neural networks"
+                            ],
+                            "correctAnswer": "Represent knowledge using statements and variables",
+                            "explanation": "Predicate logic formalizes relationships and properties in statements for reasoning and knowledge representation."
+                        },
+                        {
+                            "question": "Which of the following is an example of predicate logic?",
+                            "options": [
+                                "If a person is a student, they attend classes",
+                                "A histogram of scores",
+                                "A scatterplot of height vs. weight",
+                                "A regression line"
+                            ],
+                            "correctAnswer": "If a person is a student, they attend classes",
+                            "explanation": "Predicate logic uses conditional statements and relationships to represent knowledge."
+                        },
+                        {
+                            "question": "Logic-based reasoning differs from probability-based reasoning because it:",
+                            "options": [
+                                "Always handles uncertainty",
+                                "Uses strict true/false statements",
+                                "Requires neural networks",
+                                "Cannot be applied to AI"
+                            ],
+                            "correctAnswer": "Uses strict true/false statements",
+                            "explanation": "Logic-based reasoning applies deterministic rules, while probability-based reasoning handles uncertainty."
+                        },
+                        {
+                            "question": "Bayesian networks are characterized by:",
+                            "options": [
+                                "Nodes, edges, and directed acyclic graphs",
+                                "Matrices and tensors",
+                                "Neural network layers",
+                                "Scatterplots"
+                            ],
+                            "correctAnswer": "Nodes, edges, and directed acyclic graphs",
+                            "explanation": "Bayesian networks use DAGs to represent probabilistic relationships between variables."
+                        },
+                        {
+                            "question": "Knowledge representation in AI is important because it:",
+                            "options": [
+                                "Stores and structures information for reasoning",
+                                "Generates images",
+                                "Optimizes hardware",
+                                "Only works for supervised learning"
+                            ],
+                            "correctAnswer": "Stores and structures information for reasoning",
+                            "explanation": "Effective knowledge representation allows AI systems to reason, infer, and make decisions."
+                        },
+                        {
+                            "question": "Ethical dilemmas in AI, such as self-driving car decisions, involve:",
+                            "options": [
+                                "Purely technical challenges",
+                                "Balancing moral, social, and safety considerations",
+                                "Data cleaning",
+                                "Algorithm optimization only"
+                            ],
+                            "correctAnswer": "Balancing moral, social, and safety considerations",
+                            "explanation": "Ethical dilemmas require considering values and consequences beyond technical aspects."
+                        },
+                        {
+                            "question": "Algorithmic bias occurs when:",
+                            "options": [
+                                "The algorithm is too slow",
+                                "The training data reflects societal biases",
+                                "Neural networks overfit",
+                                "Data cleaning is skipped"
+                            ],
+                            "correctAnswer": "The training data reflects societal biases",
+                            "explanation": "AI can inherit biases present in the training data, leading to unfair or discriminatory outcomes."
+                        },
+                        {
+                            "question": "Which is a privacy risk associated with LLMs?",
+                            "options": [
+                                "Generating accurate outputs",
+                                "Leaking sensitive data from training datasets",
+                                "Increasing model accuracy",
+                                "Visualizing data trends"
+                            ],
+                            "correctAnswer": "Leaking sensitive data from training datasets",
+                            "explanation": "LLMs trained on sensitive information may inadvertently expose private data."
+                        },
+                        {
+                            "question": "Credibility concerns with LLMs include:",
+                            "options": [
+                                "Hallucinations and misinformation",
+                                "Faster computation",
+                                "High accuracy only",
+                                "Better visualizations"
+                            ],
+                            "correctAnswer": "Hallucinations and misinformation",
+                            "explanation": "LLMs may generate plausible but incorrect or misleading content, posing credibility challenges."
+                        },
+                        {
+                            "question": "Trick question: Ethical AI only concerns self-driving cars. True or False?",
+                            "options": [
+                                "True",
+                                "False",
+                                "Only for healthcare AI",
+                                "Depends on model size"
+                            ],
+                            "correctAnswer": "False",
+                            "explanation": "Ethical considerations apply across all AI applications, including generative AI, surveillance, and decision-making systems."
+                        },
+                        {
+                            "question": "Scenario: You need to model uncertainty in medical diagnosis. Which approach is appropriate?",
+                            "options": [
+                                "Predicate logic",
+                                "Bayesian networks",
+                                "Decision trees only",
+                                "Clustering"
+                            ],
+                            "correctAnswer": "Bayesian networks",
+                            "explanation": "Bayesian networks represent probabilistic relationships and are suitable for reasoning under uncertainty."
+                        },
+                        {
+                            "question": "Which of the following is an example of logic-based reasoning?",
+                            "options": [
+                                "If all humans are mortal, Socrates is human, then Socrates is mortal",
+                                "Calculating mean height",
+                                "Plotting a histogram",
+                                "Training a neural network"
+                            ],
+                            "correctAnswer": "If all humans are mortal, Socrates is human, then Socrates is mortal",
+                            "explanation": "This classic syllogism demonstrates deterministic logic-based inference."
+                        },
+                        {
+                            "question": "A subtle distinction: Probability-based reasoning can handle:",
+                            "options": [
+                                "Uncertainty and partial truth",
+                                "Only true/false rules",
+                                "Only supervised datasets",
+                                "Neural networks exclusively"
+                            ],
+                            "correctAnswer": "Uncertainty and partial truth",
+                            "explanation": "Probability-based reasoning accounts for uncertainty, unlike strict logic rules."
+                        },
+                        {
+                            "question": "Trick scenario: An AI perfectly following predicate logic can always handle ambiguous situations. True or False?",
+                            "options": [
+                                "True",
+                                "False",
+                                "Only with neural networks",
+                                "Only with Bayesian updates"
+                            ],
+                            "correctAnswer": "False",
+                            "explanation": "Predicate logic is deterministic and cannot inherently handle ambiguity or uncertainty."
+                        },
+                        {
+                            "question": "Which privacy measure reduces the risk of sensitive data exposure in AI?",
+                            "options": [
+                                "Differential privacy",
+                                "Increasing hidden layers",
+                                "Unsupervised learning",
+                                "Linear regression"
+                            ],
+                            "correctAnswer": "Differential privacy",
+                            "explanation": "Differential privacy techniques protect individual data while allowing model training."
+                        },
+                        {
+                            "question": "Scenario: A facial recognition system misidentifies people of certain ethnicities. This is an example of:",
+                            "options": [
+                                "Algorithmic bias",
+                                "Overfitting",
+                                "Data cleaning",
+                                "Feature scaling error"
+                            ],
+                            "correctAnswer": "Algorithmic bias",
+                            "explanation": "Bias in training data leads to unfair predictions for specific demographic groups."
+                        },
+                        {
+                            "question": "Which ethical concern arises when LLMs generate deepfake content?",
+                            "options": [
+                                "Data normalization",
+                                "Misinformation and deception",
+                                "Training speed",
+                                "Variance calculation"
+                            ],
+                            "correctAnswer": "Misinformation and deception",
+                            "explanation": "Generative AI can create realistic but false content, raising ethical issues."
+                        },
+                        {
+                            "question": "Trick question: Credibility concerns only affect AI outputs in text. True or False?",
+                            "options": [
+                                "True",
+                                "False",
+                                "Only if the AI is generative",
+                                "Depends on dataset size"
+                            ],
+                            "correctAnswer": "False",
+                            "explanation": "Credibility concerns apply to all AI outputs, including images, audio, and decisions."
+                        },
+                        {
+                            "question": "Scenario-based: You need to encode domain knowledge for a medical expert system. Which method should you use?",
+                            "options": [
+                                "Logic-based reasoning",
+                                "K-means clustering",
+                                "RNNs",
+                                "Linear regression"
+                            ],
+                            "correctAnswer": "Logic-based reasoning",
+                            "explanation": "Expert systems often rely on rules and logic to model domain knowledge and make decisions."
+                        },
+                        {
+                            "question": "Subtle distinction: A Bayesian network differs from a decision tree because it:",
+                            "options": [
+                                "Represents probabilistic dependencies between variables",
+                                "Only predicts categorical outcomes",
+                                "Uses linear regression",
+                                "Is always unsupervised"
+                            ],
+                            "correctAnswer": "Represents probabilistic dependencies between variables",
+                            "explanation": "Bayesian networks model conditional probabilities, while decision trees partition data based on features."
+                        }
+                    ]
+                },
+                {
+                    "topic": "Data Literacy and Foundations",
+                    "questions": [
+                        {
+                            "question": "Data science primarily focuses on:",
+                            "options": [
+                                "Collecting any data",
+                                "Extracting insights and knowledge from data",
+                                "Creating visual art",
+                                "Programming websites"
+                            ],
+                            "correctAnswer": "Extracting insights and knowledge from data",
+                            "explanation": "Data science involves analyzing and interpreting data to inform decisions or predictions."
+                        },
+                        {
+                            "question": "Structured data differs from unstructured data because it:",
+                            "options": [
+                                "Has no organization",
+                                "Fits into rows and columns",
+                                "Cannot be stored in databases",
+                                "Is always images or videos"
+                            ],
+                            "correctAnswer": "Fits into rows and columns",
+                            "explanation": "Structured data is organized and easily stored in databases, unlike unstructured data."
+                        },
+                        {
+                            "question": "Numeric data points are an example of:",
+                            "options": [
+                                "Categorical data",
+                                "Quantitative data",
+                                "Qualitative data",
+                                "Binary data only"
+                            ],
+                            "correctAnswer": "Quantitative data",
+                            "explanation": "Numeric data represents measurable quantities, making it quantitative."
+                        },
+                        {
+                            "question": "Categorical data includes:",
+                            "options": [
+                                "Temperature readings",
+                                "Color labels",
+                                "Height measurements",
+                                "Sales figures"
+                            ],
+                            "correctAnswer": "Color labels",
+                            "explanation": "Categorical data represents discrete categories or labels rather than numbers."
+                        },
+                        {
+                            "question": "Binary data can be represented using:",
+                            "options": [
+                                "0s and 1s",
+                                "Text only",
+                                "Images only",
+                                "Continuous variables only"
+                            ],
+                            "correctAnswer": "0s and 1s",
+                            "explanation": "Binary data consists of two states and is often encoded as 0 and 1."
+                        },
+                        {
+                            "question": "Data can be converted between representations. Which is correct?",
+                            "options": [
+                                "Decimal to binary",
+                                "Only text to numbers",
+                                "Binary cannot be converted",
+                                "Hexadecimal only for images"
+                            ],
+                            "correctAnswer": "Decimal to binary",
+                            "explanation": "Numeric data can be converted between decimal, binary, and hexadecimal representations."
+                        },
+                        {
+                            "question": "Which of the following is a common data source?",
+                            "options": [
+                                "Sensor measurements",
+                                "Surveys",
+                                "Social media activity",
+                                "All of the above"
+                            ],
+                            "correctAnswer": "All of the above",
+                            "explanation": "Data can originate from multiple sources, including sensors, surveys, and digital platforms."
+                        },
+                        {
+                            "question": "Data wrangling refers to:",
+                            "options": [
+                                "Analyzing data only",
+                                "Cleaning, transforming, and organizing data",
+                                "Visualizing only",
+                                "Storing data only"
+                            ],
+                            "correctAnswer": "Cleaning, transforming, and organizing data",
+                            "explanation": "Data wrangling prepares raw data for analysis by addressing errors, formats, and inconsistencies."
+                        },
+                        {
+                            "question": "Transforming data may include:",
+                            "options": [
+                                "Normalizing values",
+                                "Encoding categories",
+                                "Removing duplicates",
+                                "All of the above"
+                            ],
+                            "correctAnswer": "All of the above",
+                            "explanation": "Data transformation includes multiple steps to standardize and improve the dataset."
+                        },
+                        {
+                            "question": "Which stage of the data science process involves identifying the problem and objectives?",
+                            "options": [
+                                "Data collection",
+                                "Problem definition",
+                                "Data cleaning",
+                                "Model evaluation"
+                            ],
+                            "correctAnswer": "Problem definition",
+                            "explanation": "Defining the problem is the first step to ensure the analysis aligns with goals."
+                        },
+                        {
+                            "question": "In data science, exploration and visualization are part of:",
+                            "options": [
+                                "Data acquisition",
+                                "Data analysis",
+                                "Model deployment",
+                                "Feature engineering"
+                            ],
+                            "correctAnswer": "Data analysis",
+                            "explanation": "Exploratory data analysis helps understand patterns, distributions, and relationships in data."
+                        },
+                        {
+                            "question": "Trick question: Only numeric data can be analyzed statistically. True or False?",
+                            "options": [
+                                "True",
+                                "False",
+                                "Only if large dataset",
+                                "Depends on visualization"
+                            ],
+                            "correctAnswer": "False",
+                            "explanation": "Categorical data can also be analyzed using counts, proportions, or specialized statistical tests."
+                        },
+                        {
+                            "question": "Reference materials for data science learning include:",
+                            "options": [
+                                "ACM competencies",
+                                "Harvard Data Science Principles",
+                                "IBM Data Science Certificate",
+                                "All of the above"
+                            ],
+                            "correctAnswer": "All of the above",
+                            "explanation": "These sources provide foundational knowledge and guidelines for data science education."
+                        },
+                        {
+                            "question": "Scenario: You receive a dataset with missing values. The first step is:",
+                            "options": [
+                                "Data visualization",
+                                "Data cleaning",
+                                "Model training",
+                                "Data collection"
+                            ],
+                            "correctAnswer": "Data cleaning",
+                            "explanation": "Cleaning addresses missing, inconsistent, or incorrect data before analysis."
+                        },
+                        {
+                            "question": "Structured vs. unstructured: Which type includes free-text documents?",
+                            "options": [
+                                "Structured",
+                                "Unstructured",
+                                "Both",
+                                "Neither"
+                            ],
+                            "correctAnswer": "Unstructured",
+                            "explanation": "Text, images, and audio are unstructured because they lack fixed formats."
+                        },
+                        {
+                            "question": "Numeric data can be continuous or discrete. Which is discrete?",
+                            "options": [
+                                "Temperature",
+                                "Number of students",
+                                "Height",
+                                "Weight"
+                            ],
+                            "correctAnswer": "Number of students",
+                            "explanation": "Discrete numeric data takes countable values; continuous data can take any value in a range."
+                        },
+                        {
+                            "question": "Why is data wrangling important?",
+                            "options": [
+                                "Improves accuracy of analysis",
+                                "Removes inconsistencies",
+                                "Prepares data for modeling",
+                                "All of the above"
+                            ],
+                            "correctAnswer": "All of the above",
+                            "explanation": "Wrangling ensures the dataset is clean, consistent, and suitable for meaningful analysis."
+                        },
+                        {
+                            "question": "Data science process stages include:",
+                            "options": [
+                                "Problem definition, data collection, analysis, modeling, deployment",
+                                "Only analysis and modeling",
+                                "Only cleaning and visualization",
+                                "Data collection only"
+                            ],
+                            "correctAnswer": "Problem definition, data collection, analysis, modeling, deployment",
+                            "explanation": "A typical data science workflow progresses through these stages for systematic problem solving."
+                        },
+                        {
+                            "question": "Trick scenario: Unstructured data cannot be analyzed at all. True or False?",
+                            "options": [
+                                "True",
+                                "False",
+                                "Only with Python",
+                                "Depends on dataset size"
+                            ],
+                            "correctAnswer": "False",
+                            "explanation": "Unstructured data can be analyzed using text mining, NLP, and image/audio processing techniques."
+                        },
+                        {
+                            "question": "A subtle distinction: Data literacy includes the ability to:",
+                            "options": [
+                                "Understand data sources",
+                                "Analyze and interpret data",
+                                "Communicate findings effectively",
+                                "All of the above"
+                            ],
+                            "correctAnswer": "All of the above",
+                            "explanation": "Data literacy encompasses comprehension, analysis, and communication skills related to data."
+                        },
+                        {
+                            "question": "Scenario-based: You need to encode categorical colors into numbers for machine learning. This is:",
+                            "options": [
+                                "Data cleaning",
+                                "Feature engineering",
+                                "Data wrangling",
+                                "Data visualization"
+                            ],
+                            "correctAnswer": "Feature engineering",
+                            "explanation": "Encoding categorical variables into numeric form is a feature engineering step to prepare data for ML models."
+                        }
+                    ]
+                }
+            ]
+        }
