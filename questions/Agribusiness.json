@@ -1,0 +1,1134 @@
+{
+  "topics": [
+    {
+      "topic": "Health, Safety, and Environmental Management",
+      "questions": [
+        {
+          "question": "Which type of insurance protects farmers from losses due to natural disasters such as drought?",
+          "options": [
+            "Life insurance",
+            "Crop insurance",
+            "Property insurance",
+            "Health insurance"
+          ],
+          "correctAnswer": "Crop insurance",
+          "explanation": "Crop insurance protects producers against uncontrollable weather events like drought and flood, ensuring financial stability despite crop failure."
+        },
+        {
+          "question": "What is the first step in identifying workplace hazards in agribusiness?",
+          "options": [
+            "Conducting a safety audit",
+            "Implementing emergency plans",
+            "Training employees",
+            "Purchasing insurance"
+          ],
+          "correctAnswer": "Conducting a safety audit",
+          "explanation": "Safety audits identify risks before they cause harm, forming the foundation for effective corrective action."
+        },
+        {
+          "question": "Which federal agency primarily regulates workplace safety in agriculture?",
+          "options": [
+            "OSHA",
+            "FDA",
+            "EPA",
+            "USDA"
+          ],
+          "correctAnswer": "OSHA",
+          "explanation": "OSHA enforces safety standards to prevent workplace accidents, including in farming and agribusiness operations."
+        },
+        {
+          "question": "Why should agribusinesses develop emergency response plans?",
+          "options": [
+            "To boost crop yield",
+            "To increase profits",
+            "To reduce risk and protect workers",
+            "To qualify for subsidies"
+          ],
+          "correctAnswer": "To reduce risk and protect workers",
+          "explanation": "Emergency plans ensure quick response to accidents, minimizing injury and financial losses."
+        },
+        {
+          "question": "What does liability insurance cover in agribusiness?",
+          "options": [
+            "Medical expenses of workers",
+            "Loss of livestock",
+            "Legal claims for damages or injuries",
+            "Loss from drought"
+          ],
+          "correctAnswer": "Legal claims for damages or injuries",
+          "explanation": "Liability insurance protects businesses from lawsuits or damages caused to others, reducing financial exposure."
+        },
+        {
+          "question": "Which practice demonstrates environmental responsibility in agriculture?",
+          "options": [
+            "Overuse of fertilizers",
+            "Ignoring waste disposal rules",
+            "Composting organic waste",
+            "Deforestation"
+          ],
+          "correctAnswer": "Composting organic waste",
+          "explanation": "Composting recycles nutrients, reduces landfill use, and improves soil quality."
+        },
+        {
+          "question": "What is the main goal of sustainability practices in agribusiness?",
+          "options": [
+            "Increase labor costs",
+            "Preserve resources for future use",
+            "Expand farmland",
+            "Reduce marketing expenses"
+          ],
+          "correctAnswer": "Preserve resources for future use",
+          "explanation": "Sustainability ensures long-term productivity by conserving natural resources."
+        },
+        {
+          "question": "What is considered a biological hazard on a farm?",
+          "options": [
+            "Loose wiring",
+            "Excessive noise",
+            "Exposure to pesticides",
+            "Animal waste"
+          ],
+          "correctAnswer": "Animal waste",
+          "explanation": "Animal waste carries pathogens that can contaminate soil, water, and food products."
+        },
+        {
+          "question": "Which of the following is an example of a corrective safety measure?",
+          "options": [
+            "Ignoring minor hazards",
+            "Repairing broken equipment",
+            "Hiring more workers",
+            "Applying for crop insurance"
+          ],
+          "correctAnswer": "Repairing broken equipment",
+          "explanation": "Fixing hazards reduces the risk of accidents and ensures safer operations."
+        },
+        {
+          "question": "What is the role of first aid training in agribusiness safety?",
+          "options": [
+            "Increase profits",
+            "Ensure compliance with tax law",
+            "Minimize injury impact",
+            "Improve crop yields"
+          ],
+          "correctAnswer": "Minimize injury impact",
+          "explanation": "First aid reduces the severity of injuries and improves worker survival and recovery."
+        },
+        {
+          "question": "Which regulation enforces safe pesticide application?",
+          "options": [
+            "WPS",
+            "FMLA",
+            "HIPAA",
+            "USMCA"
+          ],
+          "correctAnswer": "WPS",
+          "explanation": "The Worker Protection Standard (WPS) protects agricultural workers from pesticide exposure."
+        },
+        {
+          "question": "Why is PPE (Personal Protective Equipment) important in farming?",
+          "options": [
+            "It reduces insurance costs",
+            "It protects workers from hazards",
+            "It increases yield",
+            "It replaces training"
+          ],
+          "correctAnswer": "It protects workers from hazards",
+          "explanation": "PPE like gloves, masks, and goggles protect against chemicals and injuries."
+        },
+        {
+          "question": "Which safety factor is considered when setting risk priorities?",
+          "options": [
+            "Probability and severity of harm",
+            "Insurance availability",
+            "Farmer’s age",
+            "Seasonal market trends"
+          ],
+          "correctAnswer": "Probability and severity of harm",
+          "explanation": "Risk assessment prioritizes hazards that are both likely and dangerous."
+        },
+        {
+          "question": "What is an example of environmental compliance in agribusiness?",
+          "options": [
+            "Dumping fertilizer in rivers",
+            "Following EPA waste regulations",
+            "Selling non-labeled food",
+            "Over-irrigating"
+          ],
+          "correctAnswer": "Following EPA waste regulations",
+          "explanation": "Compliance ensures farms meet legal standards while protecting ecosystems."
+        },
+        {
+          "question": "What is the primary purpose of crop rotation in safety/environmental management?",
+          "options": [
+            "Increase labor demand",
+            "Enhance soil health",
+            "Reduce tax burden",
+            "Lower insurance rates"
+          ],
+          "correctAnswer": "Enhance soil health",
+          "explanation": "Rotating crops prevents nutrient depletion and reduces pest buildup, protecting long-term productivity."
+        }
+      ]
+    },
+    {
+      "topic": "Management Analysis and Decision Making",
+      "questions": [
+        {
+          "question": "Which agribusiness organization type offers shared ownership by members?",
+          "options": [
+            "Sole proprietorship",
+            "Partnership",
+            "Cooperative",
+            "Corporation"
+          ],
+          "correctAnswer": "Cooperative",
+          "explanation": "Cooperatives are member-owned and distribute profits proportionally, common in farm supply and marketing groups."
+        },
+        {
+          "question": "Which factor is analyzed in a SWOT analysis under 'Threats'?",
+          "options": [
+            "Competitor innovations",
+            "Strong customer loyalty",
+            "Internal strengths",
+            "Available opportunities"
+          ],
+          "correctAnswer": "Competitor innovations",
+          "explanation": "Threats are external risks, such as new technologies from competitors that could reduce market share."
+        },
+        {
+          "question": "What is the advantage of a sole proprietorship?",
+          "options": [
+            "Shared risk",
+            "Easy to start and control",
+            "Unlimited capital",
+            "Legal liability protection"
+          ],
+          "correctAnswer": "Easy to start and control",
+          "explanation": "Sole proprietorships require little paperwork and give the owner full control."
+        },
+        {
+          "question": "Which is a negative impact of agribusiness activities?",
+          "options": [
+            "Job creation",
+            "Soil erosion",
+            "Community development",
+            "Food security"
+          ],
+          "correctAnswer": "Soil erosion",
+          "explanation": "Intensive farming can degrade soil, reducing long-term productivity."
+        },
+        {
+          "question": "What ethical standard is key in AFNR management?",
+          "options": [
+            "Maximizing profit only",
+            "Ignoring regulations",
+            "Transparency and fairness",
+            "Exploiting resources"
+          ],
+          "correctAnswer": "Transparency and fairness",
+          "explanation": "Honest practices protect reputation and ensure sustainable operations."
+        },
+        {
+          "question": "Which decision is most influenced by environmental considerations?",
+          "options": [
+            "Crop insurance selection",
+            "Choice of irrigation method",
+            "Hiring seasonal labor",
+            "Selecting an accounting system"
+          ],
+          "correctAnswer": "Choice of irrigation method",
+          "explanation": "Water management directly impacts sustainability and environmental health."
+        },
+        {
+          "question": "Which is a key element of a production plan?",
+          "options": [
+            "Marketing slogan",
+            "Labor scheduling",
+            "Distribution channel",
+            "Company logo"
+          ],
+          "correctAnswer": "Labor scheduling",
+          "explanation": "Scheduling ensures the right workforce is available to meet production needs."
+        },
+        {
+          "question": "Which business type offers limited liability for owners?",
+          "options": [
+            "Sole proprietorship",
+            "Partnership",
+            "Cooperative",
+            "Corporation"
+          ],
+          "correctAnswer": "Corporation",
+          "explanation": "Corporations protect owners’ personal assets if the business fails."
+        },
+        {
+          "question": "What is the main benefit of conducting market opportunity analysis?",
+          "options": [
+            "Boosting compliance",
+            "Reducing risks and identifying growth areas",
+            "Avoiding safety regulations",
+            "Increasing debt"
+          ],
+          "correctAnswer": "Reducing risks and identifying growth areas",
+          "explanation": "Market analysis aligns resources with profitable opportunities and avoids threats."
+        },
+        {
+          "question": "Which business strategy capitalizes on strengths?",
+          "options": [
+            "Ignoring customer needs",
+            "Reducing productivity",
+            "Leveraging strong brand reputation",
+            "Overproducing goods"
+          ],
+          "correctAnswer": "Leveraging strong brand reputation",
+          "explanation": "Strong brands attract loyalty and allow premium pricing."
+        },
+        {
+          "question": "Which legal form of agribusiness allows profit distribution based on member participation?",
+          "options": [
+            "Partnership",
+            "Corporation",
+            "Cooperative",
+            "Sole proprietorship"
+          ],
+          "correctAnswer": "Cooperative",
+          "explanation": "In cooperatives, members share profits relative to their contributions."
+        },
+        {
+          "question": "What is the first step in strategic decision making?",
+          "options": [
+            "Evaluate alternatives",
+            "Identify problem or opportunity",
+            "Implement solution",
+            "Collect profits"
+          ],
+          "correctAnswer": "Identify problem or opportunity",
+          "explanation": "Recognizing an issue is the foundation for effective planning."
+        },
+        {
+          "question": "Which tool predicts future outcomes in agribusiness management?",
+          "options": [
+            "SWOT analysis",
+            "Risk matrix",
+            "Forecasting",
+            "Accounting"
+          ],
+          "correctAnswer": "Forecasting",
+          "explanation": "Forecasting uses data to estimate production, sales, and demand trends."
+        },
+        {
+          "question": "What is a potential weakness for a family-owned farm business?",
+          "options": [
+            "Stable leadership",
+            "Lack of succession planning",
+            "Close customer ties",
+            "Community trust"
+          ],
+          "correctAnswer": "Lack of succession planning",
+          "explanation": "Without a clear successor, farms risk instability when leadership changes."
+        },
+        {
+          "question": "Why should managers observe ethical standards?",
+          "options": [
+            "To avoid taxes",
+            "To exploit workers",
+            "To build long-term trust and compliance",
+            "To maximize short-term gains"
+          ],
+          "correctAnswer": "To build long-term trust and compliance",
+          "explanation": "Ethics sustain customer and community trust, vital for survival."
+        }
+      ]
+    },
+    {
+      "topic": "Marketing",
+      "questions": [
+        {
+          "question": "Which marketing principle applies in scenario 1?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 2?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 3?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 4?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 5?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 6?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 7?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 8?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 9?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 10?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 11?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 12?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 13?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 14?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        },
+        {
+          "question": "Which marketing principle applies in scenario 15?",
+          "options": [
+            "Product differentiation",
+            "Mass marketing",
+            "Branding",
+            "Price skimming"
+          ],
+          "correctAnswer": "Product differentiation",
+          "explanation": "Agribusinesses often compete by differentiating commodities through quality, certifications, or origin."
+        }
+      ]
+    },
+    {
+      "topic": "Economics",
+      "questions": [
+        {
+          "question": "Economic principle example 1?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 2?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 3?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 4?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 5?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 6?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 7?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 8?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 9?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 10?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 11?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 12?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 13?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 14?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        },
+        {
+          "question": "Economic principle example 15?",
+          "options": [
+            "Supply and demand",
+            "Inflation",
+            "Comparative advantage",
+            "Opportunity cost"
+          ],
+          "correctAnswer": "Supply and demand",
+          "explanation": "Global markets for crops are influenced by supply/demand changes, affecting prices and trade flows."
+        }
+      ]
+    },
+    {
+      "topic": "Finance and Accounting",
+      "questions": [
+        {
+          "question": "Finance concept 1?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 2?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 3?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 4?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 5?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 6?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 7?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 8?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 9?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 10?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 11?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 12?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 13?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 14?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 15?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 16?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 17?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 18?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 19?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 20?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 21?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 22?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 23?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 24?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        },
+        {
+          "question": "Finance concept 25?",
+          "options": [
+            "Balance sheet",
+            "ROI",
+            "Cash flow",
+            "Liabilities"
+          ],
+          "correctAnswer": "ROI",
+          "explanation": "Return on investment measures profitability of assets or projects, crucial for agribusiness decisions."
+        }
+      ]
+    },
+    {
+      "topic": "Terminology and Trends",
+      "questions": [
+        {
+          "question": "Trend question 1?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 2?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 3?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 4?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 5?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 6?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 7?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 8?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 9?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 10?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 11?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 12?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 13?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 14?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        },
+        {
+          "question": "Trend question 15?",
+          "options": [
+            "Sustainability",
+            "Globalization",
+            "Technological innovation",
+            "Regulation"
+          ],
+          "correctAnswer": "Sustainability",
+          "explanation": "Sustainability ensures responsible use of resources, a key AFNR industry trend."
+        }
+      ]
+    }
+  ]
+}
