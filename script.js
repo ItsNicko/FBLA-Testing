@@ -14,74 +14,273 @@ let _lastChartData = null;
 let testRunning = false;
 let _nextFlashcardTimer = null;
 
-const concaveInnerShadowPlugin = {
-  id: 'concaveInnerShadow',
-  afterDraw(chart, args, options) {
-    try {
-      if (chart.config.type !== 'doughnut') return;
-      const meta = chart.getDatasetMeta(0);
-      if (!meta || !meta.data || meta.data.length === 0) return;
+// cached current username (populated on auth state changes)
+window.currentUsername = null;
 
-      const first = meta.data[0];
-      const ctx = chart.ctx;
-      const cx = first.x;
-      const cy = first.y;
-      const innerR = first.innerRadius || first._model && first._model.innerRadius || (chart._metasets && chart._metasets[0] && chart._metasets[0].innerRadius) || 0;
-      if (!innerR) return;
+function isCleanUsername(name) {
+  if (!name) return false;
 
-      const shadowColor = options && options.shadowColor ? options.shadowColor : 'rgba(0,0,0,0.12)';
-      const rimColor = options && options.rimColor ? options.rimColor : 'rgba(255,255,255,0.6)';
-      const rimWidth = options && options.rimWidth ? options.rimWidth : Math.max(4, Math.round(innerR * 0.03));
+  // ensure bannedWords is an array (try window first, then global fallback)
+  const bw = Array.isArray(window.bannedWords)
+    ? window.bannedWords
+    : (typeof bannedWords !== 'undefined' && Array.isArray(bannedWords) ? bannedWords : []);
 
-      ctx.save();
-      ctx.globalCompositeOperation = 'multiply';
-      const g = ctx.createRadialGradient(cx, cy, innerR * 0.25, cx, cy, innerR);
-      g.addColorStop(0, 'rgba(0,0,0,0)');
-      g.addColorStop(1, shadowColor);
-      ctx.beginPath();
-      ctx.arc(cx, cy, innerR, 0, Math.PI * 2);
-      ctx.fillStyle = g;
-      ctx.fill();
-      ctx.restore();
+  if (!bw || bw.length === 0) return true; // nothing to enforce
 
-      ctx.save();
-      ctx.beginPath();
-      ctx.arc(cx, cy, innerR - (rimWidth / 2), 0, Math.PI * 2);
-      ctx.lineWidth = rimWidth;
-      ctx.strokeStyle = rimColor;
-      ctx.globalCompositeOperation = 'screen';
-      ctx.stroke();
-      ctx.restore();
-    } catch (e) {
-    }
+  const lower = name.toLowerCase().trim();
+
+  // check each banned word against whole-word matches and a stripped variant (to catch simple obfuscation)
+  for (const w of bw) {
+    if (!w) continue;
+    const word = String(w).toLowerCase();
+    const safe = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    // whole word match (avoid false positives like 'badge' for 'bad')
+    const re = new RegExp('\\b' + safe + '\\b', 'i');
+    if (re.test(lower)) return false;
+    // stripped comparison: remove non-alphanumerics to catch things like b-a-d or b@d
+    const stripped = lower.replace(/[^a-z0-9]/g, '');
+    const strippedWord = word.replace(/[^a-z0-9]/g, '');
+    if (strippedWord && stripped.includes(strippedWord)) return false;
   }
-};
 
-if (typeof Chart !== 'undefined' && Chart.register) {
-  try { Chart.register(concaveInnerShadowPlugin); } catch (e) { }
+  return true;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.getElementById('darkModeToggle');
-  const root = document.documentElement;
-  const saved = localStorage.getItem('fblacer-dark');
-  if (saved === '1') {
-    root.classList.add('dark');
-    if (toggle) toggle.checked = true;
+function isValidFormat(name) {
+  return /^[a-zA-Z0-9_]{3,20}$/.test(name);
+}
+
+async function isUsernameTaken(name) {
+  if (!name) return true;
+  try {
+    // use Firestore usernames collection (document id = username)
+    if (!window.db || !window.doc || !window.getDoc) return false;
+    const dref = window.doc(window.db, 'usernames', name);
+    const snap = await window.getDoc(dref);
+    return snap.exists();
+  } catch (e) {
+    console.warn('isUsernameTaken error', e);
+    return false;
   }
-  if (toggle) toggle.addEventListener('change', (e) => {
-    if (e.target.checked) { root.classList.add('dark'); localStorage.setItem('fblacer-dark','1'); }
-    else { root.classList.remove('dark'); localStorage.setItem('fblacer-dark','0'); }
-    if (typeof updateChartTheme === 'function') {
-      updateChartTheme();
+}
+
+function showPopup(message) {
+  // use existing toast if available
+  try { showToast(message, 'info'); return; } catch (e) {}
+  alert(message);
+}
+
+// helper to apply cached username to inputs
+window.applyAuthUsername = function (username) {
+  try {
+    window.currentUsername = username || null;
+    const lb = document.getElementById('lbName');
+    if (lb) {
+      if (username) {
+        lb.value = username;
+        lb.readOnly = true;
+        lb.setAttribute('aria-readonly', 'true');
+      } else {
+        lb.readOnly = false;
+        lb.removeAttribute('aria-readonly');
+      }
+    }
+    const ui = document.getElementById('username');
+    if (ui) {
+      if (username) {
+        ui.value = username;
+        ui.readOnly = true;
+        ui.setAttribute('aria-readonly', 'true');
+      } else {
+        ui.readOnly = false;
+        ui.removeAttribute('aria-readonly');
+      }
+    }
+  } catch (e) { console.warn('applyAuthUsername error', e); }
+};
+
+async function setAuthStatus(msg, showLogout = false) {
+  const el = document.getElementById('authStatus');
+  if (el) el.textContent = msg || '';
+  const logoutBtn = document.getElementById('logoutBtn');
+  if (logoutBtn) logoutBtn.style.display = showLogout ? 'inline-block' : 'none';
+}
+
+// wire up auth UI when DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  const signupBtn = document.getElementById('signupBtn');
+  const loginBtn = document.getElementById('loginBtn');
+  const logoutBtn = document.getElementById('logoutBtn');
+
+  if (signupBtn) signupBtn.addEventListener('click', async () => {
+    const username = (document.getElementById('username') || {}).value || '';
+    const password = (document.getElementById('password') || {}).value || '';
+    const name = username.trim();
+
+    if (!name || !password) return showPopup('Fill out both fields.');
+    if (!isValidFormat(name)) return showPopup('Username must be 3–20 characters, letters/numbers/underscores only.');
+    if (!isCleanUsername(name)) return showPopup('Username contains inappropriate words.');
+    if (await isUsernameTaken(name)) return showPopup('Username is already taken.');
+
+    const email = `${name}@fblacer.local`;
+    try {
+      if (!window.authCreate) throw new Error('auth create function not available');
+      const userCred = await window.authCreate(email, password);
+      const uid = userCred.user.uid;
+      // write username -> uid mapping in a transaction to avoid races
       try {
-        const canvas = document.getElementById('topicChart');
-        if (canvas && _lastChartLabels && _lastChartData) {
-          createTopicChart(canvas, _lastChartLabels, _lastChartData);
-        }
-      } catch (e) { }
+        await window.runTransaction(window.db, async (tx) => {
+          const userDoc = window.doc(window.db, 'usernames', name);
+          const snap = await tx.get(userDoc);
+          if (snap.exists()) throw new Error('username taken');
+          tx.set(userDoc, { uid });
+          const udoc = window.doc(window.db, 'users', uid);
+          tx.set(udoc, { username: name, createdAt: new Date().toISOString() });
+        });
+      } catch (e) {
+        console.warn('transaction error', e);
+      }
+      setAuthStatus('Account created. Logged in as ' + name, true);
+  try { if (typeof window.applyAuthUsername === 'function') window.applyAuthUsername(name); } catch (e) {}
+  try { localStorage.setItem('fblacer_username', name); } catch (e) {}
+  showPopup('Account created!');
+    } catch (err) {
+      showPopup('Signup failed: ' + (err && err.message ? err.message : String(err)));
     }
   });
+
+  if (loginBtn) loginBtn.addEventListener('click', async () => {
+    const username = (document.getElementById('username') || {}).value || '';
+    const password = (document.getElementById('password') || {}).value || '';
+    const name = username.trim();
+    if (!name || !password) return showPopup('Fill out both fields.');
+    const email = `${name}@fblacer.local`;
+    try {
+      if (!window.authSignIn) throw new Error('auth sign-in not available');
+      await window.authSignIn(email, password);
+      setAuthStatus('Logged in as ' + name, true);
+      try { if (typeof window.applyAuthUsername === 'function') window.applyAuthUsername(name); } catch (e) {}
+      try { localStorage.setItem('fblacer_username', name); } catch (e) {}
+      showPopup('Logged in!');
+    } catch (err) {
+      showPopup('Login failed: ' + (err && err.message ? err.message : String(err)));
+    }
+  });
+
+  if (logoutBtn) logoutBtn.addEventListener('click', async () => {
+    try {
+      if (!window.authSignOut) throw new Error('signOut not available');
+      await window.authSignOut();
+      setAuthStatus('Signed out', false);
+      try { if (typeof window.applyAuthUsername === 'function') window.applyAuthUsername(null); } catch (e) {}
+      try { localStorage.removeItem('fblacer_username'); } catch (e) {}
+      showPopup('Signed out');
+    } catch (e) {
+      showPopup('Sign out failed: ' + (e && e.message ? e.message : String(e)));
+    }
+  });
+});
+
+// observe auth state to update UI
+try {
+  if (window.auth) {
+    window.auth.onAuthStateChanged?.(async (user) => {
+      try {
+        if (user) {
+          // fetch username if exists
+          let name = 'Anonymous';
+          try {
+            const udoc = window.doc(window.db, 'users', user.uid);
+            const snap = await window.getDoc(udoc);
+            if (snap && snap.exists()) {
+              const data = snap.data(); if (data && data.username) name = data.username;
+            }
+          } catch (e) {}
+          setAuthStatus('Signed in as ' + name, true);
+          try { if (typeof window.applyAuthUsername === 'function') window.applyAuthUsername(name); } catch (e) {}
+        } else {
+          setAuthStatus('Not signed in', false);
+          try { if (typeof window.applyAuthUsername === 'function') window.applyAuthUsername(null); } catch (e) {}
+        }
+      } catch (e) {}
+    });
+  }
+} catch (e) {}
+
+
+// Chart.js removed: concaveInnerShadow plugin and Chart.register removed. Using aleks-chart.js
+
+// Settings modal + dark mode toggle + report submission
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.documentElement;
+  // Initialize saved theme state
+  const saved = localStorage.getItem('fblacer-dark');
+  if (saved === '1') root.classList.add('dark');
+
+  // Elements
+  const settingsBtn = document.getElementById('settingsBtn');
+  const settingsModal = document.getElementById('settingsModal');
+  const settingsClose = document.getElementById('settingsClose');
+  const darkToggle = document.getElementById('settingsDarkToggle');
+  const issueText = document.getElementById('issueText');
+  const issueEmail = document.getElementById('issueEmail');
+  const sendIssueBtn = document.getElementById('sendIssueBtn');
+  const reportStatus = document.getElementById('reportStatus');
+
+  // Sync toggle initial state
+  if (darkToggle) darkToggle.checked = root.classList.contains('dark');
+
+  function setDarkMode(on) {
+    if (on) {
+      root.classList.add('dark');
+      localStorage.setItem('fblacer-dark', '1');
+    } else {
+      root.classList.remove('dark');
+      localStorage.setItem('fblacer-dark', '0');
+    }
+    try { if (typeof updateChartTheme === 'function') updateChartTheme(); } catch (e) {}
+  }
+
+  // Open/close modal
+  if (settingsBtn) settingsBtn.addEventListener('click', () => {
+    if (settingsModal) { settingsModal.style.display = 'flex'; settingsModal.setAttribute('aria-hidden','false'); }
+    // sync toggle
+    if (darkToggle) darkToggle.checked = root.classList.contains('dark');
+  });
+  if (settingsClose) settingsClose.addEventListener('click', () => {
+    if (settingsModal) { settingsModal.style.display = 'none'; settingsModal.setAttribute('aria-hidden','true'); }
+  });
+  // allow ESC to close
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && settingsModal && settingsModal.style.display === 'flex') { settingsModal.style.display = 'none'; settingsModal.setAttribute('aria-hidden','true'); } });
+
+  if (darkToggle) darkToggle.addEventListener('change', (e) => {
+    setDarkMode(Boolean(e.target.checked));
+  });
+
+  // Report submission
+  if (sendIssueBtn) {
+    sendIssueBtn.addEventListener('click', async () => {
+      const msg = issueText ? issueText.value.trim() : '';
+      const email = issueEmail ? issueEmail.value.trim() : '';
+      if (!msg) {
+        if (reportStatus) reportStatus.textContent = 'Please enter a description.';
+        return;
+      }
+      if (reportStatus) { reportStatus.textContent = 'Sending...'; }
+      try {
+        if (!window.reportApi || !window.reportApi.sendIssue) throw new Error('report API not available');
+        await window.reportApi.sendIssue({ message: msg, email, page: location.pathname });
+        if (reportStatus) reportStatus.textContent = 'Report sent — thank you.';
+        if (issueText) issueText.value = '';
+        if (issueEmail) issueEmail.value = '';
+        // auto-close after short delay
+        setTimeout(() => { if (settingsModal) { settingsModal.style.display = 'none'; settingsModal.setAttribute('aria-hidden','true'); } }, 900);
+      } catch (err) {
+        const m = (err && err.message) ? err.message : String(err);
+        if (reportStatus) reportStatus.textContent = 'Failed to send: ' + m;
+      }
+    });
+  }
 });
 
 function getSegmentColors() {
@@ -108,108 +307,38 @@ try {
 } catch (e) { }
 
 function createTopicChart(ctxEl, labels, data) {
-  if (topicChart) {
-    try { topicChart.destroy(); } catch (e) { }
+  // Replace Chart.js-based rendering with the ALEKS canvas renderer.
+  try {
+    // destroy prior chart instance if present
+    try { if (topicChart && typeof topicChart.destroy === 'function') topicChart.destroy(); } catch (e) { }
     topicChart = null;
+
+    // Prepare a scores-like object (renderAleksChart expects scores.topics structure)
+    const scoresObj = { topics: {} };
+    // labels[] and data[] are expected to correspond; data currently contains weighted values per topic
+    for (let i = 0; i < labels.length; i++) {
+      const lab = labels[i];
+      // We attempt to find actual counts in the global scores.topics if available
+      const src = (scores && scores.topics && scores.topics[lab]) ? scores.topics[lab] : null;
+      if (src) {
+        scoresObj.topics[lab] = { firstAttemptCorrect: src.firstAttemptCorrect || 0, total: src.total || 0 };
+      } else {
+        // Fall back: derive from provided data (data[i]) - set total equal to Math.round(data value)
+        const val = Number(data[i]) || 0;
+        scoresObj.topics[lab] = { firstAttemptCorrect: Math.round(val), total: Math.round(val) };
+      }
+    }
+
+    // renderAleksChart is provided by aleks-chart.js and returns { update, destroy }
+    if (typeof window.renderAleksChart === 'function') {
+      topicChart = window.renderAleksChart(ctxEl, scoresObj);
+      try { _lastChartLabels = labels.slice(); _lastChartData = data.slice(); } catch (e) { }
+    } else {
+      console.warn('renderAleksChart not loaded');
+    }
+  } catch (e) {
+    console.error('createTopicChart error', e);
   }
-
-  const rootStyles = getComputedStyle(document.documentElement);
-  const textColor = rootStyles.getPropertyValue('--text-color').trim() || '#102027';
-  const surface = rootStyles.getPropertyValue('--surface').trim() || '#e6eef6';
-
-  const isDark = document.documentElement.classList.contains('dark');
-  const cssShadow = rootStyles.getPropertyValue('--shadow-dark').trim();
-  const cssRim = rootStyles.getPropertyValue('--shadow-light').trim();
-  const shadowColor = cssShadow || (isDark ? 'rgba(0,0,0,0.72)' : 'rgba(0,0,0,0.12)');
-  const rimColor = cssRim || (isDark ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.6)');
-
-  try {
-    if (typeof Chart !== 'undefined' && Chart.defaults) {
-      Chart.defaults.color = textColor;
-      if (!Chart.defaults.plugins) Chart.defaults.plugins = {};
-      if (!Chart.defaults.plugins.legend) Chart.defaults.plugins.legend = {};
-      Chart.defaults.plugins.legend.labels = Chart.defaults.plugins.legend.labels || {};
-      Chart.defaults.plugins.legend.labels.color = textColor;
-    }
-  } catch (e) { }
-
-  topicChart = new Chart(ctxEl, {
-    type: 'doughnut',
-    data: {
-      labels,
-      datasets: [{
-        data,
-        backgroundColor: getSegmentColors(),
-        borderColor: surface,
-        borderWidth: 6
-      }]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      cutout: '62%',
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: surface,
-          titleColor: textColor,
-          bodyColor: textColor,
-          borderColor: 'rgba(0,0,0,0.06)',
-          borderWidth: 1,
-          callbacks: {
-            label: function(context) {
-              const topic = context.label;
-              const { firstAttemptCorrect, total } = scores.topics[topic];
-              const pct = total > 0 ? Math.round((firstAttemptCorrect / total) * 100) : 0;
-              return `${topic}: ${pct}% (${firstAttemptCorrect}/${total})`;
-            }
-          }
-        }
-      },
-      elements: { arc: { borderRadius: 8 } }
-    }
-  });
-
-  try {
-    if (topicChart && topicChart.options) {
-      topicChart.options.plugins = topicChart.options.plugins || {};
-      topicChart.options.plugins.concaveInnerShadow = topicChart.options.plugins.concaveInnerShadow || {};
-      topicChart.options.plugins.concaveInnerShadow.shadowColor = shadowColor;
-      topicChart.options.plugins.concaveInnerShadow.rimColor = rimColor;
-      topicChart.options.plugins.concaveInnerShadow.rimWidth = Math.max(4, Math.round((Math.min(ctxEl.width, ctxEl.height) || 200) * 0.02));
-      topicChart.update();
-    }
-  } catch (e) { }
-
-  try {
-    _lastChartLabels = labels.slice();
-    _lastChartData = data.slice();
-  } catch (e) { }
-
-  try {
-    const legendEl = document.getElementById('topicLegend');
-    if (legendEl) {
-      legendEl.innerHTML = '';
-      const colors = getSegmentColors();
-      labels.forEach((lab, i) => {
-        const item = document.createElement('div');
-        item.className = 'item';
-        const sw = document.createElement('span');
-        sw.className = 'swatch';
-        sw.style.background = colors[i % colors.length];
-        item.appendChild(sw);
-        const txt = document.createElement('span');
-        txt.textContent = lab;
-        item.appendChild(txt);
-        legendEl.appendChild(item);
-      });
-      try {
-        const rootStyles = getComputedStyle(document.documentElement);
-        const tc = rootStyles.getPropertyValue('--text-color').trim() || '#102027';
-        legendEl.style.color = tc;
-      } catch (e) { }
-    }
-  } catch (e) { }
 }
 
 function updateChartTheme() {
@@ -226,17 +355,8 @@ function updateChartTheme() {
     const shadowColor = cssShadow2 || (isDark ? 'rgba(0,0,0,0.72)' : 'rgba(0,0,0,0.12)');
     const rimColor = cssRim2 || (isDark ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.6)');
 
-    try {
-      if (typeof Chart !== 'undefined' && Chart.defaults) {
-        Chart.defaults.color = textColor;
-        if (!Chart.defaults.plugins) Chart.defaults.plugins = {};
-        if (!Chart.defaults.plugins.legend) Chart.defaults.plugins.legend = {};
-        Chart.defaults.plugins.legend.labels = Chart.defaults.plugins.legend.labels || {};
-        Chart.defaults.plugins.legend.labels.color = textColor;
-      }
-    } catch (e) { }
-
-    try { if (topicChart) { topicChart.destroy(); topicChart = null; } } catch (e) { }
+    // Chart.js removed: simply destroy existing aleks chart instance (if any) and re-create
+    try { if (topicChart && typeof topicChart.destroy === 'function') { topicChart.destroy(); topicChart = null; } } catch (e) { }
 
     if (_lastChartLabels && _lastChartData) {
       createTopicChart(canvas, _lastChartLabels, _lastChartData);
@@ -442,6 +562,17 @@ function generateFlashcard() {
   }
 
   const q = questions.shift();
+  // Shuffle options and track new correct answer
+  const shuffledOptions = [...q.options];
+  shuffleArray(shuffledOptions);
+
+  const correctAnswer = q.correctAnswer;
+  const newCorrectAnswer = shuffledOptions.find(opt => opt === correctAnswer);
+
+  // Replace q.options and q.correctAnswer with shuffled versions
+  q.options = shuffledOptions;
+  q.correctAnswer = newCorrectAnswer;
+
   progress.done++;
   firstAttempt = true;
 
@@ -670,6 +801,42 @@ function endTest() {
   }
 }
 
+// Save score + topic breakdowns to Firestore under users/{uid}/scores and users/{uid}/topics
+async function saveScoreToFirestore() {
+  try {
+    const uid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || null;
+    if (!uid) return showPopup('You must be logged in to save your score.');
+    const testId = currentTest?.testName || 'unknown';
+    const timestamp = new Date().toISOString();
+
+    // save total points under scores/{testId}
+    try {
+      const scoreRef = window.doc(window.db, 'users', uid, 'scores', testId);
+      await window.setDoc(scoreRef, { totalPoints, timestamp });
+    } catch (e) {
+      console.warn('save score failed', e);
+    }
+
+    // save topics breakdown under topics/{testId}
+    try {
+      const topicScores = {};
+      Object.keys(scores.topics || {}).forEach(topic => {
+        const s = scores.topics[topic] || {};
+        const firstAttemptCorrect = Number(s.firstAttemptCorrect || 0);
+        const total = Number(s.total || 0);
+        topicScores[topic] = { firstAttemptCorrect, total };
+      });
+      const topicsRef = window.doc(window.db, 'users', uid, 'topics', testId);
+      await window.setDoc(topicsRef, topicScores);
+    } catch (e) {
+      console.warn('save topics failed', e);
+    }
+    showToast('Saved score to your account', 'success');
+  } catch (e) {
+    console.warn('saveScoreToFirestore error', e);
+  }
+}
+
 let _leaderboardState = { limit: 15, lastLoaded: null };
 
 function showLeaderboardOverlay(testId) {
@@ -703,8 +870,8 @@ function showLeaderboardOverlay(testId) {
       await fetchAndRenderLeaderboard(testId);
     });
     overlay.querySelector('#lbSubmitBtn').addEventListener('click', async () => {
-      const name = document.getElementById('lbName').value.trim() || 'Anonymous';
-        try {
+      const name = (document.getElementById('lbName') || {}).value.trim() || 'Anonymous';
+      try {
         if (!window.leaderboardApi || !window.leaderboardApi.submitScore) throw new Error('Leaderboard API not available');
         if (window.leaderboardAuthReady) await window.leaderboardAuthReady;
         if (!totalPoints || Number(totalPoints) === 0) {
@@ -718,8 +885,10 @@ function showLeaderboardOverlay(testId) {
           if (submitWrap) submitWrap.remove();
           return;
         }
-  await window.leaderboardApi.submitScore(testId, name, totalPoints);
-  await fetchAndRenderLeaderboard(testId);
+        await window.leaderboardApi.submitScore(testId, name, totalPoints);
+        // also persist to user's private record if authenticated
+        try { await saveScoreToFirestore(); } catch (e) { /* ignore */ }
+        await fetchAndRenderLeaderboard(testId);
         document.getElementById('lbName').value = '';
         try { localStorage.setItem(localKey, JSON.stringify({ ts: new Date().toISOString() })); } catch (e) { }
         const submitWrap2 = overlay.querySelector('.lb-submit');
@@ -743,6 +912,26 @@ function showLeaderboardOverlay(testId) {
 
   const testNameEl = document.getElementById('lb-test-name');
   if (testNameEl) testNameEl.textContent = testId;
+  // Autofill lbName: prefer cached username, then localStorage; avoid Firestore reads (permissions often block client reads)
+  (function () {
+    try {
+      const nameInput = document.getElementById('lbName');
+      if (!nameInput) return;
+      const cached = window.currentUsername || (localStorage.getItem && localStorage.getItem('fblacer_username')) || null;
+      if (cached) {
+        console.debug('Autofill: using cached/local username for lbName', cached);
+        nameInput.value = cached;
+        nameInput.readOnly = true;
+        nameInput.setAttribute('aria-readonly', 'true');
+        return;
+      }
+      // leave editable if no cached username
+      nameInput.readOnly = false;
+      nameInput.removeAttribute('aria-readonly');
+    } catch (e) {
+      console.warn('Autofill lbName error', e);
+    }
+  })();
   overlay.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);z-index:99999;';
   const panelEl = overlay.querySelector('.lb-panel');
   if (panelEl) {
@@ -758,6 +947,7 @@ function showLeaderboardOverlay(testId) {
   }
   document.body.style.overflow = 'hidden';
   _leaderboardState.limit = 15;
+  // (previously attempted Firestore fetch here — removed to avoid permission errors)
   fetchAndRenderLeaderboard(testId);
 }
 
@@ -859,4 +1049,377 @@ async function submitScore(name, test, score) {
   } catch (err) {
   }
 }
+
+
+
+(function () {
+  'use strict';
+
+  // Default color palette (used cyclically)
+  const DEFAULT_COLORS = [
+    '#4CAF50', // green
+    '#2196F3', // blue
+    '#FFC107', // amber
+    '#E91E63', // pink
+    '#9C27B0', // purple
+    '#FF7043', // orange-ish
+    '#26A69A', // teal
+    '#7E57C2', // deep purple
+  ];
+
+  function readCSSVar(name, fallback) {
+    try {
+      const v = getComputedStyle(document.documentElement).getPropertyValue(name);
+      if (!v) return fallback;
+      return v.trim() || fallback;
+    } catch (e) {
+      return fallback;
+    }
+  }
+
+  function createTooltipElement(surface, textColor) {
+    const tip = document.createElement('div');
+    tip.id = 'aleksTooltip';
+    tip.style.position = 'fixed';
+    tip.style.pointerEvents = 'none';
+    tip.style.padding = '8px 10px';
+    tip.style.borderRadius = '6px';
+    tip.style.background = surface;
+    tip.style.color = textColor;
+    tip.style.boxShadow = '0 6px 18px rgba(0,0,0,0.12)';
+    tip.style.fontSize = '13px';
+    tip.style.zIndex = 2147483647; // very high
+    tip.style.display = 'none';
+    tip.style.maxWidth = '320px';
+    tip.style.whiteSpace = 'nowrap';
+    return tip;
+  }
+
+  // Brighten a hex color by a factor (0..1) - simple approach
+  function brightenHex(hex, amt) {
+    // hex like #rrggbb
+    try {
+      const c = hex.replace('#', '');
+      const num = parseInt(c, 16);
+      let r = (num >> 16) + Math.round(255 * amt);
+      let g = ((num >> 8) & 0x00ff) + Math.round(255 * amt);
+      let b = (num & 0x0000ff) + Math.round(255 * amt);
+      r = Math.min(255, Math.max(0, r));
+      g = Math.min(255, Math.max(0, g));
+      b = Math.min(255, Math.max(0, b));
+      const out = '#' + (r << 16 | g << 8 | b).toString(16).padStart(6, '0');
+      return out;
+    } catch (e) {
+      return hex;
+    }
+  }
+
+  // Main render function factory
+  function renderAleksChart(canvasOrId, scores) {
+    // Resolve canvas element
+    let canvas;
+    if (typeof canvasOrId === 'string') canvas = document.getElementById(canvasOrId);
+    else canvas = canvasOrId;
+    if (!canvas || canvas.tagName !== 'CANVAS') {
+      throw new Error('renderAleksChart requires a canvas element or canvas id');
+    }
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) throw new Error('2D context not available');
+
+    // Read theme colors
+    const textColor = readCSSVar('--text-color', '#102027');
+    const surface = readCSSVar('--surface', '#ffffff');
+
+    // Tooltip
+    let tooltip = document.getElementById('aleksTooltip');
+    if (!tooltip) {
+      tooltip = createTooltipElement(surface, textColor);
+      document.body.appendChild(tooltip);
+    }
+
+    // Chart state
+    let entries = []; // {label, correct, total, value}
+    let totalValue = 0;
+    let colors = DEFAULT_COLORS.slice();
+
+    // Event handlers references for cleanup
+    const handlers = { move: null, leave: null, resize: null };
+
+    // compute entries from scores.topics
+    function computeEntries(scoresObj) {
+      const topics = (scoresObj && scoresObj.topics) ? scoresObj.topics : {};
+      const out = [];
+      for (const label of Object.keys(topics)) {
+        const t = topics[label] || { firstAttemptCorrect: 0, total: 0 };
+        const first = Number(t.firstAttemptCorrect) || 0;
+        const tot = Number(t.total) || 0;
+        // sliceValue as requested: (firstAttemptCorrect / total) * total
+        // which simplifies to firstAttemptCorrect mathematically; implement the formula exactly
+        const ratio = tot > 0 ? (first / tot) : 0;
+        const value = ratio * tot; // equals 'first' when tot>0
+        out.push({ label, correct: first, total: tot, value });
+      }
+      return out;
+    }
+
+    // Resize canvas to its displayed size and DPR
+    function resizeCanvas() {
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      const cssW = Math.max(240, Math.round(rect.width));
+      const cssH = Math.max(240, Math.round(rect.height));
+      canvas.style.width = cssW + 'px';
+      canvas.style.height = cssH + 'px';
+      canvas.width = Math.round(cssW * dpr);
+      canvas.height = Math.round(cssH * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    // Draw the doughnut with radial slices
+    function draw(highlightIndex = -1) {
+      resizeCanvas();
+      const rect = canvas.getBoundingClientRect();
+      const w = rect.width;
+      const h = rect.height;
+      const cx = w / 2;
+      const cy = h / 2;
+
+      // Visual parameters - radial sectors (no inner hole)
+      const baseRadius = Math.min(w, h) * 0.18; // minimal inner radius from center
+      const maxOuterRadius = Math.min(w, h) * 0.48; // farthest a sector can reach
+
+      // Clear
+      ctx.clearRect(0, 0, w, h);
+
+      // Background surface (subtle center circle)
+      ctx.save();
+      ctx.fillStyle = readCSSVar('--surface', '#ffffff');
+      ctx.beginPath();
+      ctx.arc(cx, cy, baseRadius - 2, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+
+      // if no data, draw faint circle
+      if (!entries.length || totalValue <= 0) {
+        ctx.save();
+        ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+        ctx.lineWidth = Math.max(8, baseRadius * 0.2);
+        ctx.beginPath();
+        ctx.arc(cx, cy, (baseRadius + maxOuterRadius) / 2, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.restore();
+        return;
+      }
+
+      // Draw sectors: each slice's outer radius grows with correctness
+      let angle = -Math.PI / 2; // start at top
+      for (let i = 0; i < entries.length; i++) {
+        const e = entries[i];
+        const sliceAngle = (e.value / totalValue) * Math.PI * 2;
+        const start = angle;
+        const end = angle + sliceAngle;
+
+        // correctness ratio 0..1
+        const corrRatio = e.total > 0 ? (e.correct / e.total) : 0;
+        // compute outer radius for this sector
+        const targetOuter = baseRadius + (maxOuterRadius - baseRadius) * corrRatio;
+
+        // hover emphasis increases outer radius slightly
+        const isHover = (i === highlightIndex);
+        const hoverExtra = isHover ? Math.min(12, (maxOuterRadius - baseRadius) * 0.08) : 0;
+        const outerR = targetOuter + hoverExtra;
+
+        // Draw filled sector from center to outerR over angle [start,end]
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.arc(cx, cy, outerR, start, end);
+        ctx.closePath();
+
+        let fillColor = colors[i % colors.length];
+        if (isHover) fillColor = brightenHex(fillColor, 0.18);
+        ctx.fillStyle = fillColor;
+        ctx.fill();
+
+        // carve out the inner circle to make it a ring segment
+        ctx.save();
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.arc(cx, cy, baseRadius, end, start, true);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+
+        // stroke outer edge for separation
+        ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.arc(cx, cy, outerR, start, end);
+        ctx.stroke();
+
+        angle = end;
+      }
+
+      // Center label (optional) - show total questions
+      ctx.save();
+      ctx.fillStyle = readCSSVar('--text-color', '#102027');
+  ctx.font = `600 ${Math.max(14, baseRadius * 0.18)}px Inter, system-ui, sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      // Display total correct / total across topics
+      const totalCorrect = entries.reduce((s, e) => s + (e.correct || 0), 0);
+      const totalQuestions = entries.reduce((s, e) => s + (e.total || 0), 0);
+      ctx.fillText(`${totalCorrect}/${totalQuestions}`, cx, cy);
+      ctx.restore();
+
+      // Render legend (small list) in the container's sibling or absolute overlay
+      // We'll populate a legend if there's an element with id topicLegend
+      try {
+        const legendEl = document.getElementById('topicLegend');
+        if (legendEl) {
+          legendEl.innerHTML = '';
+          entries.forEach((e, idx) => {
+            const item = document.createElement('div');
+            item.className = 'item';
+            const sw = document.createElement('span');
+            sw.className = 'swatch';
+            sw.style.background = colors[idx % colors.length];
+            sw.style.display = 'inline-block';
+            sw.style.width = '14px';
+            sw.style.height = '14px';
+            sw.style.borderRadius = '3px';
+            sw.style.marginRight = '8px';
+            item.appendChild(sw);
+            const txt = document.createElement('span');
+            txt.textContent = `${e.label} — ${e.correct}/${e.total}`;
+            item.appendChild(txt);
+            legendEl.appendChild(item);
+          });
+          legendEl.style.color = readCSSVar('--text-color', '#102027');
+        }
+      } catch (e) {
+        // ignore
+      }
+    }
+
+    // Detect hovered slice by mouse position
+    function handleMouseMove(ev) {
+      const rect = canvas.getBoundingClientRect();
+      const x = ev.clientX - rect.left;
+      const y = ev.clientY - rect.top;
+      const cx = rect.width / 2;
+      const cy = rect.height / 2;
+      const dx = x - cx;
+      const dy = y - cy;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+
+      const baseRadius = Math.min(rect.width, rect.height) * 0.18;
+      const maxOuterRadius = Math.min(rect.width, rect.height) * 0.48;
+
+      if (dist < baseRadius || dist > maxOuterRadius) {
+        // not over a slice
+        tooltip.style.display = 'none';
+        draw(-1);
+        return;
+      }
+
+      // compute angle normalized from -PI/2 start
+      let ang = Math.atan2(dy, dx);
+      // normalize range 0..2PI with top being -PI/2
+      // shift so 0 at top
+      ang += Math.PI / 2;
+      if (ang < 0) ang += Math.PI * 2;
+
+      // find slice index by cumulative angles
+      let a = 0;
+      let found = -1;
+      for (let i = 0; i < entries.length; i++) {
+        const portion = entries[i].value / totalValue;
+        const start = a;
+        const end = a + portion;
+        if (ang >= start * Math.PI * 2 && ang <= end * Math.PI * 2) {
+          found = i;
+          break;
+        }
+        a = end;
+      }
+
+      if (found === -1) {
+        tooltip.style.display = 'none';
+        draw(-1);
+        return;
+      }
+
+      // show tooltip near mouse; content: Topic: label\n12 / 15 correct (80%)
+      const e = entries[found];
+      const pct = e.total > 0 ? Math.round((e.correct / e.total) * 100) : 0;
+      tooltip.textContent = `${e.label}\n${e.correct} / ${e.total} correct (${pct}%)`;
+      // position near mouse, avoid going off-screen
+      const left = Math.min(window.innerWidth - 8 - tooltip.offsetWidth, ev.clientX + 12);
+      const top = Math.min(window.innerHeight - 8 - tooltip.offsetHeight, ev.clientY + 12);
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
+      tooltip.style.display = 'block';
+
+      // redraw with highlight
+      draw(found);
+    }
+
+    function handleMouseLeave() {
+      tooltip.style.display = 'none';
+      draw(-1);
+    }
+
+    function attachHandlers() {
+      handlers.move = handleMouseMove;
+      handlers.leave = handleMouseLeave;
+      canvas.addEventListener('mousemove', handlers.move);
+      canvas.addEventListener('mouseleave', handlers.leave);
+      // observe resize to redraw
+      handlers.resize = () => draw(-1);
+      window.addEventListener('resize', handlers.resize);
+    }
+
+    function detachHandlers() {
+      if (handlers.move) canvas.removeEventListener('mousemove', handlers.move);
+      if (handlers.leave) canvas.removeEventListener('mouseleave', handlers.leave);
+      if (handlers.resize) window.removeEventListener('resize', handlers.resize);
+    }
+
+    // Public API: update, destroy
+    function update(newScores) {
+      scores = newScores;
+      entries = computeEntries(scores);
+      totalValue = entries.reduce((s, e) => s + (e.value || 0), 0);
+      // if totalValue is 0 but some topics exist, assign equal tiny weights to render slices
+      if (totalValue === 0 && entries.length > 0) {
+        entries.forEach(e => e.value = 1);
+        totalValue = entries.length;
+      }
+      draw(-1);
+    }
+
+    function destroy() {
+      detachHandlers();
+      try { if (tooltip && tooltip.parentNode) tooltip.parentNode.removeChild(tooltip); } catch (e) { }
+      // clear canvas
+      try { const r = canvas.getBoundingClientRect(); ctx.clearRect(0,0,r.width,r.height); } catch (e) { }
+    }
+
+    // initialization
+    colors = DEFAULT_COLORS.slice();
+    entries = computeEntries(scores || {});
+    totalValue = entries.reduce((s, e) => s + (e.value || 0), 0);
+    if (totalValue === 0 && entries.length > 0) { entries.forEach(e => e.value = 1); totalValue = entries.length; }
+    attachHandlers();
+    draw(-1);
+
+    return { update, destroy, el: canvas };
+  }
+
+  // expose globally
+  window.renderAleksChart = renderAleksChart;
+})();
+
 window.submitScore = submitScore;

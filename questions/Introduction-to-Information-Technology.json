@@ -1,0 +1,955 @@
+{
+  "testName": "Introduction to Information Technology",
+  "topics": [
+    {
+      "topicName": "Operating Systems",
+      "questions": [
+        {
+          "topicName": "Computer Hardware",
+          "questions": [
+            {
+              "question": "Which type of computer is best suited for large-scale scientific simulations?",
+              "options": ["Tablet", "Personal computer", "Mainframe", "Laptop"],
+              "correctAnswer": "Mainframe",
+              "explanation": "Mainframes are designed for high-performance computing and large-scale simulations."
+            },
+            {
+              "question": "What component temporarily stores data for quick access by the CPU?",
+              "options": ["RAM", "Hard drive", "SSD", "GPU"],
+              "correctAnswer": "RAM",
+              "explanation": "RAM stores data temporarily for fast access by the CPU."
+            },
+            {
+              "question": "Which storage device is faster and more durable?",
+              "options": ["HDD", "SSD", "CD-ROM", "Floppy disk"],
+              "correctAnswer": "SSD",
+              "explanation": "Solid State Drives are faster and more durable than traditional hard drives."
+            },
+            {
+              "question": "Which component processes instructions from programs?",
+              "options": ["GPU", "CPU", "RAM", "Motherboard"],
+              "correctAnswer": "CPU",
+              "explanation": "The CPU (Central Processing Unit) executes program instructions."
+            },
+            {
+              "question": "Which peripheral is used to scan physical documents into digital format?",
+              "options": ["Printer", "Scanner", "Monitor", "Keyboard"],
+              "correctAnswer": "Scanner",
+              "explanation": "Scanners convert physical documents into digital files."
+            },
+            {
+              "question": "Which device connects a computer to a network?",
+              "options": ["Router", "Monitor", "Network adapter", "Hard drive"],
+              "correctAnswer": "Network adapter",
+              "explanation": "A network adapter allows a computer to connect to a network."
+            },
+            {
+              "question": "What type of memory is non-volatile and stores firmware?",
+              "options": ["RAM", "ROM", "Cache", "Virtual Memory"],
+              "correctAnswer": "ROM",
+              "explanation": "ROM (Read-Only Memory) retains firmware even when power is off."
+            },
+            {
+              "question": "Which component is essential for displaying images on a monitor?",
+              "options": ["GPU", "CPU", "RAM", "Hard Drive"],
+              "correctAnswer": "GPU",
+              "explanation": "The GPU (Graphics Processing Unit) renders images to display."
+            },
+            {
+              "question": "Which device is used to output sound from a computer?",
+              "options": ["Speakers", "Microphone", "Monitor", "Keyboard"],
+              "correctAnswer": "Speakers",
+              "explanation": "Speakers convert audio signals from a computer into sound."
+            },
+            {
+              "question": "Which expansion card allows additional USB ports?",
+              "options": [
+                "Sound card",
+                "Graphics card",
+                "USB expansion card",
+                "Network card"
+              ],
+              "correctAnswer": "USB expansion card",
+              "explanation": "USB expansion cards add more USB ports to a computer."
+            },
+            {
+              "question": "Which component stores permanent data and programs?",
+              "options": ["RAM", "ROM", "Hard drive", "Cache"],
+              "correctAnswer": "Hard drive",
+              "explanation": "Hard drives store data and programs permanently."
+            },
+            {
+              "question": "What device converts digital signals into analog for transmission?",
+              "options": ["Router", "Modem", "Switch", "Hub"],
+              "correctAnswer": "Modem",
+              "explanation": "Modems convert digital data into analog signals and vice versa for network communication."
+            },
+            {
+              "question": "Which component controls communication between all computer parts?",
+              "options": ["Motherboard", "CPU", "GPU", "Power supply"],
+              "correctAnswer": "Motherboard",
+              "explanation": "The motherboard connects and allows communication between all computer components."
+            },
+            {
+              "question": "Which peripheral allows input of text data?",
+              "options": ["Keyboard", "Mouse", "Scanner", "Printer"],
+              "correctAnswer": "Keyboard",
+              "explanation": "Keyboards are the primary input device for text."
+            },
+            {
+              "question": "Which type of storage uses magnetic disks?",
+              "options": ["SSD", "HDD", "Flash drive", "ROM"],
+              "correctAnswer": "HDD",
+              "explanation": "HDDs use magnetic disks to store data."
+            },
+            {
+              "question": "What provides electrical power to all computer components?",
+              "options": ["Power supply", "CPU", "Motherboard", "GPU"],
+              "correctAnswer": "Power supply",
+              "explanation": "The power supply converts electricity from an outlet to usable power for components."
+            },
+            {
+              "question": "Which peripheral allows you to select items on a screen?",
+              "options": ["Keyboard", "Mouse", "Printer", "Scanner"],
+              "correctAnswer": "Mouse",
+              "explanation": "The mouse controls the pointer and enables selection of items on a screen."
+            },
+            {
+              "question": "Which hardware component is used for short-term storage of CPU instructions?",
+              "options": ["ROM", "RAM", "Cache", "Hard drive"],
+              "correctAnswer": "Cache",
+              "explanation": "Cache memory stores frequently used instructions for quick CPU access."
+            },
+            {
+              "question": "Which device prints documents from a computer?",
+              "options": ["Scanner", "Monitor", "Printer", "Keyboard"],
+              "correctAnswer": "Printer",
+              "explanation": "Printers produce physical copies of digital documents."
+            },
+            {
+              "question": "Which type of computer is designed for personal daily use?",
+              "options": ["Supercomputer", "Mainframe", "Desktop PC", "Server"],
+              "correctAnswer": "Desktop PC",
+              "explanation": "Desktop PCs are designed for personal use and general computing tasks."
+            }
+          ]
+        },
+        {
+          "topicName": "Software Fundamentals",
+          "questions": [
+            {
+              "question": "Which software type is designed to perform specific tasks for users?",
+              "options": [
+                "System software",
+                "Application software",
+                "Firmware",
+                "Middleware"
+              ],
+              "correctAnswer": "Application software",
+              "explanation": "Application software helps users perform specific tasks."
+            },
+            {
+              "question": "What is the purpose of system software?",
+              "options": [
+                "Run applications and manage hardware",
+                "Create graphics",
+                "Store files externally",
+                "Process emails"
+              ],
+              "correctAnswer": "Run applications and manage hardware",
+              "explanation": "System software manages hardware and allows applications to run."
+            },
+            {
+              "question": "Which software helps detect and remove malware?",
+              "options": [
+                "Database software",
+                "Word processor",
+                "Antivirus software",
+                "Spreadsheet software"
+              ],
+              "correctAnswer": "Antivirus software",
+              "explanation": "Antivirus software protects computers from malware."
+            },
+            {
+              "question": "What is the main function of firmware?",
+              "options": [
+                "Temporary storage",
+                "Permanent instructions for hardware",
+                "Creating presentations",
+                "Running word processors"
+              ],
+              "correctAnswer": "Permanent instructions for hardware",
+              "explanation": "Firmware provides permanent low-level instructions for hardware."
+            },
+            {
+              "question": "Which software update ensures security and functionality?",
+              "options": [
+                "Patch",
+                "Beta version",
+                "Trial version",
+                "Demo software"
+              ],
+              "correctAnswer": "Patch",
+              "explanation": "Patches fix vulnerabilities and improve software performance."
+            },
+            {
+              "question": "Which software type helps manage large structured datasets?",
+              "options": [
+                "Word processor",
+                "Spreadsheet",
+                "Database software",
+                "Presentation software"
+              ],
+              "correctAnswer": "Database software",
+              "explanation": "Database software organizes and manages structured data efficiently."
+            },
+            {
+              "question": "Which software enables creating documents with text and images?",
+              "options": [
+                "Spreadsheet",
+                "Word processor",
+                "Database",
+                "Email client"
+              ],
+              "correctAnswer": "Word processor",
+              "explanation": "Word processors allow creation and formatting of text documents with graphics."
+            },
+            {
+              "question": "Which software type is designed to control and coordinate computer resources?",
+              "options": [
+                "Application software",
+                "System software",
+                "Productivity software",
+                "Graphics software"
+              ],
+              "correctAnswer": "System software",
+              "explanation": "System software manages hardware and provides a platform for applications."
+            },
+            {
+              "question": "Which development methodology describes the process of software creation?",
+              "options": [
+                "Waterfall model",
+                "Operating system",
+                "Word processor",
+                "Database"
+              ],
+              "correctAnswer": "Waterfall model",
+              "explanation": "The Software Development Life Cycle describes steps to develop software."
+            },
+            {
+              "question": "Which software helps users communicate via email in a business environment?",
+              "options": [
+                "Spreadsheet",
+                "Email client",
+                "Database",
+                "Operating system"
+              ],
+              "correctAnswer": "Email client",
+              "explanation": "Email clients manage sending, receiving, and organizing emails."
+            }
+          ]
+        },
+        {
+          "topicName": "Operating Systems",
+          "questions": [
+            {
+              "question": "What is the main function of an operating system?",
+              "options": [
+                "Compile programs",
+                "Manage computer hardware",
+                "Create graphics",
+                "Store data externally"
+              ],
+              "correctAnswer": "Manage computer hardware",
+              "explanation": "Operating systems manage hardware resources and provide an interface for applications."
+            },
+            {
+              "question": "Which OS is commonly used in mobile devices?",
+              "options": ["Windows", "Linux", "Android", "macOS"],
+              "correctAnswer": "Android",
+              "explanation": "Android is widely used in smartphones and tablets."
+            },
+            {
+              "question": "Which OS process involves loading system files and initializing hardware?",
+              "options": [
+                "Shutdown",
+                "Booting",
+                "Defragmentation",
+                "Formatting"
+              ],
+              "correctAnswer": "Booting",
+              "explanation": "Booting starts the operating system and initializes hardware components."
+            },
+            {
+              "question": "Which OS feature allows multiple programs to run simultaneously?",
+              "options": [
+                "Multitasking",
+                "Batch processing",
+                "Single-threading",
+                "Virtualization"
+              ],
+              "correctAnswer": "Multitasking",
+              "explanation": "Multitasking enables multiple applications to run at the same time."
+            },
+            {
+              "question": "Which OS allows users to execute commands directly?",
+              "options": [
+                "GUI",
+                "Command-line interface",
+                "Spreadsheet",
+                "Word processor"
+              ],
+              "correctAnswer": "Command-line interface",
+              "explanation": "The command-line interface allows direct input of commands to the OS."
+            },
+            {
+              "question": "Which OS is open-source and widely used for servers?",
+              "options": ["Windows Server", "Linux", "macOS", "Android"],
+              "correctAnswer": "Linux",
+              "explanation": "Linux is free, open-source, and commonly used in server environments."
+            },
+            {
+              "question": "Which OS process manages virtual memory?",
+              "options": [
+                "Process scheduling",
+                "Memory management",
+                "Input/output control",
+                "File system"
+              ],
+              "correctAnswer": "Memory management",
+              "explanation": "Memory management allocates and tracks memory usage, including virtual memory."
+            },
+            {
+              "question": "Which OS tool helps monitor and terminate running processes?",
+              "options": [
+                "Task Manager",
+                "Word Processor",
+                "Spreadsheet",
+                "Database"
+              ],
+              "correctAnswer": "Task Manager",
+              "explanation": "Task Manager monitors system performance and running processes."
+            },
+            {
+              "question": "Which OS feature controls access permissions for files?",
+              "options": [
+                "User accounts",
+                "Networking",
+                "Applications",
+                "Defragmentation"
+              ],
+              "correctAnswer": "User accounts",
+              "explanation": "User accounts manage permissions and security for files."
+            },
+            {
+              "question": "Which OS is primarily used on Apple desktops and laptops?",
+              "options": ["Linux", "Windows", "macOS", "Android"],
+              "correctAnswer": "macOS",
+              "explanation": "macOS is the operating system for Apple computers."
+            },
+            {
+              "question": "Which OS process organizes files on storage devices?",
+              "options": [
+                "File system management",
+                "Memory allocation",
+                "Process scheduling",
+                "Network configuration"
+              ],
+              "correctAnswer": "File system management",
+              "explanation": "The file system organizes and manages data storage on disks."
+            },
+            {
+              "question": "Which OS command-line utility displays network configuration?",
+              "options": ["ipconfig", "notepad", "tasklist", "msconfig"],
+              "correctAnswer": "ipconfig",
+              "explanation": "ipconfig shows network configuration and IP addresses."
+            },
+            {
+              "question": "Which OS provides graphical icons and menus for user interaction?",
+              "options": ["CLI", "GUI", "Firmware", "Spreadsheet"],
+              "correctAnswer": "GUI",
+              "explanation": "GUI (Graphical User Interface) allows users to interact with visual elements."
+            },
+            {
+              "question": "Which OS process schedules CPU time for programs?",
+              "options": [
+                "Memory management",
+                "Process scheduling",
+                "Network configuration",
+                "File backup"
+              ],
+              "correctAnswer": "Process scheduling",
+              "explanation": "Process scheduling determines the order in which processes access the CPU."
+            },
+            {
+              "question": "Which OS tool is used to install updates and security patches?",
+              "options": [
+                "Windows Update",
+                "Task Manager",
+                "Word Processor",
+                "Command Prompt"
+              ],
+              "correctAnswer": "Windows Update",
+              "explanation": "Windows Update downloads and installs OS updates to ensure security and functionality."
+            }
+          ]
+        },
+        {
+          "topicName": "Software Applications",
+          "questions": [
+            {
+              "question": "Which application is most appropriate for creating a business report?",
+              "options": [
+                "Spreadsheet",
+                "Word processor",
+                "Email client",
+                "Presentation software"
+              ],
+              "correctAnswer": "Word processor",
+              "explanation": "Word processors are used to create documents such as reports and letters."
+            },
+            {
+              "question": "Which software is commonly used for data analysis and calculations?",
+              "options": [
+                "Word processor",
+                "Spreadsheet",
+                "Email client",
+                "Presentation software"
+              ],
+              "correctAnswer": "Spreadsheet",
+              "explanation": "Spreadsheets are used for calculations, data analysis, and organizing information."
+            },
+            {
+              "question": "Which application helps facilitate virtual meetings and team collaboration?",
+              "options": [
+                "Microsoft Teams",
+                "Word Processor",
+                "Spreadsheet",
+                "Database software"
+              ],
+              "correctAnswer": "Microsoft Teams",
+              "explanation": "Microsoft Teams allows team communication, video meetings, and file sharing."
+            },
+            {
+              "question": "Which application feature helps manage and organize emails effectively?",
+              "options": [
+                "Spam filter",
+                "Formatting toolbar",
+                "Chart creation",
+                "Macro recording"
+              ],
+              "correctAnswer": "Spam filter",
+              "explanation": "Spam filters help manage emails by blocking unwanted messages."
+            },
+            {
+              "question": "Which software is used to create slide-based visual presentations?",
+              "options": [
+                "Spreadsheet",
+                "Word processor",
+                "Presentation software",
+                "Database software"
+              ],
+              "correctAnswer": "Presentation software",
+              "explanation": "Presentation software, like PowerPoint, is used to create visual slides for communication."
+            },
+            {
+              "question": "Which application allows multiple users to edit documents in real time?",
+              "options": [
+                "Email client",
+                "Word processor",
+                "Collaborative software",
+                "Database"
+              ],
+              "correctAnswer": "Collaborative software",
+              "explanation": "Collaborative software enables multiple users to work on the same document simultaneously."
+            },
+            {
+              "question": "Which application would you use to analyze trends with charts and graphs?",
+              "options": [
+                "Spreadsheet",
+                "Word processor",
+                "Presentation software",
+                "Email client"
+              ],
+              "correctAnswer": "Spreadsheet",
+              "explanation": "Spreadsheets can generate charts and graphs to visualize trends and data."
+            },
+            {
+              "question": "Which software is used to manage company emails and scheduling?",
+              "options": [
+                "Email client",
+                "Database software",
+                "Spreadsheet",
+                "Presentation software"
+              ],
+              "correctAnswer": "Email client",
+              "explanation": "Email clients help organize emails, calendars, and contacts efficiently."
+            },
+            {
+              "question": "Which application is most suitable for creating a marketing brochure?",
+              "options": [
+                "Word processor",
+                "Spreadsheet",
+                "Desktop publishing software",
+                "Database"
+              ],
+              "correctAnswer": "Desktop publishing software",
+              "explanation": "Desktop publishing software is used to design brochures, flyers, and other printed materials."
+            },
+            {
+              "question": "Which software allows integration of documents, spreadsheets, and presentations?",
+              "options": [
+                "Office suite",
+                "Email client",
+                "Database software",
+                "Operating system"
+              ],
+              "correctAnswer": "Office suite",
+              "explanation": "Office suites include multiple applications such as word processors, spreadsheets, and presentation tools that work together."
+            }
+          ]
+        },
+        {
+          "topicName": "Modern Technologies",
+          "questions": [
+            {
+              "question": "What is the primary function of cloud computing?",
+              "options": [
+                "Store and access data over the internet",
+                "Improve local hardware performance",
+                "Replace operating systems",
+                "Enhance email software"
+              ],
+              "correctAnswer": "Store and access data over the internet",
+              "explanation": "Cloud computing allows users to store, manage, and access data remotely over the internet."
+            },
+            {
+              "question": "What is virtualization in IT?",
+              "options": [
+                "Creating a virtual version of hardware or software",
+                "Upgrading hardware components",
+                "Building websites",
+                "Sending virtual emails"
+              ],
+              "correctAnswer": "Creating a virtual version of hardware or software",
+              "explanation": "Virtualization allows multiple simulated environments or resources to run on a single physical system."
+            },
+            {
+              "question": "Which technology connects everyday devices to the internet for data exchange?",
+              "options": [
+                "Artificial Intelligence",
+                "Internet of Things (IoT)",
+                "Cloud Computing",
+                "Virtual Reality"
+              ],
+              "correctAnswer": "Internet of Things (IoT)",
+              "explanation": "IoT allows devices like sensors and appliances to collect and exchange data over the internet."
+            },
+            {
+              "question": "Which technology is used to simulate human intelligence in computers?",
+              "options": [
+                "Internet of Things",
+                "Artificial Intelligence",
+                "Virtualization",
+                "Cloud Computing"
+              ],
+              "correctAnswer": "Artificial Intelligence",
+              "explanation": "Artificial Intelligence enables computers to perform tasks that typically require human intelligence, such as decision-making and pattern recognition."
+            },
+            {
+              "question": "What is one common application of artificial intelligence in business?",
+              "options": [
+                "Automating customer service with chatbots",
+                "Replacing hardware components",
+                "Creating spreadsheets",
+                "Managing printer settings"
+              ],
+              "correctAnswer": "Automating customer service with chatbots",
+              "explanation": "AI-powered chatbots can respond to customer queries efficiently without human intervention."
+            },
+            {
+              "question": "What is a benefit of using cloud storage for businesses?",
+              "options": [
+                "Access data from anywhere with internet",
+                "Increase printer speed",
+                "Create physical backups only",
+                "Improve local software licenses"
+              ],
+              "correctAnswer": "Access data from anywhere with internet",
+              "explanation": "Cloud storage allows users to access files and collaborate remotely."
+            },
+            {
+              "question": "Virtualization can help businesses by:",
+              "options": [
+                "Running multiple virtual servers on a single physical server",
+                "Increasing the number of printers",
+                "Making spreadsheets faster",
+                "Replacing office staff"
+              ],
+              "correctAnswer": "Running multiple virtual servers on a single physical server",
+              "explanation": "Virtualization optimizes resource use by allowing multiple virtual environments on one physical machine."
+            },
+            {
+              "question": "Which technology allows for scalable computing resources on demand?",
+              "options": [
+                "Cloud Computing",
+                "IoT",
+                "Artificial Intelligence",
+                "Desktop software"
+              ],
+              "correctAnswer": "Cloud Computing",
+              "explanation": "Cloud computing provides flexible, scalable IT resources as needed without physical hardware limitations."
+            },
+            {
+              "question": "IoT devices typically require which of the following?",
+              "options": [
+                "Internet connectivity",
+                "Virtual reality headset",
+                "Standalone spreadsheets",
+                "Physical server access only"
+              ],
+              "correctAnswer": "Internet connectivity",
+              "explanation": "IoT devices connect to the internet to send, receive, and process data."
+            },
+            {
+              "question": "Artificial intelligence can improve business decision-making by:",
+              "options": [
+                "Analyzing large datasets for patterns",
+                "Printing more documents",
+                "Replacing human communication",
+                "Installing hardware faster"
+              ],
+              "correctAnswer": "Analyzing large datasets for patterns",
+              "explanation": "AI can process and analyze large volumes of data to help businesses make informed decisions."
+            }
+          ]
+        },
+        {
+          "topicName": "Networking Concepts",
+          "questions": [
+            {
+              "question": "Which type of network covers a small geographic area like a home or office?",
+              "options": ["LAN", "WAN", "MAN", "VPN"],
+              "correctAnswer": "LAN",
+              "explanation": "A Local Area Network (LAN) connects devices within a small area such as a home or office."
+            },
+            {
+              "question": "Which type of network covers a large geographic area, such as multiple cities or countries?",
+              "options": ["LAN", "WAN", "MAN", "PAN"],
+              "correctAnswer": "WAN",
+              "explanation": "A Wide Area Network (WAN) spans large geographic areas and can connect multiple LANs."
+            },
+            {
+              "question": "Which device connects multiple devices on a network and directs data between them?",
+              "options": ["Router", "Printer", "Keyboard", "Monitor"],
+              "correctAnswer": "Router",
+              "explanation": "Routers manage traffic between different networks and direct data packets to their destination."
+            },
+            {
+              "question": "What is the purpose of a switch in a network?",
+              "options": [
+                "Connect multiple devices on the same network",
+                "Provide internet service",
+                "Store data",
+                "Block spam emails"
+              ],
+              "correctAnswer": "Connect multiple devices on the same network",
+              "explanation": "Switches connect devices within a LAN and forward data to the correct device."
+            },
+            {
+              "question": "What does VPN stand for and what is its primary function?",
+              "options": [
+                "Virtual Private Network; secure remote access",
+                "Virtual Public Network; open access",
+                "Visual Private Network; display graphics",
+                "Variable Protocol Network; manage protocols"
+              ],
+              "correctAnswer": "Virtual Private Network; secure remote access",
+              "explanation": "A VPN provides a secure connection over the internet to protect data transmission."
+            },
+            {
+              "question": "Which of the following is a common network security threat?",
+              "options": ["Virus", "Spreadsheet", "Printer", "Monitor"],
+              "correctAnswer": "Virus",
+              "explanation": "Viruses are malicious software programs that can harm computers and networks."
+            },
+            {
+              "question": "Which protocol is used to assign IP addresses automatically on a network?",
+              "options": ["DHCP", "HTTP", "FTP", "SMTP"],
+              "correctAnswer": "DHCP",
+              "explanation": "The Dynamic Host Configuration Protocol (DHCP) automatically assigns IP addresses to devices on a network."
+            },
+            {
+              "question": "What does TCP/IP stand for?",
+              "options": [
+                "Transmission Control Protocol/Internet Protocol",
+                "Total Communication Protocol/Internet Platform",
+                "Transmission Control Process/Internet Program",
+                "Transfer Control Protocol/Internal Protocol"
+              ],
+              "correctAnswer": "Transmission Control Protocol/Internet Protocol",
+              "explanation": "TCP/IP is the set of protocols that govern communication over the internet."
+            },
+            {
+              "question": "Which layer of the OSI model is responsible for end-to-end communication and error handling?",
+              "options": [
+                "Transport Layer",
+                "Network Layer",
+                "Data Link Layer",
+                "Physical Layer"
+              ],
+              "correctAnswer": "Transport Layer",
+              "explanation": "The transport layer manages end-to-end communication and error recovery."
+            },
+            {
+              "question": "Which layer of the OSI model defines how data is physically transmitted over media?",
+              "options": [
+                "Physical Layer",
+                "Network Layer",
+                "Session Layer",
+                "Application Layer"
+              ],
+              "correctAnswer": "Physical Layer",
+              "explanation": "The physical layer deals with the hardware and transmission of raw bits over a medium."
+            },
+            {
+              "question": "Which network topology has all devices connected to a central hub or switch?",
+              "options": ["Star", "Bus", "Ring", "Mesh"],
+              "correctAnswer": "Star",
+              "explanation": "In a star topology, all devices connect to a central hub or switch for data transmission."
+            },
+            {
+              "question": "Which network topology connects devices in a closed loop where each device is connected to two others?",
+              "options": ["Ring", "Star", "Bus", "Mesh"],
+              "correctAnswer": "Ring",
+              "explanation": "Ring topology connects devices in a loop, with each device having two neighbors."
+            },
+            {
+              "question": "What is the purpose of a firewall in a network?",
+              "options": [
+                "Monitor and control incoming and outgoing network traffic",
+                "Store network data",
+                "Connect devices to printers",
+                "Assign IP addresses"
+              ],
+              "correctAnswer": "Monitor and control incoming and outgoing network traffic",
+              "explanation": "Firewalls provide security by filtering traffic based on rules."
+            },
+            {
+              "question": "Which device converts digital data into a signal suitable for transmission over telephone lines?",
+              "options": ["Modem", "Router", "Switch", "Hub"],
+              "correctAnswer": "Modem",
+              "explanation": "A modem modulates and demodulates digital signals for transmission over telephone lines."
+            },
+            {
+              "question": "Which type of network environment connects all devices equally without a central server?",
+              "options": ["Peer-to-Peer", "Client-Server", "LAN", "WAN"],
+              "correctAnswer": "Peer-to-Peer",
+              "explanation": "In peer-to-peer networks, devices share resources without a central server."
+            },
+            {
+              "question": "Which device is primarily used to extend network coverage wirelessly?",
+              "options": ["Access Point", "Router", "Modem", "Switch"],
+              "correctAnswer": "Access Point",
+              "explanation": "Access points allow wireless devices to connect to a wired network."
+            },
+            {
+              "question": "Which protocol is used to securely transfer files over the internet?",
+              "options": ["SFTP", "HTTP", "SMTP", "FTP"],
+              "correctAnswer": "SFTP",
+              "explanation": "SFTP (Secure File Transfer Protocol) encrypts file transfers for security."
+            },
+            {
+              "question": "Which tool is commonly used to test connectivity between devices on a network?",
+              "options": [
+                "Ping",
+                "Traceroute",
+                "Both Ping and Traceroute",
+                "DNS"
+              ],
+              "correctAnswer": "Both Ping and Traceroute",
+              "explanation": "Ping tests reachability, while Traceroute traces the path data takes to reach a device."
+            },
+            {
+              "question": "What is the function of a network switch compared to a hub?",
+              "options": [
+                "Switch directs data to specific devices; hub broadcasts to all",
+                "Switch stores files; hub connects devices",
+                "Switch replaces routers; hub replaces modems",
+                "Switch encrypts traffic; hub does not"
+              ],
+              "correctAnswer": "Switch directs data to specific devices; hub broadcasts to all",
+              "explanation": "Switches forward data only to the intended recipient, unlike hubs."
+            },
+            {
+              "question": "Which type of network cable is commonly used for Ethernet connections?",
+              "options": ["Twisted Pair", "Coaxial", "Fiber Optic", "USB"],
+              "correctAnswer": "Twisted Pair",
+              "explanation": "Twisted pair cables, such as Cat5e and Cat6, are widely used for Ethernet networks."
+            }
+          ]
+        },
+        {
+          "topicName": "Information Management Concepts",
+          "questions": [
+            {
+              "question": "Which data storage method involves storing data on local devices like hard drives?",
+              "options": [
+                "Local storage",
+                "Cloud storage",
+                "Virtualization",
+                "Network storage"
+              ],
+              "correctAnswer": "Local storage",
+              "explanation": "Local storage refers to storing data directly on devices such as computers or external drives."
+            },
+            {
+              "question": "Which data storage method allows access to data over the internet?",
+              "options": [
+                "Local storage",
+                "Cloud storage",
+                "USB storage",
+                "Tape storage"
+              ],
+              "correctAnswer": "Cloud storage",
+              "explanation": "Cloud storage enables data access and management via internet-based services."
+            },
+            {
+              "question": "Which operation involves adding, modifying, or deleting data in a database?",
+              "options": [
+                "CRUD operations",
+                "Formatting",
+                "Encryption",
+                "Routing"
+              ],
+              "correctAnswer": "CRUD operations",
+              "explanation": "CRUD stands for Create, Read, Update, Delete—the basic operations in database management."
+            },
+            {
+              "question": "Why is disaster recovery planning important in information management?",
+              "options": [
+                "To restore data after unexpected events",
+                "To speed up network connections",
+                "To design user interfaces",
+                "To improve hardware performance"
+              ],
+              "correctAnswer": "To restore data after unexpected events",
+              "explanation": "Disaster recovery ensures business continuity by restoring data after outages or disasters."
+            },
+            {
+              "question": "Which practice helps protect both physical and digital information?",
+              "options": [
+                "Security measures",
+                "Software updates",
+                "Presentation skills",
+                "Budgeting"
+              ],
+              "correctAnswer": "Security measures",
+              "explanation": "Implementing security measures protects sensitive information from unauthorized access or loss."
+            },
+            {
+              "question": "Which of the following describes ways personal data can be compromised?",
+              "options": [
+                "Collected, stored, stolen, or sold",
+                "Shared only with family",
+                "Encrypted automatically",
+                "Deleted immediately"
+              ],
+              "correctAnswer": "Collected, stored, stolen, or sold",
+              "explanation": "Personal data can be mishandled in multiple ways, including theft and unauthorized sharing."
+            },
+            {
+              "question": "Which law or regulation protects intellectual property?",
+              "options": ["Copyright law", "OSHA", "ADA", "HIPAA"],
+              "correctAnswer": "Copyright law",
+              "explanation": "Copyright law protects creators’ works and their intellectual property rights."
+            },
+            {
+              "question": "Which process helps organize documents and information for easy retrieval?",
+              "options": [
+                "Information management",
+                "Networking",
+                "Programming",
+                "Budgeting"
+              ],
+              "correctAnswer": "Information management",
+              "explanation": "Information management involves organizing and storing information to make it accessible and useful."
+            },
+            {
+              "question": "What is a key principle in maintaining a secure document storage system?",
+              "options": [
+                "Access control",
+                "Color coding",
+                "Using spreadsheets",
+                "Creating presentations"
+              ],
+              "correctAnswer": "Access control",
+              "explanation": "Access control ensures only authorized users can view or modify sensitive documents."
+            },
+            {
+              "question": "What is the purpose of indexing files in an information management system?",
+              "options": [
+                "To enable quick and accurate retrieval",
+                "To encrypt data",
+                "To connect networks",
+                "To improve RAM"
+              ],
+              "correctAnswer": "To enable quick and accurate retrieval",
+              "explanation": "Indexing allows users to locate files efficiently without searching manually."
+            },
+            {
+              "question": "Which type of file organization arranges records by date?",
+              "options": [
+                "Chronological filing",
+                "Alphabetical filing",
+                "Numerical filing",
+                "Subject filing"
+              ],
+              "correctAnswer": "Chronological filing",
+              "explanation": "Chronological filing organizes records based on date for easy reference."
+            },
+            {
+              "question": "Which practice involves purging outdated or unnecessary files?",
+              "options": [
+                "File purging",
+                "File encryption",
+                "File copying",
+                "File printing"
+              ],
+              "correctAnswer": "File purging",
+              "explanation": "Purging removes unnecessary files to maintain an organized and efficient information system."
+            },
+            {
+              "question": "Which technology converts physical documents into digital formats for storage?",
+              "options": ["Scanning", "Printing", "Faxing", "Networking"],
+              "correctAnswer": "Scanning",
+              "explanation": "Scanning converts paper documents into digital files for storage and retrieval."
+            },
+            {
+              "question": "Why is disaster recovery planning necessary for digital information?",
+              "options": [
+                "To ensure data can be restored after loss or corruption",
+                "To encrypt all files",
+                "To improve Wi-Fi speed",
+                "To reduce printing costs"
+              ],
+              "correctAnswer": "To ensure data can be restored after loss or corruption",
+              "explanation": "Disaster recovery protects against data loss and ensures continuity of operations."
+            },
+            {
+              "question": "Which of the following describes compliance in information management?",
+              "options": [
+                "Following regulations and standards for data security",
+                "Using faster processors",
+                "Printing all emails",
+                "Sharing passwords"
+              ],
+              "correctAnswer": "Following regulations and standards for data security",
+              "explanation": "Compliance ensures that organizations meet legal and industry standards for handling information."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

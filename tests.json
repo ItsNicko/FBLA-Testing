@@ -11,6 +11,30 @@
         {
             "testName": "Agribusiness",
             "path": "questions/Agribusiness.json"
+        },
+        {
+            "testName": "Advertising",
+            "path": "questions/Advertising.json"
+        },
+        {
+            "testName": "Advanced Accounting",
+            "path": "questions/Advanced-Accounting.json"
+        },
+        {
+            "testName": "Accounting",
+            "path": "questions/Accounting.json"
+        },
+        {
+            "testName": "Cybersecurity",
+            "path": "questions/Cybersecurity.json"
+        },
+                {
+            "testName": "Computer Problem Solving",
+            "path": "questions/computer-Problem-Solving.json"
+        },
+        {
+            "testName": "Business Law",
+            "path": "questions/Business-Law.json"
         }
     ]
 }

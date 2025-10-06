@@ -647,11 +647,95 @@ select:focus {
 }
 
 /* Theme toggle (top-right) */
-#themeToggle {
+.settings-btn {
   position: fixed;
   right: 18px;
   top: 18px;
   z-index: 1200;
+  background: var(--surface, #ffffff);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-size: 16px;
+}
+.settings-btn:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.settings-modal .settings-panel {
+  max-width: 720px;
+  overflow: hidden;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+}
+.settings-close {
+  cursor: pointer;
+}
+
+/* Ensure theme-switch label aligns nicely in the settings panel */
+.settings-panel .theme-switch {
+  align-items: center;
+  gap: 10px;
+}
+.settings-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settings-section #settingsThemeLabel {
+  font-size: 15px;
+}
+.settings-section small {
+  font-size: 12px;
+}
+
+/* Report section layout inside settings modal */
+.report-section {
+  display: block;
+}
+.report-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 8px;
+}
+.report-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.report-status {
+  font-size: 13px;
+  color: var(--text-color, #102027);
+}
+.settings-panel .theme-switch .slider {
+  width: 46px;
+  height: 26px;
+}
+.settings-panel .theme-switch input {
+  display: none;
+}
+.settings-panel .theme-switch span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Make sure modal content doesn't let backdrop bleed out */
+.settings-modal {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* Extra padding so blur from floating elements doesn't overflow the panel */
+.settings-panel {
+  box-sizing: border-box;
+  padding: 22px;
 }
 .theme-switch {
   display: inline-block;

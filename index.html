@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js removed: replaced by aleks-chart.js -->
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
@@ -20,6 +20,13 @@
         getAuth,
         signInAnonymously,
         onAuthStateChanged,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signOut,
+      } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
+      import {
+        setPersistence,
+        browserLocalPersistence,
       } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
@@ -52,12 +59,51 @@
         serverTimestamp,
         doc,
         setDoc,
+        getDoc,
+        runTransaction,
       } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
 
       const db = getFirestore(app);
 
       // Initialize Auth and sign in anonymously so Firestore rules that require auth pass.
       const auth = getAuth(app);
+      // Initialize Auth and prefer persistent login across refreshes.
+      try {
+        // prefer browser local persistence
+        setPersistence(auth, browserLocalPersistence).catch((err) => {
+          console.warn("setPersistence failed", err);
+        });
+      } catch (e) {
+        // ignore
+      }
+      // expose wrappers for the non-module script so it can create/sign-in users and access Firestore
+      window.db = db;
+      window.auth = auth;
+      window.authCreate = (email, password) =>
+        createUserWithEmailAndPassword(auth, email, password);
+      window.authSignIn = (email, password) =>
+        signInWithEmailAndPassword(auth, email, password);
+      window.authSignOut = () => signOut(auth);
+      window.getDoc = getDoc;
+      window.doc = doc;
+      window.setDoc = setDoc;
+      window.runTransaction = runTransaction;
+      window.serverTimestamp = serverTimestamp;
+
+      // 🔧 Dynamic profanity filter loader
+      window.bannedWords = [];
+
+      window.loadBannedWords = async () => {
+        try {
+          const snap = await getDoc(doc(window.db, "config", "bannedWords"));
+          window.bannedWords = snap.exists() ? snap.data().words || [] : [];
+          console.info("Loaded banned words:", window.bannedWords);
+        } catch (err) {
+          console.warn("Failed to load banned words:", err);
+          window.bannedWords = [];
+        }
+      };
+
       // Promise to indicate when auth is ready
       let _authReadyResolve;
       window.leaderboardAuthReady = new Promise((res) => {
@@ -73,6 +119,27 @@
           // still resolve so UI doesn't hang; submissions may still fail depending on rules
           if (_authReadyResolve) _authReadyResolve();
         });
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          console.info("Signed in uid=", user.uid);
+        } else {
+          console.info("Not signed in");
+          // if nobody is signed in, attempt anonymous sign-in so rules that require auth pass.
+          try {
+            signInAnonymously(auth)
+              .then(() => {
+                console.info("Requested anonymous sign-in");
+              })
+              .catch((err) => {
+                console.warn("Anonymous sign-in failed:", err);
+              });
+          } catch (e) {}
+        }
+        if (_authReadyResolve) {
+          _authReadyResolve();
+          _authReadyResolve = null;
+        }
+      });
 
       onAuthStateChanged(auth, (user) => {
         if (user) {
@@ -85,6 +152,24 @@
           _authReadyResolve = null;
         }
       });
+
+      // Once auth is ready, attempt to load the dynamic banned-words list from Firestore.
+      // We wait for `leaderboardAuthReady` so the anonymous sign-in (if needed) completes first.
+      if (window.leaderboardAuthReady) {
+        window.leaderboardAuthReady
+          .then(() => {
+            try {
+              if (typeof window.loadBannedWords === "function") {
+                window
+                  .loadBannedWords()
+                  .catch((err) => console.warn("loadBannedWords failed", err));
+              }
+            } catch (e) {
+              console.warn("Error invoking loadBannedWords", e);
+            }
+          })
+          .catch(() => {});
+      }
 
       // leaderboardApi: submitScore(testId, name, points) -> Promise<docRef>
       // fetchTopScores(testId, limitNum, offsetDoc?) -> Promise<array of scores>
@@ -130,20 +215,170 @@
           return true;
         },
       };
+
+      // reportApi: sendIssue({ message, email, page }) -> Promise
+      window.reportApi = {
+        async sendIssue({ message, email, page }) {
+          if (!message) throw new Error("missing message");
+          // ensure auth ready
+          if (window.leaderboardAuthReady) await window.leaderboardAuthReady;
+          try {
+            const col = collection(db, "reports");
+            const docRef = await addDoc(col, {
+              message: String(message).slice(0, 2000),
+              email: email ? String(email).slice(0, 256) : null,
+              page: page || location.pathname || "unknown",
+              userAgent: navigator.userAgent || null,
+              createdAt: serverTimestamp(),
+            });
+            return docRef;
+          } catch (err) {
+            throw err;
+          }
+        },
+      };
     </script>
   </head>
   <body>
     <h1>FBLACER</h1>
-    <!-- Dark mode toggle (top-right) -->
-    <div id="themeToggle" aria-hidden="false">
-      <label class="theme-switch">
-        <input
-          type="checkbox"
-          id="darkModeToggle"
-          aria-label="Toggle dark mode"
-        />
-        <span class="slider"></span>
-      </label>
+    <!-- Settings cog (opens settings modal which contains dark mode toggle + report form) -->
+    <button
+      id="settingsBtn"
+      aria-label="Open settings"
+      title="Settings"
+      class="settings-btn"
+    >
+      ⚙️
+    </button>
+
+    <!-- Settings modal (hidden by default) -->
+    <div
+      id="settingsModal"
+      class="settings-modal"
+      aria-hidden="true"
+      style="
+        display: none;
+        position: fixed;
+        inset: 0;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 99998;
+      "
+    >
+      <div
+        class="settings-panel"
+        style="
+          background: var(--surface, #fff);
+          color: var(--text-color, #102027);
+          padding: 40px;
+          border-radius: 12px;
+          min-width: 320px;
+          max-width: 720px;
+          width: 90%;
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+          position: relative;
+        "
+      >
+        <button
+          id="settingsClose"
+          class="settings-close"
+          aria-label="Close"
+          style="
+            position: absolute;
+            right: 20px;
+            top: 12px;
+            background: none;
+            border: none;
+            font-size: 20px;
+          "
+        >
+          ×
+        </button>
+        <h3 style="margin-top: 0">Settings</h3>
+        <div
+          class="settings-section"
+          style="
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <div style="display: flex; align-items: center; gap: 12px">
+            <span id="settingsThemeLabel" style="font-weight: 600"
+              >dark/light</span
+            >
+            <small style="color: var(--muted, #6b7280)">toggle</small>
+          </div>
+          <label
+            class="theme-switch"
+            style="display: inline-flex; align-items: center"
+          >
+            <input
+              type="checkbox"
+              id="settingsDarkToggle"
+              aria-label="Toggle dark mode from settings"
+            />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="report-section" style="margin-bottom: 6px">
+          <h4 style="margin: 6px 0 8px 0">Report an issue</h4>
+          <textarea
+            id="issueText"
+            placeholder="Describe the problem..."
+            rows="4"
+            class="report-input"
+          ></textarea>
+          <input
+            id="issueEmail"
+            placeholder="Email (optional)"
+            class="report-input"
+          />
+          <div class="report-actions">
+            <button id="sendIssueBtn">Send report</button>
+            <div
+              id="reportStatus"
+              aria-live="polite"
+              class="report-status"
+            ></div>
+          </div>
+        </div>
+        <!-- Login / Signup UI -->
+        <div
+          class="auth-section"
+          style="
+            margin-top: 12px;
+            border-top: 1px dashed rgba(0, 0, 0, 0.06);
+            padding-top: 12px;
+          "
+        >
+          <h4 style="margin: 6px 0 8px 0">Login</h4>
+          <input
+            id="username"
+            type="text"
+            placeholder="Username"
+            class="report-input"
+          />
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            class="report-input"
+          />
+          <div style="display: flex; gap: 8px; margin-top: 8px">
+            <button id="signupBtn">Sign Up</button>
+            <button id="loginBtn">Log In</button>
+            <button id="logoutBtn" style="display: none">Log Out</button>
+          </div>
+          <div
+            id="authStatus"
+            style="margin-top: 8px; color: var(--muted, #6b7280)"
+          ></div>
+        </div>
+      </div>
     </div>
 
     <select id="testSelect"></select>

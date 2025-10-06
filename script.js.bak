@@ -75,11 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof updateChartTheme === 'function') {
       updateChartTheme();
       try {
-        const isDarkNow = document.documentElement.classList.contains('dark');
-        if (topicChart) {
-        } else {
-        }
-
         const canvas = document.getElementById('topicChart');
         if (canvas && _lastChartLabels && _lastChartData) {
           createTopicChart(canvas, _lastChartLabels, _lastChartData);
@@ -97,20 +92,20 @@ function getSegmentColors() {
   return ['#4CAF50','#2196F3','#FFC107','#E91E63','#9C27B0'];
 }
 
-  try {
-    const root = document.documentElement;
-    const classObserver = new MutationObserver((mutations) => {
-      for (const m of mutations) {
-        if (m.type === 'attributes' && m.attributeName === 'class') {
-          setTimeout(() => {
-            try { if (typeof updateChartTheme === 'function') updateChartTheme(); } catch (e) { }
-          }, 0);
-          break;
-        }
+try {
+  const root = document.documentElement;
+  const classObserver = new MutationObserver((mutations) => {
+    for (const m of mutations) {
+      if (m.type === 'attributes' && m.attributeName === 'class') {
+        setTimeout(() => {
+          try { if (typeof updateChartTheme === 'function') updateChartTheme(); } catch (e) { }
+        }, 0);
+        break;
       }
-    });
-    classObserver.observe(root, { attributes: true, attributeFilter: ['class'] });
-  } catch (e) { }
+    }
+  });
+  classObserver.observe(root, { attributes: true, attributeFilter: ['class'] });
+} catch (e) { }
 
 function createTopicChart(ctxEl, labels, data) {
   if (topicChart) {
@@ -231,8 +226,6 @@ function updateChartTheme() {
     const shadowColor = cssShadow2 || (isDark ? 'rgba(0,0,0,0.72)' : 'rgba(0,0,0,0.12)');
     const rimColor = cssRim2 || (isDark ? 'rgba(255,255,255,0.10)' : 'rgba(255,255,255,0.6)');
 
-    
-
     try {
       if (typeof Chart !== 'undefined' && Chart.defaults) {
         Chart.defaults.color = textColor;
@@ -268,6 +261,13 @@ fetch('tests.json')
 
 function populateTestDropdown() {
   const dropdown = document.getElementById('testSelect');
+  // add a placeholder option at the top so the custom display shows "Select test"
+  const placeholder = document.createElement('option');
+  placeholder.value = '';
+  placeholder.textContent = 'Select test';
+  // ensure placeholder is shown initially
+  placeholder.selected = true;
+  dropdown.appendChild(placeholder);
   tests.forEach((test, idx) => {
     const option = document.createElement('option');
     option.value = idx;
@@ -304,8 +304,31 @@ function initCustomSelect(){
   menu.style.left = '0';
   menu.style.minWidth = '220px';
   menu.style.display = 'none';
+  // make menu scrollable and not grow beyond viewport
+  menu.style.maxHeight = '320px';
+  menu.style.overflowY = 'auto';
+  menu.style.boxSizing = 'border-box';
+
+  // add a search input at the top of the menu for filtering options
+  const search = document.createElement('input');
+  search.type = 'search';
+  search.className = 'custom-select-search';
+  search.placeholder = 'Search tests...';
+  search.setAttribute('aria-label', 'Search tests');
+  search.style.boxSizing = 'border-box';
+  search.style.width = '100%';
+  search.style.padding = '8px 10px';
+  search.style.margin = '0 0 6px 0';
+  search.style.border = 'none';
+  search.style.borderRadius = '8px';
+  search.style.fontSize = '14px';
+  search.style.background = 'rgba(255,255,255,0.9)';
+  search.autocomplete = 'off';
+  menu.appendChild(search);
 
   Array.from(native.options).forEach((opt, i) =>{
+    // skip placeholder option (empty value) when building the clickable menu
+    if (opt.value === '') return;
     const item = document.createElement('div');
     item.className = 'custom-select-item';
     item.setAttribute('role','option');
@@ -319,10 +342,27 @@ function initCustomSelect(){
       native.selectedIndex = i;
       display.textContent = opt.textContent;
       menu.style.display = 'none';
-      display.setAttribute('aria-expanded', String(!open));
+      // menu was closed by selecting an item
+      display.setAttribute('aria-expanded', 'false');
       native.dispatchEvent(new Event('change', { bubbles: true }));
     };
     menu.appendChild(item);
+  });
+
+  // filter function used by the search box
+  function filterMenu(q) {
+    const items = menu.querySelectorAll('.custom-select-item');
+    const needle = (q || '').trim().toLowerCase();
+    items.forEach(it => {
+      const txt = it.textContent.trim().toLowerCase();
+      if (!needle || txt.indexOf(needle) !== -1) it.style.display = '';
+      else it.style.display = 'none';
+    });
+  }
+
+  // wire up search input
+  search.addEventListener('input', (e) => {
+    filterMenu(e.target.value);
   });
 
   display.onclick = () => {
@@ -402,6 +442,17 @@ function generateFlashcard() {
   }
 
   const q = questions.shift();
+  // Shuffle options and track new correct answer
+  const shuffledOptions = [...q.options];
+  shuffleArray(shuffledOptions);
+
+  const correctAnswer = q.correctAnswer;
+  const newCorrectAnswer = shuffledOptions.find(opt => opt === correctAnswer);
+
+  // Replace q.options and q.correctAnswer with shuffled versions
+  q.options = shuffledOptions;
+  q.correctAnswer = newCorrectAnswer;
+
   progress.done++;
   firstAttempt = true;
 
@@ -681,7 +732,7 @@ function showLeaderboardOverlay(testId) {
   await window.leaderboardApi.submitScore(testId, name, totalPoints);
   await fetchAndRenderLeaderboard(testId);
         document.getElementById('lbName').value = '';
-        try { localStorage.setItem(localKey, JSON.stringify({ ts: new Date().toISOString() })); } catch (e) { /* ignore */ }
+        try { localStorage.setItem(localKey, JSON.stringify({ ts: new Date().toISOString() })); } catch (e) { }
         const submitWrap2 = overlay.querySelector('.lb-submit');
         if (submitWrap2) {
           const note = document.createElement('div');
@@ -691,7 +742,6 @@ function showLeaderboardOverlay(testId) {
         }
         showToast('Sent successfully', 'success');
       } catch (err) {
-        
         const msg = (err && err.message) ? err.message : String(err);
         if (msg.toLowerCase().includes('permission') || msg.toLowerCase().includes('missing')) {
           showToast('Failed to submit score: insufficient permissions.', 'error');
@@ -806,7 +856,7 @@ async function submitScore(name, test, score) {
     }
     const docId = `${name}-${test}`.replace(/\s+/g, '_');
     if (!window.leaderboardApi || !window.leaderboardApi.setScoreDoc) throw new Error('leaderboardApi.setScoreDoc not available');
-    await window.leaderboardAuthReady; // ensure auth if configured
+    await window.leaderboardAuthReady;
     if (!score || Number(score) === 0) {
       return;
     }
@@ -816,7 +866,7 @@ async function submitScore(name, test, score) {
     }
     const createdAt = new Date().toISOString();
     await window.leaderboardApi.setScoreDoc(test, docId, { name, test, points: score, createdAt });
-  try { localStorage.setItem(localKey, JSON.stringify({ ts: createdAt })); } catch (e) { /* ignore */ }
+  try { localStorage.setItem(localKey, JSON.stringify({ ts: createdAt })); } catch (e) { }
   } catch (err) {
   }
 }

@@ -1,0 +1,680 @@
+{
+  "testName": "Advanced Accounting",
+  "topics": [
+    {
+      "topic": "Financial Statements & Ratios",
+      "questions": [
+        {
+          "question": "Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
+          "options": [
+            "Income Statement",
+            "Balance Sheet",
+            "Statement of Cash Flows",
+            "Statement of Retained Earnings"
+          ],
+          "correctAnswer": "Balance Sheet",
+          "explanation": "The balance sheet provides a snapshot of a company's financial position, listing assets, liabilities, and equity at a specific date."
+        },
+        {
+          "question": "What is the primary purpose of the income statement?",
+          "options": [
+            "To show cash inflows and outflows",
+            "To summarize revenues and expenses over a period",
+            "To report assets and liabilities",
+            "To record stockholder contributions"
+          ],
+          "correctAnswer": "To summarize revenues and expenses over a period",
+          "explanation": "The income statement measures profitability by comparing revenues and expenses during a reporting period."
+        },
+        {
+          "question": "Which ratio measures a company's ability to meet short-term obligations using its most liquid assets?",
+          "options": [
+            "Current Ratio",
+            "Debt-to-Equity Ratio",
+            "Acid-Test (Quick) Ratio",
+            "Gross Margin Ratio"
+          ],
+          "correctAnswer": "Acid-Test (Quick) Ratio",
+          "explanation": "The acid-test ratio excludes inventory and measures liquidity to cover short-term liabilities immediately."
+        },
+        {
+          "question": "In horizontal analysis, a 10% increase in revenue compared to the previous year indicates:",
+          "options": [
+            "Revenue decreased by 10%",
+            "Revenue remained stable",
+            "Revenue increased by 10%",
+            "Revenue doubled"
+          ],
+          "correctAnswer": "Revenue increased by 10%",
+          "explanation": "Horizontal analysis compares current financial statement amounts to prior periods, showing percent changes."
+        },
+        {
+          "question": "Which statement shows changes in owner’s equity over a period?",
+          "options": [
+            "Balance Sheet",
+            "Income Statement",
+            "Statement of Owner's Equity",
+            "Cash Flow Statement"
+          ],
+          "correctAnswer": "Statement of Owner's Equity",
+          "explanation": "This statement details changes in equity accounts such as retained earnings and owner contributions during a period."
+        },
+        {
+          "question": "The debt-to-equity ratio is useful for:",
+          "options": [
+            "Evaluating liquidity",
+            "Assessing profitability",
+            "Assessing financial leverage",
+            "Tracking revenue growth"
+          ],
+          "correctAnswer": "Assessing financial leverage",
+          "explanation": "Debt-to-equity ratio compares liabilities to equity, indicating how much financing comes from creditors versus owners."
+        },
+        {
+          "question": "Which of the following best describes vertical analysis?",
+          "options": [
+            "Comparing financial statement items across periods",
+            "Expressing each item as a percentage of a base amount",
+            "Calculating ratios to assess liquidity",
+            "Determining break-even point"
+          ],
+          "correctAnswer": "Expressing each item as a percentage of a base amount",
+          "explanation": "Vertical analysis expresses items like expenses or assets as percentages of total revenue or total assets for comparison."
+        },
+        {
+          "question": "Which tool helps evaluate how revenue changes affect net income and costs?",
+          "options": [
+            "Differential Analysis",
+            "Break-even Analysis",
+            "Horizontal Analysis",
+            "Vertical Analysis"
+          ],
+          "correctAnswer": "Differential Analysis",
+          "explanation": "Differential analysis considers changes in revenue, costs, or other variables to support management decisions."
+        },
+        {
+          "question": "Preparing an adjusted trial balance ensures that:",
+          "options": [
+            "All journal entries are recorded",
+            "Debit and credit totals are equal after adjustments",
+            "Financial statements are published",
+            "Accounts receivable is collected"
+          ],
+          "correctAnswer": "Debit and credit totals are equal after adjustments",
+          "explanation": "An adjusted trial balance ensures the accounting equation remains balanced after adjusting entries are made."
+        },
+        {
+          "question": "Which ratio indicates the portion of assets financed by shareholders’ equity?",
+          "options": [
+            "Current Ratio",
+            "Equity Ratio",
+            "Gross Margin Ratio",
+            "Accounts Receivable Turnover"
+          ],
+          "correctAnswer": "Equity Ratio",
+          "explanation": "Equity ratio = total equity / total assets, showing how much of assets are funded by owners."
+        }
+      ]
+    },
+    {
+      "topic": "Corporate Accounting & Partnerships",
+      "questions": [
+        {
+          "question": "Which of the following is a key characteristic of a corporation?",
+          "options": [
+            "Unlimited liability for owners",
+            "Separate legal entity from owners",
+            "No ability to issue stock",
+            "Owners must manage daily operations"
+          ],
+          "correctAnswer": "Separate legal entity from owners",
+          "explanation": "A corporation is legally distinct from its owners, allowing limited liability and perpetual existence."
+        },
+        {
+          "question": "Which accounting entry records dividend declaration for a corporation?",
+          "options": [
+            "Debit Dividends Payable, Credit Cash",
+            "Debit Retained Earnings, Credit Dividends Payable",
+            "Debit Cash, Credit Dividends",
+            "Debit Expenses, Credit Revenue"
+          ],
+          "correctAnswer": "Debit Retained Earnings, Credit Dividends Payable",
+          "explanation": "Dividends reduce retained earnings and create a payable liability until payment is made."
+        },
+        {
+          "question": "How does a stock split affect a corporation’s equity?",
+          "options": [
+            "Increases total equity",
+            "Decreases total equity",
+            "Changes number of shares but not total equity",
+            "Eliminates retained earnings"
+          ],
+          "correctAnswer": "Changes number of shares but not total equity",
+          "explanation": "Stock splits increase share count and reduce par value per share, but total equity remains the same."
+        },
+        {
+          "question": "Which partnership concept involves sharing profits according to an agreement?",
+          "options": [
+            "Dividends",
+            "Partnership allocation",
+            "Stock split",
+            "Depreciation"
+          ],
+          "correctAnswer": "Partnership allocation",
+          "explanation": "Partnerships allocate profits and losses among partners based on the partnership agreement."
+        },
+        {
+          "question": "When forming a corporation, which account records owners’ investments?",
+          "options": [
+            "Retained Earnings",
+            "Capital Stock",
+            "Dividends Payable",
+            "Revenue"
+          ],
+          "correctAnswer": "Capital Stock",
+          "explanation": "Capital stock accounts reflect contributions by shareholders during formation or additional issuance."
+        },
+        {
+          "question": "In a partnership, admitting a new partner requires:",
+          "options": [
+            "Issuing stock certificates",
+            "Adjusting capital accounts to reflect contributions",
+            "Paying dividends to all partners",
+            "Recording depreciation expense"
+          ],
+          "correctAnswer": "Adjusting capital accounts to reflect contributions",
+          "explanation": "The new partner’s contribution increases capital accounts and adjusts profit/loss allocation."
+        },
+        {
+          "question": "Earnings per share (EPS) measures:",
+          "options": [
+            "Cash balance per share",
+            "Net income attributable to each share of common stock",
+            "Total revenue per share",
+            "Dividends paid per share"
+          ],
+          "correctAnswer": "Net income attributable to each share of common stock",
+          "explanation": "EPS = (Net Income – Preferred Dividends) ÷ Weighted Average Common Shares."
+        },
+        {
+          "question": "Which method distinguishes between stock dividends and stock splits?",
+          "options": [
+            "Dividends reduce retained earnings; splits adjust par value only",
+            "Both reduce total equity",
+            "Both increase total assets",
+            "Both require paying cash"
+          ],
+          "correctAnswer": "Dividends reduce retained earnings; splits adjust par value only",
+          "explanation": "Stock dividends decrease retained earnings; stock splits change the number of shares and par value without affecting total equity."
+        },
+        {
+          "question": "Which type of corporation has pass-through taxation for owners?",
+          "options": [
+            "C Corporation",
+            "S Corporation",
+            "Nonprofit Corporation",
+            "Public Corporation"
+          ],
+          "correctAnswer": "S Corporation",
+          "explanation": "S Corporations avoid double taxation by passing income directly to shareholders' tax returns."
+        },
+        {
+          "question": "What is the first step in forming a partnership?",
+          "options": [
+            "Recording depreciation",
+            "Creating a partnership agreement",
+            "Issuing dividends",
+            "Calculating EPS"
+          ],
+          "correctAnswer": "Creating a partnership agreement",
+          "explanation": "A formal partnership agreement outlines profit-sharing, contributions, and management responsibilities."
+        }
+      ]
+    },
+    {
+      "topic": "Accounts Receivable, Payable & Inventory",
+      "questions": [
+        {
+          "question": "Which method of recording uncollectible accounts updates the allowance for doubtful accounts?",
+          "options": [
+            "Direct Write-Off Method",
+            "Allowance Method",
+            "FIFO Method",
+            "LIFO Method"
+          ],
+          "correctAnswer": "Allowance Method",
+          "explanation": "The allowance method estimates uncollectible accounts and records an allowance, aligning with GAAP."
+        },
+        {
+          "question": "A company sells merchandise on account. Which journal entry is correct?",
+          "options": [
+            "Debit Cash, Credit Revenue",
+            "Debit Accounts Receivable, Credit Sales Revenue",
+            "Debit Inventory, Credit Accounts Payable",
+            "Debit Sales Revenue, Credit Accounts Receivable"
+          ],
+          "correctAnswer": "Debit Accounts Receivable, Credit Sales Revenue",
+          "explanation": "When merchandise is sold on account, Accounts Receivable increases and Sales Revenue is recorded."
+        },
+        {
+          "question": "The aging of accounts receivable is used to:",
+          "options": [
+            "Determine depreciation expense",
+            "Estimate uncollectible accounts",
+            "Record inventory purchases",
+            "Calculate payroll taxes"
+          ],
+          "correctAnswer": "Estimate uncollectible accounts",
+          "explanation": "Aging categorizes receivables by age to estimate the likelihood of collection and required allowance."
+        },
+        {
+          "question": "Which inventory costing method assumes the oldest inventory is sold first?",
+          "options": [
+            "FIFO",
+            "LIFO",
+            "Weighted Average",
+            "Specific Identification"
+          ],
+          "correctAnswer": "FIFO",
+          "explanation": "First-In, First-Out (FIFO) assumes the earliest inventory costs are used for cost of goods sold."
+        },
+        {
+          "question": "When accounts payable is recorded, the entry typically includes:",
+          "options": [
+            "Debit Cash, Credit Accounts Payable",
+            "Debit Expense/Inventory, Credit Accounts Payable",
+            "Debit Accounts Payable, Credit Cash",
+            "Debit Revenue, Credit Cash"
+          ],
+          "correctAnswer": "Debit Expense/Inventory, Credit Accounts Payable",
+          "explanation": "Purchases on account increase liabilities (Accounts Payable) and record the related expense or inventory."
+        },
+        {
+          "question": "Which method estimates ending inventory based on cost-to-retail ratios?",
+          "options": [
+            "Gross Profit Method",
+            "Retail Inventory Method",
+            "Specific Identification",
+            "LIFO"
+          ],
+          "correctAnswer": "Retail Inventory Method",
+          "explanation": "The retail method converts retail prices to cost using a cost-to-retail ratio to estimate inventory value."
+        },
+        {
+          "question": "Recording a note receivable involves:",
+          "options": [
+            "Debit Cash, Credit Revenue",
+            "Debit Notes Receivable, Credit Revenue or Accounts Receivable",
+            "Debit Accounts Payable, Credit Cash",
+            "Debit Sales Revenue, Credit Notes Payable"
+          ],
+          "correctAnswer": "Debit Notes Receivable, Credit Revenue or Accounts Receivable",
+          "explanation": "Notes receivable are formal claims for payment, recorded as a debit to Notes Receivable and a credit to Revenue or AR."
+        },
+        {
+          "question": "What is the main purpose of subsidiary ledgers for receivables and payables?",
+          "options": [
+            "To record journal entries",
+            "To track individual customer/vendor balances",
+            "To compute depreciation",
+            "To record payroll"
+          ],
+          "correctAnswer": "To track individual customer/vendor balances",
+          "explanation": "Subsidiary ledgers provide detailed tracking for each customer or vendor while controlling totals appear in the general ledger."
+        },
+        {
+          "question": "Obsolete inventory should be:",
+          "options": [
+            "Left at cost on the balance sheet",
+            "Written down to net realizable value",
+            "Sold at full cost",
+            "Ignored for financial statements"
+          ],
+          "correctAnswer": "Written down to net realizable value",
+          "explanation": "GAAP requires inventory be reported at the lower of cost or net realizable value to reflect potential losses."
+        },
+        {
+          "question": "Which of the following affects cash flow from operating activities?",
+          "options": [
+            "Depreciation expense",
+            "Issuance of stock",
+            "Purchase of plant assets",
+            "Sale of a subsidiary"
+          ],
+          "correctAnswer": "Depreciation expense",
+          "explanation": "Depreciation is a non-cash operating expense, added back to net income when computing cash flow from operations."
+        }
+      ]
+    },
+    {
+      "topic": "Budgeting, Cash Flow & Cost Accounting",
+      "questions": [
+        {
+          "question": "A flexible budget adjusts for:",
+          "options": [
+            "Changes in actual activity levels",
+            "Changes in stockholder equity",
+            "Changes in tax rates",
+            "Changes in inventory method"
+          ],
+          "correctAnswer": "Changes in actual activity levels",
+          "explanation": "Flexible budgets adjust expected costs and revenues based on actual production or sales volume."
+        },
+        {
+          "question": "Which analysis helps determine the contribution margin and break-even point?",
+          "options": [
+            "Cost-Volume-Profit Analysis",
+            "Vertical Analysis",
+            "Horizontal Analysis",
+            "Differential Analysis"
+          ],
+          "correctAnswer": "Cost-Volume-Profit Analysis",
+          "explanation": "CVP analysis calculates contribution margin and identifies the break-even sales volume for planning."
+        },
+        {
+          "question": "A master budget includes:",
+          "options": [
+            "Cash budget, sales budget, and production budget",
+            "Only income statements",
+            "Only balance sheets",
+            "Only departmental payroll"
+          ],
+          "correctAnswer": "Cash budget, sales budget, and production budget",
+          "explanation": "The master budget consolidates operating and financial plans, including cash, sales, and production budgets."
+        },
+        {
+          "question": "In cost accounting, factory overhead includes:",
+          "options": [
+            "Direct materials only",
+            "Direct labor only",
+            "Indirect costs like utilities and depreciation",
+            "Sales commissions"
+          ],
+          "correctAnswer": "Indirect costs like utilities and depreciation",
+          "explanation": "Overhead includes all indirect manufacturing costs not directly traceable to a product."
+        },
+        {
+          "question": "Which method allocates overhead based on a predetermined rate?",
+          "options": [
+            "Activity-Based Costing",
+            "Job-Order Costing",
+            "Standard Costing",
+            "All of the above"
+          ],
+          "correctAnswer": "All of the above",
+          "explanation": "Predetermined overhead rates can be applied in different costing methods, including job-order and ABC systems."
+        },
+        {
+          "question": "Cash flow from investing activities includes:",
+          "options": [
+            "Sale of equipment",
+            "Payment of dividends",
+            "Collection of receivables",
+            "Payment of salaries"
+          ],
+          "correctAnswer": "Sale of equipment",
+          "explanation": "Investing activities relate to acquiring or disposing of long-term assets like equipment."
+        },
+        {
+          "question": "Cost-volume-profit analysis helps managers decide:",
+          "options": [
+            "Whether to buy or make a product",
+            "How to depreciate assets",
+            "How to record payroll",
+            "How to classify inventory"
+          ],
+          "correctAnswer": "Whether to buy or make a product",
+          "explanation": "CVP analysis informs decisions where cost and revenue changes impact profitability."
+        },
+        {
+          "question": "Which is a primary benefit of using spreadsheet software for budgets?",
+          "options": [
+            "Automates calculations and allows scenario analysis",
+            "Records journal entries automatically",
+            "Eliminates need for auditors",
+            "Generates invoices"
+          ],
+          "correctAnswer": "Automates calculations and allows scenario analysis",
+          "explanation": "Spreadsheets streamline budget preparation and enable managers to test different assumptions."
+        },
+        {
+          "question": "Contribution margin is calculated as:",
+          "options": [
+            "Sales Revenue – Variable Costs",
+            "Sales Revenue – Fixed Costs",
+            "Net Income – Taxes",
+            "Gross Profit – Operating Expenses"
+          ],
+          "correctAnswer": "Sales Revenue – Variable Costs",
+          "explanation": "Contribution margin shows how much revenue contributes to covering fixed costs and generating profit."
+        },
+        {
+          "question": "Which cost is relevant in differential analysis for decision-making?",
+          "options": [
+            "Sunk costs",
+            "Future costs that differ between alternatives",
+            "Depreciation on old equipment",
+            "Historical costs"
+          ],
+          "correctAnswer": "Future costs that differ between alternatives",
+          "explanation": "Differential analysis focuses on costs that change based on the decision at hand; sunk or historical costs are irrelevant."
+        }
+      ]
+    },
+    {
+      "topic": "Departmentalized Accounting & Payroll",
+      "questions": [
+        {
+          "question": "Departmentalized accounting is primarily used to:",
+          "options": [
+            "Track costs and revenues for separate departments",
+            "Calculate federal taxes",
+            "Prepare corporate stock reports",
+            "Record inventory transactions only"
+          ],
+          "correctAnswer": "Track costs and revenues for separate departments",
+          "explanation": "Departmentalized accounting allocates revenues, expenses, and profits to individual departments for better performance tracking."
+        },
+        {
+          "question": "When journalizing departmental cash receipts, you would:",
+          "options": [
+            "Debit Cash and credit the appropriate departmental revenue account",
+            "Debit Accounts Payable and credit Cash",
+            "Debit Revenue and credit Cash",
+            "Debit Cash and credit Accounts Receivable only"
+          ],
+          "correctAnswer": "Debit Cash and credit the appropriate departmental revenue account",
+          "explanation": "Cash receipts are recorded by debiting cash and crediting revenue for the specific department that earned it."
+        },
+        {
+          "question": "Which software feature is most helpful for maintaining departmental records?",
+          "options": [
+            "Ability to track transactions by department",
+            "Automatic payroll tax calculation",
+            "Creating GAAP-compliant financial statements only",
+            "Inventory valuation reports"
+          ],
+          "correctAnswer": "Ability to track transactions by department",
+          "explanation": "Departmentalized accounting software helps segregate transactions by department for accurate reporting."
+        },
+        {
+          "question": "Payroll register is used to:",
+          "options": [
+            "Record all payroll transactions and deductions",
+            "Calculate inventory turnover",
+            "Journalize depreciation",
+            "Prepare tax returns only"
+          ],
+          "correctAnswer": "Record all payroll transactions and deductions",
+          "explanation": "A payroll register tracks employee earnings, deductions, and net pay for reporting and accounting purposes."
+        },
+        {
+          "question": "Employer payroll taxes include:",
+          "options": [
+            "Social Security, Medicare, federal unemployment, state unemployment",
+            "Federal income tax only",
+            "Employee health benefits only",
+            "Depreciation expenses"
+          ],
+          "correctAnswer": "Social Security, Medicare, federal unemployment, state unemployment",
+          "explanation": "Employers pay payroll taxes in addition to employee withholding for Social Security, Medicare, and unemployment taxes."
+        },
+        {
+          "question": "Calculating net pay involves:",
+          "options": [
+            "Subtracting deductions from gross pay",
+            "Adding gross pay to taxes",
+            "Subtracting expenses from revenue",
+            "Calculating depreciation first"
+          ],
+          "correctAnswer": "Subtracting deductions from gross pay",
+          "explanation": "Net pay is the employee's take-home pay after deducting taxes and other withholdings from gross earnings."
+        },
+        {
+          "question": "Which form is used by employees to report withholding allowances?",
+          "options": ["W-4", "W-2", "941", "1099"],
+          "correctAnswer": "W-4",
+          "explanation": "The W-4 form allows employees to specify withholding allowances so employers can deduct the correct federal income tax."
+        },
+        {
+          "question": "Recording payroll requires which of the following entries?",
+          "options": [
+            "Debit Salaries Expense, Credit Cash and Payroll Liabilities",
+            "Debit Cash, Credit Revenue",
+            "Debit Accounts Receivable, Credit Revenue",
+            "Debit Revenue, Credit Payroll Tax Expense"
+          ],
+          "correctAnswer": "Debit Salaries Expense, Credit Cash and Payroll Liabilities",
+          "explanation": "Payroll journal entries debit salary expense and credit cash or payable accounts for taxes and deductions."
+        },
+        {
+          "question": "Adjusting entries for departmentalized accounting may include:",
+          "options": [
+            "Allocating overhead and closing temporary accounts",
+            "Recording tax refunds only",
+            "Inventory valuation",
+            "Recording depreciation exclusively"
+          ],
+          "correctAnswer": "Allocating overhead and closing temporary accounts",
+          "explanation": "Departments may need to allocate overhead costs and close temporary accounts to finalize departmental financial statements."
+        },
+        {
+          "question": "A voucher system in payroll is used to:",
+          "options": [
+            "Authorize and track payroll payments",
+            "Compute inventory turnover",
+            "Calculate depreciation",
+            "Record journal entries for sales only"
+          ],
+          "correctAnswer": "Authorize and track payroll payments",
+          "explanation": "A voucher system ensures payroll is properly approved and payments are accurately documented."
+        }
+      ]
+    },
+    {
+      "topic": "Income Tax",
+      "questions": [
+        {
+          "question": "Deferred income taxes result from:",
+          "options": [
+            "Temporary differences between financial reporting and taxable income",
+            "Permanent differences in inventory valuation",
+            "Payroll tax errors",
+            "Cash flow misstatements"
+          ],
+          "correctAnswer": "Temporary differences between financial reporting and taxable income",
+          "explanation": "Deferred taxes arise when timing differences create a gap between taxable income and accounting income."
+        },
+        {
+          "question": "Which form is used by employers to report federal income tax withheld and payroll taxes?",
+          "options": ["Form 941", "Form W-2", "Form 1099", "Form 1040"],
+          "correctAnswer": "Form 941",
+          "explanation": "Form 941 reports quarterly federal income tax withheld and employer payroll taxes."
+        },
+        {
+          "question": "Tax planning involves:",
+          "options": [
+            "Structuring transactions to minimize tax liability legally",
+            "Avoiding all tax payments",
+            "Recording inventory using FIFO",
+            "Calculating net pay only"
+          ],
+          "correctAnswer": "Structuring transactions to minimize tax liability legally",
+          "explanation": "Tax planning ensures compliance while optimizing tax efficiency through legitimate strategies."
+        },
+        {
+          "question": "Which accounting principle governs recording tax liabilities?",
+          "options": [
+            "Accrual principle",
+            "Cash principle",
+            "FIFO method",
+            "LIFO method"
+          ],
+          "correctAnswer": "Accrual principle",
+          "explanation": "Accrual accounting requires recording taxes when incurred, not necessarily when paid."
+        },
+        {
+          "question": "The difference between tax avoidance and tax evasion is:",
+          "options": [
+            "Avoidance is legal, evasion is illegal",
+            "Avoidance is illegal, evasion is legal",
+            "Both are legal",
+            "Both are illegal"
+          ],
+          "correctAnswer": "Avoidance is legal, evasion is illegal",
+          "explanation": "Tax avoidance uses legal strategies to reduce taxes, while evasion involves illegal misreporting or concealment."
+        },
+        {
+          "question": "Deferred income taxes affect which financial statement?",
+          "options": [
+            "Balance Sheet",
+            "Income Statement only",
+            "Cash Flow Statement only",
+            "Statement of Owner’s Equity only"
+          ],
+          "correctAnswer": "Balance Sheet",
+          "explanation": "Deferred taxes are recorded as liabilities or assets on the balance sheet until they become payable or recoverable."
+        },
+        {
+          "question": "Calculating corporate income tax expense requires:",
+          "options": [
+            "Adjusting accounting income to taxable income and applying the tax rate",
+            "Recording gross pay only",
+            "Preparing payroll vouchers",
+            "Valuing inventory exclusively"
+          ],
+          "correctAnswer": "Adjusting accounting income to taxable income and applying the tax rate",
+          "explanation": "Corporate tax expense is based on taxable income, which may differ from accounting income due to timing and temporary differences."
+        },
+        {
+          "question": "Which method distinguishes between pretax financial income and taxable income?",
+          "options": [
+            "Adjusting journal entries for income taxes",
+            "Recording payroll only",
+            "Calculating contribution margin",
+            "Preparing departmental budgets"
+          ],
+          "correctAnswer": "Adjusting journal entries for income taxes",
+          "explanation": "Adjustments reconcile financial income with taxable income to accurately record tax expense and liabilities."
+        },
+        {
+          "question": "Which tax form reports wages and taxes withheld to employees?",
+          "options": ["Form W-2", "Form 941", "Form 1099", "Form 1040"],
+          "correctAnswer": "Form W-2",
+          "explanation": "Form W-2 shows employees' annual wages and taxes withheld for filing individual tax returns."
+        },
+        {
+          "question": "GAAP vs. tax law differences may result in:",
+          "options": [
+            "Temporary or permanent differences affecting income tax expense",
+            "Changes in inventory method only",
+            "Payroll misstatements",
+            "Departmental cost allocation errors"
+          ],
+          "correctAnswer": "Temporary or permanent differences affecting income tax expense",
+          "explanation": "Accounting principles and tax laws differ, causing adjustments that affect the reported tax expense."
+        }
+      ]
+    }
+  ]
+}

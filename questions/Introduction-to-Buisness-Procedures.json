@@ -1,0 +1,1155 @@
+{
+  "testName": "Introduction to Business Procedures",
+  "topics": [
+    {
+      "topicName": "Human Relations",
+      "questions": [
+        {
+          "question": "Which behavior demonstrates proper work ethics in the office?",
+          "options": [
+            "Arriving late consistently",
+            "Completing tasks honestly",
+            "Ignoring team input",
+            "Taking long breaks without notice"
+          ],
+          "correctAnswer": "Completing tasks honestly",
+          "explanation": "Proper work ethics include honesty and integrity in completing assigned tasks."
+        },
+        {
+          "question": "What is the primary purpose of an employee orientation program?",
+          "options": [
+            "To evaluate employee performance",
+            "To introduce new hires to policies and procedures",
+            "To assign office equipment",
+            "To create marketing plans"
+          ],
+          "correctAnswer": "To introduce new hires to policies and procedures",
+          "explanation": "Orientation programs help employees understand company policies, culture, and expectations."
+        },
+        {
+          "question": "What is the benefit of effective teamwork in an office?",
+          "options": [
+            "Reduces productivity",
+            "Causes confusion",
+            "Promotes knowledge sharing and problem solving",
+            "Increases conflicts"
+          ],
+          "correctAnswer": "Promotes knowledge sharing and problem solving",
+          "explanation": "Teamwork allows members to share ideas, solve problems collaboratively, and improve efficiency."
+        },
+        {
+          "question": "Which is an example of maintaining employee records properly?",
+          "options": [
+            "Discarding old records",
+            "Keeping accurate and organized files",
+            "Ignoring updates",
+            "Sharing confidential files with unauthorized persons"
+          ],
+          "correctAnswer": "Keeping accurate and organized files",
+          "explanation": "Maintaining accurate employee records is essential for compliance and effective HR management."
+        },
+        {
+          "question": "Which activity is part of updating the policy and procedures manual?",
+          "options": [
+            "Ignoring feedback",
+            "Adding new regulations and revising outdated ones",
+            "Deleting old safety rules",
+            "Rewriting policies without approval"
+          ],
+          "correctAnswer": "Adding new regulations and revising outdated ones",
+          "explanation": "Regular updates ensure policies are current and comply with laws and organizational changes."
+        },
+        {
+          "question": "Which action contributes to motivating employees effectively?",
+          "options": [
+            "Publicly criticizing mistakes",
+            "Recognizing achievements",
+            "Assigning excessive work without guidance",
+            "Ignoring feedback"
+          ],
+          "correctAnswer": "Recognizing achievements",
+          "explanation": "Recognition motivates employees and reinforces positive behavior and performance."
+        },
+        {
+          "question": "What is a key purpose of conducting employee training?",
+          "options": [
+            "Reduce workload",
+            "Enhance skills and performance",
+            "Create delays",
+            "Increase office gossip"
+          ],
+          "correctAnswer": "Enhance skills and performance",
+          "explanation": "Training ensures employees develop the skills necessary to perform their roles efficiently."
+        },
+        {
+          "question": "How should managers handle employee conflicts?",
+          "options": [
+            "Ignore them",
+            "Address and mediate professionally",
+            "Take sides immediately",
+            "Punish both parties without discussion"
+          ],
+          "correctAnswer": "Address and mediate professionally",
+          "explanation": "Conflict resolution improves workplace relations and maintains productivity."
+        },
+        {
+          "question": "Which behavior shows professionalism in the office?",
+          "options": [
+            "Disrespecting coworkers",
+            "Meeting deadlines consistently",
+            "Interrupting colleagues often",
+            "Ignoring communications"
+          ],
+          "correctAnswer": "Meeting deadlines consistently",
+          "explanation": "Professionalism includes reliability, respect, and adherence to workplace standards."
+        },
+        {
+          "question": "Why is maintaining effective work relationships important?",
+          "options": [
+            "Reduces communication",
+            "Fosters collaboration and positive work culture",
+            "Limits information sharing",
+            "Creates office politics"
+          ],
+          "correctAnswer": "Fosters collaboration and positive work culture",
+          "explanation": "Good work relationships enhance collaboration, productivity, and job satisfaction."
+        }
+      ]
+    },
+    {
+      "topicName": "Technology Concepts",
+      "questions": [
+        {
+          "question": "What is the primary purpose of a needs assessment for office technology?",
+          "options": [
+            "Determine employee salaries",
+            "Identify required hardware, software, and equipment",
+            "Plan meetings",
+            "Monitor employee attendance"
+          ],
+          "correctAnswer": "Identify required hardware, software, and equipment",
+          "explanation": "A needs assessment ensures the office has the technology resources required for efficient operations."
+        },
+        {
+          "question": "Which is an example of proper hardware maintenance?",
+          "options": [
+            "Removing hardware without documentation",
+            "Regularly updating software and cleaning equipment",
+            "Ignoring software updates",
+            "Sharing passwords openly"
+          ],
+          "correctAnswer": "Regularly updating software and cleaning equipment",
+          "explanation": "Proper maintenance ensures systems run efficiently and reduces downtime."
+        },
+        {
+          "question": "Why should office staff evaluate different software vendors?",
+          "options": [
+            "To create office conflicts",
+            "To select the best software for organizational needs",
+            "To increase costs",
+            "To delay projects"
+          ],
+          "correctAnswer": "To select the best software for organizational needs",
+          "explanation": "Evaluation ensures the selected software supports productivity and business objectives."
+        },
+        {
+          "question": "Which activity is part of managing files and folders effectively?",
+          "options": [
+            "Randomly saving files",
+            "Organizing documents in logical folders",
+            "Deleting important files without backup",
+            "Ignoring file naming conventions"
+          ],
+          "correctAnswer": "Organizing documents in logical folders",
+          "explanation": "Organized file management improves retrieval and reduces errors."
+        },
+        {
+          "question": "Which action demonstrates proper use of technology resources?",
+          "options": [
+            "Using office software to complete assigned tasks",
+            "Playing games during work hours",
+            "Downloading unauthorized programs",
+            "Ignoring IT policies"
+          ],
+          "correctAnswer": "Using office software to complete assigned tasks",
+          "explanation": "Technology should be used to support productivity and business objectives."
+        },
+        {
+          "question": "What is the importance of selecting multimedia software for office tasks?",
+          "options": [
+            "To create distractions",
+            "To enhance presentations and communications",
+            "To replace basic office tools",
+            "To complicate tasks unnecessarily"
+          ],
+          "correctAnswer": "To enhance presentations and communications",
+          "explanation": "Multimedia software improves clarity and engagement in communication."
+        },
+        {
+          "question": "How can staff troubleshoot software issues effectively?",
+          "options": [
+            "Ignore error messages",
+            "Consult help resources and IT support",
+            "Restart without investigating",
+            "Uninstall software randomly"
+          ],
+          "correctAnswer": "Consult help resources and IT support",
+          "explanation": "Using support resources ensures proper and safe resolution of technology issues."
+        },
+        {
+          "question": "Why is evaluating warranty options important when purchasing hardware?",
+          "options": [
+            "To increase costs",
+            "To ensure long-term support and coverage",
+            "To delay purchases",
+            "To avoid vendor contact"
+          ],
+          "correctAnswer": "To ensure long-term support and coverage",
+          "explanation": "Warranty evaluation helps minimize future repair costs and ensures operational reliability."
+        },
+        {
+          "question": "Which is an example of proper software use?",
+          "options": [
+            "Sharing licensed software illegally",
+            "Installing only approved software for work purposes",
+            "Using pirated versions for convenience",
+            "Ignoring updates"
+          ],
+          "correctAnswer": "Installing only approved software for work purposes",
+          "explanation": "Approved software usage complies with legal and organizational policies."
+        },
+        {
+          "question": "What is the benefit of staying updated with emerging office technologies?",
+          "options": [
+            "Increase downtime",
+            "Improve efficiency and effectiveness",
+            "Confuse employees",
+            "Ignore workflow improvements"
+          ],
+          "correctAnswer": "Improve efficiency and effectiveness",
+          "explanation": "Adopting new technologies enhances productivity and streamlines operations."
+        }
+      ]
+    },
+    {
+      "topicName": "Communication Skills",
+      "questions": [
+        {
+          "question": "Which is an effective way to enhance workplace communication?",
+          "options": [
+            "Ignoring feedback",
+            "Actively listening to colleagues",
+            "Interrupting others frequently",
+            "Using unclear language"
+          ],
+          "correctAnswer": "Actively listening to colleagues",
+          "explanation": "Active listening improves understanding and reduces miscommunication."
+        },
+        {
+          "question": "What is the purpose of interpreting nonverbal cues?",
+          "options": [
+            "To ignore body language",
+            "To enhance understanding of messages",
+            "To criticize coworkers",
+            "To avoid communication"
+          ],
+          "correctAnswer": "To enhance understanding of messages",
+          "explanation": "Nonverbal cues provide context that complements verbal communication."
+        },
+        {
+          "question": "Which practice is best when answering business calls?",
+          "options": [
+            "Screening calls professionally",
+            "Putting all calls on speaker",
+            "Ignoring the caller",
+            "Speaking informally"
+          ],
+          "correctAnswer": "Screening calls professionally",
+          "explanation": "Professional call handling maintains a positive business image."
+        },
+        {
+          "question": "Why is composing clear written instructions important?",
+          "options": [
+            "To confuse employees",
+            "To ensure tasks are understood and completed correctly",
+            "To delay projects",
+            "To reduce productivity"
+          ],
+          "correctAnswer": "To ensure tasks are understood and completed correctly",
+          "explanation": "Clear instructions prevent errors and improve efficiency."
+        },
+        {
+          "question": "Which action demonstrates proper oral presentation skills?",
+          "options": [
+            "Reading monotonously from notes",
+            "Engaging the audience and organizing content logically",
+            "Ignoring audience feedback",
+            "Speaking without preparation"
+          ],
+          "correctAnswer": "Engaging the audience and organizing content logically",
+          "explanation": "Effective presentations require clear structure and audience engagement."
+        },
+        {
+          "question": "What is the role of electronic communication in the office?",
+          "options": [
+            "To send confidential data without security",
+            "To facilitate timely and accurate information sharing",
+            "To replace face-to-face meetings entirely",
+            "To overwhelm coworkers"
+          ],
+          "correctAnswer": "To facilitate timely and accurate information sharing",
+          "explanation": "Electronic communications enhance productivity and coordination."
+        },
+        {
+          "question": "Why is greeting visitors properly important?",
+          "options": [
+            "To save time",
+            "To create a positive first impression and direct them appropriately",
+            "To avoid responsibilities",
+            "To delegate to others unnecessarily"
+          ],
+          "correctAnswer": "To create a positive first impression and direct them appropriately",
+          "explanation": "Proper reception of visitors reflects professionalism and hospitality."
+        },
+        {
+          "question": "Which method helps in referencing information accurately?",
+          "options": [
+            "Ignoring sources",
+            "Organizing and documenting sources properly",
+            "Using unverified data",
+            "Sharing confidential info publicly"
+          ],
+          "correctAnswer": "Organizing and documenting sources properly",
+          "explanation": "Proper documentation ensures reliability and transparency in communication."
+        },
+        {
+          "question": "What is the purpose of developing tables, charts, and figures?",
+          "options": [
+            "To complicate reports",
+            "To support and clarify written and oral communications",
+            "To replace all text",
+            "To distract the audience"
+          ],
+          "correctAnswer": "To support and clarify written and oral communications",
+          "explanation": "Visual aids help convey information more clearly and efficiently."
+        },
+        {
+          "question": "Which skill is critical when communicating with clients?",
+          "options": [
+            "Using jargon excessively",
+            "Providing clear and courteous responses",
+            "Ignoring inquiries",
+            "Giving incomplete information"
+          ],
+          "correctAnswer": "Providing clear and courteous responses",
+          "explanation": "Professional communication fosters trust and effective business relationships."
+        }
+      ]
+    },
+    {
+      "topicName": "Decision Making/Management",
+      "questions": [
+        {
+          "question": "Which is a characteristic of effective leadership?",
+          "options": [
+            "Ignoring team input",
+            "Providing guidance and supporting team development",
+            "Delegating everything without follow-up",
+            "Avoiding decision-making responsibilities"
+          ],
+          "correctAnswer": "Providing guidance and supporting team development",
+          "explanation": "Effective leaders guide their teams while encouraging growth and accountability."
+        },
+        {
+          "question": "What is the primary function of management?",
+          "options": [
+            "Delegating without planning",
+            "Planning, organizing, leading, and controlling resources",
+            "Focusing only on finances",
+            "Ignoring employee needs"
+          ],
+          "correctAnswer": "Planning, organizing, leading, and controlling resources",
+          "explanation": "Management ensures organizational goals are achieved efficiently and effectively."
+        },
+        {
+          "question": "How does setting priorities benefit workflow?",
+          "options": [
+            "It causes confusion",
+            "It ensures important tasks are completed on time",
+            "It delays projects unnecessarily",
+            "It ignores deadlines"
+          ],
+          "correctAnswer": "It ensures important tasks are completed on time",
+          "explanation": "Prioritization maximizes productivity and resource allocation."
+        },
+        {
+          "question": "Why is analyzing potential business problems essential?",
+          "options": [
+            "To ignore risks",
+            "To offer alternative solutions and contingency plans",
+            "To blame employees",
+            "To delay decisions"
+          ],
+          "correctAnswer": "To offer alternative solutions and contingency plans",
+          "explanation": "Problem analysis allows for proactive management and risk mitigation."
+        },
+        {
+          "question": "Which activity demonstrates effective management of office teams?",
+          "options": [
+            "Assigning tasks randomly",
+            "Coordinating skills and responsibilities efficiently",
+            "Ignoring conflicts",
+            "Overloading employees intentionally"
+          ],
+          "correctAnswer": "Coordinating skills and responsibilities efficiently",
+          "explanation": "Effective team management maximizes productivity and ensures fair workload distribution."
+        },
+        {
+          "question": "What is a key element of workplace decision-making?",
+          "options": [
+            "Avoiding analysis",
+            "Using relevant data to make informed choices",
+            "Relying solely on intuition",
+            "Making decisions without consulting others"
+          ],
+          "correctAnswer": "Using relevant data to make informed choices",
+          "explanation": "Data-driven decisions reduce errors and improve business outcomes."
+        },
+        {
+          "question": "How can managers monitor workflow effectively?",
+          "options": [
+            "Ignoring progress",
+            "Tracking task completion and efficiency",
+            "Overloading staff with tasks",
+            "Delegating without guidance"
+          ],
+          "correctAnswer": "Tracking task completion and efficiency",
+          "explanation": "Monitoring workflow ensures that objectives are met and resources are utilized efficiently."
+        },
+        {
+          "question": "Which action demonstrates accountability in management?",
+          "options": [
+            "Blaming staff for mistakes",
+            "Taking responsibility for decisions and outcomes",
+            "Ignoring feedback",
+            "Avoiding meetings"
+          ],
+          "correctAnswer": "Taking responsibility for decisions and outcomes",
+          "explanation": "Accountable managers foster trust and improve team performance."
+        },
+        {
+          "question": "What is the benefit of applying contingency plans?",
+          "options": [
+            "To create confusion",
+            "To respond effectively to unexpected problems",
+            "To ignore risks",
+            "To delay workflow"
+          ],
+          "correctAnswer": "To respond effectively to unexpected problems",
+          "explanation": "Contingency plans prepare organizations for potential disruptions, minimizing negative impacts."
+        },
+        {
+          "question": "How does defining workplace performance goals improve efficiency?",
+          "options": [
+            "Causes confusion",
+            "Provides clear expectations and measurable targets",
+            "Overburdens staff",
+            "Reduces productivity"
+          ],
+          "correctAnswer": "Provides clear expectations and measurable targets",
+          "explanation": "Clear goals align employee efforts and improve performance tracking."
+        }
+      ]
+    },
+    {
+      "topicName": "Career Development",
+      "questions": [
+        {
+          "question": "Why is exploring multiple business careers important?",
+          "options": [
+            "To limit opportunities",
+            "To understand job options and find a good fit",
+            "To avoid learning new skills",
+            "To focus only on one career"
+          ],
+          "correctAnswer": "To understand job options and find a good fit",
+          "explanation": "Exploring careers helps individuals identify roles aligned with their skills and interests."
+        },
+        {
+          "question": "What is the purpose of a career plan?",
+          "options": [
+            "To ignore long-term goals",
+            "To outline steps to achieve professional objectives",
+            "To focus only on immediate tasks",
+            "To follow someone else's plan"
+          ],
+          "correctAnswer": "To outline steps to achieve professional objectives",
+          "explanation": "A career plan provides a structured path for career development."
+        },
+        {
+          "question": "Which documents are essential when applying for a job?",
+          "options": [
+            "Social media posts",
+            "Letter of application, resume, and follow-up letter",
+            "Personal diary",
+            "None of the above"
+          ],
+          "correctAnswer": "Letter of application, resume, and follow-up letter",
+          "explanation": "These documents present skills and qualifications professionally to employers."
+        },
+        {
+          "question": "What behavior is considered inappropriate in a job interview?",
+          "options": [
+            "Maintaining eye contact",
+            "Arriving late and unprepared",
+            "Dressing professionally",
+            "Listening attentively"
+          ],
+          "correctAnswer": "Arriving late and unprepared",
+          "explanation": "Unpreparedness shows lack of professionalism and reduces interview success."
+        },
+        {
+          "question": "Why is developing a professional portfolio important?",
+          "options": [
+            "To ignore career opportunities",
+            "To organize accomplishments and certifications for presentation",
+            "To hide skills",
+            "To replace a resume entirely"
+          ],
+          "correctAnswer": "To organize accomplishments and certifications for presentation",
+          "explanation": "Portfolios showcase abilities and support career advancement."
+        },
+        {
+          "question": "How can nontraditional employment barriers be overcome?",
+          "options": [
+            "By ignoring them",
+            "By using strategies like skill development and mentorship",
+            "By avoiding career planning",
+            "By following outdated methods"
+          ],
+          "correctAnswer": "By using strategies like skill development and mentorship",
+          "explanation": "Proactive strategies help individuals access equitable career opportunities."
+        },
+        {
+          "question": "Which action enhances professional development?",
+          "options": [
+            "Avoiding training",
+            "Participating in workshops and continuing education",
+            "Ignoring feedback",
+            "Refusing mentorship"
+          ],
+          "correctAnswer": "Participating in workshops and continuing education",
+          "explanation": "Ongoing learning improves skills and career advancement potential."
+        },
+        {
+          "question": "Why is maintaining updated personal professional documents important?",
+          "options": [
+            "To confuse employers",
+            "To ensure readiness for new opportunities",
+            "To delay applications",
+            "To reduce employability"
+          ],
+          "correctAnswer": "To ensure readiness for new opportunities",
+          "explanation": "Updated documents help quickly respond to job openings."
+        },
+        {
+          "question": "What is a key step when resigning from a position?",
+          "options": [
+            "Ignoring notice periods",
+            "Following professional procedures and providing notice",
+            "Leaving abruptly",
+            "Complaining publicly"
+          ],
+          "correctAnswer": "Following professional procedures and providing notice",
+          "explanation": "Proper resignation maintains positive relationships and professionalism."
+        },
+        {
+          "question": "How can online resources support career development?",
+          "options": [
+            "By distracting employees",
+            "By providing job search tools and skill-building opportunities",
+            "By replacing all in-person networking",
+            "By reducing skill acquisition"
+          ],
+          "correctAnswer": "By providing job search tools and skill-building opportunities",
+          "explanation": "Online resources expand access to careers and learning opportunities."
+        }
+      ]
+    },
+    {
+      "topicName": "Business Operations",
+      "questions": [
+        {
+          "question": "Why is organizing a workstation efficiently important?",
+          "options": [
+            "To create clutter",
+            "To improve workflow and productivity",
+            "To hide materials",
+            "To confuse staff"
+          ],
+          "correctAnswer": "To improve workflow and productivity",
+          "explanation": "Efficient workstations save time and increase work output."
+        },
+        {
+          "question": "Which decision involves reprographics methods?",
+          "options": [
+            "Choosing travel destinations",
+            "Selecting paper and printing methods for a task",
+            "Hiring employees",
+            "Scheduling meetings"
+          ],
+          "correctAnswer": "Selecting paper and printing methods for a task",
+          "explanation": "Appropriate reprographics methods ensure professional document quality."
+        },
+        {
+          "question": "How should incoming and outgoing mail be processed?",
+          "options": [
+            "Randomly",
+            "According to established office procedures",
+            "Ignoring priority mail",
+            "Delaying delivery intentionally"
+          ],
+          "correctAnswer": "According to established office procedures",
+          "explanation": "Standardized mail procedures maintain efficiency and accuracy."
+        },
+        {
+          "question": "What is essential when arranging travel for staff?",
+          "options": [
+            "Ignoring schedules",
+            "Coordinating reservations, itinerary, and accommodations",
+            "Booking without confirmation",
+            "Avoiding communication with travelers"
+          ],
+          "correctAnswer": "Coordinating reservations, itinerary, and accommodations",
+          "explanation": "Proper planning ensures smooth travel and minimizes disruptions."
+        },
+        {
+          "question": "Which skill is critical for time management in an office?",
+          "options": [
+            "Procrastination",
+            "Prioritizing tasks and using calendars effectively",
+            "Avoiding deadlines",
+            "Ignoring schedules"
+          ],
+          "correctAnswer": "Prioritizing tasks and using calendars effectively",
+          "explanation": "Time management skills increase productivity and reduce errors."
+        },
+        {
+          "question": "Why is coordinating meetings important?",
+          "options": [
+            "To confuse attendees",
+            "To ensure participants are informed and prepared",
+            "To ignore objectives",
+            "To overlap schedules intentionally"
+          ],
+          "correctAnswer": "To ensure participants are informed and prepared",
+          "explanation": "Well-coordinated meetings facilitate decision-making and collaboration."
+        },
+        {
+          "question": "Which tool helps maintain office efficiency?",
+          "options": [
+            "Ignoring schedules",
+            "Personal Information Management applications",
+            "Leaving equipment unorganized",
+            "Avoiding communication"
+          ],
+          "correctAnswer": "Personal Information Management applications",
+          "explanation": "PIM tools assist in managing tasks, contacts, and calendars effectively."
+        },
+        {
+          "question": "How should office equipment problems be handled?",
+          "options": [
+            "Ignoring them",
+            "Troubleshooting or seeking technical support",
+            "Delegating without guidance",
+            "Delaying repairs indefinitely"
+          ],
+          "correctAnswer": "Troubleshooting or seeking technical support",
+          "explanation": "Prompt problem-solving ensures continuity of office operations."
+        },
+        {
+          "question": "What is a key factor in purchasing office supplies?",
+          "options": [
+            "Selecting the cheapest option regardless of quality",
+            "Following procedures and evaluating options",
+            "Avoiding vendor research",
+            "Ignoring inventory levels"
+          ],
+          "correctAnswer": "Following procedures and evaluating options",
+          "explanation": "Careful purchasing ensures cost-effectiveness and adequate resources."
+        },
+        {
+          "question": "Why is knowledge of business ownership types important?",
+          "options": [
+            "To confuse employees",
+            "To understand legal and operational implications",
+            "To avoid decision-making",
+            "To restrict opportunities"
+          ],
+          "correctAnswer": "To understand legal and operational implications",
+          "explanation": "Business structure affects liability, taxation, and management roles."
+        }
+      ]
+    },
+    {
+      "topicName": "Database/Information Management",
+      "questions": [
+        {
+          "question": "Why maintain a document and information retrieval system?",
+          "options": [
+            "To create clutter",
+            "To store and locate documents efficiently",
+            "To hide records",
+            "To confuse coworkers"
+          ],
+          "correctAnswer": "To store and locate documents efficiently",
+          "explanation": "Organized systems improve accessibility and productivity."
+        },
+        {
+          "question": "Which action ensures accurate inventory records?",
+          "options": [
+            "Ignoring records",
+            "Maintaining up-to-date logs of software, equipment, and supplies",
+            "Guessing quantities",
+            "Relying solely on memory"
+          ],
+          "correctAnswer": "Maintaining up-to-date logs of software, equipment, and supplies",
+          "explanation": "Accurate records prevent shortages and support resource planning."
+        },
+        {
+          "question": "How should files be maintained for retrieval?",
+          "options": [
+            "Random placement",
+            "Using alphabetical, subject, numerical, and chronological systems",
+            "Mixing unrelated files",
+            "Discarding old files immediately"
+          ],
+          "correctAnswer": "Using alphabetical, subject, numerical, and chronological systems",
+          "explanation": "Structured filing ensures quick and reliable access to information."
+        },
+        {
+          "question": "What is the purpose of a tickler file system?",
+          "options": [
+            "To store random documents",
+            "To track tasks and documents by date",
+            "To confuse employees",
+            "To replace all filing systems"
+          ],
+          "correctAnswer": "To track tasks and documents by date",
+          "explanation": "Tickler files help ensure deadlines and follow-ups are met."
+        },
+        {
+          "question": "Why maintain a reference library?",
+          "options": [
+            "To waste space",
+            "To support research and decision-making",
+            "To ignore documentation",
+            "To replace online resources entirely"
+          ],
+          "correctAnswer": "To support research and decision-making",
+          "explanation": "Reference materials provide reliable information for tasks and projects."
+        },
+        {
+          "question": "When should files be purged?",
+          "options": [
+            "Randomly",
+            "According to retention policies and outdated relevance",
+            "Ignoring compliance rules",
+            "Every day without review"
+          ],
+          "correctAnswer": "According to retention policies and outdated relevance",
+          "explanation": "Purging keeps information manageable and legally compliant."
+        },
+        {
+          "question": "How does scanning documents aid information management?",
+          "options": [
+            "Creates clutter",
+            "Converts physical documents to digital for easy access",
+            "Deletes original files without backup",
+            "Reduces efficiency"
+          ],
+          "correctAnswer": "Converts physical documents to digital for easy access",
+          "explanation": "Scanning improves accessibility and reduces physical storage needs."
+        },
+        {
+          "question": "Which step is essential for accurate data extraction?",
+          "options": [
+            "Randomly selecting information",
+            "Using queries and reports to extract relevant data",
+            "Ignoring data validation",
+            "Skipping report generation"
+          ],
+          "correctAnswer": "Using queries and reports to extract relevant data",
+          "explanation": "Structured extraction ensures accurate and meaningful information retrieval."
+        },
+        {
+          "question": "How does integrating multiple software applications help businesses?",
+          "options": [
+            "Causes confusion",
+            "Combines data for efficiency and accurate analysis",
+            "Reduces productivity",
+            "Eliminates accountability"
+          ],
+          "correctAnswer": "Combines data for efficiency and accurate analysis",
+          "explanation": "Integration streamlines workflows and enhances decision-making."
+        },
+        {
+          "question": "Why maintain a historical record of files?",
+          "options": [
+            "To create clutter",
+            "To track progress and provide reference for future decisions",
+            "To waste storage",
+            "To ignore trends"
+          ],
+          "correctAnswer": "To track progress and provide reference for future decisions",
+          "explanation": "Historical records offer insights and support continuous improvement."
+        }
+      ]
+    },
+    {
+      "topicName": "Ethics/Safety",
+      "questions": [
+        {
+          "question": "Why implement safety measures in an office?",
+          "options": [
+            "To reduce productivity",
+            "To prevent accidents and ensure employee well-being",
+            "To increase liability",
+            "To create confusion"
+          ],
+          "correctAnswer": "To prevent accidents and ensure employee well-being",
+          "explanation": "Safety measures protect employees and reduce workplace hazards."
+        },
+        {
+          "question": "Which policy helps protect privacy in the workplace?",
+          "options": [
+            "Ignoring regulations",
+            "Following privacy and security policies",
+            "Sharing confidential info freely",
+            "Recording personal conversations without consent"
+          ],
+          "correctAnswer": "Following privacy and security policies",
+          "explanation": "Compliance with policies prevents data breaches and legal issues."
+        },
+        {
+          "question": "How should emergencies be handled in an office?",
+          "options": [
+            "Ignoring procedures",
+            "Following an established emergency/disaster plan",
+            "Waiting for instructions randomly",
+            "Relying on luck"
+          ],
+          "correctAnswer": "Following an established emergency/disaster plan",
+          "explanation": "Preparedness ensures safety and effective response during crises."
+        },
+        {
+          "question": "Why is understanding ethical behavior important?",
+          "options": [
+            "To ignore professional standards",
+            "To maintain integrity and proper workplace conduct",
+            "To manipulate colleagues",
+            "To bypass rules"
+          ],
+          "correctAnswer": "To maintain integrity and proper workplace conduct",
+          "explanation": "Ethical conduct supports trust and organizational success."
+        },
+        {
+          "question": "Which action demonstrates confidentiality in the office?",
+          "options": [
+            "Sharing sensitive employee information",
+            "Protecting employee records from unauthorized access",
+            "Posting private data online",
+            "Discussing confidential matters publicly"
+          ],
+          "correctAnswer": "Protecting employee records from unauthorized access",
+          "explanation": "Confidentiality ensures privacy and complies with regulations."
+        },
+        {
+          "question": "How does proper ergonomics benefit employees?",
+          "options": [
+            "Causes discomfort",
+            "Reduces physical strain and increases productivity",
+            "Increases injury risk",
+            "Has no impact"
+          ],
+          "correctAnswer": "Reduces physical strain and increases productivity",
+          "explanation": "Ergonomic setups improve comfort, health, and efficiency at work."
+        },
+        {
+          "question": "What is a key element of responsible technology use?",
+          "options": [
+            "Inappropriate downloads",
+            "Following acceptable use policies and laws",
+            "Bypassing security",
+            "Ignoring licensing agreements"
+          ],
+          "correctAnswer": "Following acceptable use policies and laws",
+          "explanation": "Responsible use prevents legal issues and maintains system security."
+        },
+        {
+          "question": "Which behavior reflects professional conduct?",
+          "options": [
+            "Dishonesty and tardiness",
+            "Integrity, courtesy, and reliability",
+            "Rudeness to coworkers",
+            "Ignoring responsibilities"
+          ],
+          "correctAnswer": "Integrity, courtesy, and reliability",
+          "explanation": "Professional behavior fosters trust and workplace harmony."
+        },
+        {
+          "question": "Why is awareness of software license agreements important?",
+          "options": [
+            "To ignore rules",
+            "To comply with legal mandates and avoid penalties",
+            "To illegally copy software",
+            "To waste time"
+          ],
+          "correctAnswer": "To comply with legal mandates and avoid penalties",
+          "explanation": "Understanding licenses ensures lawful use of software and resources."
+        },
+        {
+          "question": "Which action demonstrates adherence to safety policies?",
+          "options": [
+            "Neglecting emergency exits",
+            "Reporting hazards and following safety guidelines",
+            "Bypassing safety checks",
+            "Ignoring training sessions"
+          ],
+          "correctAnswer": "Reporting hazards and following safety guidelines",
+          "explanation": "Active compliance reduces workplace accidents and ensures employee well-being."
+        }
+      ]
+    },
+    {
+      "topicName": "Finance",
+      "questions": [
+        {
+          "question": "What is the purpose of reconciling a bank statement?",
+          "options": [
+            "To ignore errors",
+            "To ensure records match the bank's records",
+            "To create confusion",
+            "To delay financial reporting"
+          ],
+          "correctAnswer": "To ensure records match the bank's records",
+          "explanation": "Reconciliation identifies discrepancies and maintains accurate records."
+        },
+        {
+          "question": "Which document is used to record payroll transactions?",
+          "options": [
+            "Deposit slip",
+            "Payroll records",
+            "Invoice only",
+            "Meeting minutes"
+          ],
+          "correctAnswer": "Payroll records",
+          "explanation": "Payroll records track employee compensation and deductions."
+        },
+        {
+          "question": "How do budgets benefit an office?",
+          "options": [
+            "Cause overspending",
+            "Control expenses and allocate resources effectively",
+            "Ignore cost management",
+            "Delay purchases"
+          ],
+          "correctAnswer": "Control expenses and allocate resources effectively",
+          "explanation": "Budgets help maintain financial stability and plan expenditures."
+        },
+        {
+          "question": "Which method manages petty cash?",
+          "options": [
+            "Ignoring receipts",
+            "Recording transactions accurately",
+            "Spending freely without documentation",
+            "Borrowing without tracking"
+          ],
+          "correctAnswer": "Recording transactions accurately",
+          "explanation": "Proper tracking ensures accountability and prevents misuse."
+        },
+        {
+          "question": "What is the role of expense-control strategies?",
+          "options": [
+            "Increase unnecessary spending",
+            "Enhance financial well-being by managing costs",
+            "Ignore contracts",
+            "Delay payments"
+          ],
+          "correctAnswer": "Enhance financial well-being by managing costs",
+          "explanation": "Controlling expenses ensures sustainability and profitability."
+        },
+        {
+          "question": "Why is knowledge of general finance terms important?",
+          "options": [
+            "To confuse employees",
+            "To understand financial transactions and decisions",
+            "To avoid reporting",
+            "To mismanage funds"
+          ],
+          "correctAnswer": "To understand financial transactions and decisions",
+          "explanation": "Understanding terms supports effective financial management."
+        },
+        {
+          "question": "Which activity demonstrates proper use of a numeric keypad?",
+          "options": [
+            "Entering data accurately for calculations",
+            "Random typing",
+            "Ignoring numeric inputs",
+            "Guessing values"
+          ],
+          "correctAnswer": "Entering data accurately for calculations",
+          "explanation": "Correct input ensures precise financial calculations."
+        },
+        {
+          "question": "What is the purpose of a purchase requisition?",
+          "options": [
+            "To order supplies without approval",
+            "To request purchase of goods/services formally",
+            "To delay procurement",
+            "To avoid documentation"
+          ],
+          "correctAnswer": "To request purchase of goods/services formally",
+          "explanation": "Requisitions standardize requests and track spending."
+        },
+        {
+          "question": "How do financial records support a business?",
+          "options": [
+            "Create confusion",
+            "Provide documentation for decisions and compliance",
+            "Hide expenses",
+            "Ignore audits"
+          ],
+          "correctAnswer": "Provide documentation for decisions and compliance",
+          "explanation": "Accurate records ensure transparency and support planning."
+        },
+        {
+          "question": "Why is understanding payroll deductions important?",
+          "options": [
+            "To avoid compliance",
+            "To ensure correct legal withholdings and employee pay",
+            "To confuse employees",
+            "To delay processing"
+          ],
+          "correctAnswer": "To ensure correct legal withholdings and employee pay",
+          "explanation": "Proper deductions maintain legal compliance and employee satisfaction."
+        }
+      ]
+    },
+    {
+      "topicName": "Information Processing",
+      "questions": [
+        {
+          "question": "Which software function is used to create tables and charts?",
+          "options": [
+            "Word processing only",
+            "Spreadsheet and database tools",
+            "Email only",
+            "Web browser"
+          ],
+          "correctAnswer": "Spreadsheet and database tools",
+          "explanation": "Spreadsheets and databases allow creation and manipulation of tables and charts."
+        },
+        {
+          "question": "How is transcription used in the office?",
+          "options": [
+            "To convert spoken information into written form accurately",
+            "To ignore meetings",
+            "To summarize inaccurately",
+            "To skip documentation"
+          ],
+          "correctAnswer": "To convert spoken information into written form accurately",
+          "explanation": "Transcription ensures proper record-keeping and communication."
+        },
+        {
+          "question": "Why is creating and editing a database important?",
+          "options": [
+            "To confuse staff",
+            "To store and retrieve data efficiently",
+            "To replace spreadsheets entirely",
+            "To reduce information accessibility"
+          ],
+          "correctAnswer": "To store and retrieve data efficiently",
+          "explanation": "Databases allow organized storage, quick access, and reporting."
+        },
+        {
+          "question": "What is the benefit of integrating multiple software applications?",
+          "options": [
+            "To slow down processes",
+            "To combine data for comprehensive analysis",
+            "To confuse users",
+            "To create duplicate records"
+          ],
+          "correctAnswer": "To combine data for comprehensive analysis",
+          "explanation": "Integration streamlines workflows and ensures consistency across tools."
+        },
+        {
+          "question": "Why is proofreading important in document processing?",
+          "options": [
+            "To introduce errors",
+            "To ensure accuracy and professionalism",
+            "To delay publication",
+            "To ignore content quality"
+          ],
+          "correctAnswer": "To ensure accuracy and professionalism",
+          "explanation": "Proofreading prevents mistakes and improves document credibility."
+        },
+        {
+          "question": "Which action demonstrates effective use of collaborative applications?",
+          "options": [
+            "Sharing files and communicating efficiently with a team",
+            "Ignoring collaboration tools",
+            "Overwriting others' work",
+            "Avoiding group communication"
+          ],
+          "correctAnswer": "Sharing files and communicating efficiently with a team",
+          "explanation": "Collaborative tools enhance productivity and teamwork."
+        },
+        {
+          "question": "How does scanning improve information processing?",
+          "options": [
+            "Creates clutter",
+            "Converts physical documents to digital format for easier access",
+            "Destroys original documents unnecessarily",
+            "Confuses staff"
+          ],
+          "correctAnswer": "Converts physical documents to digital format for easier access",
+          "explanation": "Scanning reduces physical storage needs and improves data accessibility."
+        },
+        {
+          "question": "Why is creating visual aids important for presentations?",
+          "options": [
+            "To distract the audience",
+            "To support and clarify messages",
+            "To replace all text",
+            "To confuse viewers"
+          ],
+          "correctAnswer": "To support and clarify messages",
+          "explanation": "Visual aids enhance understanding and retention of information."
+        },
+        {
+          "question": "Which step ensures accurate data extraction from software?",
+          "options": [
+            "Random selection",
+            "Using search queries and generating reports",
+            "Ignoring verification",
+            "Skipping steps"
+          ],
+          "correctAnswer": "Using search queries and generating reports",
+          "explanation": "Proper extraction ensures meaningful and reliable data."
+        },
+        {
+          "question": "Why is it important to convert documents between software programs?",
+          "options": [
+            "To maintain compatibility and accessibility across platforms",
+            "To confuse staff",
+            "To waste time",
+            "To delete original content"
+          ],
+          "correctAnswer": "To maintain compatibility and accessibility across platforms",
+          "explanation": "Conversion allows files to be used effectively on different systems and applications."
+        }
+      ]
+    }
+  ]
+}
