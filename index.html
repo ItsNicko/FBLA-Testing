@@ -237,6 +237,39 @@
           }
         },
       };
+
+      // accounts helper: read/write accounts/{uid}
+      window.accounts = {
+        async get(uid) {
+          if (!uid) throw new Error("missing uid");
+          const dref = doc(db, "accounts", uid);
+          const snap = await getDoc(dref);
+          return snap && snap.exists() ? snap.data() : null;
+        },
+        async set(uid, data, options = { merge: true }) {
+          if (!uid) throw new Error("missing uid");
+          const dref = doc(db, "accounts", uid);
+          await setDoc(
+            dref,
+            data,
+            options && options.merge ? { merge: true } : undefined
+          );
+          return true;
+        },
+      };
+
+      // writeLog wrapper for convenience
+      window.writeLog = async function (action, context) {
+        if (!action) throw new Error("missing action");
+        const id = `${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
+        const dref = doc(db, "logs", id);
+        await setDoc(dref, {
+          action,
+          context: context || {},
+          timestamp: serverTimestamp(),
+        });
+        return true;
+      };
     </script>
   </head>
   <body>
@@ -373,6 +406,9 @@
             <button id="loginBtn">Log In</button>
             <button id="logoutBtn" style="display: none">Log Out</button>
           </div>
+          <div style="margin-top: 12px">
+            <button id="viewProfileBtn">View Public Profile</button>
+          </div>
           <div
             id="authStatus"
             style="margin-top: 8px; color: var(--muted, #6b7280)"
@@ -383,7 +419,7 @@
 
     <select id="testSelect"></select>
     <button id="startBtn" onclick="startTest()">Start Test</button>
-    <button id="endBtn" onclick="endTest()" style="display: none">
+    <button id="endBtn" onclick="endEarly()" style="display: none">
       End Test Now
     </button>
 
