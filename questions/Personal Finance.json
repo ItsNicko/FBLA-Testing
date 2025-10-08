@@ -17,12 +17,7 @@
         },
         {
           "question": "What percentage of income is commonly recommended to save?",
-          "options": [
-            "10-20%",
-            "0%",
-            "90%",
-            "50-60%"
-          ],
+          "options": ["10-20%", "0%", "90%", "50-60%"],
           "correctAnswer": "10-20%",
           "explanation": "Many advisors suggest saving 10-20% of income for goals and retirement."
         },
@@ -146,28 +141,6 @@
           ],
           "correctAnswer": "When debt interest exceeds expected investment returns",
           "explanation": "Paying off expensive debt often yields higher guaranteed returns than typical investments."
-        },
-        {
-          "question": "Which of the following best explains Budgeting and Saving?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Budgeting and Saving?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
         }
       ]
     },
@@ -305,39 +278,6 @@
           ],
           "correctAnswer": "Lower risk and more liquidity",
           "explanation": "Money market accounts balance yield with liquidity and low risk compared to stocks."
-        },
-        {
-          "question": "Which of the following best explains Banking and Accounts?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Banking and Accounts?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Banking and Accounts?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
         }
       ]
     },
@@ -464,39 +404,6 @@
           ],
           "correctAnswer": "Usually yes, if fees and terms are favorable",
           "explanation": "Consolidation can reduce total interest and simplify payments when structured properly."
-        },
-        {
-          "question": "Which of the following best explains Credit and Debt?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Credit and Debt?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Credit and Debt?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
         }
       ]
     },
@@ -590,72 +497,6 @@
           ],
           "correctAnswer": "Ability to take more risk for higher expected returns",
           "explanation": "Younger investors can usually afford higher volatility due to longer investment horizons."
-        },
-        {
-          "question": "Which of the following best explains Investing Basics?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Investing Basics?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Investing Basics?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Investing Basics?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Investing Basics?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Investing Basics?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
         }
       ]
     },
@@ -749,72 +590,6 @@
           ],
           "correctAnswer": "If you have assets exceeding standard liability limits",
           "explanation": "Umbrella policies add extra liability protection above primary policy limits to protect net worth."
-        },
-        {
-          "question": "Which of the following best explains Insurance and Protection?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Insurance and Protection?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Insurance and Protection?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Insurance and Protection?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Insurance and Protection?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Insurance and Protection?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
         }
       ]
     },
@@ -908,72 +683,6 @@
           ],
           "correctAnswer": "Requires higher saving targets to maintain purchasing power",
           "explanation": "Planners must account for inflation when estimating future living costs to avoid shortfalls."
-        },
-        {
-          "question": "Which of the following best explains Retirement and Long-term Planning?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Retirement and Long-term Planning?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Retirement and Long-term Planning?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Retirement and Long-term Planning?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Retirement and Long-term Planning?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Retirement and Long-term Planning?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
         }
       ]
     },
@@ -1067,72 +776,6 @@
           ],
           "correctAnswer": "Receipts, charitable donation records, mortgage interest statements",
           "explanation": "Detailed records substantiate itemized deductions if required by tax authorities."
-        },
-        {
-          "question": "Which of the following best explains Consumer Protection and Taxes?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Consumer Protection and Taxes?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Consumer Protection and Taxes?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Consumer Protection and Taxes?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Consumer Protection and Taxes?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Consumer Protection and Taxes?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
         }
       ]
     }
