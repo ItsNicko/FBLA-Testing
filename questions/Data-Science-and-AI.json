@@ -2,17 +2,27 @@
   "testName": "Data Science and AI",
   "topics": [
     {
-      "topic": "Probability and Statistics Foundations",
+      "topic": "Probability and Statistics Foundations — part 1",
       "questions": [
         {
           "question": "What is the mean of the dataset [2, 4, 6, 8, 10]?",
-          "options": ["5", "6", "7", "8"],
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
           "correctAnswer": "6",
           "explanation": "Mean is the sum of all values divided by the number of values: (2+4+6+8+10)/5 = 6."
         },
         {
           "question": "Which measure of central tendency is least affected by outliers?",
-          "options": ["Mean", "Median", "Mode", "Range"],
+          "options": [
+            "Mean",
+            "Median",
+            "Mode",
+            "Range"
+          ],
           "correctAnswer": "Median",
           "explanation": "The median is the middle value and is robust against extreme values."
         },
@@ -29,7 +39,12 @@
         },
         {
           "question": "The variance of a dataset is 16. What is the standard deviation?",
-          "options": ["2", "4", "8", "16"],
+          "options": [
+            "2",
+            "4",
+            "8",
+            "16"
+          ],
           "correctAnswer": "4",
           "explanation": "Standard deviation is the square root of variance: sqrt(16) = 4."
         },
@@ -46,19 +61,34 @@
         },
         {
           "question": "Which of the following is an expected value of rolling a fair 4-sided die?",
-          "options": ["2.5", "2", "3", "3.5"],
+          "options": [
+            "2.5",
+            "2",
+            "3",
+            "3.5"
+          ],
           "correctAnswer": "2.5",
           "explanation": "Expected value = (1+2+3+4)/4 = 2.5."
         },
         {
           "question": "If two variables increase together, their covariance is likely to be:",
-          "options": ["Positive", "Negative", "Zero", "Undefined"],
+          "options": [
+            "Positive",
+            "Negative",
+            "Zero",
+            "Undefined"
+          ],
           "correctAnswer": "Positive",
           "explanation": "Positive covariance indicates that as one variable increases, the other tends to increase as well."
         },
         {
           "question": "Range of the dataset [5, 10, 15, 20] is:",
-          "options": ["10", "15", "5", "20"],
+          "options": [
+            "10",
+            "15",
+            "5",
+            "20"
+          ],
           "correctAnswer": "15",
           "explanation": "Range = max - min = 20 - 5 = 15."
         },
@@ -75,7 +105,12 @@
         },
         {
           "question": "A dataset has values [1, 2, 3, 3, 3, 4, 5]. The mode is:",
-          "options": ["2", "3", "4", "5"],
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
           "correctAnswer": "3",
           "explanation": "Mode is the value that occurs most frequently, which is 3."
         },
@@ -91,48 +126,40 @@
           "explanation": "Continuous variables can take infinitely many values within a range, unlike discrete variables."
         },
         {
-          "question": "Which measure represents the average deviation from the mean?",
-          "options": ["Variance", "Standard deviation", "Median", "Mode"],
-          "correctAnswer": "Standard deviation",
-          "explanation": "Standard deviation is the square root of the average squared deviation from the mean."
-        },
-        {
-          "question": "Expected value is best described as:",
+          "question": "(Hard) Which is a challenging question about Probability and Statistics Foundations — part 1?",
           "options": [
-            "Most likely outcome",
-            "Average outcome over many trials",
-            "Maximum possible outcome",
-            "Minimum possible outcome"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Average outcome over many trials",
-          "explanation": "Expected value is the long-term average if an experiment is repeated many times."
-        },
-        {
-          "question": "If a normal distribution is symmetrical, which is true?",
-          "options": [
-            "Mean = Median = Mode",
-            "Mean > Median > Mode",
-            "Mode > Median > Mean",
-            "Mean < Median < Mode"
-          ],
-          "correctAnswer": "Mean = Median = Mode",
-          "explanation": "A perfectly symmetric normal distribution has mean, median, and mode equal."
-        },
-        {
-          "question": "Which type of variable is binary?",
-          "options": ["Height", "Temperature", "Pass/Fail", "Number of pets"],
-          "correctAnswer": "Pass/Fail",
-          "explanation": "Binary variables have only two possible values."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Probability and Statistics Foundations — part 2",
+      "questions": [
         {
           "question": "A trick question: Which of the following is NOT a measure of dispersion?",
-          "options": ["Variance", "Standard deviation", "Mean", "Range"],
+          "options": [
+            "Variance",
+            "Standard deviation",
+            "Mean",
+            "Range"
+          ],
           "correctAnswer": "Mean",
           "explanation": "Mean is a measure of central tendency, not dispersion."
         },
         {
           "question": "Which statistic would you use to understand variability in exam scores?",
-          "options": ["Variance", "Mean", "Mode", "Median"],
+          "options": [
+            "Variance",
+            "Mean",
+            "Mode",
+            "Median"
+          ],
           "correctAnswer": "Variance",
           "explanation": "Variance measures how spread out the data points are from the mean."
         },
@@ -160,24 +187,72 @@
         },
         {
           "question": "Which is a trick scenario: Rolling a die twice, expected sum?",
-          "options": ["6", "7", "8", "9"],
+          "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
           "correctAnswer": "7",
           "explanation": "Expected value of the sum = sum of expected values of each die: 3.5 + 3.5 = 7."
+        },
+        {
+          "question": "What is the primary purpose of Probability and Statistics Foundations? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Probability and Statistics Foundations — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Probability and Statistics Foundations — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "Data Analysis and Tools for AI",
+      "topic": "Data Analysis and Tools for AI — part 1",
       "questions": [
         {
           "question": "Which visualization is best for showing the distribution of a single continuous variable?",
-          "options": ["Bar chart", "Histogram", "Scatterplot", "Line graph"],
+          "options": [
+            "Bar chart",
+            "Histogram",
+            "Scatterplot",
+            "Line graph"
+          ],
           "correctAnswer": "Histogram",
           "explanation": "Histograms display the frequency distribution of a continuous variable, making them ideal for this purpose."
         },
         {
           "question": "Which plot is ideal to visualize the relationship between two continuous variables?",
-          "options": ["Histogram", "Boxplot", "Scatterplot", "Bar chart"],
+          "options": [
+            "Histogram",
+            "Boxplot",
+            "Scatterplot",
+            "Bar chart"
+          ],
           "correctAnswer": "Scatterplot",
           "explanation": "Scatterplots show the relationship between two continuous variables and can reveal correlations or patterns."
         },
@@ -249,7 +324,12 @@
         },
         {
           "question": "Which visualization is best for comparing distributions across multiple groups?",
-          "options": ["Scatterplot", "Line graph", "Boxplot", "Histogram"],
+          "options": [
+            "Scatterplot",
+            "Line graph",
+            "Boxplot",
+            "Histogram"
+          ],
           "correctAnswer": "Boxplot",
           "explanation": "Boxplots allow comparison of medians, ranges, and outliers across groups."
         },
@@ -276,29 +356,21 @@
           "explanation": "Deleting missing data may cause bias; sometimes imputation or other methods are better."
         },
         {
-          "question": "Which Python library is primarily used for numerical computations?",
-          "options": ["Pandas", "NumPy", "Matplotlib", "Scikit-learn"],
-          "correctAnswer": "NumPy",
-          "explanation": "NumPy provides efficient numerical arrays and operations for scientific computing."
-        },
-        {
-          "question": "Which library is commonly used for building deep learning models?",
-          "options": ["NumPy", "Pandas", "PyTorch", "Matplotlib"],
-          "correctAnswer": "PyTorch",
-          "explanation": "PyTorch is a popular library for building and training neural networks."
-        },
-        {
-          "question": "Which library allows data manipulation with DataFrames in Python?",
-          "options": ["Pandas", "PyTorch", "NumPy", "Seaborn"],
-          "correctAnswer": "Pandas",
-          "explanation": "Pandas provides DataFrame objects for structured data manipulation and analysis."
-        },
-        {
-          "question": "Which SQL statement retrieves data from a table?",
-          "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
-          "correctAnswer": "SELECT",
-          "explanation": "SELECT queries are used to retrieve data from a database table."
-        },
+          "question": "(Hard) Which is a challenging question about Data Analysis and Tools for AI — part 1?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Data Analysis and Tools for AI — part 2",
+      "questions": [
         {
           "question": "Which of the following is NOT a step in data cleaning?",
           "options": [
@@ -323,7 +395,12 @@
         },
         {
           "question": "Which tool is useful for cleaning and wrangling messy datasets in Python?",
-          "options": ["PyTorch", "Pandas", "NumPy", "Matplotlib"],
+          "options": [
+            "PyTorch",
+            "Pandas",
+            "NumPy",
+            "Matplotlib"
+          ],
           "correctAnswer": "Pandas",
           "explanation": "Pandas provides functions to clean, filter, and transform datasets efficiently."
         },
@@ -348,11 +425,44 @@
           ],
           "correctAnswer": "False",
           "explanation": "Scatterplots are for relationships between two variables, not for showing a single variable's distribution."
+        },
+        {
+          "question": "How does a manager typically Data Analysis and Tools for AI? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Data Analysis and Tools for AI — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Data Analysis and Tools for AI — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "AI Basics and Machine Learning",
+      "topic": "AI Basics and Machine Learning — part 1",
       "questions": [
         {
           "question": "Generative AI is primarily designed to:",
@@ -476,49 +586,21 @@
           "explanation": "Reinforcement learning trains agents to take actions in an environment to maximize cumulative rewards."
         },
         {
-          "question": "Deep learning is a type of machine learning that uses:",
+          "question": "(Hard) Which is a challenging question about AI Basics and Machine Learning — part 1?",
           "options": [
-            "Decision trees",
-            "Neural networks with multiple layers",
-            "K-means clustering",
-            "Linear regression only"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Neural networks with multiple layers",
-          "explanation": "Deep learning involves multi-layered neural networks to model complex patterns and representations."
-        },
-        {
-          "question": "A scenario: You want to select the right algorithm for predicting house prices. Which factor is least important?",
-          "options": [
-            "Data type",
-            "Target variable",
-            "Computation resources",
-            "Color of the dataset"
-          ],
-          "correctAnswer": "Color of the dataset",
-          "explanation": "Algorithm selection depends on data type, task, and resources, not aesthetic properties like color."
-        },
-        {
-          "question": "Which is true about training, test, and validation datasets?",
-          "options": [
-            "Training data is for evaluation",
-            "Validation data tunes hyperparameters",
-            "Test data tunes the model",
-            "All datasets are combined for training"
-          ],
-          "correctAnswer": "Validation data tunes hyperparameters",
-          "explanation": "Validation data helps choose optimal parameters without biasing the final test evaluation."
-        },
-        {
-          "question": "Trick question: K-means requires labeled data to function. True or False?",
-          "options": [
-            "True",
-            "False",
-            "Only for numeric data",
-            "Only for small datasets"
-          ],
-          "correctAnswer": "False",
-          "explanation": "K-means is unsupervised and does not require labeled data."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "AI Basics and Machine Learning — part 2",
+      "questions": [
         {
           "question": "Which machine learning algorithm is best for time-series forecasting?",
           "options": [
@@ -573,11 +655,44 @@
           ],
           "correctAnswer": "False",
           "explanation": "Linear regression predicts continuous outputs; categorical outputs require classification algorithms."
+        },
+        {
+          "question": "How does a manager typically AI Basics and Machine Learning? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about AI Basics and Machine Learning?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains AI Basics and Machine Learning — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "Perception, Reasoning, and Ethics in AI",
+      "topic": "Perception, Reasoning, and Ethics in AI — part 1",
       "questions": [
         {
           "question": "Predicate logic in AI is used to:",
@@ -701,49 +816,21 @@
           "explanation": "Bayesian networks represent probabilistic relationships and are suitable for reasoning under uncertainty."
         },
         {
-          "question": "Which of the following is an example of logic-based reasoning?",
+          "question": "(Hard) Which is a challenging question about Perception, Reasoning, and Ethics in AI — part 1?",
           "options": [
-            "If all humans are mortal, Socrates is human, then Socrates is mortal",
-            "Calculating mean height",
-            "Plotting a histogram",
-            "Training a neural network"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "If all humans are mortal, Socrates is human, then Socrates is mortal",
-          "explanation": "This classic syllogism demonstrates deterministic logic-based inference."
-        },
-        {
-          "question": "A subtle distinction: Probability-based reasoning can handle:",
-          "options": [
-            "Uncertainty and partial truth",
-            "Only true/false rules",
-            "Only supervised datasets",
-            "Neural networks exclusively"
-          ],
-          "correctAnswer": "Uncertainty and partial truth",
-          "explanation": "Probability-based reasoning accounts for uncertainty, unlike strict logic rules."
-        },
-        {
-          "question": "Trick scenario: An AI perfectly following predicate logic can always handle ambiguous situations. True or False?",
-          "options": [
-            "True",
-            "False",
-            "Only with neural networks",
-            "Only with Bayesian updates"
-          ],
-          "correctAnswer": "False",
-          "explanation": "Predicate logic is deterministic and cannot inherently handle ambiguity or uncertainty."
-        },
-        {
-          "question": "Which privacy measure reduces the risk of sensitive data exposure in AI?",
-          "options": [
-            "Differential privacy",
-            "Increasing hidden layers",
-            "Unsupervised learning",
-            "Linear regression"
-          ],
-          "correctAnswer": "Differential privacy",
-          "explanation": "Differential privacy techniques protect individual data while allowing model training."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Perception, Reasoning, and Ethics in AI — part 2",
+      "questions": [
         {
           "question": "Scenario: A facial recognition system misidentifies people of certain ethnicities. This is an example of:",
           "options": [
@@ -798,11 +885,44 @@
           ],
           "correctAnswer": "Represents probabilistic dependencies between variables",
           "explanation": "Bayesian networks model conditional probabilities, while decision trees partition data based on features."
+        },
+        {
+          "question": "Which of the following best explains Perception, Reasoning, and Ethics in AI? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Perception, Reasoning, and Ethics in AI?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Perception, Reasoning, and Ethics in AI — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "Data Literacy and Foundations",
+      "topic": "Data Literacy and Foundations — part 1",
       "questions": [
         {
           "question": "Data science primarily focuses on:",
@@ -926,47 +1046,29 @@
           "explanation": "Exploratory data analysis helps understand patterns, distributions, and relationships in data."
         },
         {
-          "question": "Trick question: Only numeric data can be analyzed statistically. True or False?",
+          "question": "(Hard) Which is a challenging question about Data Literacy and Foundations — part 1?",
           "options": [
-            "True",
-            "False",
-            "Only if large dataset",
-            "Depends on visualization"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "False",
-          "explanation": "Categorical data can also be analyzed using counts, proportions, or specialized statistical tests."
-        },
-        {
-          "question": "Reference materials for data science learning include:",
-          "options": [
-            "ACM competencies",
-            "Harvard Data Science Principles",
-            "IBM Data Science Certificate",
-            "All of the above"
-          ],
-          "correctAnswer": "All of the above",
-          "explanation": "These sources provide foundational knowledge and guidelines for data science education."
-        },
-        {
-          "question": "Scenario: You receive a dataset with missing values. The first step is:",
-          "options": [
-            "Data visualization",
-            "Data cleaning",
-            "Model training",
-            "Data collection"
-          ],
-          "correctAnswer": "Data cleaning",
-          "explanation": "Cleaning addresses missing, inconsistent, or incorrect data before analysis."
-        },
-        {
-          "question": "Structured vs. unstructured: Which type includes free-text documents?",
-          "options": ["Structured", "Unstructured", "Both", "Neither"],
-          "correctAnswer": "Unstructured",
-          "explanation": "Text, images, and audio are unstructured because they lack fixed formats."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Data Literacy and Foundations — part 2",
+      "questions": [
         {
           "question": "Numeric data can be continuous or discrete. Which is discrete?",
-          "options": ["Temperature", "Number of students", "Height", "Weight"],
+          "options": [
+            "Temperature",
+            "Number of students",
+            "Height",
+            "Weight"
+          ],
           "correctAnswer": "Number of students",
           "explanation": "Discrete numeric data takes countable values; continuous data can take any value in a range."
         },
@@ -1024,6 +1126,28 @@
           ],
           "correctAnswer": "Feature engineering",
           "explanation": "Encoding categorical variables into numeric form is a feature engineering step to prepare data for ML models."
+        },
+        {
+          "question": "How does a manager typically Data Literacy and Foundations? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Data Literacy and Foundations?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     }

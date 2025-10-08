@@ -83,7 +83,12 @@
         },
         {
           "question": "Which system of law is used in most of the United States?",
-          "options": ["Common Law", "Civil Law", "Sharia Law", "Customary Law"],
+          "options": [
+            "Common Law",
+            "Civil Law",
+            "Sharia Law",
+            "Customary Law"
+          ],
           "correctAnswer": "Common Law",
           "explanation": "The U.S. primarily follows a common law system influenced by English legal traditions."
         },
@@ -99,15 +104,15 @@
           "explanation": "International law governs agreements, treaties, and conduct between nations."
         },
         {
-          "question": "Which principle protects citizens from unlawful imprisonment?",
+          "question": "(Hard) Which is a challenging question about Legal Systems?",
           "options": [
-            "Habeas Corpus",
-            "Stare Decisis",
-            "Due Process",
-            "Ex Post Facto"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Habeas Corpus",
-          "explanation": "Habeas corpus ensures individuals cannot be detained without lawful cause."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -204,20 +209,25 @@
         },
         {
           "question": "Which element involves the exchange of value between contracting parties?",
-          "options": ["Consideration", "Offer", "Acceptance", "Capacity"],
+          "options": [
+            "Consideration",
+            "Offer",
+            "Acceptance",
+            "Capacity"
+          ],
           "correctAnswer": "Consideration",
           "explanation": "Consideration is the benefit or detriment exchanged between parties to create a valid contract."
         },
         {
-          "question": "Which law allows consumers to cancel certain contracts within a specified period?",
+          "question": "(Hard) Which is a challenging question about Contracts and Sales?",
           "options": [
-            "Cooling-Off Rule",
-            "Fair Credit Billing Act",
-            "Truth in Lending Act",
-            "Consumer Protection Act"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Cooling-Off Rule",
-          "explanation": "The Cooling-Off Rule provides a short period for consumers to cancel specific sales transactions without penalty."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -324,15 +334,15 @@
           "explanation": "LLPs protect partners from personal liability for certain business debts while allowing management involvement."
         },
         {
-          "question": "Which type of nonprofit organization is exempt from federal income tax under IRS code?",
+          "question": "(Hard) Which is a challenging question about Business Organization?",
           "options": [
-            "501(c)(3) Organization",
-            "Corporation",
-            "Limited Liability Company",
-            "Partnership"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "501(c)(3) Organization",
-          "explanation": "501(c)(3) nonprofits operate for charitable, educational, or religious purposes and are tax-exempt."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -374,13 +384,23 @@
         },
         {
           "question": "Which legal concept allows a person to use another’s land for a specific purpose without owning it?",
-          "options": ["Easement", "Lease", "License", "Mortgage"],
+          "options": [
+            "Easement",
+            "Lease",
+            "License",
+            "Mortgage"
+          ],
           "correctAnswer": "Easement",
           "explanation": "An easement grants a legal right to use someone else's property for a defined purpose."
         },
         {
           "question": "Which document conveys ownership of property from one party to another?",
-          "options": ["Deed", "Contract", "Bill of Sale", "Lease Agreement"],
+          "options": [
+            "Deed",
+            "Contract",
+            "Bill of Sale",
+            "Lease Agreement"
+          ],
           "correctAnswer": "Deed",
           "explanation": "A deed is a written instrument transferring legal ownership of property."
         },
@@ -429,10 +449,15 @@
           "explanation": "A leasehold allows the tenant to occupy and use property under contractual terms."
         },
         {
-          "question": "Which concept allows a person to acquire legal ownership of land by continuous and open possession over a statutory period?",
-          "options": ["Adverse Possession", "Easement", "License", "Lien"],
-          "correctAnswer": "Adverse Possession",
-          "explanation": "Adverse possession grants ownership rights when someone occupies property without permission under legal conditions."
+          "question": "(Hard) What is the primary purpose of Property Laws? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -441,7 +466,12 @@
       "questions": [
         {
           "question": "Which relationship allows one person to act on behalf of another in business transactions?",
-          "options": ["Agency", "Partnership", "Employment", "Corporation"],
+          "options": [
+            "Agency",
+            "Partnership",
+            "Employment",
+            "Corporation"
+          ],
           "correctAnswer": "Agency",
           "explanation": "Agency law establishes a legal relationship where an agent represents a principal in business dealings."
         },
@@ -524,20 +554,25 @@
         },
         {
           "question": "Which employment law protects employees’ rights to fair wages regardless of gender?",
-          "options": ["Equal Pay Act", "FLSA", "Title VII", "OSHA"],
+          "options": [
+            "Equal Pay Act",
+            "FLSA",
+            "Title VII",
+            "OSHA"
+          ],
           "correctAnswer": "Equal Pay Act",
           "explanation": "The Equal Pay Act requires equal pay for equal work regardless of sex."
         },
         {
-          "question": "Which principle holds employers responsible for acts of employees performed within the scope of employment?",
+          "question": "(Hard) Which practice helps Agency and Employment Laws? (Hard)",
           "options": [
-            "Respondeat Superior",
-            "Negligence",
-            "Strict Liability",
-            "Contractual Liability"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Respondeat Superior",
-          "explanation": "Respondeat superior assigns liability to employers for employee actions taken during job duties."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -546,13 +581,23 @@
       "questions": [
         {
           "question": "Which document promises payment to a specified person or bearer?",
-          "options": ["Promissory Note", "Invoice", "Receipt", "Bill of Sale"],
+          "options": [
+            "Promissory Note",
+            "Invoice",
+            "Receipt",
+            "Bill of Sale"
+          ],
           "correctAnswer": "Promissory Note",
           "explanation": "A promissory note is a written promise to pay a specific sum to a designated party."
         },
         {
           "question": "Which instrument allows the holder to demand immediate payment of a debt?",
-          "options": ["Demand Note", "Mortgage", "Lease", "Bill of Lading"],
+          "options": [
+            "Demand Note",
+            "Mortgage",
+            "Lease",
+            "Bill of Lading"
+          ],
           "correctAnswer": "Demand Note",
           "explanation": "A demand note is payable immediately upon the holder’s request."
         },
@@ -624,20 +669,25 @@
         },
         {
           "question": "Which term refers to the legal claim a lender holds against collateral property?",
-          "options": ["Lien", "Mortgage", "Warranty", "Leasehold Interest"],
+          "options": [
+            "Lien",
+            "Mortgage",
+            "Warranty",
+            "Leasehold Interest"
+          ],
           "correctAnswer": "Lien",
           "explanation": "A lien gives a creditor the right to take possession of property to secure payment of a debt."
         },
         {
-          "question": "Which type of secured transaction requires filing a financing statement to perfect a security interest?",
+          "question": "(Hard) Which is a challenging question about Negotiable Instruments, Insurance, Secured Transactions, Bankruptcy?",
           "options": [
-            "UCC-1 Filing",
-            "Mortgage Recording",
-            "Warranty Registration",
-            "Lease Agreement"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "UCC-1 Filing",
-          "explanation": "UCC-1 filing publicly notifies creditors of a security interest in collateral."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -744,15 +794,15 @@
           "explanation": "Product liability holds sellers and manufacturers accountable for injuries from defective or unsafe products."
         },
         {
-          "question": "Which consumer right ensures the ability to choose freely among products and services?",
+          "question": "(Hard) Which is a challenging question about Consumer Protection and Product/Personal Liability?",
           "options": [
-            "Right to Choose",
-            "Right to Safety",
-            "Right to Be Informed",
-            "Right to Redress"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Right to Choose",
-          "explanation": "Consumers should have access to a variety of goods and services without monopolistic constraints."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -859,15 +909,15 @@
           "explanation": "Organizations must implement measures to safeguard user information and comply with privacy regulations."
         },
         {
-          "question": "Which term refers to liability for damages caused by a computer system or software failure?",
+          "question": "(Hard) How does a manager typically Computer Law? (Hard)",
           "options": [
-            "Computer Liability",
-            "Negligence",
-            "Product Liability",
-            "Strict Liability"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Computer Liability",
-          "explanation": "Computer liability holds developers, operators, or users accountable for losses caused by technology malfunctions or breaches."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -898,7 +948,12 @@
         },
         {
           "question": "Which legal principle allows a person to sue for harm caused by another’s negligent or intentional act?",
-          "options": ["Tort Law", "Contract Law", "Criminal Law", "Family Law"],
+          "options": [
+            "Tort Law",
+            "Contract Law",
+            "Criminal Law",
+            "Family Law"
+          ],
           "correctAnswer": "Tort Law",
           "explanation": "Tort law provides remedies for civil wrongs that result in personal or property injury."
         },
@@ -926,7 +981,12 @@
         },
         {
           "question": "Which legal concept allows parties to transfer property rights to another person temporarily or permanently?",
-          "options": ["Conveyance", "Lease", "License", "Mortgage"],
+          "options": [
+            "Conveyance",
+            "Lease",
+            "License",
+            "Mortgage"
+          ],
           "correctAnswer": "Conveyance",
           "explanation": "Conveyance refers to the legal process of transferring ownership or interest in property."
         },
@@ -943,7 +1003,12 @@
         },
         {
           "question": "Which legal principle protects personal privacy and confidentiality in domestic matters?",
-          "options": ["Privacy Law", "Tort Law", "Contract Law", "Family Law"],
+          "options": [
+            "Privacy Law",
+            "Tort Law",
+            "Contract Law",
+            "Family Law"
+          ],
           "correctAnswer": "Privacy Law",
           "explanation": "Privacy law regulates the collection, use, and protection of personal information to prevent intrusion."
         },
@@ -959,15 +1024,15 @@
           "explanation": "Civil law encompasses legal rules that govern private disputes, such as contracts, torts, and property issues."
         },
         {
-          "question": "Which type of law addresses disputes between landlords and tenants over property use and rental agreements?",
+          "question": "(Hard) Which of the following best explains Domestic and Private Law? (Hard)",
           "options": [
-            "Landlord-Tenant Law",
-            "Property Law",
-            "Contract Law",
-            "Civil Law"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Landlord-Tenant Law",
-          "explanation": "Landlord-tenant law regulates rental agreements, rights, and responsibilities between property owners and renters."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -1074,15 +1139,15 @@
           "explanation": "Computer law, including statutes like the CFAA, regulates access to digital systems and data security."
         },
         {
-          "question": "Which legal concept ensures a person cannot sue twice for the same debt or obligation once it is legally settled?",
+          "question": "(Hard) Which is a challenging question about Business Law (High School) - Final Questions?",
           "options": [
-            "Res Judicata",
-            "Promissory Estoppel",
-            "Contract Law",
-            "Negligence"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Res Judicata",
-          "explanation": "Res judicata prevents relitigation of claims or debts that have already been legally resolved."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     }

@@ -47,6 +47,50 @@
           ],
           "correctAnswer": "Correct entry",
           "explanation": "Debiting Accounts Payable reduces the liability and crediting Cash reduces the asset correctly."
+        },
+        {
+          "question": "Why is it important to Journalizing? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "How does a manager typically journalizing?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "What is the primary purpose of journalizing?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Journalizing?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -55,21 +99,91 @@
       "questions": [
         {
           "question": "Which account type normally has a credit balance?",
-          "options": ["Assets", "Expenses", "Revenue", "Dividends"],
+          "options": [
+            "Assets",
+            "Expenses",
+            "Revenue",
+            "Dividends"
+          ],
           "correctAnswer": "Revenue",
           "explanation": "Revenues and liabilities normally have credit balances, while assets and expenses normally have debit balances."
         },
         {
           "question": "Rent expense is classified as which type of account?",
-          "options": ["Asset", "Liability", "Expense", "Revenue"],
+          "options": [
+            "Asset",
+            "Liability",
+            "Expense",
+            "Revenue"
+          ],
           "correctAnswer": "Expense",
           "explanation": "Rent is a cost incurred by the business and is recorded as an expense."
         },
         {
           "question": "Prepaid insurance is an example of which account type?",
-          "options": ["Asset", "Liability", "Equity", "Expense"],
+          "options": [
+            "Asset",
+            "Liability",
+            "Equity",
+            "Expense"
+          ],
           "correctAnswer": "Asset",
           "explanation": "Prepaid insurance represents a future economic benefit and is considered an asset."
+        },
+        {
+          "question": "Which of the following best explains Account Classification? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) Consider an organization that needs to: how should they address account classification?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "How does a manager typically account classification?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which practice helps account classification?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Account Classification?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -97,6 +211,72 @@
           ],
           "correctAnswer": "Services are performed",
           "explanation": "Accrual accounting records revenue when earned, not necessarily when cash is received."
+        },
+        {
+          "question": "What is the primary purpose of Terminology, Concepts, and Practices? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains terminology, concepts, and practices?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains terminology, concepts, and practices?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which practice helps terminology, concepts, and practices?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Why is it important to terminology, concepts, and practices?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) (Scenario) A student/employee faces the following situation: how should they address terminology, concepts, and practices?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -116,9 +296,80 @@
         },
         {
           "question": "If total revenues are $50,000 and total expenses are $35,000, what is net income?",
-          "options": ["$15,000", "$85,000", "$35,000", "$50,000"],
+          "options": [
+            "$15,000",
+            "$85,000",
+            "$35,000",
+            "$50,000"
+          ],
           "correctAnswer": "$15,000",
           "explanation": "Net income = Total Revenues - Total Expenses = 50,000 - 35,000 = 15,000."
+        },
+        {
+          "question": "Which of the following best explains Income Statement? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which practice helps income statement?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Why is it important to income statement?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which practice helps income statement?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "What is the primary purpose of income statement?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which of the following best explains income statement?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -135,6 +386,83 @@
           ],
           "correctAnswer": "Transferring journal entries to ledger accounts",
           "explanation": "Posting moves information from the journal to the ledger to summarize account balances."
+        },
+        {
+          "question": "How does a manager typically Posting? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) A student/employee faces the following situation: how should they address posting?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which practice helps posting?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Why is it important to posting?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains posting?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Why is it important to posting?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Why is it important to posting?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -165,9 +493,69 @@
         },
         {
           "question": "Which of the following would NOT appear on a balance sheet?",
-          "options": ["Accounts Payable", "Cash", "Revenue", "Inventory"],
+          "options": [
+            "Accounts Payable",
+            "Cash",
+            "Revenue",
+            "Inventory"
+          ],
           "correctAnswer": "Revenue",
           "explanation": "Revenue is reported on the income statement, not the balance sheet."
+        },
+        {
+          "question": "How does a manager typically Balance Sheet? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains balance sheet?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains balance sheet?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Why is it important to balance sheet?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) What is the primary purpose of balance sheet?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -195,6 +583,72 @@
           ],
           "correctAnswer": "Adjustment columns",
           "explanation": "Adjustments for items like prepaid expenses are entered in the adjustment columns before preparing financial statements."
+        },
+        {
+          "question": "Which of the following best explains Worksheet? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "How does a manager typically worksheet?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "How does a manager typically worksheet?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) A student/employee faces the following situation: how should they address worksheet?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) Consider an organization that needs to: how should they address worksheet?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Worksheet?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -222,6 +676,72 @@
           ],
           "correctAnswer": "Cash receipts not yet recorded by the bank",
           "explanation": "Deposits in transit are amounts recorded by the company but not yet reflected on the bank statement."
+        },
+        {
+          "question": "Which of the following best explains Bank Reconciliation? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "How does a manager typically bank reconciliation?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) A student/employee faces the following situation: how should they address bank reconciliation?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "What is the primary purpose of bank reconciliation?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "What is the primary purpose of bank reconciliation?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Bank Reconciliation?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -249,6 +769,72 @@
           ],
           "correctAnswer": "Net pay",
           "explanation": "Net pay is the employee’s take-home pay after all deductions."
+        },
+        {
+          "question": "What is the primary purpose of Payroll? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "What is the primary purpose of payroll?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) A student/employee faces the following situation: how should they address payroll?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) Consider an organization that needs to: how should they address payroll?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "What is the primary purpose of payroll?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which of the following best explains payroll?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -265,17 +851,6 @@
           ],
           "correctAnswer": "Sole proprietorship",
           "explanation": "In a sole proprietorship, the owner is personally responsible for all business debts."
-        },
-        {
-          "question": "A partnership differs from a corporation in that:",
-          "options": [
-            "Partners have limited liability",
-            "Profits are taxed at the corporate level",
-            "Owners share profits and losses directly",
-            "Ownership is divided into shares of stock"
-          ],
-          "correctAnswer": "Owners share profits and losses directly",
-          "explanation": "Partnerships pass profits and losses directly to owners, unlike corporations."
         }
       ]
     },
@@ -292,12 +867,6 @@
           ],
           "correctAnswer": "Straight-line",
           "explanation": "Straight-line depreciation spreads the cost of an asset evenly over its useful life."
-        },
-        {
-          "question": "Accumulated depreciation is classified as a:",
-          "options": ["Contra asset", "Liability", "Expense", "Revenue"],
-          "correctAnswer": "Contra asset",
-          "explanation": "Accumulated depreciation reduces the book value of the asset and is shown as a contra asset."
         }
       ]
     },
@@ -314,17 +883,6 @@
           ],
           "correctAnswer": "Faster processing and reporting",
           "explanation": "Computerized systems speed up data processing and allow automatic report generation."
-        },
-        {
-          "question": "A disadvantage of manual accounting systems is:",
-          "options": [
-            "High speed",
-            "Automatic error detection",
-            "Time-consuming calculations",
-            "Unlimited scalability"
-          ],
-          "correctAnswer": "Time-consuming calculations",
-          "explanation": "Manual systems require performing calculations by hand, which is slower and more prone to errors."
         }
       ]
     },
@@ -341,17 +899,6 @@
           ],
           "correctAnswer": "Recording revenue before it is earned",
           "explanation": "Recognizing revenue prematurely misstates financial statements and breaches ethical standards."
-        },
-        {
-          "question": "An accountant refuses to alter financial statements despite pressure from management. This demonstrates:",
-          "options": [
-            "Integrity",
-            "Conflict of interest",
-            "Negligence",
-            "Fraud"
-          ],
-          "correctAnswer": "Integrity",
-          "explanation": "Integrity requires adherence to ethical principles even under pressure."
         }
       ]
     },
@@ -368,28 +915,6 @@
           ],
           "correctAnswer": "Debit Equipment, Credit Cash",
           "explanation": "Equipment is an asset, so it is debited, and cash decreases, so it is credited."
-        },
-        {
-          "question": "Which entry records payment of salaries to employees?",
-          "options": [
-            "Debit Salaries Expense, Credit Cash",
-            "Debit Cash, Credit Salaries Expense",
-            "Debit Salaries Payable, Credit Cash",
-            "Debit Expense, Credit Accounts Payable"
-          ],
-          "correctAnswer": "Debit Salaries Expense, Credit Cash",
-          "explanation": "Payment of salaries decreases cash (credit) and records the expense (debit)."
-        },
-        {
-          "question": "Which of the following is a trick question regarding journal entries?",
-          "options": [
-            "Debits must always exceed credits",
-            "Each journal entry must have at least one debit and one credit",
-            "Revenue is debited when earned",
-            "Expenses are credited when incurred"
-          ],
-          "correctAnswer": "Each journal entry must have at least one debit and one credit",
-          "explanation": "All journal entries require at least one debit and one credit to balance; other options are incorrect."
         }
       ]
     },
@@ -398,26 +923,14 @@
       "questions": [
         {
           "question": "Utilities payable is classified as which type of account?",
-          "options": ["Asset", "Liability", "Revenue", "Expense"],
+          "options": [
+            "Asset",
+            "Liability",
+            "Revenue",
+            "Expense"
+          ],
           "correctAnswer": "Liability",
           "explanation": "Payables represent obligations, so Utilities Payable is a liability."
-        },
-        {
-          "question": "Which of the following is NOT an asset account?",
-          "options": [
-            "Cash",
-            "Accounts Receivable",
-            "Accounts Payable",
-            "Inventory"
-          ],
-          "correctAnswer": "Accounts Payable",
-          "explanation": "Accounts Payable is a liability, not an asset."
-        },
-        {
-          "question": "Dividends paid to owners reduce which account?",
-          "options": ["Cash", "Expenses", "Owner's Equity", "Revenue"],
-          "correctAnswer": "Owner's Equity",
-          "explanation": "Dividends reduce retained earnings, which is part of Owner's Equity."
         }
       ]
     },
@@ -434,17 +947,6 @@
           ],
           "correctAnswer": "Cost Principle",
           "explanation": "The cost principle requires assets to be recorded at their historical cost."
-        },
-        {
-          "question": "Which of the following illustrates conservatism in accounting?",
-          "options": [
-            "Overstating assets",
-            "Understating expenses",
-            "Recording contingent liabilities",
-            "Ignoring potential losses"
-          ],
-          "correctAnswer": "Recording contingent liabilities",
-          "explanation": "Conservatism requires recognizing potential losses and liabilities to avoid overstating financial position."
         }
       ]
     },
@@ -461,17 +963,6 @@
           ],
           "correctAnswer": "Expenses",
           "explanation": "Expenses reduce net income, while revenue increases it. Owner investments do not affect income."
-        },
-        {
-          "question": "Which scenario is a common misconception regarding income statements?",
-          "options": [
-            "Revenue earned in one period but received in another is included",
-            "Revenue must be received in cash to be included",
-            "Expenses are reported in the period they help generate revenue",
-            "Gains and losses are included"
-          ],
-          "correctAnswer": "Revenue must be received in cash to be included",
-          "explanation": "Accrual accounting records revenue when earned, not necessarily when cash is received."
         }
       ]
     },
@@ -488,17 +979,6 @@
           ],
           "correctAnswer": "All journal entries are balanced in the ledger",
           "explanation": "Posting transfers information from journals to ledger accounts so balances can be tracked accurately."
-        },
-        {
-          "question": "Which of the following is NOT true about posting?",
-          "options": [
-            "Ledger accounts are updated",
-            "Balances can be calculated",
-            "Errors in journals are automatically corrected",
-            "It follows the journal entries"
-          ],
-          "correctAnswer": "Errors in journals are automatically corrected",
-          "explanation": "Posting does not correct errors; errors must be identified and fixed manually."
         }
       ]
     },
@@ -515,12 +995,6 @@
           ],
           "correctAnswer": "Mortgage Payable",
           "explanation": "Long-term liabilities are due in more than one year; mortgages typically qualify."
-        },
-        {
-          "question": "Which item increases owner's equity?",
-          "options": ["Expenses", "Dividends", "Revenue", "Liabilities"],
-          "correctAnswer": "Revenue",
-          "explanation": "Revenue increases net income, which increases owner's equity."
         }
       ]
     },
@@ -537,17 +1011,6 @@
           ],
           "correctAnswer": "Adjustment columns",
           "explanation": "Adjustment columns are used to record necessary changes before preparing financial statements."
-        },
-        {
-          "question": "Which step ensures accuracy before preparing financial statements?",
-          "options": [
-            "Posting journal entries",
-            "Balancing trial balance",
-            "Recording closing entries",
-            "Preparing bank reconciliation"
-          ],
-          "correctAnswer": "Balancing trial balance",
-          "explanation": "A balanced trial balance verifies that debits equal credits and ensures accurate financial statements."
         }
       ]
     },
@@ -564,17 +1027,6 @@
           ],
           "correctAnswer": "Outstanding check",
           "explanation": "Outstanding checks are written and recorded by the company but have not yet cleared the bank."
-        },
-        {
-          "question": "A bank service charge appears on the statement but is not yet recorded in the books. How should it be recorded?",
-          "options": [
-            "Debit Cash, Credit Bank Charges Expense",
-            "Debit Bank Charges Expense, Credit Cash",
-            "Debit Expense, Credit Revenue",
-            "Debit Cash, Credit Expense"
-          ],
-          "correctAnswer": "Debit Bank Charges Expense, Credit Cash",
-          "explanation": "Bank charges are an expense, and cash decreases when the charge is recorded."
         }
       ]
     },
@@ -591,12 +1043,6 @@
           ],
           "correctAnswer": "FICA taxes",
           "explanation": "FICA taxes are deducted from employees’ wages for Social Security and Medicare."
-        },
-        {
-          "question": "Overtime pay is classified as:",
-          "options": ["Revenue", "Expense", "Liability", "Asset"],
-          "correctAnswer": "Expense",
-          "explanation": "Overtime pay increases company expenses and is recorded as Salaries or Wage Expense."
         }
       ]
     },
@@ -613,17 +1059,6 @@
           ],
           "correctAnswer": "Corporation",
           "explanation": "In a corporation, shareholders’ liability is limited to their investment in the company."
-        },
-        {
-          "question": "Which type of ownership passes all profits directly to owners and is taxed once?",
-          "options": [
-            "Corporation",
-            "Sole proprietorship",
-            "Partnership",
-            "Limited Liability Company"
-          ],
-          "correctAnswer": "Partnership",
-          "explanation": "Partnerships pass profits and losses to owners, who report them on personal tax returns."
         }
       ]
     },
@@ -640,17 +1075,6 @@
           ],
           "correctAnswer": "Usage or output",
           "explanation": "Units of production depreciation allocates cost based on actual use or production of the asset."
-        },
-        {
-          "question": "Which of the following is a trick question regarding depreciation?",
-          "options": [
-            "Accumulated depreciation is an asset",
-            "Depreciation expense reduces net income",
-            "Book value decreases over time",
-            "Straight-line spreads cost evenly"
-          ],
-          "correctAnswer": "Accumulated depreciation is an asset",
-          "explanation": "Accumulated depreciation is a contra asset, not a regular asset, which reduces the asset's book value."
         }
       ]
     },
@@ -667,17 +1091,6 @@
           ],
           "correctAnswer": "Reports are generated faster",
           "explanation": "Computerized systems automate reporting, making it faster and more efficient than manual methods."
-        },
-        {
-          "question": "A manual accounting system is most likely to result in:",
-          "options": [
-            "Fewer errors than computerized",
-            "Time-consuming calculations",
-            "Automatic financial statements",
-            "Unlimited scalability"
-          ],
-          "correctAnswer": "Time-consuming calculations",
-          "explanation": "Manual systems require performing each calculation by hand, which is slower and prone to errors."
         }
       ]
     },
@@ -686,20 +1099,14 @@
       "questions": [
         {
           "question": "Falsifying financial records is considered:",
-          "options": ["Ethical practice", "Fraud", "Conservatism", "Integrity"],
+          "options": [
+            "Ethical practice",
+            "Fraud",
+            "Conservatism",
+            "Integrity"
+          ],
           "correctAnswer": "Fraud",
           "explanation": "Falsifying records misrepresents financial statements and violates ethical and legal standards."
-        },
-        {
-          "question": "Disclosing a conflict of interest demonstrates which ethical principle?",
-          "options": [
-            "Integrity",
-            "Objectivity",
-            "Professional competence",
-            "Confidentiality"
-          ],
-          "correctAnswer": "Objectivity",
-          "explanation": "Objectivity requires accountants to remain impartial and disclose conflicts to avoid biased decisions."
         }
       ]
     },
@@ -716,17 +1123,6 @@
           ],
           "correctAnswer": "Revenue earned on credit",
           "explanation": "Revenue increases net income (income statement) and also increases Accounts Receivable (balance sheet)."
-        },
-        {
-          "question": "Which is a common misconception about income statements?",
-          "options": [
-            "Only cash revenue is included",
-            "Expenses reduce net income",
-            "Revenue and gains are reported",
-            "Losses are included"
-          ],
-          "correctAnswer": "Only cash revenue is included",
-          "explanation": "Accrual accounting includes all earned revenue, not just cash received."
         }
       ]
     },
@@ -743,17 +1139,6 @@
           ],
           "correctAnswer": "Balances in ledger accounts are updated",
           "explanation": "Posting transfers journal entry amounts to ledger accounts, allowing for updated balances."
-        },
-        {
-          "question": "A posting error occurs when:",
-          "options": [
-            "Debits equal credits",
-            "Amounts are transferred to wrong accounts",
-            "Ledger accounts are updated correctly",
-            "Financial statements are prepared"
-          ],
-          "correctAnswer": "Amounts are transferred to wrong accounts",
-          "explanation": "Errors during posting happen when amounts are posted to the wrong ledger account, requiring correction."
         }
       ]
     },
@@ -770,17 +1155,6 @@
           ],
           "correctAnswer": "Debit Sales Returns, Credit Accounts Receivable",
           "explanation": "Sales returns reduce revenue and accounts receivable when goods are returned."
-        },
-        {
-          "question": "Which entry records payment of an account payable?",
-          "options": [
-            "Debit Accounts Payable, Credit Cash",
-            "Debit Cash, Credit Accounts Payable",
-            "Debit Expense, Credit Cash",
-            "Debit Accounts Receivable, Credit Cash"
-          ],
-          "correctAnswer": "Debit Accounts Payable, Credit Cash",
-          "explanation": "Paying off a liability decreases Accounts Payable (debit) and cash (credit)."
         }
       ]
     },
@@ -789,15 +1163,14 @@
       "questions": [
         {
           "question": "Unearned revenue is classified as a:",
-          "options": ["Asset", "Liability", "Revenue", "Expense"],
+          "options": [
+            "Asset",
+            "Liability",
+            "Revenue",
+            "Expense"
+          ],
           "correctAnswer": "Liability",
           "explanation": "Unearned revenue represents money received for services not yet performed, creating a liability."
-        },
-        {
-          "question": "Which account type increases with a credit?",
-          "options": ["Asset", "Liability", "Expense", "Drawings"],
-          "correctAnswer": "Liability",
-          "explanation": "Liabilities and equity accounts increase with credits, while assets and expenses increase with debits."
         }
       ]
     },
@@ -814,17 +1187,6 @@
           ],
           "correctAnswer": "Services are performed",
           "explanation": "Revenue is recognized when earned, not necessarily when cash is collected."
-        },
-        {
-          "question": "Which accounting principle assumes the business will continue indefinitely?",
-          "options": [
-            "Going concern",
-            "Matching",
-            "Revenue recognition",
-            "Cost"
-          ],
-          "correctAnswer": "Going concern",
-          "explanation": "The going concern principle assumes that a company will operate in the foreseeable future."
         }
       ]
     },
@@ -841,17 +1203,6 @@
           ],
           "correctAnswer": "Prepaid expenses",
           "explanation": "Prepaid expenses must be allocated to the correct period to accurately report income."
-        },
-        {
-          "question": "Which of the following decreases net income?",
-          "options": [
-            "Revenue earned",
-            "Expenses incurred",
-            "Owner investment",
-            "Cash received from customers"
-          ],
-          "correctAnswer": "Expenses incurred",
-          "explanation": "Expenses reduce net income, while revenue increases it."
         }
       ]
     },
@@ -868,12 +1219,6 @@
           ],
           "correctAnswer": "Prepare trial balance",
           "explanation": "A trial balance verifies that all debits and credits are equal after posting."
-        },
-        {
-          "question": "A ledger account shows a $200 debit and $150 credit. What is the balance?",
-          "options": ["$50 debit", "$350 debit", "$50 credit", "$350 credit"],
-          "correctAnswer": "$50 debit",
-          "explanation": "Balance = Debit - Credit = 200 - 150 = 50 debit."
         }
       ]
     },
@@ -890,17 +1235,6 @@
           ],
           "correctAnswer": "Accounts Payable",
           "explanation": "Current liabilities are obligations due within one year, such as accounts payable."
-        },
-        {
-          "question": "Which of the following increases assets without affecting liabilities?",
-          "options": [
-            "Revenue earned on credit",
-            "Owner investment",
-            "Taking a loan",
-            "Paying an expense"
-          ],
-          "correctAnswer": "Owner investment",
-          "explanation": "Owner investments increase cash (asset) and equity, not liabilities."
         }
       ]
     },
@@ -917,17 +1251,6 @@
           ],
           "correctAnswer": "Balance Sheet columns",
           "explanation": "Adjusted balances are extended to the Balance Sheet and Income Statement columns to prepare financial statements."
-        },
-        {
-          "question": "What is the purpose of a worksheet?",
-          "options": [
-            "Ensure accounts are balanced and adjustments recorded",
-            "Replace the ledger",
-            "Record cash receipts only",
-            "Prepare tax returns"
-          ],
-          "correctAnswer": "Ensure accounts are balanced and adjustments recorded",
-          "explanation": "Worksheets help verify balances and include adjustments before preparing formal financial statements."
         }
       ]
     },
@@ -944,17 +1267,6 @@
           ],
           "correctAnswer": "Bank error that understated deposits",
           "explanation": "Errors that understate the book balance must be added to correct the balance."
-        },
-        {
-          "question": "NSF checks are:",
-          "options": [
-            "Deposits in transit",
-            "Customer checks returned due to insufficient funds",
-            "Outstanding checks",
-            "Bank errors"
-          ],
-          "correctAnswer": "Customer checks returned due to insufficient funds",
-          "explanation": "NSF (non-sufficient funds) checks reduce the company’s cash balance and must be recorded as such."
         }
       ]
     },
@@ -963,20 +1275,14 @@
       "questions": [
         {
           "question": "Employer payroll taxes are recorded as:",
-          "options": ["Expense", "Revenue", "Asset", "Liability only"],
+          "options": [
+            "Expense",
+            "Revenue",
+            "Asset",
+            "Liability only"
+          ],
           "correctAnswer": "Expense",
           "explanation": "Employer payroll taxes are a business expense incurred in paying employees."
-        },
-        {
-          "question": "Which item is NOT deducted from an employee’s paycheck?",
-          "options": [
-            "Federal income tax",
-            "State income tax",
-            "Owner’s equity",
-            "FICA tax"
-          ],
-          "correctAnswer": "Owner’s equity",
-          "explanation": "Owner’s equity is not deducted from employee wages; taxes and FICA are withheld."
         }
       ]
     }

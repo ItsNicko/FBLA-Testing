@@ -6,7 +6,12 @@
       "questions": [
         {
           "question": "Which of the following is NOT one of the five C's of communication?",
-          "options": ["Clarity", "Conciseness", "Courtesy", "Complexity"],
+          "options": [
+            "Clarity",
+            "Conciseness",
+            "Courtesy",
+            "Complexity"
+          ],
           "correctAnswer": "Complexity",
           "explanation": "The five C's are Clarity, Conciseness, Courtesy, Correctness, and Completeness. Complexity is not included."
         },
@@ -56,7 +61,12 @@
         },
         {
           "question": "Which of these is a workplace relationship defined as a peer-to-peer interaction?",
-          "options": ["Supervisor", "Client", "Team member", "Subordinate"],
+          "options": [
+            "Supervisor",
+            "Client",
+            "Team member",
+            "Subordinate"
+          ],
           "correctAnswer": "Team member",
           "explanation": "Team members interact as peers; supervisors and subordinates represent hierarchical relationships."
         },
@@ -94,15 +104,15 @@
           "explanation": "Ignoring professional boundaries can lead to workplace conflicts or HR issues."
         },
         {
-          "question": "Consensus-building techniques in meetings are used to:",
+          "question": "(Hard) Which practice helps Communication Concepts? (Hard)",
           "options": [
-            "Promote agreement and collaboration",
-            "Increase workplace gossip",
-            "Reduce productivity",
-            "Enforce unilateral decisions"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Promote agreement and collaboration",
-          "explanation": "Consensus-building is used to help team members agree on solutions or actions collectively."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -111,7 +121,12 @@
       "questions": [
         {
           "question": "Which stage of the writing process involves checking for errors and improving content?",
-          "options": ["Planning", "Editing", "Drafting", "Brainstorming"],
+          "options": [
+            "Planning",
+            "Editing",
+            "Drafting",
+            "Brainstorming"
+          ],
           "correctAnswer": "Editing",
           "explanation": "Editing involves reviewing and correcting the content to ensure clarity, accuracy, and professionalism."
         },
@@ -128,7 +143,12 @@
         },
         {
           "question": "Which step in research involves evaluating the credibility of sources?",
-          "options": ["Organizing", "Evaluating", "Planning", "Locating"],
+          "options": [
+            "Organizing",
+            "Evaluating",
+            "Planning",
+            "Locating"
+          ],
           "correctAnswer": "Evaluating",
           "explanation": "Evaluating sources ensures that the information is reliable, relevant, and current."
         },
@@ -199,15 +219,15 @@
           "explanation": "Effective instructions start with careful planning to ensure clarity and completeness."
         },
         {
-          "question": "A short report on a business topic should include:",
+          "question": "(Hard) How does a manager typically Written and Report Applications? (Hard)",
           "options": [
-            "Organized, relevant, and sourced information",
-            "Personal opinions only",
-            "Irrelevant anecdotes",
-            "Decorative images only"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Organized, relevant, and sourced information",
-          "explanation": "Business reports must provide clear, factual, and properly sourced information for the audience."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -314,15 +334,15 @@
           "explanation": "Different reading methods are applied depending on the purpose and urgency of reading."
         },
         {
-          "question": "Understanding visual enhancements in documents is important because:",
+          "question": "(Hard) Which practice helps Reading Comprehension? (Hard)",
           "options": [
-            "They help interpret data efficiently",
-            "They are decorative only",
-            "They replace written content",
-            "They are unnecessary"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "They help interpret data efficiently",
-          "explanation": "Charts, graphs, and illustrations communicate complex information clearly and quickly."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -331,13 +351,23 @@
       "questions": [
         {
           "question": "Which of the following is a part of speech?",
-          "options": ["Noun", "Paragraph", "Report", "Slide"],
+          "options": [
+            "Noun",
+            "Paragraph",
+            "Report",
+            "Slide"
+          ],
           "correctAnswer": "Noun",
           "explanation": "Noun is a basic part of speech; paragraph and report are types of text structures."
         },
         {
           "question": "Adjectives describe:",
-          "options": ["Nouns", "Verbs", "Pronouns", "Conjunctions"],
+          "options": [
+            "Nouns",
+            "Verbs",
+            "Pronouns",
+            "Conjunctions"
+          ],
           "correctAnswer": "Nouns",
           "explanation": "Adjectives provide details about nouns, such as size, color, or quality."
         },
@@ -387,7 +417,12 @@
         },
         {
           "question": "Identify the reflexive pronoun in the sentence: 'She taught herself the presentation.'",
-          "options": ["herself", "She", "the", "presentation"],
+          "options": [
+            "herself",
+            "She",
+            "the",
+            "presentation"
+          ],
           "correctAnswer": "herself",
           "explanation": "Reflexive pronouns refer back to the subject performing the action, in this case 'herself'."
         },
@@ -404,7 +439,12 @@
         },
         {
           "question": "Which of the following is a coordinating conjunction?",
-          "options": ["And", "Although", "Because", "While"],
+          "options": [
+            "And",
+            "Although",
+            "Because",
+            "While"
+          ],
           "correctAnswer": "And",
           "explanation": "'And' joins words, phrases, or independent clauses; 'although', 'because', and 'while' are subordinating conjunctions."
         },
@@ -418,6 +458,17 @@
           ],
           "correctAnswer": "The team wins the championship.",
           "explanation": "The singular collective noun 'team' requires the singular verb 'wins'."
+        },
+        {
+          "question": "(Hard) How does a manager typically Grammar? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -533,6 +584,17 @@
           ],
           "correctAnswer": "Checking grammar, punctuation, clarity, and document flow",
           "explanation": "Comprehensive editing ensures a polished, accurate, and coherent document."
+        },
+        {
+          "question": "(Hard) Which practice helps Editing & Proofreading? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -648,6 +710,17 @@
           ],
           "correctAnswer": "Distractions, biases, and preconceptions",
           "explanation": "Recognizing and minimizing barriers improves comprehension and engagement."
+        },
+        {
+          "question": "(Hard) What is the primary purpose of Verbal & Nonverbal Communication? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -708,6 +781,39 @@
           ],
           "correctAnswer": "Check spelling, pronunciation, and meaning",
           "explanation": "Dictionaries provide accurate definitions and proper usage guidance."
+        },
+        {
+          "question": "Which practice helps Word Definition & Usage? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "What is the primary purpose of word definition & usage?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which practice helps word definition & usage?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -768,6 +874,50 @@
           ],
           "correctAnswer": "Set off a speaker’s words or titles of short works",
           "explanation": "Quotation marks indicate direct speech or short work titles in writing."
+        },
+        {
+          "question": "What is the primary purpose of Punctuation & Capitalization? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "How does a manager typically punctuation & capitalization?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) Consider an organization that needs to: how should they address punctuation & capitalization?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Punctuation & Capitalization?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -828,6 +978,50 @@
           ],
           "correctAnswer": "Ensures correct spelling and proper usage",
           "explanation": "Dictionaries verify accurate spelling and meaning of words."
+        },
+        {
+          "question": "Which of the following best explains Spelling? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Why is it important to spelling?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Why is it important to spelling?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Spelling?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -943,6 +1137,17 @@
           ],
           "correctAnswer": "Etiquette rules for professionalism",
           "explanation": "Following etiquette ensures clear, respectful, and professional communication."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Digital Communications?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     }

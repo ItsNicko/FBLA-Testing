@@ -2,7 +2,7 @@
   "testName": "Cybersecurity",
   "topics": [
     {
-      "topic": "Security Fundamentals",
+      "topic": "Security Fundamentals — part 1",
       "questions": [
         {
           "question": "Which of the following best defines cybersecurity?",
@@ -72,98 +72,31 @@
         },
         {
           "question": "Which of the following is an example of a security control?",
-          "options": ["Firewall", "Mouse", "Word processor", "Printer"],
+          "options": [
+            "Firewall",
+            "Mouse",
+            "Word processor",
+            "Printer"
+          ],
           "correctAnswer": "Firewall",
           "explanation": "Firewalls are controls that filter and block unauthorized network traffic to protect systems."
         },
         {
-          "question": "The principle of least privilege ensures:",
+          "question": "(Hard) Which is a challenging question about Security Fundamentals — part 1?",
           "options": [
-            "Users have only the access necessary for their roles",
-            "All users have administrator access",
-            "No encryption is used",
-            "Everyone shares passwords"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Users have only the access necessary for their roles",
-          "explanation": "Limiting access reduces the potential damage from compromised accounts."
-        },
-        {
-          "question": "Which of the following is a common misconception about cybersecurity?",
-          "options": [
-            "Antivirus software alone guarantees complete security",
-            "Updating software patches improves security",
-            "Strong passwords reduce risk",
-            "Firewalls protect networks from attacks"
-          ],
-          "correctAnswer": "Antivirus software alone guarantees complete security",
-          "explanation": "Antivirus is just one layer; multiple security measures are necessary for protection."
-        },
-        {
-          "question": "Social engineering attacks primarily target:",
-          "options": [
-            "Human users",
-            "Servers",
-            "Firewall configurations",
-            "Encryption algorithms"
-          ],
-          "correctAnswer": "Human users",
-          "explanation": "Social engineering exploits human trust to gain access to sensitive information."
-        },
-        {
-          "question": "Physical security measures, such as locked doors and keycards, help to protect:",
-          "options": [
-            "Hardware and sensitive areas",
-            "Software code",
-            "Network traffic",
-            "Email content"
-          ],
-          "correctAnswer": "Hardware and sensitive areas",
-          "explanation": "Physical security prevents unauthorized access to critical devices and facilities."
-        },
-        {
-          "question": "Cybersecurity awareness training is important because:",
-          "options": [
-            "Humans are often the weakest link in security",
-            "It eliminates all cyber threats",
-            "It increases internet speed",
-            "It replaces antivirus software"
-          ],
-          "correctAnswer": "Humans are often the weakest link in security",
-          "explanation": "Training helps users recognize and avoid phishing, social engineering, and other threats."
-        },
-        {
-          "question": "Which of the following is a security best practice?",
-          "options": [
-            "Regularly updating software and systems",
-            "Using default passwords",
-            "Sharing credentials freely",
-            "Disabling firewalls"
-          ],
-          "correctAnswer": "Regularly updating software and systems",
-          "explanation": "Updates and patches fix vulnerabilities and reduce the risk of exploitation."
-        },
-        {
-          "question": "A strong password should include:",
-          "options": [
-            "Letters, numbers, and special characters",
-            "Only lowercase letters",
-            "Only numbers",
-            "A repeated single character"
-          ],
-          "correctAnswer": "Letters, numbers, and special characters",
-          "explanation": "Complex passwords are harder for attackers to guess or brute-force."
-        },
-        {
-          "question": "Two-factor authentication provides additional security by requiring:",
-          "options": [
-            "Two forms of verification",
-            "Two passwords",
-            "Two devices",
-            "Two networks"
-          ],
-          "correctAnswer": "Two forms of verification",
-          "explanation": "Two-factor authentication combines something you know (password) and something you have (device or token) to verify identity."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Security Fundamentals — part 2",
+      "questions": [
         {
           "question": "A security policy is important because it:",
           "options": [
@@ -174,11 +107,88 @@
           ],
           "correctAnswer": "Defines rules and expectations for protecting systems",
           "explanation": "Policies guide organizational behavior and ensure consistent security practices."
+        },
+        {
+          "question": "How does a manager typically Security Fundamentals? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Security Fundamentals?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Security Fundamentals — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security Fundamentals — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security Fundamentals — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security Fundamentals — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security Fundamentals — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "Cyber Threats and Vulnerabilities",
+      "topic": "Cyber Threats and Vulnerabilities — part 1",
       "questions": [
         {
           "question": "A phishing attack is best described as:",
@@ -193,7 +203,12 @@
         },
         {
           "question": "Which type of malware is designed to replicate itself and spread to other systems?",
-          "options": ["Virus", "Spyware", "Adware", "Firewall"],
+          "options": [
+            "Virus",
+            "Spyware",
+            "Adware",
+            "Firewall"
+          ],
           "correctAnswer": "Virus",
           "explanation": "A virus attaches itself to programs or files and spreads when executed, unlike spyware or adware."
         },
@@ -253,93 +268,21 @@
           "explanation": "DoS attacks flood servers or networks with traffic, preventing legitimate access."
         },
         {
-          "question": "Which of the following is a social engineering attack?",
+          "question": "(Hard) Which is a challenging question about Cyber Threats and Vulnerabilities — part 1?",
           "options": [
-            "Pretexting",
-            "Virus infection",
-            "Firewall misconfiguration",
-            "Packet sniffing"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Pretexting",
-          "explanation": "Pretexting tricks someone into revealing confidential information under false pretenses."
-        },
-        {
-          "question": "Brute-force attacks attempt to:",
-          "options": [
-            "Guess passwords through repeated attempts",
-            "Encrypt data securely",
-            "Scan for network vulnerabilities",
-            "Update security patches automatically"
-          ],
-          "correctAnswer": "Guess passwords through repeated attempts",
-          "explanation": "Brute-force attacks try every possible combination until the correct password is found."
-        },
-        {
-          "question": "SQL injection is a type of attack that targets:",
-          "options": [
-            "Databases",
-            "Email servers",
-            "Physical security systems",
-            "Web browsers only"
-          ],
-          "correctAnswer": "Databases",
-          "explanation": "SQL injection exploits web application input to manipulate database queries and access unauthorized data."
-        },
-        {
-          "question": "Cross-site scripting (XSS) attacks aim to:",
-          "options": [
-            "Inject malicious scripts into web pages",
-            "Steal physical documents",
-            "Disable antivirus software",
-            "Monitor network routers"
-          ],
-          "correctAnswer": "Inject malicious scripts into web pages",
-          "explanation": "XSS allows attackers to execute scripts in a victim's browser, potentially stealing data or credentials."
-        },
-        {
-          "question": "A common vulnerability in outdated software is:",
-          "options": [
-            "Unpatched security flaws",
-            "Encrypted data storage",
-            "Strong authentication",
-            "Firewall protection"
-          ],
-          "correctAnswer": "Unpatched security flaws",
-          "explanation": "Software that is not updated often contains known vulnerabilities that attackers can exploit."
-        },
-        {
-          "question": "Man-in-the-middle attacks involve:",
-          "options": [
-            "Intercepting communication between two parties",
-            "Sending spam emails",
-            "Installing antivirus software",
-            "Backing up data"
-          ],
-          "correctAnswer": "Intercepting communication between two parties",
-          "explanation": "Attackers secretly relay or alter communication between two parties without their knowledge."
-        },
-        {
-          "question": "Which of the following best describes a worm?",
-          "options": [
-            "A self-replicating malware that spreads without user interaction",
-            "A virus that requires email",
-            "A firewall rule",
-            "A software update"
-          ],
-          "correctAnswer": "A self-replicating malware that spreads without user interaction",
-          "explanation": "Worms propagate automatically across networks, unlike viruses that often need a host file."
-        },
-        {
-          "question": "Rootkits are dangerous because they:",
-          "options": [
-            "Hide malicious software from detection",
-            "Speed up system performance",
-            "Encrypt files for safety",
-            "Update antivirus automatically"
-          ],
-          "correctAnswer": "Hide malicious software from detection",
-          "explanation": "Rootkits conceal malware and give attackers continued access without being detected."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Cyber Threats and Vulnerabilities — part 2",
+      "questions": [
         {
           "question": "Which type of attack exploits software vulnerabilities to gain elevated access?",
           "options": [
@@ -350,11 +293,88 @@
           ],
           "correctAnswer": "Privilege escalation",
           "explanation": "Privilege escalation allows attackers to gain higher-level permissions, often leading to full system control."
+        },
+        {
+          "question": "Why is it important to Cyber Threats and Vulnerabilities? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Cyber Threats and Vulnerabilities — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Cyber Threats and Vulnerabilities — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Cyber Threats and Vulnerabilities — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Cyber Threats and Vulnerabilities — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Cyber Threats and Vulnerabilities — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Cyber Threats and Vulnerabilities — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "Security and Design",
+      "topic": "Security and Design — part 1",
       "questions": [
         {
           "question": "Which of the following is a principle of secure system design?",
@@ -434,40 +454,7 @@
           "explanation": "Identifying potential threats and reviewing code early reduces vulnerabilities."
         },
         {
-          "question": "Fail-safe defaults in system design mean:",
-          "options": [
-            "Access is denied by default until explicitly granted",
-            "All features are available by default",
-            "Passwords are not required",
-            "Firewalls are disabled"
-          ],
-          "correctAnswer": "Access is denied by default until explicitly granted",
-          "explanation": "Default-deny reduces the risk of unauthorized access if permissions are not correctly set."
-        },
-        {
-          "question": "Secure design documentation helps:",
-          "options": [
-            "Provide a reference for implementing and auditing security controls",
-            "Speed up system performance",
-            "Reduce storage usage",
-            "Eliminate malware automatically"
-          ],
-          "correctAnswer": "Provide a reference for implementing and auditing security controls",
-          "explanation": "Documenting security design ensures consistency and accountability."
-        },
-        {
-          "question": "Which principle requires systems to be open only to necessary communication?",
-          "options": [
-            "Least privilege and need-to-know",
-            "Open access",
-            "User-friendly design",
-            "Maximum compatibility"
-          ],
-          "correctAnswer": "Least privilege and need-to-know",
-          "explanation": "Restricting communication limits potential attack vectors and exposure."
-        },
-        {
-          "question": "Hardening a system involves:",
+          "question": "(Hard) Hardening a system involves:",
           "options": [
             "Reducing vulnerabilities by configuring securely",
             "Adding more features",
@@ -476,51 +463,12 @@
           ],
           "correctAnswer": "Reducing vulnerabilities by configuring securely",
           "explanation": "System hardening strengthens security by removing unnecessary services and applying proper configurations."
-        },
-        {
-          "question": "A common mistake in security design is:",
-          "options": [
-            "Assuming all users are trustworthy",
-            "Encrypting sensitive data",
-            "Logging all security events",
-            "Applying security patches"
-          ],
-          "correctAnswer": "Assuming all users are trustworthy",
-          "explanation": "Trust assumptions can lead to insider threats or exploitation of weak access controls."
-        },
-        {
-          "question": "Secure defaults mean:",
-          "options": [
-            "Systems start in the most restrictive configuration",
-            "All features are enabled by default",
-            "No password required initially",
-            "Logging is turned off"
-          ],
-          "correctAnswer": "Systems start in the most restrictive configuration",
-          "explanation": "Secure defaults reduce exposure until access is properly configured."
-        },
-        {
-          "question": "Threat modeling is used to:",
-          "options": [
-            "Identify potential security risks during system design",
-            "Test system performance",
-            "Optimize network speed",
-            "Create user manuals"
-          ],
-          "correctAnswer": "Identify potential security risks during system design",
-          "explanation": "Threat modeling proactively examines how attackers could exploit a system to implement countermeasures."
-        },
-        {
-          "question": "Redundancy in system design improves:",
-          "options": [
-            "Availability and reliability",
-            "User interface design",
-            "Encryption strength",
-            "Firewall efficiency"
-          ],
-          "correctAnswer": "Availability and reliability",
-          "explanation": "Redundant components prevent downtime if one part of the system fails."
-        },
+        }
+      ]
+    },
+    {
+      "topic": "Security and Design — part 2",
+      "questions": [
         {
           "question": "A honeypot is used to:",
           "options": [
@@ -531,15 +479,97 @@
           ],
           "correctAnswer": "Attract and monitor attackers",
           "explanation": "Honeypots are decoy systems used to detect, deflect, or study attacks."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Security and Design — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Security and Design — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security and Design — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security and Design — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security and Design — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security and Design — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security and Design — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "Network and Data Security",
+      "topic": "Network and Data Security — part 1",
       "questions": [
         {
           "question": "Which device is primarily used to segment a network and control traffic between segments?",
-          "options": ["Router", "Switch", "Firewall", "Hub"],
+          "options": [
+            "Router",
+            "Switch",
+            "Firewall",
+            "Hub"
+          ],
           "correctAnswer": "Firewall",
           "explanation": "A firewall monitors and controls incoming and outgoing network traffic based on security rules, protecting network segments."
         },
@@ -578,7 +608,12 @@
         },
         {
           "question": "Which protocol is used to securely transfer files over a network?",
-          "options": ["SFTP", "FTP", "HTTP", "SMTP"],
+          "options": [
+            "SFTP",
+            "FTP",
+            "HTTP",
+            "SMTP"
+          ],
           "correctAnswer": "SFTP",
           "explanation": "SFTP (Secure File Transfer Protocol) encrypts both authentication and data transfer, unlike plain FTP."
         },
@@ -605,88 +640,21 @@
           "explanation": "Data moving over networks is vulnerable to interception and must be encrypted for security."
         },
         {
-          "question": "Which network device directs traffic between different networks?",
-          "options": ["Router", "Switch", "Hub", "Firewall"],
-          "correctAnswer": "Router",
-          "explanation": "Routers manage traffic between networks, often using IP addressing to forward packets correctly."
-        },
-        {
-          "question": "A DMZ (Demilitarized Zone) is used to:",
+          "question": "(Hard) Which is a challenging question about Network and Data Security — part 1?",
           "options": [
-            "Isolate public-facing servers from internal networks",
-            "Increase Wi-Fi speed",
-            "Encrypt all data automatically",
-            "Replace firewalls"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Isolate public-facing servers from internal networks",
-          "explanation": "A DMZ provides a buffer zone where external users can access services without exposing internal networks."
-        },
-        {
-          "question": "Which security measure prevents unauthorized devices from connecting to a network?",
-          "options": [
-            "Network Access Control (NAC)",
-            "Encryption only",
-            "Firewall rules",
-            "VPN usage"
-          ],
-          "correctAnswer": "Network Access Control (NAC)",
-          "explanation": "NAC enforces security policies by allowing only compliant devices to access the network."
-        },
-        {
-          "question": "Intrusion Detection Systems (IDS) are used to:",
-          "options": [
-            "Detect suspicious network activity",
-            "Encrypt data",
-            "Manage user accounts",
-            "Back up databases"
-          ],
-          "correctAnswer": "Detect suspicious network activity",
-          "explanation": "IDS monitors network traffic for patterns that indicate possible attacks or policy violations."
-        },
-        {
-          "question": "Which of the following is a key principle of network security?",
-          "options": [
-            "Defense in depth",
-            "Maximum user access",
-            "Ignoring logs",
-            "Unrestricted public access"
-          ],
-          "correctAnswer": "Defense in depth",
-          "explanation": "Multiple security layers reduce the risk of a single point of failure being exploited."
-        },
-        {
-          "question": "Segmentation in networks helps to:",
-          "options": [
-            "Limit the spread of attacks and contain breaches",
-            "Increase internet speed",
-            "Automatically update software",
-            "Simplify passwords"
-          ],
-          "correctAnswer": "Limit the spread of attacks and contain breaches",
-          "explanation": "Dividing a network into segments isolates critical systems from potential attacks."
-        },
-        {
-          "question": "Which method ensures data integrity during transmission?",
-          "options": [
-            "Checksums and hashing",
-            "VPNs only",
-            "Physical locks",
-            "Firewall rules"
-          ],
-          "correctAnswer": "Checksums and hashing",
-          "explanation": "Checksums and hash functions detect changes in transmitted data to ensure integrity."
-        },
-        {
-          "question": "Secure wireless networks should use:",
-          "options": [
-            "WPA3 encryption",
-            "No password protection",
-            "WEP encryption",
-            "Open public access"
-          ],
-          "correctAnswer": "WPA3 encryption",
-          "explanation": "WPA3 provides strong encryption for wireless networks, protecting data from eavesdropping."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Network and Data Security — part 2",
+      "questions": [
         {
           "question": "A firewall can be configured to:",
           "options": [
@@ -697,11 +665,88 @@
           ],
           "correctAnswer": "Block or allow traffic based on rules",
           "explanation": "Firewalls control incoming and outgoing network traffic based on predefined security rules."
+        },
+        {
+          "question": "Which of the following best explains Network and Data Security? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Network and Data Security?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Network and Data Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Network and Data Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Network and Data Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Network and Data Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Network and Data Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "Security Operations and Management",
+      "topic": "Security Operations and Management — part 1 — part 1",
       "questions": [
         {
           "question": "Which practice involves continuously monitoring systems for security threats?",
@@ -781,93 +826,114 @@
           "explanation": "Change management ensures that updates and modifications do not introduce vulnerabilities."
         },
         {
-          "question": "A vulnerability assessment identifies:",
+          "question": "(Hard) Which is a challenging question about Security Operations and Management — part 1 — part 1?",
           "options": [
-            "Weaknesses in systems that could be exploited",
-            "User satisfaction scores",
-            "Network speed issues",
-            "Firewall rules only"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Weaknesses in systems that could be exploited",
-          "explanation": "Assessments evaluate security posture and help prioritize mitigation efforts."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Security Operations and Management — part 1 — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Security Operations and Management — part 1?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         },
         {
-          "question": "Patch management is critical because it:",
+          "question": "Which of the following best explains Security Operations and Management — part 1 — part 2?",
           "options": [
-            "Fixes known software vulnerabilities",
-            "Increases internet speed",
-            "Encrypts files automatically",
-            "Monitors social media accounts"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Fixes known software vulnerabilities",
-          "explanation": "Applying patches reduces the risk of attackers exploiting software flaws."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Log monitoring helps security teams:",
+          "question": "Which of the following best explains Security Operations and Management — part 1 — part 2?",
           "options": [
-            "Detect suspicious activity and investigate incidents",
-            "Install software updates",
-            "Encrypt files",
-            "Increase Wi-Fi speed"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Detect suspicious activity and investigate incidents",
-          "explanation": "Monitoring logs provides insight into potential attacks or policy violations."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Which of the following is part of risk management?",
+          "question": "Which of the following best explains Security Operations and Management — part 1 — part 2?",
           "options": [
-            "Identifying, assessing, and mitigating potential threats",
-            "Increasing hardware purchases",
-            "Deleting old files",
-            "Updating the website design"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Identifying, assessing, and mitigating potential threats",
-          "explanation": "Risk management proactively addresses threats before they can cause harm."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Business impact analysis is used to:",
+          "question": "Which of the following best explains Security Operations and Management — part 1 — part 2?",
           "options": [
-            "Determine the effect of disruptions on operations",
-            "Encrypt sensitive data",
-            "Improve firewall efficiency",
-            "Monitor user behavior"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Determine the effect of disruptions on operations",
-          "explanation": "It identifies critical functions and resources to prioritize during incident response and recovery."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Security awareness training helps:",
+          "question": "Which of the following best explains Security Operations and Management — part 1 — part 2?",
           "options": [
-            "Reduce human error and insider threats",
-            "Automatically block malware",
-            "Encrypt data at rest",
-            "Monitor network packets"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Reduce human error and insider threats",
-          "explanation": "Educating users about threats decreases risky behaviors that lead to security breaches."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Redundancy in security operations improves:",
+          "question": "Which of the following best explains Security Operations and Management — part 1 — part 2?",
           "options": [
-            "System availability and fault tolerance",
-            "Software development speed",
-            "UI design",
-            "Marketing analytics"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "System availability and fault tolerance",
-          "explanation": "Redundant systems ensure operations continue even if one component fails."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Continuous monitoring in security operations allows:",
+          "question": "Which of the following best explains Security Operations and Management — part 1 — part 2?",
           "options": [
-            "Real-time detection and response to threats",
-            "Faster website loading",
-            "Automated data entry",
-            "Reducing software updates"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Real-time detection and response to threats",
-          "explanation": "Monitoring systems continuously helps quickly identify and mitigate attacks."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Security Operations and Management — part 2",
+      "questions": [
         {
           "question": "Which metric is useful for measuring security operations effectiveness?",
           "options": [
@@ -878,15 +944,97 @@
           ],
           "correctAnswer": "Number of incidents detected and resolved",
           "explanation": "Tracking incidents indicates how well the security team identifies and addresses threats."
+        },
+        {
+          "question": "What is the primary purpose of Security Operations and Management? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Security Operations and Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security Operations and Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security Operations and Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security Operations and Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security Operations and Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Security Operations and Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "Security Protocols and Threat Mitigation",
+      "topic": "Security Protocols and Threat Mitigation — part 1 — part 1",
       "questions": [
         {
           "question": "Which protocol is commonly used to encrypt web traffic?",
-          "options": ["HTTPS", "HTTP", "FTP", "SMTP"],
+          "options": [
+            "HTTPS",
+            "HTTP",
+            "FTP",
+            "SMTP"
+          ],
           "correctAnswer": "HTTPS",
           "explanation": "HTTPS encrypts communication between a web browser and server to protect data from interception."
         },
@@ -903,7 +1051,12 @@
         },
         {
           "question": "Which authentication protocol is widely used for secure remote access?",
-          "options": ["RADIUS", "SMTP", "HTTP", "FTP"],
+          "options": [
+            "RADIUS",
+            "SMTP",
+            "HTTP",
+            "FTP"
+          ],
           "correctAnswer": "RADIUS",
           "explanation": "RADIUS (Remote Authentication Dial-In User Service) verifies users for network access securely."
         },
@@ -942,93 +1095,69 @@
         },
         {
           "question": "Which protocol is used to securely transfer files between systems?",
-          "options": ["SFTP", "FTP", "HTTP", "Telnet"],
+          "options": [
+            "SFTP",
+            "FTP",
+            "HTTP",
+            "Telnet"
+          ],
           "correctAnswer": "SFTP",
           "explanation": "SFTP encrypts both authentication and file transfer, unlike FTP which is unencrypted."
         },
         {
-          "question": "Firewall rules help mitigate threats by:",
+          "question": "(Hard) Which is a challenging question about Security Protocols and Threat Mitigation — part 1 — part 1?",
           "options": [
-            "Allowing or blocking traffic based on security policies",
-            "Encrypting files at rest",
-            "Monitoring CPU usage",
-            "Managing user passwords"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Allowing or blocking traffic based on security policies",
-          "explanation": "Firewalls control network traffic and prevent unauthorized access."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Security Protocols and Threat Mitigation — part 1 — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Security Protocols and Threat Mitigation — part 1?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         },
         {
-          "question": "Patch management helps mitigate threats by:",
+          "question": "Which of the following best explains Security Protocols and Threat Mitigation — part 1 — part 2?",
           "options": [
-            "Fixing known software vulnerabilities",
-            "Increasing network speed",
-            "Monitoring social media",
-            "Replacing firewalls"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Fixing known software vulnerabilities",
-          "explanation": "Applying patches closes security gaps that attackers could exploit."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Which type of attack is mitigated by input validation?",
-          "options": ["SQL injection", "DDoS", "Man-in-the-middle", "Phishing"],
-          "correctAnswer": "SQL injection",
-          "explanation": "Validating user input prevents attackers from injecting malicious SQL commands into databases."
-        },
-        {
-          "question": "Encryption keys should be rotated regularly to:",
+          "question": "Which of the following best explains Security Protocols and Threat Mitigation — part 1 — part 2?",
           "options": [
-            "Reduce the risk of compromise",
-            "Speed up network traffic",
-            "Monitor user activity",
-            "Increase storage space"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Reduce the risk of compromise",
-          "explanation": "Regularly changing keys limits exposure if a key is discovered or stolen."
-        },
-        {
-          "question": "Network segmentation helps mitigate threats by:",
-          "options": [
-            "Containing attacks to specific segments",
-            "Encrypting all data automatically",
-            "Disabling antivirus",
-            "Increasing internet speed"
-          ],
-          "correctAnswer": "Containing attacks to specific segments",
-          "explanation": "Segmentation limits how far attackers can move within a network."
-        },
-        {
-          "question": "Which practice ensures that only trusted software is installed on systems?",
-          "options": [
-            "Application whitelisting",
-            "Firewall configuration",
-            "Password management",
-            "VPN usage"
-          ],
-          "correctAnswer": "Application whitelisting",
-          "explanation": "Whitelisting allows only approved applications to run, reducing malware risk."
-        },
-        {
-          "question": "Anti-malware software is a key mitigation strategy because it:",
-          "options": [
-            "Detects, prevents, and removes malicious programs",
-            "Encrypts files automatically",
-            "Blocks all network traffic",
-            "Monitors CPU temperature"
-          ],
-          "correctAnswer": "Detects, prevents, and removes malicious programs",
-          "explanation": "Anti-malware tools help protect systems from viruses, spyware, ransomware, and other threats."
-        },
-        {
-          "question": "Security auditing helps organizations:",
-          "options": [
-            "Identify gaps and ensure compliance with policies",
-            "Increase network speed",
-            "Encrypt files automatically",
-            "Deploy software updates only"
-          ],
-          "correctAnswer": "Identify gaps and ensure compliance with policies",
-          "explanation": "Audits review security measures and confirm that standards are being followed."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Security Protocols and Threat Mitigation — part 2",
+      "questions": [
         {
           "question": "A security incident response plan should include:",
           "options": [

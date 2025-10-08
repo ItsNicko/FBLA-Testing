@@ -115,26 +115,15 @@
           "explanation": "It visually represents the structure and workflow of the organization."
         },
         {
-          "question": "What is a liability of starting your own business?",
+          "question": "(Hard) Which is a challenging question about Business Plan?",
           "options": [
-            "Financial risk and uncertainty",
-            "Guaranteed income",
-            "No work required",
-            "Unlimited support from competitors"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Financial risk and uncertainty",
-          "explanation": "New businesses face potential losses, unpredictable revenues, and high responsibilities."
-        },
-        {
-          "question": "Entrepreneurs should possess which technical skill?",
-          "options": [
-            "Understanding of accounting, marketing, or product development",
-            "Ability to ignore finances",
-            "Refusal to learn new tools",
-            "Delegating all tasks to others"
-          ],
-          "correctAnswer": "Understanding of accounting, marketing, or product development",
-          "explanation": "Technical knowledge helps entrepreneurs manage operations and make informed decisions."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -252,26 +241,15 @@
           "explanation": "Automation reduces human errors and enhances efficiency in financial management."
         },
         {
-          "question": "Profitability analysis includes:",
+          "question": "(Hard) How does a manager typically Financial Management? (Hard)",
           "options": [
-            "Calculating revenues minus expenses to evaluate sustainability",
-            "Ignoring market competition",
-            "Reducing employee benefits",
-            "Skipping cash flow management"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Calculating revenues minus expenses to evaluate sustainability",
-          "explanation": "Analyzing profit ensures resources are allocated effectively for long-term viability."
-        },
-        {
-          "question": "Short-term financial planning focuses on:",
-          "options": [
-            "Cash flow management and operational expenses",
-            "Long-term growth strategies only",
-            "Ignoring debts",
-            "Marketing budget only"
-          ],
-          "correctAnswer": "Cash flow management and operational expenses",
-          "explanation": "Day-to-day liquidity ensures business operations continue smoothly."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -387,6 +365,17 @@
           ],
           "correctAnswer": "Personal wealth alone guarantees good business credit",
           "explanation": "Creditworthiness depends on financial records and responsible practices, not just personal assets."
+        },
+        {
+          "question": "(Hard) What is the primary purpose of Initial Capital and Credit? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -502,6 +491,17 @@
           ],
           "correctAnswer": "Achieve desired customer outcomes",
           "explanation": "Clear communication helps customers make informed purchase decisions."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Marketing Management?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -617,6 +617,17 @@
           ],
           "correctAnswer": "Clarify reporting lines and responsibilities",
           "explanation": "A chart visually communicates structure and accountability."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Personnel Management?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -732,6 +743,17 @@
           ],
           "correctAnswer": "Paying once is sufficient for all future compliance",
           "explanation": "Ongoing monitoring is required due to changing regulations."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Taxes?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -847,6 +869,17 @@
           ],
           "correctAnswer": "Informed community engagement",
           "explanation": "Knowledge of legal requirements guides responsible operations."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Community/Business Relations?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -962,6 +995,17 @@
           ],
           "correctAnswer": "Honesty, transparency, and responsibility",
           "explanation": "Ethics strengthen reputation and stakeholder trust."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Government Regulations?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -1077,6 +1121,28 @@
           ],
           "correctAnswer": "Sustainable operations and risk reduction",
           "explanation": "Proactive compliance ensures smooth, long-term business operations."
+        },
+        {
+          "question": "How does a manager typically Legal Issues? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Legal Issues?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     }

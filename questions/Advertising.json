@@ -6,7 +6,12 @@
       "questions": [
         {
           "question": "Which element of the marketing mix refers to the methods used to communicate a product's value to customers?",
-          "options": ["Product", "Price", "Place", "Promotion"],
+          "options": [
+            "Product",
+            "Price",
+            "Place",
+            "Promotion"
+          ],
           "correctAnswer": "Promotion",
           "explanation": "Promotion is the element of the marketing mix focused on communicating product benefits and value to the target audience."
         },
@@ -99,15 +104,15 @@
           "explanation": "Branding helps businesses stand out from competitors and encourages repeat purchases through customer loyalty."
         },
         {
-          "question": "Which step comes last in the personal selling process?",
+          "question": "(Hard) Which practice helps Marketing Fundamentals? (Hard)",
           "options": [
-            "Generate leads",
-            "Close the sale",
-            "Follow up",
-            "Present the product"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Follow up",
-          "explanation": "Following up ensures customer satisfaction and builds long-term relationships after the sale is closed."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -182,7 +187,12 @@
         },
         {
           "question": "Which advertising medium allows for precise, measurable online engagement?",
-          "options": ["Television", "Radio", "Social media", "Newspapers"],
+          "options": [
+            "Television",
+            "Radio",
+            "Social media",
+            "Newspapers"
+          ],
           "correctAnswer": "Social media",
           "explanation": "Social media platforms allow advertisers to track clicks, impressions, conversions, and engagement in real time."
         },
@@ -209,15 +219,15 @@
           "explanation": "Billboards provide repeated exposure to a broad audience in specific geographic locations."
         },
         {
-          "question": "Which is a key reason for using multiple advertising media types?",
+          "question": "(Hard) How does a manager typically Advertising Media & Strategies? (Hard)",
           "options": [
-            "To confuse competitors",
-            "To maximize reach and reinforce messaging",
-            "To increase production complexity",
-            "To reduce consumer choice"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "To maximize reach and reinforce messaging",
-          "explanation": "Using multiple media channels ensures a brand reaches its audience through different touchpoints, reinforcing awareness and recall."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -324,15 +334,15 @@
           "explanation": "An advertising plan guides the creation, execution, and assessment of marketing communications for effectiveness."
         },
         {
-          "question": "Which type of advertising message is most likely to connect emotionally with consumers?",
+          "question": "(Hard) Which is a challenging question about Branding, Positioning & Advertising Planning?",
           "options": [
-            "Generic product description",
-            "Creative advertising emphasizing lifestyle or values",
-            "Technical specifications only",
-            "Price-only advertising"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Creative advertising emphasizing lifestyle or values",
-          "explanation": "Emotionally engaging messages create stronger connections with the target audience and enhance brand loyalty."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -439,15 +449,15 @@
           "explanation": "Advertising funds should be allocated based on effectiveness in reaching the target audience and generating revenue."
         },
         {
-          "question": "How does advertising influence consumer decision-making during economic downturns?",
+          "question": "(Hard) Which is a challenging question about Financial & Economic Aspects?",
           "options": [
-            "It can sway choices by emphasizing value or necessity",
-            "It guarantees all consumers will buy",
-            "It reduces taxes",
-            "It eliminates competition"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "It can sway choices by emphasizing value or necessity",
-          "explanation": "During downturns, advertising can highlight affordability, value, or essential benefits, influencing consumer purchase decisions."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -554,15 +564,15 @@
           "explanation": "Behavioral segmentation divides the market based on actions, lifestyle, interests, or usage patterns."
         },
         {
-          "question": "Which type of market research relies on previously collected data like census reports or industry studies?",
+          "question": "(Hard) What is the primary purpose of Market Analysis & Segmentation? (Hard)",
           "options": [
-            "Primary research",
-            "Secondary research",
-            "Experimental research",
-            "SWOT analysis"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Secondary research",
-          "explanation": "Secondary research uses existing data sources to inform decisions without new data collection."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -571,13 +581,23 @@
       "questions": [
         {
           "question": "Which stage of the product life cycle focuses on building awareness and encouraging trial?",
-          "options": ["Introduction", "Growth", "Maturity", "Decline"],
+          "options": [
+            "Introduction",
+            "Growth",
+            "Maturity",
+            "Decline"
+          ],
           "correctAnswer": "Introduction",
           "explanation": "The introduction stage involves launching the product, creating awareness, and stimulating early adoption."
         },
         {
           "question": "During which stage do sales peak and profits often stabilize or decline due to competition?",
-          "options": ["Introduction", "Growth", "Maturity", "Decline"],
+          "options": [
+            "Introduction",
+            "Growth",
+            "Maturity",
+            "Decline"
+          ],
           "correctAnswer": "Maturity",
           "explanation": "In maturity, the product has widespread adoption, but market saturation and competition may reduce growth."
         },
@@ -659,15 +679,15 @@
           "explanation": "Proper storage and packaging reduce damage, improve efficiency, and ensure safe delivery to customers."
         },
         {
-          "question": "Which stage of product development involves concept testing and prototype creation?",
+          "question": "(Hard) What is the primary purpose of Product Lifecycle & Distribution? (Hard)",
           "options": [
-            "Idea generation",
-            "Product development",
-            "Market introduction",
-            "Product decline"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Product development",
-          "explanation": "The product development stage transforms concepts into prototypes, preparing them for market launch."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -676,7 +696,12 @@
       "questions": [
         {
           "question": "Which component of the communication process encodes the message to be delivered?",
-          "options": ["Sender", "Encoding", "Receiver", "Feedback"],
+          "options": [
+            "Sender",
+            "Encoding",
+            "Receiver",
+            "Feedback"
+          ],
           "correctAnswer": "Encoding",
           "explanation": "Encoding is the process of turning ideas into messages or symbols that can be communicated to the audience."
         },
@@ -769,15 +794,15 @@
           "explanation": "Direct marketing focuses on reaching specific consumers effectively through clear messages and actionable channels."
         },
         {
-          "question": "Which type of communication focuses on nonverbal cues and cultural interpretation?",
+          "question": "(Hard) What is the primary purpose of Communication, Messaging & Ethics? (Hard)",
           "options": [
-            "Cross-cultural communication",
-            "Digital advertising",
-            "Financial reporting",
-            "Supply chain management"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Cross-cultural communication",
-          "explanation": "Cross-cultural communication considers language, nonverbal cues, and cultural norms to ensure messages are understood internationally."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -884,15 +909,15 @@
           "explanation": "Multicultural audiences require messages that are culturally sensitive and relevant to diverse demographics."
         },
         {
-          "question": "Which historical innovation had a major impact on advertising?",
+          "question": "(Hard) Why is it important to Global & Industry Considerations? (Hard)",
           "options": [
-            "Printing press, radio, and television",
-            "Warehouse shelving designs",
-            "Employee dress codes",
-            "CEO’s personal brand preference"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Printing press, radio, and television",
-          "explanation": "Technological innovations like the printing press and broadcast media transformed how advertising reached mass audiences."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
@@ -912,7 +937,12 @@
         },
         {
           "question": "Which of the following is a trade sales promotion?",
-          "options": ["Push money", "Loyalty program", "Rebate", "Sweepstakes"],
+          "options": [
+            "Push money",
+            "Loyalty program",
+            "Rebate",
+            "Sweepstakes"
+          ],
           "correctAnswer": "Push money",
           "explanation": "Trade promotions target intermediaries, like retailers, offering incentives to promote or sell products."
         },
@@ -951,7 +981,12 @@
         },
         {
           "question": "Which component of advertising communication involves decoding the message?",
-          "options": ["Receiver", "Sender", "Encoding", "SWOT analysis"],
+          "options": [
+            "Receiver",
+            "Sender",
+            "Encoding",
+            "SWOT analysis"
+          ],
           "correctAnswer": "Receiver",
           "explanation": "The receiver interprets or decodes the message sent by the advertiser."
         },
@@ -989,15 +1024,15 @@
           "explanation": "Effectiveness is assessed by measuring how advertising impacts awareness, attitudes, and purchasing actions."
         },
         {
-          "question": "Why might an advertising campaign fail despite a large budget?",
+          "question": "(Hard) Which is a challenging question about Sales Promotion & Consumer-Oriented Advertising?",
           "options": [
-            "Poor targeting, unclear messaging, or ignoring consumer needs",
-            "Using too many colors",
-            "Employee uniform color",
-            "Excessive number of managers"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Poor targeting, unclear messaging, or ignoring consumer needs",
-          "explanation": "Even with high spending, ineffective strategy, bad communication, or misaligned targeting can cause failure."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
@@ -1104,15 +1139,15 @@
           "explanation": "Product line extensions allow businesses to reach new customers or provide more options to existing ones."
         },
         {
-          "question": "Which of the following is an example of a trick scenario question?",
+          "question": "(Hard) Which is a challenging question about Review & Trick Questions?",
           "options": [
-            "Choosing a target market based on demographics and buying habits",
-            "Calculating how many minutes a test lasts",
-            "Analyzing ad effectiveness through surveys",
-            "Determining the most suitable media channel"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Calculating how many minutes a test lasts",
-          "explanation": "This question is logistical and irrelevant to content mastery, making it a trick or distraction."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     }

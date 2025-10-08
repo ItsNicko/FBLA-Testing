@@ -2,7 +2,7 @@
   "testName": "Human Resource Management",
   "topics": [
     {
-      "topic": "Staff",
+      "topic": "Staff — part 1",
       "questions": [
         {
           "question": "Why is employee confidentiality important in HR management?",
@@ -82,86 +82,113 @@
           "explanation": "Reference checks verify employment history, skills, and character to ensure a qualified hire."
         },
         {
-          "question": "What is outsourcing in HR?",
+          "question": "(Hard) Which is a challenging question about Staff — part 1?",
           "options": [
-            "Hiring external services",
-            "Firing employees",
-            "Internal promotion",
-            "Mandatory training"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Hiring external services",
-          "explanation": "Outsourcing HR tasks involves delegating functions to external providers, which can reduce costs or access expertise."
-        },
-        {
-          "question": "How does Affirmative Action affect hiring?",
-          "options": [
-            "Encourages equal opportunity for underrepresented groups",
-            "Reduces salaries",
-            "Removes background checks",
-            "Replaces interviews"
-          ],
-          "correctAnswer": "Encourages equal opportunity for underrepresented groups",
-          "explanation": "Affirmative Action policies aim to promote diversity and equal employment opportunities."
-        },
-        {
-          "question": "Which factor impacts employee job satisfaction the most?",
-          "options": [
-            "Work environment and recognition",
-            "Pay alone",
-            "Company logo",
-            "Number of vacation days only"
-          ],
-          "correctAnswer": "Work environment and recognition",
-          "explanation": "Job satisfaction is influenced by multiple factors including recognition, work culture, and meaningful work."
-        },
-        {
-          "question": "What is a key part of the employee selection process?",
-          "options": [
-            "Interviewing and testing",
-            "Payroll calculation",
-            "Labor law enforcement",
-            "Training delivery"
-          ],
-          "correctAnswer": "Interviewing and testing",
-          "explanation": "The selection process typically includes screening, testing, and interviewing to choose the best candidate."
-        },
-        {
-          "question": "What is a contingency factor in HR hiring?",
-          "options": [
-            "Background checks or medical results",
-            "Salary negotiations",
-            "Performance reviews",
-            "Team-building events"
-          ],
-          "correctAnswer": "Background checks or medical results",
-          "explanation": "Contingency factors are conditions like health screenings or background verification that must be met before hiring."
-        },
-        {
-          "question": "Why are effective interview questions important?",
-          "options": [
-            "They help assess knowledge, skills, and fit",
-            "They determine the dress code",
-            "They replace reference checks",
-            "They decide benefits"
-          ],
-          "correctAnswer": "They help assess knowledge, skills, and fit",
-          "explanation": "Good interview questions allow HR to evaluate the candidate’s suitability for the role."
-        },
-        {
-          "question": "What strategy helps retain top talent?",
-          "options": [
-            "Providing growth opportunities and recognition",
-            "Increasing work hours",
-            "Limiting benefits",
-            "Reducing communication"
-          ],
-          "correctAnswer": "Providing growth opportunities and recognition",
-          "explanation": "Retention strategies include offering professional development, fair compensation, and recognition."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Training and Development",
+      "topic": "Staff — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Staff?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Staff — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Staff — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Staff — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Staff — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Staff — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Staff — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Staff — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Training and Development — part 1",
       "questions": [
         {
           "question": "Why is employee training important?",
@@ -241,86 +268,113 @@
           "explanation": "Evaluation ensures that training meets objectives and identifies areas for improvement."
         },
         {
-          "question": "What is a key trend in professional development?",
+          "question": "(Hard) Which is a challenging question about Training and Development — part 1?",
           "options": [
-            "Continuous learning and online resources",
-            "Reducing benefits",
-            "Eliminating team meetings",
-            "Hiring external managers only"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Continuous learning and online resources",
-          "explanation": "Modern development emphasizes lifelong learning, flexible courses, and tech-enabled training."
-        },
-        {
-          "question": "How can conflicts during training be reduced?",
-          "options": [
-            "By addressing trainee problems and clarifying expectations",
-            "By eliminating orientation",
-            "By increasing pay only",
-            "By reducing training hours"
-          ],
-          "correctAnswer": "By addressing trainee problems and clarifying expectations",
-          "explanation": "Proactive problem-solving and clear communication reduce misunderstandings during training."
-        },
-        {
-          "question": "Why is safety training important?",
-          "options": [
-            "Ensures compliance with laws and reduces accidents",
-            "It reduces salaries",
-            "It replaces employee appraisals",
-            "It eliminates HR policies"
-          ],
-          "correctAnswer": "Ensures compliance with laws and reduces accidents",
-          "explanation": "Safety and security programs protect employees and maintain legal compliance."
-        },
-        {
-          "question": "What is the purpose of orientation programs?",
-          "options": [
-            "Integrate new employees effectively",
-            "Calculate labor costs",
-            "Replace benefits administration",
-            "Conduct appraisals"
-          ],
-          "correctAnswer": "Integrate new employees effectively",
-          "explanation": "Orientation helps employees adapt to workplace culture, procedures, and expectations."
-        },
-        {
-          "question": "How does internal training source differ from external?",
-          "options": [
-            "Internal uses company staff, external uses outside experts",
-            "Internal is only online",
-            "External is only offline",
-            "They are identical"
-          ],
-          "correctAnswer": "Internal uses company staff, external uses outside experts",
-          "explanation": "Internal and external sources provide knowledge either from in-house expertise or outside professionals."
-        },
-        {
-          "question": "What is an online training resource?",
-          "options": [
-            "Web-based courses or e-learning modules",
-            "Payroll software",
-            "Performance reports",
-            "Legal documents"
-          ],
-          "correctAnswer": "Web-based courses or e-learning modules",
-          "explanation": "Online resources allow flexible, scalable training accessible to employees remotely."
-        },
-        {
-          "question": "Why should training objectives be specific?",
-          "options": [
-            "They guide learning and assessment effectively",
-            "They reduce salaries",
-            "They replace HR planning",
-            "They eliminate appraisals"
-          ],
-          "correctAnswer": "They guide learning and assessment effectively",
-          "explanation": "Specific objectives clarify expectations and enable evaluation of training effectiveness."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Employee Compensation and Benefits",
+      "topic": "Training and Development — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Training and Development?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Training and Development — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Training and Development — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Training and Development — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Training and Development — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Training and Development — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Training and Development — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Training and Development — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Employee Compensation and Benefits — part 1",
       "questions": [
         {
           "question": "Which of the following is a legally required employee benefit?",
@@ -400,86 +454,113 @@
           "explanation": "Team-based compensation motivates collaborative work by linking pay to team results."
         },
         {
-          "question": "How do labor costs affect break-even point?",
+          "question": "(Hard) Which is a challenging question about Employee Compensation and Benefits — part 1?",
           "options": [
-            "Higher labor costs increase break-even",
-            "They reduce taxes automatically",
-            "They determine training budget",
-            "They do not affect break-even"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Higher labor costs increase break-even",
-          "explanation": "Labor expenses directly impact total costs, influencing the sales level needed to break even."
-        },
-        {
-          "question": "What is variable pay?",
-          "options": [
-            "Compensation based on performance or results",
-            "Fixed salary only",
-            "Mandatory benefits",
-            "Retirement savings plan"
-          ],
-          "correctAnswer": "Compensation based on performance or results",
-          "explanation": "Variable pay rewards employees differently depending on their achievement of specific goals."
-        },
-        {
-          "question": "Why calculate benefit costs?",
-          "options": [
-            "To budget accurately and evaluate total compensation",
-            "To determine hiring policies",
-            "To replace performance appraisals",
-            "To plan office layout"
-          ],
-          "correctAnswer": "To budget accurately and evaluate total compensation",
-          "explanation": "Calculating benefit costs ensures proper financial planning and competitive compensation packages."
-        },
-        {
-          "question": "What is a salary schedule?",
-          "options": [
-            "A structured plan linking pay to experience or position",
-            "A list of employee benefits",
-            "Performance appraisal document",
-            "Training schedule"
-          ],
-          "correctAnswer": "A structured plan linking pay to experience or position",
-          "explanation": "Salary schedules provide standardized pay rates based on factors like role, seniority, or experience."
-        },
-        {
-          "question": "What are broad banding and strategic compensation?",
-          "options": [
-            "Methods to structure pay for flexibility and alignment with business goals",
-            "Employee hiring techniques",
-            "Performance management tools",
-            "Recruitment advertisements"
-          ],
-          "correctAnswer": "Methods to structure pay for flexibility and alignment with business goals",
-          "explanation": "Broad banding reduces pay grades while strategic compensation aligns pay with organizational objectives."
-        },
-        {
-          "question": "Which is an example of a legally required deduction?",
-          "options": [
-            "Social Security taxes",
-            "Gym membership fees",
-            "Tuition reimbursement",
-            "Company stock options"
-          ],
-          "correctAnswer": "Social Security taxes",
-          "explanation": "Employers must deduct Social Security taxes from employees’ wages by law."
-        },
-        {
-          "question": "What is the purpose of a piecework plan?",
-          "options": [
-            "Incentivize higher output",
-            "Simplify payroll processing",
-            "Determine benefits",
-            "Track attendance"
-          ],
-          "correctAnswer": "Incentivize higher output",
-          "explanation": "Paying per unit produced motivates employees to work efficiently and increase productivity."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Performance Management",
+      "topic": "Employee Compensation and Benefits — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Employee Compensation and Benefits?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Employee Compensation and Benefits — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Employee Compensation and Benefits — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Employee Compensation and Benefits — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Employee Compensation and Benefits — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Employee Compensation and Benefits — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Employee Compensation and Benefits — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Employee Compensation and Benefits — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Performance Management — part 1",
       "questions": [
         {
           "question": "What is coaching in HR performance management?",
@@ -559,86 +640,113 @@
           "explanation": "HR uses discipline to address behavior that negatively impacts the organization or team."
         },
         {
-          "question": "Why is agreement to change important?",
+          "question": "(Hard) Which is a challenging question about Performance Management — part 1?",
           "options": [
-            "Employees must accept feedback to improve performance",
-            "It sets pay rates",
-            "It defines vacation policies",
-            "It replaces recruitment"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Employees must accept feedback to improve performance",
-          "explanation": "Employee cooperation ensures that performance improvements are implemented effectively."
-        },
-        {
-          "question": "How does deficiency in knowledge affect execution?",
-          "options": [
-            "Leads to performance problems",
-            "Reduces training budgets",
-            "Replaces labor law compliance",
-            "Calculates salaries automatically"
-          ],
-          "correctAnswer": "Leads to performance problems",
-          "explanation": "Knowledge gaps often result in errors or inefficiencies, impacting overall performance."
-        },
-        {
-          "question": "What is an effective performance management system?",
-          "options": [
-            "A system that measures, monitors, and improves employee performance",
-            "A payroll calculator",
-            "A hiring tool only",
-            "A training manual"
-          ],
-          "correctAnswer": "A system that measures, monitors, and improves employee performance",
-          "explanation": "Effective systems provide structured evaluation, feedback, and development support."
-        },
-        {
-          "question": "What is the purpose of counseling techniques?",
-          "options": [
-            "Address employee performance and behavior issues",
-            "Calculate benefits",
-            "Recruit new employees",
-            "Design training programs"
-          ],
-          "correctAnswer": "Address employee performance and behavior issues",
-          "explanation": "Techniques guide HR in resolving performance or behavioral concerns effectively."
-        },
-        {
-          "question": "How does performance management affect morale?",
-          "options": [
-            "Positive appraisal and feedback increase motivation",
-            "It decreases salaries",
-            "It eliminates HR responsibilities",
-            "It replaces benefits"
-          ],
-          "correctAnswer": "Positive appraisal and feedback increase motivation",
-          "explanation": "Properly implemented performance management boosts employee morale and engagement."
-        },
-        {
-          "question": "Which is an advantage of an appraisal system?",
-          "options": [
-            "Improves communication and identifies development needs",
-            "Calculates labor costs automatically",
-            "Eliminates training",
-            "Reduces legal compliance"
-          ],
-          "correctAnswer": "Improves communication and identifies development needs",
-          "explanation": "Appraisals clarify expectations and support professional growth."
-        },
-        {
-          "question": "Which is a disadvantage of performance appraisals?",
-          "options": [
-            "Potential bias or employee dissatisfaction",
-            "Increases profits immediately",
-            "Reduces training needs",
-            "Replaces labor laws"
-          ],
-          "correctAnswer": "Potential bias or employee dissatisfaction",
-          "explanation": "If appraisals are not fair or consistent, they may demotivate employees."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Government Relations and Issues",
+      "topic": "Performance Management — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Performance Management?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Performance Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Performance Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Performance Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Performance Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Performance Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Performance Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Performance Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Government Relations and Issues — part 1",
       "questions": [
         {
           "question": "What is the Equal Employment Opportunity Act designed to prevent?",
@@ -718,81 +826,113 @@
           "explanation": "The Age Discrimination in Employment Act protects workers 40 and older from discrimination."
         },
         {
-          "question": "Which law covers family and medical leave?",
-          "options": ["Family Medical Leave Act (FMLA)", "IRCA", "ADA", "FLSA"],
-          "correctAnswer": "Family Medical Leave Act (FMLA)",
-          "explanation": "FMLA allows eligible employees to take unpaid leave for family or medical reasons."
-        },
-        {
-          "question": "What is the role of the Privacy Act of 1974 in HR?",
+          "question": "(Hard) Which is a challenging question about Government Relations and Issues — part 1?",
           "options": [
-            "Protects employee personal data",
-            "Regulates payroll",
-            "Controls training programs",
-            "Manages labor unions"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Protects employee personal data",
-          "explanation": "The Privacy Act governs how personal employee information is collected, used, and shared."
-        },
-        {
-          "question": "Which act promotes a drug-free workplace?",
-          "options": [
-            "Drug-Free Workplace Act of 1988",
-            "FMLA",
-            "ADEA",
-            "FLSA"
-          ],
-          "correctAnswer": "Drug-Free Workplace Act of 1988",
-          "explanation": "This act requires federal contractors and grantees to maintain a drug-free work environment."
-        },
-        {
-          "question": "Which employees are exempt from overtime under FLSA?",
-          "options": [
-            "Salaried executive, administrative, or professional employees",
-            "Hourly employees",
-            "Part-time interns",
-            "Temporary contractors"
-          ],
-          "correctAnswer": "Salaried executive, administrative, or professional employees",
-          "explanation": "Certain job categories are exempt from overtime pay requirements."
-        },
-        {
-          "question": "What is the National Labor Relations Act responsible for?",
-          "options": [
-            "Protecting employees’ rights to organize and bargain collectively",
-            "Setting payroll schedules",
-            "Enforcing ADA regulations",
-            "Monitoring employee training"
-          ],
-          "correctAnswer": "Protecting employees’ rights to organize and bargain collectively",
-          "explanation": "NLRA safeguards union activities and collective bargaining rights."
-        },
-        {
-          "question": "Which term refers to a hostile work environment?",
-          "options": [
-            "Discrimination or harassment creating an intimidating workplace",
-            "High productivity culture",
-            "Flexible scheduling",
-            "Team-building exercise"
-          ],
-          "correctAnswer": "Discrimination or harassment creating an intimidating workplace",
-          "explanation": "A hostile work environment occurs when workplace harassment interferes with job performance."
-        },
-        {
-          "question": "What is defamation in HR context?",
-          "options": [
-            "Making false statements harming an employee’s reputation",
-            "Providing training manuals",
-            "Conducting payroll audits",
-            "Scheduling employee reviews"
-          ],
-          "correctAnswer": "Making false statements harming an employee’s reputation",
-          "explanation": "Defamation can be legal grounds for employee complaints or lawsuits."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Human Resource Planning",
+      "topic": "Government Relations and Issues — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Government Relations and Issues?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Government Relations and Issues — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Government Relations and Issues — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Government Relations and Issues — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Government Relations and Issues — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Government Relations and Issues — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Government Relations and Issues — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Government Relations and Issues — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Human Resource Planning — part 1",
       "questions": [
         {
           "question": "What is human resource planning?",
@@ -872,81 +1012,108 @@
           "explanation": "Effective team structures enhance productivity and decision-making."
         },
         {
-          "question": "What is the role of HR in maintaining a company code of ethics?",
+          "question": "(Hard) Which is a challenging question about Human Resource Planning — part 1?",
           "options": [
-            "Ensure employee behavior aligns with organizational values",
-            "Manage payroll only",
-            "Schedule vacations",
-            "Plan training sessions"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Ensure employee behavior aligns with organizational values",
-          "explanation": "HR enforces ethical standards and guides employees in compliance with organizational policies."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Human Resource Planning — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Human Resource Planning?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         },
         {
-          "question": "How do skill requirements impact HR planning?",
+          "question": "Which of the following best explains Human Resource Planning — part 2?",
           "options": [
-            "They determine training, hiring, and development needs",
-            "They calculate benefits only",
-            "They schedule holidays",
-            "They replace labor laws"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "They determine training, hiring, and development needs",
-          "explanation": "HR must anticipate skill gaps to ensure the workforce meets business objectives."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Which HR trend is influenced by flexible scheduling?",
+          "question": "Which of the following best explains Human Resource Planning — part 2?",
           "options": [
-            "Work-life balance and employee satisfaction",
-            "Payroll deductions",
-            "Legal compliance only",
-            "Mandatory overtime"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Work-life balance and employee satisfaction",
-          "explanation": "Flexible scheduling improves morale, retention, and productivity."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "How does technology impact HR planning?",
+          "question": "Which of the following best explains Human Resource Planning — part 2?",
           "options": [
-            "Automates processes and improves data management",
-            "Reduces salaries automatically",
-            "Replaces employee evaluation",
-            "Calculates training budgets"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Automates processes and improves data management",
-          "explanation": "HR technology supports recruitment, performance management, and strategic planning."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Why update HR policies regularly?",
+          "question": "Which of the following best explains Human Resource Planning — part 2?",
           "options": [
-            "To reflect legal, technological, and workforce changes",
-            "To reduce payroll costs",
-            "To schedule training",
-            "To organize office events"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "To reflect legal, technological, and workforce changes",
-          "explanation": "Keeping policies current ensures compliance and relevance to organizational goals."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "What is the goal of HR planning regarding workforce?",
+          "question": "Which of the following best explains Human Resource Planning — part 2?",
           "options": [
-            "Ensure the right people with the right skills are in place",
-            "Track vacation days only",
-            "Monitor payroll errors",
-            "Plan team outings"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Ensure the right people with the right skills are in place",
-          "explanation": "Effective HR planning anticipates staffing needs to meet organizational objectives."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Which element is part of HR planning?",
+          "question": "Which of the following best explains Human Resource Planning — part 2?",
           "options": [
-            "Forecasting labor needs and developing talent pipelines",
-            "Organizing office parties",
-            "Calculating payroll deductions",
-            "Printing employee manuals"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Forecasting labor needs and developing talent pipelines",
-          "explanation": "Forecasting ensures organizations have qualified employees when needed."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Human Resource Planning — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
@@ -996,106 +1163,6 @@
           ],
           "correctAnswer": "Binding resolution of a labor dispute by a third party",
           "explanation": "Arbitration settles disputes with a decision that both parties must follow."
-        },
-        {
-          "question": "What is an impasse in labor negotiations?",
-          "options": [
-            "A deadlock where parties cannot agree",
-            "A training milestone",
-            "A payroll error",
-            "An HR policy update"
-          ],
-          "correctAnswer": "A deadlock where parties cannot agree",
-          "explanation": "An impasse may lead to arbitration, mediation, or strikes."
-        },
-        {
-          "question": "What is the role of the National Labor Relations Board (NLRB)?",
-          "options": [
-            "Protect employee rights and oversee union elections",
-            "Calculate salaries",
-            "Provide training manuals",
-            "Schedule meetings"
-          ],
-          "correctAnswer": "Protect employee rights and oversee union elections",
-          "explanation": "NLRB enforces labor laws and resolves disputes between unions and employers."
-        },
-        {
-          "question": "Which act protects employees’ right to unionize?",
-          "options": ["Wagner Act", "FLSA", "ADA", "FMLA"],
-          "correctAnswer": "Wagner Act",
-          "explanation": "The Wagner Act guarantees the right to organize and engage in collective bargaining."
-        },
-        {
-          "question": "What is a grievance process?",
-          "options": [
-            "Procedure for employees to raise complaints with management",
-            "Payroll calculation",
-            "Training program",
-            "Job analysis tool"
-          ],
-          "correctAnswer": "Procedure for employees to raise complaints with management",
-          "explanation": "The grievance process ensures employee concerns are formally addressed."
-        },
-        {
-          "question": "What is the goal of management in labor negotiations?",
-          "options": [
-            "Reach agreements that balance employee needs with organizational goals",
-            "Determine payroll only",
-            "Provide training schedules",
-            "Review vacation policies"
-          ],
-          "correctAnswer": "Reach agreements that balance employee needs with organizational goals",
-          "explanation": "Management aims to negotiate fair terms while maintaining operational efficiency."
-        },
-        {
-          "question": "What is the difference between adversarial and cooperative labor relations?",
-          "options": [
-            "Adversarial is conflict-driven, cooperative seeks collaboration",
-            "Adversarial is about payroll, cooperative about training",
-            "Both are identical",
-            "Neither impacts HR policies"
-          ],
-          "correctAnswer": "Adversarial is conflict-driven, cooperative seeks collaboration",
-          "explanation": "Cooperative relations promote teamwork, while adversarial relations create tension."
-        },
-        {
-          "question": "Which legislation limits union power and protects management rights?",
-          "options": ["Taft-Hartley Act", "Wagner Act", "FMLA", "ADA"],
-          "correctAnswer": "Taft-Hartley Act",
-          "explanation": "The Taft-Hartley Act restricts union activities and balances labor-management relations."
-        },
-        {
-          "question": "What are steps to organize a labor union?",
-          "options": [
-            "Form committee, petition, election, certification",
-            "Calculate benefits only",
-            "Training assessment",
-            "Conduct payroll audits"
-          ],
-          "correctAnswer": "Form committee, petition, election, certification",
-          "explanation": "Union organization follows legal steps to gain official recognition."
-        },
-        {
-          "question": "Which process involves binding arbitration?",
-          "options": [
-            "Resolving labor disputes with an enforceable decision",
-            "Performance appraisal",
-            "Payroll deduction",
-            "Training scheduling"
-          ],
-          "correctAnswer": "Resolving labor disputes with an enforceable decision",
-          "explanation": "Binding arbitration is a formal method to settle labor disagreements."
-        },
-        {
-          "question": "What is a labor strike?",
-          "options": [
-            "Employees stop working to protest conditions or negotiate terms",
-            "Optional training day",
-            "Payroll review period",
-            "Team-building exercise"
-          ],
-          "correctAnswer": "Employees stop working to protest conditions or negotiate terms",
-          "explanation": "Strikes are a tool used by unions to apply pressure during negotiations."
         }
       ]
     }

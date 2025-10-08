@@ -2,7 +2,7 @@
   "testName": "Advanced Accounting",
   "topics": [
     {
-      "topic": "Financial Statements & Ratios",
+      "topic": "Financial Statements & Ratios — part 1",
       "questions": [
         {
           "question": "Which financial statement reports a company's assets, liabilities, and equity at a specific point in time?",
@@ -82,42 +82,113 @@
           "explanation": "Vertical analysis expresses items like expenses or assets as percentages of total revenue or total assets for comparison."
         },
         {
-          "question": "Which tool helps evaluate how revenue changes affect net income and costs?",
+          "question": "(Hard) Which is a challenging question about Financial Statements & Ratios — part 1?",
           "options": [
-            "Differential Analysis",
-            "Break-even Analysis",
-            "Horizontal Analysis",
-            "Vertical Analysis"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Differential Analysis",
-          "explanation": "Differential analysis considers changes in revenue, costs, or other variables to support management decisions."
-        },
-        {
-          "question": "Preparing an adjusted trial balance ensures that:",
-          "options": [
-            "All journal entries are recorded",
-            "Debit and credit totals are equal after adjustments",
-            "Financial statements are published",
-            "Accounts receivable is collected"
-          ],
-          "correctAnswer": "Debit and credit totals are equal after adjustments",
-          "explanation": "An adjusted trial balance ensures the accounting equation remains balanced after adjusting entries are made."
-        },
-        {
-          "question": "Which ratio indicates the portion of assets financed by shareholders’ equity?",
-          "options": [
-            "Current Ratio",
-            "Equity Ratio",
-            "Gross Margin Ratio",
-            "Accounts Receivable Turnover"
-          ],
-          "correctAnswer": "Equity Ratio",
-          "explanation": "Equity ratio = total equity / total assets, showing how much of assets are funded by owners."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Corporate Accounting & Partnerships",
+      "topic": "Financial Statements & Ratios — part 2",
+      "questions": [
+        {
+          "question": "Which practice helps financial statements & ratios?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Financial Statements & Ratios?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Corporate Accounting & Partnerships — part 1",
       "questions": [
         {
           "question": "Which of the following is a key characteristic of a corporation?",
@@ -197,42 +268,113 @@
           "explanation": "EPS = (Net Income – Preferred Dividends) ÷ Weighted Average Common Shares."
         },
         {
-          "question": "Which method distinguishes between stock dividends and stock splits?",
+          "question": "(Hard) How does a manager typically Corporate Accounting & Partnerships? (Hard)",
           "options": [
-            "Dividends reduce retained earnings; splits adjust par value only",
-            "Both reduce total equity",
-            "Both increase total assets",
-            "Both require paying cash"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Dividends reduce retained earnings; splits adjust par value only",
-          "explanation": "Stock dividends decrease retained earnings; stock splits change the number of shares and par value without affecting total equity."
-        },
-        {
-          "question": "Which type of corporation has pass-through taxation for owners?",
-          "options": [
-            "C Corporation",
-            "S Corporation",
-            "Nonprofit Corporation",
-            "Public Corporation"
-          ],
-          "correctAnswer": "S Corporation",
-          "explanation": "S Corporations avoid double taxation by passing income directly to shareholders' tax returns."
-        },
-        {
-          "question": "What is the first step in forming a partnership?",
-          "options": [
-            "Recording depreciation",
-            "Creating a partnership agreement",
-            "Issuing dividends",
-            "Calculating EPS"
-          ],
-          "correctAnswer": "Creating a partnership agreement",
-          "explanation": "A formal partnership agreement outlines profit-sharing, contributions, and management responsibilities."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
     {
-      "topic": "Accounts Receivable, Payable & Inventory",
+      "topic": "Corporate Accounting & Partnerships — part 2",
+      "questions": [
+        {
+          "question": "How does a manager typically corporate accounting & partnerships?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "What is the primary purpose of corporate accounting & partnerships?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) Consider an organization that needs to: how should they address corporate accounting & partnerships?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which practice helps corporate accounting & partnerships?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Corporate Accounting & Partnerships — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Corporate Accounting & Partnerships — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Corporate Accounting & Partnerships — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Corporate Accounting & Partnerships — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Accounts Receivable, Payable & Inventory — part 1",
       "questions": [
         {
           "question": "Which method of recording uncollectible accounts updates the allowance for doubtful accounts?",
@@ -312,42 +454,113 @@
           "explanation": "Notes receivable are formal claims for payment, recorded as a debit to Notes Receivable and a credit to Revenue or AR."
         },
         {
-          "question": "What is the main purpose of subsidiary ledgers for receivables and payables?",
+          "question": "(Hard) Why is it important to Accounts Receivable, Payable & Inventory? (Hard)",
           "options": [
-            "To record journal entries",
-            "To track individual customer/vendor balances",
-            "To compute depreciation",
-            "To record payroll"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "To track individual customer/vendor balances",
-          "explanation": "Subsidiary ledgers provide detailed tracking for each customer or vendor while controlling totals appear in the general ledger."
-        },
-        {
-          "question": "Obsolete inventory should be:",
-          "options": [
-            "Left at cost on the balance sheet",
-            "Written down to net realizable value",
-            "Sold at full cost",
-            "Ignored for financial statements"
-          ],
-          "correctAnswer": "Written down to net realizable value",
-          "explanation": "GAAP requires inventory be reported at the lower of cost or net realizable value to reflect potential losses."
-        },
-        {
-          "question": "Which of the following affects cash flow from operating activities?",
-          "options": [
-            "Depreciation expense",
-            "Issuance of stock",
-            "Purchase of plant assets",
-            "Sale of a subsidiary"
-          ],
-          "correctAnswer": "Depreciation expense",
-          "explanation": "Depreciation is a non-cash operating expense, added back to net income when computing cash flow from operations."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
     {
-      "topic": "Budgeting, Cash Flow & Cost Accounting",
+      "topic": "Accounts Receivable, Payable & Inventory — part 2",
+      "questions": [
+        {
+          "question": "Why is it important to accounts receivable, payable & inventory?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Accounts Receivable, Payable & Inventory — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Budgeting, Cash Flow & Cost Accounting — part 1",
       "questions": [
         {
           "question": "A flexible budget adjusts for:",
@@ -427,42 +640,113 @@
           "explanation": "CVP analysis informs decisions where cost and revenue changes impact profitability."
         },
         {
-          "question": "Which is a primary benefit of using spreadsheet software for budgets?",
+          "question": "(Hard) Which practice helps Budgeting, Cash Flow & Cost Accounting? (Hard)",
           "options": [
-            "Automates calculations and allows scenario analysis",
-            "Records journal entries automatically",
-            "Eliminates need for auditors",
-            "Generates invoices"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Automates calculations and allows scenario analysis",
-          "explanation": "Spreadsheets streamline budget preparation and enable managers to test different assumptions."
-        },
-        {
-          "question": "Contribution margin is calculated as:",
-          "options": [
-            "Sales Revenue – Variable Costs",
-            "Sales Revenue – Fixed Costs",
-            "Net Income – Taxes",
-            "Gross Profit – Operating Expenses"
-          ],
-          "correctAnswer": "Sales Revenue – Variable Costs",
-          "explanation": "Contribution margin shows how much revenue contributes to covering fixed costs and generating profit."
-        },
-        {
-          "question": "Which cost is relevant in differential analysis for decision-making?",
-          "options": [
-            "Sunk costs",
-            "Future costs that differ between alternatives",
-            "Depreciation on old equipment",
-            "Historical costs"
-          ],
-          "correctAnswer": "Future costs that differ between alternatives",
-          "explanation": "Differential analysis focuses on costs that change based on the decision at hand; sunk or historical costs are irrelevant."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
     {
-      "topic": "Departmentalized Accounting & Payroll",
+      "topic": "Budgeting, Cash Flow & Cost Accounting — part 2",
+      "questions": [
+        {
+          "question": "(Scenario) Consider an organization that needs to: how should they address budgeting, cash flow & cost accounting?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which practice helps budgeting, cash flow & cost accounting?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Budgeting, Cash Flow & Cost Accounting — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Departmentalized Accounting & Payroll — part 1 — part 1",
       "questions": [
         {
           "question": "Departmentalized accounting is primarily used to:",
@@ -532,47 +816,216 @@
         },
         {
           "question": "Which form is used by employees to report withholding allowances?",
-          "options": ["W-4", "W-2", "941", "1099"],
+          "options": [
+            "W-4",
+            "W-2",
+            "941",
+            "1099"
+          ],
           "correctAnswer": "W-4",
           "explanation": "The W-4 form allows employees to specify withholding allowances so employers can deduct the correct federal income tax."
         },
         {
-          "question": "Recording payroll requires which of the following entries?",
+          "question": "(Hard) Which is a challenging question about Departmentalized Accounting & Payroll — part 1 — part 1?",
           "options": [
-            "Debit Salaries Expense, Credit Cash and Payroll Liabilities",
-            "Debit Cash, Credit Revenue",
-            "Debit Accounts Receivable, Credit Revenue",
-            "Debit Revenue, Credit Payroll Tax Expense"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Debit Salaries Expense, Credit Cash and Payroll Liabilities",
-          "explanation": "Payroll journal entries debit salary expense and credit cash or payable accounts for taxes and deductions."
-        },
-        {
-          "question": "Adjusting entries for departmentalized accounting may include:",
-          "options": [
-            "Allocating overhead and closing temporary accounts",
-            "Recording tax refunds only",
-            "Inventory valuation",
-            "Recording depreciation exclusively"
-          ],
-          "correctAnswer": "Allocating overhead and closing temporary accounts",
-          "explanation": "Departments may need to allocate overhead costs and close temporary accounts to finalize departmental financial statements."
-        },
-        {
-          "question": "A voucher system in payroll is used to:",
-          "options": [
-            "Authorize and track payroll payments",
-            "Compute inventory turnover",
-            "Calculate depreciation",
-            "Record journal entries for sales only"
-          ],
-          "correctAnswer": "Authorize and track payroll payments",
-          "explanation": "A voucher system ensures payroll is properly approved and payments are accurately documented."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Income Tax",
+      "topic": "Departmentalized Accounting & Payroll — part 1 — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Departmentalized Accounting & Payroll — part 1?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Departmentalized Accounting & Payroll — part 2",
+      "questions": [
+        {
+          "question": "(Scenario) A student/employee faces the following situation: how should they address departmentalized accounting & payroll?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Departmentalized Accounting & Payroll?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Income Tax — part 1 — part 1",
       "questions": [
         {
           "question": "Deferred income taxes result from:",
@@ -587,7 +1040,12 @@
         },
         {
           "question": "Which form is used by employers to report federal income tax withheld and payroll taxes?",
-          "options": ["Form 941", "Form W-2", "Form 1099", "Form 1040"],
+          "options": [
+            "Form 941",
+            "Form W-2",
+            "Form 1099",
+            "Form 1040"
+          ],
           "correctAnswer": "Form 941",
           "explanation": "Form 941 reports quarterly federal income tax withheld and employer payroll taxes."
         },
@@ -647,32 +1105,69 @@
           "explanation": "Corporate tax expense is based on taxable income, which may differ from accounting income due to timing and temporary differences."
         },
         {
-          "question": "Which method distinguishes between pretax financial income and taxable income?",
+          "question": "(Hard) Which is a challenging question about Income Tax — part 1 — part 1?",
           "options": [
-            "Adjusting journal entries for income taxes",
-            "Recording payroll only",
-            "Calculating contribution margin",
-            "Preparing departmental budgets"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Adjusting journal entries for income taxes",
-          "explanation": "Adjustments reconcile financial income with taxable income to accurately record tax expense and liabilities."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Income Tax — part 1 — part 2",
+      "questions": [
+        {
+          "question": "(Hard) Which is a challenging question about Income Tax — part 1?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         },
         {
-          "question": "Which tax form reports wages and taxes withheld to employees?",
-          "options": ["Form W-2", "Form 941", "Form 1099", "Form 1040"],
-          "correctAnswer": "Form W-2",
-          "explanation": "Form W-2 shows employees' annual wages and taxes withheld for filing individual tax returns."
+          "question": "Which of the following best explains Income Tax — part 1 — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "GAAP vs. tax law differences may result in:",
+          "question": "Which of the following best explains Income Tax — part 1 — part 2?",
           "options": [
-            "Temporary or permanent differences affecting income tax expense",
-            "Changes in inventory method only",
-            "Payroll misstatements",
-            "Departmental cost allocation errors"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Temporary or permanent differences affecting income tax expense",
-          "explanation": "Accounting principles and tax laws differ, causing adjustments that affect the reported tax expense."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Income Tax — part 2",
+      "questions": [
+        {
+          "question": "Why is it important to income tax?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     }

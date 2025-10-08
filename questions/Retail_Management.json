@@ -1,0 +1,1170 @@
+{
+  "testName": "Retail Management",
+  "topics": [
+    {
+      "topic": "Marketing",
+      "questions": [
+        {
+          "question": "What is the primary purpose of Marketing?",
+          "options": [
+            "communication",
+            "profit",
+            "revenue",
+            "ROI"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining sales. As a manager, what would be the best next step?",
+          "options": [
+            "Restructure department roles",
+            "liability",
+            "margin",
+            "procedure"
+          ],
+          "correctAnswer": "Restructure department roles",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "liability",
+            "procedure",
+            "policy",
+            "leader"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Marketing?",
+          "options": [
+            "stakeholder",
+            "ROI",
+            "policy",
+            "revenue"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a manager, what would be the best next step?",
+          "options": [
+            "equity",
+            "Investigate causes and collect data",
+            "liability",
+            "revenue"
+          ],
+          "correctAnswer": "Investigate causes and collect data",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) Which action improves employee engagement?",
+          "options": [
+            "communication",
+            "stakeholder",
+            "budget",
+            "procedure"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining cash flow. As a HR director, what would be the best next step?",
+          "options": [
+            "margin",
+            "Investigate causes and collect data",
+            "procedure",
+            "asset"
+          ],
+          "correctAnswer": "Investigate causes and collect data",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a marketing lead, what would be the best next step?",
+          "options": [
+            "budget",
+            "profit",
+            "policy",
+            "Investigate causes and collect data"
+          ],
+          "correctAnswer": "Investigate causes and collect data",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Ethics",
+      "questions": [
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "leadership",
+            "policy",
+            "margin",
+            "procedure"
+          ],
+          "correctAnswer": "leadership",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "equity",
+            "margin",
+            "leader",
+            "policy"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a HR director, what would be the best next step?",
+          "options": [
+            "ROI",
+            "equity",
+            "inventory",
+            "Adjust the marketing strategy"
+          ],
+          "correctAnswer": "Adjust the marketing strategy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a project manager, what would be the best next step?",
+          "options": [
+            "inventory",
+            "leader",
+            "revenue",
+            "Restructure department roles"
+          ],
+          "correctAnswer": "Restructure department roles",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "policy",
+            "revenue",
+            "inventory",
+            "budget"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) Which term best describes a company's expected incoming money?",
+          "options": [
+            "asset",
+            "liability",
+            "profit",
+            "procedure"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "leader",
+            "ROI",
+            "liability",
+            "engagement"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "asset",
+            "procedure",
+            "stakeholder",
+            "profit"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Customer Service",
+      "questions": [
+        {
+          "question": "What is the primary purpose of Customer Service?",
+          "options": [
+            "profit",
+            "margin",
+            "equity",
+            "engagement"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a HR director, what would be the best next step?",
+          "options": [
+            "leader",
+            "asset",
+            "Restructure department roles",
+            "ROI"
+          ],
+          "correctAnswer": "Restructure department roles",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) What is a key consideration when creating a budget?",
+          "options": [
+            "profit",
+            "communication",
+            "policy",
+            "revenue"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "engagement",
+            "profit",
+            "leader",
+            "policy"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "inventory",
+            "equity",
+            "liability",
+            "engagement"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "leadership",
+            "liability",
+            "equity",
+            "revenue"
+          ],
+          "correctAnswer": "leadership",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "leader",
+            "procedure",
+            "policy",
+            "ROI"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "equity",
+            "stakeholder",
+            "profit",
+            "communication"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Human Resources",
+      "questions": [
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "equity",
+            "engagement",
+            "revenue",
+            "inventory"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) Scenario: A local company faces a problem with declining sales. As a marketing lead, what would be the best next step?",
+          "options": [
+            "policy",
+            "stakeholder",
+            "Conduct employee surveys",
+            "leader"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "communication",
+            "stakeholder",
+            "procedure",
+            "liability"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
+          "options": [
+            "Conduct employee surveys",
+            "inventory",
+            "budget",
+            "liability"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining cash flow. As a manager, what would be the best next step?",
+          "options": [
+            "Investigate causes and collect data",
+            "budget",
+            "margin",
+            "procedure"
+          ],
+          "correctAnswer": "Investigate causes and collect data",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "inventory",
+            "policy",
+            "stakeholder",
+            "budget"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Human Resources?",
+          "options": [
+            "liability",
+            "leader",
+            "asset",
+            "engagement"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "equity",
+            "profit",
+            "ROI",
+            "budget"
+          ],
+          "correctAnswer": "budget",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Leadership",
+      "questions": [
+        {
+          "question": "What is a key consideration when creating a budget?",
+          "options": [
+            "communication",
+            "ROI",
+            "procedure",
+            "budget"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining sales. As a marketing lead, what would be the best next step?",
+          "options": [
+            "margin",
+            "Conduct employee surveys",
+            "ROI",
+            "policy"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Leadership?",
+          "options": [
+            "profit",
+            "liability",
+            "policy",
+            "revenue"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining cash flow. As a marketing lead, what would be the best next step?",
+          "options": [
+            "Conduct employee surveys",
+            "equity",
+            "budget",
+            "profit"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is a key consideration when creating a budget?",
+          "options": [
+            "revenue",
+            "budget",
+            "leadership",
+            "margin"
+          ],
+          "correctAnswer": "leadership",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) Scenario: A local company faces a problem with declining cash flow. As a HR director, what would be the best next step?",
+          "options": [
+            "procedure",
+            "inventory",
+            "Adjust the marketing strategy",
+            "ROI"
+          ],
+          "correctAnswer": "Adjust the marketing strategy",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "What is the primary purpose of Leadership?",
+          "options": [
+            "asset",
+            "profit",
+            "liability",
+            "inventory"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is a key consideration when creating a budget?",
+          "options": [
+            "budget",
+            "asset",
+            "stakeholder",
+            "policy"
+          ],
+          "correctAnswer": "budget",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Operations",
+      "questions": [
+        {
+          "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
+          "options": [
+            "leader",
+            "policy",
+            "Adjust the marketing strategy",
+            "ROI"
+          ],
+          "correctAnswer": "Adjust the marketing strategy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) Which action improves employee engagement?",
+          "options": [
+            "communication",
+            "revenue",
+            "liability",
+            "budget"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "equity",
+            "margin",
+            "stakeholder",
+            "engagement"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "asset",
+            "equity",
+            "liability",
+            "engagement"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is a key consideration when creating a budget?",
+          "options": [
+            "margin",
+            "stakeholder",
+            "procedure",
+            "communication"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a manager, what would be the best next step?",
+          "options": [
+            "liability",
+            "Adjust the marketing strategy",
+            "asset",
+            "policy"
+          ],
+          "correctAnswer": "Adjust the marketing strategy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Operations?",
+          "options": [
+            "liability",
+            "leadership",
+            "procedure",
+            "policy"
+          ],
+          "correctAnswer": "leadership",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a HR director, what would be the best next step?",
+          "options": [
+            "liability",
+            "Conduct employee surveys",
+            "leader",
+            "budget"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Finance",
+      "questions": [
+        {
+          "question": "What is a key consideration when creating a budget?",
+          "options": [
+            "communication",
+            "procedure",
+            "policy",
+            "asset"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Finance?",
+          "options": [
+            "communication",
+            "asset",
+            "margin",
+            "ROI"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) Which term best describes a company's expected incoming money?",
+          "options": [
+            "ROI",
+            "liability",
+            "budget",
+            "equity"
+          ],
+          "correctAnswer": "budget",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a manager, what would be the best next step?",
+          "options": [
+            "Conduct employee surveys",
+            "ROI",
+            "margin",
+            "profit"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "margin",
+            "ROI",
+            "inventory",
+            "budget"
+          ],
+          "correctAnswer": "budget",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a project manager, what would be the best next step?",
+          "options": [
+            "ROI",
+            "policy",
+            "asset",
+            "Conduct employee surveys"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a project manager, what would be the best next step?",
+          "options": [
+            "budget",
+            "ROI",
+            "leader",
+            "Investigate causes and collect data"
+          ],
+          "correctAnswer": "Investigate causes and collect data",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Finance?",
+          "options": [
+            "inventory",
+            "asset",
+            "profit",
+            "leadership"
+          ],
+          "correctAnswer": "leadership",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Retail",
+      "questions": [
+        {
+          "question": "(Hard) Which term best describes a company's expected incoming money?",
+          "options": [
+            "profit",
+            "stakeholder",
+            "ROI",
+            "margin"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "What is a key consideration when creating a budget?",
+          "options": [
+            "profit",
+            "ROI",
+            "margin",
+            "equity"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is a key consideration when creating a budget?",
+          "options": [
+            "equity",
+            "revenue",
+            "communication",
+            "procedure"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining cash flow. As a project manager, what would be the best next step?",
+          "options": [
+            "policy",
+            "equity",
+            "budget",
+            "Adjust the marketing strategy"
+          ],
+          "correctAnswer": "Adjust the marketing strategy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a project manager, what would be the best next step?",
+          "options": [
+            "Conduct employee surveys",
+            "profit",
+            "budget",
+            "policy"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is a key consideration when creating a budget?",
+          "options": [
+            "revenue",
+            "policy",
+            "inventory",
+            "stakeholder"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "budget",
+            "communication",
+            "liability",
+            "revenue"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Retail?",
+          "options": [
+            "policy",
+            "profit",
+            "communication",
+            "ROI"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Technology",
+      "questions": [
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "profit",
+            "equity",
+            "inventory",
+            "policy"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining cash flow. As a project manager, what would be the best next step?",
+          "options": [
+            "procedure",
+            "inventory",
+            "liability",
+            "Investigate causes and collect data"
+          ],
+          "correctAnswer": "Investigate causes and collect data",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Technology?",
+          "options": [
+            "revenue",
+            "asset",
+            "policy",
+            "profit"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) What is the primary purpose of Technology?",
+          "options": [
+            "margin",
+            "profit",
+            "ROI",
+            "inventory"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining sales. As a manager, what would be the best next step?",
+          "options": [
+            "leader",
+            "profit",
+            "Conduct employee surveys",
+            "budget"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining cash flow. As a marketing lead, what would be the best next step?",
+          "options": [
+            "equity",
+            "liability",
+            "asset",
+            "Restructure department roles"
+          ],
+          "correctAnswer": "Restructure department roles",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Technology?",
+          "options": [
+            "leadership",
+            "leader",
+            "ROI",
+            "margin"
+          ],
+          "correctAnswer": "leadership",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a project manager, what would be the best next step?",
+          "options": [
+            "budget",
+            "inventory",
+            "Investigate causes and collect data",
+            "policy"
+          ],
+          "correctAnswer": "Investigate causes and collect data",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Project Management",
+      "questions": [
+        {
+          "question": "(Hard) What is a key consideration when creating a budget?",
+          "options": [
+            "asset",
+            "policy",
+            "budget",
+            "stakeholder"
+          ],
+          "correctAnswer": "budget",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "What is the primary purpose of Project Management?",
+          "options": [
+            "liability",
+            "equity",
+            "budget",
+            "policy"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a HR director, what would be the best next step?",
+          "options": [
+            "Restructure department roles",
+            "profit",
+            "procedure",
+            "ROI"
+          ],
+          "correctAnswer": "Restructure department roles",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is a key consideration when creating a budget?",
+          "options": [
+            "policy",
+            "revenue",
+            "budget",
+            "stakeholder"
+          ],
+          "correctAnswer": "budget",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Project Management?",
+          "options": [
+            "stakeholder",
+            "profit",
+            "policy",
+            "engagement"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a manager, what would be the best next step?",
+          "options": [
+            "equity",
+            "Conduct employee surveys",
+            "budget",
+            "policy"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Project Management?",
+          "options": [
+            "asset",
+            "profit",
+            "margin",
+            "stakeholder"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Project Management?",
+          "options": [
+            "equity",
+            "liability",
+            "revenue",
+            "engagement"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Management",
+      "questions": [
+        {
+          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a HR director, what would be the best next step?",
+          "options": [
+            "equity",
+            "margin",
+            "leader",
+            "Investigate causes and collect data"
+          ],
+          "correctAnswer": "Investigate causes and collect data",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) What is the primary purpose of Management?",
+          "options": [
+            "leader",
+            "ROI",
+            "asset",
+            "policy"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining sales. As a marketing lead, what would be the best next step?",
+          "options": [
+            "Conduct employee surveys",
+            "stakeholder",
+            "leader",
+            "budget"
+          ],
+          "correctAnswer": "Conduct employee surveys",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
+          "options": [
+            "leader",
+            "procedure",
+            "Adjust the marketing strategy",
+            "stakeholder"
+          ],
+          "correctAnswer": "Adjust the marketing strategy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "profit",
+            "stakeholder",
+            "communication",
+            "budget"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a project manager, what would be the best next step?",
+          "options": [
+            "stakeholder",
+            "ROI",
+            "Investigate causes and collect data",
+            "equity"
+          ],
+          "correctAnswer": "Investigate causes and collect data",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Management?",
+          "options": [
+            "equity",
+            "margin",
+            "engagement",
+            "revenue"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Scenario: A local company faces a problem with declining employee retention. As a project manager, what would be the best next step?",
+          "options": [
+            "profit",
+            "liability",
+            "revenue",
+            "Restructure department roles"
+          ],
+          "correctAnswer": "Restructure department roles",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Communication",
+      "questions": [
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "profit",
+            "budget",
+            "stakeholder",
+            "policy"
+          ],
+          "correctAnswer": "budget",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "ROI",
+            "leader",
+            "equity",
+            "profit"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "(Hard) What is the primary purpose of Communication?",
+          "options": [
+            "budget",
+            "inventory",
+            "leader",
+            "profit"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "This item requires higher-order reasoning and real-world judgment."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "budget",
+            "policy",
+            "procedure",
+            "stakeholder"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "What is the primary purpose of Communication?",
+          "options": [
+            "ROI",
+            "policy",
+            "budget",
+            "procedure"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "ROI",
+            "asset",
+            "equity",
+            "leadership"
+          ],
+          "correctAnswer": "leadership",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "stakeholder",
+            "engagement",
+            "policy",
+            "equity"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "profit",
+            "equity",
+            "policy",
+            "leader"
+          ],
+          "correctAnswer": "policy",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    },
+    {
+      "topic": "Introduction",
+      "questions": [
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "engagement",
+            "policy",
+            "stakeholder",
+            "liability"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "liability",
+            "stakeholder",
+            "equity",
+            "engagement"
+          ],
+          "correctAnswer": "engagement",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which term best describes a company's expected incoming money?",
+          "options": [
+            "margin",
+            "communication",
+            "asset",
+            "revenue"
+          ],
+          "correctAnswer": "communication",
+          "explanation": "Auto-generated question."
+        },
+        {
+          "question": "Which action improves employee engagement?",
+          "options": [
+            "policy",
+            "profit",
+            "stakeholder",
+            "procedure"
+          ],
+          "correctAnswer": "profit",
+          "explanation": "Auto-generated question."
+        }
+      ]
+    }
+  ]
+}

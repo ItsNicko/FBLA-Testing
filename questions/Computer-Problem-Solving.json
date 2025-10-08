@@ -2,35 +2,60 @@
   "testName": "Computer Problem Solving",
   "topics": [
     {
-      "topic": "Operating Systems",
+      "topic": "Operating Systems — part 1",
       "questions": [
         {
           "question": "Which OS manages hardware resources and provides services to software applications?",
-          "options": ["Operating System", "Compiler", "Browser", "Firewall"],
+          "options": [
+            "Operating System",
+            "Compiler",
+            "Browser",
+            "Firewall"
+          ],
           "correctAnswer": "Operating System",
           "explanation": "Operating systems manage hardware resources like CPU, memory, and storage while providing a platform for applications."
         },
         {
           "question": "Which OS type is open-source and widely used for servers?",
-          "options": ["Linux", "Windows", "macOS", "iOS"],
+          "options": [
+            "Linux",
+            "Windows",
+            "macOS",
+            "iOS"
+          ],
           "correctAnswer": "Linux",
           "explanation": "Linux is open-source, customizable, and popular in server environments."
         },
         {
           "question": "Which OS is primarily used on Apple computers?",
-          "options": ["macOS", "Windows", "Linux", "Android"],
+          "options": [
+            "macOS",
+            "Windows",
+            "Linux",
+            "Android"
+          ],
           "correctAnswer": "macOS",
           "explanation": "macOS is the proprietary operating system developed by Apple for its Mac computers."
         },
         {
           "question": "Which OS component handles input and output requests?",
-          "options": ["Kernel", "Shell", "Desktop", "BIOS"],
+          "options": [
+            "Kernel",
+            "Shell",
+            "Desktop",
+            "BIOS"
+          ],
           "correctAnswer": "Kernel",
           "explanation": "The kernel manages communication between hardware and software, handling I/O operations and system resources."
         },
         {
           "question": "Which OS feature allows running multiple applications at the same time?",
-          "options": ["Multitasking", "Networking", "Security", "Encryption"],
+          "options": [
+            "Multitasking",
+            "Networking",
+            "Security",
+            "Encryption"
+          ],
           "correctAnswer": "Multitasking",
           "explanation": "Multitasking allows an operating system to run multiple programs simultaneously by allocating CPU time efficiently."
         },
@@ -47,406 +72,589 @@
         },
         {
           "question": "Which OS is commonly used in smartphones?",
-          "options": ["Android", "Windows", "macOS", "Linux"],
+          "options": [
+            "Android",
+            "Windows",
+            "macOS",
+            "Linux"
+          ],
           "correctAnswer": "Android",
           "explanation": "Android is an open-source OS designed for mobile devices like smartphones and tablets."
         },
         {
-          "question": "Which OS feature ensures security by controlling access to files and applications?",
+          "question": "(Hard) Which is a challenging question about Operating Systems — part 1?",
           "options": [
-            "User permissions",
-            "File sharing",
-            "Task scheduling",
-            "Multitasking"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "User permissions",
-          "explanation": "User permissions limit access to files and applications to authorized users, enhancing security."
-        },
-        {
-          "question": "Which OS component provides a command interface for user input?",
-          "options": ["Shell", "Kernel", "Driver", "BIOS"],
-          "correctAnswer": "Shell",
-          "explanation": "The shell interprets commands entered by the user and communicates with the kernel for execution."
-        },
-        {
-          "question": "Which OS type is optimized for embedded systems and appliances?",
-          "options": ["Real-time OS", "Desktop OS", "Server OS", "Mobile OS"],
-          "correctAnswer": "Real-time OS",
-          "explanation": "Real-time operating systems provide predictable and timely processing required for embedded devices."
-        },
-        {
-          "question": "Which OS feature manages memory allocation for running applications?",
-          "options": [
-            "Memory management",
-            "Process management",
-            "File management",
-            "Networking"
-          ],
-          "correctAnswer": "Memory management",
-          "explanation": "Memory management allocates and monitors RAM usage to prevent conflicts and optimize performance."
-        },
-        {
-          "question": "Which OS manages hardware drivers for peripherals?",
-          "options": [
-            "Device driver interface",
-            "Kernel",
-            "Shell",
-            "Bootloader"
-          ],
-          "correctAnswer": "Device driver interface",
-          "explanation": "Device drivers allow the OS to communicate with hardware devices properly."
-        },
-        {
-          "question": "Which OS type allows virtualization to run multiple OS instances?",
-          "options": ["Server OS", "Embedded OS", "Desktop OS", "Real-time OS"],
-          "correctAnswer": "Server OS",
-          "explanation": "Server OSs often support virtualization, allowing multiple OS environments on the same hardware."
-        },
-        {
-          "question": "Which OS security feature isolates applications to prevent system-wide failure?",
-          "options": ["Sandboxing", "Encryption", "Firewall", "Antivirus"],
-          "correctAnswer": "Sandboxing",
-          "explanation": "Sandboxing runs applications in isolated environments to prevent malware from affecting the system."
-        },
-        {
-          "question": "Which OS provides scheduling to determine which processes get CPU time?",
-          "options": ["Scheduler", "Memory manager", "Driver", "File system"],
-          "correctAnswer": "Scheduler",
-          "explanation": "The scheduler allocates CPU time to processes based on priority and fairness."
-        },
-        {
-          "question": "Which OS utility checks and repairs file system errors?",
-          "options": ["Disk check tool", "Firewall", "Task manager", "Shell"],
-          "correctAnswer": "Disk check tool",
-          "explanation": "Disk check tools verify file system integrity and repair errors to maintain OS stability."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Networks",
+      "topic": "Operating Systems — part 2",
+      "questions": [
+        {
+          "question": "Which OS utility checks and repairs file system errors?",
+          "options": [
+            "Disk check tool",
+            "Firewall",
+            "Task manager",
+            "Shell"
+          ],
+          "correctAnswer": "Disk check tool",
+          "explanation": "Disk check tools verify file system integrity and repair errors to maintain OS stability."
+        },
+        {
+          "question": "Which practice helps Operating Systems? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Operating Systems?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Networks — part 1",
       "questions": [
         {
           "question": "Which device connects multiple computers in a local network?",
-          "options": ["Switch", "Router", "Firewall", "Hub"],
+          "options": [
+            "Switch",
+            "Router",
+            "Firewall",
+            "Hub"
+          ],
           "correctAnswer": "Switch",
           "explanation": "Switches forward data frames only to the intended device within a local network."
         },
         {
           "question": "Which protocol provides secure web browsing?",
-          "options": ["HTTPS", "HTTP", "FTP", "SMTP"],
+          "options": [
+            "HTTPS",
+            "HTTP",
+            "FTP",
+            "SMTP"
+          ],
           "correctAnswer": "HTTPS",
           "explanation": "HTTPS encrypts web traffic, protecting data from eavesdropping and tampering."
         },
         {
           "question": "Which IP version is most widely used currently?",
-          "options": ["IPv4", "IPv6", "IPX", "ICMP"],
+          "options": [
+            "IPv4",
+            "IPv6",
+            "IPX",
+            "ICMP"
+          ],
           "correctAnswer": "IPv4",
           "explanation": "IPv4 is the most common version of Internet Protocol in use today, though IPv6 adoption is increasing."
         },
         {
           "question": "Which network device directs traffic between different networks?",
-          "options": ["Router", "Switch", "Hub", "Access point"],
+          "options": [
+            "Router",
+            "Switch",
+            "Hub",
+            "Access point"
+          ],
           "correctAnswer": "Router",
           "explanation": "Routers determine the best path for data packets to travel between networks."
         },
         {
           "question": "Which protocol is used to retrieve emails from a server?",
-          "options": ["POP3", "SMTP", "HTTP", "FTP"],
+          "options": [
+            "POP3",
+            "SMTP",
+            "HTTP",
+            "FTP"
+          ],
           "correctAnswer": "POP3",
           "explanation": "POP3 allows email clients to download messages from a mail server."
         },
         {
           "question": "Which network type covers a large geographical area?",
-          "options": ["WAN", "LAN", "MAN", "PAN"],
+          "options": [
+            "WAN",
+            "LAN",
+            "MAN",
+            "PAN"
+          ],
           "correctAnswer": "WAN",
           "explanation": "Wide Area Networks (WANs) span large areas, connecting LANs across cities or countries."
         },
         {
           "question": "Which network device extends wireless coverage?",
-          "options": ["Access point", "Switch", "Router", "Hub"],
+          "options": [
+            "Access point",
+            "Switch",
+            "Router",
+            "Hub"
+          ],
           "correctAnswer": "Access point",
           "explanation": "Access points allow wireless devices to connect to a wired network."
         },
         {
-          "question": "Which network topology connects each node to two other nodes, forming a closed loop?",
+          "question": "(Hard) Which is a challenging question about Networks — part 1?",
           "options": [
-            "Ring topology",
-            "Star topology",
-            "Bus topology",
-            "Mesh topology"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Ring topology",
-          "explanation": "In a ring topology, data circulates through each node in a loop until it reaches the destination."
-        },
-        {
-          "question": "Which protocol is used for sending emails?",
-          "options": ["SMTP", "POP3", "IMAP", "FTP"],
-          "correctAnswer": "SMTP",
-          "explanation": "Simple Mail Transfer Protocol (SMTP) is used to send emails from a client to a server or between servers."
-        },
-        {
-          "question": "Which device prevents unauthorized network access?",
-          "options": ["Firewall", "Switch", "Router", "Hub"],
-          "correctAnswer": "Firewall",
-          "explanation": "Firewalls filter network traffic to block unauthorized access while allowing legitimate communication."
-        },
-        {
-          "question": "Which address uniquely identifies a device on a local network?",
-          "options": ["MAC address", "IP address", "Subnet mask", "Gateway"],
-          "correctAnswer": "MAC address",
-          "explanation": "MAC addresses are unique identifiers assigned to network interface hardware."
-        },
-        {
-          "question": "Which protocol is used to transfer files over a network securely?",
-          "options": ["SFTP", "FTP", "HTTP", "SMTP"],
-          "correctAnswer": "SFTP",
-          "explanation": "Secure FTP (SFTP) encrypts file transfers to protect data from interception."
-        },
-        {
-          "question": "Which topology has a central device to which all nodes connect?",
-          "options": [
-            "Star topology",
-            "Ring topology",
-            "Bus topology",
-            "Mesh topology"
-          ],
-          "correctAnswer": "Star topology",
-          "explanation": "In star topology, nodes communicate through a central hub or switch."
-        },
-        {
-          "question": "Which protocol assigns IP addresses automatically?",
-          "options": ["DHCP", "DNS", "FTP", "SMTP"],
-          "correctAnswer": "DHCP",
-          "explanation": "Dynamic Host Configuration Protocol (DHCP) assigns IP addresses and network configuration automatically."
-        },
-        {
-          "question": "Which topology connects each node directly to every other node?",
-          "options": [
-            "Mesh topology",
-            "Star topology",
-            "Bus topology",
-            "Ring topology"
-          ],
-          "correctAnswer": "Mesh topology",
-          "explanation": "Mesh topology provides multiple paths for data to travel, enhancing redundancy and fault tolerance."
-        },
-        {
-          "question": "Which protocol translates domain names into IP addresses?",
-          "options": ["DNS", "DHCP", "HTTP", "FTP"],
-          "correctAnswer": "DNS",
-          "explanation": "The Domain Name System (DNS) maps human-readable names to machine-readable IP addresses."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Computer Hardware and Connectivity",
+      "topic": "Networks — part 2",
+      "questions": [
+        {
+          "question": "Which protocol translates domain names into IP addresses?",
+          "options": [
+            "DNS",
+            "DHCP",
+            "HTTP",
+            "FTP"
+          ],
+          "correctAnswer": "DNS",
+          "explanation": "The Domain Name System (DNS) maps human-readable names to machine-readable IP addresses."
+        },
+        {
+          "question": "Why is it important to Networks? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Networks?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Computer Hardware and Connectivity — part 1",
       "questions": [
         {
           "question": "Which component is considered the brain of a computer?",
-          "options": ["CPU", "GPU", "RAM", "SSD"],
+          "options": [
+            "CPU",
+            "GPU",
+            "RAM",
+            "SSD"
+          ],
           "correctAnswer": "CPU",
           "explanation": "The CPU executes instructions and processes data for the computer."
         },
         {
           "question": "Which component temporarily stores data for active applications?",
-          "options": ["RAM", "SSD", "GPU", "CPU"],
+          "options": [
+            "RAM",
+            "SSD",
+            "GPU",
+            "CPU"
+          ],
           "correctAnswer": "RAM",
           "explanation": "RAM provides fast temporary storage for data being used by the CPU."
         },
         {
           "question": "Which component stores data permanently on a computer?",
-          "options": ["SSD", "RAM", "CPU", "GPU"],
+          "options": [
+            "SSD",
+            "RAM",
+            "CPU",
+            "GPU"
+          ],
           "correctAnswer": "SSD",
           "explanation": "SSDs provide non-volatile storage for files and programs."
         },
         {
           "question": "Which device connects multiple devices within a wired network?",
-          "options": ["Switch", "Router", "Hub", "Firewall"],
+          "options": [
+            "Switch",
+            "Router",
+            "Hub",
+            "Firewall"
+          ],
           "correctAnswer": "Switch",
           "explanation": "Switches direct data frames to the appropriate device within a local network."
         },
         {
           "question": "Which component is used to display images and graphics?",
-          "options": ["GPU", "CPU", "RAM", "SSD"],
+          "options": [
+            "GPU",
+            "CPU",
+            "RAM",
+            "SSD"
+          ],
           "correctAnswer": "GPU",
           "explanation": "The GPU processes graphics and renders images for output to a display."
         },
         {
           "question": "Which peripheral allows users to input data by moving a pointer?",
-          "options": ["Mouse", "Keyboard", "Scanner", "Printer"],
+          "options": [
+            "Mouse",
+            "Keyboard",
+            "Scanner",
+            "Printer"
+          ],
           "correctAnswer": "Mouse",
           "explanation": "A mouse lets users interact with graphical interfaces by moving and clicking a pointer."
         },
         {
           "question": "Which type of port connects external storage devices and peripherals?",
-          "options": ["USB", "HDMI", "Ethernet", "VGA"],
+          "options": [
+            "USB",
+            "HDMI",
+            "Ethernet",
+            "VGA"
+          ],
           "correctAnswer": "USB",
           "explanation": "USB ports support data transfer and power for a variety of external devices."
         },
         {
-          "question": "Which component converts digital signals into visual output on a monitor?",
-          "options": ["GPU", "CPU", "RAM", "SSD"],
-          "correctAnswer": "GPU",
-          "explanation": "The GPU processes and renders images for display on screens."
-        },
-        {
-          "question": "Which component manages power distribution to the motherboard and devices?",
-          "options": ["Power Supply Unit (PSU)", "CPU", "GPU", "RAM"],
-          "correctAnswer": "Power Supply Unit (PSU)",
-          "explanation": "The PSU converts AC power from the outlet to DC power used by the computer's components."
-        },
-        {
-          "question": "Which interface is used for high-speed external storage?",
-          "options": ["Thunderbolt", "USB 2.0", "VGA", "Ethernet"],
-          "correctAnswer": "Thunderbolt",
-          "explanation": "Thunderbolt provides high-speed data transfer and supports external displays and storage devices."
-        },
-        {
-          "question": "Which component manages data flow between CPU and RAM?",
-          "options": ["Motherboard chipset", "GPU", "SSD", "Power supply"],
-          "correctAnswer": "Motherboard chipset",
-          "explanation": "The chipset controls communication between the CPU, RAM, and peripherals."
-        },
-        {
-          "question": "Which storage device uses spinning disks to read/write data?",
-          "options": ["HDD", "SSD", "RAM", "GPU"],
-          "correctAnswer": "HDD",
-          "explanation": "Hard Disk Drives use magnetic disks that spin to store and retrieve data."
-        },
-        {
-          "question": "Which component allows computers to connect wirelessly to networks?",
-          "options": ["Wi-Fi adapter", "Ethernet card", "GPU", "CPU"],
-          "correctAnswer": "Wi-Fi adapter",
-          "explanation": "Wi-Fi adapters enable wireless communication with network access points."
-        },
-        {
-          "question": "Which peripheral allows scanning barcodes for inventory management?",
-          "options": ["Barcode scanner", "Printer", "Keyboard", "Mouse"],
-          "correctAnswer": "Barcode scanner",
-          "explanation": "Barcode scanners read product codes and transmit the data to computer systems."
-        },
-        {
-          "question": "Which hardware component regulates temperature and prevents overheating?",
-          "options": ["Cooling system", "GPU", "CPU", "RAM"],
-          "correctAnswer": "Cooling system",
-          "explanation": "Cooling systems, such as fans and heat sinks, dissipate heat to maintain safe operating temperatures."
-        },
-        {
-          "question": "Which port is typically used for connecting monitors to computers?",
-          "options": ["HDMI", "USB", "Ethernet", "Audio jack"],
-          "correctAnswer": "HDMI",
-          "explanation": "HDMI ports transmit high-definition video and audio signals from a computer to a display."
+          "question": "(Hard) Which is a challenging question about Computer Hardware and Connectivity — part 1?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Security",
+      "topic": "Computer Hardware and Connectivity — part 2",
+      "questions": [
+        {
+          "question": "Which port is typically used for connecting monitors to computers?",
+          "options": [
+            "HDMI",
+            "USB",
+            "Ethernet",
+            "Audio jack"
+          ],
+          "correctAnswer": "HDMI",
+          "explanation": "HDMI ports transmit high-definition video and audio signals from a computer to a display."
+        },
+        {
+          "question": "Which practice helps Computer Hardware and Connectivity? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Computer Hardware and Connectivity — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Security — part 1",
       "questions": [
         {
           "question": "Which malware disguises itself as legitimate software?",
-          "options": ["Trojan", "Virus", "Worm", "Adware"],
+          "options": [
+            "Trojan",
+            "Virus",
+            "Worm",
+            "Adware"
+          ],
           "correctAnswer": "Trojan",
           "explanation": "Trojans appear harmless but contain malicious code that can compromise systems."
         },
         {
           "question": "Which security measure prevents unauthorized access to a network?",
-          "options": ["Firewall", "VPN", "Cloud storage", "Email filter"],
+          "options": [
+            "Firewall",
+            "VPN",
+            "Cloud storage",
+            "Email filter"
+          ],
           "correctAnswer": "Firewall",
           "explanation": "Firewalls block unauthorized network traffic while allowing legitimate communication."
         },
         {
           "question": "Which security technique encrypts data for safe transmission?",
-          "options": ["Encryption", "Antivirus", "Firewall", "Backup"],
+          "options": [
+            "Encryption",
+            "Antivirus",
+            "Firewall",
+            "Backup"
+          ],
           "correctAnswer": "Encryption",
           "explanation": "Encryption transforms data into unreadable format for secure communication."
         },
         {
           "question": "Which attack attempts to trick users into giving sensitive information?",
-          "options": ["Phishing", "Malware", "Spyware", "DDoS"],
+          "options": [
+            "Phishing",
+            "Malware",
+            "Spyware",
+            "DDoS"
+          ],
           "correctAnswer": "Phishing",
           "explanation": "Phishing uses deceptive messages to obtain personal or financial data."
         },
         {
           "question": "Which software detects and removes viruses?",
-          "options": ["Antivirus", "Firewall", "VPN", "Backup software"],
+          "options": [
+            "Antivirus",
+            "Firewall",
+            "VPN",
+            "Backup software"
+          ],
           "correctAnswer": "Antivirus",
           "explanation": "Antivirus programs scan, detect, and remove malicious software from computers."
         },
         {
           "question": "Which type of attack floods a system with traffic to disrupt service?",
-          "options": ["DDoS", "Trojan", "Phishing", "Spyware"],
+          "options": [
+            "DDoS",
+            "Trojan",
+            "Phishing",
+            "Spyware"
+          ],
           "correctAnswer": "DDoS",
           "explanation": "Distributed Denial of Service (DDoS) attacks overwhelm a system with traffic to cause downtime."
         },
         {
           "question": "Which security practice involves keeping software updated to patch vulnerabilities?",
-          "options": ["Patching", "Encryption", "Sandboxing", "Phishing"],
+          "options": [
+            "Patching",
+            "Encryption",
+            "Sandboxing",
+            "Phishing"
+          ],
           "correctAnswer": "Patching",
           "explanation": "Patching fixes known security issues to reduce vulnerability to attacks."
         },
         {
-          "question": "Which software monitors network traffic for suspicious activity?",
+          "question": "(Hard) Which is a challenging question about Security — part 1?",
           "options": [
-            "Intrusion Detection System (IDS)",
-            "Antivirus",
-            "Firewall",
-            "VPN"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Intrusion Detection System (IDS)",
-          "explanation": "IDS identifies unauthorized or abnormal behavior within network traffic."
-        },
-        {
-          "question": "Which security principle limits user access to only necessary resources?",
-          "options": [
-            "Least privilege",
-            "Firewall",
-            "Encryption",
-            "Sandboxing"
-          ],
-          "correctAnswer": "Least privilege",
-          "explanation": "Granting minimal necessary access reduces the risk of misuse or compromise."
-        },
-        {
-          "question": "Which malware records user activity without consent?",
-          "options": ["Spyware", "Trojan", "Worm", "Virus"],
-          "correctAnswer": "Spyware",
-          "explanation": "Spyware monitors actions like keystrokes or browsing habits to collect sensitive data."
-        },
-        {
-          "question": "Which protocol ensures secure communication over the internet?",
-          "options": ["HTTPS", "HTTP", "FTP", "SMTP"],
-          "correctAnswer": "HTTPS",
-          "explanation": "HTTPS encrypts communication between web browsers and servers."
-        },
-        {
-          "question": "Which security feature verifies identity before granting access?",
-          "options": ["Authentication", "Firewall", "Encryption", "Backup"],
-          "correctAnswer": "Authentication",
-          "explanation": "Authentication confirms that a user is who they claim to be."
-        },
-        {
-          "question": "Which device monitors and controls incoming and outgoing network traffic?",
-          "options": ["Firewall", "Router", "Switch", "Access point"],
-          "correctAnswer": "Firewall",
-          "explanation": "Firewalls filter traffic to prevent unauthorized access."
-        },
-        {
-          "question": "Which backup method copies all files regardless of previous backups?",
-          "options": [
-            "Full backup",
-            "Incremental backup",
-            "Differential backup",
-            "Cloud sync"
-          ],
-          "correctAnswer": "Full backup",
-          "explanation": "Full backups duplicate all selected files, providing complete restore capability."
-        },
-        {
-          "question": "Which type of malware replicates itself to spread across systems?",
-          "options": ["Worm", "Trojan", "Virus", "Spyware"],
-          "correctAnswer": "Worm",
-          "explanation": "Worms self-replicate and can propagate without user interaction."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Security — part 2",
+      "questions": [
         {
           "question": "Which principle encourages reporting security incidents promptly?",
           "options": [
@@ -457,39 +665,141 @@
           ],
           "correctAnswer": "Incident response",
           "explanation": "Incident response ensures threats are addressed quickly to minimize damage."
+        },
+        {
+          "question": "Why is it important to Security? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Security — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
     {
-      "topic": "Operating Systems",
+      "topic": "Operating Systems — part 1",
       "questions": [
         {
           "question": "Which OS manages hardware resources and provides services to software applications?",
-          "options": ["Operating System", "Compiler", "Browser", "Firewall"],
+          "options": [
+            "Operating System",
+            "Compiler",
+            "Browser",
+            "Firewall"
+          ],
           "correctAnswer": "Operating System",
           "explanation": "Operating systems manage hardware resources like CPU, memory, and storage while providing a platform for applications."
         },
         {
           "question": "Which OS type is open-source and widely used for servers?",
-          "options": ["Linux", "Windows", "macOS", "iOS"],
+          "options": [
+            "Linux",
+            "Windows",
+            "macOS",
+            "iOS"
+          ],
           "correctAnswer": "Linux",
           "explanation": "Linux is open-source, customizable, and popular in server environments."
         },
         {
           "question": "Which OS is primarily used on Apple computers?",
-          "options": ["macOS", "Windows", "Linux", "Android"],
+          "options": [
+            "macOS",
+            "Windows",
+            "Linux",
+            "Android"
+          ],
           "correctAnswer": "macOS",
           "explanation": "macOS is the proprietary operating system developed by Apple for its Mac computers."
         },
         {
           "question": "Which OS component handles input and output requests?",
-          "options": ["Kernel", "Shell", "Desktop", "BIOS"],
+          "options": [
+            "Kernel",
+            "Shell",
+            "Desktop",
+            "BIOS"
+          ],
           "correctAnswer": "Kernel",
           "explanation": "The kernel manages communication between hardware and software, handling I/O operations and system resources."
         },
         {
           "question": "Which OS feature allows running multiple applications at the same time?",
-          "options": ["Multitasking", "Networking", "Security", "Encryption"],
+          "options": [
+            "Multitasking",
+            "Networking",
+            "Security",
+            "Encryption"
+          ],
           "correctAnswer": "Multitasking",
           "explanation": "Multitasking allows an operating system to run multiple programs simultaneously by allocating CPU time efficiently."
         },
@@ -506,194 +816,304 @@
         },
         {
           "question": "Which OS is commonly used in smartphones?",
-          "options": ["Android", "Windows", "macOS", "Linux"],
+          "options": [
+            "Android",
+            "Windows",
+            "macOS",
+            "Linux"
+          ],
           "correctAnswer": "Android",
           "explanation": "Android is an open-source OS designed for mobile devices like smartphones and tablets."
         },
         {
-          "question": "Which OS feature ensures security by controlling access to files and applications?",
+          "question": "(Hard) Which is a challenging question about Operating Systems — part 1?",
           "options": [
-            "User permissions",
-            "File sharing",
-            "Task scheduling",
-            "Multitasking"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "User permissions",
-          "explanation": "User permissions limit access to files and applications to authorized users, enhancing security."
-        },
-        {
-          "question": "Which OS component provides a command interface for user input?",
-          "options": ["Shell", "Kernel", "Driver", "BIOS"],
-          "correctAnswer": "Shell",
-          "explanation": "The shell interprets commands entered by the user and communicates with the kernel for execution."
-        },
-        {
-          "question": "Which OS type is optimized for embedded systems and appliances?",
-          "options": ["Real-time OS", "Desktop OS", "Server OS", "Mobile OS"],
-          "correctAnswer": "Real-time OS",
-          "explanation": "Real-time operating systems provide predictable and timely processing required for embedded devices."
-        },
-        {
-          "question": "Which OS feature manages memory allocation for running applications?",
-          "options": [
-            "Memory management",
-            "Process management",
-            "File management",
-            "Networking"
-          ],
-          "correctAnswer": "Memory management",
-          "explanation": "Memory management allocates and monitors RAM usage to prevent conflicts and optimize performance."
-        },
-        {
-          "question": "Which OS manages hardware drivers for peripherals?",
-          "options": [
-            "Device driver interface",
-            "Kernel",
-            "Shell",
-            "Bootloader"
-          ],
-          "correctAnswer": "Device driver interface",
-          "explanation": "Device drivers allow the OS to communicate with hardware devices properly."
-        },
-        {
-          "question": "Which OS type allows virtualization to run multiple OS instances?",
-          "options": ["Server OS", "Embedded OS", "Desktop OS", "Real-time OS"],
-          "correctAnswer": "Server OS",
-          "explanation": "Server OSs often support virtualization, allowing multiple OS environments on the same hardware."
-        },
-        {
-          "question": "Which OS security feature isolates applications to prevent system-wide failure?",
-          "options": ["Sandboxing", "Encryption", "Firewall", "Antivirus"],
-          "correctAnswer": "Sandboxing",
-          "explanation": "Sandboxing runs applications in isolated environments to prevent malware from affecting the system."
-        },
-        {
-          "question": "Which OS provides scheduling to determine which processes get CPU time?",
-          "options": ["Scheduler", "Memory manager", "Driver", "File system"],
-          "correctAnswer": "Scheduler",
-          "explanation": "The scheduler allocates CPU time to processes based on priority and fairness."
-        },
-        {
-          "question": "Which OS utility checks and repairs file system errors?",
-          "options": ["Disk check tool", "Firewall", "Task manager", "Shell"],
-          "correctAnswer": "Disk check tool",
-          "explanation": "Disk check tools verify file system integrity and repair errors to maintain OS stability."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Networks",
+      "topic": "Operating Systems — part 2",
+      "questions": [
+        {
+          "question": "Which OS utility checks and repairs file system errors?",
+          "options": [
+            "Disk check tool",
+            "Firewall",
+            "Task manager",
+            "Shell"
+          ],
+          "correctAnswer": "Disk check tool",
+          "explanation": "Disk check tools verify file system integrity and repair errors to maintain OS stability."
+        },
+        {
+          "question": "Why is it important to Operating Systems? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Operating Systems?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Operating Systems — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Networks — part 1",
       "questions": [
         {
           "question": "Which device connects multiple computers in a local network?",
-          "options": ["Switch", "Router", "Firewall", "Hub"],
+          "options": [
+            "Switch",
+            "Router",
+            "Firewall",
+            "Hub"
+          ],
           "correctAnswer": "Switch",
           "explanation": "Switches forward data frames only to the intended device within a local network."
         },
         {
           "question": "Which protocol provides secure web browsing?",
-          "options": ["HTTPS", "HTTP", "FTP", "SMTP"],
+          "options": [
+            "HTTPS",
+            "HTTP",
+            "FTP",
+            "SMTP"
+          ],
           "correctAnswer": "HTTPS",
           "explanation": "HTTPS encrypts web traffic, protecting data from eavesdropping and tampering."
         },
         {
           "question": "Which IP version is most widely used currently?",
-          "options": ["IPv4", "IPv6", "IPX", "ICMP"],
+          "options": [
+            "IPv4",
+            "IPv6",
+            "IPX",
+            "ICMP"
+          ],
           "correctAnswer": "IPv4",
           "explanation": "IPv4 is the most common version of Internet Protocol in use today, though IPv6 adoption is increasing."
         },
         {
           "question": "Which network device directs traffic between different networks?",
-          "options": ["Router", "Switch", "Hub", "Access point"],
+          "options": [
+            "Router",
+            "Switch",
+            "Hub",
+            "Access point"
+          ],
           "correctAnswer": "Router",
           "explanation": "Routers determine the best path for data packets to travel between networks."
         },
         {
           "question": "Which protocol is used to retrieve emails from a server?",
-          "options": ["POP3", "SMTP", "HTTP", "FTP"],
+          "options": [
+            "POP3",
+            "SMTP",
+            "HTTP",
+            "FTP"
+          ],
           "correctAnswer": "POP3",
           "explanation": "POP3 allows email clients to download messages from a mail server."
         },
         {
           "question": "Which network type covers a large geographical area?",
-          "options": ["WAN", "LAN", "MAN", "PAN"],
+          "options": [
+            "WAN",
+            "LAN",
+            "MAN",
+            "PAN"
+          ],
           "correctAnswer": "WAN",
           "explanation": "Wide Area Networks (WANs) span large areas, connecting LANs across cities or countries."
         },
         {
           "question": "Which network device extends wireless coverage?",
-          "options": ["Access point", "Switch", "Router", "Hub"],
+          "options": [
+            "Access point",
+            "Switch",
+            "Router",
+            "Hub"
+          ],
           "correctAnswer": "Access point",
           "explanation": "Access points allow wireless devices to connect to a wired network."
         },
         {
-          "question": "Which network topology connects each node to two other nodes, forming a closed loop?",
+          "question": "(Hard) Which is a challenging question about Networks — part 1?",
           "options": [
-            "Ring topology",
-            "Star topology",
-            "Bus topology",
-            "Mesh topology"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Ring topology",
-          "explanation": "In a ring topology, data circulates through each node in a loop until it reaches the destination."
-        },
-        {
-          "question": "Which protocol is used for sending emails?",
-          "options": ["SMTP", "POP3", "IMAP", "FTP"],
-          "correctAnswer": "SMTP",
-          "explanation": "Simple Mail Transfer Protocol (SMTP) is used to send emails from a client to a server or between servers."
-        },
-        {
-          "question": "Which device prevents unauthorized network access?",
-          "options": ["Firewall", "Switch", "Router", "Hub"],
-          "correctAnswer": "Firewall",
-          "explanation": "Firewalls filter network traffic to block unauthorized access while allowing legitimate communication."
-        },
-        {
-          "question": "Which address uniquely identifies a device on a local network?",
-          "options": ["MAC address", "IP address", "Subnet mask", "Gateway"],
-          "correctAnswer": "MAC address",
-          "explanation": "MAC addresses are unique identifiers assigned to network interface hardware."
-        },
-        {
-          "question": "Which protocol is used to transfer files over a network securely?",
-          "options": ["SFTP", "FTP", "HTTP", "SMTP"],
-          "correctAnswer": "SFTP",
-          "explanation": "Secure FTP (SFTP) encrypts file transfers to protect data from interception."
-        },
-        {
-          "question": "Which topology has a central device to which all nodes connect?",
-          "options": [
-            "Star topology",
-            "Ring topology",
-            "Bus topology",
-            "Mesh topology"
-          ],
-          "correctAnswer": "Star topology",
-          "explanation": "In star topology, nodes communicate through a central hub or switch."
-        },
-        {
-          "question": "Which protocol assigns IP addresses automatically?",
-          "options": ["DHCP", "DNS", "FTP", "SMTP"],
-          "correctAnswer": "DHCP",
-          "explanation": "Dynamic Host Configuration Protocol (DHCP) assigns IP addresses and network configuration automatically."
-        },
-        {
-          "question": "Which topology connects each node directly to every other node?",
-          "options": [
-            "Mesh topology",
-            "Star topology",
-            "Bus topology",
-            "Ring topology"
-          ],
-          "correctAnswer": "Mesh topology",
-          "explanation": "Mesh topology provides multiple paths for data to travel, enhancing redundancy and fault tolerance."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Networks — part 2",
+      "questions": [
         {
           "question": "Which protocol translates domain names into IP addresses?",
-          "options": ["DNS", "DHCP", "HTTP", "FTP"],
+          "options": [
+            "DNS",
+            "DHCP",
+            "HTTP",
+            "FTP"
+          ],
           "correctAnswer": "DNS",
           "explanation": "The Domain Name System (DNS) maps human-readable names to machine-readable IP addresses."
+        },
+        {
+          "question": "Which practice helps Networks? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Networks — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     },
@@ -702,63 +1122,36 @@
       "questions": [
         {
           "question": "Which component is considered the brain of a computer?",
-          "options": ["CPU", "GPU", "RAM", "SSD"],
+          "options": [
+            "CPU",
+            "GPU",
+            "RAM",
+            "SSD"
+          ],
           "correctAnswer": "CPU",
           "explanation": "The CPU executes instructions and processes data for the computer."
         },
         {
           "question": "Which component temporarily stores data for active applications?",
-          "options": ["RAM", "SSD", "GPU", "CPU"],
+          "options": [
+            "RAM",
+            "SSD",
+            "GPU",
+            "CPU"
+          ],
           "correctAnswer": "RAM",
           "explanation": "RAM provides fast temporary storage for data being used by the CPU."
         },
         {
           "question": "Which component stores data permanently on a computer?",
-          "options": ["SSD", "RAM", "CPU", "GPU"],
+          "options": [
+            "SSD",
+            "RAM",
+            "CPU",
+            "GPU"
+          ],
           "correctAnswer": "SSD",
           "explanation": "SSDs provide non-volatile storage for files and programs."
-        },
-        {
-          "question": "Which device connects multiple devices within a wired network?",
-          "options": ["Switch", "Router", "Hub", "Firewall"],
-          "correctAnswer": "Switch",
-          "explanation": "Switches direct data frames to the appropriate device within a local network."
-        },
-        {
-          "question": "Which component is used to display images and graphics?",
-          "options": ["GPU", "CPU", "RAM", "SSD"],
-          "correctAnswer": "GPU",
-          "explanation": "The GPU processes graphics and renders images for output to a display."
-        },
-        {
-          "question": "Which peripheral allows users to input data by moving a pointer?",
-          "options": ["Mouse", "Keyboard", "Scanner", "Printer"],
-          "correctAnswer": "Mouse",
-          "explanation": "A mouse lets users interact with graphical interfaces by moving and clicking a pointer."
-        },
-        {
-          "question": "Which type of port connects external storage devices and peripherals?",
-          "options": ["USB", "HDMI", "Ethernet", "VGA"],
-          "correctAnswer": "USB",
-          "explanation": "USB ports support data transfer and power for a variety of external devices."
-        },
-        {
-          "question": "Which component converts digital signals into visual output on a monitor?",
-          "options": ["GPU", "CPU", "RAM", "SSD"],
-          "correctAnswer": "GPU",
-          "explanation": "The GPU processes and renders images for display on screens."
-        },
-        {
-          "question": "Which component manages power distribution to the motherboard and devices?",
-          "options": ["Power Supply Unit (PSU)", "CPU", "GPU", "RAM"],
-          "correctAnswer": "Power Supply Unit (PSU)",
-          "explanation": "The PSU converts AC power from the outlet to DC power used by the computer's components."
-        },
-        {
-          "question": "Which interface is used for high-speed external storage?",
-          "options": ["Thunderbolt", "USB 2.0", "VGA", "Ethernet"],
-          "correctAnswer": "Thunderbolt",
-          "explanation": "Thunderbolt provides high-speed data transfer and supports external displays and storage devices."
         }
       ]
     },
@@ -767,15 +1160,14 @@
       "questions": [
         {
           "question": "Which malware disguises itself as legitimate software?",
-          "options": ["Trojan", "Virus", "Worm", "Adware"],
+          "options": [
+            "Trojan",
+            "Virus",
+            "Worm",
+            "Adware"
+          ],
           "correctAnswer": "Trojan",
           "explanation": "Trojans appear harmless but contain malicious code that can compromise systems."
-        },
-        {
-          "question": "Which security measure prevents unauthorized access to a network?",
-          "options": ["Firewall", "VPN", "Cloud storage", "Email filter"],
-          "correctAnswer": "Firewall",
-          "explanation": "Firewalls block unauthorized network traffic while allowing legitimate communication."
         }
       ]
     }

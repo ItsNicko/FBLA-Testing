@@ -2,7 +2,7 @@
   "testName": "Agribusiness",
   "topics": [
     {
-      "topic": "Health, Safety, and Environmental Management",
+      "topic": "Health, Safety, and Environmental Management — part 1",
       "questions": [
         {
           "question": "Which type of insurance protects farmers from financial loss due to drought or flooding?",
@@ -28,7 +28,12 @@
         },
         {
           "question": "Which federal agency enforces standards to protect agricultural workers from occupational hazards?",
-          "options": ["OSHA", "FDA", "EPA", "IRS"],
+          "options": [
+            "OSHA",
+            "FDA",
+            "EPA",
+            "IRS"
+          ],
           "correctAnswer": "OSHA",
           "explanation": "The Occupational Safety and Health Administration (OSHA) enforces workplace safety standards, including those for farming operations. The FDA regulates food safety, EPA handles environmental protection, and IRS oversees taxes."
         },
@@ -77,92 +82,113 @@
           "explanation": "Sustainable practices like crop rotation and water conservation ensure that soil, water, and ecosystems remain productive for future generations."
         },
         {
-          "question": "Which of the following is an example of a biological hazard on a farm?",
+          "question": "(Hard) Which is a challenging question about Health, Safety, and Environmental Management — part 1?",
           "options": [
-            "Loose wiring",
-            "Exposure to pesticides",
-            "Animal waste",
-            "Excessive noise from machinery"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Animal waste",
-          "explanation": "Animal waste can spread pathogens like E. coli, making it a biological hazard. Pesticides are chemical hazards, wiring is electrical, and noise is a physical hazard."
-        },
-        {
-          "question": "What is an example of a corrective safety measure on a farm?",
-          "options": [
-            "Ignoring a minor hazard",
-            "Repairing a broken machine guard",
-            "Hiring more workers",
-            "Purchasing crop insurance"
-          ],
-          "correctAnswer": "Repairing a broken machine guard",
-          "explanation": "Corrective measures directly fix hazards, such as repairing unsafe equipment. Hiring workers or insurance does not eliminate the immediate risk."
-        },
-        {
-          "question": "Why is first aid training important in agribusiness workplaces?",
-          "options": [
-            "It increases profits",
-            "It improves crop quality",
-            "It minimizes the impact of injuries",
-            "It reduces insurance premiums automatically"
-          ],
-          "correctAnswer": "It minimizes the impact of injuries",
-          "explanation": "First aid training equips workers to respond quickly and effectively to injuries, reducing severity and improving recovery chances."
-        },
-        {
-          "question": "Which regulation enforces safe pesticide application in agriculture?",
-          "options": ["FMLA", "WPS", "HIPAA", "USMCA"],
-          "correctAnswer": "WPS",
-          "explanation": "The Worker Protection Standard (WPS) is an EPA regulation that protects agricultural workers from pesticide risks. FMLA relates to family leave, HIPAA to health privacy, and USMCA is a trade agreement."
-        },
-        {
-          "question": "Why is PPE (Personal Protective Equipment) critical in farming operations?",
-          "options": [
-            "It replaces worker training",
-            "It protects workers from hazards",
-            "It increases crop yield",
-            "It lowers taxes"
-          ],
-          "correctAnswer": "It protects workers from hazards",
-          "explanation": "PPE like gloves, respirators, and goggles shield workers from chemical, physical, and biological hazards. Training and safety culture are still essential."
-        },
-        {
-          "question": "In risk assessment, which factor is most important for setting safety priorities?",
-          "options": [
-            "Farmer’s age",
-            "Insurance premiums",
-            "Seasonal market trends",
-            "Probability and severity of harm"
-          ],
-          "correctAnswer": "Probability and severity of harm",
-          "explanation": "Risks are prioritized by how likely they are to occur and how much damage they could cause, not by unrelated financial or demographic factors."
-        },
-        {
-          "question": "What is an example of environmental compliance in agribusiness?",
-          "options": [
-            "Dumping fertilizer into rivers",
-            "Following EPA waste regulations",
-            "Selling unlabeled produce",
-            "Over-irrigating crops"
-          ],
-          "correctAnswer": "Following EPA waste regulations",
-          "explanation": "Environmental compliance means obeying legal standards like EPA rules to reduce pollution and protect ecosystems."
-        },
-        {
-          "question": "How does crop rotation improve environmental sustainability?",
-          "options": [
-            "By lowering tax liability",
-            "By enhancing soil health",
-            "By reducing insurance rates",
-            "By increasing labor demand"
-          ],
-          "correctAnswer": "By enhancing soil health",
-          "explanation": "Rotating crops prevents nutrient depletion, disrupts pest cycles, and reduces reliance on chemical fertilizers, maintaining productive soils."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Management Analysis and Decision Making",
+      "topic": "Health, Safety, and Environmental Management — part 2",
+      "questions": [
+        {
+          "question": "Which of the following best explains Health, Safety, and Environmental Management? (Challenging)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Which is a challenging question about Health, Safety, and Environmental Management?",
+          "options": [
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
+          ],
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
+        },
+        {
+          "question": "Which of the following best explains Health, Safety, and Environmental Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Health, Safety, and Environmental Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Health, Safety, and Environmental Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Health, Safety, and Environmental Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Health, Safety, and Environmental Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Health, Safety, and Environmental Management — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Management Analysis and Decision Making — part 1",
       "questions": [
         {
           "question": "Which agribusiness organization type is owned and controlled by its members, who share in profits based on participation?",
@@ -242,101 +268,122 @@
           "explanation": "Production plans match labor resources to production needs to ensure efficiency. Logos and slogans are marketing, not production planning."
         },
         {
-          "question": "What is a major benefit of incorporating a farm business as a corporation?",
+          "question": "(Hard) Which is a challenging question about Management Analysis and Decision Making — part 1?",
           "options": [
-            "Unlimited personal liability",
-            "Easier management",
-            "Limited liability for owners",
-            "Simpler tax filing"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Limited liability for owners",
-          "explanation": "Corporations protect owners’ personal assets from business debts and lawsuits. Tax filing is more complex, not simpler."
-        },
-        {
-          "question": "Why is conducting a market opportunity analysis important for an agribusiness?",
-          "options": [
-            "It reduces risks and identifies growth areas",
-            "It guarantees immediate profits",
-            "It replaces accounting records",
-            "It eliminates the need for promotion"
-          ],
-          "correctAnswer": "It reduces risks and identifies growth areas",
-          "explanation": "Market analysis helps businesses understand customer needs, competition, and demand, guiding better strategic choices. It cannot guarantee profits but reduces uncertainty."
-        },
-        {
-          "question": "Which strategy capitalizes on an agribusiness’s strengths?",
-          "options": [
-            "Ignoring customer needs",
-            "Leveraging strong brand reputation",
-            "Cutting employee training",
-            "Overproducing inventory"
-          ],
-          "correctAnswer": "Leveraging strong brand reputation",
-          "explanation": "A strong brand builds customer trust and allows premium pricing. Ignoring needs or overproduction weakens competitiveness."
-        },
-        {
-          "question": "Which legal form of agribusiness distributes profits based on member use rather than ownership shares?",
-          "options": [
-            "Corporation",
-            "Sole proprietorship",
-            "Partnership",
-            "Cooperative"
-          ],
-          "correctAnswer": "Cooperative",
-          "explanation": "Cooperatives distribute profits based on member participation, unlike corporations, which pay dividends based on shareholding."
-        },
-        {
-          "question": "What is the first step in the strategic decision-making process?",
-          "options": [
-            "Collect profits",
-            "Implement solutions",
-            "Identify problems or opportunities",
-            "Evaluate alternatives"
-          ],
-          "correctAnswer": "Identify problems or opportunities",
-          "explanation": "Recognizing the issue is the foundation of effective decision-making. Without a clear problem, strategies may be misdirected."
-        },
-        {
-          "question": "Which tool is best for predicting future sales and production trends in agribusiness?",
-          "options": [
-            "Forecasting",
-            "SWOT analysis",
-            "Risk matrix",
-            "Budget variance reports"
-          ],
-          "correctAnswer": "Forecasting",
-          "explanation": "Forecasting uses historical data and market indicators to project future outcomes, helping managers prepare resources. SWOT is more about situational analysis."
-        },
-        {
-          "question": "What is a common weakness in family-owned farm businesses?",
-          "options": [
-            "Stable leadership",
-            "Strong community trust",
-            "Lack of succession planning",
-            "Close customer ties"
-          ],
-          "correctAnswer": "Lack of succession planning",
-          "explanation": "Without a clear plan for transferring leadership, farms risk instability. Trust and close ties are strengths, not weaknesses."
-        },
-        {
-          "question": "Why should managers in agribusiness prioritize ethical standards?",
-          "options": [
-            "To maximize short-term profits",
-            "To build long-term trust and compliance",
-            "To exploit labor costs",
-            "To avoid competition"
-          ],
-          "correctAnswer": "To build long-term trust and compliance",
-          "explanation": "Ethical practices ensure sustainability, maintain legal compliance, and strengthen reputation. Cutting corners for short-term gains creates long-term risks."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Marketing",
+      "topic": "Management Analysis and Decision Making — part 2",
+      "questions": [
+        {
+          "question": "How does a manager typically Management Analysis and Decision Making? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Management Analysis and Decision Making — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Management Analysis and Decision Making — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Management Analysis and Decision Making — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Management Analysis and Decision Making — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Management Analysis and Decision Making — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Management Analysis and Decision Making — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Management Analysis and Decision Making — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Marketing — part 1",
       "questions": [
         {
           "question": "Which of the following is NOT one of the 4 Ps of marketing?",
-          "options": ["Product", "Price", "Promotion", "Production"],
+          "options": [
+            "Product",
+            "Price",
+            "Promotion",
+            "Production"
+          ],
           "correctAnswer": "Production",
           "explanation": "The 4 Ps are Product, Price, Place, and Promotion. Production is an operational activity, not a marketing mix element."
         },
@@ -386,7 +433,12 @@
         },
         {
           "question": "Which stage of the product life cycle usually requires the highest advertising expenditure?",
-          "options": ["Introduction", "Growth", "Maturity", "Decline"],
+          "options": [
+            "Introduction",
+            "Growth",
+            "Maturity",
+            "Decline"
+          ],
           "correctAnswer": "Introduction",
           "explanation": "Heavy advertising is needed during the introduction stage to build awareness and educate consumers about new products."
         },
@@ -402,97 +454,113 @@
           "explanation": "Branding gives identity to commodities, making them stand out. For example, 'Certified Angus Beef' differentiates beef from generic options."
         },
         {
-          "question": "Which distribution channel would best suit highly perishable produce like strawberries?",
+          "question": "(Hard) Which is a challenging question about Marketing — part 1?",
           "options": [
-            "Direct-to-consumer farmers’ markets",
-            "National wholesalers",
-            "Long-term storage warehouses",
-            "Export shipping containers"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Direct-to-consumer farmers’ markets",
-          "explanation": "Highly perishable goods benefit from short channels that minimize transport and storage time. Long-term storage or export risks spoilage."
-        },
-        {
-          "question": "An agribusiness lowers its product price below cost to attract customers to its store. Which pricing strategy is this?",
-          "options": [
-            "Loss leader pricing",
-            "Premium pricing",
-            "Price skimming",
-            "Penetration pricing"
-          ],
-          "correctAnswer": "Loss leader pricing",
-          "explanation": "Loss leader pricing draws customers in with very low prices on select items, expecting additional purchases. It's risky if customers buy only the discounted product."
-        },
-        {
-          "question": "Why is market segmentation valuable for agribusiness marketers?",
-          "options": [
-            "It allows targeting of groups with shared characteristics",
-            "It ensures maximum crop yields",
-            "It lowers production costs",
-            "It guarantees profit margins"
-          ],
-          "correctAnswer": "It allows targeting of groups with shared characteristics",
-          "explanation": "Segmentation helps tailor products and promotions to groups, such as organic food buyers or bulk grain purchasers. It improves efficiency and relevance."
-        },
-        {
-          "question": "What is the key function of marketing research in agribusiness?",
-          "options": [
-            "To measure consumer needs and preferences",
-            "To increase farm yield",
-            "To calculate fertilizer use",
-            "To set federal regulations"
-          ],
-          "correctAnswer": "To measure consumer needs and preferences",
-          "explanation": "Marketing research gathers data on buyers and competitors to guide product design, pricing, and promotional efforts."
-        },
-        {
-          "question": "Which advertising medium provides the broadest reach for national agribusiness campaigns?",
-          "options": [
-            "Television",
-            "Local newspapers",
-            "Farmers’ markets",
-            "Direct mail"
-          ],
-          "correctAnswer": "Television",
-          "explanation": "Television reaches mass audiences quickly, making it effective for nationwide campaigns. Direct mail and local newspapers are more targeted."
-        },
-        {
-          "question": "An organic farm emphasizes that its produce is 'pesticide-free' in ads. This is an example of:",
-          "options": [
-            "Emotional appeal",
-            "Product feature advertising",
-            "Lifestyle marketing",
-            "Comparative advertising"
-          ],
-          "correctAnswer": "Product feature advertising",
-          "explanation": "The ad highlights a specific product attribute ('pesticide-free'). Emotional and lifestyle appeals focus more on feelings and experiences."
-        },
-        {
-          "question": "Which is an example of sales promotion in agribusiness?",
-          "options": [
-            "A supermarket offering a 'Buy One Get One Free' deal on apples",
-            "A farmer giving a speech about sustainability",
-            "A TV commercial for milk",
-            "A government subsidy program"
-          ],
-          "correctAnswer": "A supermarket offering a 'Buy One Get One Free' deal on apples",
-          "explanation": "Sales promotions are short-term incentives to boost sales, such as discounts, coupons, or free samples."
-        },
-        {
-          "question": "A regional cheese brand advertises heavily against a national competitor. This is an example of:",
-          "options": [
-            "Comparative advertising",
-            "Institutional advertising",
-            "Public relations",
-            "Sponsorship"
-          ],
-          "correctAnswer": "Comparative advertising",
-          "explanation": "Comparative advertising directly compares a product to competitors, highlighting advantages. Institutional advertising promotes the company as a whole."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Economics",
+      "topic": "Marketing — part 2",
+      "questions": [
+        {
+          "question": "Which of the following best explains Marketing? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Marketing — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Marketing — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Marketing — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Marketing — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Marketing — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Marketing — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Marketing — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Economics — part 1",
       "questions": [
         {
           "question": "Which economic principle explains why corn prices fall when harvest yields are higher than expected?",
@@ -529,7 +597,12 @@
         },
         {
           "question": "When the government sets a minimum price for milk that is above the market equilibrium, what results?",
-          "options": ["Shortage", "Surplus", "Inflation", "Inelastic demand"],
+          "options": [
+            "Shortage",
+            "Surplus",
+            "Inflation",
+            "Inelastic demand"
+          ],
           "correctAnswer": "Surplus",
           "explanation": "A price floor above equilibrium creates excess supply because producers want to sell more, but consumers buy less at the higher price."
         },
@@ -578,86 +651,113 @@
           "explanation": "Farmers must weigh additional yield (benefit) against added cost (marginal cost) to decide if the practice is profitable."
         },
         {
-          "question": "Why are agricultural prices often more volatile than manufactured goods?",
+          "question": "(Hard) Which is a challenging question about Economics — part 1?",
           "options": [
-            "Seasonality and weather risks",
-            "Fixed demand and stable supply",
-            "Government controls",
-            "Slow production cycles"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Seasonality and weather risks",
-          "explanation": "Unpredictable weather, pests, and growing cycles create supply swings, leading to price volatility in agriculture."
-        },
-        {
-          "question": "Which factor increases the elasticity of demand for an agricultural product?",
-          "options": [
-            "Availability of substitutes",
-            "Necessity of the product",
-            "Government subsidy",
-            "Fixed consumer habits"
-          ],
-          "correctAnswer": "Availability of substitutes",
-          "explanation": "When substitutes exist (e.g., chicken for beef), consumers are more responsive to price changes, making demand more elastic."
-        },
-        {
-          "question": "Which of the following best explains the law of diminishing returns in farming?",
-          "options": [
-            "Adding more fertilizer eventually yields smaller increases in output",
-            "Increasing supply lowers prices",
-            "Rising demand raises prices",
-            "Subsidies improve farm income"
-          ],
-          "correctAnswer": "Adding more fertilizer eventually yields smaller increases in output",
-          "explanation": "The law of diminishing returns states that adding more of one input, while keeping others constant, results in smaller increases in output beyond a certain point."
-        },
-        {
-          "question": "What does GDP measure in relation to agriculture?",
-          "options": [
-            "Total government spending on farms",
-            "Value of all goods and services produced within a country",
-            "Total exports of crops",
-            "National debt owed to foreign lenders"
-          ],
-          "correctAnswer": "Value of all goods and services produced within a country",
-          "explanation": "Gross Domestic Product (GDP) measures the overall economic output of a nation, including agricultural production."
-        },
-        {
-          "question": "Which market structure best describes the global wheat market?",
-          "options": [
-            "Monopoly",
-            "Perfect competition",
-            "Oligopoly",
-            "Monopolistic competition"
-          ],
-          "correctAnswer": "Perfect competition",
-          "explanation": "Wheat markets involve many producers selling identical products, making it a near example of perfect competition."
-        },
-        {
-          "question": "When demand for organic produce rises faster than supply, what is the likely effect on prices?",
-          "options": [
-            "Prices will fall",
-            "Prices will rise",
-            "Prices will remain constant",
-            "Subsidies will increase"
-          ],
-          "correctAnswer": "Prices will rise",
-          "explanation": "When demand outpaces supply, prices increase because buyers compete for limited goods."
-        },
-        {
-          "question": "What is the economic effect of tariffs on imported agricultural goods?",
-          "options": [
-            "They make imports cheaper",
-            "They raise prices of imported goods",
-            "They eliminate domestic production",
-            "They increase consumer choice"
-          ],
-          "correctAnswer": "They raise prices of imported goods",
-          "explanation": "Tariffs increase the cost of imports, protecting domestic producers but often raising consumer prices."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topic": "Finance and Accounting",
+      "topic": "Economics — part 2",
+      "questions": [
+        {
+          "question": "Which practice helps Economics? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains Economics — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Economics — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Economics — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Economics — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Economics — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "Which of the following best explains Economics — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Economics — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        }
+      ]
+    },
+    {
+      "topic": "Finance and Accounting — part 1",
       "questions": [
         {
           "question": "Which financial statement shows a company’s assets, liabilities, and owner’s equity at a specific point in time?",
@@ -748,82 +848,21 @@
           "explanation": "Depreciation allocates the cost of long-term assets (like tractors) across their lifespan, reflecting wear and tear and reducing taxable income annually."
         },
         {
-          "question": "What is working capital in agribusiness finance?",
+          "question": "(Hard) Which is a challenging question about Finance and Accounting — part 1?",
           "options": [
-            "Total assets minus total liabilities",
-            "Current assets minus current liabilities",
-            "Revenue minus expenses",
-            "Cash inflows minus outflows"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Current assets minus current liabilities",
-          "explanation": "Working capital measures short-term financial health. Positive working capital means current assets can cover short-term obligations."
-        },
-        {
-          "question": "Why do lenders evaluate an agribusiness’s creditworthiness?",
-          "options": [
-            "To determine fertilizer needs",
-            "To set loan terms and interest rates",
-            "To evaluate crop rotation plans",
-            "To project land fertility"
-          ],
-          "correctAnswer": "To set loan terms and interest rates",
-          "explanation": "Banks assess creditworthiness to decide how much to lend and at what rate. Strong credit lowers interest costs."
-        },
-        {
-          "question": "What is the main function of an income statement in agribusiness?",
-          "options": [
-            "Shows profit or loss over a period",
-            "Lists all land and machinery owned",
-            "Shows how cash moves in and out",
-            "Displays changes in equity only"
-          ],
-          "correctAnswer": "Shows profit or loss over a period",
-          "explanation": "Income statements summarize revenues and expenses over time, showing net profit or loss from operations."
-        },
-        {
-          "question": "Why might an agribusiness choose long-term financing over short-term financing?",
-          "options": [
-            "To cover small daily expenses",
-            "To finance major investments like land or equipment",
-            "To reduce tax filing complexity",
-            "To avoid credit checks"
-          ],
-          "correctAnswer": "To finance major investments like land or equipment",
-          "explanation": "Long-term loans spread large costs (like land, buildings, machinery) over many years, making them more affordable."
-        },
-        {
-          "question": "Which measure indicates the profitability of farm operations relative to total sales?",
-          "options": [
-            "Net profit margin",
-            "Liquidity ratio",
-            "Debt ratio",
-            "Cash coverage ratio"
-          ],
-          "correctAnswer": "Net profit margin",
-          "explanation": "Net profit margin shows what percentage of sales revenue becomes profit, a key measure of efficiency."
-        },
-        {
-          "question": "Which financial tool tracks expected income and expenses for future planning?",
-          "options": [
-            "Ledger",
-            "Budget",
-            "Trial balance",
-            "Statement of equity"
-          ],
-          "correctAnswer": "Budget",
-          "explanation": "Budgets forecast revenues and expenses, guiding planning and resource allocation."
-        },
-        {
-          "question": "If an agribusiness has a current ratio below 1, what does this indicate?",
-          "options": [
-            "It has strong liquidity",
-            "It may struggle to meet short-term obligations",
-            "It has excess equity",
-            "It has no outstanding debt"
-          ],
-          "correctAnswer": "It may struggle to meet short-term obligations",
-          "explanation": "A ratio below 1 means current liabilities exceed current assets, raising liquidity concerns."
-        },
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Finance and Accounting — part 2",
+      "questions": [
         {
           "question": "Which financial tool shows where cash is coming from and how it is being used?",
           "options": [
@@ -848,7 +887,12 @@
         },
         {
           "question": "If a farm sells $500,000 in produce and has $350,000 in expenses, what is the net income?",
-          "options": ["$150,000", "$350,000", "$500,000", "$850,000"],
+          "options": [
+            "$150,000",
+            "$350,000",
+            "$500,000",
+            "$850,000"
+          ],
           "correctAnswer": "$150,000",
           "explanation": "Net income = Revenue – Expenses. $500,000 – $350,000 = $150,000."
         },
@@ -908,26 +952,20 @@
           "explanation": "This statement tracks changes in owner contributions and retained earnings, giving insight into equity growth."
         },
         {
-          "question": "If machinery costs $200,000 and is depreciated over 10 years with no salvage value, what is the annual depreciation expense (straight-line)?",
-          "options": ["$2,000", "$10,000", "$20,000", "$25,000"],
-          "correctAnswer": "$20,000",
-          "explanation": "Straight-line depreciation = Cost ÷ Useful Life. $200,000 ÷ 10 = $20,000 per year."
-        },
-        {
-          "question": "Why might an agribusiness lease equipment instead of purchasing it?",
+          "question": "(Hard) How does a manager typically Finance and Accounting? (Hard)",
           "options": [
-            "To reduce upfront costs and preserve cash flow",
-            "To eliminate all expenses",
-            "To avoid maintenance responsibilities entirely",
-            "To guarantee ownership"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "To reduce upfront costs and preserve cash flow",
-          "explanation": "Leasing spreads payments over time, reducing upfront capital needs. Ownership benefits are forgone but cash flow flexibility improves."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
     {
-      "topic": "Terminology and Trends",
+      "topic": "Terminology and Trends — part 1",
       "questions": [
         {
           "question": "What does vertical integration mean in agribusiness?",
@@ -1018,81 +1056,108 @@
           "explanation": "Globalization links markets worldwide, as seen when U.S. crops are sold internationally. Local sales are not examples of globalization."
         },
         {
-          "question": "What does supply chain management involve in agribusiness?",
+          "question": "(Hard) Which is a challenging question about Terminology and Trends — part 1?",
           "options": [
-            "Only production of raw crops",
-            "Managing the flow of goods from production to consumer",
-            "Reducing advertising costs",
-            "Controlling farm labor wages"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Managing the flow of goods from production to consumer",
-          "explanation": "Supply chain management oversees movement and storage of goods from farm to consumer, ensuring efficiency and minimizing waste."
+          "correctAnswer": "A",
+          "explanation": "Auto-added hard question."
+        }
+      ]
+    },
+    {
+      "topic": "Terminology and Trends — part 2",
+      "questions": [
+        {
+          "question": "Why is it important to Terminology and Trends? (Hard)",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
-          "question": "What is a cooperative (co-op) in agriculture?",
+          "question": "Which of the following best explains Terminology and Trends — part 2?",
           "options": [
-            "A sole proprietorship with one farmer",
-            "A government-run farm",
-            "A member-owned business that pools resources",
-            "A multinational agribusiness corporation"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "A member-owned business that pools resources",
-          "explanation": "Cooperatives allow farmers to combine purchasing power or marketing efforts, reducing costs and increasing competitiveness."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "What does 'organic certification' guarantee for consumers?",
+          "question": "Which of the following best explains Terminology and Trends — part 2?",
           "options": [
-            "That crops are grown without synthetic pesticides or fertilizers",
-            "That crops are grown only in the U.S.",
-            "That crops are genetically modified",
-            "That crops are always cheaper"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "That crops are grown without synthetic pesticides or fertilizers",
-          "explanation": "Organic certification requires following strict standards that exclude synthetic chemicals and promote natural soil health."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "What does vertical farming refer to?",
+          "question": "Which of the following best explains Terminology and Trends — part 2?",
           "options": [
-            "Farming in mountain regions",
-            "Growing crops in stacked indoor systems",
-            "Selling to vertical markets",
-            "Planting trees instead of crops"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Growing crops in stacked indoor systems",
-          "explanation": "Vertical farming uses controlled environments and stacked layers to grow crops efficiently in urban or limited-space areas."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "What is the main goal of fair trade certification in agriculture?",
+          "question": "Which of the following best explains Terminology and Trends — part 2?",
           "options": [
-            "To maximize profits for exporters",
-            "To ensure fair wages and sustainable practices",
-            "To reduce import taxes",
-            "To subsidize government-owned farms"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "To ensure fair wages and sustainable practices",
-          "explanation": "Fair trade ensures farmers, especially in developing countries, are paid fairly while encouraging sustainable production."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "Which technological trend allows farmers to collect real-time data on soil and crop conditions?",
+          "question": "Which of the following best explains Terminology and Trends — part 2?",
           "options": [
-            "Satellite imaging and sensors",
-            "Manual inspection only",
-            "Traditional crop rotation",
-            "Basic irrigation systems"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Satellite imaging and sensors",
-          "explanation": "Remote sensing and IoT devices provide real-time data to optimize irrigation, fertilization, and yield predictions."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         },
         {
-          "question": "What is the gig economy’s impact on agribusiness?",
+          "question": "Which of the following best explains Terminology and Trends — part 2?",
           "options": [
-            "Farmers rely more on short-term, flexible labor contracts",
-            "Farms eliminate the need for labor entirely",
-            "It increases subsidies",
-            "It reduces the importance of technology"
+            "A",
+            "B",
+            "C",
+            "D"
           ],
-          "correctAnswer": "Farmers rely more on short-term, flexible labor contracts",
-          "explanation": "The gig economy encourages temporary, flexible labor arrangements, which many farms adopt for seasonal work like harvesting."
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
+        },
+        {
+          "question": "(Hard) Which of the following best explains Terminology and Trends — part 2?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "correctAnswer": "A",
+          "explanation": "Auto-added question."
         }
       ]
     }

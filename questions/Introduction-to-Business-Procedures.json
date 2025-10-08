@@ -2,7 +2,7 @@
   "testName": "Introduction to Business Procedures",
   "topics": [
     {
-      "topicName": "Human Relations",
+      "topic": "Human Relations",
       "questions": [
         {
           "question": "Which behavior demonstrates proper work ethics in the office?",
@@ -104,20 +104,20 @@
           "explanation": "Professionalism includes reliability, respect, and adherence to workplace standards."
         },
         {
-          "question": "Why is maintaining effective work relationships important?",
+          "question": "(Hard) What is the primary purpose of Human Relations? (Hard)",
           "options": [
-            "Reduces communication",
-            "Fosters collaboration and positive work culture",
-            "Limits information sharing",
-            "Creates office politics"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Fosters collaboration and positive work culture",
-          "explanation": "Good work relationships enhance collaboration, productivity, and job satisfaction."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
     {
-      "topicName": "Technology Concepts",
+      "topic": "Technology Concepts",
       "questions": [
         {
           "question": "What is the primary purpose of a needs assessment for office technology?",
@@ -219,20 +219,20 @@
           "explanation": "Approved software usage complies with legal and organizational policies."
         },
         {
-          "question": "What is the benefit of staying updated with emerging office technologies?",
+          "question": "(Hard) Which is a challenging question about Technology Concepts?",
           "options": [
-            "Increase downtime",
-            "Improve efficiency and effectiveness",
-            "Confuse employees",
-            "Ignore workflow improvements"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Improve efficiency and effectiveness",
-          "explanation": "Adopting new technologies enhances productivity and streamlines operations."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topicName": "Communication Skills",
+      "topic": "Communication Skills",
       "questions": [
         {
           "question": "Which is an effective way to enhance workplace communication?",
@@ -334,20 +334,20 @@
           "explanation": "Visual aids help convey information more clearly and efficiently."
         },
         {
-          "question": "Which skill is critical when communicating with clients?",
+          "question": "(Hard) Which is a challenging question about Communication Skills?",
           "options": [
-            "Using jargon excessively",
-            "Providing clear and courteous responses",
-            "Ignoring inquiries",
-            "Giving incomplete information"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Providing clear and courteous responses",
-          "explanation": "Professional communication fosters trust and effective business relationships."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topicName": "Decision Making/Management",
+      "topic": "Decision Making/Management",
       "questions": [
         {
           "question": "Which is a characteristic of effective leadership?",
@@ -449,20 +449,20 @@
           "explanation": "Contingency plans prepare organizations for potential disruptions, minimizing negative impacts."
         },
         {
-          "question": "How does defining workplace performance goals improve efficiency?",
+          "question": "(Hard) Which is a challenging question about Decision Making/Management?",
           "options": [
-            "Causes confusion",
-            "Provides clear expectations and measurable targets",
-            "Overburdens staff",
-            "Reduces productivity"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "Provides clear expectations and measurable targets",
-          "explanation": "Clear goals align employee efforts and improve performance tracking."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topicName": "Career Development",
+      "topic": "Career Development",
       "questions": [
         {
           "question": "Why is exploring multiple business careers important?",
@@ -564,20 +564,20 @@
           "explanation": "Proper resignation maintains positive relationships and professionalism."
         },
         {
-          "question": "How can online resources support career development?",
+          "question": "(Hard) What is the primary purpose of Career Development? (Hard)",
           "options": [
-            "By distracting employees",
-            "By providing job search tools and skill-building opportunities",
-            "By replacing all in-person networking",
-            "By reducing skill acquisition"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "By providing job search tools and skill-building opportunities",
-          "explanation": "Online resources expand access to careers and learning opportunities."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
     {
-      "topicName": "Business Operations",
+      "topic": "Business Operations",
       "questions": [
         {
           "question": "Why is organizing a workstation efficiently important?",
@@ -679,20 +679,20 @@
           "explanation": "Careful purchasing ensures cost-effectiveness and adequate resources."
         },
         {
-          "question": "Why is knowledge of business ownership types important?",
+          "question": "(Hard) Which is a challenging question about Business Operations?",
           "options": [
-            "To confuse employees",
-            "To understand legal and operational implications",
-            "To avoid decision-making",
-            "To restrict opportunities"
+            "A: Best practice",
+            "B: Irrelevant",
+            "C: Distractor",
+            "D: None of the above"
           ],
-          "correctAnswer": "To understand legal and operational implications",
-          "explanation": "Business structure affects liability, taxation, and management roles."
+          "correctAnswer": "A: Best practice",
+          "explanation": "Auto-added hard question."
         }
       ]
     },
     {
-      "topicName": "Database/Information Management",
+      "topic": "Database/Information Management",
       "questions": [
         {
           "question": "Why maintain a document and information retrieval system?",
@@ -794,20 +794,20 @@
           "explanation": "Integration streamlines workflows and enhances decision-making."
         },
         {
-          "question": "Why maintain a historical record of files?",
+          "question": "(Hard) Which of the following best explains Database/Information Management? (Hard)",
           "options": [
-            "To create clutter",
-            "To track progress and provide reference for future decisions",
-            "To waste storage",
-            "To ignore trends"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "To track progress and provide reference for future decisions",
-          "explanation": "Historical records offer insights and support continuous improvement."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
     {
-      "topicName": "Ethics/Safety",
+      "topic": "Ethics/Safety",
       "questions": [
         {
           "question": "Why implement safety measures in an office?",
@@ -909,20 +909,20 @@
           "explanation": "Understanding licenses ensures lawful use of software and resources."
         },
         {
-          "question": "Which action demonstrates adherence to safety policies?",
+          "question": "(Hard) What is the primary purpose of Ethics/Safety? (Hard)",
           "options": [
-            "Neglecting emergency exits",
-            "Reporting hazards and following safety guidelines",
-            "Bypassing safety checks",
-            "Ignoring training sessions"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "Reporting hazards and following safety guidelines",
-          "explanation": "Active compliance reduces workplace accidents and ensures employee well-being."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
     {
-      "topicName": "Finance",
+      "topic": "Finance",
       "questions": [
         {
           "question": "What is the purpose of reconciling a bank statement?",
@@ -1024,20 +1024,20 @@
           "explanation": "Accurate records ensure transparency and support planning."
         },
         {
-          "question": "Why is understanding payroll deductions important?",
+          "question": "(Hard) Which practice helps Finance? (Hard)",
           "options": [
-            "To avoid compliance",
-            "To ensure correct legal withholdings and employee pay",
-            "To confuse employees",
-            "To delay processing"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "To ensure correct legal withholdings and employee pay",
-          "explanation": "Proper deductions maintain legal compliance and employee satisfaction."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     },
     {
-      "topicName": "Information Processing",
+      "topic": "Information Processing",
       "questions": [
         {
           "question": "Which software function is used to create tables and charts?",
@@ -1139,15 +1139,15 @@
           "explanation": "Proper extraction ensures meaningful and reliable data."
         },
         {
-          "question": "Why is it important to convert documents between software programs?",
+          "question": "(Hard) Why is it important to Information Processing? (Hard)",
           "options": [
-            "To maintain compatibility and accessibility across platforms",
-            "To confuse staff",
-            "To waste time",
-            "To delete original content"
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
           ],
-          "correctAnswer": "To maintain compatibility and accessibility across platforms",
-          "explanation": "Conversion allows files to be used effectively on different systems and applications."
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
     }

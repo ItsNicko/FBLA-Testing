@@ -1,0 +1,1140 @@
+{
+  "testName": "Economics",
+  "topics": [
+    {
+      "topic": "Basic Concepts",
+      "questions": [
+        {
+          "question": "What is scarcity?",
+          "options": [
+            "Limited resources relative to wants",
+            "High prices in a market",
+            "Government control of goods",
+            "Unlimited resources"
+          ],
+          "correctAnswer": "Limited resources relative to wants",
+          "explanation": "Scarcity means resources are finite while human wants are unlimited."
+        },
+        {
+          "question": "Which system answers what, how, and for whom to produce via supply and demand?",
+          "options": [
+            "Market economy",
+            "Command economy",
+            "Traditional economy",
+            "Barter system"
+          ],
+          "correctAnswer": "Market economy",
+          "explanation": "Market economies rely on supply and demand signals to allocate resources."
+        },
+        {
+          "question": "What does GDP measure?",
+          "options": [
+            "Total value of final goods and services produced",
+            "Individual income levels",
+            "Government spending only",
+            "Stock market value"
+          ],
+          "correctAnswer": "Total value of final goods and services produced",
+          "explanation": "GDP sums the market value of all final goods and services in a period."
+        },
+        {
+          "question": "Which is an example of a factor of production?",
+          "options": [
+            "Labor",
+            "Advertising slogan",
+            "Brand logo",
+            "Customer reviews"
+          ],
+          "correctAnswer": "Labor",
+          "explanation": "Factors of production include land, labor, capital, and entrepreneurship."
+        },
+        {
+          "question": "What is opportunity cost?",
+          "options": [
+            "The next best alternative foregone",
+            "A government subsidy",
+            "Market equilibrium price",
+            "Cost of production only"
+          ],
+          "correctAnswer": "The next best alternative foregone",
+          "explanation": "Opportunity cost is what you give up when choosing one option over another."
+        },
+        {
+          "question": "Which curve shows quantity demanded at different prices?",
+          "options": [
+            "Demand curve",
+            "Supply curve",
+            "Lorenz curve",
+            "Phillips curve"
+          ],
+          "correctAnswer": "Demand curve",
+          "explanation": "The demand curve plots price versus quantity demanded."
+        },
+        {
+          "question": "If the price of a substitute rises, what happens to demand for the original good?",
+          "options": [
+            "It increases",
+            "It decreases",
+            "It stays the same",
+            "It becomes perfectly elastic"
+          ],
+          "correctAnswer": "It increases",
+          "explanation": "Higher price of a substitute can shift demand to the original good."
+        },
+        {
+          "question": "What is a price ceiling?",
+          "options": [
+            "A legal maximum price",
+            "A maximum production quota",
+            "A type of tariff",
+            "A minimum wage"
+          ],
+          "correctAnswer": "A legal maximum price",
+          "explanation": "Price ceilings set an upper limit on prices, often causing shortages."
+        },
+        {
+          "question": "Which market structure has many firms and differentiated products?",
+          "options": [
+            "Monopolistic competition",
+            "Perfect competition",
+            "Monopoly",
+            "Oligopoly"
+          ],
+          "correctAnswer": "Monopolistic competition",
+          "explanation": "Monopolistic competition features many firms offering similar but differentiated products."
+        },
+        {
+          "question": "What does inflation refer to?",
+          "options": [
+            "A sustained rise in general price level",
+            "Decrease in GDP",
+            "Higher unemployment only",
+            "A stronger currency"
+          ],
+          "correctAnswer": "A sustained rise in general price level",
+          "explanation": "Inflation reduces purchasing power by raising average prices over time."
+        },
+        {
+          "question": "How can a central bank reduce inflation?",
+          "options": [
+            "Raise interest rates",
+            "Increase government spending",
+            "Lower reserve requirements",
+            "Print more money"
+          ],
+          "correctAnswer": "Raise interest rates",
+          "explanation": "Higher interest rates cool demand and can lower inflation pressure."
+        },
+        {
+          "question": "Which indicator best reflects long-run living standards?",
+          "options": [
+            "Real GDP per capita",
+            "Nominal GDP",
+            "Money supply",
+            "Budget deficit"
+          ],
+          "correctAnswer": "Real GDP per capita",
+          "explanation": "Real GDP per capita adjusts for inflation and population to show living standards."
+        },
+        {
+          "question": "(Hard) A country runs a persistent trade deficit; which combination is most likely in the short term?",
+          "options": [
+            "Capital inflows and currency depreciation pressure",
+            "Capital outflows and currency appreciation",
+            "Higher exports than imports",
+            "Balanced budget"
+          ],
+          "correctAnswer": "Capital inflows and currency depreciation pressure",
+          "explanation": "A trade deficit is typically financed by capital inflows and can put downward pressure on the currency."
+        },
+        {
+          "question": "What is the primary purpose of basic concepts?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "How does a manager typically basic concepts?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        }
+      ]
+    },
+    {
+      "topic": "Microeconomics",
+      "questions": [
+        {
+          "question": "What leads to a downward-sloping demand curve?",
+          "options": [
+            "Law of demand",
+            "Supply shocks",
+            "Monopolies only",
+            "Government price controls"
+          ],
+          "correctAnswer": "Law of demand",
+          "explanation": "Law of demand states quantity demanded falls as price rises, ceteris paribus."
+        },
+        {
+          "question": "What is marginal utility?",
+          "options": [
+            "Additional satisfaction from one more unit",
+            "Total spending on goods",
+            "Firm’s total revenue",
+            "A tax on consumption"
+          ],
+          "correctAnswer": "Additional satisfaction from one more unit",
+          "explanation": "Marginal utility measures the incremental benefit a consumer gets from an extra unit."
+        },
+        {
+          "question": "If a firm's marginal cost is below marginal revenue, it should:",
+          "options": [
+            "Increase output",
+            "Decrease output",
+            "Shut down immediately",
+            "Merge with another firm"
+          ],
+          "correctAnswer": "Increase output",
+          "explanation": "Firms increase output while MR>MC to raise profits until MR=MC."
+        },
+        {
+          "question": "What creates deadweight loss?",
+          "options": [
+            "Taxes or price controls that prevent market equilibrium",
+            "Advertising",
+            "Competitive markets",
+            "Free trade"
+          ],
+          "correctAnswer": "Taxes or price controls that prevent market equilibrium",
+          "explanation": "Interventions can reduce total surplus, creating deadweight loss."
+        },
+        {
+          "question": "Which is a public good?",
+          "options": [
+            "National defense",
+            "Private health club",
+            "A sandwich",
+            "A car"
+          ],
+          "correctAnswer": "National defense",
+          "explanation": "Public goods are non-excludable and non-rivalrous."
+        },
+        {
+          "question": "What does elasticity measure?",
+          "options": [
+            "Responsiveness to price or income changes",
+            "Total market demand",
+            "Number of firms in a market",
+            "Government regulation level"
+          ],
+          "correctAnswer": "Responsiveness to price or income changes",
+          "explanation": "Elasticity quantifies how much one variable responds to changes in another."
+        },
+        {
+          "question": "Which factor makes demand inelastic?",
+          "options": [
+            "Few substitutes",
+            "Luxury good",
+            "Short-run only",
+            "Large number of substitutes"
+          ],
+          "correctAnswer": "Few substitutes",
+          "explanation": "When close substitutes are scarce, consumers are less sensitive to price changes."
+        },
+        {
+          "question": "What is price discrimination?",
+          "options": [
+            "Charging different prices to different customers",
+            "Setting a single price for all",
+            "Bartering goods",
+            "Government subsidies"
+          ],
+          "correctAnswer": "Charging different prices to different customers",
+          "explanation": "Firms use price discrimination to capture more consumer surplus when possible."
+        },
+        {
+          "question": "Which cost is sunk?",
+          "options": [
+            "Nonrecoverable past expenditure",
+            "Future material cost",
+            "Wages to be paid",
+            "Variable advertising expense"
+          ],
+          "correctAnswer": "Nonrecoverable past expenditure",
+          "explanation": "Sunk costs cannot be recovered and shouldn’t affect future decisions."
+        },
+        {
+          "question": "Why do firms use advertising in monopolistic competition?",
+          "options": [
+            "Differentiate their product",
+            "Reduce production costs",
+            "Comply with law",
+            "Avoid taxes"
+          ],
+          "correctAnswer": "Differentiate their product",
+          "explanation": "Advertising highlights differences to attract consumers despite many competitors."
+        },
+        {
+          "question": "How does a subsidy affect supply?",
+          "options": [
+            "Shifts supply right (increases)",
+            "Shifts demand right",
+            "Creates shortage",
+            "Eliminates competition"
+          ],
+          "correctAnswer": "Shifts supply right (increases)",
+          "explanation": "A subsidy lowers producers’ costs, increasing supply at each price."
+        },
+        {
+          "question": "What is a market failure?",
+          "options": [
+            "When markets do not allocate resources efficiently",
+            "When prices rise",
+            "When firms merge",
+            "When government intervenes"
+          ],
+          "correctAnswer": "When markets do not allocate resources efficiently",
+          "explanation": "Market failures include externalities, public goods, and information asymmetry."
+        },
+        {
+          "question": "(Hard) A monopolist faces demand P=100-2Q and constant MC=10; what output maximizes profit?",
+          "options": [
+            "Q=22.5",
+            "Q=10",
+            "Q=45",
+            "Q=0"
+          ],
+          "correctAnswer": "Q=22.5",
+          "explanation": "Profit maximization where MR=MC; MR derived from demand gives output ~22.5 (calculation-based hard question)."
+        },
+        {
+          "question": "Which practice helps microeconomics?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Scenario) Consider an organization that needs to: how should they address microeconomics?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        }
+      ]
+    },
+    {
+      "topic": "Macroeconomics",
+      "questions": [
+        {
+          "question": "What is monetary policy?",
+          "options": [
+            "Central bank actions affecting money supply",
+            "Government tax policy",
+            "Trade agreements",
+            "Corporate pricing strategies"
+          ],
+          "correctAnswer": "Central bank actions affecting money supply",
+          "explanation": "Monetary policy uses interest rates and money supply to influence the economy."
+        },
+        {
+          "question": "Which policy can reduce unemployment in short run?",
+          "options": [
+            "Expansionary fiscal policy",
+            "Contractionary monetary policy",
+            "Raising taxes",
+            "Reducing government spending"
+          ],
+          "correctAnswer": "Expansionary fiscal policy",
+          "explanation": "Increased government spending or tax cuts raise aggregate demand and can reduce unemployment."
+        },
+        {
+          "question": "What is the unemployment rate?",
+          "options": [
+            "Percentage of labor force without jobs but seeking work",
+            "Percent of population unemployed regardless of job search",
+            "Rate of job openings",
+            "Labor participation rate"
+          ],
+          "correctAnswer": "Percentage of labor force without jobs but seeking work",
+          "explanation": "The unemployment rate counts those actively seeking work as a share of the labor force."
+        },
+        {
+          "question": "What is stagflation?",
+          "options": [
+            "High inflation with high unemployment",
+            "Rapid growth with low inflation",
+            "Deflation with full employment",
+            "Stable prices and low unemployment"
+          ],
+          "correctAnswer": "High inflation with high unemployment",
+          "explanation": "Stagflation combines stagnant output (or high unemployment) with inflation."
+        },
+        {
+          "question": "What is the Phillips curve?",
+          "options": [
+            "Inverse short-run relationship between inflation and unemployment",
+            "Positive relation between GDP and inflation",
+            "Supply curve for labor",
+            "A budget rule"
+          ],
+          "correctAnswer": "Inverse short-run relationship between inflation and unemployment",
+          "explanation": "The Phillips curve historically showed trade-offs between inflation and unemployment in the short run."
+        },
+        {
+          "question": "Which tool is contractionary monetary policy?",
+          "options": [
+            "Raising policy interest rates",
+            "Cutting taxes",
+            "Increasing government spending",
+            "Lowering reserve requirements"
+          ],
+          "correctAnswer": "Raising policy interest rates",
+          "explanation": "Higher rates reduce borrowing and slow aggregate demand."
+        },
+        {
+          "question": "What is fiscal stimulus?",
+          "options": [
+            "Tax cuts or increased government spending",
+            "Higher interest rates",
+            "Reduced money supply",
+            "Trade protection"
+          ],
+          "correctAnswer": "Tax cuts or increased government spending",
+          "explanation": "Fiscal stimulus raises aggregate demand via government action."
+        },
+        {
+          "question": "Why are expectations important for inflation?",
+          "options": [
+            "They influence wage and price setting behavior",
+            "They determine tax rates",
+            "They set exchange rates directly",
+            "They change technology"
+          ],
+          "correctAnswer": "They influence wage and price setting behavior",
+          "explanation": "If people expect higher inflation, they demand higher wages, fueling inflation."
+        },
+        {
+          "question": "What is a budget deficit?",
+          "options": [
+            "Government spending exceeds revenue",
+            "Higher private savings",
+            "Trade surplus",
+            "Full employment"
+          ],
+          "correctAnswer": "Government spending exceeds revenue",
+          "explanation": "A deficit occurs when government expenditures exceed tax receipts."
+        },
+        {
+          "question": "How does currency depreciation affect exports?",
+          "options": [
+            "Makes exports cheaper and can increase export volume",
+            "Makes exports more expensive",
+            "Has no effect",
+            "Automatically increases imports"
+          ],
+          "correctAnswer": "Makes exports cheaper and can increase export volume",
+          "explanation": "A weaker domestic currency lowers foreign-currency price of exports."
+        },
+        {
+          "question": "What is quantitative easing?",
+          "options": [
+            "Central bank asset purchases to inject liquidity",
+            "A fiscal program",
+            "A tax policy",
+            "Trade liberalization"
+          ],
+          "correctAnswer": "Central bank asset purchases to inject liquidity",
+          "explanation": "QE expands central bank balance sheet to lower long-term rates and stimulate activity."
+        },
+        {
+          "question": "What is the natural rate of unemployment?",
+          "options": [
+            "Unemployment consistent with stable inflation",
+            "Zero unemployment",
+            "The cyclical unemployment peak",
+            "Unemployment set by policy"
+          ],
+          "correctAnswer": "Unemployment consistent with stable inflation",
+          "explanation": "The natural rate includes frictional and structural unemployment when inflation is stable."
+        },
+        {
+          "question": "(Hard) If velocity of money is stable, what happens to prices when money supply doubles while output is unchanged?",
+          "options": [
+            "Prices roughly double",
+            "Prices halve",
+            "Output doubles",
+            "Unemployment increases"
+          ],
+          "correctAnswer": "Prices roughly double",
+          "explanation": "With constant velocity and output, price level is proportional to money supply (quantity theory)."
+        },
+        {
+          "question": "What is the primary purpose of macroeconomics?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Why is it important to macroeconomics?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        }
+      ]
+    },
+    {
+      "topic": "International Economics",
+      "questions": [
+        {
+          "question": "What is comparative advantage?",
+          "options": [
+            "Lower opportunity cost of producing a good",
+            "Absolute productivity advantage",
+            "Higher tariffs",
+            "Currency peg"
+          ],
+          "correctAnswer": "Lower opportunity cost of producing a good",
+          "explanation": "Comparative advantage explains gains from trade when producers specialize in lower opportunity cost goods."
+        },
+        {
+          "question": "What is a tariff?",
+          "options": [
+            "A tax on imports",
+            "A subsidy to exporters",
+            "A currency intervention",
+            "A trade agreement"
+          ],
+          "correctAnswer": "A tax on imports",
+          "explanation": "Tariffs raise the price of imported goods to protect domestic producers or raise revenue."
+        },
+        {
+          "question": "What is a trade balance?",
+          "options": [
+            "Exports minus imports",
+            "Government budget",
+            "Current account only",
+            "Capital flows"
+          ],
+          "correctAnswer": "Exports minus imports",
+          "explanation": "The trade balance measures the difference between goods and services exported and imported."
+        },
+        {
+          "question": "What is a floating exchange rate?",
+          "options": [
+            "Market-determined currency value",
+            "Fixed by government",
+            "Pegged to gold",
+            "Bartered"
+          ],
+          "correctAnswer": "Market-determined currency value",
+          "explanation": "Floating rates move with supply and demand for the currency."
+        },
+        {
+          "question": "How do capital controls affect a country?",
+          "options": [
+            "Limit cross-border capital flows",
+            "Increase exports automatically",
+            "Fix exchange rates",
+            "Increase labor productivity"
+          ],
+          "correctAnswer": "Limit cross-border capital flows",
+          "explanation": "Capital controls restrict foreign investment and currency movement to stabilize the economy."
+        },
+        {
+          "question": "What is purchasing power parity (PPP)?",
+          "options": [
+            "Exchange rates equalize price levels across countries",
+            "A tax on purchases",
+            "A monetary policy rule",
+            "A trade agreement"
+          ],
+          "correctAnswer": "Exchange rates equalize price levels across countries",
+          "explanation": "PPP suggests currencies should adjust so identical goods cost the same in different countries."
+        },
+        {
+          "question": "Which reduces trade barriers?",
+          "options": [
+            "Free trade agreements",
+            "Tariffs",
+            "Quotas",
+            "Export taxes"
+          ],
+          "correctAnswer": "Free trade agreements",
+          "explanation": "FTAs lower tariffs and other barriers among member countries."
+        },
+        {
+          "question": "What is a current account?",
+          "options": [
+            "Net exports plus net income and transfers",
+            "Capital inflows only",
+            "Government budget",
+            "Foreign direct investment"
+          ],
+          "correctAnswer": "Net exports plus net income and transfers",
+          "explanation": "The current account records trade in goods/services, income, and transfers."
+        },
+        {
+          "question": "How can currency appreciation hurt domestic producers?",
+          "options": [
+            "Makes exports more expensive abroad",
+            "Reduces import competition",
+            "Lowers foreign prices",
+            "Increases tourism"
+          ],
+          "correctAnswer": "Makes exports more expensive abroad",
+          "explanation": "A stronger currency raises foreign-currency prices of domestic goods, hurting exporters."
+        },
+        {
+          "question": "Why do countries impose quotas?",
+          "options": [
+            "Limit quantity of imports",
+            "Increase exports",
+            "Control domestic prices only",
+            "Reduce domestic production"
+          ],
+          "correctAnswer": "Limit quantity of imports",
+          "explanation": "Quotas cap the number of units imported to protect local producers."
+        },
+        {
+          "question": "What is the effect of a subsidized export?",
+          "options": [
+            "Makes domestic goods cheaper abroad, boosting exports",
+            "Raises import prices",
+            "Increases domestic unemployment",
+            "Reduces trade surplus"
+          ],
+          "correctAnswer": "Makes domestic goods cheaper abroad, boosting exports",
+          "explanation": "Export subsidies lower foreign prices and can increase export volume."
+        },
+        {
+          "question": "What is foreign direct investment (FDI)?",
+          "options": [
+            "Ownership of businesses in another country",
+            "Importing goods",
+            "A trade tariff",
+            "A monetary tool"
+          ],
+          "correctAnswer": "Ownership of businesses in another country",
+          "explanation": "FDI involves long-term investment like building or buying a firm abroad."
+        },
+        {
+          "question": "(Hard) When a small open economy faces world interest rate above its domestic potential, what policy is limited?",
+          "options": [
+            "Independent monetary policy",
+            "Fiscal policy",
+            "Trade policy",
+            "Industrial policy"
+          ],
+          "correctAnswer": "Independent monetary policy",
+          "explanation": "In a small open economy with free capital flows and pegged exchange rates, monetary policy autonomy is constrained (impossible trinity concept)."
+        }
+      ]
+    },
+    {
+      "topic": "Public Policy and Finance",
+      "questions": [
+        {
+          "question": "What is a progressive tax?",
+          "options": [
+            "Higher rates on higher incomes",
+            "Same rate regardless of income",
+            "Higher rates on low incomes",
+            "A regressive consumption tax"
+          ],
+          "correctAnswer": "Higher rates on higher incomes",
+          "explanation": "Progressive taxes increase the average tax rate as taxable amount rises."
+        },
+        {
+          "question": "What purpose do automatic stabilizers serve?",
+          "options": [
+            "Reduce volatility of GDP across the business cycle",
+            "Increase long-term growth only",
+            "Control interest rates",
+            "Set exchange rates"
+          ],
+          "correctAnswer": "Reduce volatility of GDP across the business cycle",
+          "explanation": "Automatic stabilizers like unemployment insurance cushion income during downturns."
+        },
+        {
+          "question": "What is crowding out?",
+          "options": [
+            "When government borrowing raises rates and reduces private investment",
+            "When private firms displace public services",
+            "When exports fall due to imports",
+            "When taxes discourage saving"
+          ],
+          "correctAnswer": "When government borrowing raises rates and reduces private investment",
+          "explanation": "Higher public borrowing can push up interest rates, reducing private investment demand."
+        },
+        {
+          "question": "Why issue government bonds?",
+          "options": [
+            "Finance deficits and invest in projects",
+            "Reduce taxes",
+            "Control wages",
+            "Subsidize exports"
+          ],
+          "correctAnswer": "Finance deficits and invest in projects",
+          "explanation": "Governments sell bonds to raise funds for spending that exceeds current revenues."
+        },
+        {
+          "question": "What is fiscal multiplier?",
+          "options": [
+            "Change in GDP from a change in government spending",
+            "A tax on imports",
+            "A monetary aggregate",
+            "A subsidy rate"
+          ],
+          "correctAnswer": "Change in GDP from a change in government spending",
+          "explanation": "Multipliers measure how initial spending changes ripple through the economy."
+        },
+        {
+          "question": "Which is an example of a transfer payment?",
+          "options": [
+            "Unemployment benefits",
+            "Wages for public employees",
+            "Government purchases of goods",
+            "Interest payments to bondholders"
+          ],
+          "correctAnswer": "Unemployment benefits",
+          "explanation": "Transfer payments move income without receiving goods or services in return."
+        },
+        {
+          "question": "How does a balanced budget requirement constrain policy?",
+          "options": [
+            "Limits government’s ability to run deficits",
+            "Forces increased taxes or reduced spending",
+            "Both A and B",
+            "Has no practical effect"
+          ],
+          "correctAnswer": "Both A and B",
+          "explanation": "Budget rules reduce fiscal flexibility by requiring revenues equal spending."
+        },
+        {
+          "question": "Why is public debt sustainable?",
+          "options": [
+            "When debt servicing is manageable relative to GDP",
+            "When debt equals zero",
+            "When inflation is zero",
+            "When taxes are eliminated"
+          ],
+          "correctAnswer": "When debt servicing is manageable relative to GDP",
+          "explanation": "Sustainability depends on interest rates, growth, and primary balances."
+        },
+        {
+          "question": "What is a deficit?",
+          "options": [
+            "Spending exceeds revenue in a period",
+            "Debt outstanding",
+            "Trade imbalance",
+            "A budget surplus"
+          ],
+          "correctAnswer": "Spending exceeds revenue in a period",
+          "explanation": "A deficit occurs when outlays exceed receipts within a fiscal period."
+        },
+        {
+          "question": "How can fiscal policy be targeted to help low-income households?",
+          "options": [
+            "Progressive taxes and transfers",
+            "Cutting all public programs",
+            "Raising regressive taxes",
+            "Eliminating subsidies"
+          ],
+          "correctAnswer": "Progressive taxes and transfers",
+          "explanation": "Redistribution tools can support vulnerable populations and reduce inequality."
+        },
+        {
+          "question": "Why do governments regulate natural monopolies?",
+          "options": [
+            "To prevent excessive prices and protect consumers",
+            "To promote monopolies",
+            "To restrict innovation",
+            "To impose tariffs"
+          ],
+          "correctAnswer": "To prevent excessive prices and protect consumers",
+          "explanation": "Regulation can mimic competitive outcomes where one firm dominates due to scale economies."
+        },
+        {
+          "question": "(Hard) What is structural budget balance?",
+          "options": [
+            "Budget balance adjusted for the business cycle",
+            "Nominal deficit",
+            "Surplus excluding interest",
+            "Debt-to-GDP ratio"
+          ],
+          "correctAnswer": "Budget balance adjusted for the business cycle",
+          "explanation": "Structural balance estimates what the fiscal position would be at a typical point in the business cycle."
+        },
+        {
+          "question": "Why is it important to public policy and finance?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which of the following best explains public policy and finance?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "What is the primary purpose of public policy and finance?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        }
+      ]
+    },
+    {
+      "topic": "Economic Indicators",
+      "questions": [
+        {
+          "question": "What does CPI measure?",
+          "options": [
+            "Consumer price index: price level of a basket of goods",
+            "Company profit index",
+            "Currency performance index",
+            "Producer costs only"
+          ],
+          "correctAnswer": "Consumer price index: price level of a basket of goods",
+          "explanation": "CPI tracks changes in the cost of living by measuring a typical consumer basket."
+        },
+        {
+          "question": "Which indicator signals inflation?",
+          "options": [
+            "Rising CPI",
+            "Higher unemployment",
+            "Lower GDP",
+            "Falling wages"
+          ],
+          "correctAnswer": "Rising CPI",
+          "explanation": "An increasing CPI often signals inflation in consumer prices."
+        },
+        {
+          "question": "What is leading indicator?",
+          "options": [
+            "Predictive measure like new orders",
+            "A lagging measure",
+            "A coincident measure",
+            "A fiscal target"
+          ],
+          "correctAnswer": "Predictive measure like new orders",
+          "explanation": "Leading indicators tend to change before overall economic activity."
+        },
+        {
+          "question": "Why track unemployment claims?",
+          "options": [
+            "They provide timely data on labor market weakness",
+            "They set tax policy",
+            "They predict stock prices",
+            "They determine interest rates"
+          ],
+          "correctAnswer": "They provide timely data on labor market weakness",
+          "explanation": "Initial claims offer early signs of layoffs and labor trends."
+        },
+        {
+          "question": "What is PPI?",
+          "options": [
+            "Producer Price Index",
+            "Personal Payment Index",
+            "Public Price Indicator",
+            "Private Profit Index"
+          ],
+          "correctAnswer": "Producer Price Index",
+          "explanation": "PPI measures prices received by producers and can signal future consumer inflation."
+        },
+        {
+          "question": "How does GDP growth relate to business cycles?",
+          "options": [
+            "Positive growth typically during expansions",
+            "No relation",
+            "Always negative during recessions only",
+            "Independent of cycles"
+          ],
+          "correctAnswer": "Positive growth typically during expansions",
+          "explanation": "Business cycles are fluctuations in economic activity around trend growth."
+        },
+        {
+          "question": "What is a coincident indicator?",
+          "options": [
+            "Measures that move with the economy like employment",
+            "Predictive signals",
+            "Measures of future policy",
+            "Interest rate"
+          ],
+          "correctAnswer": "Measures that move with the economy like employment",
+          "explanation": "Coincident indicators change at the same time as overall economic activity."
+        },
+        {
+          "question": "Why monitor consumer confidence?",
+          "options": [
+            "It signals future consumer spending",
+            "It sets interest rates directly",
+            "It determines tax law",
+            "It is used for tariffs"
+          ],
+          "correctAnswer": "It signals future consumer spending",
+          "explanation": "Higher confidence often leads to increased consumption and growth."
+        },
+        {
+          "question": "How do surveys of manufacturing activity help?",
+          "options": [
+            "Provide timely info on production and demand",
+            "They regulate prices",
+            "They set wage levels",
+            "They forecast weather"
+          ],
+          "correctAnswer": "Provide timely info on production and demand",
+          "explanation": "Surveys like PMIs indicate trends in manufacturing that affect GDP."
+        },
+        {
+          "question": "What does payroll data show?",
+          "options": [
+            "Employment and wage trends",
+            "Inflation rate",
+            "Imports only",
+            "Budget deficits"
+          ],
+          "correctAnswer": "Employment and wage trends",
+          "explanation": "Payroll reports are key labor market indicators used in macro analysis."
+        },
+        {
+          "question": "Why use core inflation?",
+          "options": [
+            "Excludes volatile food and energy to show trend",
+            "Includes all volatile prices",
+            "Is used for trade only",
+            "Measures unemployment"
+          ],
+          "correctAnswer": "Excludes volatile food and energy to show trend",
+          "explanation": "Core inflation removes temporary price swings to assess underlying trend."
+        },
+        {
+          "question": "(Hard) How can revisions to GDP data change economic interpretation?",
+          "options": [
+            "They can alter assessment of whether economy was in recession",
+            "They cannot change historical data",
+            "They only affect CPI",
+            "They are always insignificant"
+          ],
+          "correctAnswer": "They can alter assessment of whether economy was in recession",
+          "explanation": "Revisions can change the magnitude and direction of past growth estimates, affecting policy analysis."
+        },
+        {
+          "question": "How does a manager typically economic indicators?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "How does a manager typically economic indicators?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Why is it important to economic indicators?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        }
+      ]
+    },
+    {
+      "topic": "Applications and Scenarios",
+      "questions": [
+        {
+          "question": "(Scenario) A city considers a minimum wage increase; which outcome is a common concern?",
+          "options": [
+            "Some small businesses may reduce hiring",
+            "All workers will keep the same hours",
+            "Prices will fall",
+            "Unemployment cannot change"
+          ],
+          "correctAnswer": "Some small businesses may reduce hiring",
+          "explanation": "Higher minimum wages can raise labor costs, potentially affecting small business employment decisions."
+        },
+        {
+          "question": "(Scenario) A central bank cuts rates; what is expected next?",
+          "options": [
+            "Borrowing tends to increase and investment may rise",
+            "Inflation falls immediately to zero",
+            "Exports stop",
+            "Government spending is automatically cut"
+          ],
+          "correctAnswer": "Borrowing tends to increase and investment may rise",
+          "explanation": "Lower rates reduce borrowing costs and can stimulate spending and investment."
+        },
+        {
+          "question": "Which policy can a government use to combat a recession?",
+          "options": [
+            "Increase government spending",
+            "Raise taxes drastically",
+            "Tighten credit",
+            "Increase tariffs only"
+          ],
+          "correctAnswer": "Increase government spending",
+          "explanation": "Expansionary fiscal measures can boost aggregate demand during recessions."
+        },
+        {
+          "question": "Why might tariffs harm consumers?",
+          "options": [
+            "They raise import prices leading to higher consumer prices",
+            "They increase exports",
+            "They eliminate domestic production",
+            "They reduce government revenue"
+          ],
+          "correctAnswer": "They raise import prices leading to higher consumer prices",
+          "explanation": "Tariffs often increase costs for consumers and can reduce choice."
+        },
+        {
+          "question": "What role does entrepreneurship play in growth?",
+          "options": [
+            "Drives innovation and job creation",
+            "Only increases taxes",
+            "Reduces worker productivity",
+            "Is irrelevant"
+          ],
+          "correctAnswer": "Drives innovation and job creation",
+          "explanation": "Entrepreneurs introduce new products and processes that raise growth and employment."
+        },
+        {
+          "question": "How can education improve long-run growth?",
+          "options": [
+            "By raising human capital and productivity",
+            "By increasing tariffs",
+            "By reducing money supply",
+            "By deregulation only"
+          ],
+          "correctAnswer": "By raising human capital and productivity",
+          "explanation": "Education boosts skills that increase worker productivity and economic output."
+        },
+        {
+          "question": "What is crowding in?",
+          "options": [
+            "When public investment stimulates private investment",
+            "When private firms displace public services",
+            "When consumers stop spending",
+            "When imports exceed exports"
+          ],
+          "correctAnswer": "When public investment stimulates private investment",
+          "explanation": "Under some conditions, government spending on infrastructure can encourage private sector projects."
+        },
+        {
+          "question": "(Hard Scenario) A sudden oil price spike raises inflation and slows growth; which combined policy mix might be appropriate short-term?",
+          "options": [
+            "Targeted support for affected households and gradual monetary tightening",
+            "Immediate large tax hikes",
+            "Complete removal of subsidies",
+            "Fixed exchange rate"
+          ],
+          "correctAnswer": "Targeted support for affected households and gradual monetary tightening",
+          "explanation": "Supply shocks require carefully balanced policies: protect vulnerable groups while addressing inflation expectations."
+        },
+        {
+          "question": "(Scenario) A small business encounters a problem where how should they address applications and scenarios?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "How does a manager typically applications and scenarios?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "Which practice helps applications and scenarios?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        },
+        {
+          "question": "(Hard) Why is it important to applications and scenarios?",
+          "options": [
+            "A: It involves planning and following best practices",
+            "B: It is rarely used in practice",
+            "C: It always increases costs",
+            "D: It never affects outcomes"
+          ],
+          "correctAnswer": "A: It involves planning and following best practices",
+          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+        }
+      ]
+    }
+  ]
+}

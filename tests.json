@@ -26,31 +26,107 @@
     },
     {
       "testName": "Computer Problem Solving",
-      "path": "questions/computer-Problem-Solving.json"
+      "path": "questions/Computer-Problem-Solving.json"
     },
     {
       "testName": "Cybersecurity",
       "path": "questions/Cybersecurity.json"
     },
     {
-      "testName": "Cybersecurity Solving",
-      "path": "questions/Cybersecurity-Solving.json"
+      "testName": "Data Science And Ai",
+      "path": "questions/Data-Science-and-AI.json"
     },
     {
-      "testName": "Data Science and AI",
-      "path": "questions/Data-Science-and-AI.json"
+      "testName": "Economics",
+      "path": "questions/Economics.json"
     },
     {
       "testName": "Entrepreneurship",
       "path": "questions/Entrepreneurship.json"
     },
     {
+      "testName": "Healthcare Administration",
+      "path": "questions/Healthcare_Administration.json"
+    },
+    {
       "testName": "Human Resource Management",
       "path": "questions/Human-Resource-Management.json"
     },
     {
-      "testName": "Introduction to Business Procedures",
-      "path": "questions/introduction-to-business-procedures.json"
+      "testName": "Insurance And Risk Management",
+      "path": "questions/Insurance_and_Risk_Management.json"
+    },
+    {
+      "testName": "Introduction To Business Communication",
+      "path": "questions/Introduction_to_Business_Communication.json"
+    },
+    {
+      "testName": "Introduction To Business Concepts",
+      "path": "questions/Introduction_to_Business_Concepts.json"
+    },
+    {
+      "testName": "Introduction To Business Procedures",
+      "path": "questions/Introduction-to-Business-Procedures.json"
+    },
+    {
+      "testName": "Introduction To Fbla",
+      "path": "questions/Introduction_to_FBLA.json"
+    },
+    {
+      "testName": "Introduction To Information Technology",
+      "path": "questions/Introduction-to-Information-Technology.json"
+    },
+    {
+      "testName": "Introduction To Marketing Concepts",
+      "path": "questions/Introduction_to_Marketing_Concepts.json"
+    },
+    {
+      "testName": "Introduction To Parliamentary Procedure",
+      "path": "questions/Introduction_to_Parliamentary_Procedure.json"
+    },
+    {
+      "testName": "Introduction To Retail And Merchandising",
+      "path": "questions/Introduction_to_Retail_and_Merchandising.json"
+    },
+    {
+      "testName": "Introduction To Supply Chain Management",
+      "path": "questions/Introduction_to_Supply_Chain_Management.json"
+    },
+    {
+      "testName": "Journalism",
+      "path": "questions/Journalism.json"
+    },
+    {
+      "testName": "Networking Infrastructures",
+      "path": "questions/Networking_Infrastructures.json"
+    },
+    {
+      "testName": "Organizational Leadership",
+      "path": "questions/Organizational_Leadership.json"
+    },
+    {
+      "testName": "Personal Finance",
+      "path": "questions/Personal Finance.json"
+    },
+    {
+      "testName": "Project Management",
+      "path": "questions/Project_Management.json"
+    },
+    {
+      "testName": "Public Administration And Management",
+      "path": "questions/Public_Administration_and_Management.json"
+    },
+    {
+      "testName": "Real Estate",
+      "path": "questions/Real_Estate.json"
+    },
+    {
+      "testName": "Retail Management",
+      "path": "questions/Retail_Management.json"
+    },
+    {
+      "testName": "Securities And Investments",
+      "path": "questions/Securities_and_Investments.json"
     }
   ]
 }
