@@ -238,7 +238,10 @@ async function writeLog(action, context) {
       }
     }
 
-    // Fallback: no console debug in production build
+    // Fallback: debug log to console so action is still visible during development
+    if (window.console && typeof window.console.debug === 'function') {
+      console.debug('writeLog (fallback):', payload);
+    }
     return false;
   } catch (err) {
     try { console.warn('writeLog error', err); } catch (e) {}
@@ -1333,77 +1336,12 @@ async function fetchAndRenderLeaderboard(testId) {
   if (!listEl) return;
   listEl.innerHTML = '<div class="lb-loading">Loading\u0000</div>';
   try {
-    // Ensure anonymous auth (used to satisfy Firestore rules) is ready before fetching
-    if (window.leaderboardAuthReady) {
-      try { await window.leaderboardAuthReady; } catch (e) { /* ignore */ }
-    }
     if (!window.leaderboardApi || !window.leaderboardApi.fetchTopScores) throw new Error('Leaderboard API not available');
     const entries = await window.leaderboardApi.fetchTopScores(testId, _leaderboardState.limit);
-    console.debug('fetchAndRenderLeaderboard: fetched', entries && entries.length, 'entries for', testId);
-    renderLeaderboardEntries(entries || []);
-    // If no entries returned, offer a developer debug action to run an extended fetch
-    if ((!entries || entries.length === 0) && document.getElementById('lbOverlay')) {
-      try {
-        const listEl2 = document.getElementById('lbList');
-        if (listEl2) {
-          const debugWrapId = 'lb-debug-wrap';
-          let debugWrap = document.getElementById(debugWrapId);
-          if (!debugWrap) {
-            debugWrap = document.createElement('div');
-            debugWrap.id = debugWrapId;
-            debugWrap.style.marginTop = '8px';
-            debugWrap.style.fontSize = '12px';
-            debugWrap.style.color = 'var(--muted,#666)';
-            const btn = document.createElement('button');
-            btn.type = 'button';
-            btn.textContent = 'Run debug fetch (show raw results)';
-            btn.onclick = async () => {
-              const res = await fetchLeaderboardDebug(testId);
-              let out = '';
-              try { out = JSON.stringify(res, null, 2); } catch (e) { out = String(res); }
-              const pre = document.createElement('pre');
-              pre.style.maxHeight = '240px';
-              pre.style.overflow = 'auto';
-              pre.style.background = 'rgba(0,0,0,0.03)';
-              pre.style.padding = '8px';
-              pre.textContent = out;
-              debugWrap.appendChild(pre);
-              btn.disabled = true;
-            };
-            debugWrap.appendChild(btn);
-            listEl2.parentNode.insertBefore(debugWrap, listEl2.nextSibling);
-          }
-        }
-      } catch (e) { console.warn('failed to add leaderboard debug UI', e); }
-    }
+    renderLeaderboardEntries(entries);
   } catch (err) {
-    console.warn('fetchAndRenderLeaderboard error', err);
-    const msg = (err && err.message) ? err.message : String(err);
-    // If permission-like error, give a hint that anonymous auth or rules may be blocking reads
-    if (msg.toLowerCase().includes('permission') || msg.toLowerCase().includes('missing')) {
-      listEl.innerHTML = '<div class="lb-error">Failed to load leaderboard: insufficient permissions.</div>';
-    } else {
-      listEl.innerHTML = '<div class="lb-error">Failed to load leaderboard: ' + escapeHtml(msg) + '</div>';
-    }
+    listEl.innerHTML = '<div class="lb-error">Failed to load leaderboard</div>';
   }
-}
-
-// Developer helper: run extended fetches for diagnostics
-async function fetchLeaderboardDebug(testId) {
-  const result = { top: null, byName: null, errors: [] };
-  try { if (window.leaderboardAuthReady) await window.leaderboardAuthReady; } catch (e) {}
-  if (!window.leaderboardApi) { result.errors.push('leaderboardApi not available'); return result; }
-  try {
-    if (typeof window.leaderboardApi.fetchTopScores === 'function') {
-      try { result.top = await window.leaderboardApi.fetchTopScores(testId, 100); } catch (e) { result.errors.push('fetchTopScores failed: ' + (e && e.message)); }
-    } else result.errors.push('fetchTopScores not a function');
-    const cached = window.currentUsername || (localStorage.getItem && localStorage.getItem('fblacer_username')) || null;
-    if (cached && typeof window.leaderboardApi.fetchScoresByName === 'function') {
-      try { result.byName = await window.leaderboardApi.fetchScoresByName(testId, cached); } catch (e) { result.errors.push('fetchScoresByName failed: ' + (e && e.message)); }
-    }
-  } catch (e) { result.errors.push('unexpected: ' + (e && e.message)); }
-  console.debug('fetchLeaderboardDebug result', result);
-  return result;
 }
 
 function renderLeaderboardEntries(entries) {
@@ -1532,19 +1470,15 @@ async function showProfileOverlay(uid) {
     const content = document.createElement('div'); content.textContent = 'Loading...'; panel.appendChild(content);
     overlay.appendChild(panel);
 
-    // Only fetch private account data when the viewer is the owner (per Firestore rules)
+    // fetch accounts/{uid}
     let acct = null;
     try {
-      const currentUid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || (localStorage.getItem && localStorage.getItem('fblacer_uid')) || null;
-      const isOwner = currentUid && uid && String(currentUid) === String(uid);
-      if (isOwner && window.doc && window.getDoc && window.db) {
-        try {
-          const aref = window.doc(window.db, 'accounts', uid);
-          const s = await window.getDoc(aref);
-          if (s && typeof s.exists === 'function' && s.exists()) acct = s.data();
-        } catch (e) { console.warn('profile fetch failed (owner)', e); }
+      if (window.doc && window.getDoc && window.db) {
+        const aref = window.doc(window.db, 'accounts', uid);
+        const s = await window.getDoc(aref);
+        if (s && s.exists()) acct = s.data();
       }
-    } catch (e) { console.warn('profile fetch wrapper failed', e); }
+    } catch (e) { console.warn('profile fetch failed', e); }
 
     // render profile
     content.innerHTML = '';
@@ -1557,101 +1491,6 @@ async function showProfileOverlay(uid) {
     avatar.src = (acct && acct.avatarUrl) ? acct.avatarUrl : 'https://www.gravatar.com/avatar/?d=mp&s=96';
     header.appendChild(avatar); header.appendChild(nameEl);
     content.appendChild(header);
-
-    // If owner, show a Sync button to copy leaderboard entries into users/{uid}/scores/{test}
-    try {
-      const currentUid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || (localStorage.getItem && localStorage.getItem('fblacer_uid')) || null;
-      const isOwner = currentUid && uid && String(currentUid) === String(uid);
-      if (isOwner) {
-        const syncWrap = document.createElement('div');
-        syncWrap.style.display = 'flex';
-        syncWrap.style.gap = '8px';
-        syncWrap.style.marginTop = '10px';
-
-        const syncBtn = document.createElement('button');
-        syncBtn.type = 'button';
-        syncBtn.textContent = 'Sync leaderboard -> Profile';
-        syncBtn.style.marginRight = '8px';
-
-        const syncStatus = document.createElement('div');
-        syncStatus.style.fontSize = '13px';
-        syncStatus.style.color = 'var(--muted,#666)';
-
-        syncBtn.onclick = async () => {
-          try {
-            syncBtn.disabled = true; syncStatus.textContent = 'Syncing...';
-            await (async function syncFromLeaderboards() {
-              if (!(window.collection && window.getDocs && window.doc && window.setDoc && window.db)) return;
-              const username = (acct && acct.username) ? acct.username : (localStorage.getItem && localStorage.getItem('fblacer_username')) || null;
-              // ensure username -> uid mapping
-              try {
-                if (username) await window.setDoc(window.doc(window.db, 'usernames', username), { uid }, { merge: true });
-                // ensure users/{uid}.username exists
-                try { await window.setDoc(window.doc(window.db, 'users', uid), { username }, { merge: true }); } catch (e) {}
-              } catch (e) { /* ignore */ }
-
-              // iterate tests list (window.tests expected)
-              const allTests = Array.isArray(window.tests) ? window.tests : [];
-              for (let i = 0; i < allTests.length; i++) {
-                const testId = String(i);
-                try {
-                  // first try uid-based entries
-                  let found = false;
-                  if (uid) {
-                    try {
-                      const col = window.collection(window.db, 'leaderboards', testId, 'scores');
-                      const q = window.query(col, window.where('uid', '==', uid));
-                      const snap = await window.getDocs(q);
-                      if (snap && typeof snap.forEach === 'function') {
-                        snap.forEach(async (d) => {
-                          try {
-                            const data = d.data ? d.data() : {};
-                            const userScoreRef = window.doc(window.db, 'users', uid, 'scores', testId);
-                            await window.setDoc(userScoreRef, { points: data.points || data.points || 0, leaderboardDocId: d.id, sentToLeaderboard: true, createdAt: data.createdAt || new Date().toISOString(), lastUpdated: new Date().toISOString() }, { merge: true });
-                            found = true;
-                          } catch (e) {}
-                        });
-                      }
-                    } catch (e) {}
-                  }
-                  // if not found by uid and username exists, try name-based
-                  if (!found && username) {
-                    try {
-                      const col2 = window.collection(window.db, 'leaderboards', testId, 'scores');
-                      const q2 = window.query(col2, window.where('name', '==', username));
-                      const snap2 = await window.getDocs(q2);
-                      if (snap2 && typeof snap2.forEach === 'function') {
-                        snap2.forEach(async (d) => {
-                          try {
-                            const data = d.data ? d.data() : {};
-                            const userScoreRef = window.doc(window.db, 'users', uid, 'scores', testId);
-                            await window.setDoc(userScoreRef, { points: data.points || 0, leaderboardDocId: d.id, sentToLeaderboard: true, createdAt: data.createdAt || new Date().toISOString(), lastUpdated: new Date().toISOString() }, { merge: true });
-                            found = true;
-                          } catch (e) {}
-                        });
-                      }
-                    } catch (e) {}
-                  }
-                } catch (e) {}
-              }
-            })();
-            syncStatus.textContent = 'Sync completed';
-            // refresh overlay contents by re-opening (simple approach)
-            try { overlay.remove(); showProfileOverlay(uid); } catch (e) {}
-          } catch (e) {
-            syncStatus.textContent = 'Sync failed';
-            console.warn('Sync failed', e);
-          } finally {
-            syncBtn.disabled = false;
-            setTimeout(() => { syncStatus.textContent = ''; }, 2500);
-          }
-        };
-
-        syncWrap.appendChild(syncBtn);
-        syncWrap.appendChild(syncStatus);
-        content.appendChild(syncWrap);
-      }
-    } catch (e) { console.warn('owner sync UI failed', e); }
 
     // If viewing own profile, allow changing avatar
     try {
@@ -1778,286 +1617,10 @@ async function showProfileOverlay(uid) {
     const testsEl = document.createElement('div'); testsEl.style.marginTop = '12px';
     testsEl.innerHTML = '<h4>Tests</h4>';
     const testsList = document.createElement('div');
-    // Determine tests to show. For owner we will prefer user's private scores under users/{uid}/scores or accounts/{uid}/tests.
-    let tests = null;
-    const currentUid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || (localStorage.getItem && localStorage.getItem('fblacer_uid')) || null;
-    const isOwner = currentUid && uid && String(currentUid) === String(uid);
-    if (isOwner && window.collection && window.getDocs && window.doc && window.db) {
-      // Try users/{uid}/scores first (per rules this is allowed for owner)
-      try {
-        const scoresCol = window.collection(window.db, 'users', uid, 'scores');
-        const snapScores = await window.getDocs(scoresCol);
-        if (snapScores && typeof snapScores.forEach === 'function') {
-          tests = {};
-          snapScores.forEach(d => { try { tests[d.id] = d.data(); } catch (e) {} });
-        }
-      } catch (e) { /* ignore */ }
-      // Fallback: check accounts/{uid}/tests subcollection if present
-      if (!tests) {
-        try {
-          const testsCol = window.collection(window.db, 'accounts', uid, 'tests');
-          const snapTests = await window.getDocs(testsCol);
-          if (snapTests && typeof snapTests.forEach === 'function') {
-            tests = {};
-            snapTests.forEach(d => { try { tests[d.id] = d.data(); } catch (e) {} });
-          }
-        } catch (e) { /* ignore */ }
-      }
-    }
-    tests = tests || {};
+    const tests = (acct && acct.tests) ? acct.tests : {};
     const tkeys = Object.keys(tests || {});
-    // helper to format timestamp to 'Month Day Year'
-    function fmtDate(ts) {
-      try {
-        if (ts === null || typeof ts === 'undefined' || ts === '') return '';
-        // If it's a Firestore Timestamp-like object with toDate()
-        if (ts && typeof ts.toDate === 'function') {
-          const d = ts.toDate();
-          if (d && !isNaN(d.getTime())) return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-          return '';
-        }
-
-        // If it's an object with seconds (Firestore legacy), convert
-        if (ts && typeof ts === 'object' && 'seconds' in ts) {
-          const sec = Number(ts.seconds || 0);
-          if (!isNaN(sec) && sec > 0) {
-            const d = new Date(sec * 1000);
-            if (!isNaN(d.getTime())) return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-          }
-          return '';
-        }
-
-        // If it's a string, sanitize newlines and wrapping quotes and whitespace
-        if (typeof ts === 'string') {
-          let s = ts.trim();
-          // remove surrounding quotes if present
-          if ((s.startsWith('"') && s.endsWith('"')) || (s.startsWith("'") && s.endsWith("'"))) {
-            s = s.slice(1, -1).trim();
-          }
-          // Remove newlines that may appear in storage exports
-          s = s.replace(/\n/g, '').replace(/\r/g, '').trim();
-
-          // If the string contains an ISO timestamp inside it, extract it (helpful when stored with extra chars)
-          // Match patterns like 2025-10-07T02:06:43.201Z
-          const isoMatch = s.match(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z/);
-          if (isoMatch && isoMatch[0]) {
-            const dIso2 = new Date(isoMatch[0]);
-            if (!isNaN(dIso2.getTime())) {
-              try { /* debug removed */ } catch (e) {}
-              return dIso2.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-            }
-          }
-
-          // try ISO parse of the cleaned string
-          const dIso = new Date(s);
-          if (!isNaN(dIso.getTime())) {
-            try { /* debug removed */ } catch (e) {}
-            return dIso.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-          }
-          // try numeric parse
-          const n = Number(s);
-          if (!isNaN(n) && n > 0) {
-            const dNum = new Date(n);
-            if (!isNaN(dNum.getTime())) {
-              try { /* debug removed */ } catch (e) {}
-              return dNum.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-            }
-          }
-          return '';
-        }
-
-        // If it's a number (epoch ms)
-        if (typeof ts === 'number') {
-          const d = new Date(ts);
-          if (!isNaN(d.getTime())) return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-          return '';
-        }
-
-        // Fallback: attempt to coerce and parse
-        const d = new Date(ts);
-        if (d && !isNaN(d.getTime())) return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-        return '';
-      } catch (e) { return '' + ts; }
-    }
-
-    if (!tkeys.length) {
-      testsList.textContent = 'No test records';
-    } else {
-      // Only show tests that have leaderboard entries for this user (best-effort)
-      for (const tn of tkeys) {
-        try {
-          let shown = false;
-          // Log which test we're checking
-          try { /* debug removed */ } catch (e) {}
-
-          // Prefer account-local marker if available: acct.tests.{tn}.sentToLeaderboard
-          try {
-            const acctTests = (acct && acct.tests) ? acct.tests : null;
-            if (acctTests && acctTests[tn] && acctTests[tn].sentToLeaderboard) {
-              const info = acctTests[tn];
-              const r = document.createElement('div');
-              const pretty = fmtDate(info.timestamp || info.createdAt || info.lastUpdated || info.ts || '');
-              r.textContent = `${tn}: ${info.points || 0} pts${pretty ? ' (' + pretty + ')' : ''}`;
-              // if leaderboardDocId stored, create a link
-              try {
-                let url = null;
-                if (window.leaderboardApi && typeof window.leaderboardApi.getScoreDocUrl === 'function' && info.leaderboardDocId) {
-                  url = window.leaderboardApi.getScoreDocUrl(tn, info.leaderboardDocId);
-                }
-                if (!url && info.leaderboardDocId) url = `leaderboard.html?test=${encodeURIComponent(tn)}&doc=${encodeURIComponent(info.leaderboardDocId)}`;
-                if (url) { const a = document.createElement('a'); a.href = url; a.textContent = 'View leaderboard'; a.target = '_blank'; a.style.marginLeft = '8px'; r.appendChild(a); }
-              } catch (e) {}
-              testsList.appendChild(r);
-              shown = true;
-            }
-          } catch (e) { console.warn('acct.tests check failed', e); }
-
-
-          // try leaderboards/{test}/scores where name == acct.username
-          if (acct && acct.username && window.getDocs && window.collection && window.query && window.where && window.db) {
-            try {
-              const col = window.collection(window.db, 'leaderboards', tn, 'scores');
-              const q = window.query(col, window.where('name', '==', acct.username));
-              const qr = await window.getDocs(q);
-              // Prefer using querySnapshot.empty / querySnapshot.size to detect hits
-              if (qr && typeof qr.empty === 'boolean') {
-                if (!qr.empty) {
-                  shown = true;
-                  try { /* debug removed */ } catch (e) {}
-                }
-              } else if (qr && typeof qr.size === 'number') {
-                if (qr.size > 0) { shown = true; try { /* debug removed */ } catch (e) {} }
-              } else if (qr && typeof qr.forEach === 'function') {
-                // Fallback: iterate but use snap.exists() properly
-                let found = false;
-                qr.forEach(docSnap => { try { if (docSnap && typeof docSnap.exists === 'function' && docSnap.exists()) found = true; } catch (e) {} });
-                if (found) { shown = true; try { /* debug removed */ } catch (e) {} }
-              }
-            } catch (e) { console.warn('leaderboard name lookup failed for', tn, e); }
-          }
-
-          // try uid-based entries if not found yet
-          if (!shown && uid && window.getDocs && window.collection && window.query && window.where && window.db) {
-            try {
-              const col2 = window.collection(window.db, 'leaderboards', tn, 'scores');
-              const q2 = window.query(col2, window.where('uid', '==', uid));
-              const qr2 = await window.getDocs(q2);
-              if (qr2 && typeof qr2.empty === 'boolean') {
-                if (!qr2.empty) {
-                  shown = true;
-                  try { /* debug removed */ } catch (e) {}
-                }
-              } else if (qr2 && typeof qr2.size === 'number') {
-                if (qr2.size > 0) { shown = true; try { /* debug removed */ } catch (e) {} }
-              } else if (qr2 && typeof qr2.forEach === 'function') {
-                let found2 = false;
-                qr2.forEach(docSnap => { try { if (docSnap && typeof docSnap.exists === 'function' && docSnap.exists()) found2 = true; } catch (e) {} });
-                if (found2) { shown = true; try { /* debug removed */ } catch (e) {} }
-              }
-            } catch (e) { console.warn('leaderboard uid lookup failed for', tn, e); }
-          }
-
-          // If still not found, attempt a diagnostic scan of a few sample docs in the scores subcollection
-          if (!shown && window.getDocs && window.collection && window.db) {
-            try {
-              try { /* debug removed */ } catch (e) {}
-              const colScan = window.collection(window.db, 'leaderboards', tn, 'scores');
-              const qrScan = await window.getDocs(colScan);
-              if (qrScan && typeof qrScan.forEach === 'function') {
-                let sampleCount = 0;
-                qrScan.forEach(docSnap => {
-                  if (sampleCount >= 5) return;
-                  try {
-                    const d = docSnap.data ? docSnap.data() : null;
-                    /* debug removed: sample doc logged */
-                  } catch (e) { /* debug removed sample read failure */ }
-                  sampleCount++;
-                });
-                if (qrScan && typeof qrScan.empty === 'boolean' && !qrScan.empty) {
-                  // if there are docs but earlier queries missed them, log a warning
-                  try { console.warn('Diagnostic: scores exist for', tn, 'but name/uid queries returned no hits. Check field names/casing/whitespace.'); } catch (e) {}
-                }
-              }
-            } catch (e) { console.warn('diagnostic scan failed for', tn, e); }
-          }
-
-          if (shown) {
-            const info = tests[tn] || {};
-            const r = document.createElement('div');
-            const pretty = fmtDate(info.timestamp || info.ts || info.createdAt || info.lastUpdated || '');
-            // If we have a leaderboardApi helper that can produce a URL for a score doc, use it
-            let linkEl = null;
-            try {
-              if (window.leaderboardApi && typeof window.leaderboardApi.getScoreDocUrl === 'function' && info && info.leaderboardDocId) {
-                const url = window.leaderboardApi.getScoreDocUrl(tn, info.leaderboardDocId);
-                linkEl = document.createElement('a'); linkEl.href = url; linkEl.textContent = 'View leaderboard'; linkEl.target = '_blank'; linkEl.style.marginLeft = '8px';
-              }
-            } catch (e) {}
-
-            // fallback: if we stored score doc id in the test metadata, create a link pattern
-            if (!linkEl && info && info.leaderboardDocId) {
-              try {
-                const url = `leaderboard.html?test=${encodeURIComponent(tn)}&doc=${encodeURIComponent(info.leaderboardDocId)}`;
-                linkEl = document.createElement('a'); linkEl.href = url; linkEl.textContent = 'View leaderboard'; linkEl.target = '_blank'; linkEl.style.marginLeft = '8px';
-              } catch (e) {}
-            }
-
-            r.textContent = `${tn}: ${info.totalPoints || 0} pts${pretty ? ' (' + pretty + ')' : ''}`;
-            if (linkEl) r.appendChild(linkEl);
-            testsList.appendChild(r);
-          } else {
-            // Not found via primary queries. Try a more thorough (but heavier) scan: look through some sample docs and attempt case-insensitive or alternate-field matches.
-            try {
-              if (window.getDocs && window.collection && window.db) {
-                const col = window.collection(window.db, 'leaderboards', tn, 'scores');
-                const qr = await window.getDocs(col);
-                if (qr && typeof qr.forEach === 'function' && qr.size > 0) {
-                  let matchedDoc = null;
-                  qr.forEach(docSnap => {
-                    if (matchedDoc) return;
-                    try {
-                      const d = docSnap.data ? docSnap.data() : {};
-                      // normalize and compare
-                      const nameField = (d && (d.name || d.username || d.user || d.displayName)) || '';
-                      const uidField = (d && (d.uid || d.userId || d.userid || d.owner)) || '';
-                      const normName = String(nameField || '').trim().toLowerCase();
-                      const normAcctName = String((acct && acct.username) || '').trim().toLowerCase();
-                      const normUid = String(uidField || '').trim();
-                      const normAcctUid = String(uid || '').trim();
-                      if (normAcctUid && normUid && normAcctUid === normUid) {
-                        matchedDoc = { id: docSnap.id, data: d };
-                      } else if (normAcctName && normName && normAcctName === normName) {
-                        matchedDoc = { id: docSnap.id, data: d };
-                      }
-                    } catch (e) {}
-                  });
-                  if (matchedDoc) {
-                    // render link to matched doc
-                    const info = tests[tn] || {};
-                    const r = document.createElement('div');
-                    const pretty = fmtDate(info.timestamp || info.ts || info.createdAt || info.lastUpdated || '');
-                    r.textContent = `${tn}: ${info.totalPoints || 0} pts${pretty ? ' (' + pretty + ')' : ''}`;
-                    let url = null;
-                    try { if (window.leaderboardApi && typeof window.leaderboardApi.getScoreDocUrl === 'function') url = window.leaderboardApi.getScoreDocUrl(tn, matchedDoc.id); } catch (e) {}
-                    if (!url) url = `leaderboard.html?test=${encodeURIComponent(tn)}&doc=${encodeURIComponent(matchedDoc.id)}`;
-                    const a = document.createElement('a'); a.href = url; a.textContent = 'View leaderboard'; a.target = '_blank'; a.style.marginLeft = '8px';
-                    r.appendChild(a);
-                    testsList.appendChild(r);
-                    // log discovery
-                    try { /* debug removed */ } catch (e) {}
-                    // mark shown to avoid final 'No leaderboard submissions' message
-                    shown = true;
-                  }
-                }
-              }
-            } catch (e) { console.warn('Fallback scan failed for', tn, e); }
-          }
-        } catch (e) {
-          console.warn('test display check failed', e);
-        }
-      }
-      if (!testsList.children.length) testsList.textContent = 'No leaderboard submissions';
-    }
+    if (!tkeys.length) testsList.textContent = 'No test records';
+    else tkeys.forEach(tn => { const r = document.createElement('div'); r.textContent = `${tn}: ${tests[tn].totalPoints || 0} pts (${tests[tn].timestamp || ''})`; testsList.appendChild(r); });
     testsEl.appendChild(testsList);
     content.appendChild(testsEl);
 
@@ -2090,28 +1653,7 @@ async function submitScore(name, test, score) {
       return;
     }
     const createdAt = new Date().toISOString();
-    // perform leaderboard write
-    let writeResult = null;
-    try {
-      writeResult = await window.leaderboardApi.setScoreDoc(test, docId, { name, test, points: score, createdAt });
-    } catch (e) {
-      console.warn('submitScore: leaderboard write failed', e);
-      writeResult = { error: String(e && e.message ? e.message : e) };
-    }
-    // Only write private per-user score data under the authenticated user's own document
-    try {
-      const authUid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || (localStorage.getItem && localStorage.getItem('fblacer_uid')) || null;
-      if (authUid && window.doc && window.setDoc && window.db) {
-        // Preferred location per rules: users/{uid}/scores/{test}
-        try {
-          const userScoreRef = window.doc(window.db, 'users', authUid, 'scores', test);
-          const testEntry = { points: score, leaderboardDocId: docId, sentToLeaderboard: !(writeResult && writeResult.error), createdAt, lastUpdated: new Date().toISOString() };
-          await window.setDoc(userScoreRef, testEntry, { merge: true });
-        } catch (e) {
-          console.warn('submitScore: users/scores update failed', e);
-        }
-      }
-    } catch (e) { console.warn('submitScore: private write wrapper failed', e); }
+    await window.leaderboardApi.setScoreDoc(test, docId, { name, test, points: score, createdAt });
     // Log submitScore action
     try { writeLog('submitScore', { test, name, points: score, createdAt }); } catch (e) { console.warn('submitScore log failed', e); }
     try { localStorage.setItem(localKey, JSON.stringify({ ts: createdAt })); } catch (e) { }
