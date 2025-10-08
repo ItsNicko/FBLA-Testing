@@ -2,1211 +2,912 @@
   "testName": "Securities and Investments",
   "topics": [
     {
-      "topic": "Operations",
+      "topic": "Investments Basics",
       "questions": [
         {
-          "question": "What is the primary purpose of Operations?",
+          "question": "What is a stock?",
           "options": [
-            "asset",
-            "budget",
-            "profit",
-            "margin"
+            "A share of ownership in a company",
+            "A loan to a company",
+            "A form of insurance",
+            "A government bond"
           ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "A share of ownership in a company",
+          "explanation": "A stock represents partial ownership in a corporation."
         },
         {
-          "question": "(Hard) What is a key consideration when creating a budget?",
+          "question": "Which instrument is typically considered least risky?",
           "options": [
-            "inventory",
-            "procedure",
-            "profit",
-            "ROI"
+            "Government bonds",
+            "Penny stocks",
+            "Cryptocurrency",
+            "Commodities"
           ],
-          "correctAnswer": "profit",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
+          "correctAnswer": "Government bonds",
+          "explanation": "Government bonds are generally lower risk compared to equities or commodities."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a marketing lead, what would be the best next step?",
+          "question": "What does diversification do for a portfolio?",
           "options": [
-            "liability",
-            "margin",
-            "Restructure department roles",
-            "inventory"
+            "Reduces risk by spreading investments",
+            "Guarantees profit",
+            "Eliminates taxes",
+            "Increases leverage"
           ],
-          "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Reduces risk by spreading investments",
+          "explanation": "Diversification helps manage risk by holding varied assets."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "What is an ETF?",
           "options": [
-            "equity",
-            "budget",
-            "policy",
-            "procedure"
+            "Exchange-traded fund",
+            "Electronic trading form",
+            "Estimated tax fund",
+            "Equity transfer filing"
           ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Exchange-traded fund",
+          "explanation": "An ETF is an investment fund traded on stock exchanges that holds assets like stocks or bonds."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
-          "options": [
-            "Investigate causes and collect data",
-            "policy",
-            "inventory",
-            "margin"
-          ],
-          "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "question": "Which measure shows how volatile a stock is?",
+          "options": ["Beta", "Dividend yield", "Market cap", "P/E ratio"],
+          "correctAnswer": "Beta",
+          "explanation": "Beta measures a stock's volatility relative to the overall market."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining employee retention. As a HR director, what would be the best next step?",
+          "question": "What is a dividend?",
           "options": [
-            "revenue",
-            "Adjust the marketing strategy",
-            "leader",
-            "policy"
+            "A payment to shareholders from profits",
+            "A fee for trading stocks",
+            "A tax on investments",
+            "An accounting write-off"
           ],
-          "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "A payment to shareholders from profits",
+          "explanation": "Dividends are distributions of a company's earnings to shareholders."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a marketing lead, what would be the best next step?",
+          "question": "Why might an investor choose bonds over stocks?",
           "options": [
-            "margin",
-            "budget",
-            "policy",
-            "Restructure department roles"
+            "For more predictable income",
+            "To get higher growth potential",
+            "To avoid interest",
+            "Because bonds never default"
           ],
-          "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "For more predictable income",
+          "explanation": "Bonds typically provide regular interest payments and are less volatile than stocks."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining sales. As a project manager, what would be the best next step?",
+          "question": "What does liquidity mean?",
           "options": [
-            "budget",
-            "revenue",
-            "leader",
-            "Restructure department roles"
+            "How quickly an asset can be converted to cash",
+            "The interest rate on a loan",
+            "A company's profit margin",
+            "A regulatory requirement"
           ],
-          "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "How quickly an asset can be converted to cash",
+          "explanation": "Liquidity refers to the ease of converting an asset into cash without significant loss of value."
+        },
+        {
+          "question": "When is capital gain realized?",
+          "options": [
+            "When an asset is sold at a higher price than purchased",
+            "When a dividend is paid",
+            "When interest is accrued",
+            "When taxes are filed"
+          ],
+          "correctAnswer": "When an asset is sold at a higher price than purchased",
+          "explanation": "Capital gain occurs when you sell an investment for more than its purchase price."
+        },
+        {
+          "question": "(Hard) Scenario: An investor holds a diversified portfolio of large-cap stocks and corporate bonds. Interest rates rise sharply. Which shift is the most appropriate rebalancing action to maintain long-term risk tolerance?",
+          "options": [
+            "Reduce duration by choosing shorter-term bonds and rebalance equities modestly",
+            "Increase holdings in long-term bonds to capture higher yields",
+            "Move entirely to cash to avoid volatility",
+            "Leverage by borrowing to buy more equities"
+          ],
+          "correctAnswer": "Reduce duration by choosing shorter-term bonds and rebalance equities modestly",
+          "explanation": "Rising interest rates reduce bond prices, so shortening duration can reduce interest-rate risk while modest equity rebalancing maintains diversification."
         }
       ]
     },
     {
-      "topic": "Leadership",
+      "topic": "Stocks and Equities",
       "questions": [
         {
-          "question": "What is a key consideration when creating a budget?",
+          "question": "What does P/E ratio represent?",
           "options": [
-            "policy",
-            "inventory",
-            "equity",
-            "stakeholder"
+            "Price-to-earnings ratio",
+            "Profit-to-expense ratio",
+            "Paid earnings",
+            "Portfolio equity"
           ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Price-to-earnings ratio",
+          "explanation": "P/E compares a company's current share price to its per-share earnings."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "What is market capitalization?",
           "options": [
-            "profit",
-            "inventory",
-            "revenue",
-            "engagement"
+            "Total market value of a company's outstanding shares",
+            "Annual revenue",
+            "Total assets",
+            "Debt level"
           ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Total market value of a company's outstanding shares",
+          "explanation": "Market cap equals share price times number of outstanding shares."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a marketing lead, what would be the best next step?",
+          "question": "Which stock type typically pays dividends?",
           "options": [
-            "asset",
-            "margin",
-            "Restructure department roles",
-            "liability"
+            "Common and preferred may pay dividends, preferred often has fixed dividends",
+            "Only penny stocks",
+            "Only startups",
+            "Non-traded securities"
           ],
-          "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Common and preferred may pay dividends, preferred often has fixed dividends",
+          "explanation": "Both common and preferred stocks can pay dividends; preferred often has priority."
         },
         {
-          "question": "(Hard) Which term best describes a company's expected incoming money?",
+          "question": "What is an IPO?",
           "options": [
-            "leadership",
-            "leader",
-            "profit",
-            "inventory"
+            "Initial public offering",
+            "Internal performance objective",
+            "Interest payment option",
+            "Investment purchase order"
           ],
-          "correctAnswer": "leadership",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
+          "correctAnswer": "Initial public offering",
+          "explanation": "An IPO is when a private company offers shares to the public for the first time."
         },
         {
-          "question": "What is the primary purpose of Leadership?",
+          "question": "Which factor can influence stock price?",
           "options": [
-            "policy",
-            "margin",
-            "leader",
-            "budget"
+            "Earnings reports",
+            "Weather only",
+            "Packaging color",
+            "Office location"
           ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Earnings reports",
+          "explanation": "Company earnings and outlook significantly affect stock prices."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a marketing lead, what would be the best next step?",
+          "question": "What is a blue-chip stock?",
           "options": [
-            "Conduct employee surveys",
-            "leader",
-            "inventory",
-            "revenue"
+            "A well-established company with stable earnings",
+            "A new tech startup",
+            "A high-risk penny stock",
+            "A government-issued security"
           ],
-          "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "A well-established company with stable earnings",
+          "explanation": "Blue-chip stocks are large, stable, and often pay dividends."
         },
         {
-          "question": "What is a key consideration when creating a budget?",
+          "question": "Why might investors buy growth stocks?",
           "options": [
-            "engagement",
-            "profit",
-            "ROI",
-            "liability"
+            "For higher expected capital appreciation",
+            "To receive fixed income",
+            "To avoid market fluctuations",
+            "To minimize taxes"
           ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "For higher expected capital appreciation",
+          "explanation": "Growth stocks are expected to increase earnings and value faster than the market average."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a project manager, what would be the best next step?",
+          "question": "Which order executes immediately at current market price?",
           "options": [
-            "revenue",
-            "Adjust the marketing strategy",
-            "asset",
-            "budget"
+            "Market order",
+            "Limit order",
+            "Stop-loss with limit",
+            "Good-till-cancelled with conditions"
           ],
-          "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Market order",
+          "explanation": "A market order buys or sells immediately at the best available current price."
+        },
+        {
+          "question": "What is a dividend yield?",
+          "options": [
+            "Annual dividend divided by share price",
+            "Profit margin",
+            "Interest rate on bonds",
+            "Currency conversion rate"
+          ],
+          "correctAnswer": "Annual dividend divided by share price",
+          "explanation": "Dividend yield shows how much a company pays out in dividends relative to its share price."
+        },
+        {
+          "question": "(Hard) Scenario: A company's earnings decline due to temporary supply-chain issues but fundamentals remain solid. As a value investor, which approach best aligns with value investing principles?",
+          "options": [
+            "Assess whether the price drop creates a margin of safety and consider buying if intrinsic value > market price",
+            "Sell immediately because any downturn indicates permanent decline",
+            "Ignore fundamentals and follow market sentiment",
+            "Short the stock to profit from further drops"
+          ],
+          "correctAnswer": "Assess whether the price drop creates a margin of safety and consider buying if intrinsic value > market price",
+          "explanation": "Value investors look for discounts to intrinsic value, assessing whether setbacks are temporary."
         }
       ]
     },
     {
-      "topic": "Marketing",
+      "topic": "Bonds and Fixed Income",
       "questions": [
         {
-          "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
+          "question": "What is yield to maturity?",
           "options": [
-            "policy",
-            "margin",
-            "Investigate causes and collect data",
-            "ROI"
+            "Total return expected if a bond is held to maturity",
+            "Coupon payment only",
+            "Issuer's credit rating",
+            "Market liquidity"
           ],
-          "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Total return expected if a bond is held to maturity",
+          "explanation": "Yield to maturity estimates the internal rate of return for a bond held until it matures."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "Which bond typically has lowest credit risk?",
           "options": [
-            "asset",
-            "procedure",
-            "profit",
-            "ROI"
+            "U.S. Treasury bonds",
+            "Corporate junk bonds",
+            "Municipal revenue bonds",
+            "Foreign sovereign defaulted bonds"
           ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "U.S. Treasury bonds",
+          "explanation": "U.S. Treasuries are backed by the federal government and considered very low risk."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a manager, what would be the best next step?",
+          "question": "What happens to bond prices when interest rates rise?",
           "options": [
-            "Restructure department roles",
-            "stakeholder",
-            "revenue",
-            "equity"
+            "Bond prices generally fall",
+            "Bond prices rise",
+            "No change",
+            "Bonds automatically convert to stocks"
           ],
-          "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Bond prices generally fall",
+          "explanation": "Bond prices move inversely to interest rates."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining sales. As a marketing lead, what would be the best next step?",
-          "options": [
-            "asset",
-            "Adjust the marketing strategy",
-            "stakeholder",
-            "margin"
-          ],
-          "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "question": "Which term describes interest paid periodically on a bond?",
+          "options": ["Coupon", "Dividend", "Premium", "Face value"],
+          "correctAnswer": "Coupon",
+          "explanation": "A bond's coupon is the periodic interest payment made to bondholders."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "What is credit rating used for?",
           "options": [
-            "stakeholder",
-            "budget",
-            "inventory",
-            "revenue"
+            "To assess issuer default risk",
+            "To set tax rates",
+            "To value commodity futures",
+            "To define trading hours"
           ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "To assess issuer default risk",
+          "explanation": "Credit ratings evaluate the likelihood that a bond issuer will meet obligations."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "What is duration in bond investing?",
           "options": [
-            "leader",
-            "policy",
-            "revenue",
-            "liability"
+            "A measure of sensitivity of a bond's price to interest rate changes",
+            "Time until next coupon",
+            "Issuer's lifespan",
+            "Market open hours"
           ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "A measure of sensitivity of a bond's price to interest rate changes",
+          "explanation": "Duration estimates how much bond prices may change for a change in interest rates."
         },
         {
-          "question": "(Hard) Scenario: A local company faces a problem with declining sales. As a manager, what would be the best next step?",
+          "question": "Why choose municipal bonds?",
           "options": [
-            "revenue",
-            "ROI",
-            "asset",
-            "Restructure department roles"
+            "Often tax-exempt income",
+            "Guaranteed high returns",
+            "They never default",
+            "They are issued daily"
           ],
-          "correctAnswer": "Restructure department roles",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
+          "correctAnswer": "Often tax-exempt income",
+          "explanation": "Municipal bond interest is commonly exempt from federal taxes and sometimes state taxes."
         },
         {
-          "question": "What is a key consideration when creating a budget?",
+          "question": "Which is true about callable bonds?",
           "options": [
-            "stakeholder",
-            "inventory",
-            "budget",
-            "communication"
+            "Issuer can redeem early, usually at a premium",
+            "Investor can force early redemption",
+            "They have no coupon",
+            "They convert to equity automatically"
           ],
-          "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Issuer can redeem early, usually at a premium",
+          "explanation": "Callable bonds can be called by the issuer before maturity, often when rates fall."
+        },
+        {
+          "question": "What does credit spread indicate?",
+          "options": [
+            "Difference in yield between corporate and government bonds",
+            "Difference between stock and bond returns",
+            "Tax rate difference",
+            "Currency exchange rate"
+          ],
+          "correctAnswer": "Difference in yield between corporate and government bonds",
+          "explanation": "Credit spread reflects additional yield demanded for bearing credit risk."
+        },
+        {
+          "question": "(Hard) Scenario: An institutional investor expects interest rates to fall gradually over two years. Which fixed-income strategy best captures potential price appreciation while controlling risk?",
+          "options": [
+            "Buy high-quality bonds with moderate duration and stagger maturities (laddering)",
+            "Concentrate in long-term junk bonds",
+            "Sell all bonds and hold cash",
+            "Leverage to buy long-dated zero-coupon bonds exclusively"
+          ],
+          "correctAnswer": "Buy high-quality bonds with moderate duration and stagger maturities (laddering)",
+          "explanation": "Laddering across maturities and quality can capture yield and price appreciation while managing reinvestment and interest-rate risks."
         }
       ]
     },
     {
-      "topic": "Technology",
+      "topic": "Portfolio Management",
       "questions": [
         {
-          "question": "What is a key consideration when creating a budget?",
+          "question": "What is asset allocation?",
           "options": [
-            "stakeholder",
-            "liability",
-            "profit",
-            "policy"
+            "The process of dividing investments among asset classes",
+            "Choosing a single stock",
+            "Tax planning",
+            "Corporate governance"
           ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "The process of dividing investments among asset classes",
+          "explanation": "Asset allocation allocates capital between stocks, bonds, cash, and other assets to balance risk and return."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "What does rebalancing a portfolio do?",
           "options": [
-            "profit",
-            "budget",
-            "policy",
-            "engagement"
+            "Restores target asset mix",
+            "Increases taxes permanently",
+            "Removes risky assets entirely",
+            "Guarantees market-beating returns"
           ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Restores target asset mix",
+          "explanation": "Rebalancing adjusts holdings to maintain a desired allocation after market movements."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "Which is a passive investment strategy?",
           "options": [
-            "ROI",
-            "liability",
-            "margin",
-            "policy"
+            "Index fund investing",
+            "Frequent active trading",
+            "Timing the market",
+            "Short-term speculative bets"
           ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Index fund investing",
+          "explanation": "Passive investing aims to match market returns via index funds rather than beat them actively."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "What is the efficient frontier?",
           "options": [
-            "leadership",
-            "budget",
-            "margin",
-            "asset"
+            "Set of portfolios offering the highest expected return for a given risk",
+            "A regulatory deadline",
+            "A trading algorithm",
+            "An exchange"
           ],
-          "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Set of portfolios offering the highest expected return for a given risk",
+          "explanation": "The efficient frontier shows optimal risk-return tradeoffs."
         },
         {
-          "question": "What is a key consideration when creating a budget?",
+          "question": "What role does risk tolerance play?",
           "options": [
-            "margin",
-            "leader",
-            "budget",
-            "engagement"
+            "Determines appropriate asset mix",
+            "Sets government policy",
+            "Dictates accounting rules",
+            "Defines a company's product"
           ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Determines appropriate asset mix",
+          "explanation": "Investor risk tolerance guides how much risk an investor can comfortably accept."
         },
         {
-          "question": "What is a key consideration when creating a budget?",
+          "question": "Why use dollar-cost averaging?",
           "options": [
-            "budget",
-            "liability",
-            "revenue",
-            "profit"
+            "To reduce the impact of market volatility over time",
+            "To guarantee gains",
+            "To avoid diversification",
+            "To increase immediate tax deductions"
           ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "To reduce the impact of market volatility over time",
+          "explanation": "Dollar-cost averaging spreads purchases to avoid investing a lump sum at an inopportune time."
         },
         {
-          "question": "(Hard) What is a key consideration when creating a budget?",
+          "question": "Which is an example of systematic risk?",
           "options": [
-            "budget",
-            "leadership",
-            "profit",
-            "policy"
+            "Market-wide recession",
+            "Company fraud",
+            "Product recall",
+            "Local labor strike"
           ],
-          "correctAnswer": "leadership",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
+          "correctAnswer": "Market-wide recession",
+          "explanation": "Systematic risk affects the entire market and cannot be eliminated by diversification."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining employee retention. As a manager, what would be the best next step?",
+          "question": "What is alpha in investing?",
           "options": [
-            "Conduct employee surveys",
-            "asset",
-            "equity",
-            "liability"
+            "Return above benchmark after adjusting for risk",
+            "The risk-free rate",
+            "A measure of volatility",
+            "Book value per share"
           ],
-          "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Return above benchmark after adjusting for risk",
+          "explanation": "Alpha represents excess return attributable to active management or selection."
+        },
+        {
+          "question": "Which tax-advantaged account is commonly used for retirement in the U.S.?",
+          "options": [
+            "401(k)",
+            "Health savings account",
+            "Custodial account",
+            "Taxable brokerage account"
+          ],
+          "correctAnswer": "401(k)",
+          "explanation": "A 401(k) is an employer-sponsored retirement savings plan with tax advantages."
+        },
+        {
+          "question": "(Hard) Scenario: An investor near retirement requires income but fears inflation. Which balanced strategy best addresses income needs and inflation protection?",
+          "options": [
+            "Hold a diversified mix of inflation-protected bonds, dividend-paying equities, and short-term bonds",
+            "Invest solely in long-term fixed-rate bonds",
+            "Convert portfolio entirely to cash",
+            "Buy only commodities futures"
+          ],
+          "correctAnswer": "Hold a diversified mix of inflation-protected bonds, dividend-paying equities, and short-term bonds",
+          "explanation": "Combining inflation-protected securities, equities with dividends, and short-term bonds can provide income while mitigating inflation risk."
         }
       ]
     },
     {
-      "topic": "Investments",
+      "topic": "Derivatives and Options",
       "questions": [
         {
-          "question": "Which action improves employee engagement?",
+          "question": "What is an option?",
           "options": [
-            "budget",
-            "policy",
-            "ROI",
-            "liability"
+            "A contract giving right but not obligation to buy or sell an asset",
+            "A fixed-rate bond",
+            "A mutual fund share",
+            "A loan agreement"
           ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "A contract giving right but not obligation to buy or sell an asset",
+          "explanation": "Options give the holder the right to buy (call) or sell (put) an asset at a set price."
         },
         {
-          "question": "What is a key consideration when creating a budget?",
+          "question": "Which side benefits from a call option if price rises?",
           "options": [
-            "equity",
-            "engagement",
-            "policy",
-            "asset"
+            "Call holder",
+            "Call writer only",
+            "Put holder",
+            "Neither"
           ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Call holder",
+          "explanation": "A call holder benefits when the underlying price exceeds the strike price."
         },
         {
-          "question": "(Hard) What is a key consideration when creating a budget?",
+          "question": "What is a futures contract?",
           "options": [
-            "margin",
-            "ROI",
-            "policy",
-            "stakeholder"
+            "Agreement to buy/sell an asset at a future date and price",
+            "A short-term loan",
+            "A type of equity",
+            "A dividend plan"
           ],
-          "correctAnswer": "policy",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
+          "correctAnswer": "Agreement to buy/sell an asset at a future date and price",
+          "explanation": "Futures obligate both parties to transact at the agreed-upon terms on the future date."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining employee retention. As a marketing lead, what would be the best next step?",
+          "question": "Which is a common use of derivatives?",
           "options": [
-            "revenue",
-            "profit",
-            "liability",
-            "Adjust the marketing strategy"
+            "Hedging risk",
+            "Avoiding taxes",
+            "Increasing labor productivity",
+            "Reducing office costs"
           ],
-          "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Hedging risk",
+          "explanation": "Derivatives are often used to manage exposures like price or interest-rate risk."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining sales. As a marketing lead, what would be the best next step?",
+          "question": "What is a strike price?",
           "options": [
-            "budget",
-            "revenue",
-            "Investigate causes and collect data",
-            "liability"
+            "The predetermined exercise price of an option",
+            "The equity's market price",
+            "A bond's coupon",
+            "A tax bracket"
           ],
-          "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "The predetermined exercise price of an option",
+          "explanation": "Strike price is the price at which the option can be exercised."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "Which party has obligation in a futures contract?",
           "options": [
-            "profit",
-            "liability",
-            "revenue",
-            "ROI"
+            "Both buyer and seller have obligations",
+            "Only buyer",
+            "Only seller",
+            "Neither party"
           ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Both buyer and seller have obligations",
+          "explanation": "Futures require both parties to fulfill the contract at settlement."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "Why do some investors write covered calls?",
           "options": [
-            "leader",
-            "inventory",
-            "policy",
-            "revenue"
+            "To generate income while holding the underlying asset",
+            "To eliminate trading fees",
+            "To avoid dividends",
+            "To increase leverage dramatically"
           ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "To generate income while holding the underlying asset",
+          "explanation": "Covered calls provide premium income but cap upside if the asset rises above strike."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "Which factor increases option premium?",
           "options": [
-            "inventory",
-            "equity",
-            "communication",
-            "leader"
+            "Higher volatility",
+            "Lower volume",
+            "Shorter time to expiration",
+            "Lower interest rates only"
           ],
-          "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Higher volatility",
+          "explanation": "Higher expected volatility raises option prices due to greater chance of being in the money."
+        },
+        {
+          "question": "What is put option used for?",
+          "options": [
+            "To insure against price declines in an asset",
+            "To guarantee dividend payments",
+            "To extend maturity of bonds",
+            "To convert stock to cash at will"
+          ],
+          "correctAnswer": "To insure against price declines in an asset",
+          "explanation": "Put options give the right to sell at a set price, protecting against downside."
+        },
+        {
+          "question": "(Hard) Scenario: A portfolio manager expects a moderate market decline but dislikes paying high option premiums. Which option strategy balances cost with downside protection?",
+          "options": [
+            "Buy protective puts on a portion of the portfolio and use collars where possible",
+            "Buy long-term deep out-of-the-money puts across the portfolio",
+            "Short calls across the portfolio only",
+            "Liquidate the portfolio entirely"
+          ],
+          "correctAnswer": "Buy protective puts on a portion of the portfolio and use collars where possible",
+          "explanation": "Buying protection selectively and employing collars can reduce premium costs while providing downside coverage."
         }
       ]
     },
     {
-      "topic": "Customer Service",
+      "topic": "Regulations and Compliance",
       "questions": [
         {
-          "question": "Which action improves employee engagement?",
+          "question": "What is the role of the SEC?",
           "options": [
-            "communication",
-            "inventory",
-            "liability",
-            "margin"
+            "Regulates securities markets and protects investors",
+            "Sets corporate tax rates",
+            "Manages monetary policy",
+            "Issues patents"
           ],
-          "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Regulates securities markets and protects investors",
+          "explanation": "The U.S. Securities and Exchange Commission enforces securities laws and ensures fair markets."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a project manager, what would be the best next step?",
+          "question": "What is insider trading?",
           "options": [
-            "policy",
-            "Restructure department roles",
-            "ROI",
-            "asset"
+            "Trading based on non-public material information",
+            "A legal market practice",
+            "A type of bond trading",
+            "A mutual fund strategy"
           ],
-          "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Trading based on non-public material information",
+          "explanation": "Insider trading using confidential information is illegal in many jurisdictions."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "Which is a disclosure requirement for public companies?",
           "options": [
-            "stakeholder",
-            "profit",
-            "liability",
-            "revenue"
+            "Quarterly financial reporting",
+            "No reporting required",
+            "Only annual sales data",
+            "Private salary lists"
           ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Quarterly financial reporting",
+          "explanation": "Public companies must file periodic financial statements to inform investors."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "Why are know-your-customer (KYC) rules important?",
           "options": [
-            "liability",
-            "profit",
-            "revenue",
-            "engagement"
+            "To prevent money laundering and fraud",
+            "To increase trading volumes",
+            "To set prices",
+            "To determine dividends"
           ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "To prevent money laundering and fraud",
+          "explanation": "KYC helps firms verify customer identities and manage legal risks."
         },
         {
-          "question": "What is the primary purpose of Customer Service?",
+          "question": "What is fiduciary duty?",
           "options": [
-            "revenue",
-            "budget",
-            "margin",
-            "policy"
+            "An obligation to act in clients' best interests",
+            "A tax obligation",
+            "A trading fee",
+            "A marketing term"
           ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "An obligation to act in clients' best interests",
+          "explanation": "Fiduciaries must prioritize clients' interests above their own."
         },
         {
-          "question": "(Hard) Scenario: A local company faces a problem with declining cash flow. As a manager, what would be the best next step?",
+          "question": "Which agency oversees banking in the U.S.?",
           "options": [
-            "leader",
-            "liability",
-            "inventory",
-            "Conduct employee surveys"
+            "Federal Reserve and OCC among others",
+            "FTC only",
+            "SEC only",
+            "Department of Education"
           ],
-          "correctAnswer": "Conduct employee surveys",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
+          "correctAnswer": "Federal Reserve and OCC among others",
+          "explanation": "Multiple agencies including the Fed and OCC supervise aspects of banking."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "What is anti-money laundering (AML)?",
           "options": [
-            "engagement",
-            "policy",
-            "liability",
-            "revenue"
+            "Programs and controls to detect and prevent financial crimes",
+            "A trading strategy",
+            "A tax avoidance scheme",
+            "A corporate benefit"
           ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Programs and controls to detect and prevent financial crimes",
+          "explanation": "AML efforts help detect suspicious transactions and comply with laws."
         },
         {
-          "question": "What is the primary purpose of Customer Service?",
+          "question": "Which practice can lead to market manipulation charges?",
           "options": [
-            "profit",
-            "budget",
-            "ROI",
-            "margin"
+            "Wash trading to create misleading volume",
+            "Buying diversified index funds",
+            "Paying dividends",
+            "Filing timely reports"
           ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Wash trading to create misleading volume",
+          "explanation": "Artificial trading to mislead others about demand can be illegal manipulation."
+        },
+        {
+          "question": "What is the purpose of prospectus in securities?",
+          "options": [
+            "To provide material information to potential investors",
+            "To act as a license",
+            "To guarantee returns",
+            "To set fund management fees only"
+          ],
+          "correctAnswer": "To provide material information to potential investors",
+          "explanation": "A prospectus discloses key facts about an offering so investors can make informed decisions."
+        },
+        {
+          "question": "(Hard) Scenario: A broker discovers that a client executed suspicious, structured transactions to avoid reporting thresholds. Which immediate actions satisfy compliance best practices?",
+          "options": [
+            "File a suspicious activity report (SAR) and freeze or monitor the account as required by policy",
+            "Ignore the activity since client is known",
+            "Publicly disclose client details to media",
+            "Transfer the client to another broker without reporting"
+          ],
+          "correctAnswer": "File a suspicious activity report (SAR) and freeze or monitor the account as required by policy",
+          "explanation": "Regulated firms must report suspicious activity and follow escalation procedures to comply with AML rules."
         }
       ]
     },
     {
-      "topic": "Project Management",
+      "topic": "Financial Analysis",
       "questions": [
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "What is EBITDA used to measure?",
           "options": [
-            "revenue",
-            "stakeholder",
-            "budget",
-            "ROI"
+            "Operating performance excluding interest, taxes, depreciation and amortization",
+            "Cash on hand",
+            "Stock float",
+            "Dividend policy"
           ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Operating performance excluding interest, taxes, depreciation and amortization",
+          "explanation": "EBITDA approximates operating profitability before non-operating items."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "Which statement shows a company's assets and liabilities?",
           "options": [
-            "inventory",
-            "equity",
-            "leadership",
-            "procedure"
+            "Balance sheet",
+            "Income statement",
+            "Cash flow statement",
+            "Statement of changes in equity"
           ],
-          "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Balance sheet",
+          "explanation": "A balance sheet lists assets, liabilities, and shareholders' equity at a point in time."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "What does current ratio measure?",
           "options": [
-            "procedure",
-            "budget",
-            "profit",
-            "ROI"
+            "Ability to meet short-term obligations",
+            "Long-term profitability",
+            "Market share",
+            "Employee satisfaction"
           ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Ability to meet short-term obligations",
+          "explanation": "Current ratio is current assets divided by current liabilities."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "Which is an example of vertical analysis?",
           "options": [
-            "leader",
-            "stakeholder",
-            "profit",
-            "revenue"
+            "Expressing each income statement item as a percentage of sales",
+            "Comparing two companies of different sizes",
+            "Inflation adjustment",
+            "Market timing"
           ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Expressing each income statement item as a percentage of sales",
+          "explanation": "Vertical analysis compares line items to a common base, like sales."
         },
         {
-          "question": "What is the primary purpose of Project Management?",
+          "question": "Why is cash flow important?",
           "options": [
-            "asset",
-            "revenue",
-            "profit",
-            "communication"
+            "It shows liquidity and the ability to fund operations",
+            "It sets stock prices",
+            "It replaces balance sheets",
+            "It determines employee roles"
           ],
-          "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "It shows liquidity and the ability to fund operations",
+          "explanation": "Cash flow indicates how cash is generated and used, essential for solvency."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining sales. As a project manager, what would be the best next step?",
+          "question": "What is working capital?",
           "options": [
-            "ROI",
-            "inventory",
-            "asset",
-            "Adjust the marketing strategy"
+            "Current assets minus current liabilities",
+            "Total revenue",
+            "Net income after taxes",
+            "Market capitalization"
           ],
-          "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Current assets minus current liabilities",
+          "explanation": "Working capital measures short-term financial health and operational efficiency."
         },
         {
-          "question": "What is a key consideration when creating a budget?",
+          "question": "Which ratio measures profitability relative to sales?",
           "options": [
-            "inventory",
-            "stakeholder",
-            "asset",
-            "engagement"
+            "Net profit margin",
+            "Debt-to-equity",
+            "Current ratio",
+            "Quick ratio"
           ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Net profit margin",
+          "explanation": "Net profit margin shows profit as a percentage of revenue."
         },
         {
-          "question": "(Hard) Which action improves employee engagement?",
+          "question": "Why analyze trend lines in financial statements?",
           "options": [
-            "liability",
-            "inventory",
-            "equity",
-            "leadership"
+            "To spot growth or decline patterns over time",
+            "To avoid audits",
+            "To set opinion polls",
+            "To determine office layout"
           ],
-          "correctAnswer": "leadership",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
+          "correctAnswer": "To spot growth or decline patterns over time",
+          "explanation": "Trend analysis helps identify consistent patterns and inform forecasts."
+        },
+        {
+          "question": "What is the purpose of ratio analysis?",
+          "options": [
+            "To simplify financial data for comparison",
+            "To set employee pay",
+            "To file taxes only",
+            "To schedule board meetings"
+          ],
+          "correctAnswer": "To simplify financial data for comparison",
+          "explanation": "Ratios help compare performance across companies and periods regardless of size."
+        },
+        {
+          "question": "(Hard) Scenario: An analyst sees rising receivables while sales are flat. Which follow-up best identifies a potential issue?",
+          "options": [
+            "Review credit policies and aging schedule to assess collectibility",
+            "Assume revenue recognition is fraudulent without investigation",
+            "Ignore the trend",
+            "Cut prices immediately to increase cash"
+          ],
+          "correctAnswer": "Review credit policies and aging schedule to assess collectibility",
+          "explanation": "Rising receivables may indicate looser credit or collection problems; analyzing aging clarifies the issue."
         }
       ]
     },
     {
-      "topic": "Ethics",
+      "topic": "Ethics and Professionalism",
       "questions": [
         {
-          "question": "(Hard) Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
+          "question": "Why is ethical behavior important in finance?",
           "options": [
-            "Investigate causes and collect data",
-            "inventory",
-            "revenue",
-            "leader"
+            "To maintain trust and market integrity",
+            "To increase short-term profits only",
+            "To avoid regulations permanently",
+            "To ensure no taxes are paid"
           ],
-          "correctAnswer": "Investigate causes and collect data",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
+          "correctAnswer": "To maintain trust and market integrity",
+          "explanation": "Ethical conduct fosters investor confidence and fair markets."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "What should a professional do when facing a conflict of interest?",
           "options": [
-            "leadership",
-            "budget",
-            "inventory",
-            "leader"
+            "Disclose and manage or avoid it",
+            "Hide it to protect business",
+            "Act in personal interest",
+            "Delegate it without notice"
           ],
-          "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Disclose and manage or avoid it",
+          "explanation": "Transparency and management help mitigate conflicts and preserve trust."
         },
         {
-          "question": "Which term best describes a company's expected incoming money?",
+          "question": "What is insider information?",
           "options": [
-            "equity",
-            "inventory",
-            "policy",
-            "ROI"
+            "Material non-public information about a company",
+            "Public press releases",
+            "Common knowledge",
+            "Historical data only"
           ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Material non-public information about a company",
+          "explanation": "Insider information can provide unfair advantage if used in trades."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining sales. As a manager, what would be the best next step?",
+          "question": "Which practice supports professional integrity?",
           "options": [
-            "budget",
-            "revenue",
-            "leader",
-            "Conduct employee surveys"
+            "Accurate reporting and full disclosure",
+            "Manipulating figures for appearance",
+            "Withholding material facts",
+            "Deceptive advertising"
           ],
-          "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Accurate reporting and full disclosure",
+          "explanation": "Honest reporting and transparency uphold integrity."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "Why is client confidentiality important?",
           "options": [
-            "equity",
-            "revenue",
-            "policy",
-            "budget"
+            "Protects client data and trust",
+            "Increases regulatory burden",
+            "Reduces profits automatically",
+            "Replaces written contracts"
           ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Protects client data and trust",
+          "explanation": "Confidentiality preserves client relationships and legal compliance."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a marketing lead, what would be the best next step?",
+          "question": "What is fiduciary responsibility?",
           "options": [
-            "Restructure department roles",
-            "equity",
-            "profit",
-            "leader"
+            "Putting clients' interests first",
+            "Maximizing personal commissions",
+            "Hiding performance metrics",
+            "Delaying reporting"
           ],
-          "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Putting clients' interests first",
+          "explanation": "Fiduciaries must act loyally and prudently on behalf of clients."
         },
         {
-          "question": "Scenario: A local company faces a problem with declining employee retention. As a marketing lead, what would be the best next step?",
+          "question": "Which action is unethical even if profitable?",
           "options": [
-            "budget",
-            "revenue",
-            "Adjust the marketing strategy",
-            "inventory"
+            "Insider trading",
+            "Honest reporting",
+            "Fair dealing",
+            "Full disclosure"
           ],
-          "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Insider trading",
+          "explanation": "Trading on insider information violates laws and ethics."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "What does professional competence include?",
           "options": [
-            "engagement",
-            "leader",
-            "ROI",
-            "profit"
+            "Maintaining knowledge and skills",
+            "Avoiding continuing education",
+            "Relying on hearsay",
+            "Neglecting standards"
           ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
-        }
-      ]
-    },
-    {
-      "topic": "and",
-      "questions": [
-        {
-          "question": "Which action improves employee engagement?",
-          "options": [
-            "policy",
-            "budget",
-            "communication",
-            "stakeholder"
-          ],
-          "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Maintaining knowledge and skills",
+          "explanation": "Competence requires up-to-date skills and adherence to standards."
         },
         {
-          "question": "Which action improves employee engagement?",
+          "question": "Why report unethical behavior?",
           "options": [
-            "communication",
-            "margin",
-            "leader",
-            "ROI"
+            "To protect stakeholders and comply with laws",
+            "To harm competitors",
+            "To delay audits",
+            "To increase short-term gains"
           ],
-          "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "To protect stakeholders and comply with laws",
+          "explanation": "Reporting helps correct harm and upholds legal and ethical standards."
         },
         {
-          "question": "What is the primary purpose of and?",
+          "question": "(Hard) Scenario: A junior analyst discovers data inconsistencies suggesting intentional revenue smoothing in a company's filings. Which course of action best balances professional duty and whistleblower protections?",
           "options": [
-            "procedure",
-            "budget",
-            "policy",
-            "leader"
+            "Document findings, escalate internally per policy, and, if unresolved, report to regulators following legal counsel",
+            "Publicly release the data immediately on social media",
+            "Ignore it to avoid conflict",
+            "Alter data to match expectations"
           ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Which action improves employee engagement?",
-          "options": [
-            "ROI",
-            "leadership",
-            "liability",
-            "procedure"
-          ],
-          "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a manager, what would be the best next step?",
-          "options": [
-            "budget",
-            "Adjust the marketing strategy",
-            "liability",
-            "leader"
-          ],
-          "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "(Hard) Which action improves employee engagement?",
-          "options": [
-            "budget",
-            "stakeholder",
-            "communication",
-            "ROI"
-          ],
-          "correctAnswer": "communication",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
-        },
-        {
-          "question": "Which term best describes a company's expected incoming money?",
-          "options": [
-            "asset",
-            "stakeholder",
-            "communication",
-            "procedure"
-          ],
-          "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Which action improves employee engagement?",
-          "options": [
-            "profit",
-            "inventory",
-            "asset",
-            "policy"
-          ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
-        }
-      ]
-    },
-    {
-      "topic": "Human Resources",
-      "questions": [
-        {
-          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a project manager, what would be the best next step?",
-          "options": [
-            "profit",
-            "Investigate causes and collect data",
-            "asset",
-            "revenue"
-          ],
-          "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "(Hard) What is a key consideration when creating a budget?",
-          "options": [
-            "profit",
-            "asset",
-            "leader",
-            "liability"
-          ],
-          "correctAnswer": "profit",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
-        },
-        {
-          "question": "Scenario: A local company faces a problem with declining sales. As a manager, what would be the best next step?",
-          "options": [
-            "liability",
-            "Adjust the marketing strategy",
-            "ROI",
-            "profit"
-          ],
-          "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Scenario: A local company faces a problem with declining employee retention. As a marketing lead, what would be the best next step?",
-          "options": [
-            "Investigate causes and collect data",
-            "leader",
-            "margin",
-            "stakeholder"
-          ],
-          "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Which action improves employee engagement?",
-          "options": [
-            "equity",
-            "budget",
-            "leader",
-            "revenue"
-          ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "What is the primary purpose of Human Resources?",
-          "options": [
-            "budget",
-            "revenue",
-            "equity",
-            "margin"
-          ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Which action improves employee engagement?",
-          "options": [
-            "budget",
-            "leader",
-            "inventory",
-            "equity"
-          ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a project manager, what would be the best next step?",
-          "options": [
-            "inventory",
-            "liability",
-            "procedure",
-            "Investigate causes and collect data"
-          ],
-          "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
-        }
-      ]
-    },
-    {
-      "topic": "Communication",
-      "questions": [
-        {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a HR director, what would be the best next step?",
-          "options": [
-            "Investigate causes and collect data",
-            "leader",
-            "liability",
-            "ROI"
-          ],
-          "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a marketing lead, what would be the best next step?",
-          "options": [
-            "ROI",
-            "equity",
-            "inventory",
-            "Restructure department roles"
-          ],
-          "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "What is the primary purpose of Communication?",
-          "options": [
-            "leader",
-            "communication",
-            "revenue",
-            "inventory"
-          ],
-          "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Which action improves employee engagement?",
-          "options": [
-            "policy",
-            "profit",
-            "equity",
-            "leader"
-          ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a HR director, what would be the best next step?",
-          "options": [
-            "Conduct employee surveys",
-            "budget",
-            "revenue",
-            "asset"
-          ],
-          "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Which action improves employee engagement?",
-          "options": [
-            "asset",
-            "inventory",
-            "stakeholder",
-            "budget"
-          ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "(Hard) Which action improves employee engagement?",
-          "options": [
-            "liability",
-            "profit",
-            "revenue",
-            "margin"
-          ],
-          "correctAnswer": "profit",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
-        },
-        {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a marketing lead, what would be the best next step?",
-          "options": [
-            "Conduct employee surveys",
-            "profit",
-            "policy",
-            "revenue"
-          ],
-          "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
-        }
-      ]
-    },
-    {
-      "topic": "Finance",
-      "questions": [
-        {
-          "question": "Scenario: A local company faces a problem with declining cash flow. As a manager, what would be the best next step?",
-          "options": [
-            "asset",
-            "Conduct employee surveys",
-            "procedure",
-            "stakeholder"
-          ],
-          "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Scenario: A local company faces a problem with declining employee retention. As a manager, what would be the best next step?",
-          "options": [
-            "Conduct employee surveys",
-            "ROI",
-            "asset",
-            "inventory"
-          ],
-          "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "What is the primary purpose of Finance?",
-          "options": [
-            "budget",
-            "stakeholder",
-            "ROI",
-            "margin"
-          ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "(Hard) Scenario: A local company faces a problem with declining customer satisfaction. As a manager, what would be the best next step?",
-          "options": [
-            "margin",
-            "Conduct employee surveys",
-            "procedure",
-            "revenue"
-          ],
-          "correctAnswer": "Conduct employee surveys",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
-        },
-        {
-          "question": "Which term best describes a company's expected incoming money?",
-          "options": [
-            "policy",
-            "margin",
-            "profit",
-            "inventory"
-          ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Which action improves employee engagement?",
-          "options": [
-            "inventory",
-            "margin",
-            "liability",
-            "communication"
-          ],
-          "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a project manager, what would be the best next step?",
-          "options": [
-            "stakeholder",
-            "equity",
-            "Adjust the marketing strategy",
-            "asset"
-          ],
-          "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Which action improves employee engagement?",
-          "options": [
-            "liability",
-            "profit",
-            "policy",
-            "engagement"
-          ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
-        }
-      ]
-    },
-    {
-      "topic": "Securities",
-      "questions": [
-        {
-          "question": "(Hard) What is a key consideration when creating a budget?",
-          "options": [
-            "communication",
-            "liability",
-            "asset",
-            "inventory"
-          ],
-          "correctAnswer": "communication",
-          "explanation": "This item requires higher-order reasoning and real-world judgment."
-        },
-        {
-          "question": "What is the primary purpose of Securities?",
-          "options": [
-            "leadership",
-            "ROI",
-            "liability",
-            "revenue"
-          ],
-          "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "What is a key consideration when creating a budget?",
-          "options": [
-            "equity",
-            "profit",
-            "revenue",
-            "asset"
-          ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "What is the primary purpose of Securities?",
-          "options": [
-            "equity",
-            "liability",
-            "profit",
-            "policy"
-          ],
-          "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "What is the primary purpose of Securities?",
-          "options": [
-            "engagement",
-            "equity",
-            "budget",
-            "inventory"
-          ],
-          "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "Which term best describes a company's expected incoming money?",
-          "options": [
-            "leader",
-            "asset",
-            "profit",
-            "budget"
-          ],
-          "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "What is a key consideration when creating a budget?",
-          "options": [
-            "ROI",
-            "leader",
-            "asset",
-            "budget"
-          ],
-          "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
-        },
-        {
-          "question": "What is the primary purpose of Securities?",
-          "options": [
-            "asset",
-            "leader",
-            "leadership",
-            "stakeholder"
-          ],
-          "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "correctAnswer": "Document findings, escalate internally per policy, and, if unresolved, report to regulators following legal counsel",
+          "explanation": "Following internal escalation and legal guidance protects the analyst and ensures proper regulatory reporting if needed."
         }
       ]
     }
