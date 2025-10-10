@@ -432,6 +432,17 @@ document.addEventListener('DOMContentLoaded', () => {
       showPopup('Sign out failed: ' + (e && e.message ? e.message : String(e)));
     }
   });
+  // Ensure end test button shows confirmation
+  try {
+    const endBtnGlobal = document.getElementById('endBtn');
+    if (endBtnGlobal) {
+      endBtnGlobal.addEventListener('click', (e) => {
+        // if test isn't running, ignore
+        if (!testRunning) return;
+        confirmEndTest();
+      });
+    }
+  } catch (e) { console.warn('endBtn wiring failed', e); }
 });
 
 // observe auth state to update UI
@@ -537,6 +548,22 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+  // Insert "View scores" button next to View profile in settings modal
+  try {
+    const existing = document.getElementById('viewScoresBtn');
+    if (!existing) {
+      const viewScoresBtn = document.createElement('button');
+      viewScoresBtn.id = 'viewScoresBtn';
+      viewScoresBtn.textContent = 'View scores';
+      viewScoresBtn.style.marginLeft = '8px';
+      viewScoresBtn.addEventListener('click', async () => {
+        const uid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || (localStorage.getItem && localStorage.getItem('fblacer_uid')) || null;
+        if (!uid) return showPopup('Sign in to view your saved scores.');
+        showUserScoresOverlay(uid);
+      });
+      if (viewProfileBtn && viewProfileBtn.parentNode) viewProfileBtn.parentNode.insertBefore(viewScoresBtn, viewProfileBtn.nextSibling);
+    }
+  } catch (e) { console.warn('Could not insert viewScores button', e); }
   if (settingsClose) settingsClose.addEventListener('click', () => {
     if (settingsModal) { settingsModal.style.display = 'none'; settingsModal.setAttribute('aria-hidden','true'); }
   });
@@ -1094,6 +1121,21 @@ function endTest() {
   container.appendChild(sendBtn);
   }
 
+  // View analytics button (only for signed-in users)
+  let analyticsBtn = document.getElementById('viewAnalyticsBtn');
+  if (!analyticsBtn) {
+    analyticsBtn = document.createElement('button');
+    analyticsBtn.id = 'viewAnalyticsBtn';
+    analyticsBtn.textContent = 'View analytics';
+    analyticsBtn.style.marginTop = '12px';
+    analyticsBtn.style.marginLeft = '8px';
+    analyticsBtn.onclick = () => {
+      const testId = (currentTest && currentTest.testName) ? currentTest.testName : (document.getElementById('testSelect').value || 'default');
+      showAnalyticsOverlay(testId);
+    };
+    container.appendChild(analyticsBtn);
+  }
+
   // Award mastery achievement if fully completed and >=90%
   try {
     const uid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || localStorage.getItem && localStorage.getItem('fblacer_uid') || null;
@@ -1110,6 +1152,96 @@ function endTest() {
 function endEarly() {
   try { _endedEarly = true; } catch (e) {}
   try { endTest(); } catch (e) {}
+}
+
+// Confirmation prompt when user clicks End Test Now
+function confirmEndTest() {
+  // modal overlay
+  let overlay = document.getElementById('endConfirmOverlay');
+  if (!overlay) {
+    overlay = document.createElement('div'); overlay.id = 'endConfirmOverlay'; document.body.appendChild(overlay);
+  }
+  overlay.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);z-index:999999;';
+  const panel = document.createElement('div'); panel.style = 'background:var(--surface,#fff);color:var(--text-color,#102027);padding:18px;border-radius:10px;min-width:320px;max-width:560px;box-shadow:0 12px 40px rgba(0,0,0,0.3);position:relative;';
+  overlay.innerHTML = '';
+  const title = document.createElement('h3'); title.textContent = 'Are you sure you want to end the test?'; panel.appendChild(title);
+  const note = document.createElement('div'); note.style='margin-top:6px;color:var(--muted,#666);'; note.textContent = 'Ending the test will save your score to your account (not the public leaderboard) unless you choose to submit it.'; panel.appendChild(note);
+
+  const actions = document.createElement('div'); actions.style='display:flex;gap:8px;margin-top:12px;';
+  const yesBtn = document.createElement('button'); yesBtn.textContent = 'Yes, I want to end test';
+  const noBtn = document.createElement('button'); noBtn.textContent = 'No, continue with test';
+  const viewOnlyLink = document.createElement('a'); viewOnlyLink.href = '#'; viewOnlyLink.textContent = 'No, just view analytics'; viewOnlyLink.style='margin-left:8px;align-self:center;font-size:13px;';
+
+  yesBtn.addEventListener('click', async () => {
+    try {
+      // attempt to save to Firestore under users/{uid}/scores and users/{uid}/topics
+      await saveScoreToFirestore();
+    } catch (e) { console.warn('saveScoreToFirestore failed on confirm', e); }
+    overlay.style.display = 'none';
+    try { endTest(); } catch (e) {}
+  });
+
+  noBtn.addEventListener('click', () => { overlay.style.display = 'none'; });
+
+  viewOnlyLink.addEventListener('click', (ev) => {
+    ev.preventDefault();
+    overlay.style.display = 'none';
+    const testId = (currentTest && currentTest.testName) ? currentTest.testName : (document.getElementById('testSelect').value || 'default');
+    showAnalyticsOverlay(testId);
+  });
+
+  actions.appendChild(yesBtn); actions.appendChild(noBtn); actions.appendChild(viewOnlyLink);
+  panel.appendChild(actions);
+  overlay.appendChild(panel);
+}
+
+// Show the signed-in user's saved scores and let them open analytics per test
+async function showUserScoresOverlay(uid) {
+  try {
+    if (!uid) return;
+    let overlay = document.getElementById('userScoresOverlay');
+    if (!overlay) { overlay = document.createElement('div'); overlay.id = 'userScoresOverlay'; document.body.appendChild(overlay); }
+    overlay.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);z-index:999999;';
+    const panel = document.createElement('div'); panel.style = 'background:var(--surface,#fff);color:var(--text-color,#102027);padding:18px;border-radius:10px;min-width:320px;max-width:720px;max-height:86vh;overflow:auto;box-shadow:0 12px 40px rgba(0,0,0,0.3);position:relative;';
+    overlay.innerHTML = '';
+    const closeBtn = document.createElement('button'); closeBtn.textContent = '×'; closeBtn.style = 'position:absolute;right:12px;top:8px;border:none;background:none;font-size:20px;cursor:pointer;'; closeBtn.onclick = () => { overlay.style.display='none'; };
+    panel.appendChild(closeBtn);
+    const title = document.createElement('h3'); title.textContent = 'Your saved tests'; panel.appendChild(title);
+    const list = document.createElement('div'); list.style = 'display:flex;flex-direction:column;gap:10px;margin-top:8px;'; panel.appendChild(list);
+    overlay.appendChild(panel);
+
+    // Read users/{uid}/scores docs
+    try {
+      if (window.collection && window.getDocs && window.db) {
+        const scoresCol = window.collection(window.db, 'users', uid, 'scores');
+        const snap = await window.getDocs(scoresCol);
+        const rows = [];
+        if (snap && typeof snap.forEach === 'function') {
+          snap.forEach(s => {
+            try {
+              const data = s.data ? s.data() : s._data || {};
+              rows.push({ id: s.id || s._key || 'unknown', points: Number(data.totalPoints) || 0, ts: data.timestamp || data.createdAt || '' });
+            } catch (e) {}
+          });
+        }
+        if (!rows.length) {
+          list.textContent = 'No saved tests found.';
+        } else {
+          rows.sort((a,b) => (b.ts || '').localeCompare(a.ts || ''));
+          rows.forEach(r => {
+            const row = document.createElement('div'); row.style='display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;background:var(--surface,#f6f9fb);';
+            const left = document.createElement('div'); left.textContent = `${r.id} — ${r.points} pts`; left.style='font-weight:600;';
+            const openBtn = document.createElement('button'); openBtn.textContent = 'View analytics'; openBtn.addEventListener('click', () => { overlay.style.display='none'; showAnalyticsOverlay(r.id); });
+            row.appendChild(left); row.appendChild(openBtn); list.appendChild(row);
+          });
+        }
+      } else {
+        list.textContent = 'Unable to read saved scores from this client environment.';
+      }
+    } catch (e) { list.textContent = 'Failed to load saved scores.'; console.warn('load saved scores failed', e); }
+
+    return overlay;
+  } catch (e) { console.warn('showUserScoresOverlay error', e); }
 }
 
 // Save score + topic breakdowns to Firestore under users/{uid}/scores and users/{uid}/topics
@@ -1323,6 +1455,348 @@ function showLeaderboardOverlay(testId) {
   _leaderboardState.limit = 15;
   // (previously attempted Firestore fetch here — removed to avoid permission errors)
   fetchAndRenderLeaderboard(testId);
+}
+
+// Show analytics overlay for the currently signed-in user for a specific test
+async function showAnalyticsOverlay(testId) {
+  try {
+    // Require login
+    const uid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || null;
+    if (!uid) {
+      showPopup('You must be signed in to view analytics.');
+      return;
+    }
+
+    let overlay = document.getElementById('analyticsOverlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.id = 'analyticsOverlay';
+      overlay.className = 'analytics-overlay';
+      document.body.appendChild(overlay);
+    }
+
+    overlay.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);z-index:999999;';
+    const panel = document.createElement('div');
+    panel.style = 'background:var(--surface,#fff);color:var(--text-color,#102027);padding:18px;border-radius:10px;min-width:320px;max-width:960px;max-height:86vh;overflow:auto;box-shadow:0 12px 40px rgba(0,0,0,0.3);position:relative;';
+    overlay.innerHTML = '';
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = '×';
+    closeBtn.style = 'position:absolute;right:12px;top:8px;border:none;background:none;font-size:20px;cursor:pointer;';
+    closeBtn.onclick = () => { overlay.style.display = 'none'; };
+    panel.appendChild(closeBtn);
+    const title = document.createElement('h3'); title.textContent = `Analytics — ${testId}`; panel.appendChild(title);
+
+    const info = document.createElement('div'); info.textContent = 'Loading analytics...'; panel.appendChild(info);
+
+    // Container for charts and stats
+    const container = document.createElement('div'); container.style = 'display:flex;flex-direction:column;gap:12px;margin-top:8px;';
+    panel.appendChild(container);
+    overlay.appendChild(panel);
+
+    // Try to fetch user's historical scores for this test if leaderboardApi is available
+    // Otherwise best-effort: empty
+    let historical = [];
+    try {
+      if (window.leaderboardApi && typeof window.leaderboardApi.fetchUserScoresForTest === 'function') {
+        historical = await window.leaderboardApi.fetchUserScoresForTest(testId, uid) || [];
+      }
+    } catch (e) {
+      console.warn('fetch historical scores failed', e);
+      historical = [];
+    }
+
+    // Fetch latest saved score for this test from users/{uid}/scores/{testId} if Firestore helpers exist
+    let latestScore = null;
+    try {
+      if (window.doc && window.getDoc && window.db) {
+        const ref = window.doc(window.db, 'users', uid, 'scores', testId);
+        const snap = await window.getDoc(ref);
+        if (snap && snap.exists && snap.exists()) {
+          latestScore = snap.data ? snap.data() : snap._data || null;
+        }
+      }
+    } catch (e) {
+      console.warn('fetch latest score failed', e);
+      latestScore = null;
+    }
+
+    // Fetch topic breakdown for this test from users/{uid}/topics/{testId}
+    let topicData = {};
+    try {
+      if (window.doc && window.getDoc && window.db) {
+        const tref = window.doc(window.db, 'users', uid, 'topics', testId);
+        const tsnap = await window.getDoc(tref);
+        if (tsnap && tsnap.exists && tsnap.exists()) {
+          topicData = tsnap.data ? tsnap.data() : tsnap._data || {};
+        }
+      }
+    } catch (e) {
+      console.warn('fetch topic breakdown failed', e);
+      topicData = {};
+    }
+
+    // Fetch global aggregates (best-effort). We'll try different helper paths.
+    let globalAvgPoints = null; // number
+    let globalTopicAverages = null; // { topicName: percent }
+    try {
+      if (window.leaderboardApi) {
+        if (typeof window.leaderboardApi.fetchTestAverages === 'function') {
+          const ga = await window.leaderboardApi.fetchTestAverages(testId);
+          if (ga) {
+            globalAvgPoints = typeof ga.averagePoints === 'number' ? ga.averagePoints : null;
+            globalTopicAverages = ga.topicAverages || null;
+          }
+        } else if (typeof window.leaderboardApi.fetchTopScores === 'function') {
+          // best-effort: fetch many entries and compute average points and per-topic averages when entries include topic breakdowns
+          try {
+            const entries = await window.leaderboardApi.fetchTopScores(testId, 1000);
+            if (entries && entries.length) {
+              const sum = entries.reduce((s, e) => s + (Number(e.points) || 0), 0);
+              globalAvgPoints = Math.round(sum / entries.length);
+
+              // try to derive per-topic averages if entries contain a topics-like field
+              const sums = {}; const counts = {};
+              for (const ent of entries) {
+                const td = ent.topics || ent.topicScores || ent.topicsBreakdown || ent.topicBreakdown || null;
+                if (!td || typeof td !== 'object') continue;
+                for (const k of Object.keys(td)) {
+                  try {
+                    const v = td[k];
+                    let pct = null;
+                    if (v && typeof v === 'object') {
+                      if (typeof v.firstAttemptCorrect !== 'undefined' && typeof v.total !== 'undefined') {
+                        pct = (Number(v.firstAttemptCorrect) || 0) / Math.max(1, Number(v.total) || 0) * 100;
+                      } else if (typeof v.correct !== 'undefined' && typeof v.total !== 'undefined') {
+                        pct = (Number(v.correct) || 0) / Math.max(1, Number(v.total) || 0) * 100;
+                      } else if (typeof v.percent !== 'undefined') {
+                        pct = Number(v.percent) || null;
+                      }
+                    } else if (typeof v === 'number') {
+                      pct = v;
+                    }
+                    if (pct !== null && !isNaN(pct)) {
+                      sums[k] = (sums[k] || 0) + pct;
+                      counts[k] = (counts[k] || 0) + 1;
+                    }
+                  } catch (e) { }
+                }
+              }
+              const out = {};
+              for (const k of Object.keys(sums)) {
+                out[k] = Math.round(sums[k] / Math.max(1, counts[k]));
+              }
+              if (Object.keys(out).length) globalTopicAverages = out;
+            }
+          } catch (e) { /* ignore */ }
+        }
+      }
+    } catch (e) {
+      console.warn('fetch global aggregates failed', e);
+    }
+
+    // Compute user's average across all saved scores (users/{uid}/scores/*) if Firestore helpers exist
+    let userAverageAcrossTests = null;
+    let userAllScoresList = [];
+    try {
+      if (window.collection && window.getDocs && window.db) {
+        const scoresCol = window.collection(window.db, 'users', uid, 'scores');
+        const snap = await window.getDocs(scoresCol);
+        if (snap && typeof snap.forEach === 'function') {
+          const arr = [];
+          snap.forEach(d => {
+            try {
+              const data = d.data ? d.data() : d._data || {};
+              arr.push(Number(data.totalPoints) || 0);
+            } catch (e) {}
+          });
+          if (arr.length) {
+            userAllScoresList = arr.slice();
+            const sum = arr.reduce((s, v) => s + v, 0);
+            userAverageAcrossTests = Math.round(sum / arr.length);
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('compute user average across tests failed', e);
+    }
+
+    // If we have no data at all, show a friendly message
+    const hasTopics = topicData && Object.keys(topicData).length > 0;
+    const hasLatest = !!(latestScore && (typeof latestScore.totalPoints !== 'undefined'));
+    if (!hasTopics && !hasLatest && (!historical || historical.length === 0)) {
+      info.textContent = 'No analytics available for this test yet. Save your score after completing the test to view analytics.';
+      return overlay;
+    }
+
+    // Clear loading text
+    info.style.display = 'none';
+
+    // Summary stats row
+    const statsRow = document.createElement('div'); statsRow.style = 'display:flex;gap:12px;flex-wrap:wrap;align-items:center;';
+    // Last score
+    const lastScoreEl = document.createElement('div'); lastScoreEl.style = 'min-width:160px;padding:10px;border-radius:8px;background:var(--surface,#f6f9fb);';
+    const lastPts = hasLatest ? Number(latestScore.totalPoints || 0) : (historical && historical.length ? Number(historical[0].points || 0) : 0);
+    lastScoreEl.innerHTML = `<div style="font-weight:700;font-size:18px;">Last: ${lastPts} pts</div><div style="font-size:12px;color:var(--muted,#666);">Most recent submission</div>`;
+    statsRow.appendChild(lastScoreEl);
+
+    // Average score (from historical if available)
+    let avg = 0;
+    if (historical && historical.length) {
+      avg = Math.round(historical.reduce((s, h) => s + (Number(h.points) || 0), 0) / historical.length);
+    }
+    if (!avg && hasLatest && historical.length === 0) avg = lastPts;
+    const avgEl = document.createElement('div'); avgEl.style = 'min-width:160px;padding:10px;border-radius:8px;background:var(--surface,#f6f9fb);';
+    avgEl.innerHTML = `<div style="font-weight:700;font-size:18px;">Average: ${avg} pts</div><div style="font-size:12px;color:var(--muted,#666);">Across ${historical.length || (hasLatest ? 1 : 0)} attempts</div>`;
+    statsRow.appendChild(avgEl);
+
+    // Attempts
+    const attemptsEl = document.createElement('div'); attemptsEl.style = 'min-width:120px;padding:10px;border-radius:8px;background:var(--surface,#f6f9fb);';
+    attemptsEl.innerHTML = `<div style="font-weight:700;font-size:18px;">Attempts: ${historical.length || (hasLatest ? 1 : 0)}</div><div style="font-size:12px;color:var(--muted,#666);">Saved submissions</div>`;
+    statsRow.appendChild(attemptsEl);
+
+    container.appendChild(statsRow);
+
+    // Topic breakdown bars
+    const topicSection = document.createElement('div');
+    topicSection.innerHTML = `<h4>Topic breakdown</h4>`;
+    container.appendChild(topicSection);
+
+    const topicList = document.createElement('div');
+    topicList.style = 'display:flex;flex-direction:column;gap:10px;';
+
+    // Build a topic list — prefer user's saved topic keys, else fallback to currentTest topics
+    let testTopics = [];
+    try { if (currentTest && Array.isArray(currentTest.topics)) testTopics = currentTest.topics.map(t => t.topic); } catch (e) { testTopics = []; }
+    const keys = hasTopics ? Object.keys(topicData) : (testTopics.length ? testTopics : []);
+    if (!keys.length) {
+      topicList.textContent = 'No per-topic data saved for this test.';
+    } else {
+      keys.forEach(topic => {
+        try {
+          const t = (topicData && topicData[topic]) ? topicData[topic] : null;
+          const corr = Number((t && (t.firstAttemptCorrect || t.correct || 0)) || 0);
+          const tot = Number((t && (t.total || t.count || 0)) || 0);
+          const pct = tot > 0 ? Math.round((corr / tot) * 100) : 0;
+
+          const globalPct = (globalTopicAverages && typeof globalTopicAverages[topic] !== 'undefined') ? Math.round(globalTopicAverages[topic]) : null;
+
+          const row = document.createElement('div');
+          row.style = 'display:flex;flex-direction:column;gap:6px;';
+          const label = document.createElement('div');
+          label.style = 'display:flex;justify-content:space-between;align-items:center;font-weight:600;';
+          const left = document.createElement('div'); left.textContent = `${topic} — ${corr}/${tot} (${pct}%)`;
+          const right = document.createElement('div'); right.style = 'font-size:12px;color:var(--muted,#666);';
+          right.textContent = (globalPct !== null) ? `Avg users: ${globalPct}%` : '';
+          label.appendChild(left); label.appendChild(right);
+
+          const barWrap = document.createElement('div'); barWrap.style = 'background:rgba(0,0,0,0.06);height:14px;border-radius:8px;overflow:hidden;';
+          const bar = document.createElement('div'); bar.style = `height:100%;width:${pct}%;background:linear-gradient(90deg,#4CAF50,#2196F3);border-radius:8px;transition:width 600ms ease;`;
+          barWrap.appendChild(bar);
+
+          // show a thin overlay line indicating global average if available
+          if (globalPct !== null) {
+            const overlayLine = document.createElement('div');
+            overlayLine.style = `position:relative;pointer-events:none;height:0;margin-top:-14px;`;
+            const marker = document.createElement('div');
+            marker.style = `position:absolute;left:${globalPct}%;top:0;height:14px;width:2px;background:rgba(0,0,0,0.14);transform:translateX(-50%);`;
+            overlayLine.appendChild(marker);
+            barWrap.appendChild(overlayLine);
+          }
+
+          row.appendChild(label); row.appendChild(barWrap);
+          topicList.appendChild(row);
+        } catch (e) { console.warn('render topic row failed', e); }
+      });
+    }
+    container.appendChild(topicList);
+
+    // Chart area: show multiline Chart.js plot: "average user", "your average score", "current score"
+    // Ensure Chart.js is loaded (best-effort dynamic load)
+    async function loadChartJs() {
+      if (window.Chart) return window.Chart;
+      return new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js';
+        s.onload = () => { resolve(window.Chart); };
+        s.onerror = (e) => { reject(e); };
+        document.head.appendChild(s);
+      });
+    }
+
+  const chartWrap = document.createElement('div');
+  chartWrap.style = 'margin-top:10px;display:flex;flex-direction:column;gap:8px;';
+  chartWrap.innerHTML = `<h4 style="margin:0">Score comparison</h4>`;
+  // fixed-height Chart container to prevent it from growing indefinitely
+  const chartHolder = document.createElement('div');
+  chartHolder.style = 'width:100%;height:220px;max-height:240px;overflow:hidden;border-radius:8px;background:transparent;padding:6px 0;';
+  const chartCanvas = document.createElement('canvas'); chartCanvas.id = 'analyticsMultiChart';
+  chartCanvas.style = 'width:100%;height:100%;display:block;';
+  chartHolder.appendChild(chartCanvas);
+  chartWrap.appendChild(chartHolder);
+  container.insertBefore(chartWrap, topicSection);
+
+    try {
+      await loadChartJs();
+      // Prepare data series
+      const userPts = (historical && historical.length) ? historical.slice().reverse().map(x => Number(x.points) || 0) : (latestScore ? [Number(latestScore.totalPoints || 0)] : []);
+      // labels: numeric sequence or timestamps
+      let labels = [];
+      if (historical && historical.length) {
+        labels = historical.slice().reverse().map((h, i) => {
+          try { return (new Date(h.createdAt)).toLocaleString(); } catch (e) { return String(i+1); }
+        });
+      } else if (latestScore) {
+        labels = [latestScore.timestamp || (latestScore.createdAt || new Date().toISOString())];
+      } else if (userAllScoresList && userAllScoresList.length) {
+        labels = userAllScoresList.map((_, i) => `#${i+1}`);
+      } else {
+        labels = ['1'];
+      }
+
+      const avgUser = (typeof globalAvgPoints === 'number') ? globalAvgPoints : null;
+      const yourAvg = (typeof userAverageAcrossTests === 'number') ? userAverageAcrossTests : null;
+
+      const datasets = [];
+      // current score series (if any)
+      if (userPts && userPts.length) {
+        datasets.push({ label: 'Current score', data: userPts, borderColor: '#1e88e5', backgroundColor: '#1e88e5', tension: 0.25, pointRadius: 4, fill: false });
+      }
+      // your average (horizontal)
+      if (yourAvg !== null) {
+        datasets.push({ label: 'Your average score', data: Array(labels.length).fill(yourAvg), borderColor: '#4caf50', borderDash: [6,4], tension: 0, pointRadius: 0, fill: false });
+      }
+      // average user (horizontal)
+      if (avgUser !== null) {
+        datasets.push({ label: 'Average user', data: Array(labels.length).fill(avgUser), borderColor: '#ff7043', borderDash: [6,4], tension: 0, pointRadius: 0, fill: false });
+      }
+
+      // Create/destroy existing chart if present
+      try { if (window._analyticsChart && window._analyticsChart.destroy) window._analyticsChart.destroy(); } catch (e) {}
+      const ctx = chartCanvas.getContext('2d');
+      window._analyticsChart = new window.Chart(ctx, {
+        type: 'line',
+        data: { labels: labels, datasets: datasets },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          layout: { padding: 6 },
+          scales: {
+            y: { beginAtZero: true }
+          },
+          plugins: { legend: { position: 'top', labels: { boxWidth: 12 } } }
+        }
+      });
+    } catch (e) {
+      console.warn('Chart.js failed to load or render', e);
+    }
+
+    // ensure topic section is after the chart and scrollable if content long
+    try { topicSection.scrollIntoView({ behavior: 'smooth' }); } catch (e) {}
+
+    return overlay;
+  } catch (e) {
+    console.warn('showAnalyticsOverlay error', e);
+  }
 }
 
 function closeLeaderboard() {
