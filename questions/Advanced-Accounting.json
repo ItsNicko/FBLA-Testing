@@ -13,7 +13,7 @@
             "Statement of Retained Earnings"
           ],
           "correctAnswer": "Balance Sheet",
-          "explanation": "The balance sheet provides a snapshot of a company's financial position, listing assets, liabilities, and equity at a specific date."
+          "explanation": "The balance sheet provides a snapshot of a company's financial position at a given date, listing assets, liabilities, and equity."
         },
         {
           "question": "What is the primary purpose of the income statement?",
@@ -24,7 +24,7 @@
             "To record stockholder contributions"
           ],
           "correctAnswer": "To summarize revenues and expenses over a period",
-          "explanation": "The income statement measures profitability by comparing revenues and expenses during a reporting period."
+          "explanation": "The income statement measures profitability by reporting revenues and expenses for a reporting period."
         },
         {
           "question": "Which ratio measures a company's ability to meet short-term obligations using its most liquid assets?",
@@ -35,7 +35,7 @@
             "Gross Margin Ratio"
           ],
           "correctAnswer": "Acid-Test (Quick) Ratio",
-          "explanation": "The acid-test ratio excludes inventory and measures liquidity to cover short-term liabilities immediately."
+          "explanation": "The acid-test ratio excludes inventory and assesses whether liquid assets can immediately cover current liabilities."
         },
         {
           "question": "In horizontal analysis, a 10% increase in revenue compared to the previous year indicates:",
@@ -46,10 +46,10 @@
             "Revenue doubled"
           ],
           "correctAnswer": "Revenue increased by 10%",
-          "explanation": "Horizontal analysis compares current financial statement amounts to prior periods, showing percent changes."
+          "explanation": "Horizontal analysis compares amounts across periods and reports percent changes between them."
         },
         {
-          "question": "Which statement shows changes in owner’s equity over a period?",
+          "question": "Which statement shows changes in owner's equity over a period?",
           "options": [
             "Balance Sheet",
             "Income Statement",
@@ -68,7 +68,7 @@
             "Tracking revenue growth"
           ],
           "correctAnswer": "Assessing financial leverage",
-          "explanation": "Debt-to-equity ratio compares liabilities to equity, indicating how much financing comes from creditors versus owners."
+          "explanation": "Debt-to-equity compares liabilities to equity, showing how much financing comes from creditors versus owners."
         },
         {
           "question": "Which of the following best describes vertical analysis?",
@@ -79,18 +79,18 @@
             "Determining break-even point"
           ],
           "correctAnswer": "Expressing each item as a percentage of a base amount",
-          "explanation": "Vertical analysis expresses items like expenses or assets as percentages of total revenue or total assets for comparison."
+          "explanation": "Vertical analysis expresses items (for example, expenses) as a percentage of a base (like total revenue) to compare structure."
         },
         {
-          "question": "(Hard) Which is a challenging question about Financial Statements & Ratios — part 1?",
+          "question": "(Hard) When evaluating whether a company is over-leveraged, which combination of ratios would give the best insight?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "High current ratio and low debt-to-equity",
+            "Low interest coverage and high debt-to-equity",
+            "High gross margin and low quick ratio",
+            "High inventory turnover and low current ratio"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Low interest coverage and high debt-to-equity",
+          "explanation": "Interest coverage indicates ability to pay interest; combined with a high debt-to-equity, low coverage suggests potential over-leverage."
         }
       ]
     },
@@ -98,92 +98,92 @@
       "topic": "Financial Statements & Ratios — part 2",
       "questions": [
         {
-          "question": "Which practice helps financial statements & ratios?",
+          "question": "Return on assets (ROA) measures:",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Profitability relative to assets",
+            "Liquidity position",
+            "Leverage relative to equity",
+            "Operating cash flow"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Profitability relative to assets",
+          "explanation": "ROA shows how efficiently a company uses assets to generate net income (Net Income ÷ Total Assets)."
         },
         {
-          "question": "(Hard) Which is a challenging question about Financial Statements & Ratios?",
+          "question": "Which ratio would you use to evaluate short-term cash generation from operations?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Current ratio",
+            "Operating cash flow ratio",
+            "Debt-to-equity ratio",
+            "Price-to-earnings ratio"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Operating cash flow ratio",
+          "explanation": "The operating cash flow ratio compares cash from operations to current liabilities and indicates short-term cash-generating ability."
         },
         {
-          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "question": "If a company's inventory turnover decreases significantly, this may indicate:",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Faster sales",
+            "Slower sales or excess inventory",
+            "Improved liquidity",
+            "Lower days sales outstanding"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Slower sales or excess inventory",
+          "explanation": "Lower turnover suggests inventory is selling more slowly or buildup of stock, which can tie up capital."
         },
         {
-          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "question": "Which measure is best to assess profitability per dollar of sales?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Current ratio",
+            "Profit margin (net margin)",
+            "Debt-to-equity",
+            "Inventory turnover"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Profit margin (net margin)",
+          "explanation": "Profit margin (Net Income ÷ Net Sales) shows how much profit a company earns per dollar of sales."
         },
         {
-          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "question": "A company reports rising receivables but sales are flat. What should an analyst check next?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Inventory policies",
+            "Credit policies and collection practices",
+            "Depreciation methods",
+            "Cash equivalents"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Credit policies and collection practices",
+          "explanation": "Rising receivables with flat sales suggests slower collections or relaxed credit terms, which affects cash flow."
         },
         {
-          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "question": "Which ratio best indicates how much of sales is consumed by operating costs?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Gross margin",
+            "Operating margin",
+            "Current ratio",
+            "Quick ratio"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating margin",
+          "explanation": "Operating margin (Operating Income ÷ Sales) shows the portion of sales remaining after operating expenses."
         },
         {
-          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "question": "When comparing two firms in the same industry, it's important to adjust ratios for:",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Company size only",
+            "Differences in accounting policies and capital structure",
+            "Market capitalization only",
+            "CEO tenure"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Differences in accounting policies and capital structure",
+          "explanation": "Accounting choices (e.g., LIFO vs FIFO) and leverage affect ratio comparability and should be considered."
         },
         {
-          "question": "Which of the following best explains Financial Statements & Ratios — part 2?",
+          "question": "(Hard) A firm has a high gross margin but low net margin compared to peers. Which factor most likely explains the gap?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Higher operating expenses (SG&A)",
+            "Lower inventory levels",
+            "Higher current ratio",
+            "Faster collection of receivables"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Higher operating expenses (SG&A)",
+          "explanation": "If gross margin is strong but net margin is weak, high operating expenses (selling, general, admin) frequently cause the difference."
         }
       ]
     },
@@ -199,7 +199,7 @@
             "Owners must manage daily operations"
           ],
           "correctAnswer": "Separate legal entity from owners",
-          "explanation": "A corporation is legally distinct from its owners, allowing limited liability and perpetual existence."
+          "explanation": "A corporation is a distinct legal entity, providing limited liability to owners and the ability to issue stock."
         },
         {
           "question": "Which accounting entry records dividend declaration for a corporation?",
@@ -210,10 +210,10 @@
             "Debit Expenses, Credit Revenue"
           ],
           "correctAnswer": "Debit Retained Earnings, Credit Dividends Payable",
-          "explanation": "Dividends reduce retained earnings and create a payable liability until payment is made."
+          "explanation": "When dividends are declared, retained earnings decrease and a liability (dividends payable) is recorded until payment."
         },
         {
-          "question": "How does a stock split affect a corporation’s equity?",
+          "question": "How does a stock split affect a corporation's equity?",
           "options": [
             "Increases total equity",
             "Decreases total equity",
@@ -221,7 +221,7 @@
             "Eliminates retained earnings"
           ],
           "correctAnswer": "Changes number of shares but not total equity",
-          "explanation": "Stock splits increase share count and reduce par value per share, but total equity remains the same."
+          "explanation": "Stock splits increase the number of shares and reduce par value per share but do not change total shareholders' equity."
         },
         {
           "question": "Which partnership concept involves sharing profits according to an agreement?",
@@ -232,32 +232,21 @@
             "Depreciation"
           ],
           "correctAnswer": "Partnership allocation",
-          "explanation": "Partnerships allocate profits and losses among partners based on the partnership agreement."
+          "explanation": "Partnership allocation terms specify how profits and losses are divided among partners, often based on capital contributions or an agreed ratio."
         },
         {
-          "question": "When forming a corporation, which account records owners’ investments?",
-          "options": [
-            "Retained Earnings",
-            "Capital Stock",
-            "Dividends Payable",
-            "Revenue"
-          ],
-          "correctAnswer": "Capital Stock",
-          "explanation": "Capital stock accounts reflect contributions by shareholders during formation or additional issuance."
-        },
-        {
-          "question": "In a partnership, admitting a new partner requires:",
+          "question": "When admitting a new partner to a partnership, which of the following is commonly required?",
           "options": [
             "Issuing stock certificates",
-            "Adjusting capital accounts to reflect contributions",
+            "Adjusting capital accounts and the profit-sharing ratio",
             "Paying dividends to all partners",
             "Recording depreciation expense"
           ],
-          "correctAnswer": "Adjusting capital accounts to reflect contributions",
-          "explanation": "The new partner’s contribution increases capital accounts and adjusts profit/loss allocation."
+          "correctAnswer": "Adjusting capital accounts and the profit-sharing ratio",
+          "explanation": "A new partner's contribution changes capital accounts and may require revising how profits and losses are shared among partners."
         },
         {
-          "question": "Earnings per share (EPS) measures:",
+          "question": "Earnings per share (EPS) is best described as:",
           "options": [
             "Cash balance per share",
             "Net income attributable to each share of common stock",
@@ -265,18 +254,18 @@
             "Dividends paid per share"
           ],
           "correctAnswer": "Net income attributable to each share of common stock",
-          "explanation": "EPS = (Net Income – Preferred Dividends) ÷ Weighted Average Common Shares."
+          "explanation": "EPS is calculated as (Net Income – Preferred Dividends) ÷ Weighted Average Common Shares and indicates profitability per share."
         },
         {
-          "question": "(Hard) How does a manager typically Corporate Accounting & Partnerships? (Hard)",
+          "question": "(Hard) A company has complex capital structure including convertible debt and stock options. Which EPS measure accounts for these potential common shares?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Basic EPS",
+            "Diluted EPS",
+            "Headline EPS",
+            "Adjusted EPS"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Diluted EPS",
+          "explanation": "Diluted EPS includes the potential impact of convertible instruments and options to show the lowest possible EPS if all dilutive securities were converted."
         }
       ]
     },
@@ -284,92 +273,59 @@
       "topic": "Corporate Accounting & Partnerships — part 2",
       "questions": [
         {
-          "question": "How does a manager typically corporate accounting & partnerships?",
+          "question": "Which document typically governs the internal operations and ownership of a corporation?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Partnership agreement",
+            "Articles of incorporation and corporate bylaws",
+            "Operating budget",
+            "Invoice"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Articles of incorporation and corporate bylaws",
+          "explanation": "Articles of incorporation establish the corporation legally; bylaws provide rules for governance and internal procedures."
         },
         {
-          "question": "What is the primary purpose of corporate accounting & partnerships?",
+          "question": "What is the effect of issuing additional shares of common stock for cash?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Decrease in cash and decrease in equity",
+            "Increase in cash and increase in equity",
+            "Increase in liabilities",
+            "No effect on financial statements"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Increase in cash and increase in equity",
+          "explanation": "Selling new shares brings in cash and increases shareholders' equity through additional paid-in capital."
         },
         {
-          "question": "(Scenario) Consider an organization that needs to: how should they address corporate accounting & partnerships?",
+          "question": "In a partnership liquidation, which step is performed after selling noncash assets and paying liabilities?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Distribute remaining cash to partners according to capital balances",
+            "Record additional depreciation",
+            "Restructure the partnership",
+            "Convert to a corporation"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Distribute remaining cash to partners according to capital balances",
+          "explanation": "After liabilities are settled, remaining cash is distributed among partners based on their capital account balances and any agreed priorities."
         },
         {
-          "question": "Which practice helps corporate accounting & partnerships?",
+          "question": "Which of the following is a common reason a partnership would revalue assets when admitting a new partner?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "To inflate reported profits",
+            "To reflect fair value contributions and adjust capital accounts",
+            "To avoid paying taxes",
+            "To increase liabilities"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "To reflect fair value contributions and adjust capital accounts",
+          "explanation": "Revaluation ensures the new partner's contribution is recorded at fair value so capital accounts and profit-sharing are equitable."
         },
         {
-          "question": "(Hard) Which is a challenging question about Corporate Accounting & Partnerships — part 2?",
+          "question": "(Hard) How should goodwill be allocated in a partnership when one partner buys out the others?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Allocate equally regardless of capital balances",
+            "Recognize goodwill only if internally generated",
+            "Allocate based on agreed valuation and capital balances",
+            "Never recognize goodwill in a partnership"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
-        },
-        {
-          "question": "Which of the following best explains Corporate Accounting & Partnerships — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Corporate Accounting & Partnerships — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Corporate Accounting & Partnerships — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Allocate based on agreed valuation and capital balances",
+          "explanation": "Goodwill allocation on buyouts depends on the agreed purchase price and how partners choose to adjust capital accounts; it's not automatic and requires valuation."
         }
       ]
     },
@@ -385,10 +341,10 @@
             "LIFO Method"
           ],
           "correctAnswer": "Allowance Method",
-          "explanation": "The allowance method estimates uncollectible accounts and records an allowance, aligning with GAAP."
+          "explanation": "The allowance method estimates uncollectible accounts and records an allowance, which aligns with GAAP and matches bad debt expense to the period of sale."
         },
         {
-          "question": "A company sells merchandise on account. Which journal entry is correct?",
+          "question": "A company sells merchandise on account. Which journal entry is correct at the point of sale?",
           "options": [
             "Debit Cash, Credit Revenue",
             "Debit Accounts Receivable, Credit Sales Revenue",
@@ -396,10 +352,10 @@
             "Debit Sales Revenue, Credit Accounts Receivable"
           ],
           "correctAnswer": "Debit Accounts Receivable, Credit Sales Revenue",
-          "explanation": "When merchandise is sold on account, Accounts Receivable increases and Sales Revenue is recorded."
+          "explanation": "On sale on account, Accounts Receivable increases and Sales Revenue is recognized. Cash is recorded when payment is received."
         },
         {
-          "question": "The aging of accounts receivable is used to:",
+          "question": "The aging of accounts receivable is primarily used to:",
           "options": [
             "Determine depreciation expense",
             "Estimate uncollectible accounts",
@@ -407,7 +363,7 @@
             "Calculate payroll taxes"
           ],
           "correctAnswer": "Estimate uncollectible accounts",
-          "explanation": "Aging categorizes receivables by age to estimate the likelihood of collection and required allowance."
+          "explanation": "An aging schedule groups receivables by age to estimate the allowance for doubtful accounts based on collection experience."
         },
         {
           "question": "Which inventory costing method assumes the oldest inventory is sold first?",
@@ -418,10 +374,10 @@
             "Specific Identification"
           ],
           "correctAnswer": "FIFO",
-          "explanation": "First-In, First-Out (FIFO) assumes the earliest inventory costs are used for cost of goods sold."
+          "explanation": "FIFO (First-In, First-Out) assumes earliest purchased items are sold first, affecting cost of goods sold and ending inventory valuation."
         },
         {
-          "question": "When accounts payable is recorded, the entry typically includes:",
+          "question": "When accounts payable is recorded, the typical entry is:",
           "options": [
             "Debit Cash, Credit Accounts Payable",
             "Debit Expense/Inventory, Credit Accounts Payable",
@@ -429,10 +385,10 @@
             "Debit Revenue, Credit Cash"
           ],
           "correctAnswer": "Debit Expense/Inventory, Credit Accounts Payable",
-          "explanation": "Purchases on account increase liabilities (Accounts Payable) and record the related expense or inventory."
+          "explanation": "Purchases on account increase an expense or inventory and create a liability (Accounts Payable) until paid."
         },
         {
-          "question": "Which method estimates ending inventory based on cost-to-retail ratios?",
+          "question": "Which method estimates ending inventory based on a cost-to-retail ratio?",
           "options": [
             "Gross Profit Method",
             "Retail Inventory Method",
@@ -440,10 +396,10 @@
             "LIFO"
           ],
           "correctAnswer": "Retail Inventory Method",
-          "explanation": "The retail method converts retail prices to cost using a cost-to-retail ratio to estimate inventory value."
+          "explanation": "The retail inventory method converts retail prices to cost using a cost-to-retail ratio to estimate ending inventory when a physical count isn't available."
         },
         {
-          "question": "Recording a note receivable involves:",
+          "question": "Recording a note receivable typically results in which journal entry when the note is issued in exchange for a sale?",
           "options": [
             "Debit Cash, Credit Revenue",
             "Debit Notes Receivable, Credit Revenue or Accounts Receivable",
@@ -451,18 +407,18 @@
             "Debit Sales Revenue, Credit Notes Payable"
           ],
           "correctAnswer": "Debit Notes Receivable, Credit Revenue or Accounts Receivable",
-          "explanation": "Notes receivable are formal claims for payment, recorded as a debit to Notes Receivable and a credit to Revenue or AR."
+          "explanation": "A formal promise to pay (note) is recorded as Notes Receivable; revenue is recognized if the sale occurred, or AR converted to a note."
         },
         {
-          "question": "(Hard) Why is it important to Accounts Receivable, Payable & Inventory? (Hard)",
+          "question": "(Hard) A company with slow inventory turnover wants to improve liquidity. Which combination of actions is most appropriate?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Increase production and raise prices",
+            "Discount slow-moving items and tighten credit terms",
+            "Extend credit terms to customers and build inventory",
+            "Switch to LIFO immediately"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Discount slow-moving items and tighten credit terms",
+          "explanation": "Discounting clears excess inventory and tightening credit improves cash collection, both improving liquidity; indiscriminate production increases or extended credit worsen the issue."
         }
       ]
     },
@@ -470,92 +426,59 @@
       "topic": "Accounts Receivable, Payable & Inventory — part 2",
       "questions": [
         {
-          "question": "Why is it important to accounts receivable, payable & inventory?",
+          "question": "Which control best reduces the risk of fraudulent payments to vendors?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Allowing the same person to approve and pay invoices",
+            "Segregation of duties between approving and disbursing payments",
+            "Keeping vendor master list editable by all employees",
+            "Paying only by cash"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Segregation of duties between approving and disbursing payments",
+          "explanation": "Separating responsibilities for approval, payment, and reconciliation reduces fraud risk by requiring collusion for misuse."
         },
         {
-          "question": "(Hard) Which is a challenging question about Accounts Receivable, Payable & Inventory — part 2?",
+          "question": "Days Sales Outstanding (DSO) measures:",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "How quickly inventory sells",
+            "Average number of days to collect receivables",
+            "How long payables are outstanding",
+            "The company's debt burden"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Average number of days to collect receivables",
+          "explanation": "DSO indicates the average days it takes to convert credit sales into cash; higher DSO can signal collection issues."
         },
         {
-          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
+          "question": "Which approach helps manage working capital effectively?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Lengthen payables, shorten receivables, and optimize inventory",
+            "Shorten payables and lengthen receivables",
+            "Hold maximum inventory regardless of demand",
+            "Eliminate credit checks for all customers"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Lengthen payables, shorten receivables, and optimize inventory",
+          "explanation": "Good working capital management focuses on improving cash flow by managing payables, receivables, and inventory levels."
         },
         {
-          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
+          "question": "A purchase return should be recorded as:",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Debit Accounts Payable, Credit Inventory or Purchases",
+            "Debit Inventory, Credit Accounts Payable",
+            "Debit Revenue, Credit Cash",
+            "Debit Cash, Credit Sales Revenue"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Debit Accounts Payable, Credit Inventory or Purchases",
+          "explanation": "Returning goods reduces the liability owed to the supplier and reduces inventory or purchase expense."
         },
         {
-          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
+          "question": "(Hard) Under the lower of cost or net realizable value (LCNRV) rule for inventory, when must a company write down inventory?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "When market replacement cost exceeds historical cost",
+            "When net realizable value is below cost",
+            "Only when inventory is obsolete regardless of NRV",
+            "When sales volume increases"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Accounts Receivable, Payable & Inventory — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "When net realizable value is below cost",
+          "explanation": "LCNRV requires inventory to be carried at cost unless NRV (estimated selling price minus costs to complete and sell) is lower, in which case a write-down is required."
         }
       ]
     },
@@ -563,40 +486,40 @@
       "topic": "Budgeting, Cash Flow & Cost Accounting — part 1",
       "questions": [
         {
-          "question": "A flexible budget adjusts for:",
+          "question": "A flexible budget is most useful because it:",
           "options": [
-            "Changes in actual activity levels",
-            "Changes in stockholder equity",
-            "Changes in tax rates",
-            "Changes in inventory method"
+            "Is prepared only once a year",
+            "Adjusts for changes in activity levels",
+            "Ignores fixed costs entirely",
+            "Requires actual results to be known in advance"
           ],
-          "correctAnswer": "Changes in actual activity levels",
-          "explanation": "Flexible budgets adjust expected costs and revenues based on actual production or sales volume."
+          "correctAnswer": "Adjusts for changes in activity levels",
+          "explanation": "Flexible budgets allow comparisons between expected and actual performance at different activity levels by adjusting budgeted amounts."
         },
         {
-          "question": "Which analysis helps determine the contribution margin and break-even point?",
+          "question": "Which analysis helps determine contribution margin and break-even volume?",
           "options": [
-            "Cost-Volume-Profit Analysis",
-            "Vertical Analysis",
-            "Horizontal Analysis",
-            "Differential Analysis"
+            "Cost-Volume-Profit (CVP) analysis",
+            "Vertical analysis",
+            "Horizontal analysis",
+            "Variance analysis"
           ],
-          "correctAnswer": "Cost-Volume-Profit Analysis",
-          "explanation": "CVP analysis calculates contribution margin and identifies the break-even sales volume for planning."
+          "correctAnswer": "Cost-Volume-Profit (CVP) analysis",
+          "explanation": "CVP analysis examines how costs and volume affect profits and helps calculate the break-even point using contribution margin."
         },
         {
-          "question": "A master budget includes:",
+          "question": "A master budget typically includes all of the following except:",
           "options": [
-            "Cash budget, sales budget, and production budget",
-            "Only income statements",
-            "Only balance sheets",
-            "Only departmental payroll"
+            "Cash budget",
+            "Sales budget",
+            "Production budget",
+            "Individual employee performance reviews"
           ],
-          "correctAnswer": "Cash budget, sales budget, and production budget",
-          "explanation": "The master budget consolidates operating and financial plans, including cash, sales, and production budgets."
+          "correctAnswer": "Individual employee performance reviews",
+          "explanation": "A master budget consolidates financial plans (sales, production, cash), not HR performance reviews."
         },
         {
-          "question": "In cost accounting, factory overhead includes:",
+          "question": "Factory overhead includes which of the following?",
           "options": [
             "Direct materials only",
             "Direct labor only",
@@ -604,21 +527,21 @@
             "Sales commissions"
           ],
           "correctAnswer": "Indirect costs like utilities and depreciation",
-          "explanation": "Overhead includes all indirect manufacturing costs not directly traceable to a product."
+          "explanation": "Factory overhead comprises indirect manufacturing costs not directly traceable to products, such as utilities and depreciation."
         },
         {
-          "question": "Which method allocates overhead based on a predetermined rate?",
+          "question": "Which costing method allocates overhead using multiple activity cost drivers?",
           "options": [
-            "Activity-Based Costing",
-            "Job-Order Costing",
-            "Standard Costing",
-            "All of the above"
+            "Traditional predetermined rate",
+            "Activity-Based Costing (ABC)",
+            "FIFO",
+            "Direct write-off"
           ],
-          "correctAnswer": "All of the above",
-          "explanation": "Predetermined overhead rates can be applied in different costing methods, including job-order and ABC systems."
+          "correctAnswer": "Activity-Based Costing (ABC)",
+          "explanation": "ABC assigns overhead to products based on the activities that drive costs, providing more accurate product costing in complex environments."
         },
         {
-          "question": "Cash flow from investing activities includes:",
+          "question": "Cash flow from investing activities typically includes which of the following?",
           "options": [
             "Sale of equipment",
             "Payment of dividends",
@@ -626,29 +549,18 @@
             "Payment of salaries"
           ],
           "correctAnswer": "Sale of equipment",
-          "explanation": "Investing activities relate to acquiring or disposing of long-term assets like equipment."
+          "explanation": "Investing activities relate to acquisition or disposal of long-term assets, such as selling equipment."
         },
         {
-          "question": "Cost-volume-profit analysis helps managers decide:",
+          "question": "(Hard) Which combination of items would decrease operating cash flow but not affect net income immediately?",
           "options": [
-            "Whether to buy or make a product",
-            "How to depreciate assets",
-            "How to record payroll",
-            "How to classify inventory"
+            "Increase in depreciation expense and increase in receivables",
+            "Increase in accounts payable and decrease in inventory",
+            "Payment of dividends and issuance of stock",
+            "Selling equipment at book value"
           ],
-          "correctAnswer": "Whether to buy or make a product",
-          "explanation": "CVP analysis informs decisions where cost and revenue changes impact profitability."
-        },
-        {
-          "question": "(Hard) Which practice helps Budgeting, Cash Flow & Cost Accounting? (Hard)",
-          "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
-          ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Increase in depreciation expense and increase in receivables",
+          "explanation": "Depreciation is a noncash expense that reduces net income but not cash; an increase in receivables reduces operating cash flow without immediate net income impact."
         }
       ]
     },
@@ -656,97 +568,42 @@
       "topic": "Budgeting, Cash Flow & Cost Accounting — part 2",
       "questions": [
         {
-          "question": "(Scenario) Consider an organization that needs to: how should they address budgeting, cash flow & cost accounting?",
+          "question": "Which variance analysis helps management evaluate performance relative to budgeted costs?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Material, labor, and overhead variances",
+            "Market share variance",
+            "Capital structure variance",
+            "Interest rate variance"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Material, labor, and overhead variances",
+          "explanation": "Variance analysis compares actual costs to standard or budgeted costs to identify areas needing managerial attention."
         },
         {
-          "question": "Which practice helps budgeting, cash flow & cost accounting?",
+          "question": "Which budgeting approach starts by estimating expected sales and then derives production and expense budgets?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Zero-based budgeting",
+            "Top-down budgeting",
+            "Sales-driven (incremental) budgeting",
+            "Rolling forecast"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Sales-driven (incremental) budgeting",
+          "explanation": "A sales-driven approach forecasts sales first and builds production and expense budgets around sales projections."
         },
         {
-          "question": "(Hard) Which is a challenging question about Budgeting, Cash Flow & Cost Accounting — part 2?",
+          "question": "(Hard) In a make-or-buy decision, which costs are most relevant?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Sunk costs",
+            "Future incremental costs and opportunity costs",
+            "Historical fixed costs",
+            "Allocated corporate overhead only"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
-        },
-        {
-          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Budgeting, Cash Flow & Cost Accounting — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Future incremental costs and opportunity costs",
+          "explanation": "Relevant costs are future costs that differ between alternatives, such as incremental production costs and lost opportunities."
         }
       ]
     },
     {
-      "topic": "Departmentalized Accounting & Payroll — part 1 — part 1",
+      "topic": "Departmentalized Accounting & Payroll — part 1",
       "questions": [
         {
           "question": "Departmentalized accounting is primarily used to:",
@@ -757,10 +614,10 @@
             "Record inventory transactions only"
           ],
           "correctAnswer": "Track costs and revenues for separate departments",
-          "explanation": "Departmentalized accounting allocates revenues, expenses, and profits to individual departments for better performance tracking."
+          "explanation": "Departmentalized accounting allocates revenues, expenses, and profits to individual departments to evaluate performance."
         },
         {
-          "question": "When journalizing departmental cash receipts, you would:",
+          "question": "When recording departmental cash receipts, the entry typically would:",
           "options": [
             "Debit Cash and credit the appropriate departmental revenue account",
             "Debit Accounts Payable and credit Cash",
@@ -768,32 +625,21 @@
             "Debit Cash and credit Accounts Receivable only"
           ],
           "correctAnswer": "Debit Cash and credit the appropriate departmental revenue account",
-          "explanation": "Cash receipts are recorded by debiting cash and crediting revenue for the specific department that earned it."
+          "explanation": "Cash receipts increase cash and should be credited to the department earning the revenue for correct departmental reporting."
         },
         {
-          "question": "Which software feature is most helpful for maintaining departmental records?",
+          "question": "Which payroll document summarizes payroll for a pay period and includes deductions and net pay?",
           "options": [
-            "Ability to track transactions by department",
-            "Automatic payroll tax calculation",
-            "Creating GAAP-compliant financial statements only",
-            "Inventory valuation reports"
+            "Invoice",
+            "Payroll register",
+            "Purchase order",
+            "Trial balance"
           ],
-          "correctAnswer": "Ability to track transactions by department",
-          "explanation": "Departmentalized accounting software helps segregate transactions by department for accurate reporting."
+          "correctAnswer": "Payroll register",
+          "explanation": "A payroll register records gross pay, deductions, and net pay for each employee for reporting and reconciliation."
         },
         {
-          "question": "Payroll register is used to:",
-          "options": [
-            "Record all payroll transactions and deductions",
-            "Calculate inventory turnover",
-            "Journalize depreciation",
-            "Prepare tax returns only"
-          ],
-          "correctAnswer": "Record all payroll transactions and deductions",
-          "explanation": "A payroll register tracks employee earnings, deductions, and net pay for reporting and accounting purposes."
-        },
-        {
-          "question": "Employer payroll taxes include:",
+          "question": "Employer payroll taxes typically include which of the following?",
           "options": [
             "Social Security, Medicare, federal unemployment, state unemployment",
             "Federal income tax only",
@@ -801,10 +647,10 @@
             "Depreciation expenses"
           ],
           "correctAnswer": "Social Security, Medicare, federal unemployment, state unemployment",
-          "explanation": "Employers pay payroll taxes in addition to employee withholding for Social Security, Medicare, and unemployment taxes."
+          "explanation": "Employers are responsible for payroll taxes such as employer shares of Social Security, Medicare, and unemployment taxes."
         },
         {
-          "question": "Calculating net pay involves:",
+          "question": "Calculating an employee's net pay involves:",
           "options": [
             "Subtracting deductions from gross pay",
             "Adding gross pay to taxes",
@@ -812,256 +658,60 @@
             "Calculating depreciation first"
           ],
           "correctAnswer": "Subtracting deductions from gross pay",
-          "explanation": "Net pay is the employee's take-home pay after deducting taxes and other withholdings from gross earnings."
+          "explanation": "Net pay equals gross pay minus deductions (taxes, benefits, and other withholdings)."
         },
         {
-          "question": "Which form is used by employees to report withholding allowances?",
-          "options": [
-            "W-4",
-            "W-2",
-            "941",
-            "1099"
-          ],
+          "question": "Which form is used by employees to report withholding allowances to employers in the United States?",
+          "options": ["W-4", "W-2", "941", "1099"],
           "correctAnswer": "W-4",
-          "explanation": "The W-4 form allows employees to specify withholding allowances so employers can deduct the correct federal income tax."
+          "explanation": "Employees complete Form W-4 to indicate filing status and withholding allowances so employers can calculate payroll tax withholdings."
         },
         {
-          "question": "(Hard) Which is a challenging question about Departmentalized Accounting & Payroll — part 1 — part 1?",
+          "question": "(Hard) For departmental performance evaluation, which metric is most appropriate to compare departments of different sizes?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Total revenue",
+            "Revenue per employee or margin percentage",
+            "Number of transactions",
+            "Raw headcount"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Revenue per employee or margin percentage",
+          "explanation": "Relative metrics like revenue per employee or margin percentage normalize for size and provide fairer performance comparisons across departments."
         }
       ]
     },
     {
-      "topic": "Departmentalized Accounting & Payroll — part 1 — part 2",
+      "topic": "Income Tax — part 1",
       "questions": [
         {
-          "question": "(Hard) Which is a challenging question about Departmentalized Accounting & Payroll — part 1?",
+          "question": "Deferred income taxes arise from:",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 1 — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        }
-      ]
-    },
-    {
-      "topic": "Departmentalized Accounting & Payroll — part 2",
-      "questions": [
-        {
-          "question": "(Scenario) A student/employee faces the following situation: how should they address departmentalized accounting & payroll?",
-          "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
-          ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
-        },
-        {
-          "question": "(Hard) Which is a challenging question about Departmentalized Accounting & Payroll?",
-          "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
-          ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Departmentalized Accounting & Payroll — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        }
-      ]
-    },
-    {
-      "topic": "Income Tax — part 1 — part 1",
-      "questions": [
-        {
-          "question": "Deferred income taxes result from:",
-          "options": [
+            "Permanent differences only",
             "Temporary differences between financial reporting and taxable income",
-            "Permanent differences in inventory valuation",
-            "Payroll tax errors",
-            "Cash flow misstatements"
+            "Errors in cash flow statements",
+            "Changes in interest rates"
           ],
           "correctAnswer": "Temporary differences between financial reporting and taxable income",
-          "explanation": "Deferred taxes arise when timing differences create a gap between taxable income and accounting income."
+          "explanation": "Deferred tax assets/liabilities result when timing differences cause taxable income to differ from accounting income temporarily."
         },
         {
-          "question": "Which form is used by employers to report federal income tax withheld and payroll taxes?",
-          "options": [
-            "Form 941",
-            "Form W-2",
-            "Form 1099",
-            "Form 1040"
-          ],
+          "question": "Which form is used by employers to report federal income tax withheld and employer payroll taxes quarterly in the U.S.?",
+          "options": ["Form 941", "Form W-2", "Form 1099", "Form 1040"],
           "correctAnswer": "Form 941",
-          "explanation": "Form 941 reports quarterly federal income tax withheld and employer payroll taxes."
+          "explanation": "Form 941 is filed quarterly to report federal income tax withheld and employer payroll tax liabilities."
         },
         {
-          "question": "Tax planning involves:",
+          "question": "Tax planning is best described as:",
           "options": [
+            "Avoiding all taxes",
             "Structuring transactions to minimize tax liability legally",
-            "Avoiding all tax payments",
             "Recording inventory using FIFO",
-            "Calculating net pay only"
+            "Choosing accounting software"
           ],
           "correctAnswer": "Structuring transactions to minimize tax liability legally",
-          "explanation": "Tax planning ensures compliance while optimizing tax efficiency through legitimate strategies."
+          "explanation": "Tax planning uses lawful strategies to manage tax exposure while ensuring compliance with tax laws."
         },
         {
-          "question": "Which accounting principle governs recording tax liabilities?",
+          "question": "Which accounting principle is generally used to record tax liabilities?",
           "options": [
             "Accrual principle",
             "Cash principle",
@@ -1069,105 +719,18 @@
             "LIFO method"
           ],
           "correctAnswer": "Accrual principle",
-          "explanation": "Accrual accounting requires recording taxes when incurred, not necessarily when paid."
+          "explanation": "Accrual accounting records expenses when incurred, so tax liabilities are recognized when the related income is earned."
         },
         {
-          "question": "The difference between tax avoidance and tax evasion is:",
+          "question": "(Hard) When reconciling book income to taxable income, which items are typically adjusted?",
           "options": [
-            "Avoidance is legal, evasion is illegal",
-            "Avoidance is illegal, evasion is legal",
-            "Both are legal",
-            "Both are illegal"
+            "Sunk costs",
+            "Temporary differences like depreciation methods and nondeductible expenses",
+            "Market capitalization",
+            "Cash equivalents"
           ],
-          "correctAnswer": "Avoidance is legal, evasion is illegal",
-          "explanation": "Tax avoidance uses legal strategies to reduce taxes, while evasion involves illegal misreporting or concealment."
-        },
-        {
-          "question": "Deferred income taxes affect which financial statement?",
-          "options": [
-            "Balance Sheet",
-            "Income Statement only",
-            "Cash Flow Statement only",
-            "Statement of Owner’s Equity only"
-          ],
-          "correctAnswer": "Balance Sheet",
-          "explanation": "Deferred taxes are recorded as liabilities or assets on the balance sheet until they become payable or recoverable."
-        },
-        {
-          "question": "Calculating corporate income tax expense requires:",
-          "options": [
-            "Adjusting accounting income to taxable income and applying the tax rate",
-            "Recording gross pay only",
-            "Preparing payroll vouchers",
-            "Valuing inventory exclusively"
-          ],
-          "correctAnswer": "Adjusting accounting income to taxable income and applying the tax rate",
-          "explanation": "Corporate tax expense is based on taxable income, which may differ from accounting income due to timing and temporary differences."
-        },
-        {
-          "question": "(Hard) Which is a challenging question about Income Tax — part 1 — part 1?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
-        }
-      ]
-    },
-    {
-      "topic": "Income Tax — part 1 — part 2",
-      "questions": [
-        {
-          "question": "(Hard) Which is a challenging question about Income Tax — part 1?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
-        },
-        {
-          "question": "Which of the following best explains Income Tax — part 1 — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        },
-        {
-          "question": "Which of the following best explains Income Tax — part 1 — part 2?",
-          "options": [
-            "A",
-            "B",
-            "C",
-            "D"
-          ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
-        }
-      ]
-    },
-    {
-      "topic": "Income Tax — part 2",
-      "questions": [
-        {
-          "question": "Why is it important to income tax?",
-          "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
-          ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Temporary differences like depreciation methods and nondeductible expenses",
+          "explanation": "Reconciling book to taxable income requires adjusting for items treated differently for accounting versus tax purposes (e.g., depreciation timing, nondeductible expenses)."
         }
       ]
     }

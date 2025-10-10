@@ -308,12 +308,7 @@
         },
         {
           "question": "(Hard) A monopolist faces demand P=100-2Q and constant MC=10; what output maximizes profit?",
-          "options": [
-            "Q=22.5",
-            "Q=10",
-            "Q=45",
-            "Q=0"
-          ],
+          "options": ["Q=22.5", "Q=10", "Q=45", "Q=0"],
           "correctAnswer": "Q=22.5",
           "explanation": "Profit maximization where MR=MC; MR derived from demand gives output ~22.5 (calculation-based hard question)."
         },
@@ -1091,48 +1086,48 @@
           "explanation": "Supply shocks require carefully balanced policies: protect vulnerable groups while addressing inflation expectations."
         },
         {
-          "question": "(Scenario) A small business encounters a problem where how should they address applications and scenarios?",
+          "question": "(Scenario) A small business needs to raise wages to retain workers; what is a common short-term effect?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "A: Labor costs rise and some hiring may be reduced",
+            "B: Prices immediately fall",
+            "C: Output always increases",
+            "D: Unemployment is eliminated"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "A: Labor costs rise and some hiring may be reduced",
+          "explanation": "Raising wages increases firm labor costs, which can lead some small businesses to slow hiring in the short run."
         },
         {
-          "question": "How does a manager typically applications and scenarios?",
+          "question": "How does a manager typically use economic indicators when planning?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "A: Use recent indicators to adjust inventory and staffing",
+            "B: Ignore indicators and rely only on intuition",
+            "C: Only consult indicators once per decade",
+            "D: Set fixed production regardless of data"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "A: Use recent indicators to adjust inventory and staffing",
+          "explanation": "Managers monitor indicators (sales, unemployment, consumer confidence) to make near-term decisions about inventory and workforce."
         },
         {
-          "question": "Which practice helps applications and scenarios?",
+          "question": "Which practice helps firms respond effectively to demand shocks?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "A: Flexible pricing and inventory management",
+            "B: Rigid long-term pricing with no inventory adjustments",
+            "C: Cutting product quality",
+            "D: Permanently reducing workforce immediately"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "A: Flexible pricing and inventory management",
+          "explanation": "Flexibility in pricing and inventories helps firms smooth sales fluctuations and respond to short-term demand changes."
         },
         {
-          "question": "(Hard) Why is it important to applications and scenarios?",
+          "question": "(Hard) When a temporary supply shock raises prices, which policy mix best protects households while limiting inflationary pressures?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "A: Targeted transfers to vulnerable households plus temporary subsidies for affected sectors",
+            "B: Large across-the-board tax cuts",
+            "C: Fix the exchange rate immediately",
+            "D: Sharp immediate monetary tightening only"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "A: Targeted transfers to vulnerable households plus temporary subsidies for affected sectors",
+          "explanation": "Targeted support shields those most harmed while avoiding broad policies that either fuel demand (tax cuts) or excessively compress growth (sharp tightening)."
         }
       ]
     }
