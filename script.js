@@ -1376,6 +1376,8 @@ function renderLeaderboardEntries(entries) {
       const clickedName = (e.name || '').trim();
       try {
         if (!clickedName) return;
+        // If the leaderboard entry already includes a uid, prefer it (avoids extra lookups and permission issues)
+        if (e.uid) { showProfileOverlay(e.uid); return; }
         const uid = await resolveProfileUid(clickedName);
         if (uid) { showProfileOverlay(uid); return; }
         try { writeLog('profile_lookup_miss', { clickedName }); } catch (e) {}
@@ -1447,9 +1449,39 @@ async function grantAchievement(uid, achievementName) {
   } catch (e) { console.warn('grantAchievement error', e); }
 }
 
-// Render a public profile overlay for the given uid
-async function showProfileOverlay(uid) {
+// Render a public profile overlay for the given uid or username
+// Accepts either a UID or a username string. If a username is provided, the function
+// will read `usernames/{username}` to resolve the uid (the common mapping where the
+// doc id is the username and the document contains a `uid` field).
+async function showProfileOverlay(idOrName) {
   try {
+    // Normalize param: if a username was passed, resolve it to uid via usernames/{username}
+    let uid = idOrName;
+    try {
+      // simple heuristic: uid-like strings are alphanumeric with -/_ and length >= 12
+      const maybeUid = String(idOrName || '').trim();
+      const looksLikeUid = /^[A-Za-z0-9_-]{12,64}$/.test(maybeUid);
+      if (!looksLikeUid && maybeUid) {
+        // attempt direct usernames/{username} doc read (most efficient when mapping exists)
+        if (window.doc && window.getDoc && window.db) {
+          try {
+            const unameRef = window.doc(window.db, 'usernames', maybeUid);
+            const usnap = await window.getDoc(unameRef);
+            if (usnap && usnap.exists && usnap.exists()) {
+              const ud = usnap.data();
+              if (ud && ud.uid) uid = ud.uid;
+            }
+          } catch (e) { /* ignore and fallback to other methods below */ }
+        }
+        // If still not resolved, fall back to best-effort resolver
+        if (!uid || String(uid).trim() === '') {
+          try { uid = await resolveProfileUid(maybeUid); } catch (e) { /* ignore */ }
+        }
+      }
+    } catch (e) { /* ignore normalization errors */ }
+
+    // if after attempts we don't have a uid, bail out
+    if (!uid) return null;
     let overlay = document.getElementById('profileOverlay');
     if (!overlay) {
       overlay = document.createElement('div');
@@ -1487,10 +1519,68 @@ async function showProfileOverlay(uid) {
     avatar.alt = 'avatar';
     const header = document.createElement('div'); header.style.display = 'flex'; header.style.alignItems = 'center';
     const nameEl = document.createElement('div'); nameEl.style.fontWeight = 700; nameEl.style.fontSize = '18px';
-    nameEl.textContent = (acct && acct.username) ? acct.username : (localStorage.getItem && localStorage.getItem('fblacer_username')) || 'Anonymous';
+    // show a temporary loading label while we resolve the public username
+    nameEl.textContent = 'Loading...';
     avatar.src = (acct && acct.avatarUrl) ? acct.avatarUrl : 'https://www.gravatar.com/avatar/?d=mp&s=96';
     header.appendChild(avatar); header.appendChild(nameEl);
     content.appendChild(header);
+
+    // Resolve a public username for this uid when possible. Prefer a dedicated
+    // `publicProfiles/{uid}` document that contains only public fields (username, avatarUrl, summary).
+    // This keeps private data under `accounts`/`users` protected, while allowing unauthenticated reads.
+    (async function resolvePublicName() {
+      try {
+        let publicName = (acct && acct.username) ? acct.username : null;
+        try {
+          // 1) Try publicProfiles/{uid} (preferred—designed for public read)
+          if (!publicName && window.doc && window.getDoc && window.db) {
+            try {
+              const pdoc = window.doc(window.db, 'publicProfiles', uid);
+              const psnap = await window.getDoc(pdoc);
+              if (psnap && psnap.exists && psnap.exists()) {
+                const pdata = psnap.data();
+                if (pdata) {
+                  if (pdata.username) publicName = pdata.username;
+                  if (pdata.avatarUrl) avatar.src = pdata.avatarUrl;
+                }
+              }
+            } catch (e) { /* ignore and try next */ }
+          }
+
+          // 2) If not present, try users/{uid} document which may contain a username
+          if (!publicName && window.doc && window.getDoc && window.db) {
+            try {
+              const udoc = window.doc(window.db, 'users', uid);
+              const usnap = await window.getDoc(udoc);
+              if (usnap && usnap.exists && usnap.exists()) {
+                const ud = usnap.data(); if (ud && ud.username) publicName = ud.username;
+              }
+            } catch (e) { /* ignore and try next */ }
+          }
+
+          // 3) Best-effort: query usernames collection for username -> uid mapping
+          if (!publicName && window.getDocs && window.collection && window.query && window.where && window.db) {
+            try {
+              const col = window.collection(window.db, 'usernames');
+              const q = window.query(col, window.where('uid', '==', uid));
+              const qr = await window.getDocs(q);
+              if (qr && typeof qr.forEach === 'function') {
+                let found = null;
+                qr.forEach(docSnap => { if (docSnap && docSnap.exists && docSnap.exists()) found = docSnap; });
+                if (found) {
+                  publicName = found.id || ((found.data && found.data().username) ? found.data().username : null);
+                }
+              }
+            } catch (e) { /* ignore */ }
+          }
+        } catch (e) { console.warn('public name resolution error', e); }
+
+        nameEl.textContent = publicName || 'Anonymous';
+      } catch (e) {
+        console.warn('resolvePublicName failed', e);
+        nameEl.textContent = 'Anonymous';
+      }
+    })();
 
     // If viewing own profile, allow changing avatar
     try {
@@ -1620,7 +1710,27 @@ async function showProfileOverlay(uid) {
     const tests = (acct && acct.tests) ? acct.tests : {};
     const tkeys = Object.keys(tests || {});
     if (!tkeys.length) testsList.textContent = 'No test records';
-    else tkeys.forEach(tn => { const r = document.createElement('div'); r.textContent = `${tn}: ${tests[tn].totalPoints || 0} pts (${tests[tn].timestamp || ''})`; testsList.appendChild(r); });
+    else tkeys.forEach(tn => {
+      const r = document.createElement('div');
+      const rec = (tests && tests[tn]) ? tests[tn] : {};
+      const pts = Number(rec.totalPoints || 0);
+      const tsRaw = rec.timestamp || '';
+      let tsText = '';
+      try {
+        // handle Firestore Timestamp objects or ISO strings
+        let d = null;
+        if (tsRaw && typeof tsRaw === 'object' && typeof tsRaw.toDate === 'function') d = tsRaw.toDate();
+        else if (tsRaw) d = new Date(tsRaw);
+        if (d && !isNaN(d.getTime())) tsText = d.toLocaleString();
+        else tsText = String(tsRaw || '');
+      } catch (e) { tsText = String(tsRaw || ''); }
+
+      // Example render: "Advanced Accounting — 115 pts • Oct 7, 2025, 10:36 PM"
+      r.innerHTML = '<strong>' + escapeHtml(tn) + '</strong>'
+        + ' — <span class="pts">' + (pts.toLocaleString()) + '</span> pts'
+        + (tsText ? (' <small class="muted">• ' + escapeHtml(tsText) + '</small>') : '');
+      testsList.appendChild(r);
+    });
     testsEl.appendChild(testsList);
     content.appendChild(testsEl);
 

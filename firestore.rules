@@ -1,0 +1,69 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Public config
+    match /config/bannedWords {
+      allow read: if true;
+    }
+
+    // Public username lookup (keep read public so name->uid lookups work)
+    match /usernames/{username} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.uid == request.resource.data.uid;
+    }
+
+    // Public leaderboard access (scores are public)
+    match /leaderboards/{testId}/scores/{scoreId} {
+      // allow read for anyone; writes should be allowed for authenticated and anonymous per app policy
+      allow read: if true;
+      allow create: if true;
+      // disallow arbitrary deletes/updates by unauthenticated clients
+      allow update, delete: if request.auth != null && request.auth.uid == resource.data.uid;
+    }
+
+    // Public profiles collection: contains only public fields (username, avatarUrl, achievements summary, tests summary)
+    // This allows unauthenticated users to view basic public profile info while keeping private data under /accounts or /users.
+    match /publicProfiles/{uid} {
+      allow read: if true; // public profile data is readable by anyone
+      allow write: if request.auth != null && request.auth.uid == uid; // only owner may write their public profile
+    }
+
+    // Logging
+    match /logs/{logId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Private user accounts: full private data restricted to owner
+    match /accounts/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Private user profile
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Score and topic breakdowns (write-only from client for own user)
+    match /users/{userId}/scores/{testId} {
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    match /users/{userId}/topics/{testId} {
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Reports: anyone can create. Reading/modifying reports should be restricted to admins or the owner.
+    match /reports/{reportId} {
+      allow create: if request.resource.data.keys().hasAll(['message', 'page']) 
+                      && request.resource.data.message is string
+                      && request.resource.data.page is string
+                      && (request.resource.data.email is string || !('email' in request.resource.data))
+                      && request.resource.data.message.size() > 0
+                      && request.resource.data.message.size() <= 2000;
+
+      // Allow read/write only to authenticated user who created it or admins (adjust as needed)
+      allow read, update, delete: if request.auth != null && request.auth.uid == request.resource.data.uid;
+    }
+  }
+}

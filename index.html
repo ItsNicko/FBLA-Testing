@@ -177,9 +177,16 @@
         async submitScore(testId, name, points) {
           if (!testId) throw new Error("missing testId");
           const col = collection(db, "leaderboards", testId, "scores");
+          // include the current auth UID when available so clients can link leaderboard
+          // entries to public profiles without relying on name->uid lookups.
+          const uid =
+            auth && auth.currentUser && auth.currentUser.uid
+              ? auth.currentUser.uid
+              : null;
           const docRef = await addDoc(col, {
             name: name || "Anonymous",
             points: Number(points) || 0,
+            uid: uid,
             createdAt: serverTimestamp(),
           });
           return docRef;
@@ -211,7 +218,18 @@
           const path = `leaderboards/${testId}/scores/${docId}`;
           // create doc ref and set
           const dref = doc(db, "leaderboards", testId, "scores", docId);
-          await setDoc(dref, data);
+          // Ensure uid is present when possible so downstream clients can resolve profiles.
+          const finalData = Object.assign({}, data || {});
+          if (!finalData.uid) {
+            try {
+              const cur =
+                auth && auth.currentUser ? auth.currentUser.uid : null;
+              if (cur) finalData.uid = cur;
+            } catch (e) {
+              /* ignore */
+            }
+          }
+          await setDoc(dref, finalData);
           return true;
         },
       };
@@ -241,25 +259,33 @@
       // accounts helper: read/write accounts/{uid}
       window.accounts = {
         async get(uid) {
-          if (!uid) throw new Error('missing uid');
-          const dref = doc(db, 'accounts', uid);
+          if (!uid) throw new Error("missing uid");
+          const dref = doc(db, "accounts", uid);
           const snap = await getDoc(dref);
           return snap && snap.exists() ? snap.data() : null;
         },
         async set(uid, data, options = { merge: true }) {
-          if (!uid) throw new Error('missing uid');
-          const dref = doc(db, 'accounts', uid);
-          await setDoc(dref, data, options && options.merge ? { merge: true } : undefined);
+          if (!uid) throw new Error("missing uid");
+          const dref = doc(db, "accounts", uid);
+          await setDoc(
+            dref,
+            data,
+            options && options.merge ? { merge: true } : undefined
+          );
           return true;
-        }
+        },
       };
 
       // writeLog wrapper for convenience
-      window.writeLog = async function(action, context) {
-        if (!action) throw new Error('missing action');
-        const id = `${Date.now()}_${Math.random().toString(36).slice(2,9)}`;
-        const dref = doc(db, 'logs', id);
-        await setDoc(dref, { action, context: context || {}, timestamp: serverTimestamp() });
+      window.writeLog = async function (action, context) {
+        if (!action) throw new Error("missing action");
+        const id = `${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
+        const dref = doc(db, "logs", id);
+        await setDoc(dref, {
+          action,
+          context: context || {},
+          timestamp: serverTimestamp(),
+        });
         return true;
       };
     </script>
@@ -398,7 +424,7 @@
             <button id="loginBtn">Log In</button>
             <button id="logoutBtn" style="display: none">Log Out</button>
           </div>
-          <div style="margin-top:12px">
+          <div style="margin-top: 12px">
             <button id="viewProfileBtn">View Public Profile</button>
           </div>
           <div
