@@ -15,6 +15,9 @@ let testRunning = false;
 let _nextFlashcardTimer = null;
 let _endedEarly = false;
 
+// per-test runtime metrics collected during a test (times in ms, accuracy)
+let testMetrics = { topics: {}, questions: [] };
+
 // cached current username (populated on auth state changes)
 window.currentUsername = null;
 
@@ -436,6 +439,7 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     const endBtnGlobal = document.getElementById('endBtn');
     if (endBtnGlobal) {
+      try { endBtnGlobal.onclick = null; } catch (e) {}
       endBtnGlobal.addEventListener('click', (e) => {
         // if test isn't running, ignore
         if (!testRunning) return;
@@ -895,6 +899,8 @@ function generateFlashcard() {
 
   progress.done++;
   firstAttempt = true;
+  // question start timestamp
+  const qStart = Date.now();
 
   const card = document.createElement('div');
   card.className = 'flashcard';
@@ -945,6 +951,17 @@ function generateFlashcard() {
       if (answeredCorrectly) return;
       if (li.dataset.clicked === 'true') return;
       li.dataset.clicked = 'true';
+
+      const elapsed = Date.now() - qStart;
+
+      // record question metric
+      try {
+        testMetrics.questions.push({ question: q.question, topic: q.topic, elapsedMs: elapsed, correct: (option === q.correctAnswer), firstAttempt: firstAttempt });
+        if (!testMetrics.topics[q.topic]) testMetrics.topics[q.topic] = { times: [], correct: 0, attempts: 0 };
+        testMetrics.topics[q.topic].times.push(elapsed);
+        testMetrics.topics[q.topic].attempts += 1;
+        if (option === q.correctAnswer) testMetrics.topics[q.topic].correct += 1;
+      } catch (e) { console.warn('record metric failed', e); }
 
       if (option === q.correctAnswer) {
         handleCorrect(q.topic);
@@ -1164,18 +1181,22 @@ function confirmEndTest() {
   overlay.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);z-index:999999;';
   const panel = document.createElement('div'); panel.style = 'background:var(--surface,#fff);color:var(--text-color,#102027);padding:18px;border-radius:10px;min-width:320px;max-width:560px;box-shadow:0 12px 40px rgba(0,0,0,0.3);position:relative;';
   overlay.innerHTML = '';
-  const title = document.createElement('h3'); title.textContent = 'Are you sure you want to end the test?'; panel.appendChild(title);
-  const note = document.createElement('div'); note.style='margin-top:6px;color:var(--muted,#666);'; note.textContent = 'Ending the test will save your score to your account (not the public leaderboard) unless you choose to submit it.'; panel.appendChild(note);
+  const title = document.createElement('h3'); title.textContent = 'Are you sure you want to end test'; panel.appendChild(title);
+  const note = document.createElement('div'); note.style='margin-top:6px;color:var(--muted,#666);'; note.textContent = 'Ending the test will save your score to your account (not the public leaderboard).'; panel.appendChild(note);
 
-  const actions = document.createElement('div'); actions.style='display:flex;gap:8px;margin-top:12px;';
-  const yesBtn = document.createElement('button'); yesBtn.textContent = 'Yes, I want to end test';
-  const noBtn = document.createElement('button'); noBtn.textContent = 'No, continue with test';
-  const viewOnlyLink = document.createElement('a'); viewOnlyLink.href = '#'; viewOnlyLink.textContent = 'No, just view analytics'; viewOnlyLink.style='margin-left:8px;align-self:center;font-size:13px;';
+  const actions = document.createElement('div'); actions.style='display:flex;gap:8px;margin-top:12px;align-items:center;';
+  const yesBtn = document.createElement('button'); yesBtn.textContent = 'Yes';
+  const noBtn = document.createElement('button'); noBtn.textContent = 'No, continue';
+  const viewOnlyLink = document.createElement('a'); viewOnlyLink.href = '#'; viewOnlyLink.textContent = 'no — view analytics for this test'; viewOnlyLink.style='margin-left:8px;align-self:center;font-size:12px;color:var(--muted,#666);text-decoration:underline;cursor:pointer;';
 
   yesBtn.addEventListener('click', async () => {
     try {
-      // attempt to save to Firestore under users/{uid}/scores and users/{uid}/topics
-      await saveScoreToFirestore();
+      // attempt to save to Firestore under users/{uid}/scores and users/{uid}/topics (account only)
+      const ok = await saveScoreToFirestore();
+      if (!ok) {
+        showPopup('Failed to save your score. Please try again or check your connection.');
+        return;
+      }
     } catch (e) { console.warn('saveScoreToFirestore failed on confirm', e); }
     overlay.style.display = 'none';
     try { endTest(); } catch (e) {}
@@ -1202,7 +1223,7 @@ async function showUserScoresOverlay(uid) {
     let overlay = document.getElementById('userScoresOverlay');
     if (!overlay) { overlay = document.createElement('div'); overlay.id = 'userScoresOverlay'; document.body.appendChild(overlay); }
     overlay.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);z-index:999999;';
-    const panel = document.createElement('div'); panel.style = 'background:var(--surface,#fff);color:var(--text-color,#102027);padding:18px;border-radius:10px;min-width:320px;max-width:720px;max-height:86vh;overflow:auto;box-shadow:0 12px 40px rgba(0,0,0,0.3);position:relative;';
+  const panel = document.createElement('div'); panel.style = 'background:var(--surface,#fff);color:var(--text-color,#102027);padding:20px;border-radius:12px;min-width:280px;max-width:720px;max-height:86vh;overflow:auto;box-shadow:0 18px 48px rgba(0,0,0,0.32);position:relative;';
     overlay.innerHTML = '';
     const closeBtn = document.createElement('button'); closeBtn.textContent = '×'; closeBtn.style = 'position:absolute;right:12px;top:8px;border:none;background:none;font-size:20px;cursor:pointer;'; closeBtn.onclick = () => { overlay.style.display='none'; };
     panel.appendChild(closeBtn);
@@ -1229,8 +1250,11 @@ async function showUserScoresOverlay(uid) {
         } else {
           rows.sort((a,b) => (b.ts || '').localeCompare(a.ts || ''));
           rows.forEach(r => {
-            const row = document.createElement('div'); row.style='display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;background:var(--surface,#f6f9fb);';
-            const left = document.createElement('div'); left.textContent = `${r.id} — ${r.points} pts`; left.style='font-weight:600;';
+            const row = document.createElement('div'); row.style='display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(250,250,250,0.9), rgba(240,240,240,0.9));box-shadow:0 4px 10px rgba(0,0,0,0.04);';
+            const left = document.createElement('div'); left.style='display:flex;flex-direction:column;';
+            const title = document.createElement('div'); title.textContent = r.id; title.style='font-weight:700;';
+            const meta = document.createElement('div'); meta.textContent = `${r.points} pts • ${r.ts ? new Date(r.ts).toLocaleString() : ''}`; meta.style='font-size:13px;color:var(--muted,#666);';
+            left.appendChild(title); left.appendChild(meta);
             const openBtn = document.createElement('button'); openBtn.textContent = 'View analytics'; openBtn.addEventListener('click', () => { overlay.style.display='none'; showAnalyticsOverlay(r.id); });
             row.appendChild(left); row.appendChild(openBtn); list.appendChild(row);
           });
@@ -1248,89 +1272,107 @@ async function showUserScoresOverlay(uid) {
 async function saveScoreToFirestore() {
   try {
     const uid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || null;
-    if (!uid) return showPopup('You must be logged in to save your score.');
-    const testId = currentTest?.testName || 'unknown';
-    const timestamp = new Date().toISOString();
-
-    // topicScores needs to be available for the later accounts mirror block
-    let topicScores = {};
-
-    // save total points under scores/{testId}
-    try {
-      const scoreRef = window.doc(window.db, 'users', uid, 'scores', testId);
-  await window.setDoc(scoreRef, { totalPoints, timestamp });
-  // Log score save
-  try { writeLog('save_score', { testId, totalPoints }); } catch (e) { console.warn('save_score log failed', e); }
-    } catch (e) {
-      console.warn('save score failed', e);
+    if (!uid) {
+      showPopup('You must be logged in to save your score.');
+      return false;
     }
 
-    // save topics breakdown under topics/{testId}
+    const testId = currentTest?.testName || 'unknown';
+    const timestamp = new Date().toISOString();
+    let topicScores = {};
+
+    // Save total points (scores/{testId})
+    try {
+      const scoreRef = window.doc(window.db, 'users', uid, 'scores', testId);
+      await window.setDoc(scoreRef, { totalPoints, timestamp });
+      try { writeLog('save_score', { testId, totalPoints }); } catch {}
+    } catch (e) {
+      console.warn('save score failed', e);
+      return false; // <-- CRITICAL FAILURE
+    }
+
+    // Save topic breakdown (topics/{testId})
     try {
       topicScores = {};
       Object.keys(scores.topics || {}).forEach(topic => {
         const s = scores.topics[topic] || {};
         const firstAttemptCorrect = Number(s.firstAttemptCorrect || 0);
         const total = Number(s.total || 0);
-        topicScores[topic] = { firstAttemptCorrect, total };
+        const tmetrics = testMetrics?.topics?.[topic] || null;
+
+        let avgTimeMs = null;
+        if (tmetrics?.times?.length) {
+          const sum = tmetrics.times.reduce((a, b) => a + b, 0);
+          avgTimeMs = Math.round(sum / tmetrics.times.length);
+        }
+        topicScores[topic] = { firstAttemptCorrect, total, avgTimeMs };
       });
+
+      // Include sample questions
+      const qsample = (Array.isArray(testMetrics?.questions)) ? testMetrics.questions.slice(-25) : [];
+      if (qsample.length) topicScores.__sampleQuestions = qsample;
+
       const topicsRef = window.doc(window.db, 'users', uid, 'topics', testId);
-  await window.setDoc(topicsRef, topicScores);
-  // Log topics save
-  try { writeLog('save_topics', { testId, topicCount: Object.keys(topicScores).length }); } catch (e) { console.warn('save_topics log failed', e); }
+      await window.setDoc(topicsRef, topicScores);
+      try { writeLog('save_topics', { testId, topicCount: Object.keys(topicScores).length }); } catch {}
     } catch (e) {
       console.warn('save topics failed', e);
+      return false; // <-- CRITICAL FAILURE
     }
-    // Mirror aggregated data into accounts/{uid}
+
+    // Persist full analytics (NON-FATAL FAIL)
+    try {
+      await persistFullAnalytics(uid, testId, testMetrics);
+    } catch (e) {
+      console.warn('persistFullAnalytics failed', e);
+      // DO NOT RETURN FALSE — analytics is optional
+    }
+
+    // Mirror to /accounts/{uid} (NON-FATAL FAIL)
     try {
       const accountsRef = window.doc(window.db, 'accounts', uid);
-      // prefer cached username if available (set on login/signup)
       let cachedName = null;
-      try { cachedName = localStorage.getItem && localStorage.getItem('fblacer_username'); } catch (e) { cachedName = null; }
-      // ensure usernames mapping exists (best-effort)
+      try { cachedName = localStorage.getItem('fblacer_username'); } catch {}
       try {
         const mapName = cachedName || 'Anonymous';
-        if (mapName && window.doc && window.setDoc && window.db && uid) {
-          try { await window.setDoc(window.doc(window.db, 'usernames', mapName), { uid }); } catch (e) { console.warn('username mapping write failed', e); }
-        }
-      } catch (e) { console.warn('username mapping block failed', e); }
+        await window.setDoc(window.doc(window.db, 'usernames', mapName), { uid });
+      } catch (e) {}
+
       const accountPayload = {
         lastUpdated: timestamp,
         username: cachedName || undefined,
         tests: { [testId]: { totalPoints, timestamp } },
         topics: { [testId]: topicScores }
       };
+
       if (window.runTransaction) {
-        try {
-          await window.runTransaction(window.db, async (tx) => {
-            const snap = await tx.get(accountsRef);
-            let base = {};
-            if (snap && snap.exists && snap.exists()) {
-              try { base = snap.data() || {}; } catch (e) { base = {}; }
-            }
-            // merge nested maps for tests and topics
-            const merged = Object.assign({}, base, {
-              lastUpdated: timestamp,
-              username: accountPayload.username || base.username,
-              tests: Object.assign({}, base.tests || {}, accountPayload.tests),
-              topics: Object.assign({}, base.topics || {}, accountPayload.topics)
-            });
-            tx.set(accountsRef, merged);
-          });
-        } catch (e) {
-          // fallback to setDoc
-          try { await window.setDoc(accountsRef, accountPayload, { merge: true }); } catch (err) { console.warn('accounts write failed', err); }
-        }
+        await window.runTransaction(window.db, async (tx) => {
+          const snap = await tx.get(accountsRef);
+          let base = snap?.exists() ? snap.data() : {};
+          const merged = {
+            ...base,
+            lastUpdated: timestamp,
+            username: accountPayload.username || base.username,
+            tests: { ...(base.tests || {}), ...accountPayload.tests },
+            topics: { ...(base.topics || {}), ...accountPayload.topics }
+          };
+          tx.set(accountsRef, merged);
+        });
       } else {
-        try { await window.setDoc(accountsRef, accountPayload, { merge: true }); } catch (e) { console.warn('accounts write failed', e); }
+        await window.setDoc(accountsRef, accountPayload, { merge: true });
       }
-      try { writeLog('mirror_accounts', { testId, totalPoints, topicCount: Object.keys(topicScores).length }); } catch (e) { console.warn('mirror_accounts log failed', e); }
+
+      try { writeLog('mirror_accounts', { testId, totalPoints, topicCount: Object.keys(topicScores).length }); } catch {}
     } catch (e) {
       console.warn('mirror accounts error', e);
+      // NO RETURN FALSE — not critical
     }
+
     showToast('Saved score to your account', 'success');
+    return true; // ✅ FINAL SUCCESS
   } catch (e) {
     console.warn('saveScoreToFirestore error', e);
+    return false;
   }
 }
 
@@ -1477,7 +1519,7 @@ async function showAnalyticsOverlay(testId) {
 
     overlay.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);z-index:999999;';
     const panel = document.createElement('div');
-    panel.style = 'background:var(--surface,#fff);color:var(--text-color,#102027);padding:18px;border-radius:10px;min-width:320px;max-width:960px;max-height:86vh;overflow:auto;box-shadow:0 12px 40px rgba(0,0,0,0.3);position:relative;';
+  panel.style = 'background:var(--surface,#fff);color:var(--text-color,#102027);padding:18px;border-radius:12px;min-width:280px;max-width:920px;max-height:86vh;overflow:auto;box-shadow:0 20px 60px rgba(0,0,0,0.36);position:relative;';
     overlay.innerHTML = '';
     const closeBtn = document.createElement('button');
     closeBtn.textContent = '×';
@@ -1654,6 +1696,20 @@ async function showAnalyticsOverlay(testId) {
     attemptsEl.innerHTML = `<div style="font-weight:700;font-size:18px;">Attempts: ${historical.length || (hasLatest ? 1 : 0)}</div><div style="font-size:12px;color:var(--muted,#666);">Saved submissions</div>`;
     statsRow.appendChild(attemptsEl);
 
+    // Compute overall average time across topics if available
+    let overallAvgTime = null;
+    try {
+      const times = [];
+      Object.keys(topicData || {}).forEach(k => { const v = topicData[k]; if (v && typeof v.avgTimeMs === 'number') times.push(v.avgTimeMs); });
+      if (times.length) {
+        overallAvgTime = Math.round(times.reduce((a,b)=>a+b,0)/times.length);
+      }
+    } catch (e) { }
+    if (overallAvgTime !== null) {
+      const timeEl = document.createElement('div'); timeEl.style='min-width:160px;padding:10px;border-radius:8px;background:var(--surface,#f6f9fb);';
+      timeEl.innerHTML = `<div style="font-weight:700;font-size:18px;">Avg time: ${Math.round(overallAvgTime/1000)}s</div><div style="font-size:12px;color:var(--muted,#666);">Average time per question</div>`;
+      statsRow.appendChild(timeEl);
+    }
     container.appendChild(statsRow);
 
     // Topic breakdown bars
@@ -1684,7 +1740,9 @@ async function showAnalyticsOverlay(testId) {
           row.style = 'display:flex;flex-direction:column;gap:6px;';
           const label = document.createElement('div');
           label.style = 'display:flex;justify-content:space-between;align-items:center;font-weight:600;';
-          const left = document.createElement('div'); left.textContent = `${topic} — ${corr}/${tot} (${pct}%)`;
+          const left = document.createElement('div');
+          const tAvg = (t && typeof t.avgTimeMs === 'number') ? `${Math.round(t.avgTimeMs/1000)}s` : '—';
+          left.textContent = `${topic} — ${corr}/${tot} (${pct}%) • ${tAvg}`;
           const right = document.createElement('div'); right.style = 'font-size:12px;color:var(--muted,#666);';
           right.textContent = (globalPct !== null) ? `Avg users: ${globalPct}%` : '';
           label.appendChild(left); label.appendChild(right);
@@ -1709,6 +1767,82 @@ async function showAnalyticsOverlay(testId) {
       });
     }
     container.appendChild(topicList);
+
+    // Sample question timing (if present)
+    try {
+      const sample = (topicData && topicData.__sampleQuestions) ? topicData.__sampleQuestions : (testMetrics && testMetrics.questions ? testMetrics.questions.slice(-10) : []);
+      if (sample && sample.length) {
+        const sampleWrap = document.createElement('div'); sampleWrap.style='margin-top:12px;';
+        sampleWrap.innerHTML = '<h4>Recent question timings (sample)</h4>';
+        const sl = document.createElement('div'); sl.style='display:flex;flex-direction:column;gap:6px;max-height:160px;overflow:auto;padding-right:6px;';
+        sample.forEach(s => {
+          try {
+            const r = document.createElement('div'); r.style='padding:6px;border-radius:6px;background:rgba(0,0,0,0.03);display:flex;justify-content:space-between;align-items:center;';
+            const left = document.createElement('div'); left.textContent = `${s.topic} — ${s.question.substring(0,80)}${s.question.length>80?'…':''}`;
+            const right = document.createElement('div'); right.style='font-size:13px;color:var(--muted,#666);'; right.textContent = `${Math.round((s.elapsedMs||0)/1000)}s • ${s.correct? 'correct' : 'wrong'}`;
+            r.appendChild(left); r.appendChild(right); sl.appendChild(r);
+          } catch (e) {}
+        });
+        sampleWrap.appendChild(sl);
+        container.appendChild(sampleWrap);
+      }
+    } catch (e) {}
+
+    // Fetch detailed analytics doc (question-level) if available
+    let analyticsDoc = null;
+    try {
+      if (window.doc && window.getDoc && window.db) {
+        const aref = window.doc(window.db, 'users', uid, 'analytics', testId);
+        const asnap = await window.getDoc(aref);
+        if (asnap && asnap.exists && asnap.exists()) {
+          analyticsDoc = asnap.data ? asnap.data() : asnap._data || null;
+        }
+      }
+    } catch (e) { console.warn('fetch analytics doc failed', e); analyticsDoc = null; }
+
+    // Render per-topic histograms if analyticsDoc present
+    try {
+      const ad = analyticsDoc || null;
+      const topicHistWrap = document.createElement('div'); topicHistWrap.style='margin-top:12px;display:flex;flex-wrap:wrap;gap:12px;';
+      let histCount = 0;
+      if (ad && Array.isArray(ad.questions) && ad.questions.length) {
+        // group times by topic
+        const groups = {};
+        ad.questions.forEach(q => { try { if (!groups[q.topic]) groups[q.topic]=[]; groups[q.topic].push(Number(q.elapsedMs)||0); } catch(e){} });
+        await loadChartJs();
+        for (const topicName of Object.keys(groups)) {
+          const times = groups[topicName];
+          if (!times.length) continue;
+          // create canvas
+          const wrap = document.createElement('div'); wrap.style='width:220px;min-width:220px;max-width:33%;';
+          const htitle = document.createElement('div'); htitle.textContent = `${topicName} (time per question)`; htitle.style='font-weight:600;margin-bottom:6px;font-size:13px;';
+          const cc = document.createElement('canvas'); cc.style='width:220px;height:140px;display:block;background:transparent;border-radius:6px;';
+          wrap.appendChild(htitle); wrap.appendChild(cc); topicHistWrap.appendChild(wrap);
+
+          // bin times into histogram buckets (in seconds)
+          const secs = times.map(t => Math.round(t/1000));
+          const max = Math.max(...secs);
+          const bins = Math.min(6, Math.max(3, Math.ceil(max/5)));
+          const binSize = Math.max(1, Math.ceil((max+1)/bins));
+          const counts = new Array(bins).fill(0);
+          secs.forEach(s => { const idx = Math.min(bins-1, Math.floor(s/binSize)); counts[idx]++; });
+          const labels = counts.map((_,i)=> `${i*binSize}-${(i+1)*binSize}s`);
+
+          const ctx = cc.getContext('2d');
+          try { if (window._histCharts === undefined) window._histCharts = []; } catch (e) {}
+          try { // destroy previous if any
+            const old = window._histCharts && window._histCharts[histCount]; if (old && old.destroy) old.destroy();
+          } catch (e) {}
+          const ch = new window.Chart(ctx, {
+            type: 'bar',
+            data: { labels: labels, datasets: [{ label: 'count', data: counts, backgroundColor: '#90caf9' }] },
+            options: { responsive: false, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
+          });
+          window._histCharts[histCount] = ch; histCount++;
+        }
+      }
+      if (histCount) container.appendChild(topicHistWrap);
+    } catch (e) { console.warn('render histograms failed', e); }
 
     // Chart area: show multiline Chart.js plot: "average user", "your average score", "current score"
     // Ensure Chart.js is loaded (best-effort dynamic load)
@@ -1919,8 +2053,23 @@ async function grantAchievement(uid, achievementName) {
         await window.setDoc(accRef, merged);
       } catch (e) { console.warn('grantAchievement failed', e); }
     }
-    try { writeLog('grantAchievement', { uid, achievementName }); } catch (e) {}
+      try { writeLog('grantAchievement', { uid, achievementName }); } catch (e) {}
   } catch (e) { console.warn('grantAchievement error', e); }
+}
+
+// --- Persist full analytics document when saving score ---
+async function persistFullAnalytics(uid, testId, metrics) {
+  try {
+    if (!uid || !testId || !metrics) return false;
+    if (window.doc && window.setDoc && window.db) {
+      const ref = window.doc(window.db, 'users', uid, 'analytics', testId);
+      const payload = { questions: metrics.questions || [], topics: metrics.topics || {}, timestamp: new Date().toISOString() };
+      await window.setDoc(ref, payload);
+      try { writeLog('persistFullAnalytics', { uid, testId, count: payload.questions.length }); } catch (e) {}
+      return true;
+    }
+  } catch (e) { console.warn('persistFullAnalytics failed', e); }
+  return false;
 }
 
 // Render a public profile overlay for the given uid or username
