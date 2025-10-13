@@ -604,6 +604,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  // Wire legal buttons to open policy pages in an overlay modal
+  try {
+    const openPrivacy = document.getElementById('openPrivacyBtn');
+    const openTos = document.getElementById('openTosBtn');
+    if (openPrivacy) openPrivacy.addEventListener('click', (e) => { e.preventDefault(); showLegalOverlay('legal/Privacy-Policy.html', 'Privacy Policy'); });
+    if (openTos) openTos.addEventListener('click', (e) => { e.preventDefault(); showLegalOverlay('legal/Terms-of-Service.html', 'Terms of Service'); });
+  } catch (e) { console.warn('legal button wiring failed', e); }
 });
 
 function getSegmentColors() {
@@ -1191,11 +1198,19 @@ function confirmEndTest() {
 
   yesBtn.addEventListener('click', async () => {
     try {
-      // attempt to save to Firestore under users/{uid}/scores and users/{uid}/topics (account only)
-      const ok = await saveScoreToFirestore();
-      if (!ok) {
-        showPopup('Failed to save your score. Please try again or check your connection.');
-        return;
+      // If the user is signed in, attempt to save to Firestore under users/{uid}/scores and users/{uid}/topics.
+      // If the user is not signed in, allow ending the test without saving.
+      const uid = (window.auth && window.auth.currentUser && window.auth.currentUser.uid) || null;
+      if (uid) {
+        const ok = await saveScoreToFirestore();
+        if (!ok) {
+          // Preserve prior behavior for signed-in users: notify and do not end the test on critical save failure
+          showPopup('Failed to save your score. Please try again or check your connection.');
+          return;
+        }
+      } else {
+        // Not signed in: inform the user their score won't be saved to an account, but allow ending
+        try { showToast && showToast('You are not signed in — your score will not be saved to an account.', 'info'); } catch (e) { /* ignore */ }
       }
     } catch (e) { console.warn('saveScoreToFirestore failed on confirm', e); }
     overlay.style.display = 'none';
@@ -1417,6 +1432,19 @@ function showLeaderboardOverlay(testId) {
         try { if (nameInput) { nameInput.focus(); } } catch (e) {}
         return;
       }
+      // Enforce username quality: format and banned words
+      try {
+        if (!isValidFormat(name)) {
+          showToast('Name must be 3–20 characters and may only contain letters, numbers, and underscores.', 'error');
+          try { if (nameInput) nameInput.focus(); } catch (e) {}
+          return;
+        }
+        if (!isCleanUsername(name)) {
+          showToast('That name contains inappropriate words. Please choose a different name.', 'error');
+          try { if (nameInput) nameInput.focus(); } catch (e) {}
+          return;
+        }
+      } catch (e) { console.warn('username validation failed', e); }
       try {
         if (!window.leaderboardApi || !window.leaderboardApi.submitScore) throw new Error('Leaderboard API not available');
         if (window.leaderboardAuthReady) await window.leaderboardAuthReady;
@@ -1497,6 +1525,55 @@ function showLeaderboardOverlay(testId) {
   _leaderboardState.limit = 15;
   // (previously attempted Firestore fetch here — removed to avoid permission errors)
   fetchAndRenderLeaderboard(testId);
+}
+
+// Generic legal overlay: loads an HTML file and displays it as a modal above other UI
+async function showLegalOverlay(path, title) {
+  try {
+    let overlay = document.getElementById('legalOverlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.id = 'legalOverlay';
+      document.body.appendChild(overlay);
+    }
+    overlay.style.cssText = 'position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.55);z-index:100000;';
+
+    const panel = document.createElement('div');
+    panel.style = 'background:var(--surface,#fff);color:var(--text-color,#102027);padding:18px;border-radius:10px;min-width:320px;max-width:920px;max-height:86vh;overflow:auto;box-shadow:0 20px 60px rgba(0,0,0,0.36);position:relative;';
+    overlay.innerHTML = '';
+
+    const closeBtn = document.createElement('button'); closeBtn.textContent = '×'; closeBtn.style = 'position:absolute;right:12px;top:8px;border:none;background:none;font-size:20px;cursor:pointer;'; closeBtn.onclick = () => { overlay.style.display = 'none'; };
+    panel.appendChild(closeBtn);
+
+    const h = document.createElement('h3'); h.textContent = title || 'Legal'; panel.appendChild(h);
+
+    const content = document.createElement('div'); content.style = 'margin-top:8px;';
+    panel.appendChild(content);
+
+    // Try to fetch the HTML file and inject its body content; fall back to iframe if fetch blocked
+    try {
+      const res = await fetch(path);
+      if (res.ok) {
+        const txt = await res.text();
+        // Extract body inner HTML if present
+        const m = txt.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+        const inner = m ? m[1] : txt;
+        content.innerHTML = inner;
+      } else {
+        throw new Error('fetch failed');
+      }
+    } catch (e) {
+      // Fallback: use an iframe so the file is still viewable
+      const iframe = document.createElement('iframe');
+      iframe.src = path;
+      iframe.style = 'width:100%;height:70vh;border:none;border-radius:8px;';
+      content.appendChild(iframe);
+    }
+
+    overlay.appendChild(panel);
+    document.body.style.overflow = 'hidden';
+    return overlay;
+  } catch (e) { console.warn('showLegalOverlay error', e); }
 }
 
 // Show analytics overlay for the currently signed-in user for a specific test
