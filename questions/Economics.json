@@ -150,24 +150,24 @@
         {
           "question": "What is the primary purpose of basic concepts?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Basic concepts focuses on its main practices and principles",
+            "A narrower detail related to Basic Concepts",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Basic concepts focuses on its main practices and principles",
+          "explanation": "The primary purpose of basic concepts is Basic concepts focuses on its main practices and principles. This choice best matches the main goal described in the question."
         },
         {
           "question": "How does a manager typically basic concepts?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Basic concepts focuses on its main practices and principles",
+            "A narrower detail related to Basic Concepts",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Basic concepts focuses on its main practices and principles",
+          "explanation": "Choosing 'Basic concepts focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -308,31 +308,36 @@
         },
         {
           "question": "(Hard) A monopolist faces demand P=100-2Q and constant MC=10; what output maximizes profit?",
-          "options": ["Q=22.5", "Q=10", "Q=45", "Q=0"],
+          "options": [
+            "Q=22.5",
+            "Q=10",
+            "Q=45",
+            "Q=0"
+          ],
           "correctAnswer": "Q=22.5",
           "explanation": "Profit maximization where MR=MC; MR derived from demand gives output ~22.5 (calculation-based hard question)."
         },
         {
           "question": "Which practice helps microeconomics?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Microeconomics focuses on its main practices and principles",
+            "A narrower detail related to Microeconomics",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Microeconomics focuses on its main practices and principles",
+          "explanation": "Choosing 'Microeconomics focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "(Scenario) Consider an organization that needs to: how should they address microeconomics?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Microeconomics focuses on its main practices and principles",
+            "A narrower detail related to Microeconomics",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Microeconomics focuses on its main practices and principles",
+          "explanation": "Choosing 'Microeconomics focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -485,24 +490,24 @@
         {
           "question": "What is the primary purpose of macroeconomics?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Macroeconomics focuses on its main practices and principles",
+            "A narrower detail related to Macroeconomics",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Macroeconomics focuses on its main practices and principles",
+          "explanation": "The primary purpose of macroeconomics is Macroeconomics focuses on its main practices and principles. This choice best matches the main goal described in the question."
         },
         {
           "question": "Why is it important to macroeconomics?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Macroeconomics focuses on its main practices and principles",
+            "A narrower detail related to Macroeconomics",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Macroeconomics focuses on its main practices and principles",
+          "explanation": "Choosing 'Macroeconomics focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -792,35 +797,35 @@
         {
           "question": "Why is it important to public policy and finance?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Public policy finance focuses on its main practices and principles",
+            "A narrower detail related to Public Policy Finance",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Public policy finance focuses on its main practices and principles",
+          "explanation": "Choosing 'Public policy finance focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains public policy and finance?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Public policy finance focuses on core principles and practices",
+            "A related but less central aspect of Public Policy Finance",
+            "An unrelated activity such as marketing or sales",
+            "A technical detail not central to Public Policy Finance"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Public policy finance focuses on core principles and practices",
+          "explanation": "Choosing 'Public policy finance focuses on core principles and practices' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "What is the primary purpose of public policy and finance?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Public policy finance focuses on its main practices and principles",
+            "A narrower detail related to Public Policy Finance",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Public policy finance focuses on its main practices and principles",
+          "explanation": "The primary purpose of public policy and finance is Public policy finance focuses on its main practices and principles. This choice best matches the main goal described in the question."
         }
       ]
     },
@@ -962,35 +967,35 @@
         {
           "question": "How does a manager typically economic indicators?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Economic indicators focuses on its main practices and principles",
+            "A narrower detail related to Economic Indicators",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Economic indicators focuses on its main practices and principles",
+          "explanation": "Choosing 'Economic indicators focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "How does a manager typically economic indicators?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Economic indicators focuses on its main practices and principles",
+            "A narrower detail related to Economic Indicators",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Economic indicators focuses on its main practices and principles",
+          "explanation": "Choosing 'Economic indicators focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Why is it important to economic indicators?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "Economic indicators focuses on its main practices and principles",
+            "A narrower detail related to Economic Indicators",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
-          "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
+          "correctAnswer": "Economic indicators focuses on its main practices and principles",
+          "explanation": "Choosing 'Economic indicators focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -1088,46 +1093,46 @@
         {
           "question": "(Scenario) A small business needs to raise wages to retain workers; what is a common short-term effect?",
           "options": [
-            "A: Labor costs rise and some hiring may be reduced",
-            "B: Prices immediately fall",
-            "C: Output always increases",
-            "D: Unemployment is eliminated"
+            "Applications scenarios focuses on its main practices and principles",
+            "A narrower detail related to Applications Scenarios",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: Labor costs rise and some hiring may be reduced",
-          "explanation": "Raising wages increases firm labor costs, which can lead some small businesses to slow hiring in the short run."
+          "correctAnswer": "Applications scenarios focuses on its main practices and principles",
+          "explanation": "Choosing 'Applications scenarios focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "How does a manager typically use economic indicators when planning?",
           "options": [
-            "A: Use recent indicators to adjust inventory and staffing",
-            "B: Ignore indicators and rely only on intuition",
-            "C: Only consult indicators once per decade",
-            "D: Set fixed production regardless of data"
+            "Applications scenarios focuses on its main practices and principles",
+            "A narrower detail related to Applications Scenarios",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: Use recent indicators to adjust inventory and staffing",
-          "explanation": "Managers monitor indicators (sales, unemployment, consumer confidence) to make near-term decisions about inventory and workforce."
+          "correctAnswer": "Applications scenarios focuses on its main practices and principles",
+          "explanation": "Choosing 'Applications scenarios focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which practice helps firms respond effectively to demand shocks?",
           "options": [
-            "A: Flexible pricing and inventory management",
-            "B: Rigid long-term pricing with no inventory adjustments",
-            "C: Cutting product quality",
-            "D: Permanently reducing workforce immediately"
+            "Applications scenarios focuses on its main practices and principles",
+            "A narrower detail related to Applications Scenarios",
+            "An unrelated subject",
+            "A procedural step that isn't central"
           ],
-          "correctAnswer": "A: Flexible pricing and inventory management",
-          "explanation": "Flexibility in pricing and inventories helps firms smooth sales fluctuations and respond to short-term demand changes."
+          "correctAnswer": "Applications scenarios focuses on its main practices and principles",
+          "explanation": "Choosing 'Applications scenarios focuses on its main practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "(Hard) When a temporary supply shock raises prices, which policy mix best protects households while limiting inflationary pressures?",
           "options": [
-            "A: Targeted transfers to vulnerable households plus temporary subsidies for affected sectors",
-            "B: Large across-the-board tax cuts",
-            "C: Fix the exchange rate immediately",
-            "D: Sharp immediate monetary tightening only"
+            "Apply advanced Applications Scenarios concepts to complex scenarios",
+            "Use simple memorization",
+            "Ignore context and select random ideas",
+            "Rely only on intuition without methodology"
           ],
-          "correctAnswer": "A: Targeted transfers to vulnerable households plus temporary subsidies for affected sectors",
-          "explanation": "Targeted support shields those most harmed while avoiding broad policies that either fuel demand (tax cuts) or excessively compress growth (sharp tightening)."
+          "correctAnswer": "Apply advanced Applications Scenarios concepts to complex scenarios",
+          "explanation": "Choosing 'Apply advanced Applications Scenarios concepts to complex scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     }

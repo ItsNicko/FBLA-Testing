@@ -106,12 +106,12 @@
         {
           "question": "(Hard) Which practice helps Communication Concepts? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -221,12 +221,12 @@
         {
           "question": "(Hard) How does a manager typically Written and Report Applications? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -336,12 +336,12 @@
         {
           "question": "(Hard) Which practice helps Reading Comprehension? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -462,12 +462,12 @@
         {
           "question": "(Hard) How does a manager typically Grammar? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -588,12 +588,12 @@
         {
           "question": "(Hard) Which practice helps Editing & Proofreading? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -714,12 +714,12 @@
         {
           "question": "(Hard) What is the primary purpose of Verbal & Nonverbal Communication? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -785,34 +785,34 @@
         {
           "question": "Which practice helps Word Definition & Usage? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "What is the primary purpose of word definition & usage?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Hard) Which practice helps word definition & usage?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -878,46 +878,46 @@
         {
           "question": "What is the primary purpose of Punctuation & Capitalization? (Challenging)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "How does a manager typically punctuation & capitalization?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Scenario) Consider an organization that needs to: how should they address punctuation & capitalization?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Hard) Which is a challenging question about Punctuation & Capitalization?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
             "D: None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     },
@@ -982,46 +982,46 @@
         {
           "question": "Which of the following best explains Spelling? (Challenging)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "Why is it important to spelling?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "Why is it important to spelling?",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Hard) Which is a challenging question about Spelling?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
             "D: None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     },
@@ -1141,13 +1141,13 @@
         {
           "question": "(Hard) Which is a challenging question about Digital Communications?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     }

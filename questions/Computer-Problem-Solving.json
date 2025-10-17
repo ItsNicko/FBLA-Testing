@@ -84,13 +84,13 @@
         {
           "question": "(Hard) Which is a challenging question about Operating Systems — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Operating Systems 1 concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Operating Systems 1",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Operating Systems 1 concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Operating Systems 1 concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -111,79 +111,79 @@
         {
           "question": "Which practice helps Operating Systems? (Challenging)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Hard) Which is a challenging question about Operating Systems?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -270,13 +270,13 @@
         {
           "question": "(Hard) Which is a challenging question about Networks — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Networks 1 concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Networks 1",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Networks 1 concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Networks 1 concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -297,79 +297,79 @@
         {
           "question": "Why is it important to Networks? (Challenging)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Hard) Which is a challenging question about Networks?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -456,13 +456,13 @@
         {
           "question": "(Hard) Which is a challenging question about Computer Hardware and Connectivity — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Computer Hardware Connectivity 1 concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Computer Hardware Connectivity 1",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Computer Hardware Connectivity 1 concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Computer Hardware Connectivity 1 concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -483,79 +483,79 @@
         {
           "question": "Which practice helps Computer Hardware and Connectivity? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Computer hardware connectivity 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Computer Hardware Connectivity 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Computer hardware connectivity 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Computer hardware connectivity 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Computer hardware connectivity 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Computer Hardware Connectivity 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Computer hardware connectivity 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Computer hardware connectivity 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Computer hardware connectivity 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Computer Hardware Connectivity 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Computer hardware connectivity 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Computer hardware connectivity 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Computer hardware connectivity 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Computer Hardware Connectivity 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Computer hardware connectivity 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Computer hardware connectivity 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Computer Hardware and Connectivity — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Computer hardware connectivity 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Computer Hardware Connectivity 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Computer hardware connectivity 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Computer hardware connectivity 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "(Hard) Which of the following best explains Computer Hardware and Connectivity — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Computer hardware connectivity 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Computer Hardware Connectivity 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Computer hardware connectivity 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Computer hardware connectivity 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -642,13 +642,13 @@
         {
           "question": "(Hard) Which is a challenging question about Security — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Security 1 concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Security 1",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Security 1 concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Security 1 concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -669,79 +669,79 @@
         {
           "question": "Why is it important to Security? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "Which of the following best explains Security — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Security 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Security 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Security 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Security 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Security — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Security 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Security 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Security 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Security 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Security — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Security 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Security 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Security 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Security 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Security — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Security 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Security 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Security 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Security 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Security — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Security 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Security 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Security 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Security 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "(Hard) Which of the following best explains Security — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Security 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Security 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Security 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Security 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -828,13 +828,13 @@
         {
           "question": "(Hard) Which is a challenging question about Operating Systems — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Operating Systems 1 concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Operating Systems 1",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Operating Systems 1 concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Operating Systems 1 concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -855,79 +855,79 @@
         {
           "question": "Why is it important to Operating Systems? (Challenging)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Hard) Which is a challenging question about Operating Systems?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Operating Systems — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Operating systems 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Operating Systems 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Operating systems 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Operating systems 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -1014,13 +1014,13 @@
         {
           "question": "(Hard) Which is a challenging question about Networks — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Networks 1 concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Networks 1",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Networks 1 concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Networks 1 concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -1041,79 +1041,79 @@
         {
           "question": "Which practice helps Networks? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "(Hard) Which of the following best explains Networks — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Networks 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Networks 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Networks 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Networks 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },

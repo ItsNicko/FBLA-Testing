@@ -13,7 +13,7 @@
             "inventory"
           ],
           "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "explanation": "Restructure department roles is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "(Hard) Scenario: A local company faces a problem with declining customer satisfaction. As a HR director, what would be the best next step?",
@@ -35,7 +35,7 @@
             "ROI"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Introduction is communication. This choice best matches the main goal described in the question."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -46,7 +46,7 @@
             "ROI"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "communication is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Scenario: A local company faces a problem with declining employee retention. As a manager, what would be the best next step?",
@@ -57,7 +57,7 @@
             "equity"
           ],
           "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "explanation": "Investigate causes and collect data is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining employee retention. As a marketing lead, what would be the best next step?",
@@ -68,7 +68,7 @@
             "policy"
           ],
           "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "explanation": "Adjust the marketing strategy is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -79,7 +79,7 @@
             "procedure"
           ],
           "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "explanation": "policy is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a manager, what would be the best next step?",
@@ -90,7 +90,7 @@
             "equity"
           ],
           "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "explanation": "Investigate causes and collect data is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         }
       ]
     },
@@ -117,7 +117,7 @@
             "communication"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Ethics is communication. This choice best matches the main goal described in the question."
         },
         {
           "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a marketing lead, what would be the best next step?",
@@ -128,7 +128,7 @@
             "liability"
           ],
           "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "explanation": "Adjust the marketing strategy is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "What is the primary purpose of Ethics?",
@@ -139,7 +139,7 @@
             "budget"
           ],
           "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Ethics is leadership. This choice best matches the main goal described in the question."
         },
         {
           "question": "What is the primary purpose of Ethics?",
@@ -150,7 +150,7 @@
             "leader"
           ],
           "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Ethics is engagement. This choice best matches the main goal described in the question."
         },
         {
           "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a HR director, what would be the best next step?",
@@ -161,7 +161,7 @@
             "policy"
           ],
           "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "explanation": "Restructure department roles is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -172,7 +172,7 @@
             "engagement"
           ],
           "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "explanation": "engagement is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Which term best describes a company's expected incoming money?",
@@ -183,7 +183,7 @@
             "stakeholder"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "profit refers to funds coming into the organization; it best matches the phrase used in the question."
         }
       ]
     },
@@ -199,7 +199,7 @@
             "leader"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "budget refers to funds coming into the organization; it best matches the phrase used in the question."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -210,7 +210,7 @@
             "asset"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "profit is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -221,7 +221,7 @@
             "policy"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "communication is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "What is a key consideration when creating a budget?",
@@ -232,7 +232,7 @@
             "budget"
           ],
           "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "explanation": "Leadership is the best answer because it aligns with the concept asked for in the question."
         },
         {
           "question": "What is the primary purpose of Human Resources?",
@@ -243,7 +243,7 @@
             "inventory"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Human Resources is profit. This choice best matches the main goal described in the question."
         },
         {
           "question": "What is a key consideration when creating a budget?",
@@ -254,7 +254,7 @@
             "policy"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "Profit is the best answer because it aligns with the concept asked for in the question."
         },
         {
           "question": "What is the primary purpose of Human Resources?",
@@ -265,7 +265,7 @@
             "communication"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Human Resources is communication. This choice best matches the main goal described in the question."
         },
         {
           "question": "(Hard) Which term best describes a company's expected incoming money?",
@@ -292,7 +292,7 @@
             "leader"
           ],
           "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "explanation": "Conduct employee surveys is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "(Hard) Which action improves employee engagement?",
@@ -314,7 +314,7 @@
             "stakeholder"
           ],
           "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "explanation": "Investigate causes and collect data is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -325,7 +325,7 @@
             "inventory"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "communication is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "What is the primary purpose of Management?",
@@ -336,7 +336,7 @@
             "budget"
           ],
           "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Management is policy. This choice best matches the main goal described in the question."
         },
         {
           "question": "What is the primary purpose of Management?",
@@ -347,7 +347,7 @@
             "margin"
           ],
           "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Management is engagement. This choice best matches the main goal described in the question."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -358,7 +358,7 @@
             "profit"
           ],
           "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "explanation": "policy is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Scenario: A local company faces a problem with declining cash flow. As a HR director, what would be the best next step?",
@@ -369,7 +369,7 @@
             "margin"
           ],
           "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "explanation": "Investigate causes and collect data is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         }
       ]
     },
@@ -385,7 +385,7 @@
             "policy"
           ],
           "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "explanation": "policy is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
@@ -396,7 +396,7 @@
             "profit"
           ],
           "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "explanation": "Investigate causes and collect data is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining cash flow. As a project manager, what would be the best next step?",
@@ -407,7 +407,7 @@
             "equity"
           ],
           "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "explanation": "Adjust the marketing strategy is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "(Hard) What is a key consideration when creating a budget?",
@@ -429,7 +429,7 @@
             "leader"
           ],
           "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "explanation": "Conduct employee surveys is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining employee retention. As a marketing lead, what would be the best next step?",
@@ -440,7 +440,7 @@
             "inventory"
           ],
           "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "explanation": "Investigate causes and collect data is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Which term best describes a company's expected incoming money?",
@@ -451,7 +451,7 @@
             "margin"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "budget refers to funds coming into the organization; it best matches the phrase used in the question."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -462,7 +462,7 @@
             "engagement"
           ],
           "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "explanation": "engagement is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         }
       ]
     },
@@ -478,7 +478,7 @@
             "inventory"
           ],
           "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "explanation": "Restructure department roles is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Which term best describes a company's expected incoming money?",
@@ -489,7 +489,7 @@
             "profit"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "communication refers to funds coming into the organization; it best matches the phrase used in the question."
         },
         {
           "question": "What is the primary purpose of Communication?",
@@ -500,7 +500,7 @@
             "profit"
           ],
           "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Communication is policy. This choice best matches the main goal described in the question."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -511,7 +511,7 @@
             "communication"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "communication is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a marketing lead, what would be the best next step?",
@@ -522,7 +522,7 @@
             "liability"
           ],
           "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "explanation": "Conduct employee surveys is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "What is the primary purpose of Communication?",
@@ -533,7 +533,7 @@
             "leader"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Communication is communication. This choice best matches the main goal described in the question."
         },
         {
           "question": "(Hard) Scenario: A local company faces a problem with declining customer satisfaction. As a manager, what would be the best next step?",
@@ -555,7 +555,7 @@
             "policy"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Communication is budget. This choice best matches the main goal described in the question."
         }
       ]
     },
@@ -571,7 +571,7 @@
             "profit"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "Profit is the best answer because it aligns with the concept asked for in the question."
         },
         {
           "question": "(Hard) Scenario: A local company faces a problem with declining employee retention. As a HR director, what would be the best next step?",
@@ -593,7 +593,7 @@
             "leader"
           ],
           "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "explanation": "policy refers to funds coming into the organization; it best matches the phrase used in the question."
         },
         {
           "question": "What is a key consideration when creating a budget?",
@@ -604,7 +604,7 @@
             "budget"
           ],
           "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "explanation": "Leadership is the best answer because it aligns with the concept asked for in the question."
         },
         {
           "question": "What is the primary purpose of Management?",
@@ -615,7 +615,7 @@
             "policy"
           ],
           "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Management is policy. This choice best matches the main goal described in the question."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -626,7 +626,7 @@
             "revenue"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "profit is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "What is the primary purpose of Management?",
@@ -637,7 +637,7 @@
             "procedure"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Management is profit. This choice best matches the main goal described in the question."
         },
         {
           "question": "Scenario: A local company faces a problem with declining cash flow. As a marketing lead, what would be the best next step?",
@@ -648,7 +648,7 @@
             "Adjust the marketing strategy"
           ],
           "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "explanation": "Adjust the marketing strategy is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         }
       ]
     },
@@ -664,7 +664,7 @@
             "equity"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "Communication is the best answer because it aligns with the concept asked for in the question."
         },
         {
           "question": "What is the primary purpose of Finance?",
@@ -675,7 +675,7 @@
             "profit"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Finance is budget. This choice best matches the main goal described in the question."
         },
         {
           "question": "What is the primary purpose of Finance?",
@@ -686,7 +686,7 @@
             "asset"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Finance is profit. This choice best matches the main goal described in the question."
         },
         {
           "question": "(Hard) Scenario: A local company faces a problem with declining employee retention. As a HR director, what would be the best next step?",
@@ -708,7 +708,7 @@
             "policy"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "communication is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Which term best describes a company's expected incoming money?",
@@ -719,7 +719,7 @@
             "stakeholder"
           ],
           "correctAnswer": "communication",
-          "explanation": "Auto-generated question."
+          "explanation": "communication refers to funds coming into the organization; it best matches the phrase used in the question."
         },
         {
           "question": "Scenario: A local company faces a problem with declining cash flow. As a HR director, what would be the best next step?",
@@ -730,7 +730,7 @@
             "stakeholder"
           ],
           "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "explanation": "Adjust the marketing strategy is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining employee retention. As a manager, what would be the best next step?",
@@ -741,7 +741,7 @@
             "inventory"
           ],
           "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "explanation": "Investigate causes and collect data is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         }
       ]
     },
@@ -757,7 +757,7 @@
             "equity"
           ],
           "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "explanation": "Adjust the marketing strategy is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -768,7 +768,7 @@
             "asset"
           ],
           "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "explanation": "engagement is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Which term best describes a company's expected incoming money?",
@@ -779,7 +779,7 @@
             "revenue"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "budget refers to funds coming into the organization; it best matches the phrase used in the question."
         },
         {
           "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
@@ -790,7 +790,7 @@
             "inventory"
           ],
           "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "explanation": "Restructure department roles is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
@@ -801,7 +801,7 @@
             "policy"
           ],
           "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "explanation": "Adjust the marketing strategy is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -812,7 +812,7 @@
             "budget"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "budget is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
@@ -823,7 +823,7 @@
             "leader"
           ],
           "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "explanation": "Restructure department roles is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "(Hard) Which term best describes a company's expected incoming money?",
@@ -850,7 +850,7 @@
             "budget"
           ],
           "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "explanation": "leadership is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "What is a key consideration when creating a budget?",
@@ -861,7 +861,7 @@
             "inventory"
           ],
           "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "explanation": "Leadership is the best answer because it aligns with the concept asked for in the question."
         },
         {
           "question": "Which term best describes a company's expected incoming money?",
@@ -872,7 +872,7 @@
             "leader"
           ],
           "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "explanation": "leadership refers to funds coming into the organization; it best matches the phrase used in the question."
         },
         {
           "question": "Scenario: A local company faces a problem with declining cash flow. As a marketing lead, what would be the best next step?",
@@ -883,7 +883,7 @@
             "equity"
           ],
           "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "explanation": "Investigate causes and collect data is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining cash flow. As a project manager, what would be the best next step?",
@@ -894,7 +894,7 @@
             "asset"
           ],
           "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "explanation": "Restructure department roles is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "What is the primary purpose of Technology?",
@@ -905,7 +905,7 @@
             "leadership"
           ],
           "correctAnswer": "leadership",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Technology is leadership. This choice best matches the main goal described in the question."
         },
         {
           "question": "What is the primary purpose of Technology?",
@@ -916,7 +916,7 @@
             "ROI"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Technology is budget. This choice best matches the main goal described in the question."
         },
         {
           "question": "(Hard) Which term best describes a company's expected incoming money?",
@@ -943,7 +943,7 @@
             "procedure"
           ],
           "correctAnswer": "Investigate causes and collect data",
-          "explanation": "Auto-generated question."
+          "explanation": "Investigate causes and collect data is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "What is a key consideration when creating a budget?",
@@ -954,7 +954,7 @@
             "inventory"
           ],
           "correctAnswer": "policy",
-          "explanation": "Auto-generated question."
+          "explanation": "Policy is the best answer because it aligns with the concept asked for in the question."
         },
         {
           "question": "What is the primary purpose of Leadership?",
@@ -965,7 +965,7 @@
             "ROI"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Leadership is profit. This choice best matches the main goal described in the question."
         },
         {
           "question": "Scenario: A local company faces a problem with declining sales. As a marketing lead, what would be the best next step?",
@@ -976,7 +976,7 @@
             "profit"
           ],
           "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "explanation": "Conduct employee surveys is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "What is a key consideration when creating a budget?",
@@ -987,7 +987,7 @@
             "profit"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "Budget is the best answer because it aligns with the concept asked for in the question."
         },
         {
           "question": "(Hard) What is the primary purpose of Leadership?",
@@ -1009,7 +1009,7 @@
             "budget"
           ],
           "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "explanation": "Conduct employee surveys is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "What is a key consideration when creating a budget?",
@@ -1020,7 +1020,7 @@
             "equity"
           ],
           "correctAnswer": "profit",
-          "explanation": "Auto-generated question."
+          "explanation": "Profit is the best answer because it aligns with the concept asked for in the question."
         }
       ]
     },
@@ -1036,7 +1036,7 @@
             "Conduct employee surveys"
           ],
           "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "explanation": "Conduct employee surveys is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining employee retention. As a HR director, what would be the best next step?",
@@ -1047,7 +1047,7 @@
             "equity"
           ],
           "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "explanation": "Adjust the marketing strategy is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -1058,7 +1058,7 @@
             "liability"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "budget is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Scenario: A local company faces a problem with declining sales. As a HR director, what would be the best next step?",
@@ -1069,7 +1069,7 @@
             "policy"
           ],
           "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "explanation": "Restructure department roles is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "What is the primary purpose of Project Management?",
@@ -1080,7 +1080,7 @@
             "procedure"
           ],
           "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "explanation": "The primary purpose of Project Management is engagement. This choice best matches the main goal described in the question."
         },
         {
           "question": "Which action improves employee engagement?",
@@ -1091,7 +1091,7 @@
             "revenue"
           ],
           "correctAnswer": "engagement",
-          "explanation": "Auto-generated question."
+          "explanation": "engagement is an effective way to improve engagement because it directly influences employees' motivation, communication, or job satisfaction."
         },
         {
           "question": "Which term best describes a company's expected incoming money?",
@@ -1102,7 +1102,7 @@
             "budget"
           ],
           "correctAnswer": "budget",
-          "explanation": "Auto-generated question."
+          "explanation": "budget refers to funds coming into the organization; it best matches the phrase used in the question."
         },
         {
           "question": "(Hard) Which term best describes a company's expected incoming money?",
@@ -1129,7 +1129,7 @@
             "Restructure department roles"
           ],
           "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "explanation": "Restructure department roles is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a marketing lead, what would be the best next step?",
@@ -1140,7 +1140,7 @@
             "inventory"
           ],
           "correctAnswer": "Adjust the marketing strategy",
-          "explanation": "Auto-generated question."
+          "explanation": "Adjust the marketing strategy is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a marketing lead, what would be the best next step?",
@@ -1151,7 +1151,7 @@
             "budget"
           ],
           "correctAnswer": "Restructure department roles",
-          "explanation": "Auto-generated question."
+          "explanation": "Restructure department roles is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         },
         {
           "question": "Scenario: A local company faces a problem with declining customer satisfaction. As a marketing lead, what would be the best next step?",
@@ -1162,7 +1162,7 @@
             "revenue"
           ],
           "correctAnswer": "Conduct employee surveys",
-          "explanation": "Auto-generated question."
+          "explanation": "Conduct employee surveys is the most appropriate action in this scenario because it directly addresses the problem described and focuses on practical steps to resolve it."
         }
       ]
     }

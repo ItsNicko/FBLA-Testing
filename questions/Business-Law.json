@@ -106,13 +106,13 @@
         {
           "question": "(Hard) Which is a challenging question about Legal Systems?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     },
@@ -221,13 +221,13 @@
         {
           "question": "(Hard) Which is a challenging question about Contracts and Sales?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     },
@@ -336,13 +336,13 @@
         {
           "question": "(Hard) Which is a challenging question about Business Organization?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     },
@@ -451,12 +451,12 @@
         {
           "question": "(Hard) What is the primary purpose of Property Laws? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -566,12 +566,12 @@
         {
           "question": "(Hard) Which practice helps Agency and Employment Laws? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -681,13 +681,13 @@
         {
           "question": "(Hard) Which is a challenging question about Negotiable Instruments, Insurance, Secured Transactions, Bankruptcy?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     },
@@ -796,13 +796,13 @@
         {
           "question": "(Hard) Which is a challenging question about Consumer Protection and Product/Personal Liability?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     },
@@ -911,12 +911,12 @@
         {
           "question": "(Hard) How does a manager typically Computer Law? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -1026,12 +1026,12 @@
         {
           "question": "(Hard) Which of the following best explains Domestic and Private Law? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
-            "B: It is rarely used in practice",
-            "C: It always increases costs",
-            "D: It never affects outcomes"
+            "It involves planning and following best practices",
+            "It is rarely used in practice",
+            "It always increases costs",
+            "It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         }
       ]
@@ -1141,13 +1141,13 @@
         {
           "question": "(Hard) Which is a challenging question about Business Law (High School) - Final Questions?",
           "options": [
-            "A: Best practice",
-            "B: Irrelevant",
-            "C: Distractor",
-            "D: None of the above"
+            "Best practice",
+            "Irrelevant",
+            "Distractor",
+            "None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     }

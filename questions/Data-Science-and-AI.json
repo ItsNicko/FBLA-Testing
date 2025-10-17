@@ -128,13 +128,13 @@
         {
           "question": "(Hard) Which is a challenging question about Probability and Statistics Foundations — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Probability Statistics Foundations 1 concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Probability Statistics Foundations 1",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Probability Statistics Foundations 1 concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Probability Statistics Foundations 1 concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -199,35 +199,35 @@
         {
           "question": "What is the primary purpose of Probability and Statistics Foundations? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
+            "It involves planning and following best practices",
             "B: It is rarely used in practice",
             "C: It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "Which of the following best explains Probability and Statistics Foundations — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Probability statistics foundations 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Probability Statistics Foundations 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Probability statistics foundations 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Probability statistics foundations 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "(Hard) Which of the following best explains Probability and Statistics Foundations — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Probability statistics foundations 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Probability Statistics Foundations 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Probability statistics foundations 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Probability statistics foundations 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -358,13 +358,13 @@
         {
           "question": "(Hard) Which is a challenging question about Data Analysis and Tools for AI — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Data Analysis Tools for AI concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Data Analysis Tools for AI",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Data Analysis Tools for AI concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Data Analysis Tools for AI concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -429,35 +429,35 @@
         {
           "question": "How does a manager typically Data Analysis and Tools for AI? (Hard)",
           "options": [
-            "A: It involves planning and following best practices",
+            "It involves planning and following best practices",
             "B: It is rarely used in practice",
             "C: It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "Which of the following best explains Data Analysis and Tools for AI — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Data analysis tools for ai focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Data Analysis Tools for AI"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Data analysis tools for ai focuses on core practices and principles",
+          "explanation": "Choosing 'Data analysis tools for ai focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         },
         {
           "question": "(Hard) Which of the following best explains Data Analysis and Tools for AI — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Data analysis tools for ai focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Data Analysis Tools for AI"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Data analysis tools for ai focuses on core practices and principles",
+          "explanation": "Choosing 'Data analysis tools for ai focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -588,13 +588,13 @@
         {
           "question": "(Hard) Which is a challenging question about AI Basics and Machine Learning — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced AI Basics Machine Learning 1 concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to AI Basics Machine Learning 1",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced AI Basics Machine Learning 1 concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced AI Basics Machine Learning 1 concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -659,35 +659,35 @@
         {
           "question": "How does a manager typically AI Basics and Machine Learning? (Challenging)",
           "options": [
-            "A: It involves planning and following best practices",
+            "It involves planning and following best practices",
             "B: It is rarely used in practice",
             "C: It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Hard) Which is a challenging question about AI Basics and Machine Learning?",
           "options": [
-            "A: Best practice",
+            "Best practice",
             "B: Irrelevant",
             "C: Distractor",
             "D: None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         },
         {
           "question": "Which of the following best explains AI Basics and Machine Learning — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Ai basics machine learning 2 focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to AI Basics Machine Learning 2"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Ai basics machine learning 2 focuses on core practices and principles",
+          "explanation": "Choosing 'Ai basics machine learning 2 focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -818,13 +818,13 @@
         {
           "question": "(Hard) Which is a challenging question about Perception, Reasoning, and Ethics in AI — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Perception Reasoning Ethics in AI concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Perception Reasoning Ethics in AI",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Perception Reasoning Ethics in AI concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Perception Reasoning Ethics in AI concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -889,35 +889,35 @@
         {
           "question": "Which of the following best explains Perception, Reasoning, and Ethics in AI? (Challenging)",
           "options": [
-            "A: It involves planning and following best practices",
+            "It involves planning and following best practices",
             "B: It is rarely used in practice",
             "C: It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Hard) Which is a challenging question about Perception, Reasoning, and Ethics in AI?",
           "options": [
-            "A: Best practice",
+            "Best practice",
             "B: Irrelevant",
             "C: Distractor",
             "D: None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         },
         {
           "question": "Which of the following best explains Perception, Reasoning, and Ethics in AI — part 2?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Perception reasoning ethics in ai focuses on core practices and principles",
+            "It mainly concerns unrelated business activities such as marketing",
+            "It primarily aims to maximize short-term profit without regard to practice",
+            "It refers to low-level implementation details not central to Perception Reasoning Ethics in AI"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added question."
+          "correctAnswer": "Perception reasoning ethics in ai focuses on core practices and principles",
+          "explanation": "Choosing 'Perception reasoning ethics in ai focuses on core practices and principles' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -1048,13 +1048,13 @@
         {
           "question": "(Hard) Which is a challenging question about Data Literacy and Foundations — part 1?",
           "options": [
-            "A",
-            "B",
-            "C",
-            "D"
+            "Apply advanced Data Literacy Foundations 1 concepts to analyze edge-case scenarios",
+            "Rely on rote memorization of basic facts",
+            "Use unrelated heuristics that don't apply to Data Literacy Foundations 1",
+            "Make decisions without any methodology"
           ],
-          "correctAnswer": "A",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Apply advanced Data Literacy Foundations 1 concepts to analyze edge-case scenarios",
+          "explanation": "Choosing 'Apply advanced Data Literacy Foundations 1 concepts to analyze edge-case scenarios' is appropriate here because it addresses the specific issue raised by the question."
         }
       ]
     },
@@ -1130,24 +1130,24 @@
         {
           "question": "How does a manager typically Data Literacy and Foundations? (Challenging)",
           "options": [
-            "A: It involves planning and following best practices",
+            "It involves planning and following best practices",
             "B: It is rarely used in practice",
             "C: It always increases costs",
             "D: It never affects outcomes"
           ],
-          "correctAnswer": "A: It involves planning and following best practices",
+          "correctAnswer": "It involves planning and following best practices",
           "explanation": "Common best practice supports this choice; distractors are plausible but less correct."
         },
         {
           "question": "(Hard) Which is a challenging question about Data Literacy and Foundations?",
           "options": [
-            "A: Best practice",
+            "Best practice",
             "B: Irrelevant",
             "C: Distractor",
             "D: None of the above"
           ],
-          "correctAnswer": "A: Best practice",
-          "explanation": "Auto-added hard question."
+          "correctAnswer": "Best practice",
+          "explanation": "This is a higher-difficulty item; Best practice is correct because it requires analysis beyond simple recall."
         }
       ]
     }
