@@ -1,6 +1,6 @@
 # Learn FBLACER: a simple guide for beginners (age ~14)
 
-This guide explains how FBLACER works in a friendly, step-by-step way. No prior experience required — I'll explain terms, show what each part does, and give simple exercises you can try.
+This guide explains how FBLACER works in a friendly, step-by-step way. No prior experience required, I'll explain terms, show what each part does, and give simple exercises you can try.
 
 Who this is for
 
