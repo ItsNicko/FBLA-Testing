@@ -22,8 +22,6 @@ Repository structure
 - `legal/` — privacy & terms HTML files used in the settings modal.
 - `firebase.rules` — example Firestore security rules matching the app's expectations.
 
-```
-
 Firebase (optional)
 
 The app includes optional Firebase integrations. The project currently initializes Firebase using the config embedded in `index.html` for the project `fblacer`.
@@ -64,6 +62,5 @@ Notes and caveats
 - The app uses the Firebase Web v12 modular SDK via CDN imports inside `index.html`. If you change SDK versions, update the imports.
 - The leaderboard and many Firestore-backed operations assume the client can write to specific collections. The included `firebase.rules` lock down most sensitive operations to authenticated users and validate leaderboard writes, but you should audit rules before using real user data.
 - Usernames are mapped to uids via the `usernames` collection; race conditions are guarded in client code using transactions where available.
-```
 
 ## Want to learn more? [here you go](./learn.md)
