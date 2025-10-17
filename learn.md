@@ -263,10 +263,3 @@ Final tips
 
 - Use console.log() a lot while you learn — it helps you see what's happening. For example, add `console.log('questions length', questions.length)` inside `startTest()` to check how many questions loaded.
 - Make small edits and refresh often. If something breaks, use your browser DevTools (Console tab) to read errors and ask me about them.
-
-If you'd like, I can now:
-
-- Add an example `my-first-quiz.json` and automatically update `tests.json` so learners have a ready-made quiz to edit.
-- Create a short step-by-step exercise file that opens `script.js` at specific line numbers.
-
-Which of those would help you learn faster?
