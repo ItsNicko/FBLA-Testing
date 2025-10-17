@@ -66,4 +66,4 @@ Notes and caveats
 - Usernames are mapped to uids via the `usernames` collection; race conditions are guarded in client code using transactions where available.
 ```
 
-##Want to learn more?[here you go](./learn.md)
+## Want to learn more? [here you go](./learn.md)
